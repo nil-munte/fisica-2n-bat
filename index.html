@@ -60,6 +60,9 @@ h2{font-family:var(--f-display);font-size:22px;font-weight:600;margin:0 0 12px}
 .links a{font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--chip);border-radius:20px;padding:4px 12px}
 .links a:hover{border-color:var(--muted)}
 .links a.main{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+.links .dlg{display:inline-flex}
+.links .dlg a:first-child{border-radius:20px 0 0 20px}
+.links .dlg a.ic{border-radius:0 20px 20px 0;border-left-width:0;padding:4px 9px;display:inline-flex;align-items:center}
 a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 footer{color:var(--muted);font-size:13px;line-height:1.7;border-top:1px solid var(--line);padding-top:14px}
 footer .autor{font-size:14px;color:var(--ink)}
@@ -91,12 +94,12 @@ h2 small{font-family:var(--f-body);font-weight:400;font-size:14px;color:var(--mu
     <div class="list">
       <article class="item">
         <h3><a href="temes/mhs/index.html">Moviment harmònic simple</a></h3>
-        <p>Equacions, forces, energia, molla vertical i pèndol. Tres demos interactives, 7 exercicis graduats i <span data-pau-compte="temes/mhs/index.html">24</span> problemes de les PAU.</p>
+        <p>Equacions, forces, energia, molla vertical i pèndol. Tres demos interactives, exercicis graduats i problemes de les PAU resolts.</p>
         <div class="links">
           <a class="main" href="temes/mhs/index.html">Obre el tema</a>
-          <a href="temes/mhs/pdf/mhs-formulari.pdf">Formulari (PDF)</a>
-          <a href="temes/mhs/pdf/mhs-enunciats.pdf">Enunciats (PDF)</a>
-          <a href="temes/mhs/pdf/mhs-enunciats-solucions.pdf">Enunciats i solucions (PDF)</a>
+          <span class="dlg"><a href="temes/mhs/pdf/mhs-formulari.pdf" target="_blank" rel="noopener" title="Obre el formulari de MHS en una pestanya nova">Formulari (PDF)</a><a class="ic" href="temes/mhs/pdf/mhs-formulari.pdf" download="MHS - Formulari.pdf" title="Descarrega el formulari de MHS" aria-label="Descarrega el formulari de MHS"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+          <span class="dlg"><a href="temes/mhs/pdf/mhs-enunciats.pdf" target="_blank" rel="noopener" title="Obre els enunciats de MHS en una pestanya nova">Enunciats (PDF)</a><a class="ic" href="temes/mhs/pdf/mhs-enunciats.pdf" download="MHS - Enunciats.pdf" title="Descarrega els enunciats de MHS" aria-label="Descarrega els enunciats de MHS"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+          <span class="dlg"><a href="temes/mhs/pdf/mhs-enunciats-solucions.pdf" target="_blank" rel="noopener" title="Obre els enunciats de MHS amb les solucions en una pestanya nova">Enunciats i solucions (PDF)</a><a class="ic" href="temes/mhs/pdf/mhs-enunciats-solucions.pdf" download="MHS - Enunciats i solucions.pdf" title="Descarrega els enunciats de MHS amb les solucions" aria-label="Descarrega els enunciats de MHS amb les solucions"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
         </div>
       </article>
     </div>
@@ -158,7 +161,7 @@ h2 small{font-family:var(--f-body);font-weight:400;font-size:14px;color:var(--mu
   </section>
   </main>
 
-  <footer>Els enunciats dels problemes de les PAU són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d'acord amb les condicions de reutilització de la informació del sector públic; cada problema enllaça a l'examen original.<br><span class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></span><br><span class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></span></footer>
+  <footer>Els enunciats i els criteris de correcció de les PAU són oficials (Generalitat de Catalunya) i es reprodueixen d'acord amb les condicions de reutilització de la informació del sector públic. Cada problema enllaça a l'examen original. Les resolucions i els exercicis graduats són elaboració pròpia.<br><span class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></span><br><span class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></span></footer>
 </div>
 <script>
 /* Compartir i contacte. Només enllaços normals: cap script ni galeta de tercers. */
