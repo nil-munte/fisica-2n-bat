@@ -2377,7 +2377,8 @@ document.querySelectorAll('svg.en').forEach(svg => {
     if (sec !== cur) { cur = sec; if (sec) { build(sec); sn.classList.add('on'); } else { sn.innerHTML = ''; sn.classList.remove('on'); } setH(); }
     if (!sec) return;
     let act = null;
-    links.forEach(x => { if (x.el.getBoundingClientRect().top <= line) act = x; });
+    // els elements amagats (p. ex. problemes que el filtre per nivell no mostra) no tenen posició: no compten
+    links.forEach(x => { if (x.el.getClientRects().length && x.el.getBoundingClientRect().top <= line) act = x; });
     if (pinned) { const pl = links.find(x => x.a.getAttribute('href') === pinned); if (pl) act = pl; }
     // a exercicis, marca el número i el seu nivell
     links.forEach(x => x.a.setAttribute('aria-current', 'false'));
