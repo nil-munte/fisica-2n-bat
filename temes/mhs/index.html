@@ -283,6 +283,7 @@ i.v{font-family:var(--f-body)}
 }
 @media print{.topbar{display:none!important}}
 
+.units{margin:0;font-size:13.5px;color:var(--muted);max-width:66ch}
 /* mètode */
 .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:s}
 @media (max-width:980px){.steps{grid-template-columns:minmax(0,1fr)}}
@@ -422,10 +423,14 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <h4>Magnituds</h4>
           <table class="t">
             <tr><th>Magnitud</th><th>Significat</th><th>Unitat</th></tr>
-            <tr><td>A</td><td>amplitud: màxim allunyament de l'equilibri</td><td>m</td></tr>
-            <tr><td>ω</td><td>pulsació; ω = 2π/T = 2π·f</td><td>rad/s</td></tr>
-            <tr><td>T, f</td><td>període i freqüència; f = 1/T</td><td>s, Hz</td></tr>
-            <tr><td>φ</td><td>fase inicial (determina x en t = 0)</td><td>rad</td></tr>
+            <tr><td>x</td><td>posició (elongació), mesurada des de l'equilibri</td><td class="n">[m]</td></tr>
+            <tr><td>t</td><td>temps</td><td class="n">[s]</td></tr>
+            <tr><td>A</td><td>amplitud: màxim allunyament de l'equilibri</td><td class="n">[m]</td></tr>
+            <tr><td>ω</td><td>pulsació; ω = 2π/T = 2π·f</td><td class="n">[rad/s]</td></tr>
+            <tr><td>T, f</td><td>període i freqüència; f = 1/T</td><td class="n">[s], [Hz]</td></tr>
+            <tr><td>φ</td><td>fase inicial (determina x en t = 0)</td><td class="n">[rad]</td></tr>
+            <tr><td>v</td><td>velocitat</td><td class="n">[m/s]</td></tr>
+            <tr><td>a</td><td>acceleració</td><td class="n">[m/s²]</td></tr>
           </table>
         </section>
         <section class="tsub wide2">
@@ -454,6 +459,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <div class="keybig tf">F = −k·x</div>
           <div class="keysec">ω = √(k/m) &nbsp;·&nbsp; T = 2π·√(m/k)</div>
           <p class="sline">k = m·ω²</p>
+          <p class="units">F: força recuperadora [N] · k: constant elàstica de la molla [N/m] · m: massa [kg]</p>
         </div>
         <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 540 170" role="img" aria-label="Força recuperadora: sempre cap a l'equilibri, de sentit contrari al desplaçament"><line x1="230.0" y1="8.0" x2="230.0" y2="140.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><text x="224.0" y="14.0" text-anchor="end" style="font-size:11px">equilibri (x = 0)</text><rect x="30" y="36" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,56.0 44.0,56.0 55.6,49.0 79.0,63.0 102.2,49.0 125.5,63.0 148.9,49.0 172.2,63.0 195.5,49.0 218.8,63.0 242.1,49.0 265.4,63.0 277.0,56.0 283.0,56.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="283.0" y="42.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="300.0" y="61.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="380" y1="70" y2="70" stroke="var(--line)"/><line x1="230.0" y1="82.0" x2="296.4" y2="82.0" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/><polygon points="300.0,82.0 294.0,84.7 294.0,79.3" fill="var(--ink)"/><text x="265.0" y="96.0" text-anchor="middle" class="lab" style="fill:var(--ink)">x</text><line x1="300.0" y1="32.0" x2="252.3" y2="32.0" stroke="var(--f)" stroke-width="2.6" stroke-linecap="round"/><polygon points="247.5,32.0 255.5,28.4 255.5,35.6" fill="var(--f)"/><text x="273.8" y="26.0" text-anchor="middle" class="lab" style="fill:var(--f)">F</text><text x="405.0" y="60.0" text-anchor="start" style="fill:var(--ink)">x &gt; 0 → F &lt; 0</text><rect x="30" y="98" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,118.0 44.0,118.0 50.6,111.0 63.9,125.0 77.2,111.0 90.5,125.0 103.8,111.0 117.1,125.0 130.4,111.0 137.0,118.0 143.0,118.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="143.0" y="104.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="160.0" y="123.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="380" y1="132" y2="132" stroke="var(--line)"/><line x1="230.0" y1="144.0" x2="163.6" y2="144.0" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/><polygon points="160.0,144.0 166.0,141.3 166.0,146.7" fill="var(--ink)"/><text x="195.0" y="158.0" text-anchor="middle" class="lab" style="fill:var(--ink)">x</text><line x1="160.0" y1="94.0" x2="207.7" y2="94.0" stroke="var(--f)" stroke-width="2.6" stroke-linecap="round"/><polygon points="212.5,94.0 204.5,97.6 204.5,90.4" fill="var(--f)"/><text x="186.2" y="88.0" text-anchor="middle" class="lab" style="fill:var(--f)">F</text><text x="405.0" y="122.0" text-anchor="start" style="fill:var(--ink)">x &lt; 0 → F &gt; 0</text><text x="534.0" y="150.0" text-anchor="end" style="font-size:11px">F i x sempre de signe contrari</text></svg></div><figcaption>La força apunta sempre cap a l'equilibri.</figcaption></figure>
       </div>
@@ -489,6 +495,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <div class="keybig">E<sub>m</sub> = ½·k·A²</div>
           <div class="keysec"><span class="tep">E<sub>p</sub> = ½·k·x²</span><br><span class="tec">E<sub>c</sub> = ½·m·v² = ½·k·(A² − x²)</span></div>
           <p class="sline">E<sub>m</sub> = E<sub>c</sub> + E<sub>p</sub> = ½·m·ω²·A² = ½·m·v<sub>màx</sub>² (constant)</p>
+          <p class="units">E<sub>c</sub>: energia cinètica · E<sub>p</sub>: energia potencial elàstica · E<sub>m</sub>: energia mecànica, totes en [J]</p>
         </div>
         <figure class="herofig">
           <svg class="en" viewBox="0 0 520 180" role="img" aria-label="Energies cinètica, potencial i mecànica en funció de la posició i del temps"></svg>
@@ -519,6 +526,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
         <div class="hero">
           <div class="herof">
             <div class="keybig">T = 2π·√(Δx/g)</div>
+            <p class="units">Δx: allargament de la molla a l'equilibri [m] · g: acceleració de la gravetat [m/s²]</p>
             <p>El problema es divideix en dues parts: primer l'<b>equilibri</b> (el cos penjat, quiet) i després l'<b>oscil·lació</b> al voltant d'aquest equilibri. A cada part actua una força diferent, i no s'han de confondre.</p>
             <p><b>Part 1 · Equilibri.</b> La molla s'allarga Δx i la seva força compensa el pes. Aquí només s'aplica k·Δx = m·g:</p>
             <div class="keyf">k·Δx = m·g</div>
@@ -544,6 +552,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <div class="herof">
             <div class="keybig">T = 2π·√(L/g)</div>
             <div class="keysec"><span class="tf">F = −m·g·sin θ ≈ −(m·g/L)·x</span><br>ω = √(g/L) <span class="k">(angles petits)</span></div>
+            <p class="units">L: longitud del fil [m] · θ: angle amb la vertical [rad] · F<sub>T</sub>: tensió del fil [N]</p>
             <p>El període no depèn de la massa ni de l'amplitud. L'amplitud lineal és A ≈ L·θ₀, amb θ₀ en radians.</p>
             <details class="more"><summary>Per saber-ne més: per què és un MHS</summary>
               <p>La força que torna el pèndol a l'equilibri és la component tangencial del pes. Per a angles petits, sin θ ≈ θ = x/L, i la força és proporcional a x: és un MHS amb k = m·g/L. Aleshores ω = √(k/m) = √(g/L) i T = 2π/ω = 2π·√(L/g).</p>
@@ -795,7 +804,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
         <div class="fm">x = A·cos(ωt + φ)<br>v = −A·ω·sin(ωt + φ)<br>a = −A·ω²·cos(ωt + φ)<br>a = −ω²·x</div></div>
       <div class="panel fbox"><h3>Magnituds</h3>
         <div class="fm">ω = 2π/T = 2π·f &nbsp; f = 1/T</div>
-        <p>A en m · ω en rad/s · T en s · f en Hz · φ en rad</p></div>
+        <p>A [m] · ω [rad/s] · T [s] · f [Hz] · φ [rad] · k [N/m] · E [J]</p></div>
       <div class="panel fbox"><h3>Valors màxims</h3>
         <div class="fm">v<sub>màx</sub> = A·ω &nbsp;(a x = 0)<br>a<sub>màx</sub> = A·ω² &nbsp;(a x = ±A)</div></div>
       <div class="panel fbox w2"><h3>Gràfiques (φ = 0)</h3>
