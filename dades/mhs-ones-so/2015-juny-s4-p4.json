@@ -82,15 +82,15 @@
         },
         {
           "titol": "Equació general",
-          "html": "Prenem l'eix <i>x</i> vertical, positiu cap amunt i amb l'origen al nivell mitjà de l'aigua: <i>x</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i> + <i>φ</i>)."
+          "html": "Prenem l'eix <i>y</i> vertical, positiu cap amunt i amb l'origen al nivell mitjà de l'aigua: <i>y</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i> + <i>φ</i>)."
         },
         {
           "titol": "Fase inicial",
-          "html": "L'enunciat no diu on és la boia a <i>t</i> = 0. Com fa la pauta, suposem que en aquest instant la boia és en un extrem, per exemple al punt més alt: <i>x</i>(0) = <i>A</i> → sin <i>φ</i> = 1 → <i>φ</i> = π/2. (Si comencés al punt més baix, seria <i>φ</i> = −π/2.)"
+          "html": "L'enunciat no diu on és la boia a <i>t</i> = 0. Com fa la pauta, suposem que en aquest instant la boia és en un extrem, per exemple al punt més alt: <i>y</i>(0) = <i>A</i> → sin <i>φ</i> = 1 → <i>φ</i> = π/2. (Si comencés al punt més baix, seria <i>φ</i> = −π/2.)"
         },
         {
           "titol": "Equació amb valors",
-          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,50·sin(π·<i>t</i> + π/2) m</span>, que és el mateix que <i>x</i>(<i>t</i>) = 0,50·cos(π·<i>t</i>) m."
+          "html": "<span class=\"res\"><i>y</i>(<i>t</i>) = 0,50·sin(π·<i>t</i> + π/2) m</span>, que és el mateix que <i>y</i>(<i>t</i>) = 0,50·cos(π·<i>t</i>) m."
         }
       ],
       "pauta": [
@@ -100,7 +100,7 @@
         },
         {
           "punts": 0.4,
-          "que": "Escriure l'equació general x(t) = A·sin(ωt + φ) i fixar la fase inicial amb la condició inicial (φ = ±π/2, o bé fer servir el cosinus sense fase)."
+          "que": "Escriure l'equació general y(t) = A·sin(ωt + φ) i fixar la fase inicial amb la condició inicial (φ = ±π/2, o bé fer servir el cosinus sense fase)."
         },
         {
           "punts": 0.4,
@@ -113,7 +113,7 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> + <i>φ</i>)."
+          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>y</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> + <i>φ</i>)."
         },
         {
           "titol": "Velocitat màxima",

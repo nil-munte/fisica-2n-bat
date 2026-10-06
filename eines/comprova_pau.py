@@ -9,7 +9,7 @@ Per a cada problema:
   2. Executa el codi de «comprovacio», que ha de deixar els resultats al diccionari R.
   3. Compara cada resultat calculat amb el valor que dona la resolució («valor»)
      i amb el de la pauta oficial («pauta»).
-  4. Revisa la notació (coma decimal, x per a la posició als problemes de MHS).
+  4. Revisa la notació (coma decimal).
 Desa l'estat a «verificacio»: ok, revisar (no coincideix amb la pauta o hi ha avisos)
 o error (estructura o càlcul propi incorrectes). Les notes manuals («notes_manuals»)
 es conserven i, si n'hi ha, l'estat mai no és ok.
@@ -102,8 +102,6 @@ def valida(p, nom, temes):
         t = sense_etiquetes(h)
         for m in re.finditer(r'(?<![\w.])\d+\.\d+(?![\w.])', t):
             avis.append(f'{on}: punt decimal «{m.group()}» (cal coma decimal)')
-        if p.get('subtema') == 'mhs' and re.search(r'<i>y</i>\s*\(|<i>y</i>\s*=|\by\(t\)', h):
-            avis.append(f'{on}: posició amb y (cal x)')
     return err, avis
 
 

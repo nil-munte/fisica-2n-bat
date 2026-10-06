@@ -79,11 +79,11 @@
         },
         {
           "titol": "Equació",
-          "html": "Prenem l'eix <i>x</i> vertical i positiu cap amunt. Si a <i>t</i> = 0 l'agulla és a <i>x</i> = +<i>A</i>, la funció cosinus no necessita fase inicial: <i>x</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i>)."
+          "html": "Prenem l'eix <i>y</i> vertical i positiu cap amunt. Si a <i>t</i> = 0 l'agulla és a <i>y</i> = +<i>A</i>, la funció cosinus no necessita fase inicial: <i>y</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i>)."
         },
         {
           "titol": "Amb valors",
-          "html": "2π<i>f</i> = 2π·30 = 60π ≈ 1,88·10<sup>2</sup> rad/s, per tant <span class=\"res\"><i>x</i>(<i>t</i>) = 0,010·cos(1,88·10<sup>2</sup>·<i>t</i>) m</span>. Si s'escriu amb sinus, cal afegir una fase de π/2: <i>x</i>(<i>t</i>) = 0,010·sin(1,88·10<sup>2</sup>·<i>t</i> + π/2) m."
+          "html": "2π<i>f</i> = 2π·30 = 60π ≈ 1,88·10<sup>2</sup> rad/s, per tant <span class=\"res\"><i>y</i>(<i>t</i>) = 0,010·cos(1,88·10<sup>2</sup>·<i>t</i>) m</span>. Si s'escriu amb sinus, cal afegir una fase de π/2: <i>y</i>(<i>t</i>) = 0,010·sin(1,88·10<sup>2</sup>·<i>t</i> + π/2) m."
         }
       ],
       "pauta": [
@@ -97,7 +97,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Escriure la forma general x(t) = A·cos(2πf·t)."
+          "que": "Escriure la forma general y(t) = A·cos(2πf·t)."
         },
         {
           "punts": 0.2,
@@ -110,17 +110,17 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = −2π<i>f</i>·<i>A</i>·sin(2π<i>f</i>·<i>t</i>). El valor màxim és quan el sinus val ±1: <i>v</i><sub>màx</sub> = 2π<i>f</i>·<i>A</i> = 2π·30·0,010 = <span class=\"res\">1,88 m/s</span>."
+          "html": "Derivem la posició respecte del temps: <i>v</i><sub><i>y</i></sub>(<i>t</i>) = d<i>y</i>/d<i>t</i> = −2π<i>f</i>·<i>A</i>·sin(2π<i>f</i>·<i>t</i>). El valor màxim és quan el sinus val ±1: <i>v</i><sub><i>y</i>,màx</sub> = 2π<i>f</i>·<i>A</i> = 2π·30·0,010 = <span class=\"res\">1,88 m/s</span>."
         },
         {
           "titol": "Acceleració",
-          "html": "Derivem la velocitat: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i>·cos(2π<i>f</i>·<i>t</i>). El valor màxim és quan el cosinus val ±1: <i>a</i><sub>màx</sub> = 4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i> = 4π<sup>2</sup>·30<sup>2</sup>·0,010 = <span class=\"res\">3,55·10<sup>2</sup> m/s<sup>2</sup></span>."
+          "html": "Derivem la velocitat: <i>a</i><sub><i>y</i></sub>(<i>t</i>) = d<i>v</i><sub><i>y</i></sub>/d<i>t</i> = −4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i>·cos(2π<i>f</i>·<i>t</i>). El valor màxim és quan el cosinus val ±1: <i>a</i><sub><i>y</i>,màx</sub> = 4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i> = 4π<sup>2</sup>·30<sup>2</sup>·0,010 = <span class=\"res\">3,55·10<sup>2</sup> m/s<sup>2</sup></span>."
         }
       ],
       "pauta": [
         {
           "punts": 0.3,
-          "que": "Obtenir l'expressió de v(t) derivant x(t)."
+          "que": "Obtenir l'expressió de v_y(t) derivant y(t)."
         },
         {
           "punts": 0.2,
@@ -128,7 +128,7 @@
         },
         {
           "punts": 0.3,
-          "que": "Obtenir l'expressió de a(t) derivant v(t)."
+          "que": "Obtenir l'expressió de a_y(t) derivant v_y(t)."
         },
         {
           "punts": 0.2,
@@ -162,14 +162,14 @@
     {
       "apartat": "b",
       "clau": "vmax",
-      "text": "v_màx = 1,88 m/s",
+      "text": "v_y,màx = 1,88 m/s",
       "valor": 1.88,
       "pauta": 1.88
     },
     {
       "apartat": "b",
       "clau": "amax",
-      "text": "a_màx = 3,55·10² m/s²",
+      "text": "a_y,màx = 3,55·10² m/s²",
       "valor": 355,
       "pauta": 355
     }
