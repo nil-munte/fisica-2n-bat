@@ -257,32 +257,29 @@ i.v{font-family:var(--f-body)}
 .secnav{display:none}
 .secnav.on{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:0 16px 8px}
 .secnav::-webkit-scrollbar{display:none}
-.secnav .sn-t{flex:none;font-family:var(--f-display);font-weight:600;font-size:13px;color:var(--muted);margin-right:4px}
-.secnav a{flex:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:3px 10px;font-size:13px;white-space:nowrap}
+.secnav .sn-t{flex:none;font-family:var(--f-display);font-weight:600;font-size:14px;color:var(--muted);margin-right:4px}
+.secnav a{flex:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:3px 12px;font-size:13px;font-weight:500;white-space:nowrap;line-height:1.5}
 .secnav a:hover{border-color:var(--muted)}
 .secnav a[aria-current="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 .secnav .sn-g{display:contents}
-.secnav .sn-gl{margin-left:6px}
-.secnav .sn-gl span{color:var(--y);font-family:var(--f-mono)}
-.secnav .sn-gl .nm{display:none}
+.secnav .sn-gl{margin-left:8px}
+.secnav .sn-gl span{color:var(--y);font-family:var(--f-mono);font-size:12px;margin-right:5px}
 .secnav .sn-gl[aria-current="true"] span{color:inherit}
 .secnav .sn-nums{display:contents}
-.secnav .sn-nums a{min-width:30px;text-align:center;padding-inline:6px;font-family:var(--f-mono)}
+.secnav .sn-nums a{width:28px;height:28px;padding:0;border-radius:50%;display:inline-grid;place-items:center;font-family:var(--f-display);font-weight:600;font-size:13px}
+.ex.flash,.tblock.flash,.demo.flash{animation:snflash 1.4s ease-out}
+@keyframes snflash{0%,35%{box-shadow:0 0 0 3px var(--ink)}100%{box-shadow:0 0 0 3px transparent}}
+@media (prefers-reduced-motion:reduce){.ex.flash,.tblock.flash,.demo.flash{animation:none}}
 /* pantalla ampla: la mateixa navegació, al marge esquerre */
 @media (min-width:1600px){
-  .secnav.on{position:fixed;top:calc(var(--navh,56px) + 26px);left:max(8px,calc((100vw - 1240px)/2 - 186px));width:170px;
-    flex-direction:column;align-items:stretch;gap:4px;padding:0;overflow:visible;max-height:calc(100vh - var(--navh,56px) - 50px);overflow-y:auto}
-  .secnav .sn-t{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 4px 2px}
-  .secnav a{white-space:normal;border-radius:8px;padding:6px 10px;line-height:1.3;border-color:transparent;background:transparent;color:var(--muted)}
-  .secnav a:hover{color:var(--ink);border-color:var(--line);background:var(--surface)}
-  .secnav a[aria-current="true"]{background:var(--surface);color:var(--ink);border-color:var(--line);box-shadow:inset 3px 0 0 var(--ink)}
-  .secnav .sn-g{display:flex;flex-direction:column;gap:4px;margin-bottom:8px}
-  .secnav .sn-gl{margin-left:0;color:var(--ink)!important;font-family:var(--f-display);font-weight:600}
-  .secnav .sn-gl span{color:var(--y);font-family:var(--f-mono);margin-right:6px}
-  .secnav .sn-gl .nm{display:inline;color:inherit;font-family:inherit;margin:0}
-  .secnav .sn-nums{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding-left:2px}
-  .secnav .sn-nums a{min-width:0;padding:4px 0;border-color:var(--line);background:var(--surface);color:var(--ink);text-align:center;border-radius:6px}
-  .secnav .sn-nums a[aria-current="true"]{background:var(--ink);color:var(--surface);box-shadow:none}
+  .secnav.on{position:fixed;top:calc(var(--navh,56px) + 26px);left:max(8px,calc((100vw - 1240px)/2 - 190px));width:174px;
+    flex-direction:column;align-items:stretch;gap:6px;padding:0;overflow:visible;max-height:calc(100vh - var(--navh,56px) - 50px);overflow-y:auto}
+  .secnav .sn-t{font-size:16px;color:var(--ink);margin:0 0 4px;padding-bottom:6px;border-bottom:3px solid var(--ink)}
+  .secnav a{white-space:normal;padding:5px 12px;font-size:14px;line-height:1.35}
+  .secnav .sn-g{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+  .secnav .sn-gl{margin-left:0}
+  .secnav .sn-nums{display:flex;flex-wrap:wrap;gap:5px;padding-left:4px}
+  .secnav .sn-nums a{width:30px;height:30px;font-size:14px}
 }
 @media print{.topbar{display:none!important}}
 
@@ -1553,10 +1550,11 @@ if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = 
   const SECS = [
     { id: 'teoria', t: 'Teoria', items: () => [...document.querySelectorAll('#teoria .tblock')].map(b => ({ id: b.id, t: txt(b.querySelector('.bn')) + ' · ' + txt(b.querySelector('h3')) })) },
     { id: 'demos', t: 'Demos', items: () => [...document.querySelectorAll('#demos .demo')].map(d => ({ id: d.id, t: txt(d.querySelector('.hd h3')).replace(/:.*$/, '') })) },
-    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'errades', t: 'Errades típiques' }, { id: 'exemple', t: 'Exemple resolt' }] },
+    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'exemple', t: 'Exemple resolt' }] },
     { id: 'exercicis', t: 'Exercicis', groups: true }
   ];
-  let cur = null, links = [];
+  let cur = null, links = [], pinned = null;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(ev => addEventListener(ev, e => { if (!sn.contains(e.target)) pinned = null; }, { passive: true }));
   function build(sec) {
     let h = '<span class="sn-t">' + sec.t + '</span>';
     if (sec.groups) {
@@ -1579,7 +1577,7 @@ if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = 
     if (!sec) return;
     let act = null;
     links.forEach(x => { if (x.el.getBoundingClientRect().top <= line) act = x; });
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4 && links.length) act = links[links.length - 1];
+    if (pinned) { const pl = links.find(x => x.a.getAttribute('href') === pinned); if (pl) act = pl; }
     // a exercicis, marca el número i el seu nivell
     links.forEach(x => x.a.setAttribute('aria-current', 'false'));
     if (act) {
@@ -1593,7 +1591,10 @@ if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = 
     e.preventDefault();
     const t = document.getElementById(a.getAttribute('href').slice(1)); if (!t) return;
     const smooth = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    pinned = a.getAttribute('href');
     t.scrollIntoView({ behavior: smooth, block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true });
+    if (t.matches('.ex, .tblock, .demo')) { t.classList.remove('flash'); void t.offsetWidth; t.classList.add('flash'); }
+    update();
   });
   let pend = false;
   addEventListener('scroll', () => { if (!pend) { pend = true; requestAnimationFrame(() => { pend = false; update(); }); } }, { passive: true });
