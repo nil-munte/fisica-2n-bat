@@ -7,9 +7,9 @@
   "opcio": null,
   "tambe_a": [],
   "tema_principal": "mhs-ones-so",
-  "subtema": "mhs",
+  "subtema": "ones",
   "temes_secundaris": [
-    "mhs-ones-so/ones"
+    "mhs-ones-so/mhs"
   ],
   "blocs": [
     "b2",
@@ -223,15 +223,10 @@
     "R = {'pend': pend, 'k': k, 'T': T, 'Ecmax': 0.5 * k * A**2, 'lam': lam, 'kappa': 2 * pi / lam, 'w': sqrt(k / m)}"
   ],
   "verificacio": {
-    "estat": "revisar",
+    "estat": "ok",
     "errors": [],
     "diferencies_pauta": [],
-    "avisos": [
-      "resolucio.b.2: posició amb y (cal x)",
-      "resolucio.b.3: posició amb y (cal x)"
-    ],
-    "notes_manuals": [
-      "A l'apartat b, l'elongació transversal de la corda s'escriu y(x, t), perquè x és la posició al llarg de la corda (direcció de propagació); el comprovador ho marca com a avís de notació (posició amb y), però és la notació habitual per a una ona transversal i la mateixa que fa servir la pauta. Revisar si es prefereix un altre símbol."
-    ]
+    "avisos": [],
+    "notes_manuals": []
   }
 }
