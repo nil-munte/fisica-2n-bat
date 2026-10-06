@@ -9,7 +9,7 @@ Llegeix dades/temes.json (mapa tema → pàgina) i, per a cada pàgina que exist
     de més fàcil a més difícil, entre <!-- PAU:inici --> i <!-- PAU:fi -->;
   - hi posa enllaços als problemes d'altres pàgines que tenen aquell tema com a secundari,
     entre <!-- PAU-ENLLACOS:inici --> i <!-- PAU-ENLLACOS:fi -->;
-  - hi incrusta l'estil del bloc (eines/plantilles/pau.css).
+  - hi incrusta l'estil i el codi del filtre (eines/plantilles/pau.css i pau.js).
 Si la pàgina encara no té les marques, els blocs s'afegeixen al final de la secció
 indicada a temes.json («seccio», per defecte «exercicis»).
 Als temes sense pàgina no hi fa res: només diu quants problemes tenen preparats.
@@ -152,12 +152,18 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
 
 
 def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
+    compte = {k: sum(1 for p in probs if nivell(p['dificultat']) == k) for k in NIVELLS}
+    botons = [f'<button type="button" data-f="0" aria-pressed="true">Tots<small>{len(probs)}</small></button>']
+    botons += [f'<button type="button" data-f="{k}" aria-pressed="false" title="{v[1]}">{v[0]}<small>{compte[k]}</small></button>'
+               for k, v in NIVELLS.items()]
     h = ['<div class="exgroup" id="pau">',
          '<h3><span class="stars">PAU</span>Problemes de les PAU</h3>',
          f'<p class="lead">{len(probs)} problemes de les PAU de Catalunya, ordenats de més fàcil a més difícil. '
          'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció. '
          'Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d\'acord amb '
-         'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>']
+         'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>',
+         '<div class="pau-filtre" role="group" aria-label="Filtra per nivell"><span>Nivell:</span>' + ''.join(botons) + '</div>',
+         '<p class="pau-buit" hidden>No hi ha cap problema d\'aquest nivell.</p>']
     h += [html_problema(p, i + 1, mapa, pagina) for i, p in enumerate(probs)]
     h.append('</div>')
     return '\n'.join(h)
@@ -206,7 +212,7 @@ def main(prova: bool) -> None:
     per_clau = {}
     for p in probs:
         per_clau.setdefault(clau_principal(p, TEMES), []).append(p)
-    css = (PLANT / 'pau.css').read_text(encoding='utf-8')
+    css, js = (PLANT / 'pau.css').read_text(encoding='utf-8'), (PLANT / 'pau.js').read_text(encoding='utf-8')
     comptes, sense_pagina = {}, []
     for clau, info in mapa.items():
         ps = sorted(per_clau.get(clau, []), key=lambda p: (p['dificultat'], -p['any'], p['id']))
@@ -234,7 +240,7 @@ def main(prova: bool) -> None:
         t = substitueix(t0, 'PAU', bloc_problemes(ps, mapa, pagina) if ps else '', seccio)
         t = substitueix(t, 'PAU-ENLLACOS', bloc_enllacos(enllacos), seccio)
         t = incrusta(t, 'style', 'pau-css', css, '</head>')
-        t = re.sub(r'\s*<script id="pau-js">.*?</script>', '', t, flags=re.S)  # ja no hi ha filtre per nivell
+        t = incrusta(t, 'script', 'pau-js', js, '</body>')
         comptes[info['pagina']] = len(ps)
         canvi = t != t0
         if canvi and not prova:
