@@ -59,10 +59,10 @@
   "puntuacio": {
     "total": 2.5,
     "apartats_a_l_enunciat": true,
-    "nota": "L'enunciat dona 1,25 punts a cada apartat; la pauta en detalla el repartiment i accepta l'equació amb sinus (φ = π/2) o amb cosinus (φ = 0)."
+    "nota": "L'enunciat dona 1,25 punts a cada apartat; la pauta en detalla el repartiment i accepta l'equació amb sinus (φ₀ = π/2) o amb cosinus (φ₀ = 0)."
   },
   "enunciat": {
-    "intro": "<p>Un bloc de 2 kg reposa lligat a una molla (<i>k</i> = 300 N/m, longitud natural 30 cm) que per l'altra banda està fixada a una paret. Estirem el bloc cap a la dreta fins que la molla fa 45 cm de llarg i el deixem anar, i el bloc comença a oscil·lar al voltant de la posició d'equilibri. El fregament amb el terra és negligible.</p>",
+    "intro": "<p>Un bloc de massa 2 kg, que inicialment es troba en repòs, està lligat a l’extrem d’una molla de constant elàstica 300 N/m i de longitud natural 30 cm. Per l’altre extrem, la molla està unida a una paret. Desplacem el bloc cap a la dreta fins que la molla assoleix una longitud total de 45 cm i el deixem anar, de manera que el bloc es posa a oscil·lar al voltant de la posició d’equilibri. La fricció entre el terra i el bloc és negligible.</p>",
     "figures": [
       "fig1"
     ],
@@ -70,12 +70,12 @@
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Trobeu l'amplitud i el període de l'oscil·lació, i escriviu l'equació del moviment."
+        "text": "Determineu l’amplitud i el període de l’oscil·lació. Escriviu l’equació del moviment."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Dibuixeu a la quadrícula com varien amb el temps l'energia mecànica, l'energia cinètica i l'energia potencial al llarg d'un període.",
+        "text": "Representeu en la quadrícula adjunta l’evolució de l’energia mecànica, de l’energia cinètica i de l’energia potencial en funció del temps durant un període.",
         "figures": [
           "fig2"
         ]
@@ -115,15 +115,15 @@
         },
         {
           "titol": "Forma general",
-          "html": "L'elongació d'un MHS és <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ)."
+          "html": "L'elongació d'un MHS és <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>)."
         },
         {
           "titol": "Fase inicial",
-          "html": "A <i>t</i> = 0 el bloc és a l'extrem positiu, <i>x</i>(0) = <i>A</i>: <i>A</i> = <i>A</i>·sin φ → sin φ = 1 → φ = π/2 rad."
+          "html": "A <i>t</i> = 0 el bloc és a l'extrem positiu, <i>x</i>(0) = <i>A</i>: <i>A</i> = <i>A</i>·sin φ<sub>0</sub> → sin φ<sub>0</sub> = 1 → φ<sub>0</sub> = π/2 rad."
         },
         {
           "titol": "Equació del moviment",
-          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,15·sin(12,2·<i>t</i> + π/2)</span>, amb <i>x</i> en m i <i>t</i> en s. Si es parteix de <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ), la condició inicial dona cos φ = 1 → φ = 0, i l'equació és la mateixa: <i>x</i>(<i>t</i>) = 0,15·cos(12,2·<i>t</i>)."
+          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,15·sin(12,2·<i>t</i> + π/2)</span>, amb <i>x</i> en m i <i>t</i> en s. Si es parteix de <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ<sub>0</sub>), la condició inicial dona cos φ<sub>0</sub> = 1 → φ<sub>0</sub> = 0, i l'equació és la mateixa: <i>x</i>(<i>t</i>) = 0,15·cos(12,2·<i>t</i>)."
         }
       ],
       "pauta": [
@@ -166,7 +166,7 @@
         },
         {
           "titol": "Energia potencial",
-          "html": "<i>E</i><sub>p</sub> = ½·<i>k</i>·<i>x</i><sup>2</sup> = ½·300·0,15<sup>2</sup>·cos<sup>2</sup>(12,2·<i>t</i>) = <span class=\"res\">3,38·cos<sup>2</sup>(12,2·<i>t</i>) J</span>. A cada instant <i>E</i><sub>c</sub> + <i>E</i><sub>p</sub> = 3,38 J."
+          "html": "<i>U</i><sub>k</sub> = ½·<i>k</i>·<i>x</i><sup>2</sup> = ½·300·0,15<sup>2</sup>·cos<sup>2</sup>(12,2·<i>t</i>) = <span class=\"res\">3,38·cos<sup>2</sup>(12,2·<i>t</i>) J</span>. A cada instant <i>E</i><sub>c</sub> + <i>U</i><sub>k</sub> = 3,38 J."
         },
         {
           "titol": "Gràfica",
@@ -258,7 +258,7 @@
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": [
-      "La pauta escriu v(t) = 1,84·cos(12,2t), E_c = 3,38·cos²(12,2t) J i U = 3,38·sin²(12,2t) J, cosa que no és coherent amb l'equació x(t) = 0,15·sin(12,2t + π/2) que dona ella mateixa: a t = 0 el bloc és en repòs a l'extrem, de manera que E_c(0) = 0. Aquí es dona v(t) = −1,84·sin(12,2t) m/s, E_c = 3,38·sin²(12,2t) J i E_p = 3,38·cos²(12,2t) J, que és el que mostra la gràfica de la mateixa pauta (energia potencial màxima a t = 0). Els valors numèrics (3,38 J, 1,84 m/s) coincideixen."
+      "La pauta escriu v(t) = 1,84·cos(12,2t), E_c = 3,38·cos²(12,2t) J i U_k = 3,38·sin²(12,2t) J, cosa que no és coherent amb l'equació x(t) = 0,15·sin(12,2t + π/2) que dona ella mateixa: a t = 0 el bloc és en repòs a l'extrem, de manera que E_c(0) = 0. Aquí es dona v(t) = −1,84·sin(12,2t) m/s, E_c = 3,38·sin²(12,2t) J i U_k = 3,38·cos²(12,2t) J, que és el que mostra la gràfica de la mateixa pauta (energia potencial màxima a t = 0). Els valors numèrics (3,38 J, 1,84 m/s) coincideixen."
     ]
   }
 }

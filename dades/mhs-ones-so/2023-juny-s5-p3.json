@@ -49,7 +49,7 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Un cos de massa 2 kg, lligat a l'extrem d'una molla, fa un moviment harmònic simple. La gràfica següent mostra com canvia la seva posició <i>x</i> amb el temps.</p>",
+    "intro": "<p>Una massa de 2 kg està unida a una molla i oscil·la amb un moviment harmònic simple. La gràfica següent mostra l’evolució de la posició de la massa en funció del temps.</p>",
     "figures": [
       "fig1"
     ],
@@ -57,12 +57,12 @@
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Llegint la gràfica, trobeu l'amplitud i el període de l'oscil·lació, i a partir d'aquí trobeu quant val <i>k</i>. Després escriviu <i>x</i>(<i>t</i>) justificant d'on surt cada paràmetre."
+        "text": "A partir de la gràfica, determineu l’amplitud, el període del moviment i la constant elàstica de la molla. Escriviu l’equació del moviment <i>x</i>(<i>t</i>). Indiqueu clarament com determineu cadascun dels paràmetres."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Escriviu la velocitat en funció del temps i dibuixeu-la a la quadrícula de sota. Indiqueu en quins instants l'acceleració és zero i en quins intervals és positiva o negativa. Raoneu les respostes.",
+        "text": "Quina és l’expressió de la velocitat en funció del temps? Representeu en la quadrícula adjunta la velocitat en funció del temps. Indiqueu els punts on l’acceleració és nul·la i les regions on l’acceleració és positiva o negativa. Justifiqueu les respostes.",
         "figures": [
           "fig2"
         ]
@@ -102,11 +102,11 @@
         },
         {
           "titol": "Forma de l'equació",
-          "html": "Escrivim el moviment amb la funció sinus: <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ)."
+          "html": "Escrivim el moviment amb la funció sinus: <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>)."
         },
         {
           "titol": "Fase inicial",
-          "html": "A la gràfica, <i>x</i>(0) = 0, per tant 0 = <i>A</i>·sin φ, que té dues solucions: φ = 0 o φ = π rad. Per decidir, mirem un instant conegut: a <i>t</i> = 1 s la gràfica dona <i>x</i> = +2,4 m.<br>Amb φ = 0: <i>x</i>(1) = 2,4·sin(π/2) = +2,4 m, que coincideix.<br>Amb φ = π: <i>x</i>(1) = 2,4·sin(π/2 + π) = −2,4 m, que no coincideix.<br>Per tant, <span class=\"res\">φ = 0</span>."
+          "html": "A la gràfica, <i>x</i>(0) = 0, per tant 0 = <i>A</i>·sin φ<sub>0</sub>, que té dues solucions: φ<sub>0</sub> = 0 o φ<sub>0</sub> = π rad. Per decidir, mirem un instant conegut: a <i>t</i> = 1 s la gràfica dona <i>x</i> = +2,4 m.<br>Amb φ<sub>0</sub> = 0: <i>x</i>(1) = 2,4·sin(π/2) = +2,4 m, que coincideix.<br>Amb φ<sub>0</sub> = π: <i>x</i>(1) = 2,4·sin(π/2 + π) = −2,4 m, que no coincideix.<br>Per tant, <span class=\"res\">φ<sub>0</sub> = 0</span>."
         },
         {
           "titol": "Equació del moviment",
@@ -128,7 +128,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Plantejar l'equació general del MHS, x(t) = A·sin(ωt + φ) (o amb cosinus)."
+          "que": "Plantejar l'equació general del MHS, x(t) = A·sin(ωt + φ<sub>0</sub>) (o amb cosinus)."
         },
         {
           "punts": 0.2,
@@ -145,7 +145,7 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·ω·cos(ω<i>t</i> + φ). Amb els valors, <i>A</i>·ω = 2,4·π/2 = 3,77 m/s i <span class=\"res\"><i>v</i>(<i>t</i>) = 3,77·cos(π<i>t</i>/2) m/s</span>, amb <i>t</i> en s."
+          "html": "Derivem la posició respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·ω·cos(ω<i>t</i> + φ<sub>0</sub>). Amb els valors, <i>A</i>·ω = 2,4·π/2 = 3,77 m/s i <span class=\"res\"><i>v</i>(<i>t</i>) = 3,77·cos(π<i>t</i>/2) m/s</span>, amb <i>t</i> en s."
         },
         {
           "titol": "Gràfica",
@@ -215,7 +215,7 @@
     {
       "apartat": "a",
       "clau": "phi",
-      "text": "φ = 0",
+      "text": "φ₀ = 0",
       "valor": 0,
       "pauta": 0
     },

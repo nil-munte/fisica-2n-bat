@@ -45,7 +45,7 @@
       "descripcio": "velocitat angular del disc"
     },
     {
-      "simbol": "r",
+      "simbol": "A",
       "valor": "19",
       "unitat": "cm",
       "descripcio": "distància del centre de la massa del disc al centre del disc"
@@ -57,7 +57,7 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat i resta 0,25 punts si l'escala de la gràfica no és correcta."
   },
   "enunciat": {
-    "intro": "<p>En un experiment de laboratori hi ha dues masses que es mouen de manera independent. Una massa de 0,5 kg penja d'una molla vertical. L'altra està fixada a un disc vertical que gira amb una velocitat angular de 6,41 rad/s, amb el seu centre a 19 cm del centre del disc. Il·luminem totes dues masses des d'un costat i veiem que les seves ombres fan exactament el mateix moviment harmònic simple. Per aconseguir-ho, a l'instant <i>t</i> = 0 s deixem anar la massa de la molla des de la seva posició més baixa, just quan la massa del disc passa pel punt més baix de la volta.</p>",
+    "intro": "<p>Al laboratori dissenyem un experiment amb dues masses que fan moviments independents. La primera massa és de 0,5 kg i penja d’una molla vertical. La segona massa es troba subjectada a un disc vertical que gira a una velocitat angular de 6,41 rad/s i el centre d’aquesta massa és a una distància de 19 cm del centre del disc. Ambdues masses s’il·luminen lateralment i s’observa que les seves ombres segueixen exactament el mateix moviment harmònic simple. Per a aconseguir-ho, deixem anar des de baix la massa de la molla just a <i>t</i> = 0 s, moment en què la massa del disc també passa pel punt més baix de la rotació.</p>",
     "figures": [
       "fig1"
     ],
@@ -65,12 +65,12 @@
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Escriviu com varia amb el temps la posició vertical de les ombres. Trobeu quant val la constant elàstica de la molla i quina energia mecànica té aquesta oscil·lació."
+        "text": "Escriviu l’equació de la posició vertical de les ombres respecte al temps. Trobeu la constant elàstica de la molla i l’energia mecànica del moviment harmònic simple."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Per a la massa penjada de la molla, trobeu l'equació de la velocitat i l'energia cinètica en funció del temps. Dibuixeu a la quadrícula l'energia mecànica, l'energia potencial i l'energia cinètica d'aquesta massa en funció de la seva posició vertical.",
+        "text": "Calculeu l’equació de la velocitat i l’energia cinètica respecte al temps de la massa que penja de la molla. Representeu en la quadrícula adjunta l’energia mecànica, l’energia potencial i l’energia cinètica en funció de la posició vertical per a la massa que penja de la molla.",
         "figures": [
           "fig2"
         ]
@@ -80,7 +80,7 @@
   },
   "figures": {
     "fig1": {
-      "svg": "<svg viewBox=\"0 0 545 284\" role=\"img\" aria-label=\"Esquema: una làmpada il·lumina lateralment un disc vertical que gira amb una massa a 19 cm del centre i una massa de 0,5 kg penjada d'una molla vertical; les ombres de totes dues masses es projecten a la mateixa altura sobre una pantalla.\"><line x1=\"62.0\" y1=\"70.0\" x2=\"470.0\" y2=\"70.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,70.0 463.6,72.9 463.6,67.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"110.0\" x2=\"470.0\" y2=\"110.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,110.0 463.6,112.9 463.6,107.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"150.0\" x2=\"470.0\" y2=\"150.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,150.0 463.6,152.9 463.6,147.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"190.0\" x2=\"470.0\" y2=\"190.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,190.0 463.6,192.9 463.6,187.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"232.0\" x2=\"470.0\" y2=\"232.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,232.0 463.6,234.9 463.6,229.1\" fill=\"var(--grid2)\"/><rect x=\"14\" y=\"128\" width=\"26\" height=\"44\" rx=\"4\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><circle cx=\"46\" cy=\"150\" r=\"11\" fill=\"var(--ep)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--muted)\" >llum</text><circle cx=\"185\" cy=\"150\" r=\"82\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><circle cx=\"185\" cy=\"150\" r=\"3\" fill=\"var(--ink)\"/><line x1=\"185\" y1=\"150\" x2=\"185\" y2=\"222\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"185\" cy=\"222\" r=\"10\" fill=\"var(--x)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"191.0\" y=\"192.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" >r = 19 cm</text><path d=\"M103.6,103.0 A94,94 0 0 1 232.0,68.6\" fill=\"none\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><polygon points=\"232.0,68.6 224.0,67.8 227.3,62.1\" fill=\"var(--f)\"/><text x=\"185.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--f)\" >ω = 6,41 rad/s</text><line x1=\"300\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><line x1=\"304\" y1=\"30\" x2=\"296\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"317\" y1=\"30\" x2=\"309\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"330\" y1=\"30\" x2=\"322\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"343\" y1=\"30\" x2=\"335\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"356\" y1=\"30\" x2=\"348\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"369\" y1=\"30\" x2=\"361\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><polyline points=\"340,30 340,42 351,48.7 329,62.0 351,75.3 329,88.7 351,102.0 329,115.3 351,128.7 329,142.0 351,155.3 329,168.7 351,182.0 329,195.3 340,202 340,214\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><circle cx=\"340\" cy=\"226\" r=\"12\" fill=\"var(--y)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"358.0\" y=\"230.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" >0,5 kg</text><rect x=\"476\" y=\"24\" width=\"10\" height=\"236\" fill=\"var(--grid2)\" stroke=\"var(--muted)\" stroke-width=\"1\"/><ellipse cx=\"481\" cy=\"226\" rx=\"5\" ry=\"11\" fill=\"var(--ink)\" opacity=\"0.75\"/><text x=\"481.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\" >pantalla</text><text x=\"472.0\" y=\"276.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\" >ombres</text><line x1=\"512.0\" y1=\"226.0\" x2=\"512.0\" y2=\"120.0\" stroke=\"var(--ink)\" stroke-width=\"1.4\" /><polygon points=\"512.0,120.0 514.9,126.4 509.1,126.4\" fill=\"var(--ink)\"/><text x=\"520.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">y</text><line x1=\"505\" y1=\"150\" x2=\"519\" y2=\"150\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"522.0\" y=\"154.0\" text-anchor=\"start\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\" >0</text></svg>",
+      "svg": "<svg viewBox=\"0 0 545 284\" role=\"img\" aria-label=\"Esquema: una làmpada il·lumina lateralment un disc vertical que gira amb una massa a 19 cm del centre i una massa de 0,5 kg penjada d'una molla vertical; les ombres de totes dues masses es projecten a la mateixa altura sobre una pantalla.\"><line x1=\"62.0\" y1=\"70.0\" x2=\"470.0\" y2=\"70.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,70.0 463.6,72.9 463.6,67.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"110.0\" x2=\"470.0\" y2=\"110.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,110.0 463.6,112.9 463.6,107.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"150.0\" x2=\"470.0\" y2=\"150.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,150.0 463.6,152.9 463.6,147.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"190.0\" x2=\"470.0\" y2=\"190.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,190.0 463.6,192.9 463.6,187.1\" fill=\"var(--grid2)\"/><line x1=\"62.0\" y1=\"232.0\" x2=\"470.0\" y2=\"232.0\" stroke=\"var(--grid2)\" stroke-width=\"1.2\" stroke-dasharray=\"6 5\"/><polygon points=\"470.0,232.0 463.6,234.9 463.6,229.1\" fill=\"var(--grid2)\"/><rect x=\"14\" y=\"128\" width=\"26\" height=\"44\" rx=\"4\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><circle cx=\"46\" cy=\"150\" r=\"11\" fill=\"var(--ep)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"30.0\" y=\"192.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--muted)\" >llum</text><circle cx=\"185\" cy=\"150\" r=\"82\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><circle cx=\"185\" cy=\"150\" r=\"3\" fill=\"var(--ink)\"/><line x1=\"185\" y1=\"150\" x2=\"185\" y2=\"222\" stroke=\"var(--muted)\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"185\" cy=\"222\" r=\"10\" fill=\"var(--x)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"191.0\" y=\"192.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" >A = 19 cm</text><path d=\"M103.6,103.0 A94,94 0 0 1 232.0,68.6\" fill=\"none\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><polygon points=\"232.0,68.6 224.0,67.8 227.3,62.1\" fill=\"var(--f)\"/><text x=\"185.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--f)\" >ω = 6,41 rad/s</text><line x1=\"300\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><line x1=\"304\" y1=\"30\" x2=\"296\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"317\" y1=\"30\" x2=\"309\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"330\" y1=\"30\" x2=\"322\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"343\" y1=\"30\" x2=\"335\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"356\" y1=\"30\" x2=\"348\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"369\" y1=\"30\" x2=\"361\" y2=\"22\" stroke=\"var(--muted)\" stroke-width=\"1\"/><polyline points=\"340,30 340,42 351,48.7 329,62.0 351,75.3 329,88.7 351,102.0 329,115.3 351,128.7 329,142.0 351,155.3 329,168.7 351,182.0 329,195.3 340,202 340,214\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><circle cx=\"340\" cy=\"226\" r=\"12\" fill=\"var(--y)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"358.0\" y=\"230.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" >0,5 kg</text><rect x=\"476\" y=\"24\" width=\"10\" height=\"236\" fill=\"var(--grid2)\" stroke=\"var(--muted)\" stroke-width=\"1\"/><ellipse cx=\"481\" cy=\"226\" rx=\"5\" ry=\"11\" fill=\"var(--ink)\" opacity=\"0.75\"/><text x=\"481.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\" >pantalla</text><text x=\"472.0\" y=\"276.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\" >ombres</text><line x1=\"512.0\" y1=\"226.0\" x2=\"512.0\" y2=\"120.0\" stroke=\"var(--ink)\" stroke-width=\"1.4\" /><polygon points=\"512.0,120.0 514.9,126.4 509.1,126.4\" fill=\"var(--ink)\"/><text x=\"520.0\" y=\"128.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">y</text><line x1=\"505\" y1=\"150\" x2=\"519\" y2=\"150\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><text x=\"522.0\" y=\"154.0\" text-anchor=\"start\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\" >0</text></svg>",
       "peu": "Esquema del muntatge (dibuix propi; l'examen mostra una fotografia de l'experiment)."
     },
     "fig2": {
@@ -98,7 +98,7 @@
       "passos": [
         {
           "titol": "L'ombra com a projecció",
-          "html": "Prenem l'eix <i>y</i> vertical, amb l'origen a l'altura del centre del disc (que coincideix amb la posició d'equilibri de la massa de la molla) i positiu cap amunt. Si θ és l'angle que forma el radi amb la vertical, l'altura de la massa del disc respecte del centre és la projecció del radi sobre l'eix vertical, <i>y</i> = <i>A</i>·cos θ. L'angle creix uniformement amb el temps, θ = ω<i>t</i> + φ, de manera que <i>y</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ): l'ombra fa un MHS."
+          "html": "Prenem l'eix <i>y</i> vertical, amb l'origen a l'altura del centre del disc (que coincideix amb la posició d'equilibri de la massa de la molla) i positiu cap amunt. Si θ és l'angle que forma el radi amb la vertical, l'altura de la massa del disc respecte del centre és la projecció del radi sobre l'eix vertical, <i>y</i> = <i>A</i>·cos θ. L'angle creix uniformement amb el temps, θ = ω<i>t</i> + φ<sub>0</sub>, de manera que <i>y</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ<sub>0</sub>): l'ombra fa un MHS."
         },
         {
           "titol": "Paràmetres",
@@ -106,7 +106,7 @@
         },
         {
           "titol": "Equació de les ombres",
-          "html": "−<i>A</i> = <i>A</i>·cos φ → cos φ = −1 → φ = π rad. Per tant, <span class=\"res\"><i>y</i>(<i>t</i>) = 0,19·cos(6,41<i>t</i> + π) m</span>, o, el que és el mateix, <i>y</i>(<i>t</i>) = −0,19·cos(6,41<i>t</i>) m, amb <i>t</i> en s. (Si s'agafa l'eix positiu cap avall, <i>y</i>(0) = +<i>A</i>, φ = 0 i <i>y</i>(<i>t</i>) = 0,19·cos(6,41<i>t</i>) m.)"
+          "html": "−<i>A</i> = <i>A</i>·cos φ<sub>0</sub> → cos φ<sub>0</sub> = −1 → φ<sub>0</sub> = π rad. Per tant, <span class=\"res\"><i>y</i>(<i>t</i>) = 0,19·cos(6,41<i>t</i> + π) m</span>, o, el que és el mateix, <i>y</i>(<i>t</i>) = −0,19·cos(6,41<i>t</i>) m, amb <i>t</i> en s. (Si s'agafa l'eix positiu cap avall, <i>y</i>(0) = +<i>A</i>, φ<sub>0</sub> = 0 i <i>y</i>(<i>t</i>) = 0,19·cos(6,41<i>t</i>) m.)"
         },
         {
           "titol": "Constant elàstica",
@@ -120,7 +120,7 @@
       "pauta": [
         {
           "punts": 0.25,
-          "que": "Justificar que l'altura de l'ombra és la projecció vertical del radi que gira, amb θ = ωt + φ, i escriure y(t) = A·cos(ωt + φ) (o amb sinus)."
+          "que": "Justificar que l'altura de l'ombra és la projecció vertical del radi que gira, amb θ = ωt + φ<sub>0</sub>, i escriure y(t) = A·cos(ωt + φ<sub>0</sub>) (o amb sinus)."
         },
         {
           "punts": 0.25,
@@ -145,7 +145,7 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>y</i>/d<i>t</i> = −<i>A</i>·ω·sin(ω<i>t</i> + φ) = −0,19·6,41·sin(6,41<i>t</i> + π) → <span class=\"res\"><i>v</i>(<i>t</i>) = −1,218·sin(6,41<i>t</i> + π) m/s</span>, amb <i>t</i> en s."
+          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>y</i>/d<i>t</i> = −<i>A</i>·ω·sin(ω<i>t</i> + φ<sub>0</sub>) = −0,19·6,41·sin(6,41<i>t</i> + π) → <span class=\"res\"><i>v</i>(<i>t</i>) = −1,218·sin(6,41<i>t</i> + π) m/s</span>, amb <i>t</i> en s."
         },
         {
           "titol": "Energia cinètica",
@@ -198,7 +198,7 @@
     {
       "apartat": "a",
       "clau": "phi",
-      "text": "φ = π rad (eix cap amunt)",
+      "text": "φ₀ = π rad (eix cap amunt)",
       "valor": 3.1416,
       "pauta": 3.1416
     },

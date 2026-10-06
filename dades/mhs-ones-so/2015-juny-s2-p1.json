@@ -31,25 +31,25 @@
   },
   "dades": [
     {
-      "simbol": "m₁",
+      "simbol": "m",
       "valor": "1,58",
       "unitat": "g",
       "descripcio": "massa del primer insecte"
     },
     {
-      "simbol": "f₁",
+      "simbol": "f",
       "valor": "12",
       "unitat": "Hz",
       "descripcio": "freqüència de vibració amb el primer insecte"
     },
     {
-      "simbol": "T₂",
+      "simbol": "T",
       "valor": "0,12",
       "unitat": "s",
       "descripcio": "període amb el segon insecte"
     },
     {
-      "simbol": "A₂",
+      "simbol": "A",
       "valor": "2,0",
       "unitat": "mm",
       "descripcio": "amplitud de l'oscil·lació del segon insecte"
@@ -61,18 +61,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Les aranyes tenen a la punta de les potes uns receptors que els permeten notar les vibracions que fa un insecte quan queda enganxat a la teranyina. Suposeu que l'insecte atrapat es mou com un oscil·lador amb moviment harmònic simple (MHS). S'ha observat que un insecte d'1,58 g enganxat en una teranyina la fa vibrar amb una freqüència de 12 Hz.</p>",
+    "intro": "<p>Les aranyes tenen uns òrgans sensibles en els extrems de les potes que els permeten detectar les vibracions que produeixen els insectes que queden atrapats a la seva teranyina. Considereu que en una teranyina el moviment dels insectes és equivalent al que tindrien en un sistema que es mogués amb un moviment harmònic simple (MHS). Hem observat que un insecte de massa 1,58 g atrapat en una teranyina produeix una vibració de 12 Hz.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Calculeu la constant elàstica de la teranyina."
+        "text": "Calculeu la constant elàstica d’aquesta teranyina."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Un altre insecte queda atrapat a la mateixa teranyina i hi oscil·la amb un període de 0,12 s. Quina massa té? Si l'amplitud de la seva oscil·lació és de 2,0 mm, quin és el valor absolut de l'acceleració màxima que té mentre es mou a la teranyina?"
+        "text": "Determineu la massa d’un insecte que, en quedar atrapat a la teranyina, té un període d’oscil·lació de 0,12 s. Calculeu el valor absolut de l’acceleració màxima de l’insecte, durant el temps en què es mou a la teranyina, si l’amplitud de l’oscil·lació és de 2,0 mm."
       }
     ],
     "dades_text": ""
@@ -88,7 +88,7 @@
         },
         {
           "titol": "Segona llei de Newton",
-          "html": "L'única força que cal considerar és la recuperadora de la teranyina, <i>F</i> = −<i>k</i>·<i>x</i>. Aplicant Σ<i>F</i> = <i>m</i>·<i>a</i>: −<i>k</i>·<i>x</i>(<i>t</i>) = <i>m</i>·<i>a</i>(<i>t</i>)."
+          "html": "L'única força que cal considerar és la recuperadora de la teranyina, <i>F</i><sub>recup</sub> = −<i>k</i>·<i>x</i>. Aplicant Σ<i>F</i><sub>recup</sub> = <i>m</i>·<i>a</i>: −<i>k</i>·<i>x</i>(<i>t</i>) = <i>m</i>·<i>a</i>(<i>t</i>)."
         },
         {
           "titol": "Relació entre k i ω",
@@ -106,7 +106,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Plantejar la segona llei de Newton amb la força recuperadora, ΣF = m·a."
+          "que": "Plantejar la segona llei de Newton amb la força recuperadora, ΣF<sub>recup</sub> = m·a."
         },
         {
           "punts": 0.2,
@@ -145,7 +145,7 @@
         },
         {
           "punts": 0.4,
-          "que": "Justificar que l'acceleració és màxima quan el sinus val 1, |a_màx| = ω²·A."
+          "que": "Justificar que l'acceleració és màxima quan el sinus val 1, |a<sub>màx</sub>| = ω²·A."
         },
         {
           "punts": 0.3,

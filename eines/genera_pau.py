@@ -113,7 +113,7 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     for a in e['apartats']:
         figs = ''.join(figura(p, f) for f in a.get('figures', []))
         h.append(f'<li><span class="lab">{etiqueta_apartat(a["id"])}</span>{a["text"]} '
-                 f'<span class="pts">[{punts(a["punts"])}]</span>{figs}</li>')
+                 f'<span class="pts">[{punts(a["punts"])}{"" if p["puntuacio"].get("apartats_a_l_enunciat") else ", segons la pauta"}]</span>{figs}</li>')
     h.append('</ol>')
     if e.get('dades_text'):
         h.append(f'<p class="pau-dades">{e["dades_text"]}</p>')
@@ -158,7 +158,9 @@ def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
     h = ['<div class="exgroup" id="pau">',
          '<h3><span class="stars">PAU</span>Problemes de les PAU</h3>',
          f'<p class="lead">{len(probs)} problemes de les PAU de Catalunya, ordenats de més fàcil a més difícil. '
-         'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció.</p>',
+         'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció. '
+         'Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d\'acord amb '
+         'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>',
          '<div class="pau-filtre" role="group" aria-label="Filtra per nivell"><span>Nivell:</span>' + ''.join(botons) + '</div>',
          '<p class="pau-buit" hidden>No hi ha cap problema d\'aquest nivell.</p>']
     h += [html_problema(p, i + 1, mapa, pagina) for i, p in enumerate(probs)]

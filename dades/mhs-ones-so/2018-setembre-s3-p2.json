@@ -32,7 +32,7 @@
   },
   "dades": [
     {
-      "simbol": "—",
+      "simbol": "x(t)",
       "valor": "gràfica",
       "unitat": "",
       "descripcio": "gràfica posició-temps del MHS (x entre −0,02 m i 0,02 m; t entre 0 i 0,08 s)"
@@ -44,7 +44,7 @@
     "nota": "L'enunciat dona 1 punt a l'apartat a i reparteix l'apartat b en 0,3 + 0,3 + 0,4 punts."
   },
   "enunciat": {
-    "intro": "<p>Un objecte oscil·la amb moviment harmònic simple (MHS). La figura en mostra la posició en funció del temps.</p>",
+    "intro": "<p>La figura mostra la gràfica posició-temps d’un objecte que descriu un moviment harmònic simple (MHS).</p>",
     "figures": [
       "fig1"
     ],
@@ -52,7 +52,7 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Trobeu l'amplitud i la freqüència del moviment i escriviu-ne l'equació <i>x</i>(<i>t</i>), amb totes les unitats. Dibuixeu també la gràfica <i>x</i>-<i>t</i> d'un MHS que tingui la mateixa amplitud però la meitat de freqüència, i indiqueu-hi amb claredat les escales dels eixos.",
+        "text": "Determineu l’amplitud i la freqüència i escriviu l’equació del moviment <i>x</i>(<i>t</i>), incloent-hi totes les unitats. Representeu la gràfica <i>x</i>-<i>t</i> d’un moviment harmònic simple (MHS) que tingui la mateixa amplitud però la meitat de freqüència (les escales dels eixos han d’estar indicades clarament).",
         "figures": [
           "fig2"
         ]
@@ -60,7 +60,7 @@
       {
         "id": "b",
         "punts": 1,
-        "text": "Quan l'objecte vibra, produeix una ona sonora en el medi que l'envolta. Expliqueu què passa amb la freqüència i amb la longitud d'ona d'aquest so en cadascun dels casos següents:<br>— L'ona rebota en una superfície. [0,3 punts]<br>— L'ona entra a l'aigua des de l'aire; a l'aigua el so viatja més ràpid. [0,3 punts]<br>— La font del so es posa en moviment i s'acosta a nosaltres. [0,4 punts]"
+        "text": "Les vibracions de l’objecte generen una ona sonora en el medi que l’envolta. Quins efectes sobre la freqüència i la longitud d’ona d’aquesta ona sonora tindran els canvis següents?<br>— L’ona es reflecteix en una superfície. [0,3 punts]<br>— L’ona passa de l’aire a l’aigua (on la velocitat del so és més gran). [0,3 punts]<br>— El focus sonor es posa en moviment en direcció a nosaltres. [0,4 punts]"
       }
     ],
     "dades_text": ""
@@ -93,7 +93,7 @@
         },
         {
           "titol": "Equació general",
-          "html": "Escrivim <i>x</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i> + φ). A <i>t</i> = 0 l'objecte és a <i>x</i> = +<i>A</i>, de manera que amb el cosinus la fase inicial és φ = 0."
+          "html": "Escrivim <i>x</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i> + θ<sub>0</sub>). A <i>t</i> = 0 l'objecte és a <i>x</i> = +<i>A</i>, de manera que amb el cosinus la fase inicial és θ<sub>0</sub> = 0."
         },
         {
           "titol": "Equació amb valors",
@@ -118,7 +118,7 @@
         },
         {
           "punts": 0.1,
-          "que": "Escriure la forma general x(t) = A·cos(2πf·t + φ)."
+          "que": "Escriure la forma general x(t) = A·cos(2πf·t + θ<sub>0</sub>)."
         },
         {
           "punts": 0.2,

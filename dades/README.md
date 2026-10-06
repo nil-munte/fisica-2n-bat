@@ -18,7 +18,10 @@ Els PDF oficials són a `fonts/pdf/` (no es publiquen). `pau_fisiAAjl` és l'exa
 
 ## Normes de contingut
 
-- **Enunciat** redactat de nou, amb exactament les mateixes dades, preguntes i puntuacions.
+- **Enunciat** idèntic al de l'examen oficial: transcripció literal (mateixes paraules, dades,
+  símbols i puntuacions). Només es retoca la tipografia: paraules partides a final de línia,
+  «l·l», superíndexs i subíndexs. La Generalitat en permet la reutilització sense alterar-ne el
+  contingut i citant-ne la font (la pàgina ho indica i cada problema enllaça a l'examen).
 - **Figures** redibuixades en SVG propi: mateix muntatge, mateixes dades, mateixes quadrícules i
   escales. Mai una imatge retallada del PDF.
 - **Resolució** amb el mateix mètode, els mateixos passos i els mateixos resultats que la pauta,

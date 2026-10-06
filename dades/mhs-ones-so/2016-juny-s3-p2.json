@@ -61,18 +61,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat. A l'apartat b, la pauta no puntua a part els instants d'oposició de fase: els explica just després de la gràfica, dins dels 0,6 punts que hi assigna."
   },
   "enunciat": {
-    "intro": "<p>Disposem de dues molles iguals. D'una d'elles hi pengem un objecte A de 100 g, que oscil·la amb un període d'1,00 s i una amplitud de 5,00 cm.</p>",
+    "intro": "<p>Tenim dues molles idèntiques. Un objecte A de 100 g que penja d’una de les molles oscil·la amb un període d’1,00 s i amb una amplitud de 5,00 cm.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Volem que la segona molla oscil·li amb la mateixa amplitud però amb una freqüència que sigui el doble de la de la molla d'on penja A. Quina massa hi hem de penjar?"
+        "text": "Volem que l’altra molla oscil·li amb la mateixa amplitud, però amb una freqüència doble que la de la molla de què penja l’objecte A. Quina massa hem de penjar a la segona molla?"
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Deixem anar els dos objectes des del punt més baix de la seva oscil·lació. Representeu en una mateixa gràfica velocitat–temps la velocitat de cada objecte durant els primers 2 s, amb les condicions descrites, i indiqueu-hi clarament les magnituds, les unitats i les escales dels eixos. En quins instants d'aquests 2 s la diferència de fase entre els dos objectes és de π rad?"
+        "text": "Els dos objectes es deixen anar des de l’extrem inferior de l’oscil·lació. Representeu en una gràfica velocitat-temps la velocitat de cadascun dels objectes quan oscil·len durant 2 s en les condicions descrites. En la gràfica heu d’indicar clarament les escales dels eixos, les magnituds i les unitats. Durant els 2 s representats en la gràfica, en quins moments la diferència de fase entre els dos objectes és de π radians?"
       }
     ],
     "dades_text": ""
@@ -111,11 +111,11 @@
         },
         {
           "punts": 0.2,
-          "que": "Obtenir la constant de la molla a partir de l'objecte A, k = ω_A²·m_A = 0,4π² N/m."
+          "que": "Obtenir la constant de la molla a partir de l'objecte A, k = ω<sub>A</sub>²·m<sub>A</sub> = 0,4π² N/m."
         },
         {
           "punts": 0.6,
-          "que": "Calcular la massa de B, m_B = k/ω_B² = 25 g. (Fer-ho directament amb la proporció m_B/m_A = ω_A²/ω_B² val els 0,8 punts dels dos últims passos.)"
+          "que": "Calcular la massa de B, m<sub>B</sub> = k/ω<sub>B</sub>² = 25 g. (Fer-ho directament amb la proporció m<sub>B</sub>/m<sub>A</sub> = ω<sub>A</sub>²/ω<sub>B</sub>² val els 0,8 punts dels dos últims passos.)"
         }
       ]
     },
@@ -124,7 +124,7 @@
       "passos": [
         {
           "titol": "Velocitats màximes",
-          "html": "<i>v</i><sub>A,màx</sub> = <i>A</i>·<i>ω</i><sub>A</sub> = 0,0500·2π = <span class=\"res\">0,31 m/s</span>; <i>v</i><sub>B,màx</sub> = <i>A</i>·<i>ω</i><sub>B</sub> = 0,0500·4π = <span class=\"res\">0,63 m/s</span>."
+          "html": "<i>v</i><sub>A,max</sub> = <i>A</i>·<i>ω</i><sub>A</sub> = 0,0500·2π = <span class=\"res\">0,31 m/s</span>; <i>v</i><sub>B,max</sub> = <i>A</i>·<i>ω</i><sub>B</sub> = 0,0500·4π = <span class=\"res\">0,63 m/s</span>."
         },
         {
           "titol": "Períodes",
@@ -149,7 +149,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Deduir els períodes, T_A = 1 s i T_B = 0,5 s."
+          "que": "Deduir els períodes, T<sub>A</sub> = 1 s i T<sub>B</sub> = 0,5 s."
         },
         {
           "punts": 0.6,
@@ -190,7 +190,7 @@
     {
       "apartat": "b",
       "clau": "vA",
-      "text": "v_A,màx = 0,31 m/s",
+      "text": "v_A,max = 0,31 m/s",
       "valor": 0.314,
       "pauta": 0.31,
       "tol": 0.02
@@ -198,7 +198,7 @@
     {
       "apartat": "b",
       "clau": "vB",
-      "text": "v_B,màx = 0,63 m/s",
+      "text": "v_B,max = 0,63 m/s",
       "valor": 0.628,
       "pauta": 0.63
     },

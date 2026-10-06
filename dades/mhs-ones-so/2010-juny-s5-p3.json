@@ -55,7 +55,7 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>La gràfica següent mostra com canvia l'energia cinètica d'un oscil·lador harmònic segons la seva elongació <i>x</i>.</p>",
+    "intro": "<p>La gràfica següent representa l’energia cinètica d’un oscil·lador harmònic en funció de l’elongació (<i>x</i>).</p>",
     "figures": [
       "fig1"
     ],
@@ -63,12 +63,12 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Indiqueu quant valen l'energia cinètica i l'energia potencial de l'oscil·lador quan es troba a <i>x</i> = 0 m i quan es troba a <i>x</i> = 0,20 m. Trobeu la constant elàstica."
+        "text": "Digueu el valor de l’energia cinètica i de l’energia potencial quan <i>x</i> = 0 m i quan <i>x</i> = 0,20 m. Determineu la constant elàstica."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Si la freqüència amb què vibra l'oscil·lador és (100/2π) Hz, quina és la seva massa?"
+        "text": "Calculeu la massa de l’oscil·lador, si sabem que la freqüència de vibració és (100/2π) Hz."
       }
     ],
     "dades_text": ""
@@ -89,11 +89,11 @@
         },
         {
           "titol": "Conservació de l'energia mecànica",
-          "html": "En un oscil·lador harmònic sense fregament l'energia mecànica <i>E</i> = <i>E</i><sub>c</sub> + <i>E</i><sub>p</sub> és la mateixa a tots els punts. A <i>x</i> = 0 l'energia potencial elàstica <i>E</i><sub>p</sub> = ½<i>k</i><i>x</i><sup>2</sup> és nul·la, de manera que <i>E</i> = 10 J + 0 J = <span class=\"res\">10 J</span>."
+          "html": "En un oscil·lador harmònic sense fregament l'energia mecànica <i>E</i><sub>mec</sub> = <i>E</i><sub>c</sub> + <i>E</i><sub>pot</sub> és la mateixa a tots els punts. A <i>x</i> = 0 l'energia potencial elàstica <i>E</i><sub>pot</sub> = ½<i>k</i><i>x</i><sup>2</sup> és nul·la, de manera que <i>E</i><sub>mec</sub> = 10 J + 0 J = <span class=\"res\">10 J</span>."
         },
         {
           "titol": "Energies potencials",
-          "html": "Per tant <span class=\"res\"><i>E</i><sub>p</sub>(0) = 0 J</span> i, a l'altre punt, <i>E</i><sub>p</sub>(0,20) = <i>E</i> − <i>E</i><sub>c</sub>(0,20) = 10 − 0 = <span class=\"res\">10 J</span>."
+          "html": "Per tant <span class=\"res\"><i>E</i><sub>pot</sub>(0) = 0 J</span> i, a l'altre punt, <i>E</i><sub>pot</sub>(0,20) = <i>E</i><sub>mec</sub> − <i>E</i><sub>c</sub>(0,20) = 10 − 0 = <span class=\"res\">10 J</span>."
         },
         {
           "titol": "Amplitud",
@@ -101,25 +101,25 @@
         },
         {
           "titol": "Constant elàstica",
-          "html": "L'energia potencial màxima és la dels extrems: <i>E</i><sub>p,màx</sub> = ½<i>k</i><i>A</i><sup>2</sup> = <i>E</i>. Aïllem <i>k</i>: <i>k</i> = 2<i>E</i>/<i>A</i><sup>2</sup> = 2·10/0,20<sup>2</sup> = <span class=\"res\">500 N/m</span>."
+          "html": "L'energia potencial màxima és la dels extrems: <i>E</i><sub>pot,màx</sub> = ½<i>k</i><i>A</i><sup>2</sup> = <i>E</i><sub>mec</sub>. Aïllem <i>k</i>: <i>k</i> = 2<i>E</i><sub>mec</sub>/<i>A</i><sup>2</sup> = 2·10/0,20<sup>2</sup> = <span class=\"res\">500 N/m</span>."
         }
       ],
       "pauta": [
         {
           "punts": 0.1,
-          "que": "Llegir a la gràfica Ec(0) = 10 J i Ec(0,20) = 0 J."
+          "que": "Llegir a la gràfica E<sub>c</sub>(0) = 10 J i E<sub>c</sub>(0,20) = 0 J."
         },
         {
           "punts": 0.3,
-          "que": "Donar les energies potencials: Ep(0) = 0 J i Ep(0,20) = 10 J."
+          "que": "Donar les energies potencials: E<sub>pot</sub>(0) = 0 J i E<sub>pot</sub>(0,20) = 10 J."
         },
         {
           "punts": 0.2,
-          "que": "Justificar-ho amb la conservació de l'energia mecànica, E = Ec + Ep = 10 J."
+          "que": "Justificar-ho amb la conservació de l'energia mecànica, E<sub>mec</sub> = E<sub>c</sub> + E<sub>pot</sub> = 10 J."
         },
         {
           "punts": 0.1,
-          "que": "Escriure Ep = ½kx² i identificar l'amplitud A = 0,20 m."
+          "que": "Escriure E<sub>pot</sub> = ½kx² i identificar l'amplitud A = 0,20 m."
         },
         {
           "punts": 0.3,
@@ -163,35 +163,35 @@
     {
       "apartat": "a",
       "clau": "Ec0",
-      "text": "Ec(0) = 10 J",
+      "text": "E_c(0) = 10 J",
       "valor": 10,
       "pauta": 10
     },
     {
       "apartat": "a",
       "clau": "Ec20",
-      "text": "Ec(0,20 m) = 0 J",
+      "text": "E_c(0,20 m) = 0 J",
       "valor": 0,
       "pauta": 0
     },
     {
       "apartat": "a",
       "clau": "Ep0",
-      "text": "Ep(0) = 0 J",
+      "text": "E_pot(0) = 0 J",
       "valor": 0,
       "pauta": 0
     },
     {
       "apartat": "a",
       "clau": "Ep20",
-      "text": "Ep(0,20 m) = 10 J",
+      "text": "E_pot(0,20 m) = 10 J",
       "valor": 10,
       "pauta": 10
     },
     {
       "apartat": "a",
       "clau": "E",
-      "text": "E = 10 J",
+      "text": "E_mec = 10 J",
       "valor": 10,
       "pauta": 10
     },

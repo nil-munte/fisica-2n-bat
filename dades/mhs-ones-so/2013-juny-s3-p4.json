@@ -32,19 +32,19 @@
   },
   "dades": [
     {
-      "simbol": "x<sub>0</sub>",
+      "simbol": "x",
       "valor": "1,00",
       "unitat": "m",
       "descripcio": "posició a l'instant inicial"
     },
     {
-      "simbol": "v<sub>0</sub>",
+      "simbol": "v",
       "valor": "−5,44",
       "unitat": "m/s",
       "descripcio": "velocitat a l'instant inicial"
     },
     {
-      "simbol": "E<sub>c</sub>",
+      "simbol": "E<sub>k</sub>",
       "valor": "12,00",
       "unitat": "J",
       "descripcio": "energia cinètica a l'instant inicial"
@@ -62,18 +62,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Un cos lligat a una molla descriu un moviment harmònic simple. A l'instant inicial es troba a la posició <i>x</i> = 1,00 m i té una velocitat <i>v</i> = −5,44 m/s; en aquest mateix instant, la seva energia cinètica és <i>E</i><sub>c</sub> = 12,00 J i la seva energia potencial és <i>E</i><sub>p</sub> = 4,00 J.</p>",
+    "intro": "<p>Disposem d’una massa lligada a una molla que fa un moviment harmònic simple. Sabem que a l’instant inicial la seva posició i velocitat són <i>x</i> = 1,00 m i <i>v</i> = –5,44 m s<sup>–1</sup>, i que les energies cinètica i potencial en aquest mateix instant són <i>E</i><sub>k</sub> = 12,00 J i <i>E</i><sub>p</sub> = 4,00 J. Calculeu:</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Trobeu la constant de recuperació de la molla, la massa del cos que oscil·la i l'energia mecànica total del sistema."
+        "text": "La constant de recuperació de la molla i el valor de la massa del cos que fa el moviment, així com l’energia mecànica total del sistema."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Trobeu <i>A</i>, ω i la fase inicial φ, i escriviu amb aquests valors l'equació <i>x</i>(<i>t</i>)."
+        "text": "L’amplitud, la freqüència angular i la fase inicial del moviment harmònic que fa la massa. Escriviu l’equació del moviment resultant."
       }
     ],
     "dades_text": ""
@@ -89,17 +89,17 @@
         },
         {
           "titol": "Massa",
-          "html": "L'energia cinètica és <i>E</i><sub>c</sub> = ½<i>m</i><i>v</i><sup>2</sup>: 12,00 = ½·<i>m</i>·5,44<sup>2</sup>, d'on <i>m</i> = 2<i>E</i><sub>c</sub>/<i>v</i><sup>2</sup> = 2·12,00/5,44<sup>2</sup> = <span class=\"res\">0,811 kg</span>."
+          "html": "L'energia cinètica és <i>E</i><sub>k</sub> = ½<i>m</i><i>v</i><sup>2</sup>: 12,00 = ½·<i>m</i>·5,44<sup>2</sup>, d'on <i>m</i> = 2<i>E</i><sub>k</sub>/<i>v</i><sup>2</sup> = 2·12,00/5,44<sup>2</sup> = <span class=\"res\">0,811 kg</span>."
         },
         {
           "titol": "Energia mecànica",
-          "html": "<i>E</i> = <i>E</i><sub>c</sub> + <i>E</i><sub>p</sub> = 12,00 + 4,00 = <span class=\"res\">16,0 J</span>, que es manté constant durant tot el moviment."
+          "html": "<i>E</i> = <i>E</i><sub>k</sub> + <i>E</i><sub>p</sub> = 12,00 + 4,00 = <span class=\"res\">16,0 J</span>, que es manté constant durant tot el moviment."
         }
       ],
       "pauta": [
         {
           "punts": 0.1,
-          "que": "Escriure l'energia potencial elàstica, Ep = ½kx²."
+          "que": "Escriure l'energia potencial elàstica, E<sub>p</sub> = ½kx²."
         },
         {
           "punts": 0.2,

@@ -55,7 +55,7 @@
     "nota": ""
   },
   "enunciat": {
-    "intro": "<p>Una esfera d'acer de 0,300 kg està fixada a l'extrem superior d'una vareta metàl·lica prima, de massa negligible. L'extrem inferior de la vareta està encastat verticalment en una base immòbil, de manera que l'extrem amb l'esfera pot oscil·lar lliurement. Quan apliquem a l'esfera una força de 8,00 N, l'esfera es desplaça 4,0 cm de la seva posició d'equilibri. Considereu que aquest desplaçament és horitzontal i en línia recta, tal com es veu a la figura, i que la força recuperadora que fa la vareta compleix la llei de Hooke.</p>",
+    "intro": "<p>Una massa esfèrica d’acer de 0,300 kg està subjecta a una vareta metàl·lica prima i de massa negligible. Aquesta vareta està clavada verticalment a una massa fixa, de manera que l’extrem on hi ha la massa pot oscil·lar lliurement. Si apliquem una força de 8,00 N sobre l’esfera, aquesta es desplaça 4,0 cm. Suposeu que aquest desplaçament és rectilini i horitzontal, com mostra la figura, i que la força recuperadora de la vareta obeeix la llei de Hooke.</p>",
     "figures": [
       "fig1"
     ],
@@ -63,19 +63,19 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Calculeu la constant elàstica <i>k</i> de la vareta. A partir de la segona llei de Newton, deduïu l'expressió que dona la freqüència d'oscil·lació i calculeu el període de les oscil·lacions."
+        "text": "Calculeu la constant elàstica <i>k</i>. Deduïu, a partir de la segona llei de Newton, la fórmula per a obtenir la freqüència d’oscil·lació i calculeu el període d’oscil·lació."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Partint de l'equació del moviment harmònic simple (MHS), deduïu l'expressió de l'acceleració màxima i calculeu-ne el valor en aquest cas."
+        "text": "Deduïu, a partir de l’equació del moviment harmònic simple (MHS), la fórmula per a obtenir l’acceleració màxima i calculeu-la en aquest cas."
       }
     ],
     "dades_text": ""
   },
   "figures": {
     "fig1": {
-      "svg": "<svg viewBox=\"0 0 380 270\" role=\"img\" aria-label=\"Esfera a l'extrem d'una vareta vertical clavada en una base. Amb una força horitzontal de 8,00 N l'esfera es desplaça 4,0 cm a la dreta; per simetria també es mostra la posició desplaçada 4,0 cm a l'esquerra.\"><rect x=\"95\" y=\"205\" width=\"190\" height=\"38\" fill=\"var(--muted)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><text x=\"190\" y=\"261\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">base fixa</text><line x1=\"190\" y1=\"205\" x2=\"190\" y2=\"66\" stroke=\"var(--ink)\" stroke-width=\"2.5\"/><path d=\"M190 205 Q188 120 110 60\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><path d=\"M190 205 Q192 120 270 60\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><circle cx=\"110\" cy=\"60\" r=\"9\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"270\" cy=\"60\" r=\"9\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"190\" cy=\"60\" r=\"10\" fill=\"var(--ink)\"/><line x1=\"113\" y1=\"28\" x2=\"187\" y2=\"28\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><path d=\"M110 28 l7 -4 v8 z M190 28 l-7 -4 v8 z\" fill=\"var(--muted)\"/><text x=\"150.0\" y=\"21\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">4,0 cm</text><line x1=\"193\" y1=\"28\" x2=\"267\" y2=\"28\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><path d=\"M190 28 l7 -4 v8 z M270 28 l-7 -4 v8 z\" fill=\"var(--muted)\"/><text x=\"230.0\" y=\"21\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">4,0 cm</text><line x1=\"110\" y1=\"33\" x2=\"110\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"190\" y1=\"33\" x2=\"190\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"270\" y1=\"33\" x2=\"270\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"281\" y1=\"60\" x2=\"345\" y2=\"60\" stroke=\"var(--f)\" stroke-width=\"2.5\"/><path d=\"M355 60 l-12 -6 v12 z\" fill=\"var(--f)\"/><text x=\"288\" y=\"84\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--f)\"><tspan font-style=\"italic\">F</tspan> = 8,00 N</text><text x=\"205\" y=\"140\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">vareta</text></svg>",
+      "svg": "<svg viewBox=\"0 0 380 270\" role=\"img\" aria-label=\"Esfera a l'extrem d'una vareta vertical clavada en una base. Amb una força horitzontal de 8,00 N l'esfera es desplaça 4,0 cm a la dreta; per simetria també es mostra la posició desplaçada 4,0 cm a l'esquerra.\"><rect x=\"95\" y=\"205\" width=\"190\" height=\"38\" fill=\"var(--muted)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><line x1=\"190\" y1=\"205\" x2=\"190\" y2=\"66\" stroke=\"var(--ink)\" stroke-width=\"2.5\"/><path d=\"M190 205 Q188 120 110 60\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><path d=\"M190 205 Q192 120 270 60\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><circle cx=\"110\" cy=\"60\" r=\"9\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"270\" cy=\"60\" r=\"9\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"190\" cy=\"60\" r=\"10\" fill=\"var(--ink)\"/><line x1=\"113\" y1=\"28\" x2=\"187\" y2=\"28\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><path d=\"M110 28 l7 -4 v8 z M190 28 l-7 -4 v8 z\" fill=\"var(--muted)\"/><text x=\"150.0\" y=\"21\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">4 cm</text><line x1=\"193\" y1=\"28\" x2=\"267\" y2=\"28\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><path d=\"M190 28 l7 -4 v8 z M270 28 l-7 -4 v8 z\" fill=\"var(--muted)\"/><text x=\"230.0\" y=\"21\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">4 cm</text><line x1=\"110\" y1=\"33\" x2=\"110\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"190\" y1=\"33\" x2=\"190\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"270\" y1=\"33\" x2=\"270\" y2=\"46\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/><line x1=\"281\" y1=\"60\" x2=\"345\" y2=\"60\" stroke=\"var(--f)\" stroke-width=\"2.5\"/><path d=\"M355 60 l-12 -6 v12 z\" fill=\"var(--f)\"/><text x=\"288\" y=\"84\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--f)\">8 N</text></svg>",
       "peu": "L'esfera en equilibri (negre) i desplaçada 4,0 cm a cada costat (traç discontinu). La força de 8,00 N la manté desplaçada cap a la dreta."
     }
   },
@@ -132,37 +132,37 @@
       "passos": [
         {
           "titol": "Equació del MHS",
-          "html": "La posició de l'esfera és <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ)."
+          "html": "La posició de l'esfera és <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ<sub>0</sub>)."
         },
         {
           "titol": "Velocitat",
-          "html": "Derivant respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = −<i>A</i>·ω·sin(ω<i>t</i> + φ)."
+          "html": "Derivant respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = −<i>A</i>·ω·sin(ω<i>t</i> + φ<sub>0</sub>)."
         },
         {
           "titol": "Acceleració",
-          "html": "Tornant a derivar: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −<i>A</i>·ω<sup>2</sup>·cos(ω<i>t</i> + φ) = −ω<sup>2</sup>·<i>x</i>(<i>t</i>). El valor màxim s'obté quan el cosinus val ±1: <span class=\"res\"><i>a</i><sub>màx</sub> = <i>A</i>·ω<sup>2</sup></span>."
+          "html": "Tornant a derivar: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −<i>A</i>·ω<sup>2</sup>·cos(ω<i>t</i> + φ<sub>0</sub>) = −ω<sup>2</sup>·<i>x</i>(<i>t</i>). El valor màxim s'obté quan el cosinus val ±1: <span class=\"res\"><i>a</i><sub>max</sub> = <i>A</i>·ω<sup>2</sup></span>."
         },
         {
           "titol": "Valor numèric",
-          "html": "Si l'esfera es deixa anar des de la posició desplaçada, l'amplitud és <i>A</i> = 4,0 cm = 0,040 m. Amb ω<sup>2</sup> = <i>k</i>/<i>m</i>:<br><i>a</i><sub>màx</sub> = <i>A</i>·<i>k</i>/<i>m</i> = 0,040·200/0,300 = <span class=\"res\">26,7 m/s<sup>2</sup></span>."
+          "html": "Si l'esfera es deixa anar des de la posició desplaçada, l'amplitud és <i>A</i> = 4,0 cm = 0,040 m. Amb ω<sup>2</sup> = <i>k</i>/<i>m</i>:<br><i>a</i><sub>max</sub> = <i>A</i>·<i>k</i>/<i>m</i> = 0,040·200/0,300 = <span class=\"res\">26,7 m/s<sup>2</sup></span>."
         }
       ],
       "pauta": [
         {
           "punts": 0.2,
-          "que": "Escriure l'equació del MHS, x(t) = A·cos(ωt + φ)."
+          "que": "Escriure l'equació del MHS, x(t) = A·cos(ωt + φ₀)."
         },
         {
           "punts": 0.2,
-          "que": "Derivar-la per obtenir v(t) = −A·ω·sin(ωt + φ)."
+          "que": "Derivar-la per obtenir v(t) = −A·ω·sin(ωt + φ₀)."
         },
         {
           "punts": 0.2,
-          "que": "Derivar de nou, obtenir a(t) = −ω²·x(t) i identificar a_màx = A·ω²."
+          "que": "Derivar de nou, obtenir a(t) = −ω²·x(t) i identificar a<sub>max</sub> = A·ω²."
         },
         {
           "punts": 0.4,
-          "que": "Calcular a_màx = 26,7 m/s² amb A = 0,040 m i ω² = k/m."
+          "que": "Calcular a<sub>max</sub> = 26,7 m/s² amb A = 0,040 m i ω² = k/m."
         }
       ]
     }
@@ -193,7 +193,7 @@
     {
       "apartat": "b",
       "clau": "amax",
-      "text": "a_màx = 26,7 m/s²",
+      "text": "a_max = 26,7 m/s²",
       "valor": 26.7,
       "pauta": 26.7
     }

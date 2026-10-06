@@ -55,7 +55,7 @@
     "nota": "L'enunciat dona 1,25 punts a cada apartat; la pauta en detalla el repartiment."
   },
   "enunciat": {
-    "intro": "<p>Un cos està lligat a una molla horitzontal que segueix la llei de Hooke. La gràfica mostra com varia l'energia potencial elàstica del sistema segons l'elongació <i>x</i> de la molla.</p>",
+    "intro": "<p>La gràfica següent ens mostra l’energia potencial elàstica en funció de l’elongació (<i>x</i>) per a un sistema format per una massa unida a una molla horitzontal que compleix la llei de Hooke.</p>",
     "figures": [
       "fig1"
     ],
@@ -63,12 +63,12 @@
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Trobeu la constant elàstica <i>k</i> de la molla. Quan posem el sistema a oscil·lar, fa 10 oscil·lacions completes en 6,52 s: quina és la massa del cos lligat a la molla?"
+        "text": "Trobeu el valor de la constant elàstica (o constant de rigidesa) de la molla. Quan fem oscil·lar el sistema, descriu 10 oscil·lacions completes en 6,52 s. Calculeu la massa de l’objecte que està lligat a la molla."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Sobre la mateixa gràfica, dibuixeu com varien l'energia cinètica i l'energia mecànica en funció de l'elongació <i>x</i> quan el sistema fa un moviment harmònic simple de 10 cm d'amplitud."
+        "text": "Representeu, sobre el mateix gràfic, l’energia cinètica i l’energia mecànica en funció de l’elongació, <i>x</i>, per a un moviment harmònic simple de 10 cm d’amplitud."
       }
     ],
     "dades_text": ""
@@ -89,11 +89,11 @@
       "passos": [
         {
           "titol": "Energia potencial elàstica",
-          "html": "La corba de la gràfica és la paràbola <i>E</i><sub>p</sub> = ½·<i>k</i>·<i>x</i><sup>2</sup>, de manera que qualsevol punt seu permet trobar <i>k</i>."
+          "html": "La corba de la gràfica és la paràbola <i>E</i> = ½·<i>k</i>·<i>x</i><sup>2</sup>, de manera que qualsevol punt seu permet trobar <i>k</i>."
         },
         {
           "titol": "Constant elàstica",
-          "html": "Per llegir amb més precisió agafem un punt allunyat de l'origen: a <i>x</i> = 15 cm = 0,15 m la gràfica marca <i>E</i><sub>p</sub> = 2,0 J. Aïllant, <i>k</i> = 2<i>E</i><sub>p</sub>/<i>x</i><sup>2</sup> = 2·2,0/0,15<sup>2</sup> = <span class=\"res\">178 N/m</span>."
+          "html": "Per llegir amb més precisió agafem un punt allunyat de l'origen: a <i>x</i> = 15 cm = 0,15 m la gràfica marca <i>E</i> = 2,0 J. Aïllant, <i>k</i> = 2<i>E</i>/<i>x</i><sup>2</sup> = 2·2,0/0,15<sup>2</sup> = <span class=\"res\">178 N/m</span>."
         },
         {
           "titol": "Període",
@@ -144,7 +144,7 @@
         },
         {
           "titol": "Energia cinètica",
-          "html": "A cada posició l'energia cinètica és el que falta a la potencial per arribar a la mecànica: <i>E</i><sub>c</sub> = <i>E</i><sub>m</sub> − <i>E</i><sub>p</sub> = ½·<i>k</i>·(<i>A</i><sup>2</sup> − <i>x</i><sup>2</sup>). És una paràbola cap avall que val 0,89 J a <i>x</i> = 0 i zero a <i>x</i> = ±10 cm. Talla la paràbola de l'energia potencial on totes dues valen la meitat de l'energia mecànica, a <i>x</i> = ±<i>A</i>/√2 ≈ ±7,1 cm.",
+          "html": "A cada posició l'energia cinètica és el que falta a la potencial per arribar a la mecànica: <i>E</i><sub>c</sub> = <i>E</i><sub>m</sub> − <i>E</i> = ½·<i>k</i>·(<i>A</i><sup>2</sup> − <i>x</i><sup>2</sup>). És una paràbola cap avall que val 0,89 J a <i>x</i> = 0 i zero a <i>x</i> = ±10 cm. Talla la paràbola de l'energia potencial on totes dues valen la meitat de l'energia mecànica, a <i>x</i> = ±<i>A</i>/√2 ≈ ±7,1 cm.",
           "figures": [
             "fig2"
           ]
@@ -206,7 +206,7 @@
     {
       "apartat": "b",
       "clau": "xtall",
-      "text": "Ec = Ep a x = ±7,1 cm",
+      "text": "E_c = E a x = ±7,1 cm",
       "valor": 0.0707,
       "pauta": null
     }

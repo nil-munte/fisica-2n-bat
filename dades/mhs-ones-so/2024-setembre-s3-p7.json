@@ -45,7 +45,7 @@
       "descripcio": "ritme d'oscil·lació"
     },
     {
-      "simbol": "d",
+      "simbol": "2A",
       "valor": "15",
       "unitat": "cm",
       "descripcio": "distància entre la posició més alta i la més baixa"
@@ -63,13 +63,13 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat; al dibuix resta 0,1 punts per cada omissió (magnitud, unitats o valors numèrics dels eixos)."
   },
   "enunciat": {
-    "intro": "<p>Fem oscil·lar una massa de 100 g penjada d'una molla. Observem que completa 40 oscil·lacions cada minut i que entre el punt més alt i el més baix del moviment hi ha 15 cm de diferència.</p>",
+    "intro": "<p>Una massa de 100 g es fa oscil·lar penjada d’una molla. S’observa que fa 40 oscil·lacions en un minut i que la diferència entre la posició més alta i la més baixa és de 15 cm.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Calculeu el període i la constant de la molla, i escriviu l'equació del moviment prenent <i>t</i> = 0 en l'instant en què la massa és al punt més baix. Dibuixeu a la quadrícula la força elàstica durant dos períodes complets.",
+        "text": "Determineu el període, la constant de la molla i l’equació del moviment si comencem a comptar el moviment quan passa per la posició més baixa. Representeu a la quadrícula de sota la força elàstica durant dos períodes sencers.",
         "figures": [
           "fig1"
         ]
@@ -77,7 +77,7 @@
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Calculeu l'energia mecànica de l'oscil·lador i escriviu l'energia cinètica en funció de la posició de la massa. Quin és el mòdul de la velocitat quan la massa està 3 cm per sobre de la posició d'equilibri?"
+        "text": "Calculeu l’energia mecànica de l’oscil·lador harmònic i trobeu l’expressió de l’energia cinètica en funció de la posició de la massa. Calculeu el mòdul de la velocitat quan la massa és 3 cm per sobre de la posició d’equilibri."
       }
     ],
     "dades_text": ""
@@ -106,11 +106,11 @@
         },
         {
           "titol": "Amplitud i freqüència angular",
-          "html": "Escrivim <i>y</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ), amb <i>y</i> mesurada des de l'equilibri i positiva cap amunt. La distància entre els dos extrems és 2<i>A</i> = 0,15 m, per tant <i>A</i> = 0,075 m, i ω = 2π<i>f</i> = <span class=\"res\">4,19 rad/s</span>."
+          "html": "Escrivim <i>y</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>), amb <i>y</i> mesurada des de l'equilibri i positiva cap amunt. La distància entre els dos extrems és 2<i>A</i> = 0,15 m, per tant <i>A</i> = 0,075 m, i ω = 2π<i>f</i> = <span class=\"res\">4,19 rad/s</span>."
         },
         {
           "titol": "Fase inicial i equació",
-          "html": "A <i>t</i> = 0 la massa és a la posició més baixa: −<i>A</i> = <i>A</i>·sin φ → sin φ = −1 → φ = 3π/2 rad (o −π/2). L'equació és <span class=\"res\"><i>y</i>(<i>t</i>) = 0,075·sin(4,19<i>t</i> + 3π/2) m</span>, amb <i>t</i> en s. Amb cosinus seria <i>y</i>(<i>t</i>) = 0,075·cos(4,19<i>t</i> + π) = −0,075·cos(4,19<i>t</i>) m. Si s'agafa l'eix positiu cap avall, totes les expressions canvien de signe."
+          "html": "A <i>t</i> = 0 la massa és a la posició més baixa: −<i>A</i> = <i>A</i>·sin φ<sub>0</sub> → sin φ<sub>0</sub> = −1 → φ<sub>0</sub> = 3π/2 rad (o −π/2). L'equació és <span class=\"res\"><i>y</i>(<i>t</i>) = 0,075·sin(4,19<i>t</i> + 3π/2) m</span>, amb <i>t</i> en s. Amb cosinus seria <i>y</i>(<i>t</i>) = 0,075·cos(4,19<i>t</i> + π) = −0,075·cos(4,19<i>t</i>) m. Si s'agafa l'eix positiu cap avall, totes les expressions canvien de signe."
         },
         {
           "titol": "Força elàstica",
@@ -160,7 +160,7 @@
         },
         {
           "titol": "Energia cinètica en funció de la posició",
-          "html": "L'energia mecànica es conserva, i l'energia cinètica és la part que no és potencial: <i>E</i><sub>c</sub> = <i>E</i><sub>m</sub> − <i>E</i><sub>p</sub> = ½·<i>k</i>·<i>A</i><sup>2</sup> − ½·<i>k</i>·<i>y</i><sup>2</sup> = ½·<i>k</i>·(<i>A</i><sup>2</sup> − <i>y</i><sup>2</sup>). Amb valors: <span class=\"res\"><i>E</i><sub>c</sub> = 0,875·(0,075<sup>2</sup> − <i>y</i><sup>2</sup>) = 4,92·10<sup>−3</sup> − 0,875·<i>y</i><sup>2</sup> J</span>, amb <i>y</i> en m."
+          "html": "L'energia mecànica es conserva, i l'energia cinètica és la part que no és potencial: <i>E</i><sub>c</sub> = <i>E</i><sub>m</sub> − <i>E</i><sub>pe</sub> = ½·<i>k</i>·<i>A</i><sup>2</sup> − ½·<i>k</i>·<i>y</i><sup>2</sup> = ½·<i>k</i>·(<i>A</i><sup>2</sup> − <i>y</i><sup>2</sup>). Amb valors: <span class=\"res\"><i>E</i><sub>c</sub> = 0,875·(0,075<sup>2</sup> − <i>y</i><sup>2</sup>) = 4,92·10<sup>−3</sup> − 0,875·<i>y</i><sup>2</sup> J</span>, amb <i>y</i> en m."
         },
         {
           "titol": "Velocitat a 3 cm de l'equilibri",
@@ -222,7 +222,7 @@
     {
       "apartat": "a",
       "clau": "phi",
-      "text": "φ = 3π/2 rad",
+      "text": "φ₀ = 3π/2 rad",
       "valor": 4.7124,
       "pauta": 4.7124
     },

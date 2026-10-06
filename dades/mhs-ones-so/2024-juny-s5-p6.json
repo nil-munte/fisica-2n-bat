@@ -55,7 +55,7 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat (pàgines 10 i 11)."
   },
   "enunciat": {
-    "intro": "<p>El microscopi de forces atòmiques (AFM, sigla de l'anglès <i>atomic force microscope</i>) permet obtenir el relleu d'una superfície amb un detall de l'ordre del nanòmetre. La peça clau és una punta molt fina situada a l'extrem lliure d'una palanca flexible: mentre la punta escombra la superfície de costat, també vibra amunt i avall per sobre d'ella. La gràfica mostra com canvia amb el temps la posició vertical <i>y</i> de la punta d'un d'aquests aparells.</p>",
+    "intro": "<p>El microscopi de forces atòmiques (AFM, de l’anglès <i>atomic force microscope</i>) és un instrument que permet crear imatges de la topografia d’una superfície amb una resolució de l’ordre del nanòmetre. Funciona mitjançant una punta afilada que se situa a l’extrem d’una palanca flexible (com la que podem observar a la fotografia de l’esquerra) i que oscil·la verticalment sobre la superfície, mentre es desplaça lateralment per ella. El gràfic de la dreta mostra l’oscil·lació vertical de la punta d’un AFM.</p><p>Font: ICMAB (CSIC) [en línia]. &lt;https://icmab.es/next-gen-nanotechnology-changing-conductivity-with-an-atomic-force-microscope&gt;.</p>",
     "figures": [
       "fig1",
       "fig2"
@@ -64,12 +64,12 @@
       {
         "id": "a",
         "punts": 1.25,
-        "text": "A partir de la gràfica, trobeu l'amplitud, el període i la freqüència angular de l'oscil·lació de la punta, expressats en unitats bàsiques del SI, i escriviu l'equació del seu moviment. Finalment, deduïu l'expressió de l'acceleració màxima de la punta i calculeu-ne el valor amb les dades obtingudes."
+        "text": "Determineu l’amplitud, el període i la freqüència angular de l’oscil·lació d’aquesta punta i doneu els valors en unitats bàsiques del sistema internacional (SI). Escriviu també l’equació del moviment de la punta. Per acabar, deduïu l’expressió de l’acceleració màxima de la punta i calculeu-ne el valor a partir de les dades donades."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Suposeu que la punta es comporta com una massa que oscil·la lligada a una molla de constant elàstica 8,00 N/m. Calculeu la massa de la punta. Després de fer servir la punta durant un temps, es comprova que el període d'oscil·lació ha crescut un 22 %, mentre que la constant elàstica és la mateixa. La punta ha perdut massa o n'ha guanyat? Raoneu-ho."
+        "text": "Podem considerar el moviment de la punta sobre la palanca com el d’una massa que es mou sota l’acció d’una molla. Si la constant elàstica de la molla és 8,00 N/m, calculeu el valor de la massa de la punta. Al cap d’un temps de fer servir aquesta punta s’observa que el període ha augmentat un 22 % i la constant elàstica no ha canviat. Què ha passat, ha perdut o ha guanyat massa? Justifiqueu la resposta."
       }
     ],
     "dades_text": ""
@@ -148,7 +148,7 @@
         },
         {
           "punts": 0.3,
-          "que": "Deduir a_màx = A·ω² (derivant y(t) dues vegades o amb la segona llei de Newton) i obtenir 4,0·10⁵ m/s²."
+          "que": "Deduir a<sub>màx</sub> = A·ω² (derivant y(t) dues vegades o amb la segona llei de Newton) i obtenir 4,0·10⁵ m/s²."
         }
       ]
     },

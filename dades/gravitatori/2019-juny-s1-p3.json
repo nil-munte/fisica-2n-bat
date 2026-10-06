@@ -86,21 +86,21 @@
     "nota": ""
   },
   "enunciat": {
-    "intro": "<p>A l'espai, un astronauta vol saber quina és la seva massa. S'asseu en una cadira de 2,00 kg, s'hi lliga, i la cadira està enganxada a una molla de constant elàstica <i>k</i> = 320 N/m. Després de donar-se un impuls, comprova que el conjunt fa 20 oscil·lacions completes en 62,8 s.</p>",
+    "intro": "<p>Un astronauta que és a l’espai vol mesurar la seva massa. Per fer-ho, s’asseu i es lliga a una cadira de 2,00 kg de massa que està unida a una molla de constant elàstica <i>k</i> = 320 N m<sup>–1</sup>. L’astronauta s’impulsa i triga 62,8 s a fer 20 oscil·lacions completes.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Calculeu la massa de l'astronauta."
+        "text": "Quina és la massa de l’astronauta?"
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Més endavant, el mateix astronauta és a la Lluna i hi fa oscil·lar un pèndol simple de 1,00 kg de massa i 1,50 m de longitud, que tarda 2 min i 1 s a completar 20 oscil·lacions. Determineu el valor de <i>g</i> a la superfície lunar i, a partir d'aquest valor, la massa de la Lluna."
+        "text": "Posteriorment aquest astronauta arriba a la Lluna, on fa oscil·lar un pèndol simple d’1,00 kg de massa i 1,50 m de longitud. Aquest pèndol triga 2 min i 1 s a fer 20 oscil·lacions completes. Quina és la intensitat del camp gravitatori a la superfície de la Lluna? Quina és la massa de la Lluna?"
       }
     ],
-    "dades_text": "<i>G</i> = 6,67·10<sup>−11</sup> N·m<sup>2</sup>/kg<sup>2</sup>; <i>R</i><sub>Lluna</sub> = 1,737·10<sup>6</sup> m. Període d'un pèndol simple de longitud <i>L</i>: <i>T</i> = 2π·√(<i>L</i>/<i>g</i>)."
+    "dades_text": "Dades: <i>G</i> = 6,67 × 10<sup>–11</sup> N m<sup>2</sup> kg<sup>–2</sup>.<br><i>R</i><sub>Lluna</sub> = 1,737 × 10<sup>6</sup> m.<br>El període d’oscil·lació d’un pèndol de longitud <i>L</i> és <i>T</i> = 2π√(<i>L</i>/<i>g</i>)."
   },
   "figures": {},
   "resolucio": [
@@ -170,11 +170,11 @@
         },
         {
           "punts": 0.4,
-          "que": "Escriure g = G·M/R² i aïllar-ne la massa de la Lluna."
+          "que": "Escriure g = G·M<sub>Lluna</sub>/R<sub>Lluna</sub>² i aïllar-ne la massa de la Lluna."
         },
         {
           "punts": 0.2,
-          "que": "Obtenir el valor numèric, M = 7,32·10²² kg."
+          "que": "Obtenir el valor numèric, M<sub>Lluna</sub> = 7,32·10²² kg."
         }
       ]
     }
