@@ -9,12 +9,16 @@ Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir d
 | Tema | Pàgina | PDF |
 |---|---|---|
 | Moviment harmònic simple | `temes/mhs/index.html` | formulari (1 pàgina), enunciats, enunciats + solucions |
+| Exàmens de les PAU | `pau/index.html` | cada sèrie de cada convocatòria, sense solucions i amb els criteris de correcció |
 
 ## Estructura
 
 ```
 .
 ├── index.html                 Pàgina d'inici amb la llista de temes
+├── pau/
+│   ├── index.html             Exàmens de les PAU per any, convocatòria i sèrie
+│   └── pdf/                   Una sèrie per fitxer (generats amb eines/examens_pau.py)
 ├── temes/
 │   └── mhs/
 │       ├── index.html         Teoria, demos, mètode i exercicis
@@ -30,6 +34,7 @@ Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir d
     ├── fonts_pau.py           Text i imatges dels PDF oficials (fonts/pdf/)
     ├── previsualitza_figures.py  Figures SVG d'un problema com a PNG
     ├── plantilles/            Estil i filtre del bloc de problemes de les PAU
+    ├── examens_pau.py         Separa els exàmens oficials per sèries i genera pau/
     └── requirements.txt
 ```
 
@@ -53,6 +58,16 @@ python eines/build_pdfs.py mhs "Moviment harmònic simple"
 ```
 
 Els PDF surten de la mateixa pàgina amb els estils d'impressió: el formulari és la secció oculta `#formulari`, i els enunciats i les solucions són els exercicis.
+
+## Exàmens de les PAU
+
+Els PDF oficials (un per convocatòria, amb diverses sèries a dins) es desen a `fonts/pdf/`, que no es publica. Per regenerar la secció d'exàmens després d'afegir-ne de nous:
+
+```bash
+python eines/examens_pau.py
+```
+
+L'script separa cada sèrie (enunciat i enunciat + pauta), desa els fitxers a `pau/pdf/` i reescriu la llista de `pau/index.html` i el resum de la portada. Els problemes resolts al web s'enllacen des de la seva sèrie i, dins dels PDF, tenen una destinació just a sobre del títol del problema i de la seva pauta. Els enllaços es desen a `dades/destins_pau.json`. Després, `python eines/genera_pau.py` fa que cada problema dels temes obri el PDF propi just en aquest punt.
 
 ## Banc de problemes de les PAU
 
