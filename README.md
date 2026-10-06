@@ -1,6 +1,6 @@
 # Física · 2n de Batxillerat
 
-Materials de repàs de Física de 2n de Batxillerat: teoria orientada a exercicis, demos interactives, exercicis graduats amb solució desplegable i problemes de la PAU de Catalunya.
+Materials de repàs de Física de 2n de Batxillerat: teoria orientada a exercicis, demos interactives, exercicis graduats amb solució desplegable i problemes de les PAU de Catalunya.
 
 Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir directament al navegador o publicar amb GitHub Pages.
 
@@ -47,4 +47,8 @@ Els PDF surten de la mateixa pàgina amb els estils d'impressió: el formulari �
 
 ## Fonts
 
-Els enunciats dels problemes de la PAU estan adaptats a partir dels exàmens oficials de les PAU de Catalunya. Cada problema enllaça a l'enunciat original a [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica). Les solucions són pròpies.
+Els enunciats dels problemes de les PAU estan adaptats a partir dels exàmens oficials de les PAU de Catalunya. Cada problema enllaça a l'enunciat original a [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica). Les solucions són pròpies.
+
+## Autor
+
+Materials elaborats per [Nil Munté Guerrero](https://nil-munte.github.io).
