@@ -7,9 +7,9 @@
   "opcio": null,
   "tambe_a": [],
   "tema_principal": "mhs-ones-so",
-  "subtema": "mhs",
+  "subtema": "so",
   "temes_secundaris": [
-    "mhs-ones-so/so"
+    "mhs-ones-so/mhs"
   ],
   "blocs": [
     "b1"
