@@ -86,8 +86,15 @@ nav.toc .sep{flex:none;width:1px;align-self:stretch;background:var(--line);margi
 nav.toc a.top{font-family:var(--f-display);font-weight:600}
 section[tabindex="-1"]:focus,article[tabindex="-1"]:focus,div[tabindex="-1"]:focus{outline:none}
 .printbtns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.pdfstatus{font-size:13px;color:var(--muted);flex-basis:100%;text-align:right;min-height:0}
-.pdfstatus:empty{display:none}
+.dlg{display:inline-flex}
+.btn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-weight:500;text-decoration:none;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;min-height:38px;white-space:nowrap}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+.btn.primary:hover{opacity:.9}
+.dlg .btn:first-child{border-radius:7px 0 0 7px}
+.dlg .btn.ic{border-radius:0 7px 7px 0;border-left-width:0;padding-inline:10px}
+.dlg .btn.primary.ic{border-left:1px solid color-mix(in srgb,var(--surface) 30%,transparent)}
+.btn:focus-visible{outline:2px solid var(--x);outline-offset:2px}
 /* formulari */
 .formgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 @media (max-width:980px){.formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -478,11 +485,10 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
       <p class="sub">Teoria, demos interactives, exercicis graduats i problemes de selectivitat (PAU) resolts, amb la pauta de puntuació.</p>
     </div>
     <div class="printbtns">
-      <button id="pF">PDF formulari</button>
-      <button id="pQ">PDF enunciats</button>
-      <button id="pQS">PDF enunciats + solucions</button>
+      <span class="dlg"><a class="btn" href="pdf/mhs-formulari.pdf" target="_blank" rel="noopener" title="Obre el formulari de MHS en una pestanya nova">PDF formulari</a><a class="btn ic" href="pdf/mhs-formulari.pdf" download="MHS - Formulari.pdf" title="Descarrega el formulari de MHS" aria-label="Descarrega el formulari de MHS"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      <span class="dlg"><a class="btn" href="pdf/mhs-enunciats.pdf" target="_blank" rel="noopener" title="Obre els enunciats de MHS en una pestanya nova">PDF enunciats</a><a class="btn ic" href="pdf/mhs-enunciats.pdf" download="MHS - Enunciats.pdf" title="Descarrega els enunciats de MHS" aria-label="Descarrega els enunciats de MHS"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      <span class="dlg"><a class="btn" href="pdf/mhs-enunciats-solucions.pdf" target="_blank" rel="noopener" title="Obre els enunciats de MHS amb les solucions en una pestanya nova">PDF enunciats + solucions</a><a class="btn ic" href="pdf/mhs-enunciats-solucions.pdf" download="MHS - Enunciats i solucions.pdf" title="Descarrega els enunciats de MHS amb les solucions" aria-label="Descarrega els enunciats de MHS amb les solucions"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
       <span data-share hidden></span>
-      <span class="pdfstatus" id="pdfstatus" role="status"></span>
     </div>
   </header>
 
@@ -1634,12 +1640,12 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
   <footer>
     <p>Convenis: unitats del SI, g = 9,81 m/s² a la Terra i fricció menyspreable. Els arguments de sinus i cosinus són en radians.</p>
+    <p>Els enunciats i els criteris de correcció de les PAU són oficials (Generalitat de Catalunya) i es reprodueixen d'acord amb les condicions de reutilització de la informació del sector públic. Cada problema enllaça a l'examen original.</p>
     <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></p>
     <p class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></p>
   </footer>
 </div>
 
-<script type="application/json" id="pdfdata">{}</script>
 <script>
 (() => {
 const $ = id => document.getElementById(id);
@@ -2404,72 +2410,6 @@ document.querySelectorAll('svg.en').forEach(svg => {
   update();
 })();
 
-/* ---------- PDF ---------- */
-const PDFS = (() => { try { return JSON.parse($('pdfdata').textContent); } catch (e) { return {}; } })();
-const NAMES = { f: 'MHS - Formulari.pdf', q: 'MHS - Enunciats.pdf', qs: 'MHS - Enunciats i solucions.pdf' };
-const PDF_FILES = { f: 'pdf/mhs-formulari.pdf', q: 'pdf/mhs-enunciats.pdf', qs: 'pdf/mhs-enunciats-solucions.pdf' };
-const dlReady = (window.claude && typeof window.claude.use === 'function')
-  ? window.claude.use('downloads').catch(() => null)
-  : Promise.resolve(null);
-const status = msg => { $('pdfstatus').textContent = msg; };
-let busy = false;
-async function getPdf(mode) {
-  if (busy) return;
-  busy = true;
-  const btns = ['pF', 'pQ', 'pQS'].map($).filter(Boolean);
-  btns.forEach(b => b.disabled = true);
-  try { await getPdfInner(mode); } finally { busy = false; btns.forEach(b => b.disabled = false); }
-}
-async function getPdfInner(mode) {
-  const b64 = PDFS[mode];
-  const DL = await Promise.race([dlReady, new Promise(r => setTimeout(() => r(null), 4000))]);
-  if (!DL && PDF_FILES[mode]) {
-    const a = document.createElement('a'); a.href = PDF_FILES[mode]; a.download = NAMES[mode];
-    document.body.appendChild(a); a.click(); a.remove(); return;
-  }
-  if (DL && b64) {
-    const bin = atob(b64), u = new Uint8Array(bin.length);
-    for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
-    status('');
-    try { await DL.save({ filename: NAMES[mode], data: new Blob([u], { type: 'application/pdf' }) }); }
-    catch (e) {
-      const c = e && e.code;
-      if (c === 'declined') return;
-      if (c === 'rate_limited') status('Ja hi ha una descàrrega pendent de confirmar.');
-      else if (c === 'too_large') status('El PDF és massa gran per desar-lo des d\'aquí.');
-      else status('No s\'ha pogut desar el PDF. Prova d\'obrir la pàgina en una pestanya nova.');
-    }
-    return;
-  }
-  // web normal (p. ex. GitHub Pages): descàrrega directa del PDF incrustat
-  if (!window.claude && b64) {
-    try {
-      const bin = atob(b64), u = new Uint8Array(bin.length);
-      for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
-      const url = URL.createObjectURL(new Blob([u], { type: 'application/pdf' }));
-      const a = document.createElement('a'); a.href = url; a.download = NAMES[mode];
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 4000);
-      status('');
-      return;
-    } catch (e) { /* si falla, provem la impressió */ }
-  }
-  status('Si no s\'obre el diàleg d\'impressió, obre la pàgina en una pestanya nova i torna-ho a provar.');
-  printMode(mode);
-}
-function printMode(mode) {
-  document.body.dataset.print = mode;
-  const prev = document.title;
-  document.title = NAMES[mode].replace('.pdf', '');
-  const dets = [...document.querySelectorAll('.ex details.sol')], was = dets.map(d => d.open);
-  if (mode === 'qs') dets.forEach(d => d.open = true);
-  const done = () => { delete document.body.dataset.print; document.title = prev; dets.forEach((d, i) => d.open = was[i]); window.removeEventListener('afterprint', done); };
-  window.addEventListener('afterprint', done);
-  window.print();
-}
-$('pF').onclick = () => getPdf('f');
-$('pQ').onclick = () => getPdf('q');
-$('pQS').onclick = () => getPdf('qs');
 })();
 </script>
 <script id="pau-js">
