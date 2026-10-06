@@ -321,7 +321,10 @@ details.sol{border:1px solid var(--line);background:var(--bg);padding:4px 14px 1
 details.sol .body{display:flex;flex-direction:column;gap:6px;font-size:14.5px}
 .res{font-family:var(--f-mono);font-weight:500;white-space:nowrap}
 .printhead{display:none}
-footer{color:var(--muted);font-size:13px;max-width:80ch}
+footer{color:var(--muted);font-size:13px;max-width:none;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+footer p{margin:0;max-width:80ch}
+footer .autor{font-size:14px;color:var(--ink)}
+footer .autor a{color:var(--ink);text-underline-offset:3px}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
@@ -513,7 +516,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
 
     <!-- BLOC 4 -->
     <article class="tblock" id="b4">
-      <header class="bhd"><span class="bn">4</span><div><h3>Molla vertical i pèndol</h3><p class="lede">Dos casos que surten sovint a la PAU. Tots dos són MHS: només canvia d'on surt la força recuperadora.</p></div></header>
+      <header class="bhd"><span class="bn">4</span><div><h3>Molla vertical i pèndol</h3><p class="lede">Dos casos que surten sovint a les PAU. Tots dos són MHS: només canvia d'on surt la força recuperadora.</p></div></header>
       <section class="sys">
         <h4>Molla vertical</h4>
         <div class="hero">
@@ -830,7 +833,10 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
     <div class="exlist" id="exlist"></div>
   </section>
 
-  <footer>Convenis: unitats del SI, g = 9,81 m/s² a la Terra i fricció menyspreable. Els arguments de sinus i cosinus són en radians.</footer>
+  <footer>
+    <p>Convenis: unitats del SI, g = 9,81 m/s² a la Terra i fricció menyspreable. Els arguments de sinus i cosinus són en radians.</p>
+    <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a></p>
+  </footer>
 </div>
 
 <script type="application/json" id="pdfdata">{}</script>
@@ -1411,7 +1417,7 @@ EX.push(...PAU);
 const GROUPS = {
   1: ['★', 'Aplicació directa'],
   2: ['★★', 'Combinació de conceptes'],
-  3: ['★★★', 'Problemes de la PAU']
+  3: ['★★★', 'Problemes de les PAU']
 };
 (function render() {
   const box = $('exlist'); let n = 0, html = '';
@@ -1573,6 +1579,7 @@ if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = 
     if (!sec) return;
     let act = null;
     links.forEach(x => { if (x.el.getBoundingClientRect().top <= line) act = x; });
+    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4 && links.length) act = links[links.length - 1];
     // a exercicis, marca el número i el seu nivell
     links.forEach(x => x.a.setAttribute('aria-current', 'false'));
     if (act) {
