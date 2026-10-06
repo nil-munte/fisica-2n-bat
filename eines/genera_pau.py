@@ -102,7 +102,8 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     te = 'Enunciat original (PDF de la sèrie, obert al problema)' if propi else f'Enunciat original (PDF, pàgina {fe["pagina"]})'
     tambe = ''.join(f" · també Sèrie {t['serie']} {t['problema']}" for t in p.get('tambe_a', []))
     h = [f'<article class="panel ex pau" id="pau-{p["id"]}" data-nivell="{nv}" data-dificultat="{p["dificultat"]}">',
-         f'<div class="eh"><span class="num">{n}.</span><span class="ttl">{p["titol"]}</span>'
+         f'<div class="eh"><span class="num">{n}.</span><h4 class="ttl">{p["titol"]}</h4>'
+         f'<a class="perma" href="#pau-{p["id"]}" aria-label="Enllaç directe a aquest problema" title="Copia l&#39;enllaç d&#39;aquest problema">#</a>'
          f'<span class="nv" title="Nivell: {nom_nv}">{est}</span>'
          f'<a class="chip" href="{html.escape(he)}" target="_blank" rel="noopener" '
          f'title="{te}">{nom_examen(p)}{tambe}</a></div>',
@@ -129,7 +130,7 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     # solució
     s = ['<details class="sol"><summary>Solució</summary><div class="body">']
     for r in p['resolucio']:
-        s.append(f'<section class="sap"><h4>{etiqueta_apartat(r["apartat"])}</h4>')
+        s.append(f'<section class="sap"><h5>{etiqueta_apartat(r["apartat"])}</h5>')
         for x in r['passos']:
             s.append(f'<p><b>{x["titol"]}.</b> {x["html"]}</p>' if x.get('titol') else f'<p>{x["html"]}</p>')
             s += [figura(p, f) for f in x.get('figures', [])]
