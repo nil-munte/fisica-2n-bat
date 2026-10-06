@@ -1,0 +1,28 @@
+{
+  "_doc": "Mapa tema → pàgina. 'pagina' és la ruta des de l'arrel del repositori, o null si encara no existeix. Els problemes es desen a dades/<carpeta del tema>/. Si un tema té subtemes, cada subtema té la seva pàgina; el camp 'subtema' de cada problema diu on va. 'blocs' són els blocs de teoria de la pàgina on es pot enllaçar un problema.",
+  "temes": {
+    "gravitatori": { "nom": "Camp gravitatori", "pagina": null },
+    "electric": { "nom": "Camp elèctric", "pagina": null },
+    "magnetic": { "nom": "Camp magnètic i inducció", "pagina": null },
+    "mhs-ones-so": {
+      "nom": "MHS, ones i so",
+      "subtemes": {
+        "mhs": {
+          "nom": "Moviment harmònic simple",
+          "pagina": "temes/mhs/index.html",
+          "seccio": "exercicis",
+          "blocs": {
+            "b1": "Com es mou (cinemàtica)",
+            "b2": "Per què es mou: forces",
+            "b3": "Energia",
+            "b4": "Molla vertical i pèndol"
+          }
+        },
+        "ones": { "nom": "Ones", "pagina": null },
+        "so": { "nom": "So", "pagina": null }
+      }
+    },
+    "optica": { "nom": "Òptica", "pagina": null },
+    "moderna": { "nom": "Física moderna", "pagina": null }
+  }
+}
