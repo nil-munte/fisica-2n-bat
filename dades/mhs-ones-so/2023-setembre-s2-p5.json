@@ -56,18 +56,18 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Tenim una molla de constant elàstica coneguda, <i>k</i> = 100 N/m, i volem aprofitar-la per mesurar masses. Considereu que no hi ha cap fregament.</p>",
+    "intro": "",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Raoneu si es pot conèixer la massa d'un objecte penjant-lo de la molla i deixant-lo oscil·lar unes quantes vegades. Si és possible, expliqueu com en calcularíeu la massa. Faríem la mateixa mesura si l'experiment es fes a la Lluna?"
+        "text": "Justifiqueu si es podria determinar la massa d’un objecte penjant-lo d’una molla de constant elàstica coneguda (100 N/m) i deixant-lo oscil·lar unes quantes vegades i, en cas afirmatiu, expliqueu com la calcularíeu. Obtindríem el mateix resultat si ho féssim a la Lluna? Negligiu l’efecte de la força de fricció."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "L'objecte oscil·la amb una amplitud de 6,00 cm i una freqüència de 10,0 Hz, i comencem a comptar el temps en un instant en què l'acceleració és màxima i positiva. Partint de l'equació general del moviment harmònic simple, deduïu-ne l'equació del moviment. Després, fent servir aquesta equació, calculeu la velocitat màxima i l'acceleració màxima."
+        "text": "Deduïu l’equació de moviment de l’objecte a partir de l’equació del moviment harmònic simple (MHS) tenint en compte que l’amplitud del moviment és de 6,00 cm, que la freqüència d’oscil·lació és de 10,0 Hz i que el moviment s’inicia quan l’acceleració és màxima i positiva. Calculeu la velocitat i l’acceleració màximes del MHS a partir de l’equació de moviment."
       }
     ],
     "dades_text": ""
@@ -110,19 +110,19 @@
         },
         {
           "titol": "Equació general",
-          "html": "Escrivim la posició com <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ)."
+          "html": "Escrivim la posició com <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>)."
         },
         {
           "titol": "Velocitat i valor màxim",
-          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·ω·cos(ω<i>t</i> + φ). El cosinus val com a màxim 1, per tant <i>v</i><sub>màx</sub> = <i>A</i>·ω = 0,0600·20π = <span class=\"res\">3,77 m/s</span>."
+          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·ω·cos(ω<i>t</i> + φ<sub>0</sub>). El cosinus val com a màxim 1, per tant <i>v</i><sub>màx</sub> = <i>A</i>·ω = 0,0600·20π = <span class=\"res\">3,77 m/s</span>."
         },
         {
           "titol": "Acceleració i valor màxim",
-          "html": "Derivant un altre cop: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −<i>A</i>·ω<sup>2</sup>·sin(ω<i>t</i> + φ) = −ω<sup>2</sup>·<i>x</i>. El valor màxim és <i>a</i><sub>màx</sub> = <i>A</i>·ω<sup>2</sup> = 0,0600·(20π)<sup>2</sup> = <span class=\"res\">237 m/s<sup>2</sup></span>."
+          "html": "Derivant un altre cop: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −<i>A</i>·ω<sup>2</sup>·sin(ω<i>t</i> + φ<sub>0</sub>) = −ω<sup>2</sup>·<i>x</i>. El valor màxim és <i>a</i><sub>màx</sub> = <i>A</i>·ω<sup>2</sup> = 0,0600·(20π)<sup>2</sup> = <span class=\"res\">237 m/s<sup>2</sup></span>."
         },
         {
           "titol": "Fase inicial",
-          "html": "Com que <i>a</i> = −ω<sup>2</sup>·<i>x</i>, l'acceleració és màxima i positiva quan <i>x</i> és mínima, és a dir, a <i>x</i> = −<i>A</i>. Per tant, a <i>t</i> = 0: −<i>A</i> = <i>A</i>·sin φ → sin φ = −1 → <span class=\"res\">φ = −π/2 rad</span>."
+          "html": "Com que <i>a</i> = −ω<sup>2</sup>·<i>x</i>, l'acceleració és màxima i positiva quan <i>x</i> és mínima, és a dir, a <i>x</i> = −<i>A</i>. Per tant, a <i>t</i> = 0: −<i>A</i> = <i>A</i>·sin φ<sub>0</sub> → sin φ<sub>0</sub> = −1 → <span class=\"res\">φ<sub>0</sub> = −π/2 rad</span>."
         },
         {
           "titol": "Equació del moviment",
@@ -190,7 +190,7 @@
     {
       "apartat": "b",
       "clau": "phi",
-      "text": "φ = −π/2 rad",
+      "text": "φ₀ = −π/2 rad",
       "valor": -1.5708,
       "pauta": -1.5708
     }

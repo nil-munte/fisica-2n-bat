@@ -67,7 +67,7 @@ El generador posa cada problema a la pàgina del seu tema principal (de més fà
 
 ## Fonts
 
-Els enunciats dels problemes de les PAU estan redactats de nou a partir dels exàmens oficials de les PAU de Catalunya, amb les mateixes dades, preguntes i puntuacions, i les figures són redibuixades. Les resolucions segueixen el mètode de les pautes de correcció oficials, explicat amb paraules pròpies. Cada problema enllaça a l'examen i a la pauta originals; la classificació per temes parteix de [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica).
+Els enunciats dels problemes de les PAU són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts literalment d'acord amb les [condicions de reutilització de la informació del sector públic](https://web.gencat.cat/ca/avis-legal), i les figures són redibuixades. Les resolucions segueixen el mètode de les pautes de correcció oficials, explicat amb paraules pròpies. Cada problema enllaça a l'examen i a la pauta originals; la classificació per temes parteix de [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica).
 
 ## Autor
 

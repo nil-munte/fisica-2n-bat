@@ -67,7 +67,7 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Fem l'experiment següent: d'una molla subjecta per un extrem a un suport hi pengem, l'una després de l'altra, set masses diferents, i fem que cadascuna faci petites oscil·lacions, de manera que descrigui un moviment vibratori harmònic simple (MVHS). Per a cada massa cronometrem amb molta cura el temps de deu oscil·lacions i en deduïm el període <i>T</i>. La gràfica mostra <i>T</i><sup>2</sup> en funció de la massa.</p>",
+    "intro": "<p>Duem a terme l’experiència següent: pengem d’una molla fixada en un suport per un dels seus extrems set masses diferents, i provoquem que aquestes masses facin petites oscil·lacions i realitzin un MVHS. Mesurem amb molta cura el temps que triga a fer deu oscil·lacions cadascuna de les masses i, a partir d’aquí, obtenim els períodes (<i>T</i>) del moviment, el quadrat dels quals es representa en la gràfica.</p>",
     "figures": [
       "fig1"
     ],
@@ -75,12 +75,12 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Trobeu la constant elàstica de la molla i raoneu si depèn o no de la massa que hi pengem. Quin període mesuraríem si féssim oscil·lar una massa de 32,0 g?"
+        "text": "Calculeu la constant elàstica de la molla i expliqueu raonadament si depèn de la massa. Indiqueu el període que mesuraríem si provoquéssim les oscil·lacions amb una massa de 32,0 g."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "La massa de 100 g penjada de la molla fa un MVHS d'amplitud 10,0 cm. Si comencem a comptar el temps quan la deixem anar des del punt més baix de la trajectòria, quines seran la seva elongació i la seva acceleració al cap de 3,00 s?"
+        "text": "El MVHS que descriu la massa de 100 g que hem penjat de la molla té una amplitud de 10,0 cm. Calculeu l’elongació i l’acceleració que tindrà la massa quan hauran transcorregut 3,00 s des del moment en què l’hem deixat oscil·lar a partir del punt més baix de la trajectòria."
       }
     ],
     "dades_text": ""

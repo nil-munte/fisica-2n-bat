@@ -51,7 +51,7 @@
       "descripcio": "velocitat de propagació de l'ona a la corda"
     },
     {
-      "simbol": "—",
+      "simbol": "Ep(x²)",
       "valor": "gràfica",
       "unitat": "",
       "descripcio": "energia potencial elàstica en funció de x² (200 J per a x² = 0,25 m²)"
@@ -63,7 +63,7 @@
     "nota": ""
   },
   "enunciat": {
-    "intro": "<p>La gràfica representa l'energia potencial elàstica d'un oscil·lador harmònic en funció del quadrat de la seva elongació, <i>x</i><sup>2</sup>. La massa de l'oscil·lador és de 62,5 g.</p>",
+    "intro": "<p>La gràfica següent mostra l’energia potencial elàstica d’un oscil·lador harmònic en funció del quadrat de la seva elongació.</p><p>L’oscil·lador té una massa de 62,5 g.</p>",
     "figures": [
       "fig1"
     ],
@@ -71,12 +71,12 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Calculeu el període de les oscil·lacions. Si l'oscil·lador fa un moviment harmònic simple d'amplitud 60 cm, quina és la seva energia cinètica màxima?"
+        "text": "Calculeu el període d’oscil·lació. Si l’oscil·lador descriu un moviment vibratori harmònic amb una amplitud de 60 cm, calculeu-ne l’energia cinètica màxima."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Aquesta oscil·lació produeix una ona en una corda, que s'hi propaga a 30 m/s. Escriviu l'equació de l'ona que avança per la corda."
+        "text": "L’oscil·lació genera una ona en una corda que es propaga a una velocitat de 30 m s<sup>–1</sup>. Escriviu l’equació de l’ona que es propaga per la corda."
       }
     ],
     "dades_text": ""

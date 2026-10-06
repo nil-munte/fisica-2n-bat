@@ -31,19 +31,19 @@
   },
   "dades": [
     {
-      "simbol": "f<sub>a</sub>",
+      "simbol": "f<sub>aranya</sub>",
       "valor": "12",
       "unitat": "Hz",
       "descripcio": "freqüència de vibració amb l'aranya sola"
     },
     {
-      "simbol": "f<sub>a+i</sub>",
+      "simbol": "f<sub>aranya+ins</sub>",
       "valor": "10",
       "unitat": "Hz",
       "descripcio": "freqüència de vibració amb l'aranya i l'insecte"
     },
     {
-      "simbol": "m<sub>i</sub>",
+      "simbol": "m<sub>ins</sub>",
       "valor": "1,00",
       "unitat": "g",
       "descripcio": "massa de l'insecte"
@@ -55,18 +55,18 @@
     "nota": "L'enunciat dona 1,25 punts a cada apartat. A l'apartat a, la pauta assigna 1 punt global al plantejament de les dues situacions i al càlcul de la massa de l'aranya, sense desglossar-lo més."
   },
   "enunciat": {
-    "intro": "<p>Les vibracions d'una teranyina amb insectes atrapats es poden descriure com un moviment harmònic simple (MHS): el sistema es comporta com una massa a l'extrem d'una molla. Quan l'aranya és sola a la teranyina, la vibració té una freqüència de 12 Hz. Si hi queda enganxat un insecte d'1,00 g, el conjunt format per l'aranya i l'insecte vibra a 10 Hz.</p>",
+    "intro": "<p>El moviment dels insectes en la teranyina feta per les aranyes és un moviment harmònic simple (MHS), és a dir, es pot modelitzar com una massa a l’extrem d’una molla. S’ha observat que quan l’aranya està sola a la teranyina produeix una vibració de freqüència 12 Hz. Si un insecte d’1,00 g de massa queda atrapat a la teranyina, el conjunt aranya i insecte produeix una vibració de 10 Hz.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Calculeu la massa de l'aranya."
+        "text": "Calculeu la massa de l’aranya."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Calculeu la constant elàstica de la teranyina. En quines posicions d'aquest MHS la velocitat és màxima? I en quines és màxima l'acceleració?"
+        "text": "Calculeu la constant elàstica d’aquesta teranyina. En quines posicions aquest MHS assoleix la màxima velocitat? I la màxima acceleració?"
       }
     ],
     "dades_text": ""
@@ -82,15 +82,15 @@
         },
         {
           "titol": "Les dues situacions",
-          "html": "Aranya sola: ω<sub>a</sub> = √(<i>k</i>/<i>m</i><sub>a</sub>). Aranya i insecte: ω<sub>a+i</sub> = √(<i>k</i>/(<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)). Dividint les dues expressions, <i>k</i> desapareix i, com que ω = 2π<i>f</i>: ω<sub>a+i</sub>/ω<sub>a</sub> = <i>f</i><sub>a+i</sub>/<i>f</i><sub>a</sub> = √(<i>m</i><sub>a</sub>/(<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>))."
+          "html": "Aranya sola: ω<sub>aranya</sub> = √(<i>k</i>/<i>m</i><sub>aranya</sub>). Aranya i insecte: ω<sub>aranya+ins</sub> = √(<i>k</i>/(<i>m</i><sub>aranya</sub> + <i>m</i><sub>ins</sub>)). Dividint les dues expressions, <i>k</i> desapareix i, com que ω = 2π<i>f</i>: ω<sub>aranya+ins</sub>/ω<sub>aranya</sub> = <i>f</i><sub>aranya+ins</sub>/<i>f</i><sub>aranya</sub> = √(<i>m</i><sub>aranya</sub>/(<i>m</i><sub>aranya</sub> + <i>m</i><sub>ins</sub>))."
         },
         {
           "titol": "Quocient de masses",
-          "html": "Elevant al quadrat i invertint: (<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)/<i>m</i><sub>a</sub> = (<i>f</i><sub>a</sub>/<i>f</i><sub>a+i</sub>)<sup>2</sup> = (12/10)<sup>2</sup> = 1,44."
+          "html": "Elevant al quadrat i invertint: (<i>m</i><sub>aranya</sub> + <i>m</i><sub>ins</sub>)/<i>m</i><sub>aranya</sub> = (<i>f</i><sub>aranya</sub>/<i>f</i><sub>aranya+ins</sub>)<sup>2</sup> = (12/10)<sup>2</sup> = 1,44."
         },
         {
           "titol": "Massa de l'aranya",
-          "html": "1 + <i>m</i><sub>i</sub>/<i>m</i><sub>a</sub> = 1,44 → <i>m</i><sub>i</sub>/<i>m</i><sub>a</sub> = 0,44 → <i>m</i><sub>a</sub> = <i>m</i><sub>i</sub>/0,44 = 1,00/0,44 = <span class=\"res\">2,27 g = 2,27·10<sup>−3</sup> kg</span>."
+          "html": "1 + <i>m</i><sub>ins</sub>/<i>m</i><sub>aranya</sub> = 1,44 → <i>m</i><sub>ins</sub>/<i>m</i><sub>aranya</sub> = 0,44 → <i>m</i><sub>aranya</sub> = <i>m</i><sub>ins</sub>/0,44 = 1,00/0,44 = <span class=\"res\">2,27 g = 2,27·10<sup>−3</sup> kg</span>."
         }
       ],
       "pauta": [
@@ -113,7 +113,7 @@
         },
         {
           "titol": "Constant elàstica",
-          "html": "Amb l'aranya sola: <i>k</i> = <i>m</i><sub>a</sub>·(2π<i>f</i><sub>a</sub>)<sup>2</sup> = 2,27·10<sup>−3</sup>·(2π·12)<sup>2</sup> = <span class=\"res\">12,9 N/m</span>. Amb l'aranya i l'insecte surt el mateix: <i>k</i> = (<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)·(2π<i>f</i><sub>a+i</sub>)<sup>2</sup> = 3,27·10<sup>−3</sup>·(2π·10)<sup>2</sup> = 12,9 N/m."
+          "html": "Amb l'aranya sola: <i>k</i> = <i>m</i><sub>aranya</sub>·(2π<i>f</i><sub>aranya</sub>)<sup>2</sup> = 2,27·10<sup>−3</sup>·(2π·12)<sup>2</sup> = <span class=\"res\">12,9 N/m</span>. Amb l'aranya i l'insecte surt el mateix: <i>k</i> = (<i>m</i><sub>aranya</sub> + <i>m</i><sub>ins</sub>)·(2π<i>f</i><sub>aranya+ins</sub>)<sup>2</sup> = 3,27·10<sup>−3</sup>·(2π·10)<sup>2</sup> = 12,9 N/m."
         },
         {
           "titol": "Velocitat màxima",
@@ -148,14 +148,14 @@
     {
       "apartat": "a",
       "clau": "quoc",
-      "text": "(m_a + m_i)/m_a = 1,44",
+      "text": "(m_aranya + m_ins)/m_aranya = 1,44",
       "valor": 1.44,
       "pauta": 1.44
     },
     {
       "apartat": "a",
       "clau": "ma",
-      "text": "m_a = 2,27·10⁻³ kg",
+      "text": "m_aranya = 2,27·10⁻³ kg",
       "valor": 0.00227,
       "pauta": 0.00227
     },

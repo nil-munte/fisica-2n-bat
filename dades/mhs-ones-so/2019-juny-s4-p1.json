@@ -54,18 +54,18 @@
     "nota": ""
   },
   "enunciat": {
-    "intro": "<p>El 2004 es va poder mesurar la massa d'un virus a partir de les oscil·lacions d'un braç horitzontal minúscul. Es va mesurar la freqüència d'oscil·lació del braç sol i després amb el virus enganxat: sense virus, la freqüència era 2,00·10<sup>15</sup> Hz, i amb el virus va baixar a 2,87·10<sup>14</sup> Hz.</p>",
+    "intro": "<p>L’any 2004 es va aconseguir mesurar la massa d’un virus. Es va determinar la freqüència d’oscil·lació d’un braç horitzontal petitíssim, primer sense el virus i després amb el virus adherit. Sense el virus, la freqüència d’oscil·lació era de 2,00 × 10<sup>15</sup> Hz, i amb el virus, aquesta freqüència va ser de 2,87 × 10<sup>14</sup> Hz.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Suposeu que el braç sense virus es comporta com una molla amb una massa de 2,10·10<sup>−16</sup> g lligada a l'extrem, que és la que oscil·la. Calculeu la constant elàstica d'aquesta molla equivalent."
+        "text": "Si suposem que el braç horitzontal sense el virus adherit es comporta com una molla amb una massa oscil·lant de 2,10 × 10<sup>–16</sup> g lligada a un extrem, quina és la constant elàstica d’aquesta suposada molla?"
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Amb el mateix model per al sistema oscil·lant, calculeu la massa del virus."
+        "text": "Partint de la mateixa suposició anterior sobre el comportament oscil·latori del sistema, calculeu la massa del virus."
       }
     ],
     "dades_text": ""
@@ -95,11 +95,11 @@
         },
         {
           "punts": 0.2,
-          "que": "Calcular la freqüència angular del braç, ω = 4π·10¹⁵ rad/s."
+          "que": "Calcular la freqüència angular del braç, ω<sub>braç</sub> = 4π·10¹⁵ rad/s."
         },
         {
           "punts": 0.4,
-          "que": "Calcular k = m·ω² = 3,32·10¹³ N/m."
+          "que": "Calcular k = m<sub>braç</sub>·ω<sub>braç</sub>² = 3,32·10¹³ N/m."
         }
       ]
     },
@@ -126,11 +126,11 @@
       "pauta": [
         {
           "punts": 0.2,
-          "que": "Calcular la freqüència angular amb el virus, 5,74π·10¹⁴ rad/s."
+          "que": "Calcular la freqüència angular amb el virus, ω<sub>braç+virus</sub> = 5,74π·10¹⁴ rad/s."
         },
         {
           "punts": 0.3,
-          "que": "Plantejar k = (m_braç + m_virus)·ω² amb la mateixa k."
+          "que": "Plantejar k = (m<sub>braç</sub> + m<sub>virus</sub>)·ω<sub>braç+virus</sub>² amb la mateixa k."
         },
         {
           "punts": 0.4,
@@ -138,7 +138,7 @@
         },
         {
           "punts": 0.1,
-          "que": "Restar la massa del braç: m_virus = 9,99·10⁻¹⁸ kg."
+          "que": "Restar la massa del braç: m<sub>virus</sub> = 9,99·10⁻¹⁸ kg."
         }
       ]
     }

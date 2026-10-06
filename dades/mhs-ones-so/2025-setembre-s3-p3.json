@@ -67,13 +67,13 @@
     "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat. A la pauta aquesta opció s'anomena «opció 1»."
   },
   "enunciat": {
-    "intro": "<p>Al taller de l'institut construïm un pèndol: un suport del qual penja un pes lligat a un fil de longitud <i>L</i> i massa negligible. Mesurem el període <i>T</i> del pèndol per a diverses longituds del fil i obtenim aquests resultats:</p><table class=\"t\"><tr><th>Longitud <i>L</i> (m)</th><td class=\"n\">0,20</td><td class=\"n\">0,30</td><td class=\"n\">0,50</td><td class=\"n\">0,80</td><td class=\"n\">1,20</td></tr><tr><th>Període <i>T</i> (s)</th><td class=\"n\">0,90</td><td class=\"n\">1,08</td><td class=\"n\">1,43</td><td class=\"n\">1,75</td><td class=\"n\">2,20</td></tr><tr><th><i>T</i><sup>2</sup> (s<sup>2</sup>)</th><td></td><td></td><td></td><td></td><td></td></tr></table>",
+    "intro": "<p>Al taller de l’institut dissenyem un pèndol amb un suport i un pes que penja d’un fil de longitud <i>L</i> i de massa negligible. Quan prenem mesures del període <i>T</i> d’aquest pèndol en funció de la longitud del fil, obtenim les dades següents:</p><table class=\"t\"><tr><th>Longitud <i>L</i> (m)</th><td class=\"n\">0,20</td><td class=\"n\">0,30</td><td class=\"n\">0,50</td><td class=\"n\">0,80</td><td class=\"n\">1,20</td></tr><tr><th>Període <i>T</i> (s)</th><td class=\"n\">0,90</td><td class=\"n\">1,08</td><td class=\"n\">1,43</td><td class=\"n\">1,75</td><td class=\"n\">2,20</td></tr><tr><th><i>T</i><sup>2</sup> (s<sup>2</sup>)</th><td></td><td></td><td></td><td></td><td></td></tr></table>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Completeu la tercera fila de la taula amb el quadrat de cada període. Dibuixeu <i>T</i><sup>2</sup> en funció de <i>L</i> a la quadrícula de sota i expliqueu per què els punts queden alineats. Trobeu el pendent de la gràfica i feu-lo servir per calcular la intensitat del camp gravitatori.",
+        "text": "Ompliu la tercera fila de la taula anterior amb els valors del període al quadrat. Representeu <i>T</i><sup>2</sup>(<i>L</i>) a la quadrícula de sota i justifiqueu per què els punts estan alineats. Calculeu el pendent d’aquest gràfic. A partir del resultat, calculeu també la intensitat del camp gravitatori.",
         "figures": [
           "fig1"
         ]
@@ -81,10 +81,10 @@
       {
         "id": "b",
         "punts": 1.25,
-        "text": "El pèndol té una massa d'1,50 kg i una longitud d'1,00 m. El deixem anar des d'un angle de 30° amb la vertical, sense tenir en compte el fregament amb l'aire. Calculeu l'energia potencial màxima, l'energia cinètica màxima i l'energia mecànica del pèndol, i també la velocitat màxima que tindrà. Preneu l'energia potencial nul·la a la posició d'equilibri."
+        "text": "Deixem caure el pèndol d’1,50 kg de massa des d’un angle de 30° respecte a la vertical i considerem negligible el fregament amb l’aire. Tenint en compte que la longitud del pèndol és d’1,00 m, calculeu les energies potencial i cinètica màximes i l’energia mecànica del pèndol, així com la velocitat màxima que assolirà. Trieu com a referència d’energia potencial zero la posició d’equilibri."
       }
     ],
-    "dades_text": "Dada: el pèndol fa un moviment harmònic simple de període <i>T</i> = 2π·√(<i>L</i>/<i>g</i>)."
+    "dades_text": "Dada: El pèndol descriu un moviment harmònic simple de període <i>T</i> = 2π√(<i>L</i>/<i>g</i>)."
   },
   "figures": {
     "fig1": {
@@ -117,15 +117,15 @@
         },
         {
           "titol": "Per què estan alineats",
-          "html": "Elevant al quadrat l'expressió del període: <i>T</i> = 2π·√(<i>L</i>/<i>g</i>) → <i>T</i><sup>2</sup> = (4π<sup>2</sup>/<i>g</i>)·<i>L</i>. Com que 4π<sup>2</sup>/<i>g</i> és una constant, <i>T</i><sup>2</sup> és directament proporcional a <i>L</i>: la gràfica ha de ser una recta que passa per l'origen, amb pendent <i>p</i> = 4π<sup>2</sup>/<i>g</i>."
+          "html": "Elevant al quadrat l'expressió del període: <i>T</i> = 2π·√(<i>L</i>/<i>g</i>) → <i>T</i><sup>2</sup> = (4π<sup>2</sup>/<i>g</i>)·<i>L</i>. Com que 4π<sup>2</sup>/<i>g</i> és una constant, <i>T</i><sup>2</sup> és directament proporcional a <i>L</i>: la gràfica ha de ser una recta que passa per l'origen, amb pendent <i>m</i> = 4π<sup>2</sup>/<i>g</i>."
         },
         {
           "titol": "Pendent",
-          "html": "Tracem la recta per l'origen que s'ajusta millor als punts; passa aproximadament per (1,2 m; 4,8 s<sup>2</sup>). Per tant, <i>p</i> = Δ(<i>T</i><sup>2</sup>)/Δ<i>L</i> = 4,8/1,2 = <span class=\"res\">4,00 s<sup>2</sup>/m</span>. (Un ajust per mínims quadrats per l'origen dona 3,98 s<sup>2</sup>/m, pràcticament el mateix.)"
+          "html": "Tracem la recta per l'origen que s'ajusta millor als punts; passa aproximadament per (1,2 m; 4,8 s<sup>2</sup>). Per tant, <i>m</i> = Δ(<i>T</i><sup>2</sup>)/Δ<i>L</i> = 4,8/1,2 = <span class=\"res\">4,00 s<sup>2</sup>/m</span>. (Un ajust per mínims quadrats per l'origen dona 3,98 s<sup>2</sup>/m, pràcticament el mateix.)"
         },
         {
           "titol": "Intensitat del camp gravitatori",
-          "html": "De <i>p</i> = 4π<sup>2</sup>/<i>g</i>: <i>g</i> = 4π<sup>2</sup>/<i>p</i> = 4π<sup>2</sup>/4,00 = <span class=\"res\">9,87 m/s<sup>2</sup></span>."
+          "html": "De <i>m</i> = 4π<sup>2</sup>/<i>g</i>: <i>g</i> = 4π<sup>2</sup>/<i>m</i> = 4π<sup>2</sup>/4,00 = <span class=\"res\">9,87 m/s<sup>2</sup></span>."
         }
       ],
       "pauta": [
@@ -147,7 +147,7 @@
         },
         {
           "punts": 0.15,
-          "que": "Obtenir g = 4π²/pendent = 9,87 m/s²."
+          "que": "Obtenir g = 4π²/m = 9,87 m/s²."
         }
       ]
     },
@@ -237,7 +237,7 @@
     {
       "apartat": "a",
       "clau": "p",
-      "text": "pendent = 4,00 s²/m",
+      "text": "m = 4,00 s²/m (pendent)",
       "valor": 4.0,
       "pauta": 4.0,
       "tol": 0.01

@@ -55,18 +55,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Una boia flota al mar i, a mesura que hi arriben les ones, puja i baixa amb un moviment harmònic simple (MHS). A partir de l'instant <i>t</i> = 0,0 s, l'onatge és tal que el punt més alt de les ones queda 1,0 m per sobre del punt més baix, i a la boia hi arriba una ona cada 2,0 s.</p>",
+    "intro": "<p>Una boia marina sura sobre la superfície de l’aigua i descriu un moviment harmònic simple (MHS) a mesura que li arriben les ones. En un instant inicial <i>t</i> = 0,0 s, l’onatge que hi ha fa que el punt més alt de les ones estigui 1,0 m més amunt que el punt més baix i que arribi una ona cada 2,0 segons.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Escriviu l'equació del moviment de la boia."
+        "text": "Escriviu l’equació del moviment de la boia."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Quina és l'energia cinètica màxima de la boia si la seva massa és d'1,5 kg?"
+        "text": "Si la boia té una massa d’1,5 kg, quina és l’energia cinètica màxima de la boia?"
       }
     ],
     "dades_text": ""
@@ -78,15 +78,15 @@
       "passos": [
         {
           "titol": "Amplitud, freqüència i ω",
-          "html": "Entre el punt més alt i el més baix hi ha dues amplituds: 2<i>A</i> = 1,0 m → <i>A</i> = <span class=\"res\">0,50 m</span>. La boia fa una oscil·lació cada vegada que arriba una ona, per tant <i>T</i> = 2,0 s i <i>f</i> = 1/<i>T</i> = 1/2,0 = 0,50 Hz. La freqüència angular és <i>ω</i> = 2π<i>f</i> = 2π·0,50 = <span class=\"res\">π rad/s</span>."
+          "html": "Entre el punt més alt i el més baix hi ha dues amplituds: 2<i>A</i><sub>0</sub> = 1,0 m → <i>A</i><sub>0</sub> = <span class=\"res\">0,50 m</span>. La boia fa una oscil·lació cada vegada que arriba una ona, per tant <i>T</i> = 2,0 s i <i>f</i> = 1/<i>T</i> = 1/2,0 = 0,50 Hz. La freqüència angular és <i>ω</i> = 2π<i>f</i> = 2π·0,50 = <span class=\"res\">π rad/s</span>."
         },
         {
           "titol": "Equació general",
-          "html": "Prenem l'eix <i>y</i> vertical, positiu cap amunt i amb l'origen al nivell mitjà de l'aigua: <i>y</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i> + <i>φ</i>)."
+          "html": "Prenem l'eix <i>y</i> vertical, positiu cap amunt i amb l'origen al nivell mitjà de l'aigua: <i>y</i>(<i>t</i>) = <i>A</i><sub>0</sub>·sin(<i>ω</i><i>t</i> + <i>δ</i>)."
         },
         {
           "titol": "Fase inicial",
-          "html": "L'enunciat no diu on és la boia a <i>t</i> = 0. Com fa la pauta, suposem que en aquest instant la boia és en un extrem, per exemple al punt més alt: <i>y</i>(0) = <i>A</i> → sin <i>φ</i> = 1 → <i>φ</i> = π/2. (Si comencés al punt més baix, seria <i>φ</i> = −π/2.)"
+          "html": "L'enunciat no diu on és la boia a <i>t</i> = 0. Com fa la pauta, suposem que en aquest instant la boia és en un extrem, per exemple al punt més alt: <i>y</i>(0) = <i>A</i><sub>0</sub> → sin <i>δ</i> = 1 → <i>δ</i> = π/2. (Si comencés al punt més baix, seria <i>δ</i> = −π/2.)"
         },
         {
           "titol": "Equació amb valors",
@@ -100,7 +100,7 @@
         },
         {
           "punts": 0.4,
-          "que": "Escriure l'equació general y(t) = A·sin(ωt + φ) i fixar la fase inicial amb la condició inicial (φ = ±π/2, o bé fer servir el cosinus sense fase)."
+          "que": "Escriure l'equació general y(t) = A<sub>0</sub>·sin(ωt + δ) i fixar la fase inicial amb la condició inicial (δ = ±π/2, o bé fer servir el cosinus sense fase)."
         },
         {
           "punts": 0.4,
@@ -113,11 +113,11 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>y</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> + <i>φ</i>)."
+          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>y</i>/d<i>t</i> = <i>A</i><sub>0</sub>·<i>ω</i>·cos(<i>ω</i><i>t</i> + <i>δ</i>)."
         },
         {
           "titol": "Velocitat màxima",
-          "html": "El mòdul de la velocitat és màxim quan el cosinus val ±1: <i>v</i><sub>màx</sub> = <i>A</i>·<i>ω</i> = 0,50·π = <span class=\"res\">1,6 m/s</span>."
+          "html": "El mòdul de la velocitat és màxim quan el cosinus val ±1: <i>v</i><sub>màx</sub> = <i>A</i><sub>0</sub>·<i>ω</i> = 0,50·π = <span class=\"res\">1,6 m/s</span>."
         },
         {
           "titol": "Energia cinètica màxima",
@@ -131,11 +131,11 @@
         },
         {
           "punts": 0.2,
-          "que": "Raonar que la velocitat és màxima quan el cosinus val 1 i calcular v_màx = A·ω ≈ 1,6 m/s."
+          "que": "Raonar que la velocitat és màxima quan el cosinus val 1 i calcular v<sub>màx</sub> = A<sub>0</sub>·ω ≈ 1,6 m/s."
         },
         {
           "punts": 0.2,
-          "que": "Escriure l'energia cinètica màxima, E_c,màx = ½·m·v_màx²."
+          "que": "Escriure l'energia cinètica màxima, E<sub>c,màx</sub> = ½·m·v<sub>màx</sub>²."
         },
         {
           "punts": 0.4,
@@ -148,7 +148,7 @@
     {
       "apartat": "a",
       "clau": "A",
-      "text": "A = 0,50 m",
+      "text": "A_0 = 0,50 m",
       "valor": 0.5,
       "pauta": 0.5
     },
@@ -169,7 +169,7 @@
     {
       "apartat": "a",
       "clau": "phi",
-      "text": "φ = π/2 (boia al punt més alt a t = 0)",
+      "text": "δ = π/2 (boia al punt més alt a t = 0)",
       "valor": 1.5708,
       "pauta": 1.5708
     },

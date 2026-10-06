@@ -38,25 +38,25 @@
       "descripcio": "massa penjada en funció del quadrat del període (recta de 0 a 3,8 kg entre T² = 0 i 1 s²)"
     },
     {
-      "simbol": "A₁",
+      "simbol": "A",
       "valor": "0,10",
       "unitat": "m",
       "descripcio": "amplitud de l'apartat a"
     },
     {
-      "simbol": "k₂",
+      "simbol": "k",
       "valor": "150",
       "unitat": "N/m",
       "descripcio": "constant elàstica suposada a l'apartat b"
     },
     {
-      "simbol": "m₂",
+      "simbol": "m",
       "valor": "1,5",
       "unitat": "kg",
       "descripcio": "massa penjada a l'apartat b"
     },
     {
-      "simbol": "A₂",
+      "simbol": "A",
       "valor": "0,20",
       "unitat": "m",
       "descripcio": "amplitud de l'apartat b"
@@ -68,7 +68,7 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Per conèixer la constant elàstica d'una molla, es pot penjar un cos de l'extrem i cronometrar el període de les oscil·lacions petites que fa al voltant de la posició d'equilibri. Repetint la mesura amb masses diferents s'ha obtingut la gràfica següent, que dona la massa penjada <i>m</i> en funció del quadrat del període, <i>T</i><sup>2</sup>.</p>",
+    "intro": "<p>Una manera d’obtenir la constant elàstica d’una molla és penjar-hi una massa i mesurar-ne el període de les petites oscil·lacions al voltant de la posició d’equilibri. En la gràfica següent hi ha representada la relació entre la massa penjada de la molla i el quadrat del període de les oscil·lacions:</p>",
     "figures": [
       "fig1"
     ],
@@ -76,12 +76,12 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Determineu la constant elàstica de la molla fent servir la gràfica. Si el cos oscil·lés amb una amplitud de 0,10 m, quina seria la seva energia cinètica màxima durant l'oscil·lació?"
+        "text": "A partir de la gràfica, calculeu la constant elàstica de la molla. Si l’amplitud de les oscil·lacions fos de 0,10 m, quina seria l’energia cinètica màxima assolida per la massa en l’oscil·lació?"
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Ara suposeu que la molla té una constant elàstica de 150 N/m, que hi pengem un cos d'1,5 kg i que el fem oscil·lar amb una amplitud de 0,20 m. Quina acceleració màxima té el cos? A continuació posem tot el muntatge dins d'un recipient ple d'aigua: el fregament va frenant el cos fins que queda aturat. Quin treball ha fet la força de fregament per aturar l'oscil·lació?"
+        "text": "Suposem que la constant elàstica de la molla és de 150 N m<sup>–1</sup>, hi pengem una massa d’1,5 kg i la fem oscil·lar amb una amplitud de 0,20 m. Quina és l’acceleració màxima que assoleix? Si submergim tot el conjunt en un recipient ple d’aigua de manera que la massa oscil·la fins a aturar-se a causa del fregament, quin és el treball fet per la força de fregament que ha aturat l’oscil·lació?"
       }
     ],
     "dades_text": ""
@@ -117,11 +117,11 @@
         },
         {
           "titol": "Energia mecànica",
-          "html": "L'energia total de l'oscil·lador només depèn de <i>k</i> i de l'amplitud: <i>E</i> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,10<sup>2</sup> = 0,75 J."
+          "html": "L'energia total de l'oscil·lador només depèn de <i>k</i> i de l'amplitud: <i>E</i><sub>T</sub> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,10<sup>2</sup> = 0,75 J."
         },
         {
           "titol": "Energia cinètica màxima",
-          "html": "Quan el cos passa per la posició d'equilibri l'energia potencial (mesurada des de l'equilibri) és nul·la i tota l'energia és cinètica. Per tant <i>E</i><sub>c,màx</sub> = <i>E</i> = <span class=\"res\">0,75 J</span>."
+          "html": "Quan el cos passa per la posició d'equilibri l'energia potencial (mesurada des de l'equilibri) és nul·la i tota l'energia és cinètica. Per tant <i>E</i><sub>c,màx</sub> = <i>E</i><sub>T</sub> = <span class=\"res\">0,75 J</span>."
         }
       ],
       "pauta": [
@@ -139,7 +139,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Calcular l'energia total amb E = ½·k·A² (0,75 J)."
+          "que": "Calcular l'energia total amb E<sub>T</sub> = ½·k·A² (0,75 J)."
         },
         {
           "punts": 0.2,
@@ -160,11 +160,11 @@
         },
         {
           "titol": "Energia de l'oscil·lació",
-          "html": "<i>E</i> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,20<sup>2</sup> = 3,0 J."
+          "html": "<i>E</i><sub>T</sub> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,20<sup>2</sup> = 3,0 J."
         },
         {
           "titol": "Treball del fregament",
-          "html": "Dins l'aigua el fregament dissipa l'energia mecànica fins que el cos queda en repòs a l'equilibri. El treball del fregament és igual a la variació d'energia mecànica: <i>W</i><sub>freg</sub> = Δ<i>E</i> = 0 − 3,0 = −3,0 J. És a dir, el fregament ha fet un treball de <span class=\"res\">3,0 J</span> en valor absolut (negatiu, perquè s'oposa al moviment)."
+          "html": "Dins l'aigua el fregament dissipa l'energia mecànica fins que el cos queda en repòs a l'equilibri. El treball del fregament és igual a la variació d'energia mecànica: <i>W</i><sub>fregament</sub> = Δ<i>E</i><sub>T</sub> = 0 − 3,0 = −3,0 J. És a dir, el fregament ha fet un treball de <span class=\"res\">3,0 J</span> en valor absolut (negatiu, perquè s'oposa al moviment)."
         }
       ],
       "pauta": [
@@ -174,7 +174,7 @@
         },
         {
           "punts": 0.3,
-          "que": "Obtenir l'acceleració màxima, a_màx = A·ω² = 20 m/s²."
+          "que": "Obtenir l'acceleració màxima, a<sub>màx</sub> = A·ω² = 20 m/s²."
         },
         {
           "punts": 0.2,
@@ -219,14 +219,14 @@
     {
       "apartat": "b",
       "clau": "E2",
-      "text": "E = 3,0 J",
+      "text": "E_T = 3,0 J",
       "valor": 3.0,
       "pauta": 3
     },
     {
       "apartat": "b",
       "clau": "Wfreg_abs",
-      "text": "|W_freg| = 3,0 J (W_freg = −3,0 J)",
+      "text": "|W_fregament| = 3,0 J (W_fregament = −3,0 J)",
       "valor": 3.0,
       "pauta": 3
     }

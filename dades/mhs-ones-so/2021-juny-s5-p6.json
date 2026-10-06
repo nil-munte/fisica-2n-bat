@@ -68,21 +68,21 @@
     "nota": "L'enunciat dona 1,25 punts a cada apartat; la pauta en detalla el repartiment. L'enunciat no dona el valor de g: la pauta fa servir g = 9,81 m/s²."
   },
   "enunciat": {
-    "intro": "<p>Una saltadora de 60 kg es llança verticalment des d'un pont (salt de pont o <i>pònting</i>) lligada a una corda elàstica de 30 m de longitud. Des d'aquell instant, completa 6 oscil·lacions en 30 s. El punt més alt de l'oscil·lació és a 4 m de la posició d'equilibri.</p>",
+    "intro": "<p>Una saltadora de 60 kg fa salt de pont (<i>pònting</i>) vertical amb una corda elàstica de 30 m de longitud. A partir d’aquest moment, la persona efectua 6 oscil·lacions en 30 s. La distància del punt d’equilibri al punt més alt del moviment oscil·latori són 4 m.</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1.25,
-        "text": "Calculeu la freqüència, el període i la freqüència angular de l'oscil·lació. Escriviu l'equació del moviment (el desplaçament respecte de la posició d'equilibri en funció del temps) si a l'instant inicial la saltadora és al punt més alt."
+        "text": "Calculeu la freqüència, el període i la freqüència angular. Escriviu l’equació del moviment (desplaçament respecte a l’equilibri en funció del temps) si l’instant inicial correspon al punt més alt del moviment."
       },
       {
         "id": "b",
         "punts": 1.25,
-        "text": "Quina és la constant elàstica de la corda? Quan la saltadora acaba aturada a la posició d'equilibri, quina longitud té la corda?"
+        "text": "Quant val la constant elàstica de la corda? Quan la saltadora queda aturada en el punt d’equilibri, quina és la longitud de la corda?"
       }
     ],
-    "dades_text": "No tingueu en compte el fregament i considereu que la corda elàstica es comporta com una molla que segueix la llei de Hooke."
+    "dades_text": "Dada: No tingueu en compte les forces de fregament i suposeu que la corda elàstica es comporta com una molla que compleix la llei de Hooke."
   },
   "figures": {},
   "resolucio": [

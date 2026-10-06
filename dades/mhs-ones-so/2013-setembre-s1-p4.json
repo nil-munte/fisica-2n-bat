@@ -50,7 +50,7 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Un cos de 250 g de massa, unit a una molla, oscil·la sense fregament. La gràfica mostra com varia la seva elongació amb el temps.</p>",
+    "intro": "<p>La gràfica següent representa el moviment d’un cos de 250 g de massa que oscil·la, sense fregament, unit a una molla.</p>",
     "figures": [
       "fig1"
     ],
@@ -58,12 +58,12 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Trobeu l'amplitud, la freqüència angular, el període i la fase inicial del moviment."
+        "text": "Calculeu l’amplitud, la freqüència angular, el període i la fase inicial d’aquest moviment."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Escriviu <i>x</i>(<i>t</i>) per a aquest moviment i trobeu quanta energia mecànica té el sistema."
+        "text": "Escriviu l’equació del moviment i calculeu l’energia mecànica total del sistema."
       }
     ],
     "dades_text": ""
@@ -92,7 +92,7 @@
         },
         {
           "titol": "Fase inicial",
-          "html": "Fem servir <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ). A <i>t</i> = 0 la gràfica dona <i>x</i> = 0: 0 = 12·sin φ → sin φ = 0, de manera que φ = 0 o φ = π. Com que l'elongació comença augmentant (la velocitat inicial és positiva), <span class=\"res\">φ = 0</span>. Si s'escriu amb cosinus, la fase equivalent és −π/2 (o 3π/2)."
+          "html": "Fem servir <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>). A <i>t</i> = 0 la gràfica dona <i>x</i> = 0: 0 = 12·sin φ<sub>0</sub> → sin φ<sub>0</sub> = 0, de manera que φ<sub>0</sub> = 0 o φ<sub>0</sub> = π. Com que l'elongació comença augmentant (la velocitat inicial és positiva), <span class=\"res\">φ<sub>0</sub> = 0</span>. Si s'escriu amb cosinus, la fase equivalent és −π/2 (o 3π/2)."
         }
       ],
       "pauta": [
@@ -110,7 +110,7 @@
         },
         {
           "punts": 0.4,
-          "que": "Determinar la fase inicial a partir de x(0) = 0: φ = 0 amb la funció sinus."
+          "que": "Determinar la fase inicial a partir de x(0) = 0: φ<sub>0</sub> = 0 amb la funció sinus."
         }
       ]
     },
@@ -123,11 +123,11 @@
         },
         {
           "titol": "Constant de la molla",
-          "html": "Per a un cos unit a una molla, <i>k</i> = <i>m</i>·ω<sup>2</sup> = 0,250·(π/3)<sup>2</sup> = <span class=\"res\">0,274 N/m</span>."
+          "html": "Per a un cos unit a una molla, <i>K</i> = <i>m</i>·ω<sup>2</sup> = 0,250·(π/3)<sup>2</sup> = <span class=\"res\">0,274 N/m</span>."
         },
         {
           "titol": "Energia mecànica",
-          "html": "<i>E</i> = ½<i>k</i><i>A</i><sup>2</sup> = ½·0,274·0,12<sup>2</sup> = <span class=\"res\">1,97·10<sup>−3</sup> J</span>. La pauta, que arrodoneix abans <i>k</i> a 0,27 N/m, dona 1,9·10<sup>−3</sup> J."
+          "html": "<i>E</i> = ½<i>K</i><i>A</i><sup>2</sup> = ½·0,274·0,12<sup>2</sup> = <span class=\"res\">1,97·10<sup>−3</sup> J</span>. La pauta, que arrodoneix abans <i>K</i> a 0,27 N/m, dona 1,9·10<sup>−3</sup> J."
         }
       ],
       "pauta": [
@@ -137,11 +137,11 @@
         },
         {
           "punts": 0.3,
-          "que": "Calcular la constant de la molla, k = m·ω² ≈ 0,27 N/m."
+          "que": "Calcular la constant de la molla, K = m·ω² ≈ 0,27 N/m."
         },
         {
           "punts": 0.3,
-          "que": "Calcular l'energia mecànica, E = ½kA² ≈ 1,9·10⁻³ J segons la pauta (1,97·10⁻³ J sense arrodonir k)."
+          "que": "Calcular l'energia mecànica, E = ½KA² ≈ 1,9·10⁻³ J segons la pauta (1,97·10⁻³ J sense arrodonir K)."
         }
       ]
     }
@@ -171,14 +171,14 @@
     {
       "apartat": "a",
       "clau": "phi",
-      "text": "φ = 0 (amb sinus)",
+      "text": "φ_0 = 0 (amb sinus)",
       "valor": 0,
       "pauta": 0
     },
     {
       "apartat": "b",
       "clau": "k",
-      "text": "k = 0,274 N/m",
+      "text": "K = 0,274 N/m",
       "valor": 0.274,
       "pauta": 0.27,
       "tol": 0.02

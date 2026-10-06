@@ -48,18 +48,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
   },
   "enunciat": {
-    "intro": "<p>Una màquina de cosir mou l'agulla amunt i avall entre dos punts que estan a 20 mm l'un de l'altre. El fabricant indica que l'agulla pot donar 1 800 puntades cada minut. Considereu que l'agulla fa un moviment harmònic simple.</p>",
+    "intro": "<p>L’agulla d’una màquina de cosir oscil·la verticalment entre dos punts separats per una distància de 20 mm. En les especificacions del fabricant s’indica que l’agulla pot fer 1 800 puntades per minut. Si sabem que l’agulla descriu un moviment harmònic simple:</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Trobeu la freqüència del moviment en Hz i escriviu-ne l'equació, sabent que a l'instant inicial l'agulla és al punt més alt."
+        "text": "Determineu la freqüència en Hz i escriviu l’equació del moviment suposant que en el moment inicial l’agulla es troba en la posició de màxima altura."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Trobeu la velocitat màxima i l'acceleració màxima de l'agulla."
+        "text": "Calculeu la velocitat i l’acceleració màximes de l’agulla."
       }
     ],
     "dades_text": ""
@@ -71,7 +71,7 @@
       "passos": [
         {
           "titol": "Freqüència",
-          "html": "Cada puntada és una oscil·lació completa de l'agulla, de manera que la freqüència és el nombre de puntades per segon: <i>f</i> = 1 800 / 60 s = <span class=\"res\">30 Hz</span>."
+          "html": "Cada puntada és una oscil·lació completa de l'agulla, de manera que la freqüència és el nombre de puntades per segon: ν = 1 800 / 60 s = <span class=\"res\">30 Hz</span>."
         },
         {
           "titol": "Amplitud",
@@ -79,17 +79,17 @@
         },
         {
           "titol": "Equació",
-          "html": "Prenem l'eix <i>y</i> vertical i positiu cap amunt. Si a <i>t</i> = 0 l'agulla és a <i>y</i> = +<i>A</i>, la funció cosinus no necessita fase inicial: <i>y</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i>)."
+          "html": "Prenem l'eix <i>y</i> vertical i positiu cap amunt. Si a <i>t</i> = 0 l'agulla és a <i>y</i> = +<i>A</i>, la funció cosinus no necessita fase inicial: <i>y</i>(<i>t</i>) = <i>A</i>·cos(2πν·<i>t</i>)."
         },
         {
           "titol": "Amb valors",
-          "html": "2π<i>f</i> = 2π·30 = 60π ≈ 1,88·10<sup>2</sup> rad/s, per tant <span class=\"res\"><i>y</i>(<i>t</i>) = 0,010·cos(1,88·10<sup>2</sup>·<i>t</i>) m</span>. Si s'escriu amb sinus, cal afegir una fase de π/2: <i>y</i>(<i>t</i>) = 0,010·sin(1,88·10<sup>2</sup>·<i>t</i> + π/2) m."
+          "html": "2πν = 2π·30 = 60π ≈ 1,88·10<sup>2</sup> rad/s, per tant <span class=\"res\"><i>y</i>(<i>t</i>) = 0,010·cos(1,88·10<sup>2</sup>·<i>t</i>) m</span>. Si s'escriu amb sinus, cal afegir una fase de π/2: <i>y</i>(<i>t</i>) = 0,010·sin(1,88·10<sup>2</sup>·<i>t</i> + π/2) m."
         }
       ],
       "pauta": [
         {
           "punts": 0.3,
-          "que": "Veure que cada puntada és una oscil·lació i obtenir f = 30 Hz."
+          "que": "Veure que cada puntada és una oscil·lació i obtenir ν = 30 Hz."
         },
         {
           "punts": 0.3,
@@ -97,7 +97,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Escriure la forma general y(t) = A·cos(2πf·t)."
+          "que": "Escriure la forma general y(t) = A·cos(2πν·t)."
         },
         {
           "punts": 0.2,
@@ -110,17 +110,17 @@
       "passos": [
         {
           "titol": "Velocitat",
-          "html": "Derivem la posició respecte del temps: <i>v</i><sub><i>y</i></sub>(<i>t</i>) = d<i>y</i>/d<i>t</i> = −2π<i>f</i>·<i>A</i>·sin(2π<i>f</i>·<i>t</i>). El valor màxim és quan el sinus val ±1: <i>v</i><sub><i>y</i>,màx</sub> = 2π<i>f</i>·<i>A</i> = 2π·30·0,010 = <span class=\"res\">1,88 m/s</span>."
+          "html": "Derivem la posició respecte del temps: <i>v</i><sub><i>y</i></sub>(<i>t</i>) = d<i>y</i>/d<i>t</i> = −2πν·<i>A</i>·sin(2πν·<i>t</i>). El valor màxim és quan el sinus val ±1: <i>v</i><sub><i>y</i>,màx</sub> = 2πν·<i>A</i> = 2π·30·0,010 = <span class=\"res\">1,88 m/s</span>."
         },
         {
           "titol": "Acceleració",
-          "html": "Derivem la velocitat: <i>a</i><sub><i>y</i></sub>(<i>t</i>) = d<i>v</i><sub><i>y</i></sub>/d<i>t</i> = −4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i>·cos(2π<i>f</i>·<i>t</i>). El valor màxim és quan el cosinus val ±1: <i>a</i><sub><i>y</i>,màx</sub> = 4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i> = 4π<sup>2</sup>·30<sup>2</sup>·0,010 = <span class=\"res\">3,55·10<sup>2</sup> m/s<sup>2</sup></span>."
+          "html": "Derivem la velocitat: <i>a</i><sub><i>y</i></sub>(<i>t</i>) = d<i>v</i><sub><i>y</i></sub>/d<i>t</i> = −4π<sup>2</sup>ν<sup>2</sup>·<i>A</i>·cos(2πν·<i>t</i>). El valor màxim és quan el cosinus val ±1: <i>a</i><sub><i>y</i>,màx</sub> = 4π<sup>2</sup>ν<sup>2</sup>·<i>A</i> = 4π<sup>2</sup>·30<sup>2</sup>·0,010 = <span class=\"res\">3,55·10<sup>2</sup> m/s<sup>2</sup></span>."
         }
       ],
       "pauta": [
         {
           "punts": 0.3,
-          "que": "Obtenir l'expressió de v_y(t) derivant y(t)."
+          "que": "Obtenir l'expressió de v<sub>y</sub>(t) derivant y(t)."
         },
         {
           "punts": 0.2,
@@ -128,7 +128,7 @@
         },
         {
           "punts": 0.3,
-          "que": "Obtenir l'expressió de a_y(t) derivant v_y(t)."
+          "que": "Obtenir l'expressió de a<sub>y</sub>(t) derivant v<sub>y</sub>(t)."
         },
         {
           "punts": 0.2,
@@ -141,7 +141,7 @@
     {
       "apartat": "a",
       "clau": "f",
-      "text": "f = 30 Hz",
+      "text": "ν = 30 Hz",
       "valor": 30,
       "pauta": 30
     },
@@ -155,7 +155,7 @@
     {
       "apartat": "a",
       "clau": "w",
-      "text": "ω = 1,88·10² rad/s",
+      "text": "2πν = 1,88·10² rad/s",
       "valor": 188,
       "pauta": 188
     },

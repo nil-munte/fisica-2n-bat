@@ -61,18 +61,18 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>En un motor d'explosió, el pistó de cada cilindre es mou amb un moviment vibratori harmònic simple. En unes condicions de funcionament concretes, el pistó recorre 20,0 cm d'un extrem a l'altre i el motor gira a 1,91·10<sup>3</sup> rpm (revolucions per minut). A l'instant <i>t</i> = 0,00 s el pistó és a 10,0 cm de la posició d'equilibri.</p>",
+    "intro": "<p>El pistó d’un cilindre del motor d’explosió d’un vehicle desenvolupa un moviment vibratori harmònic simple. En un règim de funcionament determinat, té un recorregut de 20,0 cm (d’extrem a extrem) i el motor fa 1,91 × 10<sup>3</sup> rpm (revolucions per minut). En l’instant <i>t</i> = 0,00 s, el pistó està situat a 10,0 cm de la seva posició d’equilibri. Determineu:</p>",
     "figures": [],
     "apartats": [
       {
         "id": "a",
         "punts": 1,
-        "text": "Escriviu l'equació del moviment del pistó i calculeu-ne la velocitat màxima."
+        "text": "L’equació de moviment i la velocitat màxima del pistó."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Si la massa del pistó és de 200 g, quin és el valor de la força màxima que hi actua?"
+        "text": "El valor de la força màxima que actua sobre el pistó, si té una massa de 200 g."
       }
     ],
     "dades_text": ""
@@ -100,7 +100,7 @@
         },
         {
           "titol": "Velocitat màxima",
-          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> ± π/2). El seu valor màxim és quan el cosinus val ±1: <i>v</i><sub>màx</sub> = <i>A</i>·<i>ω</i> = 0,100·200 = <span class=\"res\">20,0 m/s</span>."
+          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> ± π/2). El seu valor màxim és quan el cosinus val ±1: <i>v</i><sub>màxima</sub> = <i>A</i>·<i>ω</i> = 0,100·200 = <span class=\"res\">20,0 m/s</span>."
         }
       ],
       "pauta": [
@@ -122,7 +122,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Calcular la velocitat màxima, v_màx = A·ω = 20,0 m/s."
+          "que": "Calcular la velocitat màxima, v<sub>màxima</sub> = A·ω = 20,0 m/s."
         }
       ]
     },
@@ -135,7 +135,7 @@
         },
         {
           "titol": "Força màxima",
-          "html": "La força és màxima als extrems, on |<i>x</i>| = <i>A</i>: <i>F</i><sub>màx</sub> = <i>k</i>·<i>A</i> = 8,00·10<sup>3</sup>·0,100 = <span class=\"res\">800 N</span>."
+          "html": "La força és màxima als extrems, on |<i>x</i>| = <i>A</i>: <i>F</i><sub>màxima</sub> = <i>k</i>·<i>A</i> = 8,00·10<sup>3</sup>·0,100 = <span class=\"res\">800 N</span>."
         }
       ],
       "pauta": [
@@ -145,7 +145,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Escriure que la força màxima és F_màx = k·A."
+          "que": "Escriure que la força màxima és F<sub>màxima</sub> = k·A."
         },
         {
           "punts": 0.4,
@@ -172,7 +172,7 @@
     {
       "apartat": "a",
       "clau": "vmax",
-      "text": "v_màx = 20,0 m/s",
+      "text": "v_màxima = 20,0 m/s",
       "valor": 20.0,
       "pauta": 20.0
     },
@@ -186,7 +186,7 @@
     {
       "apartat": "b",
       "clau": "Fmax",
-      "text": "F_màx = 800 N",
+      "text": "F_màxima = 800 N",
       "valor": 800,
       "pauta": 800
     }

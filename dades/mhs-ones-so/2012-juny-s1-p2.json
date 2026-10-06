@@ -74,7 +74,7 @@
     "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
   },
   "enunciat": {
-    "intro": "<p>Volem construir una balança amb una molla de constant de recuperació <i>k</i> = 4,00 N/m i longitud natural <i>l</i> = 20,0 cm. Pengem la molla verticalment d'un suport per un extrem i a l'altre extrem hi fixem una plataforma de massa <i>m</i> = 20,0 g proveïda d'un dial: una agulla que assenyala la mesura en un regle graduat, com es veu a la figura.</p>",
+    "intro": "<p>Disposem d’una molla de constant de recuperació <i>k</i> = 4,00 N m<sup>–1</sup> i de longitud natural <i>l</i> = 20,0 cm, amb la qual volem fer una balança. Per fer-la, pengem la molla verticalment per un dels extrems i, a l’altre, col·loquem una plataforma de massa <i>m</i> = 20,0 g amb un dial, de manera que aquest indiqui el valor de la mesura sobre una escala graduada, tal com es mostra a la figura.</p>",
     "figures": [
       "fig1"
     ],
@@ -82,15 +82,15 @@
       {
         "id": "a",
         "punts": 1,
-        "text": "Posem la plataforma i esperem que el sistema quedi en repòs. Quina lectura indica el dial? Preneu com a zero del dial l'extrem superior del regle de la figura."
+        "text": "Determineu la lectura que marca el dial en col·locar la plataforma i deixar que el sistema s’aturi. Considereu que el zero del dial coincideix amb l’extrem superior del regle de la figura."
       },
       {
         "id": "b",
         "punts": 1,
-        "text": "Col·loquem un objecte de massa <i>M</i> = 300 g sobre la plataforma. Tot seguit apartem el conjunt 10,0 cm de la nova posició d'equilibri i el deixem anar, de manera que comença a oscil·lar lliurement. Amb quina velocitat tornarà a passar per la posició d'equilibri?"
+        "text": "Afegim un objecte de massa <i>M</i> = 300 g damunt de la plataforma. A continuació, desplacem el conjunt una distància de 10,0 cm respecte a la nova posició d’equilibri i el deixem anar, de manera que el sistema comença a oscil·lar lliurement. Amb quina velocitat tornarà a passar per la posició d’equilibri?"
       }
     ],
-    "dades_text": "Dada: <i>g</i> = 9,81 m/s<sup>2</sup>."
+    "dades_text": "Dada: <b><i>g</i></b> = 9,81 m s<sup>–2</sup>."
   },
   "figures": {
     "fig1": {
