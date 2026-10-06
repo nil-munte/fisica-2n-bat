@@ -33,7 +33,7 @@ Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir d
     ├── comprova_pau.py        Comprova els problemes (estructura, càlculs i notació)
     ├── fonts_pau.py           Text i imatges dels PDF oficials (fonts/pdf/)
     ├── previsualitza_figures.py  Figures SVG d'un problema com a PNG
-    ├── plantilles/            Estil i filtre del bloc de problemes de les PAU
+    ├── plantilles/            Estil del bloc de problemes de les PAU
     ├── examens_pau.py         Separa els exàmens oficials per sèries i genera pau/
     └── requirements.txt
 ```
@@ -78,7 +78,7 @@ python eines/comprova_pau.py     # estructura, càlculs (Python) contra la pauta
 python eines/genera_pau.py       # insereix els problemes a les pàgines que existeixen
 ```
 
-El generador posa cada problema a la pàgina del seu tema principal (de més fàcil a més difícil, amb filtre per nivell) i un enllaç a les pàgines dels temes secundaris. Per als temes sense pàgina, diu quants problemes hi ha preparats. Quan s'afegeix la ruta d'una pàgina nova a `temes.json`, n'hi ha prou amb tornar a executar el generador i després `build_pdfs.py`.
+El generador posa cada problema a la pàgina del seu tema principal (de més fàcil a més difícil, amb el nivell ★/★★/★★★ de cada problema) i un enllaç a les pàgines dels temes secundaris. Per als temes sense pàgina, diu quants problemes hi ha preparats. Quan s'afegeix la ruta d'una pàgina nova a `temes.json`, n'hi ha prou amb tornar a executar el generador i després `build_pdfs.py`.
 
 ## Fonts
 

@@ -1,10 +1,4 @@
 /* Problemes de les PAU (generat per eines/genera_pau.py a partir de eines/plantilles/pau.css) */
-.pau-filtre{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px}
-.pau-filtre span{color:var(--muted);margin-right:2px}
-.pau-filtre button{min-height:32px;padding:4px 12px;border-radius:20px;font-size:13.5px}
-.pau-filtre button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
-.pau-filtre button small{font-family:var(--f-mono);font-size:11.5px;opacity:.75;margin-left:4px}
-.pau-buit{margin:0;color:var(--muted)}
 .ex.pau .eh .nv{font-family:var(--f-mono);font-size:13px;color:var(--y)}
 .ex.pau .pau-parts{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:6px}
 .ex.pau .pau-parts li{padding-left:2.2em;position:relative}
@@ -20,9 +14,9 @@
 .ex.pau figcaption{font-size:13px;color:var(--muted)}
 .ex.pau .pau-meta{margin:0;font-size:13px;color:var(--muted)}
 .ex.pau .pau-meta a{color:var(--ink);text-underline-offset:3px}
-.ex.pau .pau-report{margin:10px 0 0;font-size:13px;color:var(--muted)}
-.ex.pau .pau-report a{color:var(--muted);text-underline-offset:3px}
-.ex.pau .pau-report a:hover{color:var(--ink)}
+.ex .pau-report{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.ex .pau-report a{color:var(--muted);text-underline-offset:3px}
+.ex .pau-report a:hover{color:var(--ink)}
 .ex.pau .sap{display:flex;flex-direction:column;gap:6px;padding-top:4px}
 .ex.pau .sap+.sap{border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
 .ex.pau .sap h5{font-family:var(--f-display);font-weight:600;margin:0;color:var(--ink);font-size:15px}
@@ -34,15 +28,12 @@
 .ex.pau .pauta .pp{font-family:var(--f-mono);font-weight:500;text-align:right}
 .ex.pau .fontpauta{font-size:13px;color:var(--muted)}
 .ex.pau .fontpauta a{color:var(--ink)}
-#pau[data-filtre="1"] .ex.pau:not([data-nivell="1"]),
-#pau[data-filtre="2"] .ex.pau:not([data-nivell="2"]),
-#pau[data-filtre="3"] .ex.pau:not([data-nivell="3"]){display:none}
 .pau-enllacos{display:flex;flex-direction:column;gap:8px}
 .pau-enllacos ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
 .pau-enllacos a{color:var(--ink);text-underline-offset:3px}
 .pau-enllacos small{color:var(--muted)}
 @media print{
-  .pau-filtre,.ex.pau .pau-meta,.ex.pau .pau-report{display:none!important}
+  .ex.pau .pau-meta,.ex .pau-report{display:none!important}
   .ex.pau .pauta{background:#fff;border-color:#999}
   .ex.pau figure svg{max-width:13cm}
 }
