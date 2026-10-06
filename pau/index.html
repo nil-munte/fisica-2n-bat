@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exàmens de Física de selectivitat (PAU) de Catalunya</title>
+<meta name="description" content="Exàmens de Física de selectivitat (PAU) de Catalunya, per any, convocatòria i sèrie, amb els criteris de correcció oficials.">
+<link rel="canonical" href="https://nil-munte.github.io/fisica-2n-bat/pau/">
+<!-- Previsualització en compartir (WhatsApp, Telegram, LinkedIn, X, Bluesky...). Si canvieu de domini, substituïu https://nil-munte.github.io/fisica-2n-bat/ (og:url, og:image, canonical). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Física · 2n de Batxillerat">
+<meta property="og:locale" content="ca_ES">
+<meta property="og:title" content="Exàmens de selectivitat (PAU) de Física">
+<meta property="og:description" content="Exàmens de Física de selectivitat (PAU) de Catalunya, per any, convocatòria i sèrie, en PDF sense solucions o amb els criteris de correcció oficials.">
+<meta property="og:url" content="https://nil-munte.github.io/fisica-2n-bat/pau/">
+<meta property="og:image" content="https://nil-munte.github.io/fisica-2n-bat/img/og-pau.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Exàmens de selectivitat (PAU) de Física de Catalunya, per any, convocatòria i sèrie">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exàmens de selectivitat (PAU) de Física">
+<meta name="twitter:description" content="Exàmens de Física de selectivitat (PAU) de Catalunya, per any, convocatòria i sèrie, en PDF sense solucions o amb els criteris de correcció oficials.">
+<meta name="twitter:image" content="https://nil-munte.github.io/fisica-2n-bat/img/og-pau.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --bg:#edf1f0; --surface:#fbfcfc; --ink:#15212a; --muted:#5a6a73; --line:#d2dcdf; --chip:#e4eaec;
+  --x:#1f5fbf; --y:#c4461a;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0e181d; --surface:#142229; --ink:#e1e9ec; --muted:#8fa2ab; --line:#26404b; --chip:#1c2f37;
+  --x:#6ea8ff; --y:#ff8f5a; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0e181d; --surface:#142229; --ink:#e1e9ec; --muted:#8fa2ab; --line:#26404b; --chip:#1c2f37;
+  --x:#6ea8ff; --y:#ff8f5a; color-scheme:dark }
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--navh,56px) + 10px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:22px}
+main{display:contents}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,3.8vw,40px);letter-spacing:-.01em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0;font-size:14px}
+h2{font-family:var(--f-display);font-size:24px;font-weight:600;margin:0}
+h3{font-family:var(--f-display);font-size:18px;font-weight:600;margin:0}
+section.blk{display:flex;flex-direction:column;gap:14px;border-top:3px solid var(--ink);padding-top:26px;margin-top:22px}
+section.blk>h2{font-size:clamp(24px,3vw,30px)}
+.lead{margin:0;color:var(--muted);max-width:72ch}
+.lead b{color:var(--ink);font-weight:600}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:var(--muted);margin-bottom:4px}
+.crumbs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.crumbs a:hover{border-color:var(--ink)}
+/* barra superior: la mateixa del tema */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-inline:-16px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 6px 10px -10px rgba(0,0,0,.35)}
+nav.toc{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:8px 16px}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:5px 14px;font-size:14px;font-weight:500;white-space:nowrap}
+nav.toc a:hover{border-color:var(--muted)}
+nav.toc a[aria-current="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+nav.toc .sep{flex:none;width:1px;align-self:stretch;background:var(--line);margin-inline:4px}
+nav.toc a.top{font-family:var(--f-display);font-weight:600}
+nav.toc a.home{font-family:var(--f-display);font-weight:600;background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+nav.toc a.home:hover{background:var(--chip)}
+nav.toc .anys{display:contents}
+nav.toc .anys a{font-family:var(--f-mono);font-size:13.5px;padding-inline:11px}
+section[tabindex="-1"]:focus{outline:none}
+a:focus-visible{outline:2px solid var(--x);outline-offset:2px}
+/* exàmens */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.convs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:820px){.convs{grid-template-columns:minmax(0,1fr)}}
+.conv{padding:16px 18px;display:flex;flex-direction:column}
+.conv h3{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
+.conv h3 small{font-family:var(--f-body);font-weight:400;color:var(--muted);font-size:14px}
+.serie{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 0 0;margin-top:12px;border-top:1px solid var(--line)}
+.serie:first-of-type{border-top:0;margin-top:4px;padding-top:4px}
+.sn{font-family:var(--f-display);font-weight:700;font-size:17px;min-width:4.6em}
+.botons{display:flex;flex-wrap:wrap;gap:8px}
+.dlg{display:inline-flex}
+.btn{display:inline-flex;align-items:center;gap:6px;font-weight:500;text-decoration:none;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;min-height:38px;white-space:nowrap}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+.btn.primary:hover{opacity:.9}
+.dlg .btn:first-child{border-radius:7px 0 0 7px}
+.dlg .btn.ic{border-radius:0 7px 7px 0;border-left-width:0;padding-inline:10px}
+.dlg .btn.primary.ic{border-left:1px solid color-mix(in srgb,var(--surface) 30%,transparent)}
+.chip{font-size:12px;background:var(--chip);border-radius:20px;padding:2px 10px;color:var(--muted)}
+a.chip{text-decoration:none;color:var(--ink);border:1px solid var(--line)}
+a.chip:hover{border-color:var(--muted)}
+.web{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+footer{color:var(--muted);font-size:13px;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+footer p{margin:0;max-width:80ch}
+footer .autor{font-size:14px;color:var(--ink)}
+footer .autor a{color:var(--ink);text-underline-offset:3px}
+@media print{.topbar,.crumbs{display:none!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Exàmens de selectivitat (PAU) de Física", "url": "https://nil-munte.github.io/fisica-2n-bat/pau/", "inLanguage": "ca", "author": {"@type": "Person", "name": "Nil Munté Guerrero", "url": "https://nil-munte.github.io"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Física · 2n de Batxillerat", "item": "https://nil-munte.github.io/fisica-2n-bat/"}, {"@type": "ListItem", "position": 2, "name": "Exàmens de selectivitat (PAU) de Física", "item": "https://nil-munte.github.io/fisica-2n-bat/pau/"}]}</script>
+</head>
+<body>
+<div class="wrap">
+
+  <header id="inici">
+    <div>
+      <nav class="crumbs" aria-label="Ruta"><a href="../index.html">Física · 2n de Batxillerat</a><span aria-hidden="true">›</span><span aria-current="page">Exàmens de les PAU</span></nav>
+      <h1>Exàmens de selectivitat (PAU) de Física</h1>
+      <p class="sub"><!-- examens:resum -->37 exàmens de Física de 2010 a 2026<!-- /examens:resum --> de les PAU de Catalunya, per any, convocatòria i sèrie.</p>
+    </div>
+  </header>
+
+  <div class="topbar" id="topbar">
+  <nav class="toc" aria-label="Anys">
+    <a href="../index.html" class="home" title="Torna a la llista de temes">← Tots els temes</a><span class="sep"></span><a href="#inici" class="top" title="Torna al principi d'aquesta pàgina">↑ Amunt</a>
+    <span class="anys"><!-- examens:anys --><a href="#a2026">2026</a><a href="#a2025">2025</a><a href="#a2024">2024</a><a href="#a2023">2023</a><a href="#a2022">2022</a><a href="#a2021">2021</a><a href="#a2020">2020</a><a href="#a2019">2019</a><a href="#a2018">2018</a><a href="#a2016">2016</a><a href="#a2015">2015</a><a href="#a2014">2014</a><a href="#a2013">2013</a><a href="#a2012">2012</a><a href="#a2010">2010</a><!-- /examens:anys --></span>
+  </nav>
+  </div>
+
+  <main>
+  <p class="lead"><b>PDF enunciat</b>: l'examen tal com es va posar, sense solucions. <b>PDF enunciat + solucions</b>: l'enunciat seguit dels criteris de correcció oficials. El botó obre el PDF; la fletxa el descarrega.</p>
+
+<!-- examens:llista -->
+  <section class="blk" id="a2026">
+    <h2>2026</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2026-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2026 (0,7 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2026-juny-s1.pdf" download="PAU Física 2026 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2026 (0,7 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2026 (0,7 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2026-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2026 amb les solucions (1,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2026-juny-s1-solucions.pdf" download="PAU Física 2026 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2026 amb les solucions (1,2 MB)" aria-label="Descarrega la sèrie 1 de juny 2026 amb les solucions (1,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 2</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2026-setembre-s2.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 2 de setembre 2026 (0,5 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2026-setembre-s2.pdf" download="PAU Física 2026 Setembre - Sèrie 2 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 2 de setembre 2026 (0,5 MB)" aria-label="Descarrega l'enunciat de la sèrie 2 de setembre 2026 (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2026-setembre-s2-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 2 de setembre 2026 amb les solucions (1,4 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2026-setembre-s2-solucions.pdf" download="PAU Física 2026 Setembre - Sèrie 2 - Enunciat i solucions.pdf" title="Descarrega la sèrie 2 de setembre 2026 amb les solucions (1,4 MB)" aria-label="Descarrega la sèrie 2 de setembre 2026 amb les solucions (1,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2025">
+    <h2>2025</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2025-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2025 (0,5 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2025-juny-s1.pdf" download="PAU Física 2025 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2025 (0,5 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2025 (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2025-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2025 amb les solucions (0,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2025-juny-s1-solucions.pdf" download="PAU Física 2025 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2025 amb les solucions (0,9 MB)" aria-label="Descarrega la sèrie 1 de juny 2025 amb les solucions (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2025-setembre-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de setembre 2025 (0,9 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2025-setembre-s3.pdf" download="PAU Física 2025 Setembre - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de setembre 2025 (0,9 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de setembre 2025 (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2025-setembre-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de setembre 2025 amb les solucions (1,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2025-setembre-s3-solucions.pdf" download="PAU Física 2025 Setembre - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de setembre 2025 amb les solucions (1,5 MB)" aria-label="Descarrega la sèrie 3 de setembre 2025 amb les solucions (1,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2025-setembre-s3-p3" title="Moviment harmònic simple">P3 · Mesurar g amb un pèndol de taller</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2024">
+    <h2>2024</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2024-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2024 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2024-juny-s1.pdf" download="PAU Física 2024 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2024 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2024 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2024-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2024 amb les solucions (1,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2024-juny-s1-solucions.pdf" download="PAU Física 2024 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2024 amb les solucions (1,3 MB)" aria-label="Descarrega la sèrie 1 de juny 2024 amb les solucions (1,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2024-juny-s1-p2" title="Moviment harmònic simple">P2 · Les ombres d&#x27;un disc que gira i d&#x27;una molla</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2024-setembre-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de setembre 2024 (0,7 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2024-setembre-s3.pdf" download="PAU Física 2024 Setembre - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de setembre 2024 (0,7 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de setembre 2024 (0,7 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2024-setembre-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de setembre 2024 amb les solucions (1,7 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2024-setembre-s3-solucions.pdf" download="PAU Física 2024 Setembre - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de setembre 2024 amb les solucions (1,7 MB)" aria-label="Descarrega la sèrie 3 de setembre 2024 amb les solucions (1,7 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2024-setembre-s3-p7" title="Moviment harmònic simple">P7 · Una massa penjada: força i energia</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2023">
+    <h2>2023</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2023-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2023 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2023-juny-s1.pdf" download="PAU Física 2023 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2023 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2023 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2023-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2023 amb les solucions (1,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2023-juny-s1-solucions.pdf" download="PAU Física 2023 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2023 amb les solucions (1,2 MB)" aria-label="Descarrega la sèrie 1 de juny 2023 amb les solucions (1,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2023-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2023 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2023-juny-s5.pdf" download="PAU Física 2023 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2023 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2023 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2023-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2023 amb les solucions (1,4 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2023-juny-s5-solucions.pdf" download="PAU Física 2023 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2023 amb les solucions (1,4 MB)" aria-label="Descarrega la sèrie 5 de juny 2023 amb les solucions (1,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2023-juny-s5-p3" title="Moviment harmònic simple">P3 · De la gràfica x(t) a la velocitat</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 2</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2023-setembre-s2.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 2 de setembre 2023 (0,8 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2023-setembre-s2.pdf" download="PAU Física 2023 Setembre - Sèrie 2 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 2 de setembre 2023 (0,8 MB)" aria-label="Descarrega l'enunciat de la sèrie 2 de setembre 2023 (0,8 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2023-setembre-s2-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 2 de setembre 2023 amb les solucions (1,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2023-setembre-s2-solucions.pdf" download="PAU Física 2023 Setembre - Sèrie 2 - Enunciat i solucions.pdf" title="Descarrega la sèrie 2 de setembre 2023 amb les solucions (1,9 MB)" aria-label="Descarrega la sèrie 2 de setembre 2023 amb les solucions (1,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2023-setembre-s2-p5" title="Moviment harmònic simple">P5 · Una balança feta amb una molla</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2022">
+    <h2>2022</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 2</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2022-juny-s2.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 2 de juny 2022 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2022-juny-s2.pdf" download="PAU Física 2022 Juny - Sèrie 2 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 2 de juny 2022 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 2 de juny 2022 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2022-juny-s2-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 2 de juny 2022 amb les solucions (1,8 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2022-juny-s2-solucions.pdf" download="PAU Física 2022 Juny - Sèrie 2 - Enunciat i solucions.pdf" title="Descarrega la sèrie 2 de juny 2022 amb les solucions (1,8 MB)" aria-label="Descarrega la sèrie 2 de juny 2022 amb les solucions (1,8 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2022-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2022 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2022-juny-s5.pdf" download="PAU Física 2022 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2022 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2022 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2022-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2022 amb les solucions (0,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2022-juny-s5-solucions.pdf" download="PAU Física 2022 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2022 amb les solucions (0,9 MB)" aria-label="Descarrega la sèrie 5 de juny 2022 amb les solucions (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2022-juny-s5-p3" title="Moviment harmònic simple">P3 · Caracterització d&#x27;una molla amb la gràfica T²–m</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2021">
+    <h2>2021</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 2</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2021-juny-s2.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 2 de juny 2021 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2021-juny-s2.pdf" download="PAU Física 2021 Juny - Sèrie 2 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 2 de juny 2021 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 2 de juny 2021 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2021-juny-s2-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 2 de juny 2021 amb les solucions (1,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2021-juny-s2-solucions.pdf" download="PAU Física 2021 Juny - Sèrie 2 - Enunciat i solucions.pdf" title="Descarrega la sèrie 2 de juny 2021 amb les solucions (1,3 MB)" aria-label="Descarrega la sèrie 2 de juny 2021 amb les solucions (1,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2021-juny-s2-p3" title="Moviment harmònic simple">P3 · Bloc i molla horitzontal: equació i energies en funció del temps</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2021-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2021 (0,1 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2021-juny-s5.pdf" download="PAU Física 2021 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2021 (0,1 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2021 (0,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2021-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2021 amb les solucions (1,0 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2021-juny-s5-solucions.pdf" download="PAU Física 2021 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2021 amb les solucions (1,0 MB)" aria-label="Descarrega la sèrie 5 de juny 2021 amb les solucions (1,0 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2021-juny-s5-p6" title="Moviment harmònic simple">P6 · Salt de pont amb corda elàstica</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2020">
+    <h2>2020</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2020-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2020 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2020-juny-s1.pdf" download="PAU Física 2020 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2020 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2020 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2020-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2020 amb les solucions (0,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2020-juny-s1-solucions.pdf" download="PAU Física 2020 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2020 amb les solucions (0,9 MB)" aria-label="Descarrega la sèrie 1 de juny 2020 amb les solucions (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2020-juny-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de juny 2020 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2020-juny-s3.pdf" download="PAU Física 2020 Juny - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de juny 2020 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de juny 2020 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2020-juny-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de juny 2020 amb les solucions (1,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2020-juny-s3-solucions.pdf" download="PAU Física 2020 Juny - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de juny 2020 amb les solucions (1,2 MB)" aria-label="Descarrega la sèrie 3 de juny 2020 amb les solucions (1,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2020-juny-s3-p1" title="Moviment harmònic simple">P1 · La paràbola de l&#x27;energia potencial d&#x27;una molla</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2020-setembre-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de setembre 2020 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2020-setembre-s4.pdf" download="PAU Física 2020 Setembre - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de setembre 2020 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de setembre 2020 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2020-setembre-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de setembre 2020 amb les solucions (1,1 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2020-setembre-s4-solucions.pdf" download="PAU Física 2020 Setembre - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de setembre 2020 amb les solucions (1,1 MB)" aria-label="Descarrega la sèrie 4 de setembre 2020 amb les solucions (1,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2020-setembre-s4-p3" title="Moviment harmònic simple">P3 · Una aranya i un insecte a la teranyina</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2019">
+    <h2>2019</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2019-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2019 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2019-juny-s1.pdf" download="PAU Física 2019 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2019 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2019 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2019-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2019 amb les solucions (1,4 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2019-juny-s1-solucions.pdf" download="PAU Física 2019 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2019 amb les solucions (1,4 MB)" aria-label="Descarrega la sèrie 1 de juny 2019 amb les solucions (1,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2019-juny-s1-p3" title="Moviment harmònic simple">P3 · Pesar-se a l&#x27;espai i pèndol a la Lluna</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2019-juny-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de juny 2019 (0,5 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2019-juny-s4.pdf" download="PAU Física 2019 Juny - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de juny 2019 (0,5 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de juny 2019 (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2019-juny-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de juny 2019 amb les solucions (1,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2019-juny-s4-solucions.pdf" download="PAU Física 2019 Juny - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de juny 2019 amb les solucions (1,5 MB)" aria-label="Descarrega la sèrie 4 de juny 2019 amb les solucions (1,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2019-juny-s4-p1" title="Moviment harmònic simple">P1 · La massa d&#x27;un virus</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2019-setembre-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de setembre 2019 (0,1 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2019-setembre-s5.pdf" download="PAU Física 2019 Setembre - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de setembre 2019 (0,1 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de setembre 2019 (0,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2019-setembre-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de setembre 2019 amb les solucions (0,8 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2019-setembre-s5-solucions.pdf" download="PAU Física 2019 Setembre - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de setembre 2019 amb les solucions (0,8 MB)" aria-label="Descarrega la sèrie 5 de setembre 2019 amb les solucions (0,8 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2019-setembre-s5-p1" title="Moviment harmònic simple">P1 · Energia potencial en funció de x² i l&#x27;ona que genera</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2018">
+    <h2>2018</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2018-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2018 (0,1 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2018-juny-s1.pdf" download="PAU Física 2018 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2018 (0,1 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2018 (0,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2018-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2018 amb les solucions (0,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2018-juny-s1-solucions.pdf" download="PAU Física 2018 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2018 amb les solucions (0,5 MB)" aria-label="Descarrega la sèrie 1 de juny 2018 amb les solucions (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2018-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2018 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2018-juny-s5.pdf" download="PAU Física 2018 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2018 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2018 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2018-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2018 amb les solucions (0,6 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2018-juny-s5-solucions.pdf" download="PAU Física 2018 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2018 amb les solucions (0,6 MB)" aria-label="Descarrega la sèrie 5 de juny 2018 amb les solucions (0,6 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2018-juny-s5-p3" title="Moviment harmònic simple">P3 · Una esfera a l&#x27;extrem d&#x27;una vareta elàstica</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2018-setembre-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de setembre 2018 (0,1 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2018-setembre-s3.pdf" download="PAU Física 2018 Setembre - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de setembre 2018 (0,1 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de setembre 2018 (0,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2018-setembre-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de setembre 2018 amb les solucions (0,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2018-setembre-s3-solucions.pdf" download="PAU Física 2018 Setembre - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de setembre 2018 amb les solucions (0,5 MB)" aria-label="Descarrega la sèrie 3 de setembre 2018 amb les solucions (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2018-setembre-s3-p2" title="Moviment harmònic simple">P2 · Gràfica x-t d&#x27;un MHS i el so que genera</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2016">
+    <h2>2016</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2016-juny-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de juny 2016 (0,6 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2016-juny-s3.pdf" download="PAU Física 2016 Juny - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de juny 2016 (0,6 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de juny 2016 (0,6 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2016-juny-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de juny 2016 amb les solucions (0,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2016-juny-s3-solucions.pdf" download="PAU Física 2016 Juny - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de juny 2016 amb les solucions (0,9 MB)" aria-label="Descarrega la sèrie 3 de juny 2016 amb les solucions (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2016-juny-s3-p2" title="Moviment harmònic simple">P2 · Dues molles iguals i una gràfica velocitat–temps</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2016-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2016 (0,5 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2016-juny-s5.pdf" download="PAU Física 2016 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2016 (0,5 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2016 (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2016-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2016 amb les solucions (0,8 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2016-juny-s5-solucions.pdf" download="PAU Física 2016 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2016 amb les solucions (0,8 MB)" aria-label="Descarrega la sèrie 5 de juny 2016 amb les solucions (0,8 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2016-juny-s5-p1" title="Moviment harmònic simple">P1 · El pistó d&#x27;un motor</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2015">
+    <h2>2015</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 2</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2015-juny-s2.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 2 de juny 2015 (0,6 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2015-juny-s2.pdf" download="PAU Física 2015 Juny - Sèrie 2 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 2 de juny 2015 (0,6 MB)" aria-label="Descarrega l'enunciat de la sèrie 2 de juny 2015 (0,6 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2015-juny-s2-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 2 de juny 2015 amb les solucions (0,9 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2015-juny-s2-solucions.pdf" download="PAU Física 2015 Juny - Sèrie 2 - Enunciat i solucions.pdf" title="Descarrega la sèrie 2 de juny 2015 amb les solucions (0,9 MB)" aria-label="Descarrega la sèrie 2 de juny 2015 amb les solucions (0,9 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2015-juny-s2-p1" title="Moviment harmònic simple">P1 · L&#x27;aranya i l&#x27;insecte atrapat</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2015-juny-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de juny 2015 (0,5 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2015-juny-s4.pdf" download="PAU Física 2015 Juny - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de juny 2015 (0,5 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de juny 2015 (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2015-juny-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de juny 2015 amb les solucions (1,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2015-juny-s4-solucions.pdf" download="PAU Física 2015 Juny - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de juny 2015 amb les solucions (1,2 MB)" aria-label="Descarrega la sèrie 4 de juny 2015 amb les solucions (1,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2015-juny-s4-p4" title="Moviment harmònic simple">P4 · Una boia que puja i baixa amb les ones</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2014">
+    <h2>2014</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2014-juny-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de juny 2014 (0,1 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2014-juny-s3.pdf" download="PAU Física 2014 Juny - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de juny 2014 (0,1 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de juny 2014 (0,1 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2014-juny-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de juny 2014 amb les solucions (0,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2014-juny-s3-solucions.pdf" download="PAU Física 2014 Juny - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de juny 2014 amb les solucions (0,3 MB)" aria-label="Descarrega la sèrie 3 de juny 2014 amb les solucions (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2014-juny-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de juny 2014 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2014-juny-s4.pdf" download="PAU Física 2014 Juny - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de juny 2014 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de juny 2014 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2014-juny-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de juny 2014 amb les solucions (0,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2014-juny-s4-solucions.pdf" download="PAU Física 2014 Juny - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de juny 2014 amb les solucions (0,3 MB)" aria-label="Descarrega la sèrie 4 de juny 2014 amb les solucions (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2014-juny-s4-p5" title="Moviment harmònic simple">P5 · L&#x27;agulla d&#x27;una màquina de cosir</a></p>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2014-setembre-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de setembre 2014 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2014-setembre-s5.pdf" download="PAU Física 2014 Setembre - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de setembre 2014 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de setembre 2014 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2014-setembre-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de setembre 2014 amb les solucions (0,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2014-setembre-s5-solucions.pdf" download="PAU Física 2014 Setembre - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de setembre 2014 amb les solucions (0,5 MB)" aria-label="Descarrega la sèrie 5 de setembre 2014 amb les solucions (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2014-setembre-s5-p5" title="Moviment harmònic simple">P5 · La constant d&#x27;una molla a partir d&#x27;una gràfica m–T²</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2013">
+    <h2>2013</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2013-juny-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de juny 2013 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2013-juny-s3.pdf" download="PAU Física 2013 Juny - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de juny 2013 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de juny 2013 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2013-juny-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de juny 2013 amb les solucions (0,4 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2013-juny-s3-solucions.pdf" download="PAU Física 2013 Juny - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de juny 2013 amb les solucions (0,4 MB)" aria-label="Descarrega la sèrie 3 de juny 2013 amb les solucions (0,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2013-juny-s3-p4" title="Moviment harmònic simple">P4 · Molla, massa i fase a partir de les energies inicials</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2013-juny-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de juny 2013 (0,3 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2013-juny-s4.pdf" download="PAU Física 2013 Juny - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de juny 2013 (0,3 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de juny 2013 (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2013-juny-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de juny 2013 amb les solucions (0,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2013-juny-s4-solucions.pdf" download="PAU Física 2013 Juny - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de juny 2013 amb les solucions (0,3 MB)" aria-label="Descarrega la sèrie 4 de juny 2013 amb les solucions (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+    </article>
+    <article class="panel conv"><h3>Setembre <small>Convocatòria extraordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2013-setembre-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de setembre 2013 (0,4 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2013-setembre-s1.pdf" download="PAU Física 2013 Setembre - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de setembre 2013 (0,4 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de setembre 2013 (0,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2013-setembre-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de setembre 2013 amb les solucions (0,5 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2013-setembre-s1-solucions.pdf" download="PAU Física 2013 Setembre - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de setembre 2013 amb les solucions (0,5 MB)" aria-label="Descarrega la sèrie 1 de setembre 2013 amb les solucions (0,5 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2013-setembre-s1-p4" title="Moviment harmònic simple">P4 · Gràfica elongació–temps d&#x27;un cos de 250 g</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2012">
+    <h2>2012</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2012-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2012 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2012-juny-s1.pdf" download="PAU Física 2012 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2012 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2012 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2012-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2012 amb les solucions (0,4 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2012-juny-s1-solucions.pdf" download="PAU Física 2012 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2012 amb les solucions (0,4 MB)" aria-label="Descarrega la sèrie 1 de juny 2012 amb les solucions (0,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2012-juny-s1-p2" title="Moviment harmònic simple">P2 · Una balança feta amb una molla</a></p>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 3</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2012-juny-s3.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 3 de juny 2012 (0,4 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2012-juny-s3.pdf" download="PAU Física 2012 Juny - Sèrie 3 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 3 de juny 2012 (0,4 MB)" aria-label="Descarrega l'enunciat de la sèrie 3 de juny 2012 (0,4 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2012-juny-s3-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 3 de juny 2012 amb les solucions (0,6 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2012-juny-s3-solucions.pdf" download="PAU Física 2012 Juny - Sèrie 3 - Enunciat i solucions.pdf" title="Descarrega la sèrie 3 de juny 2012 amb les solucions (0,6 MB)" aria-label="Descarrega la sèrie 3 de juny 2012 amb les solucions (0,6 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2012-juny-s3-p4" title="Moviment harmònic simple">P4 · Constant d&#x27;una molla a partir de la gràfica T²–m</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="blk" id="a2010">
+    <h2>2010</h2>
+    <div class="convs">
+    <article class="panel conv"><h3>Juny <small>Convocatòria ordinària</small></h3>
+      <div class="serie"><span class="sn">Sèrie 1</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2010-juny-s1.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 1 de juny 2010 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2010-juny-s1.pdf" download="PAU Física 2010 Juny - Sèrie 1 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 1 de juny 2010 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 1 de juny 2010 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2010-juny-s1-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 1 de juny 2010 amb les solucions (0,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2010-juny-s1-solucions.pdf" download="PAU Física 2010 Juny - Sèrie 1 - Enunciat i solucions.pdf" title="Descarrega la sèrie 1 de juny 2010 amb les solucions (0,2 MB)" aria-label="Descarrega la sèrie 1 de juny 2010 amb les solucions (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 4</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2010-juny-s4.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 4 de juny 2010 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2010-juny-s4.pdf" download="PAU Física 2010 Juny - Sèrie 4 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 4 de juny 2010 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 4 de juny 2010 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2010-juny-s4-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 4 de juny 2010 amb les solucions (0,2 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2010-juny-s4-solucions.pdf" download="PAU Física 2010 Juny - Sèrie 4 - Enunciat i solucions.pdf" title="Descarrega la sèrie 4 de juny 2010 amb les solucions (0,2 MB)" aria-label="Descarrega la sèrie 4 de juny 2010 amb les solucions (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+      </div>
+      <div class="serie"><span class="sn">Sèrie 5</span><div class="botons"><span class="dlg"><a class="btn" href="pdf/2010-juny-s5.pdf" target="_blank" rel="noopener" title="Obre l'enunciat de la sèrie 5 de juny 2010 (0,2 MB)">PDF enunciat</a><a class="btn ic" href="pdf/2010-juny-s5.pdf" download="PAU Física 2010 Juny - Sèrie 5 - Enunciat.pdf" title="Descarrega l'enunciat de la sèrie 5 de juny 2010 (0,2 MB)" aria-label="Descarrega l'enunciat de la sèrie 5 de juny 2010 (0,2 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span><span class="dlg"><a class="btn primary" href="pdf/2010-juny-s5-solucions.pdf" target="_blank" rel="noopener" title="Obre la sèrie 5 de juny 2010 amb les solucions (0,3 MB)">PDF enunciat + solucions</a><a class="btn primary ic" href="pdf/2010-juny-s5-solucions.pdf" download="PAU Física 2010 Juny - Sèrie 5 - Enunciat i solucions.pdf" title="Descarrega la sèrie 5 de juny 2010 amb les solucions (0,3 MB)" aria-label="Descarrega la sèrie 5 de juny 2010 amb les solucions (0,3 MB)"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span></div>
+        <p class="web">Resolt al web:<a class="chip" href="../temes/mhs/index.html#pau-2010-juny-s5-p3" title="Moviment harmònic simple">P3 · Energia cinètica d&#x27;un oscil·lador en funció de l&#x27;elongació</a></p>
+      </div>
+    </article>
+    </div>
+  </section>
+<!-- /examens:llista -->
+
+  </main>
+
+  <footer>
+    <p>Exàmens i criteris de correcció oficials de les PAU de Catalunya. Cada fitxer conté una sola sèrie, separada del PDF original de la convocatòria.</p>
+    <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a></p>
+  </footer>
+</div>
+
+<script>
+/* ---------- barra superior: any actual ---------- */
+(function anys() {
+  const bar = document.getElementById('topbar'), nav = bar.querySelector('nav.toc');
+  const setH = () => document.documentElement.style.setProperty('--navh', Math.round(bar.getBoundingClientRect().height) + 'px');
+  if ('ResizeObserver' in window) new ResizeObserver(setH).observe(bar); setH();
+  const links = [...bar.querySelectorAll('.anys a')].map(a => ({ a, el: document.getElementById(a.getAttribute('href').slice(1)) })).filter(x => x.el);
+  let pinned = null;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(ev => addEventListener(ev, e => { if (!bar.contains(e.target)) pinned = null; }, { passive: true }));
+  function update() {
+    const line = bar.getBoundingClientRect().bottom + Math.min(160, innerHeight * 0.25);
+    let act = null;
+    links.forEach(x => { if (x.el.getBoundingClientRect().top <= line) act = x; });
+    if (pinned) act = links.find(x => x.a === pinned) || act;
+    links.forEach(x => x.a.setAttribute('aria-current', x === act ? 'true' : 'false'));
+    if (act) { const l = act.a.offsetLeft - 16, r = act.a.offsetLeft + act.a.offsetWidth + 16; if (l < nav.scrollLeft || r > nav.scrollLeft + nav.clientWidth) nav.scrollLeft = Math.max(0, l - 40); }
+  }
+  nav.addEventListener('click', e => {
+    const a = e.target.closest('.anys a'); if (!a) return;
+    e.preventDefault();
+    const t = document.getElementById(a.getAttribute('href').slice(1)); if (!t) return;
+    pinned = a;
+    t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true });
+    history.replaceState(null, '', a.getAttribute('href'));
+    update();
+  });
+  let pend = false;
+  addEventListener('scroll', () => { if (!pend) { pend = true; requestAnimationFrame(() => { pend = false; update(); }); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+
+/* ---------- fletxa: desa el PDF ----------
+   L'atribut download no sempre n'hi ha prou (alguns visors el passen per alt i obren el PDF a la mateixa pestanya):
+   es baixa el fitxer i es desa des d'un blob. Si no es pot (p. ex. pàgina oberta com a fitxer local), fa el normal. */
+document.addEventListener('click', async e => {
+  const a = e.target.closest('a.ic[download]'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+  e.preventDefault();
+  try {
+    const r = await fetch(a.href); if (!r.ok) throw new Error(r.status);
+    const url = URL.createObjectURL(await r.blob());
+    const tmp = Object.assign(document.createElement('a'), { href: url, download: a.getAttribute('download') });
+    document.body.append(tmp); tmp.click(); tmp.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  } catch (err) { window.open(a.href, '_blank', 'noopener'); }
+});
+</script>
+</body>
+</html>

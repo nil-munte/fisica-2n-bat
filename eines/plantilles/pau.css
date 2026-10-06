@@ -22,7 +22,7 @@
 .ex.pau .pau-meta a{color:var(--ink);text-underline-offset:3px}
 .ex.pau .sap{display:flex;flex-direction:column;gap:6px;padding-top:4px}
 .ex.pau .sap+.sap{border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
-.ex.pau .sap h4{color:var(--ink);font-size:15px}
+.ex.pau .sap h5{font-family:var(--f-display);font-weight:600;margin:0;color:var(--ink);font-size:15px}
 .ex.pau .sap p{margin:0}
 .ex.pau .pauta{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13.5px}
 .ex.pau .pauta b{font-family:var(--f-display);font-weight:600}
