@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+
+# PDF oficials de les PAU (fonts de treball, no es publiquen)
+fonts/pdf/

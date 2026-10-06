@@ -284,6 +284,12 @@ i.v{font-family:var(--f-body)}
 @media print{.topbar{display:none!important}}
 
 .units{margin:0;font-size:13.5px;color:var(--muted);max-width:66ch}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:var(--muted);margin-bottom:4px}
+.crumbs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.crumbs a:hover{border-color:var(--ink)}
+nav.toc a.home{font-family:var(--f-display);font-weight:600;background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+nav.toc a.home:hover{background:var(--chip)}
+@media print{.crumbs{display:none}}
 /* mètode */
 .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:s}
 @media (max-width:980px){.steps{grid-template-columns:minmax(0,1fr)}}
@@ -375,8 +381,8 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
   <header id="inici">
     <div>
+      <nav class="crumbs" aria-label="Ruta"><a href="../../index.html">Física · 2n de Batxillerat</a><span aria-hidden="true">›</span><span aria-current="page">Moviment harmònic simple</span></nav>
       <h1>Moviment harmònic simple</h1>
-      <p class="sub">Repàs de Física · 2n de Batxillerat<span id="homelink" hidden> · <a href="../../index.html">tots els temes</a></span></p>
     </div>
     <div class="printbtns">
       <button id="pF">PDF formulari</button>
@@ -388,7 +394,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
   <div class="topbar" id="topbar">
   <nav class="toc" aria-label="Seccions">
-    <a href="#inici" class="top" title="Torna al principi">↑ Inici</a><span class="sep"></span>
+    <a href="../../index.html" class="home" title="Torna a la llista de temes">← Tots els temes</a><span class="sep"></span><a href="#inici" class="top" title="Torna al principi d'aquesta pàgina">↑ Amunt</a>
     <a href="#teoria">Teoria</a><a href="#demos">Demos</a><a href="#metode">Com atacar un problema</a><a href="#exercicis">Exercicis</a>
   </nav>
   <nav class="secnav" id="secnav" aria-label="Apartats d'aquesta secció"></nav>
@@ -1507,7 +1513,6 @@ document.querySelectorAll('svg.en').forEach(svg => {
 
 /* ---------- navegació: secció actual ---------- */
 /* enllaç a la portada només quan la pàgina és dins del lloc web del curs */
-if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = $('homelink'); if (h) h.hidden = false; }
 
 /* ---------- subíndex de la teoria i botons cap a les demos ---------- */
 (function blocks() {
