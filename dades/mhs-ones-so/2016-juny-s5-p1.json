@@ -1,0 +1,209 @@
+{
+  "id": "2016-juny-s5-p1",
+  "any": 2016,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa: passar rpm a rad/s, amplitud com a meitat del recorregut, fase inicial en un extrem i força màxima amb k = m·ω².",
+  "titol": "El pistó d'un motor",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jl",
+      "pdf": "pau_fisi16jl",
+      "pagina": 5
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jp",
+      "pdf": "pau_fisi16jp",
+      "pagina": 9
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Juny/5/4004"
+  },
+  "dades": [
+    {
+      "simbol": "d",
+      "valor": "20,0",
+      "unitat": "cm",
+      "descripcio": "recorregut del pistó d'extrem a extrem"
+    },
+    {
+      "simbol": "n",
+      "valor": "1,91·10³",
+      "unitat": "rpm",
+      "descripcio": "règim del motor"
+    },
+    {
+      "simbol": "x₀",
+      "valor": "10,0",
+      "unitat": "cm",
+      "descripcio": "distància a l'equilibri a t = 0,00 s"
+    },
+    {
+      "simbol": "m",
+      "valor": "200",
+      "unitat": "g",
+      "descripcio": "massa del pistó"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>En un motor d'explosió, el pistó de cada cilindre es mou amb un moviment vibratori harmònic simple. En unes condicions de funcionament concretes, el pistó recorre 20,0 cm d'un extrem a l'altre i el motor gira a 1,91·10<sup>3</sup> rpm (revolucions per minut). A l'instant <i>t</i> = 0,00 s el pistó és a 10,0 cm de la posició d'equilibri.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Escriviu l'equació del moviment del pistó i calculeu-ne la velocitat màxima."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Si la massa del pistó és de 200 g, quin és el valor de la força màxima que hi actua?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Freqüència angular",
+          "html": "Cada volta del motor és una oscil·lació del pistó: <i>ω</i> = 1,91·10<sup>3</sup> volta/min · 2π rad/volta · 1 min/60 s = <span class=\"res\">200 rad/s</span>."
+        },
+        {
+          "titol": "Amplitud",
+          "html": "El recorregut d'extrem a extrem és el doble de l'amplitud: 2<i>A</i> = 20,0 cm → <i>A</i> = 10,0 cm = 0,100 m."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "Escrivim <i>x</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i> + <i>φ</i>). A <i>t</i> = 0 el pistó és a 10,0 cm de l'equilibri, és a dir, en un dels extrems: <i>x</i>(0) = ±<i>A</i> → sin <i>φ</i> = ±1 → <i>φ</i> = ±π/2 (el signe depèn de quin extrem sigui)."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,100·sin(200·<i>t</i> ± π/2) m</span>, o bé, de manera equivalent, <i>x</i>(<i>t</i>) = ±0,100·cos(200·<i>t</i>) m."
+        },
+        {
+          "titol": "Velocitat màxima",
+          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> ± π/2). El seu valor màxim és quan el cosinus val ±1: <i>v</i><sub>màx</sub> = <i>A</i>·<i>ω</i> = 0,100·200 = <span class=\"res\">20,0 m/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Passar el règim del motor a freqüència angular, ω = 200 rad/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Deduir l'amplitud com a meitat del recorregut, A = 10,0 cm."
+        },
+        {
+          "punts": 0.2,
+          "que": "Trobar la fase inicial a partir de x(0) = ±A i escriure l'equació x(t) = A·sin(ωt ± π/2) (o l'equivalent amb cosinus)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir v(t) derivant x(t)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la velocitat màxima, v_màx = A·ω = 20,0 m/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Constant de recuperació",
+          "html": "En un MHS la força és <i>F</i> = −<i>k</i>·<i>x</i> amb <i>k</i> = <i>m</i>·<i>ω</i><sup>2</sup> = 0,200·200<sup>2</sup> = 8,00·10<sup>3</sup> N/m."
+        },
+        {
+          "titol": "Força màxima",
+          "html": "La força és màxima als extrems, on |<i>x</i>| = <i>A</i>: <i>F</i><sub>màx</sub> = <i>k</i>·<i>A</i> = 8,00·10<sup>3</sup>·0,100 = <span class=\"res\">800 N</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Relacionar la constant de recuperació amb la massa i la freqüència angular, k = m·ω²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure que la força màxima és F_màx = k·A."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular-ne el valor, 800 N."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 200 rad/s",
+      "valor": 200,
+      "pauta": 200
+    },
+    {
+      "apartat": "a",
+      "clau": "A",
+      "text": "A = 0,100 m",
+      "valor": 0.1,
+      "pauta": 0.1
+    },
+    {
+      "apartat": "a",
+      "clau": "vmax",
+      "text": "v_màx = 20,0 m/s",
+      "valor": 20.0,
+      "pauta": 20.0
+    },
+    {
+      "apartat": "b",
+      "clau": "k",
+      "text": "k = 8,00·10³ N/m",
+      "valor": 8000,
+      "pauta": null
+    },
+    {
+      "apartat": "b",
+      "clau": "Fmax",
+      "text": "F_màx = 800 N",
+      "valor": 800,
+      "pauta": 800
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "w = 1.91e3 * 2 * pi / 60",
+    "A = 20.0e-2 / 2",
+    "m = 0.200",
+    "k = m * w**2",
+    "R = {'w': w, 'A': A, 'vmax': A * w, 'k': k, 'Fmax': k * A}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

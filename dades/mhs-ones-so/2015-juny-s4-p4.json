@@ -1,0 +1,210 @@
+{
+  "id": "2015-juny-s4-p4",
+  "any": 2015,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [
+    "mhs-ones-so/ones"
+  ],
+  "blocs": [
+    "b1",
+    "b3"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa: amplitud i període a partir de l'onatge, fase inicial i energia cinètica màxima.",
+  "titol": "Una boia que puja i baixa amb les ones",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jl",
+      "pdf": "pau_fisi15jl",
+      "pagina": 7
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jp",
+      "pdf": "pau_fisi15jp",
+      "pagina": 17
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2015/Juny/4/1004"
+  },
+  "dades": [
+    {
+      "simbol": "h",
+      "valor": "1,0",
+      "unitat": "m",
+      "descripcio": "desnivell entre el punt més alt i el més baix de les ones"
+    },
+    {
+      "simbol": "T",
+      "valor": "2,0",
+      "unitat": "s",
+      "descripcio": "temps entre l'arribada de dues ones consecutives"
+    },
+    {
+      "simbol": "m",
+      "valor": "1,5",
+      "unitat": "kg",
+      "descripcio": "massa de la boia"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Una boia flota al mar i, a mesura que hi arriben les ones, puja i baixa amb un moviment harmònic simple (MHS). A partir de l'instant <i>t</i> = 0,0 s, l'onatge és tal que el punt més alt de les ones queda 1,0 m per sobre del punt més baix, i a la boia hi arriba una ona cada 2,0 s.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Escriviu l'equació del moviment de la boia."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Quina és l'energia cinètica màxima de la boia si la seva massa és d'1,5 kg?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Amplitud, freqüència i ω",
+          "html": "Entre el punt més alt i el més baix hi ha dues amplituds: 2<i>A</i> = 1,0 m → <i>A</i> = <span class=\"res\">0,50 m</span>. La boia fa una oscil·lació cada vegada que arriba una ona, per tant <i>T</i> = 2,0 s i <i>f</i> = 1/<i>T</i> = 1/2,0 = 0,50 Hz. La freqüència angular és <i>ω</i> = 2π<i>f</i> = 2π·0,50 = <span class=\"res\">π rad/s</span>."
+        },
+        {
+          "titol": "Equació general",
+          "html": "Prenem l'eix <i>x</i> vertical, positiu cap amunt i amb l'origen al nivell mitjà de l'aigua: <i>x</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i> + <i>φ</i>)."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "L'enunciat no diu on és la boia a <i>t</i> = 0. Com fa la pauta, suposem que en aquest instant la boia és en un extrem, per exemple al punt més alt: <i>x</i>(0) = <i>A</i> → sin <i>φ</i> = 1 → <i>φ</i> = π/2. (Si comencés al punt més baix, seria <i>φ</i> = −π/2.)"
+        },
+        {
+          "titol": "Equació amb valors",
+          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,50·sin(π·<i>t</i> + π/2) m</span>, que és el mateix que <i>x</i>(<i>t</i>) = 0,50·cos(π·<i>t</i>) m."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Obtenir l'amplitud (0,5 m), la freqüència (0,5 Hz) i la freqüència angular (π rad/s)."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure l'equació general x(t) = A·sin(ωt + φ) i fixar la fase inicial amb la condició inicial (φ = ±π/2, o bé fer servir el cosinus sense fase)."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure l'equació del moviment amb tots els valors numèrics."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Velocitat",
+          "html": "Derivem la posició: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·<i>ω</i>·cos(<i>ω</i><i>t</i> + <i>φ</i>)."
+        },
+        {
+          "titol": "Velocitat màxima",
+          "html": "El mòdul de la velocitat és màxim quan el cosinus val ±1: <i>v</i><sub>màx</sub> = <i>A</i>·<i>ω</i> = 0,50·π = <span class=\"res\">1,6 m/s</span>."
+        },
+        {
+          "titol": "Energia cinètica màxima",
+          "html": "<i>E</i><sub>c,màx</sub> = ½·<i>m</i>·<i>v</i><sub>màx</sub><sup>2</sup> = ½·1,5·(0,50·π)<sup>2</sup> = <span class=\"res\">1,85 J ≈ 1,9 J</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Obtenir v(t) derivant l'equació de la posició."
+        },
+        {
+          "punts": 0.2,
+          "que": "Raonar que la velocitat és màxima quan el cosinus val 1 i calcular v_màx = A·ω ≈ 1,6 m/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'energia cinètica màxima, E_c,màx = ½·m·v_màx²."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular-ne el valor, 1,85 J ≈ 1,9 J."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "A",
+      "text": "A = 0,50 m",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 0,50 Hz",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = π rad/s",
+      "valor": 3.1416,
+      "pauta": 3.1416
+    },
+    {
+      "apartat": "a",
+      "clau": "phi",
+      "text": "φ = π/2 (boia al punt més alt a t = 0)",
+      "valor": 1.5708,
+      "pauta": 1.5708
+    },
+    {
+      "apartat": "b",
+      "clau": "vmax",
+      "text": "v_màx = 1,6 m/s",
+      "valor": 1.57,
+      "pauta": 1.6,
+      "tol": 0.02
+    },
+    {
+      "apartat": "b",
+      "clau": "Ecmax",
+      "text": "E_c,màx = 1,85 J ≈ 1,9 J",
+      "valor": 1.85,
+      "pauta": 1.85
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "A = 1.0 / 2",
+    "T = 2.0",
+    "f = 1 / T",
+    "w = 2 * pi * f",
+    "vmax = A * w",
+    "R = {'A': A, 'f': f, 'w': w, 'phi': pi / 2, 'vmax': vmax, 'Ecmax': 0.5 * 1.5 * vmax**2}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

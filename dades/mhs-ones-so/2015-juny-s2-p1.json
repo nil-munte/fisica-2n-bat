@@ -1,0 +1,197 @@
+{
+  "id": "2015-juny-s2-p1",
+  "any": 2015,
+  "convocatoria": "juny",
+  "serie": 2,
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal deduir k = m·ω² combinant la segona llei de Newton amb l'acceleració del MHS i aplicar-ho a dues situacions amb la mateixa teranyina.",
+  "titol": "Les vibracions que detecta una aranya",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jl",
+      "pdf": "pau_fisi15jl",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jp",
+      "pdf": "pau_fisi15jp",
+      "pagina": 2
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2015/Juny/2/2642"
+  },
+  "dades": [
+    {
+      "simbol": "m₁",
+      "valor": "1,58",
+      "unitat": "g",
+      "descripcio": "massa del primer insecte"
+    },
+    {
+      "simbol": "f₁",
+      "valor": "12",
+      "unitat": "Hz",
+      "descripcio": "freqüència de vibració amb el primer insecte"
+    },
+    {
+      "simbol": "T₂",
+      "valor": "0,12",
+      "unitat": "s",
+      "descripcio": "període amb el segon insecte"
+    },
+    {
+      "simbol": "A₂",
+      "valor": "2,0",
+      "unitat": "mm",
+      "descripcio": "amplitud de l'oscil·lació del segon insecte"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Les aranyes tenen a la punta de les potes uns receptors que els permeten notar les vibracions que fa un insecte quan queda enganxat a la teranyina. Suposeu que l'insecte atrapat es mou com un oscil·lador amb moviment harmònic simple (MHS). S'ha observat que un insecte d'1,58 g enganxat en una teranyina la fa vibrar amb una freqüència de 12 Hz.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la constant elàstica de la teranyina."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Un altre insecte queda atrapat a la mateixa teranyina i hi oscil·la amb un període de 0,12 s. Quina massa té? Si l'amplitud de la seva oscil·lació és de 2,0 mm, quin és el valor absolut de l'acceleració màxima que té mentre es mou a la teranyina?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Acceleració del MHS",
+          "html": "Escrivim la posició com <i>x</i>(<i>t</i>) = <i>A</i>·sin(<i>ω</i><i>t</i>). Derivant-la dues vegades respecte del temps: <i>a</i>(<i>t</i>) = d<sup>2</sup><i>x</i>/d<i>t</i><sup>2</sup> = −<i>A</i>·<i>ω</i><sup>2</sup>·sin(<i>ω</i><i>t</i>)."
+        },
+        {
+          "titol": "Segona llei de Newton",
+          "html": "L'única força que cal considerar és la recuperadora de la teranyina, <i>F</i> = −<i>k</i>·<i>x</i>. Aplicant Σ<i>F</i> = <i>m</i>·<i>a</i>: −<i>k</i>·<i>x</i>(<i>t</i>) = <i>m</i>·<i>a</i>(<i>t</i>)."
+        },
+        {
+          "titol": "Relació entre k i ω",
+          "html": "Substituint les dues expressions: −<i>k</i>·<i>A</i>·sin(<i>ω</i><i>t</i>) = −<i>m</i>·<i>ω</i><sup>2</sup>·<i>A</i>·sin(<i>ω</i><i>t</i>), d'on <i>k</i> = <i>m</i>·<i>ω</i><sup>2</sup>."
+        },
+        {
+          "titol": "Valor numèric",
+          "html": "Amb <i>ω</i> = 2π<i>f</i>: <i>k</i> = <i>m</i>·(2π<i>f</i>)<sup>2</sup> = 1,58·10<sup>−3</sup>·(2π·12)<sup>2</sup> = <span class=\"res\">9,0 N/m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure x(t) i obtenir-ne l'acceleració derivant dues vegades, a = −A·ω²·sin(ωt)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Plantejar la segona llei de Newton amb la força recuperadora, ΣF = m·a."
+        },
+        {
+          "punts": 0.2,
+          "que": "Substituir −k·x = m·a amb les expressions de x(t) i a(t)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Deduir la relació k = m·ω²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular el valor numèric, k = 9,0 N/m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Massa del segon insecte",
+          "html": "La teranyina és la mateixa, per tant <i>k</i> no canvia. Amb <i>ω</i> = 2π/<i>T</i>: <i>m</i> = <i>k</i>/<i>ω</i><sup>2</sup> = 9,0/(2π/0,12)<sup>2</sup> = <span class=\"res\">3,3·10<sup>−3</sup> kg</span> (3,3 g)."
+        },
+        {
+          "titol": "Quan és màxima l'acceleració",
+          "html": "Com que <i>a</i>(<i>t</i>) = −<i>A</i>·<i>ω</i><sup>2</sup>·sin(<i>ω</i><i>t</i>), el seu valor absolut és màxim quan |sin(<i>ω</i><i>t</i>)| = 1, és a dir, als extrems de l'oscil·lació: |<i>a</i><sub>màx</sub>| = <i>ω</i><sup>2</sup>·<i>A</i>."
+        },
+        {
+          "titol": "Valor numèric",
+          "html": "|<i>a</i><sub>màx</sub>| = (2π/<i>T</i>)<sup>2</sup>·<i>A</i> = (2π/0,12)<sup>2</sup>·2,0·10<sup>−3</sup> = <span class=\"res\">5,5 m/s<sup>2</sup></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Calcular la massa amb m = k/ω² i ω = 2π/T: 0,0033 kg."
+        },
+        {
+          "punts": 0.4,
+          "que": "Justificar que l'acceleració és màxima quan el sinus val 1, |a_màx| = ω²·A."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular el valor numèric, 5,5 m/s²."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 9,0 N/m",
+      "valor": 8.98,
+      "pauta": 9.0,
+      "tol": 0.01
+    },
+    {
+      "apartat": "b",
+      "clau": "m2",
+      "text": "m = 3,3·10⁻³ kg",
+      "valor": 0.00328,
+      "pauta": 0.0033,
+      "tol": 0.01
+    },
+    {
+      "apartat": "b",
+      "clau": "amax",
+      "text": "|a_màx| = 5,5 m/s²",
+      "valor": 5.48,
+      "pauta": 5.5,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "m1, f1 = 1.58e-3, 12",
+    "k = m1 * (2 * pi * f1)**2",
+    "w2 = 2 * pi / 0.12",
+    "R = {'k': k, 'm2': k / w2**2, 'amax': w2**2 * 2.0e-3}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

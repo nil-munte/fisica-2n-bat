@@ -1,0 +1,201 @@
+{
+  "id": "2019-juny-s4-p1",
+  "any": 2019,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b2"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Aplica ω = √(k/m) dues vegades amb la mateixa k, però cal adonar-se que amb el virus oscil·la la massa total i treballar amb potències de deu molt grans.",
+  "titol": "La massa d'un virus",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jl",
+      "pdf": "pau_fisi19jl",
+      "pagina": 5
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jp",
+      "pdf": "pau_fisi19jp",
+      "pagina": 8
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2019/Juny/4/1494"
+  },
+  "dades": [
+    {
+      "simbol": "f<sub>braç</sub>",
+      "valor": "2,00·10<sup>15</sup>",
+      "unitat": "Hz",
+      "descripcio": "freqüència del braç sense el virus"
+    },
+    {
+      "simbol": "f<sub>braç+virus</sub>",
+      "valor": "2,87·10<sup>14</sup>",
+      "unitat": "Hz",
+      "descripcio": "freqüència del braç amb el virus"
+    },
+    {
+      "simbol": "m<sub>braç</sub>",
+      "valor": "2,10·10<sup>−16</sup>",
+      "unitat": "g",
+      "descripcio": "massa oscil·lant del braç"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": true,
+    "nota": ""
+  },
+  "enunciat": {
+    "intro": "<p>El 2004 es va poder mesurar la massa d'un virus a partir de les oscil·lacions d'un braç horitzontal minúscul. Es va mesurar la freqüència d'oscil·lació del braç sol i després amb el virus enganxat: sense virus, la freqüència era 2,00·10<sup>15</sup> Hz, i amb el virus va baixar a 2,87·10<sup>14</sup> Hz.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Suposeu que el braç sense virus es comporta com una molla amb una massa de 2,10·10<sup>−16</sup> g lligada a l'extrem, que és la que oscil·la. Calculeu la constant elàstica d'aquesta molla equivalent."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Amb el mateix model per al sistema oscil·lant, calculeu la massa del virus."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Model de molla",
+          "html": "Per a una massa <i>m</i> lligada a una molla de constant <i>k</i>, la freqüència angular és ω = √(<i>k</i>/<i>m</i>)."
+        },
+        {
+          "titol": "Freqüència angular del braç",
+          "html": "ω<sub>braç</sub> = 2π<i>f</i><sub>braç</sub> = 2π·2,00·10<sup>15</sup> = 4π·10<sup>15</sup> rad/s ≈ 1,26·10<sup>16</sup> rad/s."
+        },
+        {
+          "titol": "Constant elàstica",
+          "html": "Passem la massa a kg: <i>m</i><sub>braç</sub> = 2,10·10<sup>−16</sup> g = 2,10·10<sup>−19</sup> kg. Aïllant <i>k</i>:<br><i>k</i> = <i>m</i><sub>braç</sub>·ω<sub>braç</sub><sup>2</sup> = 2,10·10<sup>−19</sup>·(4π·10<sup>15</sup>)<sup>2</sup> = <span class=\"res\">3,32·10<sup>13</sup> N/m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Fer servir la relació ω = √(k/m)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la freqüència angular del braç, ω = 4π·10¹⁵ rad/s."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular k = m·ω² = 3,32·10¹³ N/m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Freqüència angular amb el virus",
+          "html": "ω<sub>braç+virus</sub> = 2π·2,87·10<sup>14</sup> = 5,74π·10<sup>14</sup> rad/s ≈ 1,80·10<sup>15</sup> rad/s."
+        },
+        {
+          "titol": "Massa oscil·lant",
+          "html": "La constant del braç és la mateixa, però ara oscil·len el braç i el virus junts: <i>k</i> = (<i>m</i><sub>braç</sub> + <i>m</i><sub>virus</sub>)·ω<sub>braç+virus</sub><sup>2</sup>."
+        },
+        {
+          "titol": "Massa total",
+          "html": "<i>m</i><sub>braç</sub> + <i>m</i><sub>virus</sub> = <i>k</i>/ω<sub>braç+virus</sub><sup>2</sup> = 3,32·10<sup>13</sup>/(5,74π·10<sup>14</sup>)<sup>2</sup> = 1,02·10<sup>−17</sup> kg."
+        },
+        {
+          "titol": "Massa del virus",
+          "html": "<i>m</i><sub>virus</sub> = 1,02·10<sup>−17</sup> − 2,10·10<sup>−19</sup> = <span class=\"res\">9,99·10<sup>−18</sup> kg</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular la freqüència angular amb el virus, 5,74π·10¹⁴ rad/s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Plantejar k = (m_braç + m_virus)·ω² amb la mateixa k."
+        },
+        {
+          "punts": 0.4,
+          "que": "Obtenir la massa total oscil·lant, 1,02·10⁻¹⁷ kg."
+        },
+        {
+          "punts": 0.1,
+          "que": "Restar la massa del braç: m_virus = 9,99·10⁻¹⁸ kg."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "w1",
+      "text": "ω_braç = 1,26·10¹⁶ rad/s",
+      "valor": 1.2566e+16,
+      "pauta": 1.2566e+16
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 3,32·10¹³ N/m",
+      "valor": 33200000000000.0,
+      "pauta": 33200000000000.0
+    },
+    {
+      "apartat": "b",
+      "clau": "w2",
+      "text": "ω_braç+virus = 1,80·10¹⁵ rad/s",
+      "valor": 1803300000000000.0,
+      "pauta": 1803300000000000.0
+    },
+    {
+      "apartat": "b",
+      "clau": "mtot",
+      "text": "m_braç + m_virus = 1,02·10⁻¹⁷ kg",
+      "valor": 1.02e-17,
+      "pauta": 1.02e-17
+    },
+    {
+      "apartat": "b",
+      "clau": "mv",
+      "text": "m_virus = 9,99·10⁻¹⁸ kg",
+      "valor": 9.99e-18,
+      "pauta": 9.99e-18
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "f1 = 2.00e15",
+    "f2 = 2.87e14",
+    "mb = 2.10e-16 * 1e-3",
+    "w1 = 2 * pi * f1",
+    "k = mb * w1**2",
+    "w2 = 2 * pi * f2",
+    "mtot = k / w2**2",
+    "R = {'w1': w1, 'k': k, 'w2': w2, 'mtot': mtot, 'mv': mtot - mb}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "id": "2016-juny-s3-p2",
+  "any": 2016,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P2",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 7,
+  "dificultat_motiu": "Relaciona freqüència i massa amb ω = √(k/m) i, sobretot, cal dibuixar dues gràfiques v–t amb escales correctes i interpretar la diferència de fase.",
+  "titol": "Dues molles iguals i una gràfica velocitat–temps",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jl",
+      "pdf": "pau_fisi16jl",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jp",
+      "pdf": "pau_fisi16jp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Juny/3/3997"
+  },
+  "dades": [
+    {
+      "simbol": "m_A",
+      "valor": "100",
+      "unitat": "g",
+      "descripcio": "massa de l'objecte A"
+    },
+    {
+      "simbol": "T_A",
+      "valor": "1,00",
+      "unitat": "s",
+      "descripcio": "període de l'objecte A"
+    },
+    {
+      "simbol": "A",
+      "valor": "5,00",
+      "unitat": "cm",
+      "descripcio": "amplitud (la mateixa per als dos objectes)"
+    },
+    {
+      "simbol": "f_B",
+      "valor": "2·f_A",
+      "unitat": "",
+      "descripcio": "la segona molla ha d'oscil·lar amb freqüència doble"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat. A l'apartat b, la pauta no puntua a part els instants d'oposició de fase: els explica just després de la gràfica, dins dels 0,6 punts que hi assigna."
+  },
+  "enunciat": {
+    "intro": "<p>Disposem de dues molles iguals. D'una d'elles hi pengem un objecte A de 100 g, que oscil·la amb un període d'1,00 s i una amplitud de 5,00 cm.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Volem que la segona molla oscil·li amb la mateixa amplitud però amb una freqüència que sigui el doble de la de la molla d'on penja A. Quina massa hi hem de penjar?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Deixem anar els dos objectes des del punt més baix de la seva oscil·lació. Representeu en una mateixa gràfica velocitat–temps la velocitat de cada objecte durant els primers 2 s, amb les condicions descrites, i indiqueu-hi clarament les magnituds, les unitats i les escales dels eixos. En quins instants d'aquests 2 s la diferència de fase entre els dos objectes és de π rad?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 560 318\" role=\"img\" aria-label=\"Gràfica velocitat-temps de 0 a 2 s: la velocitat d'A és una sinusoide d'amplitud 0,31 m/s i període 1 s; la de B, d'amplitud 0,63 m/s i període 0,5 s; totes dues comencen a zero i creixen. Es marquen els instants 0,5 s i 1,5 s, en què estan en oposició de fase.\"><rect x=\"66\" y=\"16\" width=\"480\" height=\"240\" fill=\"var(--surface)\"/><line x1=\"66.0\" y1=\"16\" x2=\"66.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"66.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"126.0\" y1=\"16\" x2=\"126.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"126.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,25</text><line x1=\"186.0\" y1=\"16\" x2=\"186.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"186.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,5</text><line x1=\"246.0\" y1=\"16\" x2=\"246.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"246.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,75</text><line x1=\"306.0\" y1=\"16\" x2=\"306.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"306.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"366.0\" y1=\"16\" x2=\"366.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"366.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1,25</text><line x1=\"426.0\" y1=\"16\" x2=\"426.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"426.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1,5</text><line x1=\"486.0\" y1=\"16\" x2=\"486.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"486.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1,75</text><line x1=\"546.0\" y1=\"16\" x2=\"546.0\" y2=\"256\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"546.0\" y=\"273.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2</text><line x1=\"66\" y1=\"256.0\" x2=\"546\" y2=\"256.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"260.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">−0,8</text><line x1=\"66\" y1=\"226.0\" x2=\"546\" y2=\"226.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"230.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">−0,6</text><line x1=\"66\" y1=\"196.0\" x2=\"546\" y2=\"196.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"200.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">−0,4</text><line x1=\"66\" y1=\"166.0\" x2=\"546\" y2=\"166.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">−0,2</text><line x1=\"66\" y1=\"136.0\" x2=\"546\" y2=\"136.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"140.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"66\" y1=\"106.0\" x2=\"546\" y2=\"106.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"110.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,2</text><line x1=\"66\" y1=\"76.0\" x2=\"546\" y2=\"76.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"80.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,4</text><line x1=\"66\" y1=\"46.0\" x2=\"546\" y2=\"46.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"50.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,6</text><line x1=\"66\" y1=\"16.0\" x2=\"546\" y2=\"16.0\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"59.0\" y=\"20.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,8</text><line x1=\"66\" y1=\"136.0\" x2=\"546\" y2=\"136.0\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/><line x1=\"66\" y1=\"16\" x2=\"66\" y2=\"256\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/><polyline points=\"66.0,136.0 67.2,134.5 68.4,133.0 69.6,131.6 70.8,130.1 72.0,128.6 73.2,127.2 74.4,125.7 75.6,124.3 76.8,122.9 78.0,121.4 79.2,120.0 80.4,118.7 81.6,117.3 82.8,115.9 84.0,114.6 85.2,113.3 86.4,112.0 87.6,110.7 88.8,109.5 90.0,108.3 91.2,107.1 92.4,106.0 93.6,104.8 94.8,103.7 96.0,102.7 97.2,101.6 98.4,100.7 99.6,99.7 100.8,98.8 102.0,97.9 103.2,97.0 104.4,96.2 105.6,95.4 106.8,94.7 108.0,94.0 109.2,93.4 110.4,92.8 111.6,92.2 112.8,91.7 114.0,91.2 115.2,90.7 116.4,90.4 117.6,90.0 118.8,89.7 120.0,89.5 121.2,89.2 122.4,89.1 123.6,89.0 124.8,88.9 126.0,88.9 127.2,88.9 128.4,89.0 129.6,89.1 130.8,89.2 132.0,89.5 133.2,89.7 134.4,90.0 135.6,90.4 136.8,90.7 138.0,91.2 139.2,91.7 140.4,92.2 141.6,92.8 142.8,93.4 144.0,94.0 145.2,94.7 146.4,95.4 147.6,96.2 148.8,97.0 150.0,97.9 151.2,98.8 152.4,99.7 153.6,100.7 154.8,101.6 156.0,102.7 157.2,103.7 158.4,104.8 159.6,106.0 160.8,107.1 162.0,108.3 163.2,109.5 164.4,110.7 165.6,112.0 166.8,113.3 168.0,114.6 169.2,115.9 170.4,117.3 171.6,118.7 172.8,120.0 174.0,121.4 175.2,122.9 176.4,124.3 177.6,125.7 178.8,127.2 180.0,128.6 181.2,130.1 182.4,131.6 183.6,133.0 184.8,134.5 186.0,136.0 187.2,137.5 188.4,139.0 189.6,140.4 190.8,141.9 192.0,143.4 193.2,144.8 194.4,146.3 195.6,147.7 196.8,149.1 198.0,150.6 199.2,152.0 200.4,153.3 201.6,154.7 202.8,156.1 204.0,157.4 205.2,158.7 206.4,160.0 207.6,161.3 208.8,162.5 210.0,163.7 211.2,164.9 212.4,166.0 213.6,167.2 214.8,168.3 216.0,169.3 217.2,170.4 218.4,171.3 219.6,172.3 220.8,173.2 222.0,174.1 223.2,175.0 224.4,175.8 225.6,176.6 226.8,177.3 228.0,178.0 229.2,178.6 230.4,179.2 231.6,179.8 232.8,180.3 234.0,180.8 235.2,181.3 236.4,181.6 237.6,182.0 238.8,182.3 240.0,182.5 241.2,182.8 242.4,182.9 243.6,183.0 244.8,183.1 246.0,183.1 247.2,183.1 248.4,183.0 249.6,182.9 250.8,182.8 252.0,182.5 253.2,182.3 254.4,182.0 255.6,181.6 256.8,181.3 258.0,180.8 259.2,180.3 260.4,179.8 261.6,179.2 262.8,178.6 264.0,178.0 265.2,177.3 266.4,176.6 267.6,175.8 268.8,175.0 270.0,174.1 271.2,173.2 272.4,172.3 273.6,171.3 274.8,170.4 276.0,169.3 277.2,168.3 278.4,167.2 279.6,166.0 280.8,164.9 282.0,163.7 283.2,162.5 284.4,161.3 285.6,160.0 286.8,158.7 288.0,157.4 289.2,156.1 290.4,154.7 291.6,153.3 292.8,152.0 294.0,150.6 295.2,149.1 296.4,147.7 297.6,146.3 298.8,144.8 300.0,143.4 301.2,141.9 302.4,140.4 303.6,139.0 304.8,137.5 306.0,136.0 307.2,134.5 308.4,133.0 309.6,131.6 310.8,130.1 312.0,128.6 313.2,127.2 314.4,125.7 315.6,124.3 316.8,122.9 318.0,121.4 319.2,120.0 320.4,118.7 321.6,117.3 322.8,115.9 324.0,114.6 325.2,113.3 326.4,112.0 327.6,110.7 328.8,109.5 330.0,108.3 331.2,107.1 332.4,106.0 333.6,104.8 334.8,103.7 336.0,102.7 337.2,101.6 338.4,100.7 339.6,99.7 340.8,98.8 342.0,97.9 343.2,97.0 344.4,96.2 345.6,95.4 346.8,94.7 348.0,94.0 349.2,93.4 350.4,92.8 351.6,92.2 352.8,91.7 354.0,91.2 355.2,90.7 356.4,90.4 357.6,90.0 358.8,89.7 360.0,89.5 361.2,89.2 362.4,89.1 363.6,89.0 364.8,88.9 366.0,88.9 367.2,88.9 368.4,89.0 369.6,89.1 370.8,89.2 372.0,89.5 373.2,89.7 374.4,90.0 375.6,90.4 376.8,90.7 378.0,91.2 379.2,91.7 380.4,92.2 381.6,92.8 382.8,93.4 384.0,94.0 385.2,94.7 386.4,95.4 387.6,96.2 388.8,97.0 390.0,97.9 391.2,98.8 392.4,99.7 393.6,100.7 394.8,101.6 396.0,102.7 397.2,103.7 398.4,104.8 399.6,106.0 400.8,107.1 402.0,108.3 403.2,109.5 404.4,110.7 405.6,112.0 406.8,113.3 408.0,114.6 409.2,115.9 410.4,117.3 411.6,118.7 412.8,120.0 414.0,121.4 415.2,122.9 416.4,124.3 417.6,125.7 418.8,127.2 420.0,128.6 421.2,130.1 422.4,131.6 423.6,133.0 424.8,134.5 426.0,136.0 427.2,137.5 428.4,139.0 429.6,140.4 430.8,141.9 432.0,143.4 433.2,144.8 434.4,146.3 435.6,147.7 436.8,149.1 438.0,150.6 439.2,152.0 440.4,153.3 441.6,154.7 442.8,156.1 444.0,157.4 445.2,158.7 446.4,160.0 447.6,161.3 448.8,162.5 450.0,163.7 451.2,164.9 452.4,166.0 453.6,167.2 454.8,168.3 456.0,169.3 457.2,170.4 458.4,171.3 459.6,172.3 460.8,173.2 462.0,174.1 463.2,175.0 464.4,175.8 465.6,176.6 466.8,177.3 468.0,178.0 469.2,178.6 470.4,179.2 471.6,179.8 472.8,180.3 474.0,180.8 475.2,181.3 476.4,181.6 477.6,182.0 478.8,182.3 480.0,182.5 481.2,182.8 482.4,182.9 483.6,183.0 484.8,183.1 486.0,183.1 487.2,183.1 488.4,183.0 489.6,182.9 490.8,182.8 492.0,182.5 493.2,182.3 494.4,182.0 495.6,181.6 496.8,181.3 498.0,180.8 499.2,180.3 500.4,179.8 501.6,179.2 502.8,178.6 504.0,178.0 505.2,177.3 506.4,176.6 507.6,175.8 508.8,175.0 510.0,174.1 511.2,173.2 512.4,172.3 513.6,171.3 514.8,170.4 516.0,169.3 517.2,168.3 518.4,167.2 519.6,166.0 520.8,164.9 522.0,163.7 523.2,162.5 524.4,161.3 525.6,160.0 526.8,158.7 528.0,157.4 529.2,156.1 530.4,154.7 531.6,153.3 532.8,152.0 534.0,150.6 535.2,149.1 536.4,147.7 537.6,146.3 538.8,144.8 540.0,143.4 541.2,141.9 542.4,140.4 543.6,139.0 544.8,137.5 546.0,136.0\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polyline points=\"66.0,136.0 67.2,130.1 68.4,124.2 69.6,118.3 70.8,112.6 72.0,106.9 73.2,101.3 74.4,95.9 75.6,90.6 76.8,85.5 78.0,80.6 79.2,75.9 80.4,71.5 81.6,67.3 82.8,63.4 84.0,59.8 85.2,56.4 86.4,53.4 87.6,50.7 88.8,48.4 90.0,46.4 91.2,44.7 92.4,43.4 93.6,42.5 94.8,41.9 96.0,41.8 97.2,41.9 98.4,42.5 99.6,43.4 100.8,44.7 102.0,46.4 103.2,48.4 104.4,50.7 105.6,53.4 106.8,56.4 108.0,59.8 109.2,63.4 110.4,67.3 111.6,71.5 112.8,75.9 114.0,80.6 115.2,85.5 116.4,90.6 117.6,95.9 118.8,101.3 120.0,106.9 121.2,112.6 122.4,118.3 123.6,124.2 124.8,130.1 126.0,136.0 127.2,141.9 128.4,147.8 129.6,153.7 130.8,159.4 132.0,165.1 133.2,170.7 134.4,176.1 135.6,181.4 136.8,186.5 138.0,191.4 139.2,196.1 140.4,200.5 141.6,204.7 142.8,208.6 144.0,212.2 145.2,215.6 146.4,218.6 147.6,221.3 148.8,223.6 150.0,225.6 151.2,227.3 152.4,228.6 153.6,229.5 154.8,230.1 156.0,230.2 157.2,230.1 158.4,229.5 159.6,228.6 160.8,227.3 162.0,225.6 163.2,223.6 164.4,221.3 165.6,218.6 166.8,215.6 168.0,212.2 169.2,208.6 170.4,204.7 171.6,200.5 172.8,196.1 174.0,191.4 175.2,186.5 176.4,181.4 177.6,176.1 178.8,170.7 180.0,165.1 181.2,159.4 182.4,153.7 183.6,147.8 184.8,141.9 186.0,136.0 187.2,130.1 188.4,124.2 189.6,118.3 190.8,112.6 192.0,106.9 193.2,101.3 194.4,95.9 195.6,90.6 196.8,85.5 198.0,80.6 199.2,75.9 200.4,71.5 201.6,67.3 202.8,63.4 204.0,59.8 205.2,56.4 206.4,53.4 207.6,50.7 208.8,48.4 210.0,46.4 211.2,44.7 212.4,43.4 213.6,42.5 214.8,41.9 216.0,41.8 217.2,41.9 218.4,42.5 219.6,43.4 220.8,44.7 222.0,46.4 223.2,48.4 224.4,50.7 225.6,53.4 226.8,56.4 228.0,59.8 229.2,63.4 230.4,67.3 231.6,71.5 232.8,75.9 234.0,80.6 235.2,85.5 236.4,90.6 237.6,95.9 238.8,101.3 240.0,106.9 241.2,112.6 242.4,118.3 243.6,124.2 244.8,130.1 246.0,136.0 247.2,141.9 248.4,147.8 249.6,153.7 250.8,159.4 252.0,165.1 253.2,170.7 254.4,176.1 255.6,181.4 256.8,186.5 258.0,191.4 259.2,196.1 260.4,200.5 261.6,204.7 262.8,208.6 264.0,212.2 265.2,215.6 266.4,218.6 267.6,221.3 268.8,223.6 270.0,225.6 271.2,227.3 272.4,228.6 273.6,229.5 274.8,230.1 276.0,230.2 277.2,230.1 278.4,229.5 279.6,228.6 280.8,227.3 282.0,225.6 283.2,223.6 284.4,221.3 285.6,218.6 286.8,215.6 288.0,212.2 289.2,208.6 290.4,204.7 291.6,200.5 292.8,196.1 294.0,191.4 295.2,186.5 296.4,181.4 297.6,176.1 298.8,170.7 300.0,165.1 301.2,159.4 302.4,153.7 303.6,147.8 304.8,141.9 306.0,136.0 307.2,130.1 308.4,124.2 309.6,118.3 310.8,112.6 312.0,106.9 313.2,101.3 314.4,95.9 315.6,90.6 316.8,85.5 318.0,80.6 319.2,75.9 320.4,71.5 321.6,67.3 322.8,63.4 324.0,59.8 325.2,56.4 326.4,53.4 327.6,50.7 328.8,48.4 330.0,46.4 331.2,44.7 332.4,43.4 333.6,42.5 334.8,41.9 336.0,41.8 337.2,41.9 338.4,42.5 339.6,43.4 340.8,44.7 342.0,46.4 343.2,48.4 344.4,50.7 345.6,53.4 346.8,56.4 348.0,59.8 349.2,63.4 350.4,67.3 351.6,71.5 352.8,75.9 354.0,80.6 355.2,85.5 356.4,90.6 357.6,95.9 358.8,101.3 360.0,106.9 361.2,112.6 362.4,118.3 363.6,124.2 364.8,130.1 366.0,136.0 367.2,141.9 368.4,147.8 369.6,153.7 370.8,159.4 372.0,165.1 373.2,170.7 374.4,176.1 375.6,181.4 376.8,186.5 378.0,191.4 379.2,196.1 380.4,200.5 381.6,204.7 382.8,208.6 384.0,212.2 385.2,215.6 386.4,218.6 387.6,221.3 388.8,223.6 390.0,225.6 391.2,227.3 392.4,228.6 393.6,229.5 394.8,230.1 396.0,230.2 397.2,230.1 398.4,229.5 399.6,228.6 400.8,227.3 402.0,225.6 403.2,223.6 404.4,221.3 405.6,218.6 406.8,215.6 408.0,212.2 409.2,208.6 410.4,204.7 411.6,200.5 412.8,196.1 414.0,191.4 415.2,186.5 416.4,181.4 417.6,176.1 418.8,170.7 420.0,165.1 421.2,159.4 422.4,153.7 423.6,147.8 424.8,141.9 426.0,136.0 427.2,130.1 428.4,124.2 429.6,118.3 430.8,112.6 432.0,106.9 433.2,101.3 434.4,95.9 435.6,90.6 436.8,85.5 438.0,80.6 439.2,75.9 440.4,71.5 441.6,67.3 442.8,63.4 444.0,59.8 445.2,56.4 446.4,53.4 447.6,50.7 448.8,48.4 450.0,46.4 451.2,44.7 452.4,43.4 453.6,42.5 454.8,41.9 456.0,41.8 457.2,41.9 458.4,42.5 459.6,43.4 460.8,44.7 462.0,46.4 463.2,48.4 464.4,50.7 465.6,53.4 466.8,56.4 468.0,59.8 469.2,63.4 470.4,67.3 471.6,71.5 472.8,75.9 474.0,80.6 475.2,85.5 476.4,90.6 477.6,95.9 478.8,101.3 480.0,106.9 481.2,112.6 482.4,118.3 483.6,124.2 484.8,130.1 486.0,136.0 487.2,141.9 488.4,147.8 489.6,153.7 490.8,159.4 492.0,165.1 493.2,170.7 494.4,176.1 495.6,181.4 496.8,186.5 498.0,191.4 499.2,196.1 500.4,200.5 501.6,204.7 502.8,208.6 504.0,212.2 505.2,215.6 506.4,218.6 507.6,221.3 508.8,223.6 510.0,225.6 511.2,227.3 512.4,228.6 513.6,229.5 514.8,230.1 516.0,230.2 517.2,230.1 518.4,229.5 519.6,228.6 520.8,227.3 522.0,225.6 523.2,223.6 524.4,221.3 525.6,218.6 526.8,215.6 528.0,212.2 529.2,208.6 530.4,204.7 531.6,200.5 532.8,196.1 534.0,191.4 535.2,186.5 536.4,181.4 537.6,176.1 538.8,170.7 540.0,165.1 541.2,159.4 542.4,153.7 543.6,147.8 544.8,141.9 546.0,136.0\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"186.0\" cy=\"136.0\" r=\"6\" fill=\"none\" stroke=\"var(--f)\" stroke-width=\"2.2\"/><circle cx=\"426.0\" cy=\"136.0\" r=\"6\" fill=\"none\" stroke=\"var(--f)\" stroke-width=\"2.2\"/><text x=\"130.0\" y=\"81.9\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--x)\" font-weight=\"700\">A</text><text x=\"108.0\" y=\"43.8\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--y)\" font-weight=\"700\">B</text><g><text x=\"297.0\" y=\"296.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">t</text><text x=\"302.0\" y=\"296.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(s)</text></g><g transform=\"rotate(-90 20.0 120.0)\"><text x=\"19.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">v</text><text x=\"24.0\" y=\"120.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(m/s)</text></g></svg>",
+      "peu": "Velocitat de A (blau) i de B (taronja) durant els primers 2 s; els cercles marquen els instants en què estan en oposició de fase."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Freqüències",
+          "html": "<i>f</i><sub>A</sub> = 1/<i>T</i><sub>A</sub> = 1/1,00 = 1,00 Hz → <i>ω</i><sub>A</sub> = 2π<i>f</i><sub>A</sub> = 2π rad/s. La segona ha de tenir <i>f</i><sub>B</sub> = 2<i>f</i><sub>A</sub> = 2,00 Hz → <i>ω</i><sub>B</sub> = 2π<i>f</i><sub>B</sub> = 4π rad/s."
+        },
+        {
+          "titol": "Constant de les molles",
+          "html": "De <i>ω</i><sub>A</sub> = √(<i>k</i>/<i>m</i><sub>A</sub>): <i>k</i> = <i>ω</i><sub>A</sub><sup>2</sup>·<i>m</i><sub>A</sub> = (2π)<sup>2</sup>·0,100 = 0,4π<sup>2</sup> ≈ 3,95 N/m."
+        },
+        {
+          "titol": "Massa de B",
+          "html": "Les molles són idèntiques, així que la segona té la mateixa <i>k</i>. De <i>ω</i><sub>B</sub> = √(<i>k</i>/<i>m</i><sub>B</sub>): <i>m</i><sub>B</sub> = <i>k</i>/<i>ω</i><sub>B</sub><sup>2</sup> = 0,4π<sup>2</sup>/(4π)<sup>2</sup> = <span class=\"res\">0,025 kg = 25 g</span>."
+        },
+        {
+          "titol": "Comprovació ràpida",
+          "html": "També es pot fer dividint les dues expressions: <i>m</i><sub>B</sub>/<i>m</i><sub>A</sub> = <i>ω</i><sub>A</sub><sup>2</sup>/<i>ω</i><sub>B</sub><sup>2</sup> = (2π)<sup>2</sup>/(4π)<sup>2</sup> = 1/4, i <i>m</i><sub>B</sub> = 0,100/4 = 0,025 kg."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular les freqüències i les freqüències angulars dels dos objectes (2π i 4π rad/s)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir la constant de la molla a partir de l'objecte A, k = ω_A²·m_A = 0,4π² N/m."
+        },
+        {
+          "punts": 0.6,
+          "que": "Calcular la massa de B, m_B = k/ω_B² = 25 g. (Fer-ho directament amb la proporció m_B/m_A = ω_A²/ω_B² val els 0,8 punts dels dos últims passos.)"
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Velocitats màximes",
+          "html": "<i>v</i><sub>A,màx</sub> = <i>A</i>·<i>ω</i><sub>A</sub> = 0,0500·2π = <span class=\"res\">0,31 m/s</span>; <i>v</i><sub>B,màx</sub> = <i>A</i>·<i>ω</i><sub>B</sub> = 0,0500·4π = <span class=\"res\">0,63 m/s</span>."
+        },
+        {
+          "titol": "Períodes",
+          "html": "Com que <i>f</i><sub>B</sub> = 2<i>f</i><sub>A</sub>, el període de B és la meitat del d'A: <i>T</i><sub>A</sub> = 1,00 s i <i>T</i><sub>B</sub> = <span class=\"res\">0,50 s</span>. En 2 s, A fa 2 oscil·lacions i B en fa 4."
+        },
+        {
+          "titol": "Gràfica",
+          "html": "Prenem <i>x</i> positiu cap amunt. Els dos objectes surten del repòs des del punt més baix, de manera que la velocitat comença valent zero i de seguida és positiva (pugen): <i>v</i><sub>A</sub>(<i>t</i>) = 0,31·sin(2π<i>t</i>) m/s i <i>v</i><sub>B</sub>(<i>t</i>) = 0,63·sin(4π<i>t</i>) m/s. Dibuixem cada sinusoide amb la seva velocitat màxima i el seu període.",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Oposició de fase",
+          "html": "La diferència de fase és π rad quan els objectes estan en oposició de fase: cadascun és a un extrem diferent i tots dos tenen <i>v</i> = 0. Passa a <span class=\"res\"><i>t</i> = 0,5 s i <i>t</i> = 1,5 s</span>: en aquests instants A és al punt més alt i B al més baix. (Amb les fases, 4π<i>t</i> − 2π<i>t</i> = 2π<i>t</i> val π i 3π en aquests dos instants.)"
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular les velocitats màximes dels dos objectes, 0,31 m/s i 0,63 m/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Deduir els períodes, T_A = 1 s i T_B = 0,5 s."
+        },
+        {
+          "punts": 0.6,
+          "que": "Dibuixar correctament les dues gràfiques v–t (amplituds, períodes, eixos amb magnituds, unitats i escales) i identificar els instants 0,5 s i 1,5 s en què estan en oposició de fase."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "wA",
+      "text": "ω_A = 2π rad/s",
+      "valor": 6.2832,
+      "pauta": 6.2832
+    },
+    {
+      "apartat": "a",
+      "clau": "wB",
+      "text": "ω_B = 4π rad/s",
+      "valor": 12.566,
+      "pauta": 12.566
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 0,4π² ≈ 3,95 N/m",
+      "valor": 3.948,
+      "pauta": 3.948
+    },
+    {
+      "apartat": "a",
+      "clau": "mB",
+      "text": "m_B = 0,025 kg = 25 g",
+      "valor": 0.025,
+      "pauta": 0.025
+    },
+    {
+      "apartat": "b",
+      "clau": "vA",
+      "text": "v_A,màx = 0,31 m/s",
+      "valor": 0.314,
+      "pauta": 0.31,
+      "tol": 0.02
+    },
+    {
+      "apartat": "b",
+      "clau": "vB",
+      "text": "v_B,màx = 0,63 m/s",
+      "valor": 0.628,
+      "pauta": 0.63
+    },
+    {
+      "apartat": "b",
+      "clau": "TB",
+      "text": "T_B = 0,50 s",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "b",
+      "clau": "t1",
+      "text": "t = 0,5 s (oposició de fase)",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "b",
+      "clau": "t2",
+      "text": "t = 1,5 s (oposició de fase)",
+      "valor": 1.5,
+      "pauta": 1.5
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "mA, TA, A = 0.100, 1.00, 0.0500",
+    "wA = 2 * pi / TA",
+    "wB = 2 * wA",
+    "k = wA**2 * mA",
+    "# diferència de fase (wB - wA)·t = π, 3π dins de 0–2 s",
+    "ts = [n * pi / (wB - wA) for n in (1, 3)]",
+    "R = {'wA': wA, 'wB': wB, 'k': k, 'mB': k / wB**2, 'vA': A * wA, 'vB': A * wB,",
+    "     'TB': 2 * pi / wB, 't1': ts[0], 't2': ts[1]}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

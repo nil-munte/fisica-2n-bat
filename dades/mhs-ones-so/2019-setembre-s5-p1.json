@@ -1,0 +1,237 @@
+{
+  "id": "2019-setembre-s5-p1",
+  "any": 2019,
+  "convocatoria": "setembre",
+  "serie": 5,
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [
+    "mhs-ones-so/ones"
+  ],
+  "blocs": [
+    "b2",
+    "b3"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal interpretar el pendent d'una gràfica Ep–x² per obtenir k, aplicar la conservació de l'energia i escriure l'equació d'una ona a partir del període de l'oscil·lador.",
+  "titol": "Energia potencial en funció de x² i l'ona que genera",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19sl",
+      "pdf": "pau_fisi19sl",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19sp",
+      "pdf": "pau_fisi19sp",
+      "pagina": 2
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2019/Setembre/5/1121"
+  },
+  "dades": [
+    {
+      "simbol": "m",
+      "valor": "62,5",
+      "unitat": "g",
+      "descripcio": "massa de l'oscil·lador"
+    },
+    {
+      "simbol": "A",
+      "valor": "60",
+      "unitat": "cm",
+      "descripcio": "amplitud de les oscil·lacions"
+    },
+    {
+      "simbol": "v",
+      "valor": "30",
+      "unitat": "m/s",
+      "descripcio": "velocitat de propagació de l'ona a la corda"
+    },
+    {
+      "simbol": "—",
+      "valor": "gràfica",
+      "unitat": "",
+      "descripcio": "energia potencial elàstica en funció de x² (200 J per a x² = 0,25 m²)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": true,
+    "nota": ""
+  },
+  "enunciat": {
+    "intro": "<p>La gràfica representa l'energia potencial elàstica d'un oscil·lador harmònic en funció del quadrat de la seva elongació, <i>x</i><sup>2</sup>. La massa de l'oscil·lador és de 62,5 g.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu el període de les oscil·lacions. Si l'oscil·lador fa un moviment harmònic simple d'amplitud 60 cm, quina és la seva energia cinètica màxima?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Aquesta oscil·lació produeix una ona en una corda, que s'hi propaga a 30 m/s. Escriviu l'equació de l'ona que avança per la corda."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 470 345\" role=\"img\" aria-label=\"Gràfica de l'energia potencial elàstica en funció del quadrat de l'elongació: recta que passa per l'origen i pels punts (0,05; 40), (0,10; 80), (0,15; 120), (0,20; 160) i (0,25; 200).\"><line x1=\"72\" y1=\"35\" x2=\"72\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"84\" y1=\"35\" x2=\"84\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"96\" y1=\"35\" x2=\"96\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"108\" y1=\"35\" x2=\"108\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"120\" y1=\"35\" x2=\"120\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"132\" y1=\"35\" x2=\"132\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"144\" y1=\"35\" x2=\"144\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"156\" y1=\"35\" x2=\"156\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"168\" y1=\"35\" x2=\"168\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"35\" x2=\"180\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"192\" y1=\"35\" x2=\"192\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"204\" y1=\"35\" x2=\"204\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"216\" y1=\"35\" x2=\"216\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"228\" y1=\"35\" x2=\"228\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"240\" y1=\"35\" x2=\"240\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"252\" y1=\"35\" x2=\"252\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"264\" y1=\"35\" x2=\"264\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"276\" y1=\"35\" x2=\"276\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"288\" y1=\"35\" x2=\"288\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"312\" y1=\"35\" x2=\"312\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"324\" y1=\"35\" x2=\"324\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"336\" y1=\"35\" x2=\"336\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"348\" y1=\"35\" x2=\"348\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"360\" y1=\"35\" x2=\"360\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"372\" y1=\"35\" x2=\"372\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"384\" y1=\"35\" x2=\"384\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"396\" y1=\"35\" x2=\"396\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"408\" y1=\"35\" x2=\"408\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"420\" y1=\"35\" x2=\"420\" y2=\"285\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"432\" y1=\"35\" x2=\"432\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"285\" x2=\"432\" y2=\"285\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"275\" x2=\"432\" y2=\"275\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"265\" x2=\"432\" y2=\"265\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"255\" x2=\"432\" y2=\"255\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"245\" x2=\"432\" y2=\"245\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"235\" x2=\"432\" y2=\"235\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"225\" x2=\"432\" y2=\"225\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"215\" x2=\"432\" y2=\"215\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"205\" x2=\"432\" y2=\"205\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"195\" x2=\"432\" y2=\"195\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"185\" x2=\"432\" y2=\"185\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"175\" x2=\"432\" y2=\"175\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"165\" x2=\"432\" y2=\"165\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"155\" x2=\"432\" y2=\"155\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"145\" x2=\"432\" y2=\"145\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"135\" x2=\"432\" y2=\"135\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"125\" x2=\"432\" y2=\"125\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"115\" x2=\"432\" y2=\"115\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"105\" x2=\"432\" y2=\"105\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"95\" x2=\"432\" y2=\"95\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"85\" x2=\"432\" y2=\"85\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"75\" x2=\"432\" y2=\"75\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"65\" x2=\"432\" y2=\"65\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"55\" x2=\"432\" y2=\"55\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"45\" x2=\"432\" y2=\"45\" stroke=\"var(--grid)\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"35\" x2=\"432\" y2=\"35\" stroke=\"var(--grid2)\" stroke-width=\"1.2\"/><line x1=\"72\" y1=\"285\" x2=\"432\" y2=\"285\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/><line x1=\"72\" y1=\"285\" x2=\"72\" y2=\"35\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/><text x=\"72\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><text x=\"132\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,05</text><text x=\"192\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,1</text><text x=\"252\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,15</text><text x=\"312\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,2</text><text x=\"372\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,25</text><text x=\"432\" y=\"302\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,3</text><text x=\"65\" y=\"289\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><text x=\"65\" y=\"239\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">50</text><text x=\"65\" y=\"189\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">100</text><text x=\"65\" y=\"139\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">150</text><text x=\"65\" y=\"89\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">200</text><text x=\"65\" y=\"39\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">250</text><text x=\"230\" y=\"325\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">x</tspan>² (m²)</text><text x=\"24\" y=\"180\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" transform=\"rotate(-90 24 180)\"><tspan font-style=\"italic\">E</tspan><tspan font-size=\"9\" dy=\"3\">p</tspan><tspan dy=\"-3\"> (J)</tspan></text><line x1=\"72\" y1=\"285\" x2=\"372\" y2=\"85\" stroke=\"var(--ep)\" stroke-width=\"2\"/><path d=\"M72 279 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/><path d=\"M132 239 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/><path d=\"M192 199 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/><path d=\"M252 159 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/><path d=\"M312 119 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/><path d=\"M372 79 l6 6 l-6 6 l-6 -6 z\" fill=\"var(--ink)\"/></svg>",
+      "peu": "Energia potencial elàstica en funció del quadrat de l'elongació."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Pendent de la recta",
+          "html": "L'energia potencial elàstica és <i>E</i><sub>p</sub> = ½·<i>k</i>·<i>x</i><sup>2</sup>; per tant, si representem <i>E</i><sub>p</sub> en funció de <i>x</i><sup>2</sup>, surt una recta que passa per l'origen i té pendent <i>k</i>/2. Llegint el punt (0,25 m<sup>2</sup>; 200 J): pendent = Δ<i>E</i><sub>p</sub>/Δ(<i>x</i><sup>2</sup>) = 200/0,25 = 800 J/m<sup>2</sup>."
+        },
+        {
+          "titol": "Constant elàstica",
+          "html": "<i>k</i>/2 = 800 → <i>k</i> = 2·800 = <span class=\"res\">1 600 N/m</span>."
+        },
+        {
+          "titol": "Període",
+          "html": "<i>T</i> = 2π·√(<i>m</i>/<i>k</i>) = 2π·√(0,0625/1 600) = <span class=\"res\">0,039 s</span> (0,0393 s)."
+        },
+        {
+          "titol": "Energia cinètica màxima",
+          "html": "L'energia cinètica és màxima a la posició d'equilibri, on tota l'energia mecànica és cinètica: <i>E</i><sub>c,màx</sub> = <i>E</i> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·1 600·0,60<sup>2</sup> = <span class=\"res\">288 J</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Reconèixer que el pendent de la recta és k/2 i calcular-lo (800 J/m²)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir la constant elàstica, k = 1 600 N/m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular el període amb T = 2π·√(m/k): 0,039 s."
+        },
+        {
+          "punts": 0.4,
+          "que": "Igualar l'energia cinètica màxima a l'energia mecànica ½·k·A² i obtenir 288 J."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Magnituds de l'ona",
+          "html": "Cada punt de la corda oscil·la amb el període de l'oscil·lador. La longitud d'ona és λ = <i>v</i>·<i>T</i> = 30·0,0393 = <span class=\"res\">1,18 m</span>. El nombre d'ona (l'escrivim κ per no confondre'l amb la constant elàstica <i>k</i>) és κ = 2π/λ = <span class=\"res\">5,33 m<sup>−1</sup></span>, i la freqüència angular, ω = 2π/<i>T</i> = √(<i>k</i>/<i>m</i>) = √(1 600/0,0625) = <span class=\"res\">160 rad/s</span>."
+        },
+        {
+          "titol": "Equació general",
+          "html": "Per a una ona harmònica que avança en el sentit positiu de l'eix <i>x</i>, l'elongació transversal <i>y</i> de cada punt de la corda és <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(ω<i>t</i> − κ<i>x</i>). Aquí <i>x</i> és la posició al llarg de la corda. També és vàlida la forma amb cosinus o escrita amb <i>T</i> i λ."
+        },
+        {
+          "titol": "Equació amb valors",
+          "html": "Amb la mateixa amplitud que l'oscil·lador, <i>A</i> = 0,60 m: <span class=\"res\"><i>y</i>(<i>x</i>, <i>t</i>) = 0,60·sin(160·<i>t</i> − 5,33·<i>x</i>)</span>, amb <i>x</i> i <i>y</i> en m i <i>t</i> en s."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Calcular la longitud d'ona (λ = v·T), el nombre d'ona (5,33 m⁻¹) i la freqüència angular (160 rad/s)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'expressió general de l'ona, y(x, t) = A·sin(ωt − κx) o una d'equivalent."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure l'equació amb els valors, y(x, t) = 0,60·sin(160t − 5,33x) en unitats del SI."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "pend",
+      "text": "pendent = 800 J/m²",
+      "valor": 800,
+      "pauta": 800
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 1 600 N/m",
+      "valor": 1600,
+      "pauta": 1600
+    },
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 0,039 s",
+      "valor": 0.0393,
+      "pauta": 0.039,
+      "tol": 0.01
+    },
+    {
+      "apartat": "a",
+      "clau": "Ecmax",
+      "text": "Ec,màx = 288 J",
+      "valor": 288,
+      "pauta": 288
+    },
+    {
+      "apartat": "b",
+      "clau": "lam",
+      "text": "λ = 1,18 m",
+      "valor": 1.178,
+      "pauta": 1.1781
+    },
+    {
+      "apartat": "b",
+      "clau": "kappa",
+      "text": "κ = 5,33 m⁻¹",
+      "valor": 5.33,
+      "pauta": 5.33
+    },
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = 160 rad/s",
+      "valor": 160,
+      "pauta": 160
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, sqrt",
+    "m = 62.5e-3",
+    "A = 0.60",
+    "v = 30",
+    "pend = 200 / 0.25",
+    "k = 2 * pend",
+    "T = 2 * pi * sqrt(m / k)",
+    "lam = v * T",
+    "R = {'pend': pend, 'k': k, 'T': T, 'Ecmax': 0.5 * k * A**2, 'lam': lam, 'kappa': 2 * pi / lam, 'w': sqrt(k / m)}"
+  ],
+  "verificacio": {
+    "estat": "revisar",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [
+      "resolucio.b.2: posició amb y (cal x)",
+      "resolucio.b.3: posició amb y (cal x)"
+    ],
+    "notes_manuals": [
+      "A l'apartat b, l'elongació transversal de la corda s'escriu y(x, t), perquè x és la posició al llarg de la corda (direcció de propagació); el comprovador ho marca com a avís de notació (posició amb y), però és la notació habitual per a una ona transversal i la mateixa que fa servir la pauta. Revisar si es prefereix un altre símbol."
+    ]
+  }
+}
