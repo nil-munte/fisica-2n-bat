@@ -1,0 +1,255 @@
+{
+  "id": "2019-juny-s1-p3",
+  "any": 2019,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [
+    "gravitatori"
+  ],
+  "blocs": [
+    "b2",
+    "b4"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Combina ω = √(k/m) per trobar una massa, el període del pèndol simple per trobar g i la llei de la gravitació per obtenir la massa de la Lluna.",
+  "titol": "Pesar-se a l'espai i pèndol a la Lluna",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jl",
+      "pdf": "pau_fisi19jl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jp",
+      "pdf": "pau_fisi19jp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2019/Juny/1/1142"
+  },
+  "dades": [
+    {
+      "simbol": "m<sub>c</sub>",
+      "valor": "2,00",
+      "unitat": "kg",
+      "descripcio": "massa de la cadira"
+    },
+    {
+      "simbol": "k",
+      "valor": "320",
+      "unitat": "N/m",
+      "descripcio": "constant elàstica de la molla"
+    },
+    {
+      "simbol": "t<sub>1</sub>",
+      "valor": "62,8",
+      "unitat": "s",
+      "descripcio": "temps de 20 oscil·lacions de la cadira"
+    },
+    {
+      "simbol": "m<sub>p</sub>",
+      "valor": "1,00",
+      "unitat": "kg",
+      "descripcio": "massa del pèndol"
+    },
+    {
+      "simbol": "L",
+      "valor": "1,50",
+      "unitat": "m",
+      "descripcio": "longitud del pèndol"
+    },
+    {
+      "simbol": "t<sub>2</sub>",
+      "valor": "2 min 1 s",
+      "unitat": "",
+      "descripcio": "temps de 20 oscil·lacions del pèndol"
+    },
+    {
+      "simbol": "G",
+      "valor": "6,67·10<sup>−11</sup>",
+      "unitat": "N·m²/kg²",
+      "descripcio": "constant de la gravitació universal"
+    },
+    {
+      "simbol": "R<sub>Lluna</sub>",
+      "valor": "1,737·10<sup>6</sup>",
+      "unitat": "m",
+      "descripcio": "radi de la Lluna"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": true,
+    "nota": ""
+  },
+  "enunciat": {
+    "intro": "<p>A l'espai, un astronauta vol saber quina és la seva massa. S'asseu en una cadira de 2,00 kg, s'hi lliga, i la cadira està enganxada a una molla de constant elàstica <i>k</i> = 320 N/m. Després de donar-se un impuls, comprova que el conjunt fa 20 oscil·lacions completes en 62,8 s.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la massa de l'astronauta."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Més endavant, el mateix astronauta és a la Lluna i hi fa oscil·lar un pèndol simple de 1,00 kg de massa i 1,50 m de longitud, que tarda 2 min i 1 s a completar 20 oscil·lacions. Determineu el valor de <i>g</i> a la superfície lunar i, a partir d'aquest valor, la massa de la Lluna."
+      }
+    ],
+    "dades_text": "<i>G</i> = 6,67·10<sup>−11</sup> N·m<sup>2</sup>/kg<sup>2</sup>; <i>R</i><sub>Lluna</sub> = 1,737·10<sup>6</sup> m. Període d'un pèndol simple de longitud <i>L</i>: <i>T</i> = 2π·√(<i>L</i>/<i>g</i>)."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Període",
+          "html": "<i>T</i> = 62,8 s / 20 = 3,14 s."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π/<i>T</i> = 2π/3,14 = 2,00 rad/s."
+        },
+        {
+          "titol": "Massa total",
+          "html": "Per a una massa unida a una molla, ω = √(<i>k</i>/<i>m</i><sub>T</sub>), on <i>m</i><sub>T</sub> és la massa que oscil·la (astronauta + cadira). Aïllant: <i>m</i><sub>T</sub> = <i>k</i>/ω<sup>2</sup> = 320/2,00<sup>2</sup> = 80 kg."
+        },
+        {
+          "titol": "Massa de l'astronauta",
+          "html": "Restem la cadira: <i>m</i> = <i>m</i><sub>T</sub> − <i>m</i><sub>c</sub> = 80 − 2,00 = <span class=\"res\">78 kg</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Calcular el període, T = 3,14 s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular la freqüència angular, ω = 2 rad/s."
+        },
+        {
+          "punts": 0.4,
+          "que": "Fer servir ω = √(k/m) per obtenir la massa total oscil·lant, 80 kg."
+        },
+        {
+          "punts": 0.2,
+          "que": "Restar la massa de la cadira: m = 78 kg."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Període del pèndol",
+          "html": "2 min 1 s = 121 s, per tant <i>T</i> = 121/20 = 6,05 s."
+        },
+        {
+          "titol": "Gravetat a la Lluna",
+          "html": "De <i>T</i> = 2π·√(<i>L</i>/<i>g</i>) aïllem <i>g</i> = (2π/<i>T</i>)<sup>2</sup>·<i>L</i> = (2π/6,05)<sup>2</sup>·1,50 = <span class=\"res\">1,62 m/s<sup>2</sup></span>. La massa del pèndol no hi intervé."
+        },
+        {
+          "titol": "Massa de la Lluna",
+          "html": "La intensitat del camp gravitatori a la superfície és <i>g</i> = <i>G</i>·<i>M</i><sub>Lluna</sub>/<i>R</i><sub>Lluna</sub><sup>2</sup>, d'on<br><i>M</i><sub>Lluna</sub> = <i>g</i>·<i>R</i><sub>Lluna</sub><sup>2</sup>/<i>G</i> = 1,62·(1,737·10<sup>6</sup>)<sup>2</sup>/6,67·10<sup>−11</sup> = <span class=\"res\">7,32·10<sup>22</sup> kg</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Calcular el període del pèndol, T = 6,05 s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Aïllar g de l'expressió del període i obtenir g = 1,62 m/s²."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure g = G·M/R² i aïllar-ne la massa de la Lluna."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir el valor numèric, M = 7,32·10²² kg."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "T1",
+      "text": "T = 3,14 s",
+      "valor": 3.14,
+      "pauta": 3.14
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 2,00 rad/s",
+      "valor": 2.0,
+      "pauta": 2.0
+    },
+    {
+      "apartat": "a",
+      "clau": "mT",
+      "text": "m_T = 80 kg",
+      "valor": 80,
+      "pauta": 80
+    },
+    {
+      "apartat": "a",
+      "clau": "m",
+      "text": "m = 78 kg",
+      "valor": 78,
+      "pauta": 78
+    },
+    {
+      "apartat": "b",
+      "clau": "T2",
+      "text": "T = 6,05 s",
+      "valor": 6.05,
+      "pauta": 6.05
+    },
+    {
+      "apartat": "b",
+      "clau": "g",
+      "text": "g = 1,62 m/s²",
+      "valor": 1.62,
+      "pauta": 1.62
+    },
+    {
+      "apartat": "b",
+      "clau": "M",
+      "text": "M_Lluna = 7,32·10²² kg",
+      "valor": 7.32e+22,
+      "pauta": 7.32e+22
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "k = 320",
+    "mc = 2.00",
+    "L = 1.50",
+    "G = 6.67e-11",
+    "RL = 1.737e6",
+    "T1 = 62.8 / 20",
+    "w = 2 * pi / T1",
+    "mT = k / w**2",
+    "T2 = (2 * 60 + 1) / 20",
+    "g = (2 * pi / T2)**2 * L",
+    "R = {'T1': T1, 'w': w, 'mT': mT, 'm': mT - mc, 'T2': T2, 'g': g, 'M': g * RL**2 / G}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

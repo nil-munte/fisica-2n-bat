@@ -1,0 +1,242 @@
+{
+  "id": "2013-juny-s3-p4",
+  "any": 2013,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Combina les expressions de les energies per trobar k, m i A amb la determinació de la fase inicial a partir de la posició i la velocitat inicials.",
+  "titol": "Molla, massa i fase a partir de les energies inicials",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi13jl",
+      "pdf": "pau_fisi13jl",
+      "pagina": 8
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi13jp",
+      "pdf": "pau_fisi13jp",
+      "pagina": 9
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2013/Juny/3/653"
+  },
+  "dades": [
+    {
+      "simbol": "x<sub>0</sub>",
+      "valor": "1,00",
+      "unitat": "m",
+      "descripcio": "posició a l'instant inicial"
+    },
+    {
+      "simbol": "v<sub>0</sub>",
+      "valor": "−5,44",
+      "unitat": "m/s",
+      "descripcio": "velocitat a l'instant inicial"
+    },
+    {
+      "simbol": "E<sub>c</sub>",
+      "valor": "12,00",
+      "unitat": "J",
+      "descripcio": "energia cinètica a l'instant inicial"
+    },
+    {
+      "simbol": "E<sub>p</sub>",
+      "valor": "4,00",
+      "unitat": "J",
+      "descripcio": "energia potencial a l'instant inicial"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta assigna 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Un cos lligat a una molla descriu un moviment harmònic simple. A l'instant inicial es troba a la posició <i>x</i> = 1,00 m i té una velocitat <i>v</i> = −5,44 m/s; en aquest mateix instant, la seva energia cinètica és <i>E</i><sub>c</sub> = 12,00 J i la seva energia potencial és <i>E</i><sub>p</sub> = 4,00 J.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Trobeu la constant de recuperació de la molla, la massa del cos que oscil·la i l'energia mecànica total del sistema."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Trobeu <i>A</i>, ω i la fase inicial φ, i escriviu amb aquests valors l'equació <i>x</i>(<i>t</i>)."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Constant de recuperació",
+          "html": "L'energia potencial elàstica és <i>E</i><sub>p</sub> = ½<i>k</i><i>x</i><sup>2</sup>. A l'instant inicial: 4,00 = ½·<i>k</i>·1,00<sup>2</sup>, d'on <i>k</i> = 2<i>E</i><sub>p</sub>/<i>x</i><sup>2</sup> = 2·4,00/1,00<sup>2</sup> = <span class=\"res\">8,00 N/m</span>."
+        },
+        {
+          "titol": "Massa",
+          "html": "L'energia cinètica és <i>E</i><sub>c</sub> = ½<i>m</i><i>v</i><sup>2</sup>: 12,00 = ½·<i>m</i>·5,44<sup>2</sup>, d'on <i>m</i> = 2<i>E</i><sub>c</sub>/<i>v</i><sup>2</sup> = 2·12,00/5,44<sup>2</sup> = <span class=\"res\">0,811 kg</span>."
+        },
+        {
+          "titol": "Energia mecànica",
+          "html": "<i>E</i> = <i>E</i><sub>c</sub> + <i>E</i><sub>p</sub> = 12,00 + 4,00 = <span class=\"res\">16,0 J</span>, que es manté constant durant tot el moviment."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Escriure l'energia potencial elàstica, Ep = ½kx²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular k = 8,00 N/m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la massa a partir de l'energia cinètica, m = 0,811 kg."
+        },
+        {
+          "punts": 0.5,
+          "que": "Obtenir l'energia mecànica com a suma de les dues energies, E = 16 J."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Freqüència angular",
+          "html": "En un oscil·lador de molla ω<sup>2</sup> = <i>k</i>/<i>m</i>, per tant ω = √(<i>k</i>/<i>m</i>) = √(8,00/0,811) = <span class=\"res\">3,14 rad/s</span>."
+        },
+        {
+          "titol": "Amplitud",
+          "html": "A l'extrem del moviment tota l'energia és potencial: <i>E</i> = ½<i>k</i><i>A</i><sup>2</sup>, d'on <i>A</i> = √(2<i>E</i>/<i>k</i>) = √(2·16,0/8,00) = <span class=\"res\">2,00 m</span>."
+        },
+        {
+          "titol": "Condicions inicials",
+          "html": "Escrivim l'equació general amb cosinus, <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + φ), i la velocitat <i>v</i>(<i>t</i>) = −<i>A</i>ω·sin(ω<i>t</i> + φ). A <i>t</i> = 0: <i>x</i>(0) = <i>A</i>·cos φ i <i>v</i>(0) = −<i>A</i>ω·sin φ. Amb els valors: 1,00 = 2,00·cos φ → cos φ = 0,500; −5,44 = −2,00·3,14·sin φ → sin φ = 0,866."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "tan φ = sin φ/cos φ = 0,866/0,500 i, com que el sinus i el cosinus són tots dos positius, φ és al primer quadrant: φ = arctan(0,866/0,500) = <span class=\"res\">1,05 rad</span> (és a dir, π/3; la pauta l'escriu 1,04 rad)."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 2,00·cos(3,14·<i>t</i> + 1,05) m</span>, amb <i>t</i> en segons. Si es prefereix el sinus, cal sumar π/2 a la fase: <i>x</i>(<i>t</i>) = 2,00·sin(3,14·<i>t</i> + 2,62) m."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Escriure ω² = k/m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ω = 3,14 rad/s."
+        },
+        {
+          "punts": 0.1,
+          "que": "Relacionar l'energia mecànica amb l'amplitud, E = ½kA²."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular A = 2,00 m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Escriure l'equació general x(t) = A·cos(ωt + φ) (també val amb sinus)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Aplicar les condicions inicials per obtenir tan φ = 0,866/0,5."
+        },
+        {
+          "punts": 0.1,
+          "que": "Obtenir la fase inicial, φ ≈ 1,04 rad (π/3)."
+        },
+        {
+          "punts": 0.3,
+          "que": "Escriure l'equació del moviment amb tots els valors numèrics."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 8,00 N/m",
+      "valor": 8.0,
+      "pauta": 8.0
+    },
+    {
+      "apartat": "a",
+      "clau": "m",
+      "text": "m = 0,811 kg",
+      "valor": 0.811,
+      "pauta": 0.811
+    },
+    {
+      "apartat": "a",
+      "clau": "E",
+      "text": "E = 16,0 J",
+      "valor": 16.0,
+      "pauta": 16
+    },
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = 3,14 rad/s",
+      "valor": 3.14,
+      "pauta": 3.14
+    },
+    {
+      "apartat": "b",
+      "clau": "A",
+      "text": "A = 2,00 m",
+      "valor": 2.0,
+      "pauta": 2.0
+    },
+    {
+      "apartat": "b",
+      "clau": "phi",
+      "text": "φ = 1,05 rad (π/3)",
+      "valor": 1.047,
+      "pauta": 1.04,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import sqrt, atan2",
+    "x0, v0, Ec, Ep = 1.00, -5.44, 12.00, 4.00",
+    "k = 2 * Ep / x0**2",
+    "m = 2 * Ec / v0**2",
+    "E = Ec + Ep",
+    "w = sqrt(k / m)",
+    "A = sqrt(2 * E / k)",
+    "# x0 = A cos(phi), v0 = -A w sin(phi)",
+    "phi = atan2(-v0 / (A * w), x0 / A)",
+    "R = {'k': k, 'm': m, 'E': E, 'w': w, 'A': A, 'phi': phi}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

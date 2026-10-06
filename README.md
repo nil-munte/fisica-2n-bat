@@ -19,8 +19,17 @@ Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir d
 │   └── mhs/
 │       ├── index.html         Teoria, demos, mètode i exercicis
 │       └── pdf/               PDF generats a partir de la pàgina
+├── dades/
+│   ├── temes.json             Mapa tema → pàgina dels problemes de les PAU
+│   ├── README.md              Format dels problemes i normes de contingut
+│   └── <tema>/*.json          Un fitxer per problema de les PAU
 └── eines/
     ├── build_pdfs.py          Regenera els PDF d'un tema
+    ├── genera_pau.py          Insereix els problemes de les PAU a les pàgines dels temes
+    ├── comprova_pau.py        Comprova els problemes (estructura, càlculs i notació)
+    ├── fonts_pau.py           Text i imatges dels PDF oficials (fonts/pdf/)
+    ├── previsualitza_figures.py  Figures SVG d'un problema com a PNG
+    ├── plantilles/            Estil i filtre del bloc de problemes de les PAU
     └── requirements.txt
 ```
 
@@ -45,9 +54,20 @@ python eines/build_pdfs.py mhs "Moviment harmònic simple"
 
 Els PDF surten de la mateixa pàgina amb els estils d'impressió: el formulari és la secció oculta `#formulari`, i els enunciats i les solucions són els exercicis.
 
+## Banc de problemes de les PAU
+
+Cada problema és un JSON a `dades/<tema>/` (format i normes a [dades/README.md](dades/README.md)). `dades/temes.json` diu a quina pàgina va cada tema; els temes que encara no tenen pàgina hi són com a `null`.
+
+```bash
+python eines/comprova_pau.py     # estructura, càlculs (Python) contra la pauta i notació
+python eines/genera_pau.py       # insereix els problemes a les pàgines que existeixen
+```
+
+El generador posa cada problema a la pàgina del seu tema principal (de més fàcil a més difícil, amb filtre per nivell) i un enllaç a les pàgines dels temes secundaris. Per als temes sense pàgina, diu quants problemes hi ha preparats. Quan s'afegeix la ruta d'una pàgina nova a `temes.json`, n'hi ha prou amb tornar a executar el generador i després `build_pdfs.py`.
+
 ## Fonts
 
-Els enunciats dels problemes de les PAU estan adaptats a partir dels exàmens oficials de les PAU de Catalunya. Cada problema enllaça a l'enunciat original a [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica). Les solucions són pròpies.
+Els enunciats dels problemes de les PAU estan redactats de nou a partir dels exàmens oficials de les PAU de Catalunya, amb les mateixes dades, preguntes i puntuacions, i les figures són redibuixades. Les resolucions segueixen el mètode de les pautes de correcció oficials, explicat amb paraules pròpies. Cada problema enllaça a l'examen i a la pauta originals; la classificació per temes parteix de [examenselectivitat.cat](https://examenselectivitat.cat/selectivitat/F%C3%ADsica).
 
 ## Autor
 

@@ -1,0 +1,191 @@
+{
+  "id": "2014-juny-s4-p5",
+  "any": 2014,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P5",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa: freqüència a partir d'un recompte, amplitud com a meitat del recorregut i valors màxims.",
+  "titol": "L'agulla d'una màquina de cosir",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jl",
+      "pdf": "pau_fisi14jl",
+      "pagina": 7
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jp",
+      "pdf": "pau_fisi14jp",
+      "pagina": 7
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Juny/4/1346"
+  },
+  "dades": [
+    {
+      "simbol": "d",
+      "valor": "20",
+      "unitat": "mm",
+      "descripcio": "distància entre els dos punts extrems"
+    },
+    {
+      "simbol": "n",
+      "valor": "1 800",
+      "unitat": "puntades/min",
+      "descripcio": "ritme de puntades"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Una màquina de cosir mou l'agulla amunt i avall entre dos punts que estan a 20 mm l'un de l'altre. El fabricant indica que l'agulla pot donar 1 800 puntades cada minut. Considereu que l'agulla fa un moviment harmònic simple.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Trobeu la freqüència del moviment en Hz i escriviu-ne l'equació, sabent que a l'instant inicial l'agulla és al punt més alt."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Trobeu la velocitat màxima i l'acceleració màxima de l'agulla."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Freqüència",
+          "html": "Cada puntada és una oscil·lació completa de l'agulla, de manera que la freqüència és el nombre de puntades per segon: <i>f</i> = 1 800 / 60 s = <span class=\"res\">30 Hz</span>."
+        },
+        {
+          "titol": "Amplitud",
+          "html": "Entre els dos extrems hi ha dues amplituds: 2<i>A</i> = 20 mm → <i>A</i> = 10 mm = 0,010 m."
+        },
+        {
+          "titol": "Equació",
+          "html": "Prenem l'eix <i>x</i> vertical i positiu cap amunt. Si a <i>t</i> = 0 l'agulla és a <i>x</i> = +<i>A</i>, la funció cosinus no necessita fase inicial: <i>x</i>(<i>t</i>) = <i>A</i>·cos(2π<i>f</i>·<i>t</i>)."
+        },
+        {
+          "titol": "Amb valors",
+          "html": "2π<i>f</i> = 2π·30 = 60π ≈ 1,88·10<sup>2</sup> rad/s, per tant <span class=\"res\"><i>x</i>(<i>t</i>) = 0,010·cos(1,88·10<sup>2</sup>·<i>t</i>) m</span>. Si s'escriu amb sinus, cal afegir una fase de π/2: <i>x</i>(<i>t</i>) = 0,010·sin(1,88·10<sup>2</sup>·<i>t</i> + π/2) m."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Veure que cada puntada és una oscil·lació i obtenir f = 30 Hz."
+        },
+        {
+          "punts": 0.3,
+          "que": "Deduir que l'amplitud és la meitat de 20 mm, A = 0,01 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure la forma general x(t) = A·cos(2πf·t)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'equació amb els valors numèrics."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Velocitat",
+          "html": "Derivem la posició respecte del temps: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = −2π<i>f</i>·<i>A</i>·sin(2π<i>f</i>·<i>t</i>). El valor màxim és quan el sinus val ±1: <i>v</i><sub>màx</sub> = 2π<i>f</i>·<i>A</i> = 2π·30·0,010 = <span class=\"res\">1,88 m/s</span>."
+        },
+        {
+          "titol": "Acceleració",
+          "html": "Derivem la velocitat: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i>·cos(2π<i>f</i>·<i>t</i>). El valor màxim és quan el cosinus val ±1: <i>a</i><sub>màx</sub> = 4π<sup>2</sup><i>f</i><sup>2</sup>·<i>A</i> = 4π<sup>2</sup>·30<sup>2</sup>·0,010 = <span class=\"res\">3,55·10<sup>2</sup> m/s<sup>2</sup></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Obtenir l'expressió de v(t) derivant x(t)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la velocitat màxima, 1,88 m/s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir l'expressió de a(t) derivant v(t)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular l'acceleració màxima, 3,55·10² m/s²."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 30 Hz",
+      "valor": 30,
+      "pauta": 30
+    },
+    {
+      "apartat": "a",
+      "clau": "A",
+      "text": "A = 0,010 m",
+      "valor": 0.01,
+      "pauta": 0.01
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 1,88·10² rad/s",
+      "valor": 188,
+      "pauta": 188
+    },
+    {
+      "apartat": "b",
+      "clau": "vmax",
+      "text": "v_màx = 1,88 m/s",
+      "valor": 1.88,
+      "pauta": 1.88
+    },
+    {
+      "apartat": "b",
+      "clau": "amax",
+      "text": "a_màx = 3,55·10² m/s²",
+      "valor": 355,
+      "pauta": 355
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "f = 1800 / 60",
+    "A = 20e-3 / 2",
+    "w = 2 * pi * f",
+    "R = {'f': f, 'A': A, 'w': w, 'vmax': w * A, 'amax': w**2 * A}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

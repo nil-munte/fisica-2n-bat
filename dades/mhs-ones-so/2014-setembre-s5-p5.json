@@ -1,0 +1,251 @@
+{
+  "id": "2014-setembre-s5-p5",
+  "any": 2014,
+  "convocatoria": "setembre",
+  "serie": 5,
+  "problema": "P5",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal linealitzar el període (m proporcional a T²) per treure k del pendent d'una gràfica i després combinar-ho amb l'energia i l'acceleració màxima.",
+  "titol": "Gràfica m–T², energia i fregament",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14sl",
+      "pdf": "pau_fisi14sl",
+      "pagina": 3
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14sp",
+      "pdf": "pau_fisi14sp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Setembre/5/352"
+  },
+  "dades": [
+    {
+      "simbol": "m(T²)",
+      "valor": "gràfica",
+      "unitat": "kg, s²",
+      "descripcio": "massa penjada en funció del quadrat del període (recta de 0 a 3,8 kg entre T² = 0 i 1 s²)"
+    },
+    {
+      "simbol": "A₁",
+      "valor": "0,10",
+      "unitat": "m",
+      "descripcio": "amplitud de l'apartat a"
+    },
+    {
+      "simbol": "k₂",
+      "valor": "150",
+      "unitat": "N/m",
+      "descripcio": "constant elàstica suposada a l'apartat b"
+    },
+    {
+      "simbol": "m₂",
+      "valor": "1,5",
+      "unitat": "kg",
+      "descripcio": "massa penjada a l'apartat b"
+    },
+    {
+      "simbol": "A₂",
+      "valor": "0,20",
+      "unitat": "m",
+      "descripcio": "amplitud de l'apartat b"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Per conèixer la constant elàstica d'una molla, es pot penjar un cos de l'extrem i cronometrar el període de les oscil·lacions petites que fa al voltant de la posició d'equilibri. Repetint la mesura amb masses diferents s'ha obtingut la gràfica següent, que dona la massa penjada <i>m</i> en funció del quadrat del període, <i>T</i><sup>2</sup>.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Determineu la constant elàstica de la molla fent servir la gràfica. Si el cos oscil·lés amb una amplitud de 0,10 m, quina seria la seva energia cinètica màxima durant l'oscil·lació?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Ara suposeu que la molla té una constant elàstica de 150 N/m, que hi pengem un cos d'1,5 kg i que el fem oscil·lar amb una amplitud de 0,20 m. Quina acceleració màxima té el cos? A continuació posem tot el muntatge dins d'un recipient ple d'aigua: el fregament va frenant el cos fins que queda aturat. Quin treball ha fet la força de fregament per aturar l'oscil·lació?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 420 322\" role=\"img\" aria-label=\"Gràfica de la massa penjada m (kg) en funció del quadrat del període T² (s²): recta que passa per l'origen i arriba a 3,8 kg per a T² = 1 s²\"><rect x=\"62\" y=\"14\" width=\"340\" height=\"260\" fill=\"var(--surface)\"/><line x1=\"68.8\" y1=\"14\" x2=\"68.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"75.6\" y1=\"14\" x2=\"75.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"82.4\" y1=\"14\" x2=\"82.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"89.2\" y1=\"14\" x2=\"89.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"102.8\" y1=\"14\" x2=\"102.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"109.6\" y1=\"14\" x2=\"109.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"116.4\" y1=\"14\" x2=\"116.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"123.2\" y1=\"14\" x2=\"123.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"136.8\" y1=\"14\" x2=\"136.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"143.6\" y1=\"14\" x2=\"143.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"150.4\" y1=\"14\" x2=\"150.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"157.2\" y1=\"14\" x2=\"157.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"170.8\" y1=\"14\" x2=\"170.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"177.6\" y1=\"14\" x2=\"177.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"184.4\" y1=\"14\" x2=\"184.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"191.2\" y1=\"14\" x2=\"191.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"204.8\" y1=\"14\" x2=\"204.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"211.6\" y1=\"14\" x2=\"211.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"218.4\" y1=\"14\" x2=\"218.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"225.2\" y1=\"14\" x2=\"225.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"238.8\" y1=\"14\" x2=\"238.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"245.6\" y1=\"14\" x2=\"245.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"252.4\" y1=\"14\" x2=\"252.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"259.2\" y1=\"14\" x2=\"259.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"272.8\" y1=\"14\" x2=\"272.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"279.6\" y1=\"14\" x2=\"279.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"286.4\" y1=\"14\" x2=\"286.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"293.2\" y1=\"14\" x2=\"293.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"306.8\" y1=\"14\" x2=\"306.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"313.6\" y1=\"14\" x2=\"313.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"320.4\" y1=\"14\" x2=\"320.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"327.2\" y1=\"14\" x2=\"327.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"340.8\" y1=\"14\" x2=\"340.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"347.6\" y1=\"14\" x2=\"347.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"354.4\" y1=\"14\" x2=\"354.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"361.2\" y1=\"14\" x2=\"361.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"374.8\" y1=\"14\" x2=\"374.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"381.6\" y1=\"14\" x2=\"381.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"388.4\" y1=\"14\" x2=\"388.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"395.2\" y1=\"14\" x2=\"395.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"267.5\" x2=\"402\" y2=\"267.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"261.0\" x2=\"402\" y2=\"261.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"254.5\" x2=\"402\" y2=\"254.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"248.0\" x2=\"402\" y2=\"248.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"235.0\" x2=\"402\" y2=\"235.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"228.5\" x2=\"402\" y2=\"228.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"222.0\" x2=\"402\" y2=\"222.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"215.5\" x2=\"402\" y2=\"215.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"202.5\" x2=\"402\" y2=\"202.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"196.0\" x2=\"402\" y2=\"196.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"189.5\" x2=\"402\" y2=\"189.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"183.0\" x2=\"402\" y2=\"183.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"170.0\" x2=\"402\" y2=\"170.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"163.5\" x2=\"402\" y2=\"163.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"157.0\" x2=\"402\" y2=\"157.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"150.5\" x2=\"402\" y2=\"150.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"137.5\" x2=\"402\" y2=\"137.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"131.0\" x2=\"402\" y2=\"131.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"124.5\" x2=\"402\" y2=\"124.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"118.0\" x2=\"402\" y2=\"118.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"105.0\" x2=\"402\" y2=\"105.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"98.5\" x2=\"402\" y2=\"98.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"92.0\" x2=\"402\" y2=\"92.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"85.5\" x2=\"402\" y2=\"85.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"72.5\" x2=\"402\" y2=\"72.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"66.0\" x2=\"402\" y2=\"66.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"59.5\" x2=\"402\" y2=\"59.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"53.0\" x2=\"402\" y2=\"53.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"40.0\" x2=\"402\" y2=\"40.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"33.5\" x2=\"402\" y2=\"33.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"27.0\" x2=\"402\" y2=\"27.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"20.5\" x2=\"402\" y2=\"20.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62.0\" y1=\"14\" x2=\"62.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"62.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"96.0\" y1=\"14\" x2=\"96.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"96.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,1</text><line x1=\"130.0\" y1=\"14\" x2=\"130.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"130.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,2</text><line x1=\"164.0\" y1=\"14\" x2=\"164.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"164.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,3</text><line x1=\"198.0\" y1=\"14\" x2=\"198.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"198.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,4</text><line x1=\"232.0\" y1=\"14\" x2=\"232.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"232.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,5</text><line x1=\"266.0\" y1=\"14\" x2=\"266.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"266.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,6</text><line x1=\"300.0\" y1=\"14\" x2=\"300.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"300.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,7</text><line x1=\"334.0\" y1=\"14\" x2=\"334.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"334.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,8</text><line x1=\"368.0\" y1=\"14\" x2=\"368.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"368.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,9</text><line x1=\"402.0\" y1=\"14\" x2=\"402.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"402.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"62\" y1=\"274.0\" x2=\"402\" y2=\"274.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"278.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"62\" y1=\"241.5\" x2=\"402\" y2=\"241.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"245.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,5</text><line x1=\"62\" y1=\"209.0\" x2=\"402\" y2=\"209.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"213.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"62\" y1=\"176.5\" x2=\"402\" y2=\"176.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"180.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1,5</text><line x1=\"62\" y1=\"144.0\" x2=\"402\" y2=\"144.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2</text><line x1=\"62\" y1=\"111.5\" x2=\"402\" y2=\"111.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"115.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2,5</text><line x1=\"62\" y1=\"79.0\" x2=\"402\" y2=\"79.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"83.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3</text><line x1=\"62\" y1=\"46.5\" x2=\"402\" y2=\"46.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"50.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3,5</text><line x1=\"62\" y1=\"14.0\" x2=\"402\" y2=\"14.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"18.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">4</text><line x1=\"62\" y1=\"274\" x2=\"402\" y2=\"274\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"62\" y1=\"14\" x2=\"62\" y2=\"274\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"62.0\" y1=\"274.0\" x2=\"402.0\" y2=\"27.0\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><g><text x=\"219.0\" y=\"314.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">T</text><text x=\"221.0\" y=\"314.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">² (s²)</text></g><g transform=\"rotate(-90 20.0 132.0)\"><text x=\"19.0\" y=\"132.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">m</text><text x=\"24.0\" y=\"132.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(kg)</text></g></svg>",
+      "peu": "Massa penjada de la molla en funció del quadrat del període d'oscil·lació."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 420 322\" role=\"img\" aria-label=\"Gràfica de la massa penjada m (kg) en funció del quadrat del període T² (s²): recta que passa per l'origen i arriba a 3,8 kg per a T² = 1 s², amb el punt llegit (0,5 s²; 1,9 kg) marcat\"><rect x=\"62\" y=\"14\" width=\"340\" height=\"260\" fill=\"var(--surface)\"/><line x1=\"68.8\" y1=\"14\" x2=\"68.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"75.6\" y1=\"14\" x2=\"75.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"82.4\" y1=\"14\" x2=\"82.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"89.2\" y1=\"14\" x2=\"89.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"102.8\" y1=\"14\" x2=\"102.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"109.6\" y1=\"14\" x2=\"109.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"116.4\" y1=\"14\" x2=\"116.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"123.2\" y1=\"14\" x2=\"123.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"136.8\" y1=\"14\" x2=\"136.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"143.6\" y1=\"14\" x2=\"143.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"150.4\" y1=\"14\" x2=\"150.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"157.2\" y1=\"14\" x2=\"157.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"170.8\" y1=\"14\" x2=\"170.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"177.6\" y1=\"14\" x2=\"177.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"184.4\" y1=\"14\" x2=\"184.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"191.2\" y1=\"14\" x2=\"191.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"204.8\" y1=\"14\" x2=\"204.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"211.6\" y1=\"14\" x2=\"211.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"218.4\" y1=\"14\" x2=\"218.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"225.2\" y1=\"14\" x2=\"225.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"238.8\" y1=\"14\" x2=\"238.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"245.6\" y1=\"14\" x2=\"245.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"252.4\" y1=\"14\" x2=\"252.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"259.2\" y1=\"14\" x2=\"259.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"272.8\" y1=\"14\" x2=\"272.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"279.6\" y1=\"14\" x2=\"279.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"286.4\" y1=\"14\" x2=\"286.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"293.2\" y1=\"14\" x2=\"293.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"306.8\" y1=\"14\" x2=\"306.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"313.6\" y1=\"14\" x2=\"313.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"320.4\" y1=\"14\" x2=\"320.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"327.2\" y1=\"14\" x2=\"327.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"340.8\" y1=\"14\" x2=\"340.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"347.6\" y1=\"14\" x2=\"347.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"354.4\" y1=\"14\" x2=\"354.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"361.2\" y1=\"14\" x2=\"361.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"374.8\" y1=\"14\" x2=\"374.8\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"381.6\" y1=\"14\" x2=\"381.6\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"388.4\" y1=\"14\" x2=\"388.4\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"395.2\" y1=\"14\" x2=\"395.2\" y2=\"274\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"267.5\" x2=\"402\" y2=\"267.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"261.0\" x2=\"402\" y2=\"261.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"254.5\" x2=\"402\" y2=\"254.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"248.0\" x2=\"402\" y2=\"248.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"235.0\" x2=\"402\" y2=\"235.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"228.5\" x2=\"402\" y2=\"228.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"222.0\" x2=\"402\" y2=\"222.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"215.5\" x2=\"402\" y2=\"215.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"202.5\" x2=\"402\" y2=\"202.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"196.0\" x2=\"402\" y2=\"196.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"189.5\" x2=\"402\" y2=\"189.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"183.0\" x2=\"402\" y2=\"183.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"170.0\" x2=\"402\" y2=\"170.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"163.5\" x2=\"402\" y2=\"163.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"157.0\" x2=\"402\" y2=\"157.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"150.5\" x2=\"402\" y2=\"150.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"137.5\" x2=\"402\" y2=\"137.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"131.0\" x2=\"402\" y2=\"131.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"124.5\" x2=\"402\" y2=\"124.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"118.0\" x2=\"402\" y2=\"118.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"105.0\" x2=\"402\" y2=\"105.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"98.5\" x2=\"402\" y2=\"98.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"92.0\" x2=\"402\" y2=\"92.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"85.5\" x2=\"402\" y2=\"85.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"72.5\" x2=\"402\" y2=\"72.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"66.0\" x2=\"402\" y2=\"66.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"59.5\" x2=\"402\" y2=\"59.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"53.0\" x2=\"402\" y2=\"53.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"40.0\" x2=\"402\" y2=\"40.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"33.5\" x2=\"402\" y2=\"33.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"27.0\" x2=\"402\" y2=\"27.0\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62\" y1=\"20.5\" x2=\"402\" y2=\"20.5\" stroke=\"var(--grid)\" stroke-width=\"0.8\"/><line x1=\"62.0\" y1=\"14\" x2=\"62.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"62.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"96.0\" y1=\"14\" x2=\"96.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"96.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,1</text><line x1=\"130.0\" y1=\"14\" x2=\"130.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"130.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,2</text><line x1=\"164.0\" y1=\"14\" x2=\"164.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"164.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,3</text><line x1=\"198.0\" y1=\"14\" x2=\"198.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"198.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,4</text><line x1=\"232.0\" y1=\"14\" x2=\"232.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"232.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,5</text><line x1=\"266.0\" y1=\"14\" x2=\"266.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"266.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,6</text><line x1=\"300.0\" y1=\"14\" x2=\"300.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"300.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,7</text><line x1=\"334.0\" y1=\"14\" x2=\"334.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"334.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,8</text><line x1=\"368.0\" y1=\"14\" x2=\"368.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"368.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,9</text><line x1=\"402.0\" y1=\"14\" x2=\"402.0\" y2=\"274\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"402.0\" y=\"291.0\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"62\" y1=\"274.0\" x2=\"402\" y2=\"274.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"278.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"62\" y1=\"241.5\" x2=\"402\" y2=\"241.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"245.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0,5</text><line x1=\"62\" y1=\"209.0\" x2=\"402\" y2=\"209.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"213.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"62\" y1=\"176.5\" x2=\"402\" y2=\"176.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"180.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1,5</text><line x1=\"62\" y1=\"144.0\" x2=\"402\" y2=\"144.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2</text><line x1=\"62\" y1=\"111.5\" x2=\"402\" y2=\"111.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"115.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2,5</text><line x1=\"62\" y1=\"79.0\" x2=\"402\" y2=\"79.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"83.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3</text><line x1=\"62\" y1=\"46.5\" x2=\"402\" y2=\"46.5\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"50.5\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3,5</text><line x1=\"62\" y1=\"14.0\" x2=\"402\" y2=\"14.0\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><text x=\"55.0\" y=\"18.0\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">4</text><line x1=\"62\" y1=\"274\" x2=\"402\" y2=\"274\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"62\" y1=\"14\" x2=\"62\" y2=\"274\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"62.0\" y1=\"274.0\" x2=\"402.0\" y2=\"27.0\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"232.0\" y1=\"274\" x2=\"232.0\" y2=\"150.5\" stroke=\"var(--y)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><line x1=\"62\" y1=\"150.5\" x2=\"232.0\" y2=\"150.5\" stroke=\"var(--y)\" stroke-width=\"1.6\" stroke-dasharray=\"5 3\"/><circle cx=\"232.0\" cy=\"150.5\" r=\"5\" fill=\"var(--y)\" stroke=\"var(--surface)\" stroke-width=\"1.5\"/><rect x=\"242.0\" y=\"158.5\" width=\"120\" height=\"20\" rx=\"3\" fill=\"var(--surface)\" opacity=\"0.92\"/><text x=\"246.0\" y=\"172.5\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--y)\" font-weight=\"600\">(0,5 s²; 1,9 kg)</text><g><text x=\"219.0\" y=\"314.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">T</text><text x=\"221.0\" y=\"314.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">² (s²)</text></g><g transform=\"rotate(-90 20.0 132.0)\"><text x=\"19.0\" y=\"132.0\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">m</text><text x=\"24.0\" y=\"132.0\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(kg)</text></g></svg>",
+      "peu": "Un punt qualsevol de la recta serveix: per a <i>T</i><sup>2</sup> = 0,5 s<sup>2</sup> es llegeix <i>m</i> = 1,9 kg."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Període d'una molla",
+          "html": "Un cos de massa <i>m</i> penjat d'una molla de constant <i>k</i> oscil·la amb període <i>T</i> = 2π·√(<i>m</i>/<i>k</i>)."
+        },
+        {
+          "titol": "Relació entre m i T²",
+          "html": "Elevant al quadrat: <i>T</i><sup>2</sup> = 4π<sup>2</sup>·<i>m</i>/<i>k</i>, és a dir, <i>m</i> = (<i>k</i>/4π<sup>2</sup>)·<i>T</i><sup>2</sup>. La massa és proporcional a <i>T</i><sup>2</sup> (per això la gràfica és una recta que passa per l'origen), i la constant es pot aïllar com <i>k</i> = 4π<sup>2</sup>·<i>m</i>/<i>T</i><sup>2</sup>."
+        },
+        {
+          "titol": "Lectura de la gràfica",
+          "html": "Prenem un punt de la recta: per a <i>T</i><sup>2</sup> = 0,5 s<sup>2</sup> la massa és <i>m</i> = 1,9 kg. Llavors <i>k</i> = 4π<sup>2</sup>·<i>m</i>/<i>T</i><sup>2</sup> = 4π<sup>2</sup>·1,9/0,5 = <span class=\"res\">1,5·10<sup>2</sup> N/m</span> (150 N/m).",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Energia mecànica",
+          "html": "L'energia total de l'oscil·lador només depèn de <i>k</i> i de l'amplitud: <i>E</i> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,10<sup>2</sup> = 0,75 J."
+        },
+        {
+          "titol": "Energia cinètica màxima",
+          "html": "Quan el cos passa per la posició d'equilibri l'energia potencial (mesurada des de l'equilibri) és nul·la i tota l'energia és cinètica. Per tant <i>E</i><sub>c,màx</sub> = <i>E</i> = <span class=\"res\">0,75 J</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure el període d'una massa penjada d'una molla, T = 2π·√(m/k)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Reescriure-ho com m = k·T²/4π² i aïllar k = 4π²·m/T²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Llegir un punt de la recta (per exemple 1,9 kg i 0,5 s²) i obtenir k = 150 N/m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular l'energia total amb E = ½·k·A² (0,75 J)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Raonar que l'energia cinètica màxima és igual a l'energia total, 0,75 J."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Freqüència angular",
+          "html": "<i>ω</i> = √(<i>k</i>/<i>m</i>) = √(150/1,5) = <span class=\"res\">10 rad/s</span>."
+        },
+        {
+          "titol": "Acceleració màxima",
+          "html": "L'acceleració del MHS és <i>a</i> = −<i>ω</i><sup>2</sup>·<i>x</i>, i és màxima als extrems (<i>x</i> = ±<i>A</i>): <i>a</i><sub>màx</sub> = <i>A</i>·<i>ω</i><sup>2</sup> = 0,20·10<sup>2</sup> = <span class=\"res\">20 m/s<sup>2</sup></span>."
+        },
+        {
+          "titol": "Energia de l'oscil·lació",
+          "html": "<i>E</i> = ½·<i>k</i>·<i>A</i><sup>2</sup> = ½·150·0,20<sup>2</sup> = 3,0 J."
+        },
+        {
+          "titol": "Treball del fregament",
+          "html": "Dins l'aigua el fregament dissipa l'energia mecànica fins que el cos queda en repòs a l'equilibri. El treball del fregament és igual a la variació d'energia mecànica: <i>W</i><sub>freg</sub> = Δ<i>E</i> = 0 − 3,0 = −3,0 J. És a dir, el fregament ha fet un treball de <span class=\"res\">3,0 J</span> en valor absolut (negatiu, perquè s'oposa al moviment)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular la freqüència angular, ω = √(k/m) = 10 rad/s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir l'acceleració màxima, a_màx = A·ω² = 20 m/s²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular l'energia total de l'oscil·lació, ½·k·A² = 3 J."
+        },
+        {
+          "punts": 0.3,
+          "que": "Raonar que, per aturar el cos, el fregament ha de fer un treball igual (en valor absolut) a tota aquesta energia: 3 J."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 150 N/m",
+      "valor": 150.0,
+      "pauta": 150
+    },
+    {
+      "apartat": "a",
+      "clau": "Ecmax",
+      "text": "E_c,màx = 0,75 J",
+      "valor": 0.75,
+      "pauta": 0.75
+    },
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = 10 rad/s",
+      "valor": 10,
+      "pauta": 10
+    },
+    {
+      "apartat": "b",
+      "clau": "amax",
+      "text": "a_màx = 20 m/s²",
+      "valor": 20,
+      "pauta": 20
+    },
+    {
+      "apartat": "b",
+      "clau": "E2",
+      "text": "E = 3,0 J",
+      "valor": 3.0,
+      "pauta": 3
+    },
+    {
+      "apartat": "b",
+      "clau": "Wfreg_abs",
+      "text": "|W_freg| = 3,0 J (W_freg = −3,0 J)",
+      "valor": 3.0,
+      "pauta": 3
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, sqrt",
+    "m_l, T2_l = 1.9, 0.5            # punt llegit a la recta",
+    "k = 4 * pi**2 * m_l / T2_l",
+    "Ecmax = 0.5 * k * 0.10**2",
+    "kb, mb, Ab = 150, 1.5, 0.20",
+    "w = sqrt(kb / mb)",
+    "E2 = 0.5 * kb * Ab**2",
+    "R = {'k': k, 'Ecmax': Ecmax, 'w': w, 'amax': Ab * w**2, 'E2': E2, 'Wfreg_abs': E2}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "id": "2020-setembre-s4-p3",
+  "any": 2020,
+  "convocatoria": "setembre",
+  "serie": 4,
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal plantejar ω = √(k/m) per a dues masses amb la mateixa constant i fer-ne el quocient per eliminar k; la resta és aplicació directa.",
+  "titol": "Una aranya i un insecte a la teranyina",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20sl",
+      "pdf": "pau_fisi20sl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20sp",
+      "pdf": "pau_fisi20sp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2020/Setembre/4/2867"
+  },
+  "dades": [
+    {
+      "simbol": "f<sub>a</sub>",
+      "valor": "12",
+      "unitat": "Hz",
+      "descripcio": "freqüència de vibració amb l'aranya sola"
+    },
+    {
+      "simbol": "f<sub>a+i</sub>",
+      "valor": "10",
+      "unitat": "Hz",
+      "descripcio": "freqüència de vibració amb l'aranya i l'insecte"
+    },
+    {
+      "simbol": "m<sub>i</sub>",
+      "valor": "1,00",
+      "unitat": "g",
+      "descripcio": "massa de l'insecte"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'enunciat dona 1,25 punts a cada apartat. A l'apartat a, la pauta assigna 1 punt global al plantejament de les dues situacions i al càlcul de la massa de l'aranya, sense desglossar-lo més."
+  },
+  "enunciat": {
+    "intro": "<p>Les vibracions d'una teranyina amb insectes atrapats es poden descriure com un moviment harmònic simple (MHS): el sistema es comporta com una massa a l'extrem d'una molla. Quan l'aranya és sola a la teranyina, la vibració té una freqüència de 12 Hz. Si hi queda enganxat un insecte d'1,00 g, el conjunt format per l'aranya i l'insecte vibra a 10 Hz.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Calculeu la massa de l'aranya."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Calculeu la constant elàstica de la teranyina. En quines posicions d'aquest MHS la velocitat és màxima? I en quines és màxima l'acceleració?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Model massa-molla",
+          "html": "La freqüència angular d'un oscil·lador massa-molla és ω = √(<i>k</i>/<i>m</i>). La teranyina fa de molla: la seva constant <i>k</i> és la mateixa amb l'insecte i sense."
+        },
+        {
+          "titol": "Les dues situacions",
+          "html": "Aranya sola: ω<sub>a</sub> = √(<i>k</i>/<i>m</i><sub>a</sub>). Aranya i insecte: ω<sub>a+i</sub> = √(<i>k</i>/(<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)). Dividint les dues expressions, <i>k</i> desapareix i, com que ω = 2π<i>f</i>: ω<sub>a+i</sub>/ω<sub>a</sub> = <i>f</i><sub>a+i</sub>/<i>f</i><sub>a</sub> = √(<i>m</i><sub>a</sub>/(<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>))."
+        },
+        {
+          "titol": "Quocient de masses",
+          "html": "Elevant al quadrat i invertint: (<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)/<i>m</i><sub>a</sub> = (<i>f</i><sub>a</sub>/<i>f</i><sub>a+i</sub>)<sup>2</sup> = (12/10)<sup>2</sup> = 1,44."
+        },
+        {
+          "titol": "Massa de l'aranya",
+          "html": "1 + <i>m</i><sub>i</sub>/<i>m</i><sub>a</sub> = 1,44 → <i>m</i><sub>i</sub>/<i>m</i><sub>a</sub> = 0,44 → <i>m</i><sub>a</sub> = <i>m</i><sub>i</sub>/0,44 = 1,00/0,44 = <span class=\"res\">2,27 g = 2,27·10<sup>−3</sup> kg</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Escriure la freqüència angular de l'oscil·lador, ω = √(k/m)."
+        },
+        {
+          "punts": 1.0,
+          "que": "Plantejar les dues situacions amb la mateixa k, dividir-les i aïllar la massa de l'aranya, 2,27 g."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Expressió de la constant",
+          "html": "De ω = √(<i>k</i>/<i>m</i>) s'obté <i>k</i> = <i>m</i>·ω<sup>2</sup>."
+        },
+        {
+          "titol": "Constant elàstica",
+          "html": "Amb l'aranya sola: <i>k</i> = <i>m</i><sub>a</sub>·(2π<i>f</i><sub>a</sub>)<sup>2</sup> = 2,27·10<sup>−3</sup>·(2π·12)<sup>2</sup> = <span class=\"res\">12,9 N/m</span>. Amb l'aranya i l'insecte surt el mateix: <i>k</i> = (<i>m</i><sub>a</sub> + <i>m</i><sub>i</sub>)·(2π<i>f</i><sub>a+i</sub>)<sup>2</sup> = 3,27·10<sup>−3</sup>·(2π·10)<sup>2</sup> = 12,9 N/m."
+        },
+        {
+          "titol": "Velocitat màxima",
+          "html": "La velocitat és màxima quan el sistema passa per <span class=\"res\">la posició d'equilibri (<i>x</i> = 0)</span>: allà l'energia potencial elàstica és nul·la i tota l'energia és cinètica."
+        },
+        {
+          "titol": "Acceleració màxima",
+          "html": "Com que <i>a</i> = −ω<sup>2</sup>·<i>x</i>, el mòdul de l'acceleració és màxim on l'elongació és màxima: <span class=\"res\">als extrems, <i>x</i> = ±<i>A</i></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Aïllar la constant: k = m·ω²."
+        },
+        {
+          "punts": 0.65,
+          "que": "Calcular k = 12,9 N/m (amb qualsevol de les dues situacions)."
+        },
+        {
+          "punts": 0.25,
+          "que": "Indicar que la velocitat màxima es té a la posició d'equilibri."
+        },
+        {
+          "punts": 0.25,
+          "que": "Indicar que l'acceleració màxima es té als punts d'elongació màxima (x = ±A)."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "quoc",
+      "text": "(m_a + m_i)/m_a = 1,44",
+      "valor": 1.44,
+      "pauta": 1.44
+    },
+    {
+      "apartat": "a",
+      "clau": "ma",
+      "text": "m_a = 2,27·10⁻³ kg",
+      "valor": 0.00227,
+      "pauta": 0.00227
+    },
+    {
+      "apartat": "b",
+      "clau": "k",
+      "text": "k = 12,9 N/m",
+      "valor": 12.9,
+      "pauta": 12.9
+    },
+    {
+      "apartat": "b",
+      "clau": "k2",
+      "text": "k (amb aranya + insecte) = 12,9 N/m",
+      "valor": 12.9,
+      "pauta": 12.9
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "fa, fai, mi = 12, 10, 1.00e-3",
+    "quoc = (fa / fai)**2",
+    "ma = mi / (quoc - 1)",
+    "k = ma * (2 * pi * fa)**2",
+    "k2 = (ma + mi) * (2 * pi * fai)**2",
+    "R = {'quoc': quoc, 'ma': ma, 'k': k, 'k2': k2}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

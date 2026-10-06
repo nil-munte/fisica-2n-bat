@@ -1,0 +1,213 @@
+{
+  "id": "2023-setembre-s2-p5",
+  "any": 2023,
+  "convocatoria": "setembre",
+  "serie": 2,
+  "problema": "P5",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b4"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Combina un raonament conceptual (el període no depèn de g) amb l'equació del MHS, les seves derivades i una fase inicial deduïda de l'acceleració.",
+  "titol": "Pesar un objecte fent-lo oscil·lar",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi23sl",
+      "pdf": "pau_fisi23sl",
+      "pagina": 10
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi23sp",
+      "pdf": "pau_fisi23sp",
+      "pagina": 12
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2023/Setembre/2/4469"
+  },
+  "dades": [
+    {
+      "simbol": "k",
+      "valor": "100",
+      "unitat": "N/m",
+      "descripcio": "constant elàstica de la molla"
+    },
+    {
+      "simbol": "A",
+      "valor": "6,00",
+      "unitat": "cm",
+      "descripcio": "amplitud de l'oscil·lació (apartat b)"
+    },
+    {
+      "simbol": "f",
+      "valor": "10,0",
+      "unitat": "Hz",
+      "descripcio": "freqüència de l'oscil·lació (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Tenim una molla de constant elàstica coneguda, <i>k</i> = 100 N/m, i volem aprofitar-la per mesurar masses. Considereu que no hi ha cap fregament.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Raoneu si es pot conèixer la massa d'un objecte penjant-lo de la molla i deixant-lo oscil·lar unes quantes vegades. Si és possible, expliqueu com en calcularíeu la massa. Faríem la mateixa mesura si l'experiment es fes a la Lluna?"
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "L'objecte oscil·la amb una amplitud de 6,00 cm i una freqüència de 10,0 Hz, i comencem a comptar el temps en un instant en què l'acceleració és màxima i positiva. Partint de l'equació general del moviment harmònic simple, deduïu-ne l'equació del moviment. Després, fent servir aquesta equació, calculeu la velocitat màxima i l'acceleració màxima."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Com es mesura la massa",
+          "html": "Sí que es pot. El període d'oscil·lació d'una massa en una molla depèn només de la massa i de la constant elàstica: <i>T</i> = 2π·√(<i>m</i>/<i>k</i>). Si aïllem la massa, <span class=\"res\"><i>m</i> = <i>k</i>·(<i>T</i>/2π)<sup>2</sup></span>. Com que <i>k</i> = 100 N/m és coneguda, només cal mesurar el període."
+        },
+        {
+          "titol": "Millorar la precisió",
+          "html": "En lloc de cronometrar una sola oscil·lació, és millor mesurar el temps total <i>t</i> de <i>N</i> oscil·lacions i calcular <i>T</i> = <i>t</i>/<i>N</i>. L'error del cronòmetre es reparteix entre totes les oscil·lacions i el període (i per tant la massa) surt amb més precisió."
+        },
+        {
+          "titol": "A la Lluna",
+          "html": "En la fórmula del període no hi apareix la intensitat del camp gravitatori: la gravetat només canvia la posició d'equilibri de la molla, no el ritme de l'oscil·lació. Per tant, <span class=\"res\">a la Lluna obtindríem la mateixa massa</span>. De fet, sense aire la mesura encara seria una mica més precisa, perquè no hi hauria fregament amb l'aire."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.6,
+          "que": "Relacionar el període amb la massa i la constant, T = 2π·√(m/k), aïllar m = k·(T/2π)² i explicar que es mesura el temps de diverses oscil·lacions per obtenir T amb precisió."
+        },
+        {
+          "punts": 0.65,
+          "que": "Justificar que el resultat és el mateix a la Lluna perquè el període no depèn de la intensitat del camp gravitatori."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Amplitud i freqüència angular",
+          "html": "<i>A</i> = 6,00 cm = 0,0600 m; ω = 2π<i>f</i> = 2π·10,0 = 20π rad/s = <span class=\"res\">62,8 rad/s</span>."
+        },
+        {
+          "titol": "Equació general",
+          "html": "Escrivim la posició com <i>x</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ)."
+        },
+        {
+          "titol": "Velocitat i valor màxim",
+          "html": "Derivant: <i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = <i>A</i>·ω·cos(ω<i>t</i> + φ). El cosinus val com a màxim 1, per tant <i>v</i><sub>màx</sub> = <i>A</i>·ω = 0,0600·20π = <span class=\"res\">3,77 m/s</span>."
+        },
+        {
+          "titol": "Acceleració i valor màxim",
+          "html": "Derivant un altre cop: <i>a</i>(<i>t</i>) = d<i>v</i>/d<i>t</i> = −<i>A</i>·ω<sup>2</sup>·sin(ω<i>t</i> + φ) = −ω<sup>2</sup>·<i>x</i>. El valor màxim és <i>a</i><sub>màx</sub> = <i>A</i>·ω<sup>2</sup> = 0,0600·(20π)<sup>2</sup> = <span class=\"res\">237 m/s<sup>2</sup></span>."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "Com que <i>a</i> = −ω<sup>2</sup>·<i>x</i>, l'acceleració és màxima i positiva quan <i>x</i> és mínima, és a dir, a <i>x</i> = −<i>A</i>. Per tant, a <i>t</i> = 0: −<i>A</i> = <i>A</i>·sin φ → sin φ = −1 → <span class=\"res\">φ = −π/2 rad</span>."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "<span class=\"res\"><i>x</i>(<i>t</i>) = 0,0600·sin(20π<i>t</i> − π/2) m</span>, amb <i>t</i> en s. Amb cosinus s'escriuria <i>x</i>(<i>t</i>) = 0,0600·cos(20π<i>t</i> + π) m, que és la mateixa funció."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Identificar l'amplitud (0,06 m) i calcular ω = 2πf = 20π rad/s."
+        },
+        {
+          "punts": 0.1,
+          "que": "Escriure l'equació general del MHS."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir v(t) derivant x(t)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular la velocitat màxima, 3,77 m/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir a(t) derivant v(t)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular l'acceleració màxima, 237 m/s²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Deduir que a t = 0 l'objecte és a x = −A i trobar la fase inicial."
+        },
+        {
+          "punts": 0.25,
+          "que": "Escriure l'equació final del moviment amb valors i unitats."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = 20π = 62,8 rad/s",
+      "valor": 62.83,
+      "pauta": 62.83
+    },
+    {
+      "apartat": "b",
+      "clau": "vmax",
+      "text": "v_màx = 3,77 m/s",
+      "valor": 3.77,
+      "pauta": 3.77
+    },
+    {
+      "apartat": "b",
+      "clau": "amax",
+      "text": "a_màx = 237 m/s²",
+      "valor": 237,
+      "pauta": 237
+    },
+    {
+      "apartat": "b",
+      "clau": "phi",
+      "text": "φ = −π/2 rad",
+      "valor": -1.5708,
+      "pauta": -1.5708
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, asin",
+    "A = 6.00e-2",
+    "f = 10.0",
+    "w = 2 * pi * f",
+    "phi = asin(-A / A)   # x(0) = -A perquè a(0) és màxima i positiva",
+    "R = {'w': w, 'vmax': A * w, 'amax': A * w**2, 'phi': phi}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

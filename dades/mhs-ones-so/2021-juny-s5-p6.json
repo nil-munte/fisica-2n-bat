@@ -1,0 +1,229 @@
+{
+  "id": "2021-juny-s5-p6",
+  "any": 2021,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P6",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "mhs",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b4"
+  ],
+  "dificultat": 6,
+  "dificultat_motiu": "Combina la cinemàtica del MHS (període, fase inicial) amb ω = √(k/m) i la condició d'equilibri d'una molla vertical.",
+  "titol": "Salt de pont amb corda elàstica",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi21jl",
+      "pdf": "pau_fisi21jl",
+      "pagina": 27
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi21jp",
+      "pdf": "pau_fisi21jp",
+      "pagina": 24
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2021/Juny/5/2886"
+  },
+  "dades": [
+    {
+      "simbol": "m",
+      "valor": "60",
+      "unitat": "kg",
+      "descripcio": "massa de la saltadora"
+    },
+    {
+      "simbol": "L<sub>0</sub>",
+      "valor": "30",
+      "unitat": "m",
+      "descripcio": "longitud de la corda elàstica"
+    },
+    {
+      "simbol": "n",
+      "valor": "6",
+      "unitat": "oscil·lacions",
+      "descripcio": "oscil·lacions comptades"
+    },
+    {
+      "simbol": "t",
+      "valor": "30",
+      "unitat": "s",
+      "descripcio": "temps de les 6 oscil·lacions"
+    },
+    {
+      "simbol": "A",
+      "valor": "4",
+      "unitat": "m",
+      "descripcio": "distància de l'equilibri al punt més alt"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'enunciat dona 1,25 punts a cada apartat; la pauta en detalla el repartiment. L'enunciat no dona el valor de g: la pauta fa servir g = 9,81 m/s²."
+  },
+  "enunciat": {
+    "intro": "<p>Una saltadora de 60 kg es llança verticalment des d'un pont (salt de pont o <i>pònting</i>) lligada a una corda elàstica de 30 m de longitud. Des d'aquell instant, completa 6 oscil·lacions en 30 s. El punt més alt de l'oscil·lació és a 4 m de la posició d'equilibri.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Calculeu la freqüència, el període i la freqüència angular de l'oscil·lació. Escriviu l'equació del moviment (el desplaçament respecte de la posició d'equilibri en funció del temps) si a l'instant inicial la saltadora és al punt més alt."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Quina és la constant elàstica de la corda? Quan la saltadora acaba aturada a la posició d'equilibri, quina longitud té la corda?"
+      }
+    ],
+    "dades_text": "No tingueu en compte el fregament i considereu que la corda elàstica es comporta com una molla que segueix la llei de Hooke."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Període",
+          "html": "Cada oscil·lació dura un període: <i>T</i> = <i>t</i>/<i>n</i> = 30/6 = <span class=\"res\">5,00 s</span>."
+        },
+        {
+          "titol": "Freqüència",
+          "html": "<i>f</i> = 1/<i>T</i> = 1/5,00 = <span class=\"res\">0,20 Hz</span>."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π/<i>T</i> = 2π·<i>f</i> = 2π·0,20 = <span class=\"res\">1,26 rad/s</span>."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "Prenem <i>x</i> = 0 a la posició d'equilibri i l'eix <i>x</i> vertical, positiu cap amunt. L'amplitud és <i>A</i> = 4 m. Si a <i>t</i> = 0 la saltadora és al punt més alt, <i>x</i>(0) = +<i>A</i>, i amb la funció cosinus la fase inicial és 0: <span class=\"res\"><i>x</i>(<i>t</i>) = 4·cos(1,26·<i>t</i>)</span>, amb <i>x</i> en m i <i>t</i> en s. Amb la funció sinus la fase inicial seria π/2 rad: <i>x</i>(<i>t</i>) = 4·sin(1,26·<i>t</i> + π/2)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Calcular el període, T = 5,00 s."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la freqüència, f = 0,20 Hz."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la freqüència angular, ω = 1,26 rad/s."
+        },
+        {
+          "punts": 0.5,
+          "que": "Trobar la fase inicial a partir de la posició inicial (punt més alt) i escriure l'equació amb els valors numèrics (cosinus amb fase 0 o sinus amb fase π/2)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Constant elàstica",
+          "html": "La saltadora i la corda formen un oscil·lador massa-molla: ω = √(<i>k</i>/<i>m</i>), d'on <i>k</i> = ω<sup>2</sup>·<i>m</i> = (2π/5,00)<sup>2</sup>·60 = <span class=\"res\">94,7 N/m</span>."
+        },
+        {
+          "titol": "Condició d'equilibri",
+          "html": "Quan la saltadora penja en repòs, la força total és nul·la: el pes queda compensat per la força elàstica de la corda, <i>m</i>·<i>g</i> = <i>k</i>·Δ<i>x</i> → Δ<i>x</i> = <i>m</i>·<i>g</i>/<i>k</i>."
+        },
+        {
+          "titol": "Allargament de la corda",
+          "html": "Amb <i>g</i> = 9,81 m/s<sup>2</sup> (l'enunciat no en dona el valor; és el que fa servir la pauta): Δ<i>x</i> = 60·9,81/94,7 = 6,21 m."
+        },
+        {
+          "titol": "Longitud de la corda",
+          "html": "<i>L</i> = <i>L</i><sub>0</sub> + Δ<i>x</i> = 30,0 + 6,21 = <span class=\"res\">36,2 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.65,
+          "que": "Fer servir ω = √(k/m) per obtenir k = 94,7 N/m."
+        },
+        {
+          "punts": 0.4,
+          "que": "Plantejar l'equilibri de forces a la posició d'equilibri: m·g = k·Δx."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular l'allargament, Δx = 6,21 m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular la longitud de la corda, L = 36,2 m."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 5,00 s",
+      "valor": 5.0,
+      "pauta": 5.0
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 0,20 Hz",
+      "valor": 0.2,
+      "pauta": 0.2
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 1,26 rad/s",
+      "valor": 1.26,
+      "pauta": 1.26
+    },
+    {
+      "apartat": "b",
+      "clau": "k",
+      "text": "k = 94,7 N/m",
+      "valor": 94.7,
+      "pauta": 94.7
+    },
+    {
+      "apartat": "b",
+      "clau": "dx",
+      "text": "Δx = 6,21 m",
+      "valor": 6.21,
+      "pauta": 6.21
+    },
+    {
+      "apartat": "b",
+      "clau": "L",
+      "text": "L = 36,2 m",
+      "valor": 36.2,
+      "pauta": 36.21
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "m, L0, g = 60, 30.0, 9.81",
+    "T = 30 / 6",
+    "f = 1 / T",
+    "w = 2 * pi / T",
+    "k = w**2 * m",
+    "dx = m * g / k",
+    "R = {'T': T, 'f': f, 'w': w, 'k': k, 'dx': dx, 'L': L0 + dx}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}
