@@ -24,11 +24,11 @@ Els PDF oficials són a `fonts/pdf/` (no es publiquen). `pau_fisiAAjl` és l'exa
 - **Resolució** amb el mateix mètode, els mateixos passos i els mateixos resultats que la pauta,
   però redactada amb paraules pròpies (cap frase copiada de la pauta).
 - **Pauta**: per a cada apartat, quins passos puntua i quant, amb paraules pròpies.
-- **Notació**: als problemes de MHS, x per a la posició (mai y) i Δx per a l'allargament de la
-  molla. A la resta (ones, so i els altres temes), els símbols exactament com els fa servir
-  l'enunciat de l'examen (p. ex. y(x, t) en una ona). Sempre: coma decimal;
-  unitats del SI; valors substituïts a cada fórmula. Multiplicació amb «·», potències amb
-  `10<sup>n</sup>`, magnituds en cursiva (`<i>x</i>`), resultats en `<span class="res">…</span>`.
+- **Notació**: els símbols exactament com els fa servir l'examen, també als problemes de MHS
+  (si l'enunciat escriu y per a la posició, es manté y). Si l'enunciat no dona símbol a una
+  magnitud, el de la pauta. Sempre: coma decimal; unitats del SI; valors substituïts a cada
+  fórmula. Multiplicació amb «·», potències amb `10<sup>n</sup>`, magnituds en cursiva
+  (`<i>x</i>`), resultats en `<span class="res">…</span>`.
 
 ## Camps
 

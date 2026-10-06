@@ -101,7 +101,7 @@
       "passos": [
         {
           "titol": "Relació entre T² i m",
-          "html": "Per a la massa penjada, la segona llei de Newton aplicada al MHS dona −<i>k</i>·<i>x</i> = <i>m</i>·(−ω<sup>2</sup><i>x</i>), d'on <i>k</i> = <i>m</i>·ω<sup>2</sup> = <i>m</i>·4π<sup>2</sup>/<i>T</i><sup>2</sup>. Aïllant el quadrat del període: <i>T</i><sup>2</sup> = (4π<sup>2</sup>/<i>k</i>)·<i>m</i>."
+          "html": "Per a la massa penjada, la segona llei de Newton aplicada al MHS dona −<i>k</i>·<i>y</i> = <i>m</i>·(−ω<sup>2</sup><i>y</i>), d'on <i>k</i> = <i>m</i>·ω<sup>2</sup> = <i>m</i>·4π<sup>2</sup>/<i>T</i><sup>2</sup>. Aïllant el quadrat del període: <i>T</i><sup>2</sup> = (4π<sup>2</sup>/<i>k</i>)·<i>m</i>."
         },
         {
           "titol": "Interpretació de la gràfica",
@@ -143,7 +143,7 @@
       "passos": [
         {
           "titol": "Equació del moviment",
-          "html": "Prenem l'eix <i>x</i> vertical, positiu cap amunt i amb l'origen a la posició d'equilibri. A <i>t</i> = 0 la massa és al punt més baix, <i>x</i> = −<i>A</i>, de manera que amb el cosinus la fase inicial és π: <i>x</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + π). Derivant: <i>v</i>(<i>t</i>) = −<i>A</i>ω·sin(ω<i>t</i> + π) i <i>a</i>(<i>t</i>) = −<i>A</i>ω<sup>2</sup>·cos(ω<i>t</i> + π) = −ω<sup>2</sup>·<i>x</i>(<i>t</i>)."
+          "html": "Prenem l'eix <i>y</i> vertical, positiu cap amunt i amb l'origen a la posició d'equilibri. A <i>t</i> = 0 la massa és al punt més baix, <i>y</i> = −<i>A</i>, de manera que amb el cosinus la fase inicial és π: <i>y</i>(<i>t</i>) = <i>A</i>·cos(ω<i>t</i> + π). Derivant: <i>v</i>(<i>t</i>) = −<i>A</i>ω·sin(ω<i>t</i> + π) i <i>a</i>(<i>t</i>) = −<i>A</i>ω<sup>2</sup>·cos(ω<i>t</i> + π) = −ω<sup>2</sup>·<i>y</i>(<i>t</i>)."
         },
         {
           "titol": "Freqüència angular",
@@ -151,13 +151,13 @@
         },
         {
           "titol": "Elongació i acceleració a t = 3,00 s",
-          "html": "Amb <i>A</i> = 0,100 m i la calculadora en radians: <i>x</i>(3,00) = 0,100·cos(9,47·3,00 + π) = <span class=\"res\">9,90·10<sup>−2</sup> m</span> (la massa és gairebé al punt més alt). L'acceleració és <i>a</i> = −ω<sup>2</sup>·<i>x</i> = −9,47<sup>2</sup>·9,90·10<sup>−2</sup> = <span class=\"res\">−8,88 m/s<sup>2</sup></span>, dirigida cap avall. Com que ω·<i>t</i> ≈ 28,4 rad, el resultat és molt sensible a l'arrodoniment de ω: la pauta dona 9,91·10<sup>−2</sup> m i −8,89 m/s<sup>2</sup>."
+          "html": "Amb <i>A</i> = 0,100 m i la calculadora en radians: <i>y</i>(3,00) = 0,100·cos(9,47·3,00 + π) = <span class=\"res\">9,90·10<sup>−2</sup> m</span> (la massa és gairebé al punt més alt). L'acceleració és <i>a</i> = −ω<sup>2</sup>·<i>y</i> = −9,47<sup>2</sup>·9,90·10<sup>−2</sup> = <span class=\"res\">−8,88 m/s<sup>2</sup></span>, dirigida cap avall. Com que ω·<i>t</i> ≈ 28,4 rad, el resultat és molt sensible a l'arrodoniment de ω: la pauta dona 9,91·10<sup>−2</sup> m i −8,89 m/s<sup>2</sup>."
         }
       ],
       "pauta": [
         {
           "punts": 0.4,
-          "que": "Escriure x(t) = A·cos(ωt + π) per al punt més baix i obtenir v(t) i a(t) = −ω²·x(t) derivant."
+          "que": "Escriure y(t) = A·cos(ωt + π) per al punt més baix i obtenir v(t) i a(t) = −ω²·y(t) derivant."
         },
         {
           "punts": 0.2,
@@ -169,7 +169,7 @@
         },
         {
           "punts": 0.2,
-          "que": "Calcular x(3,00 s) ≈ 9,9·10⁻² m i a(3,00 s) ≈ −8,9 m/s²."
+          "que": "Calcular y(3,00 s) ≈ 9,9·10⁻² m i a(3,00 s) ≈ −8,9 m/s²."
         }
       ]
     }
@@ -200,7 +200,7 @@
     {
       "apartat": "b",
       "clau": "x3",
-      "text": "x(3,00 s) = 9,90·10⁻² m",
+      "text": "y(3,00 s) = 9,90·10⁻² m",
       "valor": 0.099,
       "pauta": 0.0991
     },

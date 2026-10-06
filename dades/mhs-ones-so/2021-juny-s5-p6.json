@@ -38,7 +38,7 @@
       "descripcio": "massa de la saltadora"
     },
     {
-      "simbol": "L<sub>0</sub>",
+      "simbol": "l<sub>0</sub>",
       "valor": "30",
       "unitat": "m",
       "descripcio": "longitud de la corda elàstica"
@@ -103,7 +103,7 @@
         },
         {
           "titol": "Equació del moviment",
-          "html": "Prenem <i>x</i> = 0 a la posició d'equilibri i l'eix <i>x</i> vertical, positiu cap amunt. L'amplitud és <i>A</i> = 4 m. Si a <i>t</i> = 0 la saltadora és al punt més alt, <i>x</i>(0) = +<i>A</i>, i amb la funció cosinus la fase inicial és 0: <span class=\"res\"><i>x</i>(<i>t</i>) = 4·cos(1,26·<i>t</i>)</span>, amb <i>x</i> en m i <i>t</i> en s. Amb la funció sinus la fase inicial seria π/2 rad: <i>x</i>(<i>t</i>) = 4·sin(1,26·<i>t</i> + π/2)."
+          "html": "Prenem <i>y</i> = 0 a la posició d'equilibri i l'eix <i>y</i> vertical, positiu cap amunt. L'amplitud és <i>A</i> = 4 m. Si a <i>t</i> = 0 la saltadora és al punt més alt, <i>y</i>(0) = +<i>A</i>, i amb la funció cosinus la fase inicial és 0: <span class=\"res\"><i>y</i>(<i>t</i>) = 4·cos(1,26·<i>t</i>)</span>, amb <i>y</i> en m i <i>t</i> en s. Amb la funció sinus la fase inicial seria π/2 rad: <i>y</i>(<i>t</i>) = 4·sin(1,26·<i>t</i> + π/2)."
         }
       ],
       "pauta": [
@@ -134,15 +134,15 @@
         },
         {
           "titol": "Condició d'equilibri",
-          "html": "Quan la saltadora penja en repòs, la força total és nul·la: el pes queda compensat per la força elàstica de la corda, <i>m</i>·<i>g</i> = <i>k</i>·Δ<i>x</i> → Δ<i>x</i> = <i>m</i>·<i>g</i>/<i>k</i>."
+          "html": "Quan la saltadora penja en repòs, la força total és nul·la: el pes queda compensat per la força elàstica de la corda, <i>m</i>·<i>g</i> = <i>k</i>·Δ<i>l</i> → Δ<i>l</i> = <i>m</i>·<i>g</i>/<i>k</i>."
         },
         {
           "titol": "Allargament de la corda",
-          "html": "Amb <i>g</i> = 9,81 m/s<sup>2</sup> (l'enunciat no en dona el valor; és el que fa servir la pauta): Δ<i>x</i> = 60·9,81/94,7 = 6,21 m."
+          "html": "Amb <i>g</i> = 9,81 m/s<sup>2</sup> (l'enunciat no en dona el valor; és el que fa servir la pauta): Δ<i>l</i> = 60·9,81/94,7 = 6,21 m."
         },
         {
           "titol": "Longitud de la corda",
-          "html": "<i>L</i> = <i>L</i><sub>0</sub> + Δ<i>x</i> = 30,0 + 6,21 = <span class=\"res\">36,2 m</span>."
+          "html": "<i>l</i> = <i>l</i><sub>0</sub> + Δ<i>l</i> = 30,0 + 6,21 = <span class=\"res\">36,2 m</span>."
         }
       ],
       "pauta": [
@@ -152,15 +152,15 @@
         },
         {
           "punts": 0.4,
-          "que": "Plantejar l'equilibri de forces a la posició d'equilibri: m·g = k·Δx."
+          "que": "Plantejar l'equilibri de forces a la posició d'equilibri: m·g = k·Δl."
         },
         {
           "punts": 0.1,
-          "que": "Calcular l'allargament, Δx = 6,21 m."
+          "que": "Calcular l'allargament, Δl = 6,21 m."
         },
         {
           "punts": 0.1,
-          "que": "Calcular la longitud de la corda, L = 36,2 m."
+          "que": "Calcular la longitud de la corda, l = 36,2 m."
         }
       ]
     }
@@ -197,14 +197,14 @@
     {
       "apartat": "b",
       "clau": "dx",
-      "text": "Δx = 6,21 m",
+      "text": "Δl = 6,21 m",
       "valor": 6.21,
       "pauta": 6.21
     },
     {
       "apartat": "b",
       "clau": "L",
-      "text": "L = 36,2 m",
+      "text": "l = 36,2 m",
       "valor": 36.2,
       "pauta": 36.21
     }

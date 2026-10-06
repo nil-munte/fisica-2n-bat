@@ -6,10 +6,9 @@
   "problema": "P3",
   "opcio": "A",
   "tambe_a": [],
-  "tema_principal": "mhs-ones-so",
-  "subtema": "mhs",
+  "tema_principal": "gravitatori",
   "temes_secundaris": [
-    "gravitatori"
+    "mhs-ones-so/mhs"
   ],
   "blocs": [
     "b2",
