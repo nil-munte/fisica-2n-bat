@@ -1,0 +1,109 @@
+{
+ "_doc": "Generat per eines/examens_pau.py; no s'edita a mà. Per a cada problema, l'enllaç (des de l'arrel) a l'enunciat i a la pauta dins dels PDF de la seva sèrie a pau/pdf/. El fa servir eines/genera_pau.py.",
+ "problemes": {
+  "2010-juny-s5-p3": {
+   "enunciat": "pau/pdf/2010-juny-s5.pdf#page=3&nameddest=P3A",
+   "pauta": "pau/pdf/2010-juny-s5-solucions.pdf#page=9&nameddest=solucio-P3A"
+  },
+  "2012-juny-s1-p2": {
+   "enunciat": "pau/pdf/2012-juny-s1.pdf#page=1&nameddest=P2",
+   "pauta": "pau/pdf/2012-juny-s1-solucions.pdf#page=5&nameddest=solucio-P2"
+  },
+  "2012-juny-s3-p4": {
+   "enunciat": "pau/pdf/2012-juny-s3.pdf#page=3&nameddest=P4A",
+   "pauta": "pau/pdf/2012-juny-s3-solucions.pdf#page=6&nameddest=solucio-P4A"
+  },
+  "2013-juny-s3-p4": {
+   "enunciat": "pau/pdf/2013-juny-s3.pdf#page=4&nameddest=P4B",
+   "pauta": "pau/pdf/2013-juny-s3-solucions.pdf#page=8&nameddest=solucio-P4B"
+  },
+  "2013-setembre-s1-p4": {
+   "enunciat": "pau/pdf/2013-setembre-s1.pdf#page=2&nameddest=P4A",
+   "pauta": "pau/pdf/2013-setembre-s1-solucions.pdf#page=6&nameddest=solucio-P4A"
+  },
+  "2014-juny-s4-p5": {
+   "enunciat": "pau/pdf/2014-juny-s4.pdf#page=3&nameddest=P5A",
+   "pauta": "pau/pdf/2014-juny-s4-solucions.pdf#page=7&nameddest=solucio-P5A"
+  },
+  "2014-setembre-s5-p5": {
+   "enunciat": "pau/pdf/2014-setembre-s5.pdf#page=3&nameddest=P5A",
+   "pauta": "pau/pdf/2014-setembre-s5-solucions.pdf#page=7&nameddest=solucio-P5A"
+  },
+  "2015-juny-s2-p1": {
+   "enunciat": "pau/pdf/2015-juny-s2.pdf#page=1&nameddest=P1",
+   "pauta": "pau/pdf/2015-juny-s2-solucions.pdf#page=6&nameddest=solucio-P1"
+  },
+  "2015-juny-s4-p4": {
+   "enunciat": "pau/pdf/2015-juny-s4.pdf#page=3&nameddest=P4B",
+   "pauta": "pau/pdf/2015-juny-s4-solucions.pdf#page=12&nameddest=solucio-P4B"
+  },
+  "2016-juny-s3-p2": {
+   "enunciat": "pau/pdf/2016-juny-s3.pdf#page=1&nameddest=P2",
+   "pauta": "pau/pdf/2016-juny-s3-solucions.pdf#page=7&nameddest=solucio-P2"
+  },
+  "2016-juny-s5-p1": {
+   "enunciat": "pau/pdf/2016-juny-s5.pdf#page=1&nameddest=P1",
+   "pauta": "pau/pdf/2016-juny-s5-solucions.pdf#page=5&nameddest=solucio-P1"
+  },
+  "2018-juny-s5-p3": {
+   "enunciat": "pau/pdf/2018-juny-s5.pdf#page=2&nameddest=P3A",
+   "pauta": "pau/pdf/2018-juny-s5-solucions.pdf#page=8&nameddest=solucio-P3A"
+  },
+  "2018-setembre-s3-p2": {
+   "enunciat": "pau/pdf/2018-setembre-s3.pdf#page=2&nameddest=P2",
+   "pauta": "pau/pdf/2018-setembre-s3-solucions.pdf#page=6&nameddest=solucio-P2"
+  },
+  "2019-juny-s1-p3": {
+   "enunciat": "pau/pdf/2019-juny-s1.pdf#page=2&nameddest=P3A",
+   "pauta": "pau/pdf/2019-juny-s1-solucions.pdf#page=7&nameddest=solucio-P3A"
+  },
+  "2019-juny-s4-p1": {
+   "enunciat": "pau/pdf/2019-juny-s4.pdf#page=1&nameddest=P1",
+   "pauta": "pau/pdf/2019-juny-s4-solucions.pdf#page=6&nameddest=solucio-P1"
+  },
+  "2019-setembre-s5-p1": {
+   "enunciat": "pau/pdf/2019-setembre-s5.pdf#page=1&nameddest=P1",
+   "pauta": "pau/pdf/2019-setembre-s5-solucions.pdf#page=6&nameddest=solucio-P1"
+  },
+  "2020-juny-s3-p1": {
+   "enunciat": "pau/pdf/2020-juny-s3.pdf#page=1&nameddest=P1",
+   "pauta": "pau/pdf/2020-juny-s3-solucions.pdf#page=6&nameddest=solucio-P1"
+  },
+  "2020-setembre-s4-p3": {
+   "enunciat": "pau/pdf/2020-setembre-s4.pdf#page=2&nameddest=P3",
+   "pauta": "pau/pdf/2020-setembre-s4-solucions.pdf#page=7&nameddest=solucio-P3"
+  },
+  "2021-juny-s2-p3": {
+   "enunciat": "pau/pdf/2021-juny-s2.pdf#page=6&nameddest=P3",
+   "pauta": "pau/pdf/2021-juny-s2-solucions.pdf#page=23&nameddest=solucio-P3"
+  },
+  "2021-juny-s5-p6": {
+   "enunciat": "pau/pdf/2021-juny-s5.pdf#page=11&nameddest=P6",
+   "pauta": "pau/pdf/2021-juny-s5-solucions.pdf#page=24&nameddest=solucio-P6"
+  },
+  "2022-juny-s5-p3": {
+   "enunciat": "pau/pdf/2022-juny-s5.pdf#page=6&nameddest=P3",
+   "pauta": "pau/pdf/2022-juny-s5-solucions.pdf#page=22&nameddest=solucio-P3"
+  },
+  "2023-juny-s5-p3": {
+   "enunciat": "pau/pdf/2023-juny-s5.pdf#page=6&nameddest=P3",
+   "pauta": "pau/pdf/2023-juny-s5-solucions.pdf#page=21&nameddest=solucio-P3"
+  },
+  "2023-setembre-s2-p5": {
+   "enunciat": "pau/pdf/2023-setembre-s2.pdf#page=10&nameddest=P5",
+   "pauta": "pau/pdf/2023-setembre-s2-solucions.pdf#page=28&nameddest=solucio-P5"
+  },
+  "2024-juny-s1-p2": {
+   "enunciat": "pau/pdf/2024-juny-s1.pdf#page=4&nameddest=P2",
+   "pauta": "pau/pdf/2024-juny-s1-solucions.pdf#page=20&nameddest=solucio-P2"
+  },
+  "2024-setembre-s3-p7": {
+   "enunciat": "pau/pdf/2024-setembre-s3.pdf#page=14&nameddest=P7",
+   "pauta": "pau/pdf/2024-setembre-s3-solucions.pdf#page=26&nameddest=solucio-P7"
+  },
+  "2025-setembre-s3-p3": {
+   "enunciat": "pau/pdf/2025-setembre-s3.pdf#page=6&nameddest=P3A",
+   "pauta": "pau/pdf/2025-setembre-s3-solucions.pdf#page=18&nameddest=solucio-P3A"
+  }
+ }
+}

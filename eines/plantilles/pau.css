@@ -20,6 +20,9 @@
 .ex.pau figcaption{font-size:13px;color:var(--muted)}
 .ex.pau .pau-meta{margin:0;font-size:13px;color:var(--muted)}
 .ex.pau .pau-meta a{color:var(--ink);text-underline-offset:3px}
+.ex.pau .pau-report{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.ex.pau .pau-report a{color:var(--muted);text-underline-offset:3px}
+.ex.pau .pau-report a:hover{color:var(--ink)}
 .ex.pau .sap{display:flex;flex-direction:column;gap:6px;padding-top:4px}
 .ex.pau .sap+.sap{border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
 .ex.pau .sap h5{font-family:var(--f-display);font-weight:600;margin:0;color:var(--ink);font-size:15px}
@@ -39,7 +42,7 @@
 .pau-enllacos a{color:var(--ink);text-underline-offset:3px}
 .pau-enllacos small{color:var(--muted)}
 @media print{
-  .pau-filtre,.ex.pau .pau-meta{display:none!important}
+  .pau-filtre,.ex.pau .pau-meta,.ex.pau .pau-report{display:none!important}
   .ex.pau .pauta{background:#fff;border-color:#999}
   .ex.pau figure svg{max-width:13cm}
 }

@@ -44,6 +44,20 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--navh,56px) + 1
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
 .wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:22px}
 main{display:contents}
+.share{position:relative;display:inline-block;margin-top:12px}
+.printbtns .share{margin-top:0}
+.sharebtn{font:inherit;font-weight:500;font-size:14px;cursor:pointer;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;min-height:38px;display:inline-flex;align-items:center;gap:8px}
+.sharebtn:hover{border-color:var(--muted)}
+.sharebtn svg{width:16px;height:16px;flex:none}
+.sharebtn:focus-visible,.sharemenu a:focus-visible,.sharemenu button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.sharemenu{position:absolute;z-index:40;top:calc(100% + 6px);right:0;min-width:210px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px;box-shadow:0 10px 28px -10px rgba(0,0,0,.35);display:flex;flex-direction:column}
+.sharemenu[hidden]{display:none}
+.sharemenu a,.sharemenu button{font:inherit;font-size:14px;font-weight:400;text-align:left;background:none;border:0;border-radius:6px;padding:8px 10px;min-height:36px;color:var(--ink);text-decoration:none;cursor:pointer;display:block;width:100%}
+.sharemenu a:hover,.sharemenu button:hover{background:var(--chip)}
+.sharemenu .sep{height:1px;background:var(--line);margin:4px 2px}
+.contacte{color:var(--muted)}
+.contacte a{color:var(--ink);text-underline-offset:3px}
+@media print{.share{display:none!important}}
 header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px}
 h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,3.8vw,40px);letter-spacing:-.01em;margin:0;text-wrap:balance}
 .sub{color:var(--muted);margin:2px 0 0;font-size:14px}
@@ -100,7 +114,7 @@ footer .autor{font-size:14px;color:var(--ink)}
 footer .autor a{color:var(--ink);text-underline-offset:3px}
 @media print{.topbar,.crumbs{display:none!important}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Exàmens de selectivitat (PAU) de Física", "url": "https://nil-munte.github.io/fisica-2n-bat/pau/", "inLanguage": "ca", "author": {"@type": "Person", "name": "Nil Munté Guerrero", "url": "https://nil-munte.github.io"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Exàmens de selectivitat (PAU) de Física", "url": "https://nil-munte.github.io/fisica-2n-bat/pau/", "inLanguage": "ca", "author": {"@type": "Person", "name": "Nil Munté Guerrero", "url": "https://nil-munte.github.io", "sameAs": ["https://www.linkedin.com/in/nilmunte/"]}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Física · 2n de Batxillerat", "item": "https://nil-munte.github.io/fisica-2n-bat/"}, {"@type": "ListItem", "position": 2, "name": "Exàmens de selectivitat (PAU) de Física", "item": "https://nil-munte.github.io/fisica-2n-bat/pau/"}]}</script>
 </head>
 <body>
@@ -111,6 +125,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
       <nav class="crumbs" aria-label="Ruta"><a href="../index.html">Física · 2n de Batxillerat</a><span aria-hidden="true">›</span><span aria-current="page">Exàmens de les PAU</span></nav>
       <h1>Exàmens de selectivitat (PAU) de Física</h1>
       <p class="sub"><!-- examens:resum -->37 exàmens de Física de 2010 a 2026<!-- /examens:resum --> de les PAU de Catalunya, per any, convocatòria i sèrie.</p>
+      <div data-share hidden></div>
     </div>
   </header>
 
@@ -354,7 +369,8 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
   <footer>
     <p>Exàmens i criteris de correcció oficials de les PAU de Catalunya. Cada fitxer conté una sola sèrie, separada del PDF original de la convocatòria.</p>
-    <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a></p>
+    <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></p>
   </footer>
 </div>
 
@@ -405,6 +421,72 @@ document.addEventListener('click', async e => {
     setTimeout(() => URL.revokeObjectURL(url), 30000);
   } catch (err) { window.open(a.href, '_blank', 'noopener'); }
 });
+</script>
+<script>
+/* Compartir i contacte. Només enllaços normals: cap script ni galeta de tercers. */
+(function () {
+  var USUARI = 'nilmunte', DOMINI = 'gmail.com';
+  var adreca = function () { return USUARI + '@' + DOMINI; };
+  var canon = function () { var l = document.querySelector('link[rel="canonical"]'); return (l && l.href) || location.href.split('#')[0]; };
+
+  /* adreça de correu visible (muntada aquí perquè no surti tal qual al codi font) */
+  document.querySelectorAll('[data-mail]').forEach(function (e) {
+    var a = document.createElement('a'); a.href = 'mailto:' + adreca(); a.textContent = adreca(); e.appendChild(a);
+    if (e.parentNode && e.parentNode.hidden) e.parentNode.hidden = false;
+  });
+
+  /* «Error o dubte»: obre el correu amb l'assumpte i la pàgina (o el problema) ja posats */
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a.report');
+    if (!a) return;
+    ev.preventDefault();
+    var ref = a.getAttribute('data-ref');
+    var url = canon() + (ref ? '#' + ref : '');
+    var assumpte = 'Física 2n BAT · ' + (ref ? 'problema ' + ref.replace(/^pau-/, 'PAU ') : document.title);
+    var cos = 'Pàgina: ' + url + '\n\nEscriu aquí l\'error, el suggeriment o el dubte:\n\n';
+    location.href = 'mailto:' + adreca() + '?subject=' + encodeURIComponent(assumpte) + '&body=' + encodeURIComponent(cos);
+  });
+
+  /* botó «Comparteix» */
+  var ICONA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
+  document.querySelectorAll('[data-share]').forEach(function (el) {
+    el.hidden = false; el.classList.add('share');
+    el.innerHTML = '<button type="button" class="sharebtn" aria-expanded="false">' + ICONA + 'Comparteix</button><div class="sharemenu" role="group" aria-label="Comparteix a" hidden></div>';
+    var btn = el.querySelector('.sharebtn'), menu = el.querySelector('.sharemenu');
+    function tanca(tornaFoco) { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); if (tornaFoco) btn.focus(); }
+    function obre() {
+      var u = canon(), t = document.title, e = encodeURIComponent;
+      var xarxes = [
+        ['WhatsApp', 'https://wa.me/?text=' + e(t + ' ' + u)],
+        ['Telegram', 'https://t.me/share/url?url=' + e(u) + '&text=' + e(t)],
+        ['X', 'https://twitter.com/intent/tweet?url=' + e(u) + '&text=' + e(t)],
+        ['Bluesky', 'https://bsky.app/intent/compose?text=' + e(t + ' ' + u)],
+        ['LinkedIn', 'https://www.linkedin.com/sharing/share-offsite/?url=' + e(u)]
+      ];
+      menu.innerHTML = xarxes.map(function (x) { return '<a href="' + x[1] + '" target="_blank" rel="noopener noreferrer">' + x[0] + '</a>'; }).join('') +
+        '<div class="sep"></div><button type="button" data-copia>Copia l\'enllaç</button>';
+      menu.hidden = false; btn.setAttribute('aria-expanded', 'true');
+      var rb = btn.getBoundingClientRect();
+      if (rb.left + menu.offsetWidth <= window.innerWidth - 8) { menu.style.left = '0'; menu.style.right = 'auto'; }
+      else { menu.style.left = 'auto'; menu.style.right = '0'; }
+      menu.querySelector('[data-copia]').addEventListener('click', function (ev) {
+        var b = ev.currentTarget;
+        if (!navigator.clipboard) return;
+        navigator.clipboard.writeText(u).then(function () { b.textContent = 'Enllaç copiat ✓'; setTimeout(function () { tanca(true); }, 900); }, function () {});
+      });
+    }
+    btn.addEventListener('click', function () {
+      /* al mòbil, el menú de compartir del sistema (hi surten Instagram, WhatsApp, Telegram…) */
+      if (navigator.share && window.matchMedia && matchMedia('(pointer: coarse)').matches) {
+        navigator.share({ title: document.title, url: canon() }).catch(function () {});
+        return;
+      }
+      if (menu.hidden) obre(); else tanca(false);
+    });
+    document.addEventListener('click', function (ev) { if (!menu.hidden && !el.contains(ev.target)) tanca(false); });
+    document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !menu.hidden) tanca(true); });
+  });
+})();
 </script>
 </body>
 </html>

@@ -146,6 +146,7 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
                 f'PDF de correcció</a>, pàgina {fp["pagina"]}.</p>'))
     s.append('</div></details>')
     h += s
+    h.append(f'<p class="pau-report"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener" data-ref="pau-{p["id"]}">Hi ha un error o tens un dubte d&#39;aquest problema? Escriu-me</a></p>')
     h.append('</article>')
     return '\n'.join(x for x in h if x)
 

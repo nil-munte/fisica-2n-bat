@@ -7,7 +7,7 @@ import json, re, sys
 from pathlib import Path
 
 BASE = 'https://nil-munte.github.io/fisica-2n-bat/'   # canvieu-ho si passeu a fisica-selectivitat.cat
-AUTOR = {'@type': 'Person', 'name': 'Nil Munté Guerrero', 'url': 'https://nil-munte.github.io'}
+AUTOR = {'@type': 'Person', 'name': 'Nil Munté Guerrero', 'url': 'https://nil-munte.github.io', 'sameAs': ['https://www.linkedin.com/in/nilmunte/']}
 IDIOMA = 'ca'
 
 def crumbs(items):
