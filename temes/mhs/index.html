@@ -27,7 +27,7 @@
   --grid:#1a2c34; --grid2:#25404b;
   --x:#6ea8ff; --y:#ff8f5a; --wood:#c48c56; --wood2:#8d5f35; --stone:#6e6b64; --stone2:#57554f;
   --earth:#3a3327; --f:#c39bff; --ec:#5fc56f; --ep:#e0b050; --t:#4fc3cc; --ok:#5fc56f; --bad:#f06c6c; --ball:#dfe3e6; --chip:#1c2f37; color-scheme:dark }
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--navh,56px) + 10px);scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
 .wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:22px}
@@ -202,7 +202,7 @@ i.v{font-family:var(--f-body)}
 .side{display:flex;flex-direction:column;gap:12px;min-width:0}
 .side .lower{grid-template-columns:minmax(0,1fr);gap:12px}
 @media (min-width:1000px) and (min-height:540px){
-  .demo{height:calc(100svh - 76px);min-height:520px;gap:8px}
+  .demo{height:calc(100svh - var(--navh,56px) - 22px);min-height:520px;gap:8px}
   .demo+.demo{padding-top:12px;margin-top:30px}
   .demo .hd{flex:none;gap:0}
   .demo .hd h3{font-size:17px}
@@ -239,7 +239,7 @@ i.v{font-family:var(--f-body)}
   .side .try{font-size:12.5px;line-height:1.4;padding:8px 12px;flex:none}
 }
 @media (min-width:1000px) and (min-height:540px) and (max-height:820px){
-  .demo{height:calc(100svh - 68px)}
+  .demo{height:calc(100svh - var(--navh,56px) - 14px)}
   .demo .hd .note{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .side .try{font-size:12px;line-height:1.35;padding:6px 10px}
   .side .group{padding-block:6px}
@@ -250,6 +250,41 @@ i.v{font-family:var(--f-body)}
   .side>aside{grid-column:1;grid-row:1/4}
   .side>:not(aside){grid-column:2}
 }
+
+/* barra superior: seccions + apartats de la secció actual */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-inline:-16px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 6px 10px -10px rgba(0,0,0,.35)}
+.topbar nav.toc{position:static;margin-inline:0;border-bottom:0;box-shadow:none;background:transparent}
+.secnav{display:none}
+.secnav.on{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:0 16px 8px}
+.secnav::-webkit-scrollbar{display:none}
+.secnav .sn-t{flex:none;font-family:var(--f-display);font-weight:600;font-size:13px;color:var(--muted);margin-right:4px}
+.secnav a{flex:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:3px 10px;font-size:13px;white-space:nowrap}
+.secnav a:hover{border-color:var(--muted)}
+.secnav a[aria-current="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.secnav .sn-g{display:contents}
+.secnav .sn-gl{margin-left:6px}
+.secnav .sn-gl span{color:var(--y);font-family:var(--f-mono)}
+.secnav .sn-gl .nm{display:none}
+.secnav .sn-gl[aria-current="true"] span{color:inherit}
+.secnav .sn-nums{display:contents}
+.secnav .sn-nums a{min-width:30px;text-align:center;padding-inline:6px;font-family:var(--f-mono)}
+/* pantalla ampla: la mateixa navegació, al marge esquerre */
+@media (min-width:1600px){
+  .secnav.on{position:fixed;top:calc(var(--navh,56px) + 26px);left:max(8px,calc((100vw - 1240px)/2 - 186px));width:170px;
+    flex-direction:column;align-items:stretch;gap:4px;padding:0;overflow:visible;max-height:calc(100vh - var(--navh,56px) - 50px);overflow-y:auto}
+  .secnav .sn-t{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 4px 2px}
+  .secnav a{white-space:normal;border-radius:8px;padding:6px 10px;line-height:1.3;border-color:transparent;background:transparent;color:var(--muted)}
+  .secnav a:hover{color:var(--ink);border-color:var(--line);background:var(--surface)}
+  .secnav a[aria-current="true"]{background:var(--surface);color:var(--ink);border-color:var(--line);box-shadow:inset 3px 0 0 var(--ink)}
+  .secnav .sn-g{display:flex;flex-direction:column;gap:4px;margin-bottom:8px}
+  .secnav .sn-gl{margin-left:0;color:var(--ink)!important;font-family:var(--f-display);font-weight:600}
+  .secnav .sn-gl span{color:var(--y);font-family:var(--f-mono);margin-right:6px}
+  .secnav .sn-gl .nm{display:inline;color:inherit;font-family:inherit;margin:0}
+  .secnav .sn-nums{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding-left:2px}
+  .secnav .sn-nums a{min-width:0;padding:4px 0;border-color:var(--line);background:var(--surface);color:var(--ink);text-align:center;border-radius:6px}
+  .secnav .sn-nums a[aria-current="true"]{background:var(--ink);color:var(--surface);box-shadow:none}
+}
+@media print{.topbar{display:none!important}}
 
 /* mètode */
 .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:s}
@@ -350,17 +385,17 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
     </div>
   </header>
 
+  <div class="topbar" id="topbar">
   <nav class="toc" aria-label="Seccions">
     <a href="#inici" class="top" title="Torna al principi">↑ Inici</a><span class="sep"></span>
     <a href="#teoria">Teoria</a><a href="#demos">Demos</a><a href="#metode">Com atacar un problema</a><a href="#exercicis">Exercicis</a>
   </nav>
+  <nav class="secnav" id="secnav" aria-label="Apartats d'aquesta secció"></nav>
+  </div>
 
   <!-- ===================== TEORIA ===================== -->
   <section class="blk" id="teoria">
-    <div class="thd"><h2>Teoria</h2><button id="pF2">Descarrega el formulari (1 pàgina)</button></div>
-    <nav class="subidx" aria-label="Blocs de la teoria">
-      <a href="#b1">1 · Com es mou</a><a href="#b2">2 · Per què es mou: forces</a><a href="#b3">3 · Energia</a><a href="#b4">4 · Molla vertical i pèndol</a>
-    </nav>
+    <h2>Teoria</h2>
 
     <!-- BLOC 1 -->
     <article class="tblock" id="b1">
@@ -532,7 +567,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
     <h2>Demos interactives</h2>
 
     <!-- DEMO 1 -->
-    <div class="demo">
+    <div class="demo" id="demo1">
       <div class="hd"><h3>1 · Oscil·lador massa–molla: x, v i a</h3><p class="note">Els tres gràfics comparteixen l'eix de temps. Observa en quin moment cada magnitud és màxima o zero.</p></div>
       <div class="main">
         <div class="stagecol">
@@ -590,7 +625,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
     </div>
 
     <!-- DEMO 2 -->
-    <div class="demo">
+    <div class="demo" id="demo2">
       <div class="hd"><h3>2 · Energia en un MHS</h3><p class="note">A dalt, la molla en moviment amb les posicions clau i com es reparteix l'energia en cada instant. A sota, la paràbola és l'energia potencial E<sub>p</sub>(x). L'energia mecànica és la línia horitzontal; l'energia cinètica és el que falta per arribar-hi.</p></div>
       <div class="main">
         <div class="stagecol">
@@ -643,7 +678,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
     </div>
 
     <!-- DEMO 3 -->
-    <div class="demo">
+    <div class="demo" id="demo3">
       <div class="hd"><h3>3 · Pèndol simple</h3><p class="note">Per a angles petits el pèndol fa un MHS: θ(t) = θ₀·cos(ω·t), amb ω = √(g/L). La força que el torna a l'equilibri és la component tangencial del pes; la tensió del fil i la component del pes en la direcció del fil donen la força centrípeta.</p></div>
       <div class="main">
         <div class="stagecol">
@@ -739,7 +774,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
       </section>
       </div>
     </div>
-    <article class="panel ex" style="break-inside:avoid">
+    <article class="panel ex" id="exemple" style="break-inside:avoid">
       <div class="eh"><span class="num">Exemple resolt</span></div>
       <p>Una massa de 0,10 kg unida a una molla de constant k = 40 N/m es separa 6,0 cm de l'equilibri i s'amolla. Escriu l'equació x(t) i calcula la velocitat màxima, l'acceleració màxima i l'energia mecànica.</p>
       <div class="body" style="display:flex;flex-direction:column;gap:6px;font-size:14.5px">
@@ -1381,10 +1416,10 @@ const GROUPS = {
 (function render() {
   const box = $('exlist'); let n = 0, html = '';
   [1, 2, 3].forEach(g => {
-    html += '<div class="exgroup"><h3><span class="stars">' + GROUPS[g][0] + '</span>' + GROUPS[g][1] + '</h3>';
+    html += '<div class="exgroup" id="nivell-' + g + '"><h3><span class="stars">' + GROUPS[g][0] + '</span>' + GROUPS[g][1] + '</h3>';
     EX.filter(e => e.g === g).forEach(e => {
       n++;
-      html += '<article class="panel ex"><div class="eh"><span class="num">' + n + '.</span><span class="ttl">' + e.ti + '</span>' + (e.src ? (e.link ? '<a class="chip" href="' + e.link + '" target="_blank" rel="noopener" title="Enunciat original">' + e.src + '</a>' : '<span class="chip">' + e.src + '</span>') : '') + '</div>' +
+      html += '<article class="panel ex" id="ex-' + n + '"><div class="eh"><span class="num">' + n + '.</span><span class="ttl">' + e.ti + '</span>' + (e.src ? (e.link ? '<a class="chip" href="' + e.link + '" target="_blank" rel="noopener" title="Enunciat original">' + e.src + '</a>' : '<span class="chip">' + e.src + '</span>') : '') + '</div>' +
         e.q +
         '<details class="sol"><summary>Solució</summary><div class="body">' + e.s + '</div></details></article>';
     });
@@ -1502,6 +1537,63 @@ if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = 
   update();
 })();
 
+
+/* ---------- navegació dins de cada secció (barra superior o lateral) ---------- */
+(function secnav() {
+  const bar = $('topbar'), sn = $('secnav');
+  const setH = () => document.documentElement.style.setProperty('--navh', Math.round(bar.getBoundingClientRect().height) + 'px');
+  if ('ResizeObserver' in window) new ResizeObserver(setH).observe(bar); setH();
+  const txt = el => el ? el.textContent.trim() : '';
+  const SECS = [
+    { id: 'teoria', t: 'Teoria', items: () => [...document.querySelectorAll('#teoria .tblock')].map(b => ({ id: b.id, t: txt(b.querySelector('.bn')) + ' · ' + txt(b.querySelector('h3')) })) },
+    { id: 'demos', t: 'Demos', items: () => [...document.querySelectorAll('#demos .demo')].map(d => ({ id: d.id, t: txt(d.querySelector('.hd h3')).replace(/:.*$/, '') })) },
+    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'errades', t: 'Errades típiques' }, { id: 'exemple', t: 'Exemple resolt' }] },
+    { id: 'exercicis', t: 'Exercicis', groups: true }
+  ];
+  let cur = null, links = [];
+  function build(sec) {
+    let h = '<span class="sn-t">' + sec.t + '</span>';
+    if (sec.groups) {
+      document.querySelectorAll('#exlist .exgroup').forEach(g => {
+        const st = txt(g.querySelector('.stars')), name = txt(g.querySelector('h3')).replace(st, '').trim();
+        h += '<div class="sn-g"><a class="sn-gl" href="#' + g.id + '" title="' + name + '"><span>' + st + '</span>' + name + '</a><div class="sn-nums">' +
+          [...g.querySelectorAll('.ex')].map(e => '<a href="#' + e.id + '" title="' + txt(e.querySelector('.ttl')) + '">' + txt(e.querySelector('.num')).replace('.', '') + '</a>').join('') + '</div></div>';
+      });
+    } else {
+      sec.items().forEach(it => { h += '<a href="#' + it.id + '">' + it.t + '</a>'; });
+    }
+    sn.innerHTML = h;
+    links = [...sn.querySelectorAll('a[href^="#"]')].map(a => ({ a, el: document.getElementById(a.getAttribute('href').slice(1)) })).filter(x => x.el);
+  }
+  function update() {
+    const line = bar.getBoundingClientRect().bottom + Math.min(160, innerHeight * 0.25);
+    let sec = null;
+    SECS.forEach(x => { const el = $(x.id); if (el && el.getBoundingClientRect().top <= line) sec = x; });
+    if (sec !== cur) { cur = sec; if (sec) { build(sec); sn.classList.add('on'); } else { sn.innerHTML = ''; sn.classList.remove('on'); } setH(); }
+    if (!sec) return;
+    let act = null;
+    links.forEach(x => { if (x.el.getBoundingClientRect().top <= line) act = x; });
+    // a exercicis, marca el número i el seu nivell
+    links.forEach(x => x.a.setAttribute('aria-current', 'false'));
+    if (act) {
+      act.a.setAttribute('aria-current', 'true');
+      if (cur.groups && !act.a.classList.contains('sn-gl')) { const g = act.el.closest('.exgroup'); const gl = g && sn.querySelector('a[href="#' + g.id + '"]'); if (gl) gl.setAttribute('aria-current', 'true'); }
+      if (!matchMedia('(min-width:1600px)').matches) { const l = act.a.offsetLeft - 16, r = act.a.offsetLeft + act.a.offsetWidth + 16; if (l < sn.scrollLeft || r > sn.scrollLeft + sn.clientWidth) sn.scrollLeft = Math.max(0, l - 40); }
+    }
+  }
+  sn.addEventListener('click', e => {
+    const a = e.target.closest('a[href^="#"]'); if (!a) return;
+    e.preventDefault();
+    const t = document.getElementById(a.getAttribute('href').slice(1)); if (!t) return;
+    const smooth = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    t.scrollIntoView({ behavior: smooth, block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true });
+  });
+  let pend = false;
+  addEventListener('scroll', () => { if (!pend) { pend = true; requestAnimationFrame(() => { pend = false; update(); }); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+
 /* ---------- PDF ---------- */
 const PDFS = (() => { try { return JSON.parse($('pdfdata').textContent); } catch (e) { return {}; } })();
 const NAMES = { f: 'MHS - Formulari.pdf', q: 'MHS - Enunciats.pdf', qs: 'MHS - Enunciats i solucions.pdf' };
@@ -1514,7 +1606,7 @@ let busy = false;
 async function getPdf(mode) {
   if (busy) return;
   busy = true;
-  const btns = ['pF', 'pF2', 'pQ', 'pQS'].map($);
+  const btns = ['pF', 'pQ', 'pQS'].map($).filter(Boolean);
   btns.forEach(b => b.disabled = true);
   try { await getPdfInner(mode); } finally { busy = false; btns.forEach(b => b.disabled = false); }
 }
@@ -1566,7 +1658,6 @@ function printMode(mode) {
   window.print();
 }
 $('pF').onclick = () => getPdf('f');
-$('pF2').onclick = () => getPdf('f');
 $('pQ').onclick = () => getPdf('q');
 $('pQS').onclick = () => getPdf('qs');
 })();
