@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moviment harmònic simple · Repàs de Física 2n Batxillerat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --bg:#edf1f0; --surface:#fbfcfc; --ink:#15212a; --muted:#5a6a73; --line:#d2dcdf;
+  --grid:#e2eaec; --grid2:#c6d4d8;
+  --x:#1f5fbf; --y:#c4461a; --wood:#8a5a2b; --wood2:#5b3a1b; --stone:#b1aca1; --stone2:#8d887e;
+  --earth:#d4cab4; --f:#7a3fb0; --ec:#2c8540; --ep:#a8741a; --t:#0e7c86; --ok:#2c8540; --bad:#b53030; --ball:#2f3438; --chip:#e4eaec;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0e181d; --surface:#142229; --ink:#e1e9ec; --muted:#8fa2ab; --line:#26404b;
+  --grid:#1a2c34; --grid2:#25404b;
+  --x:#6ea8ff; --y:#ff8f5a; --wood:#c48c56; --wood2:#8d5f35; --stone:#6e6b64; --stone2:#57554f;
+  --earth:#3a3327; --f:#c39bff; --ec:#5fc56f; --ep:#e0b050; --t:#4fc3cc; --ok:#5fc56f; --bad:#f06c6c; --ball:#dfe3e6; --chip:#1c2f37; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0e181d; --surface:#142229; --ink:#e1e9ec; --muted:#8fa2ab; --line:#26404b;
+  --grid:#1a2c34; --grid2:#25404b;
+  --x:#6ea8ff; --y:#ff8f5a; --wood:#c48c56; --wood2:#8d5f35; --stone:#6e6b64; --stone2:#57554f;
+  --earth:#3a3327; --f:#c39bff; --ec:#5fc56f; --ep:#e0b050; --t:#4fc3cc; --ok:#5fc56f; --bad:#f06c6c; --ball:#dfe3e6; --chip:#1c2f37; color-scheme:dark }
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,3.8vw,40px);letter-spacing:-.01em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0;font-size:14px}
+.tx{color:var(--x)} .ty{color:var(--y)} .tf{color:var(--f)} .tok{color:var(--t)} .tt{color:var(--t)} .tec{color:var(--ec)} .tep{color:var(--ep)}
+h2{font-family:var(--f-display);font-size:24px;font-weight:600;margin:0}
+h3{font-family:var(--f-display);font-size:18px;font-weight:600;margin:0}
+h4{font-family:var(--f-display);font-size:15px;font-weight:600;margin:0;color:var(--muted)}
+section.blk{display:flex;flex-direction:column;gap:14px;border-top:3px solid var(--ink);padding-top:26px;margin-top:22px}
+section.blk>h2,section.blk>.thd h2{font-size:clamp(24px,3vw,30px)}
+.demo+.demo{border-top:1px dashed var(--grid2);padding-top:26px;margin-top:10px}
+.lead{margin:0;color:var(--muted);max-width:72ch}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;
+  margin-inline:-16px;padding:8px 16px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 6px 10px -10px rgba(0,0,0,.35)}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:5px 14px;font-size:14px;font-weight:500;white-space:nowrap}
+nav.toc a:hover{border-color:var(--muted)}
+nav.toc a[aria-current="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+nav.toc .sep{flex:none;width:1px;align-self:stretch;background:var(--line);margin-inline:4px}
+nav.toc a.top{font-family:var(--f-display);font-weight:600}
+section[tabindex="-1"]:focus,article[tabindex="-1"]:focus,div[tabindex="-1"]:focus{outline:none}
+.printbtns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pdfstatus{font-size:13px;color:var(--muted);flex-basis:100%;text-align:right;min-height:0}
+.pdfstatus:empty{display:none}
+/* formulari */
+.formgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:980px){.formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.formgrid{grid-template-columns:minmax(0,1fr)}}
+.fbox{padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fbox.w2{grid-column:span 2}
+.fbox.w3{grid-column:1/-1}
+@media (max-width:620px){.fbox.w2{grid-column:auto}}
+.fbox h3{font-size:16px}
+.fbox p{margin:0;font-size:13.5px;color:var(--muted)}
+.fm{font-family:var(--f-mono);font-size:13.5px;line-height:1.7;background:var(--chip);border-radius:6px;padding:6px 10px;overflow-x:auto;white-space:nowrap}
+.fbox table.t{font-size:13px}
+.fbox table.t td,.fbox table.t th{padding:3px 6px}
+.fbox ul.tight{font-size:13.5px}
+svg.xva,svg.en{width:100%;height:auto;display:block}
+
+.figwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:620px){svg.fig{min-width:500px}}
+svg.fig{width:100%;max-width:640px;height:auto;display:block;margin:2px auto}
+svg.fig text{font-family:var(--f-mono);font-size:12px;fill:var(--muted)}
+svg.fig text.lab{font-family:var(--f-body);font-style:italic;font-size:15px}
+#formulari{display:none}
+.thd{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+button{font:inherit;font-weight:500;cursor:pointer;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;min-height:38px}
+button:hover{border-color:var(--muted)}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--x);outline-offset:2px}
+button:disabled{opacity:.45;cursor:default}
+button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600;padding-inline:20px}
+button.primary:hover{opacity:.9}
+
+/* teoria */
+.theory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.theory{grid-template-columns:minmax(0,1fr)}}
+.card{padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card p{margin:0}
+.card.wide{grid-column:1/-1}
+.f{font-family:var(--f-mono);font-size:14.5px;line-height:1.75;overflow-x:auto;white-space:nowrap}
+.f .k{color:var(--muted)}
+.keyf{font-family:var(--f-mono);font-size:15px;background:var(--chip);border-radius:6px;padding:8px 12px;overflow-x:auto;white-space:nowrap;line-height:1.7}
+table.t{border-collapse:collapse;width:100%;font-size:14px}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+table.t th{font-family:var(--f-display);font-weight:600;color:var(--muted);font-size:13px}
+table.t td.n{font-family:var(--f-mono);font-size:13.5px}
+ul.tight{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.warn{border-left:3px solid var(--y);padding:2px 0 2px 12px}
+
+
+/* blocs temàtics de la teoria */
+.subidx{display:flex;flex-wrap:wrap;gap:8px}
+.subidx a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:5px 14px;font-size:14px;font-weight:500}
+.subidx a:hover{border-color:var(--muted)}
+#teoria{gap:30px}
+.tblock{display:flex;flex-direction:column;gap:26px;padding:28px 30px 26px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+@media (max-width:620px){.tblock{padding:20px 16px}}
+.bhd{display:flex;gap:16px;align-items:flex-start;justify-content:flex-start;flex-wrap:nowrap}
+.bn{flex:none;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--surface);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:22px}
+.bhd h3{font-size:26px;margin:4px 0 6px}
+.lede{margin:0;color:var(--muted);font-size:16px;max-width:66ch}
+.hero{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:28px;align-items:center}
+@media (max-width:900px){.hero{grid-template-columns:minmax(0,1fr)}}
+.herof{display:flex;flex-direction:column;gap:12px;min-width:0}
+.herof p{margin:0;max-width:62ch}
+.keybig{font-family:var(--f-mono);font-size:clamp(22px,2.6vw,30px);font-weight:500;padding:18px 22px;border-radius:12px;background:var(--chip);border-left:5px solid currentColor;overflow-x:auto;white-space:nowrap}
+.keysec{font-family:var(--f-mono);font-size:15.5px;line-height:1.8;padding:0 4px;overflow-x:auto;white-space:nowrap}
+.sline{font-family:var(--f-mono);font-size:13.5px;color:var(--muted);overflow-x:auto;white-space:nowrap}
+.herofig{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.herofig figcaption{font-size:14px;color:var(--muted);max-width:62ch}
+.subgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 34px}
+@media (max-width:820px){.subgrid{grid-template-columns:minmax(0,1fr)}}
+.tsub{display:flex;flex-direction:column;gap:10px;min-width:0;padding-top:14px;border-top:1px solid var(--line)}
+.tsub.wide2>.keyf{align-self:flex-start;max-width:100%}
+.tsub.wide2{grid-column:1/-1}
+.tsub p{margin:0;max-width:66ch}
+.tsub h4,.sys>h4{font-family:var(--f-display);font-size:18px;font-weight:600;color:var(--ink);margin:0}
+.tsub.warn{border-left:0;padding-left:0;border-top:3px solid var(--y)}
+.pair{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:24px;align-items:center}
+@media (max-width:900px){.pair{grid-template-columns:minmax(0,1fr)}}
+.stack{display:flex;flex-direction:column;gap:10px}
+.sys{display:flex;flex-direction:column;gap:14px;padding-top:16px;border-top:1px solid var(--line)}
+.sys .hero{align-items:start}
+details.more{border:1px dashed var(--line);border-radius:8px;padding:2px 14px 8px}
+details.more summary{cursor:pointer;font-weight:500;color:var(--muted);padding:6px 0}
+details.more[open] summary{margin-bottom:6px}
+details.more p{margin:0 0 6px}
+.bfoot{display:flex;justify-content:flex-end}
+.godemo{font:inherit;font-weight:600;font-size:14px;cursor:pointer;border-radius:20px;border:1px solid var(--ink);background:transparent;color:var(--ink);padding:7px 16px;text-decoration:none;min-height:36px;display:inline-flex;align-items:center}
+.godemo:hover{background:var(--ink);color:var(--surface)}
+.keyf.tt{color:var(--t)}
+
+/* demos */
+.demo{display:flex;flex-direction:column;gap:12px}
+.demo .hd{display:flex;flex-direction:column;gap:2px}
+.main{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:18px;align-items:start}
+@media (max-width:920px){.main{grid-template-columns:minmax(0,1fr)}}
+.stagecol{display:flex;flex-direction:column;gap:10px;min-width:0}
+.cvs{position:relative;overflow:hidden;width:100%}
+.cvs canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.cvs.scene{aspect-ratio:16/6.4;min-height:210px}
+.cvs.gr{aspect-ratio:16/9;min-height:250px}
+.cvs.pend{aspect-ratio:16/10;min-height:300px;max-height:560px}
+.pair2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:700px){.pair2{grid-template-columns:minmax(0,1fr)}}
+.cvs.half{aspect-ratio:4/3;min-height:230px}
+.cvs.scene2{aspect-ratio:16/4.6;min-height:170px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.scrub{display:flex;align-items:center;gap:10px;flex:1 1 220px;min-width:0}
+.scrub input{flex:1;min-width:0}
+.scrub output{font-family:var(--f-mono);font-size:13px;min-width:78px;text-align:right;font-variant-numeric:tabular-nums}
+.readout{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));overflow:hidden}
+.readout div{padding:8px 12px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:1px;min-width:0}
+.readout div:last-child{border-right:0}
+.readout span{font-size:12px;color:var(--muted)}
+.readout b{font-family:var(--f-mono);font-weight:500;font-size:14.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:620px){.readout{grid-template-columns:repeat(3,minmax(0,1fr))}.readout div:nth-child(3){border-right:0}.readout div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+.controls{padding:6px 16px 14px;display:flex;flex-direction:column}
+.group{padding-block:12px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.group:last-child{border-bottom:0}
+.group h4{text-transform:none}
+.param{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center}
+.param label{font-size:14px}
+.param input[type=range]{grid-column:1/-1;width:100%}
+.pin{display:flex;align-items:center;gap:4px;font-size:13px;color:var(--muted)}
+.pin input{width:66px;font:inherit;font-family:var(--f-mono);font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 6px;text-align:right}
+.pin .val{font-family:var(--f-mono);font-size:14px;color:var(--ink)}
+input[type=range]{accent-color:var(--ink)}
+input[type=checkbox]{accent-color:var(--ink);width:16px;height:16px;margin:0}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.seg.s3{grid-template-columns:repeat(3,1fr)}
+.seg button{padding:5px 4px;min-height:32px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.chk{display:flex;align-items:center;gap:9px;font-size:14px;cursor:pointer}
+.swatch{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:2px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.try{margin:0;padding:10px 14px;background:var(--chip);border-radius:8px;font-size:14px}
+.lower{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.lower{grid-template-columns:minmax(0,1fr)}}
+.eq{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.eq.a{border-top:3px solid var(--ink)} .eq.b{border-top:3px solid var(--x)}
+.now{font-family:var(--f-mono);font-size:13.5px;background:var(--chip);border-radius:6px;padding:6px 10px;font-variant-numeric:tabular-nums;overflow-x:auto;white-space:nowrap}
+i.v{font-family:var(--f-body)}
+
+/* demos: tota la informació en una sola pantalla (sense scroll) */
+.stackcol{display:flex;flex-direction:column;gap:16px;min-width:0}
+.side{display:flex;flex-direction:column;gap:12px;min-width:0}
+.side .lower{grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:1000px) and (min-height:540px){
+  .demo{height:calc(100svh - 76px);min-height:520px;gap:8px}
+  .demo+.demo{padding-top:12px;margin-top:30px}
+  .demo .hd{flex:none;gap:0}
+  .demo .hd h3{font-size:17px}
+  .demo .hd .note{font-size:12.5px;line-height:1.35;max-width:130ch}
+  .demo .main{flex:1 1 0;min-height:0;grid-template-columns:minmax(0,1fr) 340px;gap:12px;align-items:stretch}
+  .stagecol{min-height:0;gap:8px}
+  .stagecol .cvs{aspect-ratio:auto;min-height:0}
+  .stagecol .cvs.scene{flex:0 0 30%}
+  .stagecol .cvs.gr{flex:1 1 0}
+  .stagecol .cvs.scene2{flex:0 0 24%}
+  .stagecol .pair2{flex:1 1 0;min-height:0;grid-template-rows:minmax(0,1fr)}
+  .stagecol .cvs.half{min-height:0;height:100%}
+  .stagecol .cvs.pend{flex:1 1 0;max-height:none}
+  .stagecol .bar,.stagecol .readout{flex:none}
+  .stagecol .bar button{min-height:34px;padding-block:5px}
+  .readout div{padding:5px 10px}
+  .side{min-height:0;overflow-y:auto;gap:8px;scrollbar-width:thin;padding-right:2px}
+  .side .controls{padding:0 12px 4px;flex:none}
+  .side .group{padding-block:8px;gap:7px}
+  .side .group h4{font-size:14px}
+  .side .param{grid-template-columns:92px minmax(0,1fr) 92px;gap:6px 10px}
+  .side .param label{order:1;font-size:13.5px;white-space:nowrap}
+  .side .param input[type=range]{order:2;grid-column:auto;min-width:0}
+  .side .param .pin{order:3}
+  .side .pin{justify-content:flex-end}
+  .side .pin input{width:58px;padding:2px 5px;font-size:13px}
+  .side .chk{font-size:13px}
+  .side .seg button{min-height:28px;padding-block:3px}
+  .side .eq{padding:8px 12px 10px;gap:6px;flex:none}
+  .side .eq h3{font-size:15px}
+  .side .now,.side .f{white-space:normal;overflow-wrap:anywhere;font-size:12.5px;line-height:1.5;padding:4px 8px}
+  .side .f{padding:0;line-height:1.6}
+  .side .lower{gap:8px}
+  .side .try{font-size:12.5px;line-height:1.4;padding:8px 12px;flex:none}
+}
+@media (min-width:1000px) and (min-height:540px) and (max-height:820px){
+  .demo{height:calc(100svh - 68px)}
+  .demo .hd .note{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .side .try{font-size:12px;line-height:1.35;padding:6px 10px}
+  .side .group{padding-block:6px}
+}
+@media (min-width:1000px) and (min-height:540px) and (max-height:780px){
+  .demo .main{grid-template-columns:minmax(0,1fr) min(580px,46%)}
+  .side{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-content:start;align-items:start;gap:8px}
+  .side>aside{grid-column:1;grid-row:1/4}
+  .side>:not(aside){grid-column:2}
+}
+
+/* mètode */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:s}
+@media (max-width:980px){.steps{grid-template-columns:minmax(0,1fr)}}
+.step{padding:12px 14px;counter-increment:s;display:flex;flex-direction:column;gap:4px}
+.step b{font-family:var(--f-display);font-size:16px}
+.step b::before{content:counter(s) ". "}
+.step span{font-size:14px;color:var(--muted)}
+
+/* exercicis */
+.exlist{display:flex;flex-direction:column;gap:14px}
+.exgroup{display:flex;flex-direction:column;gap:12px}
+.exgroup>h3{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.exgroup>h3 small{font-family:var(--f-body);font-weight:400;color:var(--muted);font-size:14px}
+.ex{padding:16px 18px;display:flex;flex-direction:column;gap:10px;break-inside:avoid}
+.ex .eh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ex .num{font-family:var(--f-display);font-weight:700;font-size:18px}
+.ex .ttl{font-family:var(--f-display);font-weight:500;font-size:16px;color:var(--muted)}
+.stars{font-family:var(--f-mono);font-size:13px;color:var(--y)}
+.chip{font-size:12px;background:var(--chip);border-radius:20px;padding:2px 10px;color:var(--muted);margin-left:auto}
+a.chip{text-decoration:none;color:var(--ink);border:1px solid var(--line)}
+a.chip:hover{border-color:var(--muted)}
+svg.plot{width:100%;max-width:560px;height:auto;display:block;margin:8px 0 2px}
+svg.plot text{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
+svg.plot text.ax{font-family:var(--f-body);font-style:italic;font-size:13px;fill:var(--ink)}
+.ex p{margin:0}
+.parts{list-style:none;counter-reset:p;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:4px}
+.parts li{counter-increment:p;padding-left:1.7em;position:relative}
+.parts li::before{content:counter(p,lower-alpha) ")";position:absolute;left:0;font-weight:600}
+details{border-radius:8px}
+details summary{cursor:pointer;font-weight:500;padding:6px 0;list-style-position:inside}
+details.hint{color:var(--muted)}
+details.sol{border:1px solid var(--line);background:var(--bg);padding:4px 14px 10px}
+details.sol .body{display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+.res{font-family:var(--f-mono);font-weight:500;white-space:nowrap}
+.printhead{display:none}
+footer{color:var(--muted);font-size:13px;max-width:80ch}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* impressió */
+@media print{
+  :root:root:root{--bg:#fff;--surface:#fff;--ink:#111;--muted:#444;--line:#bbb;--chip:#eee;--y:#8a3010;--x:#1a4a99;--f:#5a2a8a;--ec:#1f6a30;--ep:#7a5410;--t:#0a5f66;color-scheme:light}
+  body{background:#fff;font-size:11pt}
+  .wrap{padding:0;max-width:none;gap:14px}
+  section.blk{border-top:0;padding-top:0;margin-top:0}
+  nav.toc,.printbtns,#demos,.controls{display:none!important}
+  .panel{border-color:#bbb}
+  details.hint,#exercicis>.lead{display:none}
+  .ex{break-inside:avoid;padding:10px 0;border:0;border-bottom:1px solid #ccc;border-radius:0}
+  .exgroup>h3{break-after:avoid}
+  details.sol{background:#fff;border-color:#999}
+  details.sol summary{font-weight:600}
+  body[data-print] #teoria,body[data-print] #metode,body[data-print] header,body[data-print] #formulari{display:none!important}
+  body[data-print] .printhead.ph-ex{display:block}
+  body[data-print="f"] .printhead.ph-ex,body[data-print="f"] #exercicis,body[data-print="f"] footer{display:none!important}
+  body[data-print="f"] .printhead.ph-f{display:block}
+  body[data-print="f"] #formulari{display:flex!important;gap:8px}
+  body[data-print="f"] #formulari>h2,body[data-print="f"] #formulari>.lead{display:none}
+  body[data-print="f"] .formgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  body[data-print="f"] .fbox{padding:6px 9px;gap:4px;break-inside:avoid;border-color:#999}
+  body[data-print="f"] .fbox.w2{grid-column:span 2}
+  body[data-print="f"] .fbox.w3{grid-column:1/-1}
+  body[data-print="f"] .fbox h3{font-size:11pt}
+  body[data-print="f"] .fm{font-size:9pt;line-height:1.6;padding:5px 8px;white-space:nowrap;overflow:visible;background:#f0f0f0}
+  body[data-print="f"] .fbox p,body[data-print="f"] .fbox ul.tight,body[data-print="f"] .fbox table.t{font-size:9pt;color:#222}
+  body[data-print="f"] .formgrid{gap:9px}
+  body[data-print="f"] .printhead h1{font-size:16pt}
+  body[data-print="q"] details.sol{display:none}
+  .printhead{margin-bottom:6px}
+  .printhead h1{font-size:20pt}
+  .printhead p{margin:4px 0 0;color:#444}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="printhead ph-ex">
+    <h1>Moviment harmònic simple</h1>
+    <p>Física 2n de Batxillerat</p>
+  </div>
+  <div class="printhead ph-f">
+    <h1>Formulari · Moviment harmònic simple</h1>
+    <p>Física 2n de Batxillerat</p>
+  </div>
+
+  <header id="inici">
+    <div>
+      <h1>Moviment harmònic simple</h1>
+      <p class="sub">Repàs de Física · 2n de Batxillerat<span id="homelink" hidden> · <a href="../../index.html">tots els temes</a></span></p>
+    </div>
+    <div class="printbtns">
+      <button id="pF">PDF formulari</button>
+      <button id="pQ">PDF enunciats</button>
+      <button id="pQS">PDF enunciats + solucions</button>
+      <span class="pdfstatus" id="pdfstatus" role="status"></span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Seccions">
+    <a href="#inici" class="top" title="Torna al principi">↑ Inici</a><span class="sep"></span>
+    <a href="#teoria">Teoria</a><a href="#demos">Demos</a><a href="#metode">Com atacar un problema</a><a href="#exercicis">Exercicis</a>
+  </nav>
+
+  <!-- ===================== TEORIA ===================== -->
+  <section class="blk" id="teoria">
+    <div class="thd"><h2>Teoria</h2><button id="pF2">Descarrega el formulari (1 pàgina)</button></div>
+    <nav class="subidx" aria-label="Blocs de la teoria">
+      <a href="#b1">1 · Com es mou</a><a href="#b2">2 · Per què es mou: forces</a><a href="#b3">3 · Energia</a><a href="#b4">4 · Molla vertical i pèndol</a>
+    </nav>
+
+    <!-- BLOC 1 -->
+    <article class="tblock" id="b1">
+      <header class="bhd"><span class="bn">1</span><div><h3>Com es mou</h3><p class="lede">Un MHS és un moviment d'anada i tornada al voltant d'una posició d'equilibri, en què l'acceleració és proporcional a la posició i de sentit contrari.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">x(t) = A·cos(ω·t + φ)</div>
+          <div class="keysec">v(t) = −A·ω·sin(ω·t + φ)<br>a(t) = −A·ω²·cos(ω·t + φ)</div>
+          <div class="keyf">a = −ω²·x<br>v<sub>màx</sub> = A·ω &nbsp;·&nbsp; a<sub>màx</sub> = A·ω²</div>
+          <p>Si en un problema arribes a <i>a = −(constant)·x</i>, és un MHS i la constant és <i>ω²</i>. L'acceleració sempre apunta cap a l'equilibri.</p>
+          <details class="more"><summary>D'on surten aquestes equacions</summary>
+            <p>x(t) és un cosinus perquè el cos va i torna entre −A i +A. La velocitat és la derivada de la posició, v = dx/dt, i l'acceleració la derivada de la velocitat, a = dv/dt. Derivant dos cops x(t) surt a = −A·ω²·cos(ω·t + φ) = −ω²·x.</p>
+            <p>ω = 2π/T perquè el cosinus es repeteix quan l'argument ω·t augmenta 2π, és a dir, passat un període: ω·T = 2π.</p>
+          </details>
+          <p class="sline">ω = 2π/T = 2π·f &nbsp;·&nbsp; f = 1/T</p>
+        </div>
+        <figure class="herofig">
+          <svg class="xva" viewBox="0 0 560 150" role="img" aria-label="Gràfiques de x, v i a durant un període"></svg>
+          <figcaption>Gràfiques amb φ = 0. v va avançada un quart de període respecte de x, i a està en oposició de fase amb x.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub wide2">
+          <h4>Magnituds</h4>
+          <table class="t">
+            <tr><th>Magnitud</th><th>Significat</th><th>Unitat</th></tr>
+            <tr><td>A</td><td>amplitud: màxim allunyament de l'equilibri</td><td>m</td></tr>
+            <tr><td>ω</td><td>pulsació; ω = 2π/T = 2π·f</td><td>rad/s</td></tr>
+            <tr><td>T, f</td><td>període i freqüència; f = 1/T</td><td>s, Hz</td></tr>
+            <tr><td>φ</td><td>fase inicial (determina x en t = 0)</td><td>rad</td></tr>
+          </table>
+        </section>
+        <section class="tsub wide2">
+          <h4>Valors extrems</h4>
+          <div class="pair">
+            <div class="figwrap"><svg class="fig" viewBox="0 0 540 200" role="img" aria-label="Massa i molla a les posicions −A, 0 i +A amb els vectors velocitat i acceleració"><line x1="150.0" y1="22.0" x2="150.0" y2="196.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><text x="150.0" y="16.0" text-anchor="middle">−A</text><line x1="260.0" y1="22.0" x2="260.0" y2="196.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><text x="260.0" y="16.0" text-anchor="middle">0</text><line x1="370.0" y1="22.0" x2="370.0" y2="196.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><text x="370.0" y="16.0" text-anchor="middle">+A</text><rect x="30" y="30" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,50.0 44.0,50.0 48.1,43.0 56.5,57.0 64.8,43.0 73.1,57.0 81.3,43.0 89.7,57.0 98.0,43.0 106.2,57.0 114.6,43.0 122.9,57.0 127.0,50.0 133.0,50.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="133.0" y="36.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="150.0" y="55.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="400" y1="64" y2="64" stroke="var(--line)"/><line x1="150.0" y1="28.0" x2="197.2" y2="28.0" stroke="var(--y)" stroke-width="2.4" stroke-linecap="round"/><polygon points="202.0,28.0 194.0,31.6 194.0,24.4" fill="var(--y)"/><text x="208.0" y="32.0" text-anchor="start" class="lab" style="fill:var(--y)">a</text><text x="416.0" y="48.0" text-anchor="start" style="fill:var(--ink)">x = −A</text><text x="416.0" y="65.0" text-anchor="start">v = 0 · a màxima</text><rect x="30" y="88" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,108.0 44.0,108.0 53.6,101.0 73.0,115.0 92.2,101.0 111.5,115.0 130.9,101.0 150.2,115.0 169.4,101.0 188.8,115.0 208.1,101.0 227.3,115.0 237.0,108.0 243.0,108.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="243.0" y="94.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="260.0" y="113.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="400" y1="122" y2="122" stroke="var(--line)"/><line x1="260.0" y1="86.0" x2="307.2" y2="86.0" stroke="var(--x)" stroke-width="2.4" stroke-linecap="round"/><polygon points="312.0,86.0 304.0,89.6 304.0,82.4" fill="var(--x)"/><text x="318.0" y="90.0" text-anchor="start" class="lab" style="fill:var(--x)">v</text><text x="416.0" y="106.0" text-anchor="start" style="fill:var(--ink)">x = 0</text><text x="416.0" y="123.0" text-anchor="start">v màxima · a = 0</text><rect x="30" y="146" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,166.0 44.0,166.0 59.1,159.0 89.5,173.0 119.8,159.0 150.1,173.0 180.3,159.0 210.7,173.0 241.0,159.0 271.2,173.0 301.6,159.0 331.9,173.0 347.0,166.0 353.0,166.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="353.0" y="152.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="370.0" y="171.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="400" y1="180" y2="180" stroke="var(--line)"/><line x1="370.0" y1="144.0" x2="322.8" y2="144.0" stroke="var(--y)" stroke-width="2.4" stroke-linecap="round"/><polygon points="318.0,144.0 326.0,140.4 326.0,147.6" fill="var(--y)"/><text x="312.0" y="148.0" text-anchor="end" class="lab" style="fill:var(--y)">a</text><text x="416.0" y="164.0" text-anchor="start" style="fill:var(--ink)">x = +A</text><text x="416.0" y="181.0" text-anchor="start">v = 0 · a màxima</text></svg></div>
+            <div class="stack">
+              <table class="t">
+                <tr><th>Posició</th><th>x</th><th>|v|</th><th>|a|</th></tr>
+                <tr><td>Equilibri</td><td class="n">0</td><td class="n">A·ω (màxima)</td><td class="n">0</td></tr>
+                <tr><td>Extrems</td><td class="n">±A</td><td class="n">0</td><td class="n">A·ω² (màxima)</td></tr>
+              </table>
+              <p>La velocitat és màxima quan el cos passa per l'equilibri i nul·la als extrems, on canvia de sentit. L'acceleració és al revés: màxima als extrems i nul·la a l'equilibri.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: oscil·lador massa–molla</button></div>
+    </article>
+
+    <!-- BLOC 2 -->
+    <article class="tblock" id="b2">
+      <header class="bhd"><span class="bn">2</span><div><h3>Per què es mou: forces</h3><p class="lede">La causa del MHS és una força recuperadora proporcional a la posició (llei de Hooke). D'aquesta força surt la pulsació ω.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig tf">F = −k·x</div>
+          <div class="keysec">ω = √(k/m) &nbsp;·&nbsp; T = 2π·√(m/k)</div>
+          <p class="sline">k = m·ω²</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 540 170" role="img" aria-label="Força recuperadora: sempre cap a l'equilibri, de sentit contrari al desplaçament"><line x1="230.0" y1="8.0" x2="230.0" y2="140.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><text x="224.0" y="14.0" text-anchor="end" style="font-size:11px">equilibri (x = 0)</text><rect x="30" y="36" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,56.0 44.0,56.0 55.6,49.0 79.0,63.0 102.2,49.0 125.5,63.0 148.9,49.0 172.2,63.0 195.5,49.0 218.8,63.0 242.1,49.0 265.4,63.0 277.0,56.0 283.0,56.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="283.0" y="42.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="300.0" y="61.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="380" y1="70" y2="70" stroke="var(--line)"/><line x1="230.0" y1="82.0" x2="296.4" y2="82.0" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/><polygon points="300.0,82.0 294.0,84.7 294.0,79.3" fill="var(--ink)"/><text x="265.0" y="96.0" text-anchor="middle" class="lab" style="fill:var(--ink)">x</text><line x1="300.0" y1="32.0" x2="252.3" y2="32.0" stroke="var(--f)" stroke-width="2.6" stroke-linecap="round"/><polygon points="247.5,32.0 255.5,28.4 255.5,35.6" fill="var(--f)"/><text x="273.8" y="26.0" text-anchor="middle" class="lab" style="fill:var(--f)">F</text><text x="405.0" y="60.0" text-anchor="start" style="fill:var(--ink)">x &gt; 0 → F &lt; 0</text><rect x="30" y="98" width="8" height="40" fill="var(--stone)"/><polyline points="38.0,118.0 44.0,118.0 50.6,111.0 63.9,125.0 77.2,111.0 90.5,125.0 103.8,111.0 117.1,125.0 130.4,111.0 137.0,118.0 143.0,118.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="143.0" y="104.0" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="160.0" y="123.0" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="30" x2="380" y1="132" y2="132" stroke="var(--line)"/><line x1="230.0" y1="144.0" x2="163.6" y2="144.0" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round"/><polygon points="160.0,144.0 166.0,141.3 166.0,146.7" fill="var(--ink)"/><text x="195.0" y="158.0" text-anchor="middle" class="lab" style="fill:var(--ink)">x</text><line x1="160.0" y1="94.0" x2="207.7" y2="94.0" stroke="var(--f)" stroke-width="2.6" stroke-linecap="round"/><polygon points="212.5,94.0 204.5,97.6 204.5,90.4" fill="var(--f)"/><text x="186.2" y="88.0" text-anchor="middle" class="lab" style="fill:var(--f)">F</text><text x="405.0" y="122.0" text-anchor="start" style="fill:var(--ink)">x &lt; 0 → F &gt; 0</text><text x="534.0" y="150.0" text-anchor="end" style="font-size:11px">F i x sempre de signe contrari</text></svg></div><figcaption>La força apunta sempre cap a l'equilibri.</figcaption></figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>D'on surt ω</h4>
+          <p>La força del MHS es pot escriure de dues maneres: amb la llei de Hooke i amb la segona llei de Newton. Les dues són la mateixa força (la força neta sobre el cos), així que les igualem:</p>
+          <div class="keyf">F = −k·x (Hooke) &nbsp; i &nbsp; F = m·a (Newton)<br>−k·x = m·a &nbsp;→&nbsp; a = −(k/m)·x</div>
+          <p>Un MHS és justament un moviment amb a = −ω²·x. L'equació de dalt té aquesta mateixa forma, així que k/m fa el paper de ω²:</p>
+          <div class="keyf">ω² = k/m &nbsp;→&nbsp; ω = √(k/m) &nbsp;i&nbsp; k = m·ω²</div>
+        </section>
+        <section class="tsub">
+          <h4>Força en cada instant i màxima</h4>
+          <p>Substituint x(t):</p>
+          <div class="keyf">F(t) = −k·A·cos(ω·t + φ)<br>|F|<sub>màx</sub> = k·A = m·ω²·A</div>
+          <p>És màxima als extrems i nul·la a l'equilibri. Com que F = m·a, la força té sempre el mateix sentit que l'acceleració.</p>
+        </section>
+        <section class="tsub wide2">
+          <h4>Massa–molla</h4>
+          <div class="keyf">T = 2π/ω = 2π·√(m/k)</div>
+          <p>El període <b>no depèn de l'amplitud</b> (isocronisme): si separes més el cos, va més de pressa però triga el mateix a fer una oscil·lació.</p>
+          <p>Aïllant, k = 4π²·m/T² i m = k·T²/(4π²): mesurant el període es pot trobar la constant o la massa.</p>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: canvia k i m i mira com canvia T</button></div>
+    </article>
+
+    <!-- BLOC 3 -->
+    <article class="tblock" id="b3">
+      <header class="bhd"><span class="bn">3</span><div><h3>Energia</h3><p class="lede">Sense fregament l'energia mecànica es conserva: es va passant de cinètica a potencial i al revés.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">E<sub>m</sub> = ½·k·A²</div>
+          <div class="keysec"><span class="tep">E<sub>p</sub> = ½·k·x²</span><br><span class="tec">E<sub>c</sub> = ½·m·v² = ½·k·(A² − x²)</span></div>
+          <p class="sline">E<sub>m</sub> = E<sub>c</sub> + E<sub>p</sub> = ½·m·ω²·A² = ½·m·v<sub>màx</sub>² (constant)</p>
+        </div>
+        <figure class="herofig">
+          <svg class="en" viewBox="0 0 520 180" role="img" aria-label="Energies cinètica, potencial i mecànica en funció de la posició i del temps"></svg>
+          <figcaption>Respecte de x, E<sub>p</sub> i E<sub>c</sub> són paràboles. Respecte del temps oscil·len amb període T/2, el doble de freqüència que x, i sempre sumen E<sub>m</sub>.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Com es reparteix</h4>
+          <p>En l'equilibri tota l'energia és cinètica; en els extrems, tota potencial. L'energia depèn de l'amplitud al quadrat.</p>
+          <details class="more"><summary>D'on surten les fórmules</summary>
+            <p>E<sub>c</sub> = ½·m·v² és l'energia cinètica de qualsevol cos. E<sub>p</sub> = ½·k·x² és el treball que cal fer per deformar la molla una distància x amb la força F = k·x. E<sub>m</sub> = ½·k·A² perquè als extrems (x = ±A) la velocitat és zero i tota l'energia és potencial. Substituint E<sub>p</sub> a E<sub>m</sub> = E<sub>c</sub> + E<sub>p</sub> surt E<sub>c</sub> = ½·k·(A² − x²).</p>
+          </details>
+        </section>
+        <section class="tsub">
+          <h4>On són iguals</h4>
+          <div class="keyf">E<sub>c</sub> = E<sub>p</sub> &nbsp;→&nbsp; x = ±A/√2</div>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="1">Prova-ho a la demo 2: energia en un MHS</button></div>
+    </article>
+
+    <!-- BLOC 4 -->
+    <article class="tblock" id="b4">
+      <header class="bhd"><span class="bn">4</span><div><h3>Molla vertical i pèndol</h3><p class="lede">Dos casos que surten sovint a la PAU. Tots dos són MHS: només canvia d'on surt la força recuperadora.</p></div></header>
+      <section class="sys">
+        <h4>Molla vertical</h4>
+        <div class="hero">
+          <div class="herof">
+            <div class="keybig">T = 2π·√(Δx/g)</div>
+            <p>El problema es divideix en dues parts: primer l'<b>equilibri</b> (el cos penjat, quiet) i després l'<b>oscil·lació</b> al voltant d'aquest equilibri. A cada part actua una força diferent, i no s'han de confondre.</p>
+            <p><b>Part 1 · Equilibri.</b> La molla s'allarga Δx i la seva força compensa el pes. Aquí només s'aplica k·Δx = m·g:</p>
+            <div class="keyf">k·Δx = m·g</div>
+            <p>Si dividim els dos costats per k·g, queda una relació que després ens estalvia haver de saber k i m:</p>
+            <div class="keyf">m/k = Δx/g</div>
+            <p><b>Part 2 · Oscil·lació.</b> Quan separem el cos de l'equilibri i el deixem anar, <b>a partir d'aquí el problema es desenvolupa com un MHS tradicional</b>, igual que una molla horitzontal. L'única diferència és que x es mesura des de la posició d'equilibri (no des de la longitud natural), i el pes ja no cal tornar-lo a tenir en compte: queda F = −k·x, a = −(k/m)·x i ω = √(k/m). El període, amb m/k de la part 1:</p>
+            <div class="keyf">T = 2π·√(m/k) = 2π·√(Δx/g)</div>
+          </div>
+          <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 620 345" role="img" aria-label="Molla vertical en tres posicions: a l'equilibri la força de la molla k·Δx iguala el pes m·g; al punt més alt i al més baix la força neta és F = −k·x"><rect x="20" y="14" width="580" height="10" fill="var(--stone)"/><line x1="20" y1="114" x2="600" y2="114" stroke="var(--grid2)" stroke-width="1" stroke-dasharray="2 4"/><text x="8" y="108" text-anchor="start" style="fill:var(--muted);font-size:12px">long. natural</text><line x1="20" y1="184" x2="600" y2="184" stroke="var(--muted)" stroke-width="1" stroke-dasharray="6 4"/><text x="8" y="180" text-anchor="start" style="fill:var(--muted);font-size:12px">x = 0</text><polyline points="120.0,24.0 120.0,30.0 112.0,39.6 128.0,58.7 112.0,77.9 128.0,97.0 112.0,116.1 128.0,135.3 112.0,154.4 120.0,164.0 120.0,170.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="103" y="170" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="120" y="189" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="146" y1="174" x2="146" y2="145.0" stroke="var(--t)" stroke-width="2.6" stroke-linecap="round"/><polygon points="146,137.0 142.4,145.0 149.6,145.0" fill="var(--t)"/><text x="154" y="145.04" text-anchor="start" style="fill:var(--t);font-size:13px">k·Δx</text><line x1="94" y1="194" x2="94" y2="223.0" stroke="var(--muted)" stroke-width="2.4" stroke-linecap="round"/><polygon points="94,231.0 90.4,223.0 97.6,223.0" fill="var(--muted)"/><text x="88" y="232.96" text-anchor="end" style="fill:var(--muted);font-size:13px">m·g</text><path d="M64,114 h-6 v56 h6" fill="none" stroke="var(--ink)"/><text x="54" y="146" text-anchor="end" class="lab" style="fill:var(--ink);font-size:17px">Δx</text><text x="120" y="306" text-anchor="middle" style="fill:var(--ink);font-size:14px">Equilibri</text><text x="120" y="326" text-anchor="middle" style="fill:var(--f);font-size:13px">x = 0 · F = 0</text><polyline points="310.0,24.0 310.0,30.0 302.0,37.4 318.0,52.3 302.0,67.1 318.0,82.0 302.0,96.9 318.0,111.7 302.0,126.6 310.0,134.0 310.0,140.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="293" y="140" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="310" y="159" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="336" y1="144" x2="336" y2="134.8" stroke="var(--t)" stroke-width="2.6" stroke-linecap="round"/><polygon points="336,126.8 332.4,134.8 339.6,134.8" fill="var(--t)"/><text x="344" y="134.84" text-anchor="start" style="fill:var(--t);font-size:13px">k·(Δx − A)</text><line x1="284" y1="164" x2="284" y2="193.0" stroke="var(--muted)" stroke-width="2.4" stroke-linecap="round"/><polygon points="284,201.0 280.4,193.0 287.6,193.0" fill="var(--muted)"/><text x="278" y="202.96" text-anchor="end" style="fill:var(--muted);font-size:13px">m·g</text><path d="M254,154 h-6 v30 h6" fill="none" stroke="var(--ink)"/><text x="244" y="173.0" text-anchor="end" class="lab" style="fill:var(--ink);font-size:15px">x</text><text x="310" y="306" text-anchor="middle" style="fill:var(--ink);font-size:14px">Punt més alt</text><text x="310" y="326" text-anchor="middle" style="fill:var(--f);font-size:13px">x = −A · F = +k·A ↓</text><polyline points="500.0,24.0 500.0,30.0 492.0,41.7 508.0,65.1 492.0,88.6 508.0,112.0 492.0,135.4 508.0,158.9 492.0,182.3 500.0,194.0 500.0,200.0" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round"/><rect x="483" y="200" width="34" height="28" rx="2" fill="var(--wood)" stroke="var(--wood2)" stroke-width="1.6"/><text x="500" y="219" text-anchor="middle" class="lab" style="fill:var(--surface)">m</text><line x1="526" y1="204" x2="526" y2="155.2" stroke="var(--t)" stroke-width="2.6" stroke-linecap="round"/><polygon points="526,147.2 522.4,155.2 529.6,155.2" fill="var(--t)"/><text x="534" y="155.24" text-anchor="start" style="fill:var(--t);font-size:13px">k·(Δx + A)</text><line x1="474" y1="224" x2="474" y2="253.0" stroke="var(--muted)" stroke-width="2.4" stroke-linecap="round"/><polygon points="474,261.0 470.4,253.0 477.6,253.0" fill="var(--muted)"/><text x="468" y="262.96" text-anchor="end" style="fill:var(--muted);font-size:13px">m·g</text><path d="M444,184 h-6 v30 h6" fill="none" stroke="var(--ink)"/><text x="434" y="203.0" text-anchor="end" class="lab" style="fill:var(--ink);font-size:15px">x</text><text x="500" y="306" text-anchor="middle" style="fill:var(--ink);font-size:14px">Punt més baix</text><text x="500" y="326" text-anchor="middle" style="fill:var(--f);font-size:13px">x = +A · F = −k·A ↑</text><line x1="606" y1="184" x2="606" y2="236.0" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/><polygon points="606,244.0 602.4,236.0 609.6,236.0" fill="var(--ink)"/><text x="600" y="262" text-anchor="end" class="lab" style="fill:var(--ink);font-size:15px">x</text></svg></div>
+            <figcaption><span class="tok">Força de la molla</span> (cap amunt) i <span style="color:var(--muted)">pes</span> (cap avall), amb x mesurada des de l'equilibri. La força de la molla canvia amb la posició: k·(Δx + x) = m·g + k·x. El pes la compensa a l'equilibri; la part que sobra, <span class="tf">k·x</span>, és la que fa el MHS.</figcaption>
+            <table class="t">
+              <tr><th>Posició</th><th>Força de la molla</th><th>Força neta F = −k·x</th></tr>
+              <tr><td>Punt més alt (x = −A)</td><td class="n">k·(Δx − A)</td><td class="n">+k·A (cap avall)</td></tr>
+              <tr><td>Equilibri (x = 0)</td><td class="n">k·Δx = m·g</td><td class="n">0</td></tr>
+              <tr><td>Punt més baix (x = +A)</td><td class="n">k·(Δx + A)</td><td class="n">−k·A (cap amunt)</td></tr>
+            </table>
+          </figure>
+        </div>
+      </section>
+      <section class="sys">
+        <h4>Pèndol simple</h4>
+        <div class="hero">
+          <div class="herof">
+            <div class="keybig">T = 2π·√(L/g)</div>
+            <div class="keysec"><span class="tf">F = −m·g·sin θ ≈ −(m·g/L)·x</span><br>ω = √(g/L) <span class="k">(angles petits)</span></div>
+            <p>El període no depèn de la massa ni de l'amplitud. L'amplitud lineal és A ≈ L·θ₀, amb θ₀ en radians.</p>
+            <details class="more"><summary>Per saber-ne més: per què és un MHS</summary>
+              <p>La força que torna el pèndol a l'equilibri és la component tangencial del pes. Per a angles petits, sin θ ≈ θ = x/L, i la força és proporcional a x: és un MHS amb k = m·g/L. Aleshores ω = √(k/m) = √(g/L) i T = 2π/ω = 2π·√(L/g).</p>
+            </details>
+            <p><b>Tensió del fil.</b> En la direcció del fil, la tensió F<sub>T</sub> i la component del pes m·g·cos θ donen la força centrípeta:</p>
+            <div class="keyf tt">F<sub>T</sub> − m·g·cos θ = m·v²/L &nbsp;→&nbsp; F<sub>T</sub> = m·g·cos θ + m·v²/L</div>
+            <ul class="tight">
+              <li>Als extrems (v = 0) és mínima: F<sub>T</sub> = m·g·cos θ₀.</li>
+              <li>Al punt més baix (θ = 0, v = v<sub>màx</sub> = A·ω) és màxima: F<sub>T</sub> = m·g + m·v<sub>màx</sub>²/L.</li>
+            </ul>
+          </div>
+          <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 460 390" role="img" aria-label="Pèndol simple: tensió del fil, pes i les seves components tangencial i en la direcció del fil"><rect x="100" y="14" width="140" height="10" fill="var(--stone)"/><line x1="170.0" y1="26.0" x2="170.0" y2="266.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/><path d="M170,236 A210,210 0 0 0 268.6,211.4" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="5 3"/><text x="174.0" y="258.0" text-anchor="start" style="fill:var(--ink);font-size:12px">x = L·θ</text><path d="M170,74 A48,48 0 0 0 192.5,68.4" fill="none" stroke="var(--ink)"/><text x="186.0" y="90.0" text-anchor="start" class="lab" style="fill:var(--ink)">θ</text><line x1="170" y1="26" x2="268.6" y2="211.4" stroke="var(--ink)" stroke-width="2"/><text x="221.4" y="103.9" text-anchor="start" class="lab" style="fill:var(--ink)">L</text><line x1="218.8" y1="237.9" x2="268.6" y2="331.4" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/><line x1="318.3" y1="305.0" x2="268.6" y2="331.4" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/><line x1="268.6" y1="211.4" x2="316.1" y2="300.7" stroke="var(--muted)" stroke-width="1.8" stroke-linecap="round"/><polygon points="318.3,305.0 311.4,299.6 317.8,296.2" fill="var(--muted)"/><text x="324.3" y="307.0" text-anchor="start" style="font-size:11px">m·g·cos θ</text><line x1="268.6" y1="211.4" x2="211.7" y2="104.4" stroke="var(--t)" stroke-width="2.6" stroke-linecap="round"/><polygon points="209.4,100.2 216.4,105.5 210.0,108.9" fill="var(--t)"/><text x="243.1" y="144.7" text-anchor="start" class="lab" style="fill:var(--t)">F<tspan dy="4" font-size="10">T</tspan></text><line x1="268.6" y1="211.4" x2="268.6" y2="326.6" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><polygon points="268.6,331.4 265.0,323.4 272.2,323.4" fill="var(--ink)"/><text x="274.6" y="347.4" text-anchor="start" class="lab" style="fill:var(--ink)">m·g</text><line x1="268.6" y1="211.4" x2="223.1" y2="235.6" stroke="var(--f)" stroke-width="3" stroke-linecap="round"/><polygon points="218.8,237.9 224.2,230.9 227.6,237.3" fill="var(--f)"/><text x="206.8" y="221.9" text-anchor="end" style="fill:var(--f);font-size:12px">F = −m·g·sin θ</text><circle cx="268.6" cy="211.4" r="11" fill="var(--ball)"/><circle cx="170" cy="26" r="3" fill="var(--ink)"/><text x="450.0" y="382.0" text-anchor="end" style="font-size:10px">(angle exagerat per veure-ho millor)</text></svg></div></figure>
+        </div>
+      </section>
+      <div class="bfoot"><button class="godemo" data-demo="2">Prova-ho a la demo 3: pèndol simple</button></div>
+    </article>
+  </section>
+
+  <!-- ===================== DEMOS ===================== -->
+  <section class="blk" id="demos">
+    <h2>Demos interactives</h2>
+
+    <!-- DEMO 1 -->
+    <div class="demo">
+      <div class="hd"><h3>1 · Oscil·lador massa–molla: x, v i a</h3><p class="note">Els tres gràfics comparteixen l'eix de temps. Observa en quin moment cada magnitud és màxima o zero.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs scene"><canvas id="c1s" aria-label="Massa unida a una molla i fasor de rotació"></canvas></div>
+          <div class="panel cvs gr"><canvas id="c1g" aria-label="Gràfiques de x, v i a en funció del temps"></canvas></div>
+          <div class="bar">
+            <button class="primary" id="d1play">Pausa</button>
+            <button id="d1reset">Reinicia</button>
+            <div class="scrub"><input type="range" id="d1scrub" min="0" max="1" step="0.001" value="0" aria-label="Instant de temps"><output id="d1tout">t = 0,00 s</output></div>
+          </div>
+          <div class="panel readout">
+            <div><span>t</span><b id="d1rt"></b></div>
+            <div><span>x</span><b id="d1rx"></b></div>
+            <div><span class="tx">v</span><b id="d1rv" class="tx"></b></div>
+            <div><span class="ty">a</span><b id="d1ra" class="ty"></b></div>
+            <div><span>ω</span><b id="d1rw"></b></div>
+            <div><span>T</span><b id="d1rT"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 1">
+          <div class="group">
+            <h4>Oscil·lador</h4>
+            <div class="param"><label for="d1A">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="d1An" min="0.02" max="0.2" step="0.01" aria-label="A en metres">m</div><input type="range" id="d1A" min="0.02" max="0.2" step="0.01"></div>
+            <div class="param"><label for="d1m">Massa <i class="v">m</i></label><div class="pin"><input type="number" id="d1mn" min="0.1" max="2" step="0.05" aria-label="m en kg">kg</div><input type="range" id="d1m" min="0.1" max="2" step="0.05"></div>
+            <div class="param"><label for="d1k">Constant <i class="v">k</i></label><div class="pin"><input type="number" id="d1kn" min="5" max="100" step="1" aria-label="k en N/m">N/m</div><input type="range" id="d1k" min="5" max="100" step="1"></div>
+            <div class="param"><label for="d1p">Fase inicial <i class="v">φ</i></label><div class="pin"><span class="val" id="d1pt"></span></div><input type="range" id="d1p" min="0" max="345" step="15"></div>
+          </div>
+          <div class="group">
+            <h4>Què es mostra</h4>
+            <label class="chk"><input type="checkbox" id="d1vec" checked> <span>Vectors v <span class="swatch" style="background:var(--x)"></span> i a <span class="swatch" style="background:var(--y)"></span></span></label>
+            <label class="chk"><input type="checkbox" id="d1pha" checked> Fasor (relació amb el MCU)</label>
+          </div>
+          <div class="group">
+            <h4>Velocitat de l'animació</h4>
+            <div class="seg s3" id="d1seg"><button data-v="1">1×</button><button data-v="0.5">½×</button><button data-v="0.2">⅕×</button></div>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Equacions amb els teus valors</h3>
+          <div class="f">
+            <div id="d1eX"></div><div id="d1eV" class="tx"></div><div id="d1eA" class="ty"></div>
+          </div>
+          <div class="f"><div id="d1eW"></div><div id="d1eT"></div></div>
+        </section>
+        <section class="panel eq b">
+          <h3>En l'instant actual</h3>
+          <div class="now" id="d1n1"></div><div class="now tx" id="d1n2"></div><div class="now ty" id="d1n3"></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> duplica la k i mira què passa amb T (canvia pel factor √2, no per 2). Duplica l'amplitud: T no canvia, però v màxima i a màxima sí. Posa φ = π/2 i mira on comença el cos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 2 -->
+    <div class="demo">
+      <div class="hd"><h3>2 · Energia en un MHS</h3><p class="note">A dalt, la molla en moviment amb les posicions clau i com es reparteix l'energia en cada instant. A sota, la paràbola és l'energia potencial E<sub>p</sub>(x). L'energia mecànica és la línia horitzontal; l'energia cinètica és el que falta per arribar-hi.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs scene2"><canvas id="c2s" aria-label="Massa unida a una molla amb les posicions clau i la barra d'energia"></canvas></div>
+          <div class="pair2">
+            <div class="panel cvs half"><canvas id="c2x" aria-label="Energia en funció de la posició"></canvas></div>
+            <div class="panel cvs half"><canvas id="c2t" aria-label="Energia en funció del temps"></canvas></div>
+          </div>
+          <div class="bar">
+            <button class="primary" id="d2play">Pausa</button>
+            <button id="d2reset">Reinicia</button>
+            <div class="scrub"><input type="range" id="d2scrub" min="0" max="1" step="0.001" value="0" aria-label="Instant de temps"><output id="d2tout">t = 0,00 s</output></div>
+          </div>
+          <div class="panel readout">
+            <div><span>x</span><b id="d2rx"></b></div>
+            <div><span>v</span><b id="d2rv"></b></div>
+            <div><span class="tec">E<sub>c</sub></span><b id="d2rc" class="tec"></b></div>
+            <div><span class="tep">E<sub>p</sub></span><b id="d2rp" class="tep"></b></div>
+            <div><span>E<sub>m</sub></span><b id="d2rm"></b></div>
+            <div><span>T</span><b id="d2rT"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 2">
+          <div class="group">
+            <h4>Oscil·lador (surt de x = +A)</h4>
+            <div class="param"><label for="d2A">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="d2An" min="0.02" max="0.2" step="0.01" aria-label="A en metres">m</div><input type="range" id="d2A" min="0.02" max="0.2" step="0.01"></div>
+            <div class="param"><label for="d2k">Constant <i class="v">k</i></label><div class="pin"><input type="number" id="d2kn" min="5" max="100" step="1" aria-label="k en N/m">N/m</div><input type="range" id="d2k" min="5" max="100" step="1"></div>
+            <div class="param"><label for="d2m">Massa <i class="v">m</i></label><div class="pin"><input type="number" id="d2mn" min="0.1" max="2" step="0.05" aria-label="m en kg">kg</div><input type="range" id="d2m" min="0.1" max="2" step="0.05"></div>
+          </div>
+          <div class="group">
+            <h4>Què es mostra</h4>
+            <label class="chk"><input type="checkbox" id="d2mark" checked> <span>Marca on E<sub>c</sub> = E<sub>p</sub></span></label>
+            <p class="note"><span class="swatch" style="background:var(--ec)"></span>E<sub>c</sub> &nbsp; <span class="swatch" style="background:var(--ep)"></span>E<sub>p</sub> &nbsp; <span class="swatch" style="background:var(--ink)"></span>E<sub>m</sub></p>
+          </div>
+          <div class="group">
+            <h4>Velocitat de l'animació</h4>
+            <div class="seg s3" id="d2seg"><button data-v="1">1×</button><button data-v="0.5">½×</button><button data-v="0.2">⅕×</button></div>
+          </div>
+        </aside>
+          <section class="panel eq a" aria-label="Energies en l'instant actual">
+            <h3>En l'instant actual</h3>
+            <div class="now tep" id="d2n1"></div>
+            <div class="now tec" id="d2n2"></div>
+            <div class="now" id="d2n3"></div>
+          </section>
+      <p class="try"><b>Prova:</b> posa ⅕× i atura el bloc just quan passa per la línia verda A/√2: la barra queda partida al 50 %. Als extrems és tota E<sub>p</sub>, i a x = 0 tota E<sub>c</sub>. Fes créixer A al doble i comprova que E<sub>m</sub> es multiplica per 4. Mira que E<sub>c</sub> i E<sub>p</sub> oscil·len al doble de freqüència que x (període T/2) i que es creuen a x = ±A/√2.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 3 -->
+    <div class="demo">
+      <div class="hd"><h3>3 · Pèndol simple</h3><p class="note">Per a angles petits el pèndol fa un MHS: θ(t) = θ₀·cos(ω·t), amb ω = √(g/L). La força que el torna a l'equilibri és la component tangencial del pes; la tensió del fil i la component del pes en la direcció del fil donen la força centrípeta.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c3" aria-label="Pèndol simple amb el pes i la seva component tangencial"></canvas></div>
+          <div class="bar">
+            <button class="primary" id="d3play">Pausa</button>
+            <button id="d3reset">Reinicia</button>
+          </div>
+          <div class="panel readout">
+            <div><span>t</span><b id="d3rt"></b></div>
+            <div><span>θ</span><b id="d3rth"></b></div>
+            <div><span class="tx">v</span><b id="d3rv" class="tx"></b></div>
+            <div><span class="tf">F</span><b id="d3rF" class="tf"></b></div>
+            <div><span class="tok">F<sub>T</sub> (tensió)</span><b id="d3rFT" class="tok"></b></div>
+            <div><span>T = 2π·√(L/g)</span><b id="d3rT"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 3">
+          <div class="group">
+            <h4>Pèndol</h4>
+            <div class="param"><label for="d3L">Longitud <i class="v">L</i></label><div class="pin"><input type="number" id="d3Ln" min="0.2" max="2.5" step="0.05" aria-label="L en metres">m</div><input type="range" id="d3L" min="0.2" max="2.5" step="0.05"></div>
+            <div class="param"><label for="d3a">Angle inicial <i class="v">θ</i><sub>0</sub></label><div class="pin"><input type="number" id="d3an" min="1" max="15" step="1" aria-label="Angle en graus">°</div><input type="range" id="d3a" min="1" max="15" step="1"></div>
+            <div class="param"><label for="d3m">Massa <i class="v">m</i></label><div class="pin"><input type="number" id="d3mn" min="0.1" max="2" step="0.05" aria-label="m en kg">kg</div><input type="range" id="d3m" min="0.1" max="2" step="0.05"></div>
+          </div>
+          <div class="group">
+            <h4>Gravetat</h4>
+            <div class="seg" id="d3gseg"><button data-g="9.81">Terra</button><button data-g="1.62">Lluna</button><button data-g="3.71">Mart</button><button data-g="24.79">Júpiter</button></div>
+          </div>
+          <div class="group">
+            <label class="chk"><input type="checkbox" id="d3frc" checked> <span>Forces: pes <span class="swatch" style="background:var(--muted)"></span>, component tangencial <span class="swatch" style="background:var(--f)"></span> i tensió <span class="swatch" style="background:var(--t)"></span></span></label>
+            <h4>Velocitat de l'animació</h4>
+            <div class="seg s3" id="d3seg"><button data-v="1">1×</button><button data-v="0.5">½×</button><button data-v="0.2">⅕×</button></div>
+          </div>
+        </aside>
+          <section class="panel eq a" aria-label="Pèndol en l'instant actual">
+            <h3>En l'instant actual</h3>
+            <div class="now" id="d3n1"></div>
+            <div class="now tx" id="d3n3"></div>
+            <div class="now tf" id="d3n2"></div>
+            <div class="now tok" id="d3n4"></div>
+          </section>
+      <p class="try"><b>Prova:</b> canvia la massa: la força F canvia en la mateixa proporció, però el període no. Duplica la longitud i comprova que T es multiplica per √2. Fixa't que F és màxima als extrems i nul·la quan el pèndol passa per la vertical, mentre que la tensió és màxima just a la vertical i mínima als extrems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MÈTODE ===================== -->
+  <section class="blk" id="metode">
+    <h2>Com atacar un problema de MHS</h2>
+    <div class="steps">
+      <div class="panel step"><b>Dades en SI</b><span>cm → m, g → kg. Anota què et donen i què et demanen.</span></div>
+      <div class="panel step"><b>Troba ω</b><span>√(k/m), √(g/L) o 2π/T segons el sistema.</span></div>
+      <div class="panel step"><b>Troba A i φ</b><span>A és el desplaçament inicial si s'amolla en repòs. φ, amb les condicions inicials (mira com, a sota).</span></div>
+      <div class="panel step"><b>Escriu x, v, a</b><span>Substitueix els valors numèrics abans de calcular res més.</span></div>
+      <div class="panel step"><b>Respon i comprova</b><span>Unitats, signes i límits: |v| ≤ A·ω, |a| ≤ A·ω², E<sub>m</sub> = ½·m·v<sub>màx</sub>².</span></div>
+    </div>
+    <div class="lower">
+      <section class="panel eq a" id="fase">
+        <h3>Com trobar la fase inicial φ</h3>
+        <p>φ diu on és el cos, i cap on va, en t = 0. Posant t = 0 a x(t):</p>
+        <div class="keyf">x₀ = A·cos φ</div>
+        <p><b>Cas habitual:</b> el cos s'amolla en repòs des d'un extrem. Aleshores x₀ = +A dona <span class="res">φ = 0</span> i x₀ = −A dona <span class="res">φ = π</span>.</p>
+        <p><b>Cas general:</b></p>
+        <ol class="tight">
+          <li>Aïlla el cosinus: <b>cos φ = x₀/A</b>. Això dóna dos angles, +φ i −φ.<b>*</b></li>
+          <li>Comprova-ho amb la gràfica de x(t): ha de començar a x₀ i anar cap al costat correcte.</li>
+        </ol>
+        <p class="note"><b>*</b> Només caldrà en alguns problemes: per triar entre +φ i −φ, si <b>v &gt; 0</b> en t = 0, φ és <b>negatiu</b>; si <b>v &lt; 0</b>, φ és <b>positiu</b>.</p>
+        <p><b>Exemple:</b> x₀ = A/2 i v &lt; 0. cos φ = 1/2 → φ = ±π/3. Com que v &lt; 0, φ és positiu → <span class="res">φ = π/3</span>.</p>
+      </section>
+      <div class="stackcol">
+      <section class="panel eq a">
+        <h3>Casos habituals de φ</h3>
+        <table class="t">
+          <tr><th>Situació en t = 0</th><th>φ</th></tr>
+          <tr><td>x = +A (en repòs)</td><td class="n">0</td></tr>
+          <tr><td>x = −A (en repòs)</td><td class="n">π</td></tr>
+          <tr><td>x = 0, v &gt; 0</td><td class="n">−π/2 (≡ 3π/2)</td></tr>
+          <tr><td>x = 0, v &lt; 0</td><td class="n">π/2</td></tr>
+        </table>
+      </section>
+      <section class="panel eq b warn" id="errades" style="border-top-color:var(--y)">
+        <h3>Errades típiques</h3>
+        <ul class="tight">
+          <li>Calculadora en <b>graus</b> quan l'argument del cosinus és en radians.</li>
+          <li>Posar cm en lloc de m, o g en lloc de kg, dins de k i m.</li>
+          <li>Confondre la pulsació ω (rad/s) amb la freqüència f (Hz).</li>
+          <li>Oblidar que si el cos s'amolla en repòs, l'amplitud és el desplaçament inicial.</li>
+          <li>Triar el signe de φ sense mirar el signe de v.</li>
+        </ul>
+      </section>
+      </div>
+    </div>
+    <article class="panel ex" style="break-inside:avoid">
+      <div class="eh"><span class="num">Exemple resolt</span></div>
+      <p>Una massa de 0,10 kg unida a una molla de constant k = 40 N/m es separa 6,0 cm de l'equilibri i s'amolla. Escriu l'equació x(t) i calcula la velocitat màxima, l'acceleració màxima i l'energia mecànica.</p>
+      <div class="body" style="display:flex;flex-direction:column;gap:6px;font-size:14.5px">
+        <p><b>1.</b> Dades: m = 0,10 kg, k = 40 N/m, A = 0,060 m (s'amolla en repòs, per tant l'amplitud és el desplaçament inicial) i x₀ = +A.</p>
+        <p><b>2.</b> ω = √(k/m) = √(40/0,10) = <span class="res">20 rad/s</span> (T = 2π/ω = 0,314 s).</p>
+        <p><b>3.</b> x₀ = A → cos φ = 1 → <span class="res">φ = 0</span>.</p>
+        <p><b>4.</b> <span class="res">x(t) = 0,060·cos(20·t) m</span>; v(t) = −1,2·sin(20·t) m/s; a(t) = −24·cos(20·t) m/s².</p>
+        <p><b>5.</b> v<sub>màx</sub> = A·ω = <span class="res">1,2 m/s</span>; a<sub>màx</sub> = A·ω² = <span class="res">24 m/s²</span>; E<sub>m</sub> = ½·k·A² = ½·40·0,060² = <span class="res">0,072 J</span>. Comprovació: ½·m·v<sub>màx</sub>² = ½·0,10·1,2² = 0,072 J ✓.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===================== FORMULARI ===================== -->
+  <section class="blk" id="formulari">
+    <h2>Formulari</h2>
+        <div class="formgrid">
+      <div class="panel fbox"><h3>Equacions del moviment</h3>
+        <div class="fm">x = A·cos(ωt + φ)<br>v = −A·ω·sin(ωt + φ)<br>a = −A·ω²·cos(ωt + φ)<br>a = −ω²·x</div></div>
+      <div class="panel fbox"><h3>Magnituds</h3>
+        <div class="fm">ω = 2π/T = 2π·f &nbsp; f = 1/T</div>
+        <p>A en m · ω en rad/s · T en s · f en Hz · φ en rad</p></div>
+      <div class="panel fbox"><h3>Valors màxims</h3>
+        <div class="fm">v<sub>màx</sub> = A·ω &nbsp;(a x = 0)<br>a<sub>màx</sub> = A·ω² &nbsp;(a x = ±A)</div></div>
+      <div class="panel fbox w2"><h3>Gràfiques (φ = 0)</h3>
+        <svg class="xva" viewBox="0 0 560 150" role="img" aria-label="Gràfiques de x, v i a durant un període"></svg>
+        <p>v va avançada un quart de període respecte de x; a té sempre signe contrari a x.</p></div>
+      <div class="panel fbox"><h3>Forces (massa–molla)</h3>
+        <div class="fm">F = −k·x = m·a<br>k = m·ω² &nbsp; ω = √(k/m)<br>T = 2π·√(m/k)</div>
+        <p>Sempre cap a l'equilibri: sentit contrari a x. F<sub>màx</sub> = k·A. El període no depèn de l'amplitud.</p></div>
+      <div class="panel fbox"><h3>Energia</h3>
+        <div class="fm">E<sub>p</sub> = ½·k·x²<br>E<sub>c</sub> = ½·m·v² = ½·k·(A² − x²)<br>E<sub>m</sub> = ½·k·A² = ½·m·ω²·A²<br>E<sub>m</sub> = ½·m·v<sub>màx</sub>² (constant)</div>
+        <p>E<sub>c</sub> = E<sub>p</sub> a x = ±A/√2. En general, E<sub>c</sub> = n·E<sub>p</sub> a x = ±A/√(n+1).</p></div>
+      <div class="panel fbox w2"><h3>Gràfiques de l'energia</h3>
+        <svg class="en" viewBox="0 0 760 150" role="img" aria-label="Energies en funció de la posició i del temps"></svg>
+        <p>E<sub>p</sub> i E<sub>c</sub> es tallen a x = ±A/√2 i oscil·len amb període T/2; E<sub>c</sub> + E<sub>p</sub> = E<sub>m</sub> sempre.</p></div>
+      <div class="panel fbox"><h3>Molla vertical</h3>
+        <div class="fm">k·Δx = m·g (equilibri)<br>m/k = Δx/g &nbsp; T = 2π·√(Δx/g)</div>
+        <p>Des de l'equilibri és un MHS tradicional: F = −k·x, amb x mesurada des de l'equilibri. La força de la molla va de k·(Δx − A) a k·(Δx + A).</p></div>
+      <div class="panel fbox"><h3>Pèndol simple (angles petits)</h3>
+        <div class="fm">ω = √(g/L) &nbsp; T = 2π·√(L/g)</div>
+        <p>F = −m·g·sin θ ≈ −(m·g/L)·x. No depèn de m ni de l'amplitud. A ≈ L·θ₀ (θ₀ en rad). Tensió: F<sub>T</sub> = m·g·cos θ + m·v²/L.</p></div>
+      <div class="panel fbox"><h3>Condicions inicials</h3>
+        <div class="fm">x₀ = A·cos φ<br>cos φ = x₀/A → ±φ</div>
+        <table class="t"><tr><td>x₀ = +A, en repòs</td><td class="n">φ = 0</td></tr><tr><td>x₀ = −A, en repòs</td><td class="n">φ = π</td></tr><tr><td>x₀ = 0, v₀ &gt; 0</td><td class="n">φ = −π/2</td></tr><tr><td>x₀ = 0, v₀ &lt; 0</td><td class="n">φ = π/2</td></tr></table><p>Si cal triar el signe: v₀ &gt; 0 → φ negatiu; v₀ &lt; 0 → φ positiu.</p></div>
+      <div class="panel fbox w3"><h3>Abans d'entregar</h3>
+        <ul class="tight"><li>Calculadora en radians.</li><li>Tot en SI: cm → m, g → kg.</li><li>Substitueix els números a les fórmules.</li><li>Comprova |v| ≤ A·ω i |a| ≤ A·ω².</li><li>Posa unitats a cada resultat.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ===================== EXERCICIS ===================== -->
+  <section class="blk" id="exercicis">
+    <h2>Exercicis</h2>
+    <div class="exlist" id="exlist"></div>
+  </section>
+
+  <footer>Convenis: unitats del SI, g = 9,81 m/s² a la Terra i fricció menyspreable. Els arguments de sinus i cosinus són en radians.</footer>
+</div>
+
+<script type="application/json" id="pdfdata">{}</script>
+<script>
+(() => {
+const $ = id => document.getElementById(id);
+const PI = Math.PI, DEG = PI / 180;
+
+/* ---------- utilitats ---------- */
+function fmt(v, d = 2) {
+  if (!isFinite(v)) return '—';
+  if (Math.abs(v) < 0.5 * Math.pow(10, -d)) v = 0;
+  return v.toFixed(d).replace('.', ',').replace('-', '−');
+}
+const fmtN = v => String(+v.toFixed(6)).replace('.', ',').replace('-', '−');
+function niceStep(span, n) {
+  const raw = span / n, p = Math.pow(10, Math.floor(Math.log10(raw))), m = raw / p;
+  return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p;
+}
+const gcd = (a, b) => b ? gcd(b, a % b) : a;
+function phiTxt(deg) {
+  deg = ((deg % 360) + 360) % 360;
+  if (deg === 0) return '0';
+  const g = gcd(deg, 180), n = deg / g, d = 180 / g;
+  return (n === 1 ? '' : n) + 'π' + (d === 1 ? '' : '/' + d);
+}
+function fit(cv) {
+  const r = cv.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+  const w = Math.max(1, Math.round(r.width * d)), h = Math.max(1, Math.round(r.height * d));
+  if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  const c = cv.getContext('2d'); c.setTransform(d, 0, 0, d, 0, 0);
+  return { c, W: r.width, H: r.height };
+}
+const TK = {};
+function readTokens() {
+  const s = getComputedStyle(document.documentElement);
+  ['bg','surface','ink','muted','line','grid','grid2','x','y','f','ec','ep','t','wood','wood2','stone','stone2','earth','ok','bad','ball'].forEach(k => TK[k] = s.getPropertyValue('--' + k).trim());
+}
+const FM = '"IBM Plex Mono", ui-monospace, monospace', FB = '"IBM Plex Sans", system-ui, sans-serif';
+function arrow(c, x1, y1, x2, y2, col, w = 2) {
+  const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy);
+  if (L < 3) return;
+  const ux = dx / L, uy = dy / L, h = Math.min(9, L * 0.45);
+  c.strokeStyle = col; c.fillStyle = col; c.lineWidth = w; c.lineCap = 'round';
+  c.beginPath(); c.moveTo(x1, y1); c.lineTo(x2 - ux * h * 0.7, y2 - uy * h * 0.7); c.stroke();
+  c.beginPath(); c.moveTo(x2, y2);
+  c.lineTo(x2 - ux * h - uy * h * 0.45, y2 - uy * h + ux * h * 0.45);
+  c.lineTo(x2 - ux * h + uy * h * 0.45, y2 - uy * h - ux * h * 0.45);
+  c.closePath(); c.fill();
+}
+function bind(rId, nId, obj, key, lo, hi, after) {
+  const R = $(rId), N = $(nId);
+  const set = v => { v = Math.min(hi, Math.max(lo, v)); obj[key] = v; R.value = v; N.value = v; after && after(); };
+  R.value = obj[key]; N.value = obj[key];
+  R.addEventListener('input', () => set(+R.value));
+  N.addEventListener('change', () => { if (N.value !== '' && isFinite(+N.value)) set(+N.value); else N.value = obj[key]; });
+  return set;
+}
+function segBind(id, attr, obj, key, after) {
+  const bs = document.querySelectorAll('#' + id + ' button');
+  const mark = () => bs.forEach(b => b.setAttribute('aria-pressed', Math.abs(+b.dataset[attr] - obj[key]) < 1e-9));
+  bs.forEach(b => b.onclick = () => { obj[key] = +b.dataset[attr]; mark(); after && after(); });
+  mark();
+  return mark;
+}
+function curve(c, f, t0, t1, X, Y, N = 120) {
+  c.beginPath();
+  for (let i = 0; i <= N; i++) { const t = t0 + (t1 - t0) * i / N; i ? c.lineTo(X(t), Y(f(t))) : c.moveTo(X(t), Y(f(t))); }
+}
+
+/* registre de demos (només s'anima el que es veu) */
+const demos = [];
+function register(root, step, draw) {
+  const d = { step, draw, vis: true };
+  demos.push(d);
+  const box = root.closest('.demo') || root;
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => { d.vis = es[0].isIntersecting; }, { rootMargin: '120px' }).observe(box);
+}
+/* barres de temps: no es mouen mentre l'usuari les arrossega */
+const dragging = new Set();
+function scrubGuard(id) {
+  const el = $(id);
+  el.addEventListener('pointerdown', () => dragging.add(id));
+  const end = () => { dragging.delete(id); };
+  el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
+  el.addEventListener('change', () => { end(); el.blur(); });
+}
+const setScrub = (id, t) => { if (!dragging.has(id)) $(id).value = t; };
+
+/* =====================================================
+   DEMO 1 · massa-molla
+   ===================================================== */
+const D1 = { A: 0.10, m: 0.5, k: 20, phi: 0, t: 0, play: true, speed: 0.5, vec: true, pha: true };
+const d1 = () => { const w = Math.sqrt(D1.k / D1.m); return { w, T: 2 * PI / w, ph: D1.phi * DEG }; };
+const wrap1 = () => { const { T } = d1(); D1.t = ((D1.t % (2 * T)) + 2 * T) % (2 * T); };
+bind('d1A', 'd1An', D1, 'A', 0.02, 0.2, wrap1);
+bind('d1m', 'd1mn', D1, 'm', 0.1, 2, wrap1);
+bind('d1k', 'd1kn', D1, 'k', 5, 100, wrap1);
+$('d1p').value = D1.phi;
+$('d1p').addEventListener('input', e => { D1.phi = +e.target.value; });
+$('d1vec').onchange = e => D1.vec = e.target.checked;
+$('d1pha').onchange = e => D1.pha = e.target.checked;
+segBind('d1seg', 'v', D1, 'speed');
+$('d1play').onclick = () => { D1.play = !D1.play; };
+$('d1reset').onclick = () => { D1.t = 0; };
+$('d1scrub').addEventListener('input', e => { D1.t = +e.target.value; D1.play = false; });
+scrubGuard('d1scrub');
+
+function step1(dt) {
+  if (!D1.play) return;
+  const { T } = d1();
+  D1.t += dt * D1.speed;
+  if (D1.t >= 2 * T) D1.t -= 2 * T;
+}
+
+function spring(c, x1, x2, y, n, amp) {
+  const len = Math.max(x2 - x1, 24), lead = Math.min(10, len * 0.15), seg = (len - 2 * lead) / n;
+  c.beginPath(); c.moveTo(x1, y); c.lineTo(x1 + lead, y);
+  for (let i = 0; i < n; i++) c.lineTo(x1 + lead + seg * (i + 0.5), y + (i % 2 ? amp : -amp));
+  c.lineTo(x1 + len - lead, y); c.lineTo(x1 + len, y); c.stroke();
+}
+
+function drawScene1() {
+  const { c, W, H } = fit($('c1s'));
+  const { w, T, ph } = d1(), t = D1.t, A = D1.A;
+  const th = w * t + ph;
+  const x = A * Math.cos(th), v = -A * w * Math.sin(th), a = -A * w * w * Math.cos(th);
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const showP = D1.pha && W >= 520, leftW = showP ? W * 0.6 : W;
+  const wallX = 26, cx = wallX + (leftW - wallX) / 2, kpx = ((leftW - wallX) / 2 - 44) / 0.2;
+  const yc = H * 0.5, bw = 44, bh = 44;
+  // terra i paret
+  c.strokeStyle = TK.ink; c.lineWidth = 1.5; c.beginPath(); c.moveTo(wallX - 10, yc + bh / 2 + .5); c.lineTo(leftW - 8, yc + bh / 2 + .5); c.stroke();
+  c.fillStyle = TK.stone; c.fillRect(wallX - 10, yc - bh * 0.9, 10, bh * 1.4);
+  // escala
+  c.font = '11px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'center'; c.textBaseline = 'top';
+  c.lineWidth = 1; c.strokeStyle = TK.muted;
+  for (let n = -2; n <= 2; n++) {
+    const X = cx + n * 0.1 * kpx;
+    c.beginPath(); c.moveTo(X, yc + bh / 2); c.lineTo(X, yc + bh / 2 + 5); c.stroke();
+    c.fillText(fmtN(n * 0.1), X, yc + bh / 2 + 8);
+  }
+  c.textAlign = 'right'; c.fillText('x (m)', leftW - 8, yc + bh / 2 + 22);
+  // equilibri i ±A
+  c.save(); c.setLineDash([4, 4]); c.lineWidth = 1; c.strokeStyle = TK.muted;
+  [-A, 0, A].forEach(xx => { const X = cx + xx * kpx; c.beginPath(); c.moveTo(X, yc - 74); c.lineTo(X, yc + bh / 2); c.stroke(); });
+  c.restore();
+  c.textAlign = 'center'; c.textBaseline = 'bottom';
+  c.fillText('−A', cx - A * kpx, yc - 76); c.fillText('0', cx, yc - 76); c.fillText('+A', cx + A * kpx, yc - 76);
+  // molla i bloc
+  const bx = cx + x * kpx;
+  c.strokeStyle = TK.ink; c.lineWidth = 2; c.lineJoin = 'round';
+  spring(c, wallX, bx - bw / 2, yc, 12, 9);
+  c.fillStyle = TK.wood; c.strokeStyle = TK.wood2; c.lineWidth = 2;
+  c.fillRect(bx - bw / 2, yc - bh / 2, bw, bh); c.strokeRect(bx - bw / 2, yc - bh / 2, bw, bh);
+  c.fillStyle = TK.surface; c.font = 'italic 500 15px ' + FB; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('m', bx, yc + 1);
+  // vectors
+  if (D1.vec) {
+    const maxL = Math.min(70, leftW * 0.12);
+    const lv = v / (A * w) * maxL, la = a / (A * w * w) * maxL;
+    arrow(c, bx, yc - 38, bx + lv, yc - 38, TK.x, 2.4);
+    arrow(c, bx, yc - 56, bx + la, yc - 56, TK.y, 2.4);
+    c.font = 'italic 500 13px ' + FB; c.textBaseline = 'middle';
+    if (Math.abs(lv) > 8) { c.fillStyle = TK.x; c.textAlign = lv > 0 ? 'left' : 'right'; c.fillText('v', bx + lv + (lv > 0 ? 6 : -6), yc - 38); }
+    if (Math.abs(la) > 8) { c.fillStyle = TK.y; c.textAlign = la > 0 ? 'left' : 'right'; c.fillText('a', bx + la + (la > 0 ? 6 : -6), yc - 56); }
+  }
+  // fasor
+  if (showP) {
+    const pcx = leftW + (W - leftW) / 2, pcy = yc, R = Math.min((W - leftW) / 2 - 30, H * 0.34);
+    c.strokeStyle = TK.grid2; c.lineWidth = 1.2; c.beginPath(); c.arc(pcx, pcy, R, 0, 2 * PI); c.stroke();
+    c.strokeStyle = TK.muted; c.lineWidth = 1;
+    c.beginPath(); c.moveTo(pcx - R - 8, pcy); c.lineTo(pcx + R + 8, pcy); c.moveTo(pcx, pcy - R - 8); c.lineTo(pcx, pcy + R + 8); c.stroke();
+    const Px = pcx + R * Math.cos(th), Py = pcy - R * Math.sin(th);
+    c.save(); c.setLineDash([3, 3]); c.beginPath(); c.moveTo(Px, Py); c.lineTo(Px, pcy); c.stroke(); c.restore();
+    arrow(c, pcx, pcy, Px, Py, TK.ink, 2);
+    c.fillStyle = TK.ball; c.beginPath(); c.arc(Px, Py, 4.5, 0, 7); c.fill();
+    c.fillStyle = TK.wood; c.fillRect(Px - 5, pcy - 5, 10, 10);
+    c.font = '11px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'center'; c.textBaseline = 'top';
+    c.fillText('x = A·cos(ωt+φ)', pcx, pcy + R + 12);
+    const thm = ((th % (2 * PI)) + 2 * PI) % (2 * PI);
+    c.fillText('ωt+φ = ' + fmt(thm) + ' rad', pcx, pcy + R + 26);
+  }
+}
+
+function plotStack1() {
+  const { c, W, H } = fit($('c1g'));
+  const { w, T, ph } = d1(), A = D1.A, tMax = 2 * T, t = D1.t;
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const ml = 54, mr = 12, mt = 8, mb = 22, ph3 = (H - mt - mb) / 3;
+  const X = tt => ml + tt / tMax * (W - ml - mr);
+  const S = [
+    { n: 'x (m)', amp: A, f: tt => A * Math.cos(w * tt + ph), col: TK.ink, d: 2 },
+    { n: 'v (m/s)', amp: A * w, f: tt => -A * w * Math.sin(w * tt + ph), col: TK.x, d: 2 },
+    { n: 'a (m/s²)', amp: A * w * w, f: tt => -A * w * w * Math.cos(w * tt + ph), col: TK.y, d: 1 }
+  ];
+  c.font = '10.5px ' + FM;
+  S.forEach((s, i) => {
+    const top = mt + i * ph3 + 3, hh = ph3 - 8, mid = top + hh / 2;
+    const Y = val => mid - val / (s.amp * 1.1) * (hh / 2);
+    // quadrícula temporal cada T/4
+    c.lineWidth = 1; c.strokeStyle = TK.grid; c.beginPath();
+    for (let q = 0; q <= 8; q++) { const xx = Math.round(X(q * T / 4)) + .5; c.moveTo(xx, top); c.lineTo(xx, top + hh); }
+    c.stroke();
+    c.strokeStyle = TK.grid2; c.beginPath();
+    [-s.amp, s.amp].forEach(v0 => { const yy = Math.round(Y(v0)) + .5; c.moveTo(ml, yy); c.lineTo(W - mr, yy); });
+    c.stroke();
+    c.strokeStyle = TK.muted; c.beginPath(); c.moveTo(ml, Math.round(mid) + .5); c.lineTo(W - mr, Math.round(mid) + .5); c.moveTo(ml + .5, top); c.lineTo(ml + .5, top + hh); c.stroke();
+    c.fillStyle = TK.muted; c.textAlign = 'right'; c.textBaseline = 'middle';
+    c.fillText(fmt(s.amp, s.d), ml - 6, Y(s.amp)); c.fillText('0', ml - 6, mid); c.fillText(fmt(-s.amp, s.d), ml - 6, Y(-s.amp));
+    c.textAlign = 'left'; c.textBaseline = 'top'; c.fillStyle = s.col; c.fillText(s.n, ml + 6, top + 1);
+    // corba
+    c.save(); c.setLineDash([4, 4]); c.globalAlpha = 0.4; c.strokeStyle = s.col; c.lineWidth = 1.5; curve(c, s.f, 0, tMax, X, Y); c.stroke(); c.restore();
+    if (t > 0) { c.strokeStyle = s.col; c.lineWidth = 2.2; curve(c, s.f, 0, t, X, Y, Math.max(8, Math.ceil(120 * t / tMax))); c.stroke(); }
+    c.fillStyle = s.col; c.beginPath(); c.arc(X(t), Y(s.f(t)), 4, 0, 7); c.fill();
+  });
+  // cursor temporal i eix t
+  c.strokeStyle = TK.muted; c.lineWidth = 1; c.save(); c.setLineDash([2, 3]); c.beginPath(); c.moveTo(X(t) + .5, mt); c.lineTo(X(t) + .5, H - mb); c.stroke(); c.restore();
+  c.fillStyle = TK.muted; c.textAlign = 'center'; c.textBaseline = 'top';
+  for (let q = 0; q <= 4; q++) c.fillText(fmt(q * T / 2), X(q * T / 2), H - mb + 6);
+  c.textAlign = 'left'; c.fillText('T', X(T) + 4, mt + 3 + 14);
+  c.textAlign = 'right'; c.textBaseline = 'bottom'; c.fillText('t (s)', W - mr - 2, H - mb - 3);
+}
+
+let key1 = '';
+function texts1() {
+  const { w, T, ph } = d1(), A = D1.A, t = D1.t, th = w * t + ph;
+  const x = A * Math.cos(th), v = -A * w * Math.sin(th), a = -A * w * w * Math.cos(th);
+  const arg = phiTxt(D1.phi) === '0' ? fmt(w) + '·t' : fmt(w) + '·t + ' + phiTxt(D1.phi);
+  const key = [A, D1.m, D1.k, D1.phi].join('|');
+  if (key !== key1) {
+    key1 = key;
+    $('d1eX').textContent = 'x(t) = ' + fmtN(A) + '·cos(' + arg + ')   (m)';
+    $('d1eV').textContent = 'v(t) = −' + fmt(A * w, 3) + '·sin(' + arg + ')   (m/s)';
+    $('d1eA').textContent = 'a(t) = −' + fmt(A * w * w, 3) + '·cos(' + arg + ')   (m/s²)';
+    $('d1eW').textContent = 'ω = √(k/m) = √(' + fmtN(D1.k) + '/' + fmtN(D1.m) + ') = ' + fmt(w) + ' rad/s';
+    $('d1eT').textContent = 'T = 2π/ω = ' + fmt(T, 3) + ' s   f = 1/T = ' + fmt(1 / T) + ' Hz';
+    $('d1scrub').max = (2 * T).toFixed(3);
+  }
+  $('d1rt').textContent = fmt(t) + ' s'; $('d1rx').textContent = fmt(x, 3) + ' m';
+  $('d1rv').textContent = fmt(v) + ' m/s'; $('d1ra').textContent = fmt(a) + ' m/s²';
+  $('d1rw').textContent = fmt(w) + ' rad/s'; $('d1rT').textContent = fmt(T, 3) + ' s';
+  $('d1tout').textContent = 't = ' + fmt(t) + ' s';
+  setScrub('d1scrub', t);
+  $('d1pt').textContent = fmt(D1.phi, 0) + '° = ' + phiTxt(D1.phi) + ' rad';
+  $('d1n1').textContent = 'x = ' + fmtN(A) + '·cos(' + fmt(th) + ') = ' + fmt(x, 3) + ' m';
+  $('d1n2').textContent = 'v = −' + fmt(A * w, 3) + '·sin(' + fmt(th) + ') = ' + fmt(v) + ' m/s';
+  $('d1n3').textContent = 'a = −ω²·x = −' + fmt(w * w) + '·(' + fmt(x, 3) + ') = ' + fmt(a) + ' m/s²';
+  $('d1play').textContent = D1.play ? 'Pausa' : 'Continua';
+}
+register($('c1s'), step1, () => { drawScene1(); plotStack1(); texts1(); });
+
+/* =====================================================
+   DEMO 2 · energia
+   ===================================================== */
+const D2 = { A: 0.10, m: 0.5, k: 20, t: 0, play: true, speed: 0.5, mark: true };
+const d2 = () => { const w = Math.sqrt(D2.k / D2.m); return { w, T: 2 * PI / w, Em: 0.5 * D2.k * D2.A * D2.A }; };
+const wrap2 = () => { const { T } = d2(); D2.t = ((D2.t % (2 * T)) + 2 * T) % (2 * T); };
+bind('d2A', 'd2An', D2, 'A', 0.02, 0.2, wrap2);
+bind('d2k', 'd2kn', D2, 'k', 5, 100, wrap2);
+bind('d2m', 'd2mn', D2, 'm', 0.1, 2, wrap2);
+$('d2mark').onchange = e => D2.mark = e.target.checked;
+segBind('d2seg', 'v', D2, 'speed');
+$('d2play').onclick = () => { D2.play = !D2.play; };
+$('d2reset').onclick = () => { D2.t = 0; };
+$('d2scrub').addEventListener('input', e => { D2.t = +e.target.value; D2.play = false; });
+scrubGuard('d2scrub');
+function step2(dt) {
+  if (!D2.play) return;
+  const { T } = d2(); D2.t += dt * D2.speed; if (D2.t >= 2 * T) D2.t -= 2 * T;
+}
+let e2Max = 0;
+function drawE2x() {
+  const { c, W, H } = fit($('c2x'));
+  const A = D2.A, k = D2.k, { w, Em } = d2();
+  const tgt = Em * 1.3; e2Max = e2Max ? e2Max + (tgt - e2Max) * 0.15 : tgt; if (Math.abs(e2Max - tgt) < 1e-5 * tgt) e2Max = tgt;
+  const ml = 52, mr = 12, mt = 16, mb = 26, XR = 0.22;
+  const X = x => ml + (x + XR) / (2 * XR) * (W - ml - mr), Y = e => H - mb - e / e2Max * (H - mb - mt);
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const es = niceStep(e2Max, 4);
+  c.lineWidth = 1; c.strokeStyle = TK.grid; c.beginPath();
+  for (let e = 0; e <= e2Max + 1e-12; e += es) { const y = Math.round(Y(e)) + .5; c.moveTo(ml, y); c.lineTo(W - mr, y); }
+  for (let x = -0.2; x <= 0.2001; x += 0.1) { const xx = Math.round(X(x)) + .5; c.moveTo(xx, mt); c.lineTo(xx, H - mb); }
+  c.stroke();
+  c.font = '10.5px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'right'; c.textBaseline = 'middle';
+  for (let e = 0; e <= e2Max + 1e-12; e += es) c.fillText(fmtN(+e.toPrecision(3)), ml - 6, Y(e));
+  c.textAlign = 'center'; c.textBaseline = 'top';
+  for (let x = -0.2; x <= 0.2001; x += 0.1) c.fillText(fmtN(Math.round(x * 10) / 10), X(x), H - mb + 6);
+  c.textAlign = 'right'; c.textBaseline = 'bottom'; c.fillText('x (m)', W - mr - 2, H - mb - 3); c.textAlign = 'left'; c.textBaseline = 'bottom'; c.fillText('E (J)', 6, 12);
+  c.strokeStyle = TK.muted; c.beginPath(); c.moveTo(ml + .5, mt); c.lineTo(ml + .5, H - mb); c.moveTo(ml, H - mb + .5); c.lineTo(W - mr, H - mb + .5); c.stroke();
+  c.save(); c.beginPath(); c.rect(ml, mt - 2, W - ml - mr, H - mb - mt + 2); c.clip();
+  // Ep(x)
+  c.strokeStyle = TK.ep; c.lineWidth = 2.2; c.beginPath();
+  for (let i = 0; i <= 120; i++) { const x = -XR + 2 * XR * i / 120, e = 0.5 * k * x * x; i ? c.lineTo(X(x), Y(e)) : c.moveTo(X(x), Y(e)); } c.stroke();
+  // Em
+  c.save(); c.setLineDash([6, 4]); c.strokeStyle = TK.ink; c.lineWidth = 1.6; c.beginPath(); c.moveTo(ml, Y(Em)); c.lineTo(W - mr, Y(Em)); c.stroke(); c.restore();
+  // Ec(x)
+  c.strokeStyle = TK.ec; c.lineWidth = 2.2; c.beginPath();
+  for (let i = 0; i <= 100; i++) { const x = -A + 2 * A * i / 100, e = Em - 0.5 * k * x * x; i ? c.lineTo(X(x), Y(e)) : c.moveTo(X(x), Y(e)); } c.stroke();
+  c.restore();
+  // ±A
+  c.save(); c.setLineDash([2, 3]); c.strokeStyle = TK.muted; c.lineWidth = 1;
+  [-A, A].forEach(xx => { c.beginPath(); c.moveTo(X(xx), Y(0)); c.lineTo(X(xx), Y(Em)); c.stroke(); });
+  c.restore();
+  c.font = '11px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'center'; c.textBaseline = 'bottom';
+  c.fillText('−A', X(-A), Y(Em) - 4); c.fillText('+A', X(A), Y(Em) - 4);
+  // Ec = Ep
+  if (D2.mark) {
+    const xs = A / Math.SQRT2;
+    c.save(); c.setLineDash([2, 3]); c.strokeStyle = TK.ink; c.lineWidth = 1.2;
+    [-xs, xs].forEach(xx => { c.beginPath(); c.moveTo(X(xx), Y(0)); c.lineTo(X(xx), Y(Em / 2)); c.stroke(); });
+    c.restore();
+    c.fillStyle = TK.ink;
+    [-xs, xs].forEach(xx => { c.beginPath(); c.arc(X(xx), Y(Em / 2), 3.5, 0, 7); c.fill(); });
+    c.textAlign = 'left'; c.textBaseline = 'middle'; c.fillText('Ec = Ep', X(xs) + 8, Y(Em / 2) - 8);
+  }
+  // posició actual
+  const xN = A * Math.cos(w * D2.t), Ep = 0.5 * k * xN * xN;
+  c.lineCap = 'butt'; c.lineWidth = 6;
+  c.strokeStyle = TK.ep; c.beginPath(); c.moveTo(X(xN), Y(0)); c.lineTo(X(xN), Y(Ep)); c.stroke();
+  c.strokeStyle = TK.ec; c.beginPath(); c.moveTo(X(xN), Y(Ep)); c.lineTo(X(xN), Y(Em)); c.stroke();
+  c.fillStyle = TK.ball; c.beginPath(); c.arc(X(xN), Y(Ep), 5, 0, 7); c.fill();
+}
+function drawScene2() {
+  const { c, W, H } = fit($('c2s'));
+  const A = D2.A, k = D2.k, m = D2.m, { w, Em } = d2();
+  const x = A * Math.cos(w * D2.t), v = -A * w * Math.sin(w * D2.t);
+  const Ep = 0.5 * k * x * x, Ec = Math.max(0, Em - Ep);
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const barW = W < 520 ? 112 : Math.min(160, W * 0.24), leftW = W - barW - 10;
+  const wallX = 26, cx = wallX + (leftW - wallX) / 2, kpx = ((leftW - wallX) / 2 - 40) / 0.2;
+  const yc = H * 0.56, bw = 38, bh = 38, gy = yc + bh / 2;
+  c.strokeStyle = TK.ink; c.lineWidth = 1.5; c.beginPath(); c.moveTo(wallX - 10, gy + .5); c.lineTo(leftW - 6, gy + .5); c.stroke();
+  c.fillStyle = TK.stone; c.fillRect(wallX - 10, yc - bh * 0.9, 10, bh * 1.4);
+  // escala
+  c.font = '11px ' + FM; c.fillStyle = TK.muted; c.strokeStyle = TK.muted; c.lineWidth = 1; c.textAlign = 'center'; c.textBaseline = 'top';
+  for (let n = -2; n <= 2; n++) { const X = cx + n * 0.1 * kpx; c.beginPath(); c.moveTo(X, gy); c.lineTo(X, gy + 5); c.stroke(); c.fillText(fmtN(n * 0.1), X, gy + 8); }
+  c.textAlign = 'right'; c.fillText('x (m)', leftW - 6, gy + 22);
+  // posicions clau
+  const top = 10;
+  c.save(); c.setLineDash([4, 4]); c.strokeStyle = TK.muted;
+  [-A, 0, A].forEach(xx => { const X = cx + xx * kpx; c.beginPath(); c.moveTo(X, top + 15); c.lineTo(X, gy); c.stroke(); });
+  c.restore();
+  c.textAlign = 'center'; c.textBaseline = 'top'; c.fillStyle = TK.muted;
+  c.fillText('−A', cx - A * kpx, top); c.fillText('0', cx, top); c.fillText('+A', cx + A * kpx, top);
+  if (D2.mark) {
+    const xs = A / Math.SQRT2;
+    c.save(); c.setLineDash([2, 3]); c.strokeStyle = TK.ink; c.lineWidth = 1.4;
+    [-xs, xs].forEach(xx => { const X = cx + xx * kpx; c.beginPath(); c.moveTo(X, top + 31); c.lineTo(X, gy); c.stroke(); });
+    c.restore();
+    c.fillStyle = TK.ink;
+    c.fillText('−A/√2', cx - xs * kpx, top + 16); c.fillText('+A/√2', cx + xs * kpx, top + 16);
+  }
+  // molla i bloc
+  const bx = cx + x * kpx;
+  c.strokeStyle = TK.ink; c.lineWidth = 2; c.lineJoin = 'round';
+  spring(c, wallX, bx - bw / 2, yc, 12, 8);
+  c.fillStyle = TK.wood; c.strokeStyle = TK.wood2; c.lineWidth = 2;
+  c.fillRect(bx - bw / 2, yc - bh / 2, bw, bh); c.strokeRect(bx - bw / 2, yc - bh / 2, bw, bh);
+  c.fillStyle = TK.surface; c.font = 'italic 500 14px ' + FB; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('m', bx, yc + 1);
+  const lv = v / (A * w) * Math.min(60, leftW * 0.1);
+  arrow(c, bx, yc - bh / 2 - 9, bx + lv, yc - bh / 2 - 9, TK.x, 2.4);
+  if (Math.abs(lv) > 8) { c.fillStyle = TK.x; c.font = 'italic 500 13px ' + FB; c.textAlign = lv > 0 ? 'left' : 'right'; c.fillText('v', bx + lv + (lv > 0 ? 5 : -5), yc - bh / 2 - 9); }
+  // barra d'energia
+  const bx0 = leftW + (W < 520 ? 12 : 30), bw2 = W < 520 ? 26 : Math.min(46, barW - 80), bTop = 26, bBot = H - 22, bh2 = bBot - bTop;
+  const hp = Ep / Em * bh2, hc = Ec / Em * bh2;
+  c.fillStyle = TK.ep; c.fillRect(bx0, bBot - hp, bw2, hp);
+  c.fillStyle = TK.ec; c.fillRect(bx0, bBot - hp - hc, bw2, hc);
+  c.strokeStyle = TK.ink; c.lineWidth = 1.2; c.strokeRect(bx0 + .5, bTop + .5, bw2, bh2);
+  if (D2.mark) { c.save(); c.setLineDash([2, 3]); c.strokeStyle = TK.ink; c.beginPath(); c.moveTo(bx0 - 4, bTop + bh2 / 2); c.lineTo(bx0 + bw2 + 4, bTop + bh2 / 2); c.stroke(); c.restore(); }
+  const dE = Em < 0.01 ? 4 : 3, lx = bx0 + bw2 + 7;
+  c.font = (W < 520 ? '10px ' : '11px ') + FM; c.textAlign = 'left'; c.textBaseline = 'middle';
+  const yc1 = Math.min(bTop + Math.max(14, hc / 2), bBot - 44), yp1 = Math.max(bBot - Math.max(14, hp / 2), bTop + 44);
+  c.fillStyle = TK.ec; c.fillText('Ec ' + fmt(Ec / Em * 100, 0) + ' %', lx, yc1 - 7); c.fillText(fmt(Ec, dE) + ' J', lx, yc1 + 7);
+  c.fillStyle = TK.ep; c.fillText('Ep ' + fmt(Ep / Em * 100, 0) + ' %', lx, yp1 - 7); c.fillText(fmt(Ep, dE) + ' J', lx, yp1 + 7);
+  c.fillStyle = TK.ink; c.textAlign = 'right'; c.textBaseline = 'bottom'; c.fillText('Em = ' + fmt(Em, dE) + ' J', W - 6, bTop - 4);
+}
+function drawE2t() {
+  const { c, W, H } = fit($('c2t'));
+  const { w, T, Em } = d2(), tMax = 2 * T, t = D2.t;
+  const ml = 52, mr = 12, mt = 16, mb = 26, ym = Em * 1.15;
+  const X = tt => ml + tt / tMax * (W - ml - mr), Y = e => H - mb - e / ym * (H - mb - mt);
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const es = niceStep(ym, 4);
+  c.lineWidth = 1; c.strokeStyle = TK.grid; c.beginPath();
+  for (let e = 0; e <= ym + 1e-12; e += es) { const y = Math.round(Y(e)) + .5; c.moveTo(ml, y); c.lineTo(W - mr, y); }
+  for (let q = 0; q <= 8; q++) { const xx = Math.round(X(q * T / 4)) + .5; c.moveTo(xx, mt); c.lineTo(xx, H - mb); }
+  c.stroke();
+  c.font = '10.5px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'right'; c.textBaseline = 'middle';
+  for (let e = 0; e <= ym + 1e-12; e += es) c.fillText(fmtN(+e.toPrecision(3)), ml - 6, Y(e));
+  c.textAlign = 'center'; c.textBaseline = 'top';
+  for (let q = 0; q <= 4; q++) c.fillText(fmt(q * T / 2), X(q * T / 2), H - mb + 6);
+  c.textAlign = 'right'; c.textBaseline = 'bottom'; c.fillText('t (s)', W - mr - 2, H - mb - 3); c.textAlign = 'left'; c.textBaseline = 'bottom'; c.fillText('E (J)', 6, 12);
+  c.strokeStyle = TK.muted; c.beginPath(); c.moveTo(ml + .5, mt); c.lineTo(ml + .5, H - mb); c.moveTo(ml, H - mb + .5); c.lineTo(W - mr, H - mb + .5); c.stroke();
+  c.save(); c.setLineDash([6, 4]); c.strokeStyle = TK.ink; c.lineWidth = 1.6; c.beginPath(); c.moveTo(ml, Y(Em)); c.lineTo(W - mr, Y(Em)); c.stroke(); c.restore();
+  const fs = [{ f: tt => Em * Math.sin(w * tt) ** 2, col: TK.ec }, { f: tt => Em * Math.cos(w * tt) ** 2, col: TK.ep }];
+  fs.forEach(s => {
+    c.save(); c.setLineDash([4, 4]); c.globalAlpha = 0.4; c.strokeStyle = s.col; c.lineWidth = 1.5; curve(c, s.f, 0, tMax, X, Y); c.stroke(); c.restore();
+    if (t > 0) { c.strokeStyle = s.col; c.lineWidth = 2.2; curve(c, s.f, 0, t, X, Y, Math.max(8, Math.ceil(120 * t / tMax))); c.stroke(); }
+    c.fillStyle = s.col; c.beginPath(); c.arc(X(t), Y(s.f(t)), 4, 0, 7); c.fill();
+  });
+  c.save(); c.setLineDash([2, 3]); c.strokeStyle = TK.muted; c.lineWidth = 1; c.beginPath(); c.moveTo(X(t) + .5, mt); c.lineTo(X(t) + .5, H - mb); c.stroke(); c.restore();
+}
+let key2 = '';
+function texts2() {
+  const { w, T, Em } = d2(), A = D2.A, k = D2.k, m = D2.m, t = D2.t;
+  const x = A * Math.cos(w * t), v = -A * w * Math.sin(w * t);
+  const Ep = 0.5 * k * x * x, Ec = 0.5 * m * v * v;
+  $('d2rx').textContent = fmt(x, 3) + ' m'; $('d2rv').textContent = fmt(v) + ' m/s';
+  $('d2rc').textContent = fmt(Ec, 4) + ' J'; $('d2rp').textContent = fmt(Ep, 4) + ' J';
+  $('d2rm').textContent = fmt(Em, 4) + ' J'; $('d2rT').textContent = fmt(T, 3) + ' s';
+  $('d2tout').textContent = 't = ' + fmt(t) + ' s';
+  setScrub('d2scrub', t);
+  $('d2n1').textContent = 'Ep = ½·k·x² = ½·' + fmtN(k) + '·(' + fmt(x, 3) + ')² = ' + fmt(Ep, 4) + ' J';
+  $('d2n2').textContent = 'Ec = ½·m·v² = ½·' + fmtN(m) + '·(' + fmt(v, 3) + ')² = ' + fmt(Ec, 4) + ' J';
+  $('d2n3').innerHTML = 'Em = <span class="tec">Ec</span> + <span class="tep">Ep</span> = <span class="tec">' + fmt(Ec, 4) + '</span> + <span class="tep">' + fmt(Ep, 4) + '</span> = ' + fmt(Ec + Ep, 4) + ' J = ½·k·A² (constant)';
+  const key = [A, k, m].join('|'); if (key !== key2) { key2 = key; $('d2scrub').max = (2 * T).toFixed(3); }
+  $('d2play').textContent = D2.play ? 'Pausa' : 'Continua';
+}
+register($('c2s'), step2, () => { drawScene2(); drawE2x(); drawE2t(); texts2(); });
+
+/* =====================================================
+   DEMO 3 · pèndol
+   ===================================================== */
+const D3 = { L: 1, g: 9.81, th0: 10, m: 0.5, play: true, speed: 0.5, frc: true };
+const S3 = { t: 0 };
+function reset3() { S3.t = 0; }
+bind('d3L', 'd3Ln', D3, 'L', 0.2, 2.5, reset3);
+bind('d3a', 'd3an', D3, 'th0', 1, 15, reset3);
+bind('d3m', 'd3mn', D3, 'm', 0.1, 2, () => {});
+const mark3 = () => document.querySelectorAll('#d3gseg button').forEach(b => b.setAttribute('aria-pressed', Math.abs(+b.dataset.g - D3.g) < 1e-6));
+document.querySelectorAll('#d3gseg button').forEach(b => b.onclick = () => { D3.g = +b.dataset.g; mark3(); reset3(); });
+mark3();
+segBind('d3seg', 'v', D3, 'speed');
+$('d3frc').onchange = e => D3.frc = e.target.checked;
+$('d3play').onclick = () => { D3.play = !D3.play; };
+$('d3reset').onclick = reset3;
+function step3(dt) { if (D3.play) S3.t += dt * D3.speed; }
+function drawPend() {
+  const { c, W, H } = fit($('c3'));
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const w = Math.sqrt(D3.g / D3.L), T = 2 * PI / w;
+  const th = D3.th0 * DEG * Math.cos(w * S3.t);
+  const px = W / 2, py = 34;
+  const Pl = Math.min(150, H * 0.27), kp = (H - py - Pl - 30) / Math.max(D3.L, 1.2), Lp = D3.L * kp;
+  // suport, vertical i arc de l'oscil·lació
+  c.fillStyle = TK.stone; c.fillRect(px - 60, py - 12, 120, 10);
+  c.save(); c.setLineDash([3, 4]); c.lineWidth = 1.2;
+  c.strokeStyle = TK.grid2; c.beginPath(); c.arc(px, py, Lp, PI / 2 - D3.th0 * DEG, PI / 2 + D3.th0 * DEG); c.stroke();
+  c.strokeStyle = TK.muted; c.beginPath(); c.moveTo(px, py); c.lineTo(px, py + Lp + 26); c.stroke(); c.restore();
+  const bx = px + Lp * Math.sin(th), by = py + Lp * Math.cos(th);
+  // angle
+  if (Math.abs(th) > 0.5 * DEG) {
+    c.strokeStyle = TK.ink; c.lineWidth = 1.1; c.beginPath();
+    c.arc(px, py, Math.min(46, Lp * 0.4), PI / 2, PI / 2 - th, th > 0); c.stroke();
+    c.fillStyle = TK.ink; c.font = 'italic 500 13px ' + FB; c.textAlign = th > 0 ? 'left' : 'right'; c.textBaseline = 'middle';
+    c.fillText('θ', px + (th > 0 ? 6 : -6), py + Math.min(46, Lp * 0.4) + 10);
+  }
+  // fil i massa
+  const r = 7 + D3.m * 5;
+  c.strokeStyle = TK.ink; c.lineWidth = 1.8; c.beginPath(); c.moveTo(px, py); c.lineTo(bx, by); c.stroke();
+  c.fillStyle = TK.ball; c.beginPath(); c.arc(bx, by, r, 0, 7); c.fill();
+  c.fillStyle = TK.ink; c.beginPath(); c.arc(px, py, 3, 0, 7); c.fill();
+  // forces: pes i components (el pes es dibuixa sempre amb la mateixa llargada; el valor és a les lectures)
+  if (D3.frc) {
+    const P = Pl, s = Math.sin(th), co = Math.cos(th);
+    const tx = -s * co * P, ty = s * s * P;        // component tangencial (cap a l'equilibri)
+    const nx = s * co * P, ny = co * co * P;        // component en la direcció del fil
+    c.save(); c.setLineDash([4, 3]); c.strokeStyle = TK.muted; c.lineWidth = 1;
+    c.beginPath(); c.moveTo(bx + tx, by + ty); c.lineTo(bx, by + P); c.lineTo(bx + nx, by + ny); c.stroke(); c.restore();
+    arrow(c, bx, by, bx + nx, by + ny, TK.grid2, 2);
+    // tensió: cap al punt de suspensió, a la mateixa escala que el pes
+    const vth = -D3.th0 * DEG * w * Math.sin(w * S3.t), FTr = co + D3.L * vth * vth / D3.g;
+    const ux = (px - bx) / Lp, uy = (py - by) / Lp;
+    arrow(c, bx, by, bx + ux * P * FTr, by + uy * P * FTr, TK.t, 2.6);
+    c.fillStyle = TK.t; c.font = 'italic 500 13px ' + FB; c.textAlign = th > 0 ? 'right' : 'left'; c.textBaseline = 'middle';
+    c.fillText('FT', bx + ux * P * FTr * 0.55 + (th > 0 ? -8 : 8), by + uy * P * FTr * 0.55);
+    arrow(c, bx, by, bx, by + P, TK.muted, 2.4);
+    arrow(c, bx, by, bx + tx, by + ty, TK.f, 2.8);
+    c.font = 'italic 500 13px ' + FB; c.textBaseline = 'middle';
+    c.fillStyle = TK.muted; c.textAlign = 'left'; c.fillText('P = m·g', bx + 8, by + P + 4);
+    if (Math.abs(tx) > 6) { c.fillStyle = TK.f; c.textAlign = tx < 0 ? 'right' : 'left'; c.fillText('F', bx + tx + (tx < 0 ? -6 : 6), by + ty); }
+  }
+  c.font = '12px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'left'; c.textBaseline = 'middle';
+  c.fillText('θ₀ = ' + D3.th0 + '°', 12, H - 16);
+  c.textAlign = 'right'; c.fillText('L = ' + fmt(D3.L) + ' m · m = ' + fmt(D3.m) + ' kg', W - 12, H - 16);
+  // lectures
+  const F = -D3.m * D3.g * Math.sin(th);
+  const vth3 = -D3.th0 * DEG * w * Math.sin(w * S3.t), v = D3.L * vth3;
+  const FT = D3.m * D3.g * Math.cos(th) + D3.m * v * v / D3.L;
+  $('d3rt').textContent = fmt(S3.t) + ' s'; $('d3rth').textContent = fmt(th / DEG, 1) + '°';
+  $('d3rv').textContent = fmt(v, 3) + ' m/s'; $('d3rF').textContent = fmt(F, 3) + ' N';
+  $('d3rFT').textContent = fmt(FT, 3) + ' N'; $('d3rT').textContent = fmt(T, 3) + ' s';
+  $('d3n3').textContent = 'v = −L·θ₀·ω·sin(ω·t) = ' + fmt(v, 3) + ' m/s   (θ₀ en rad)';
+  $('d3n4').textContent = 'FT = m·g·cos θ + m·v²/L = ' + fmtN(D3.m) + '·' + fmtN(D3.g) + '·cos(' + fmt(th / DEG, 1) + '°) + ' + fmtN(D3.m) + '·(' + fmt(v, 3) + ')²/' + fmtN(D3.L) + ' = ' + fmt(FT, 3) + ' N';
+  $('d3n1').textContent = 'θ = θ₀·cos(ω·t) = ' + D3.th0 + '°·cos(' + fmt(w) + '·' + fmt(S3.t) + ') = ' + fmt(th / DEG, 1) + '°';
+  $('d3n2').textContent = 'F = −m·g·sin θ = −' + fmtN(D3.m) + '·' + fmtN(D3.g) + '·sin(' + fmt(th / DEG, 1) + '°) = ' + fmt(F, 3) + ' N';
+  $('d3play').textContent = D3.play ? 'Pausa' : 'Continua';
+}
+register($('c3'), step3, drawPend);
+
+/* ---------- bucle ---------- */
+let last = performance.now();
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  readTokens();
+  demos.forEach(d => { if (d.vis) { d.step(dt); d.draw(); } });
+  requestAnimationFrame(frame);
+}
+readTokens();
+requestAnimationFrame(frame);
+
+/* =====================================================
+   EXERCICIS
+   ===================================================== */
+const P = (arr) => '<ol class="parts">' + arr.map(s => '<li>' + s + '</li>').join('') + '</ol>';
+const R = s => '<span class="res">' + s + '</span>';
+const EX = [
+  { g: 1, ti: 'Llegir una equació', hint: 'Compara amb x = A·cos(ω·t + φ). Per a la velocitat i l\'acceleració, deriva o utilitza els valors màxims A·ω i A·ω².',
+    q: '<p>Un cos descriu un MHS d\'equació <i>x</i>(<i>t</i>) = 0,05·cos(4π·<i>t</i> + π/3) (unitats SI). Determina:</p>' + P([
+      'l\'amplitud, la pulsació, el període, la freqüència i la fase inicial;',
+      'la posició inicial;',
+      'l\'equació de la velocitat i la velocitat màxima;',
+      'l\'acceleració màxima.']),
+    s: P([
+      'A = ' + R('0,05 m') + '; ω = 4π = ' + R('12,57 rad/s') + '; T = 2π/ω = ' + R('0,50 s') + '; f = 1/T = ' + R('2,0 Hz') + '; φ = ' + R('π/3 rad') + '.',
+      'x(0) = 0,05·cos(π/3) = ' + R('0,025 m') + '.',
+      'v(t) = −A·ω·sin(ωt + φ) = ' + R('−0,63·sin(4π·t + π/3) m/s') + '; v<sub>màx</sub> = A·ω = 0,05·4π = ' + R('0,63 m/s') + '.',
+      'a<sub>màx</sub> = A·ω² = 0,05·(4π)² = ' + R('7,9 m/s²') + '.']) },
+  { g: 1, ti: 'Escriure l\'equació', hint: 'Si x(0) = +A, aleshores cos φ = 1. Posa la calculadora en radians.',
+    q: '<p>Una partícula oscil·la amb una amplitud de 8 cm i un període de 2 s. En <i>t</i> = 0 es troba en l\'extrem positiu (<i>x</i> = +<i>A</i>).</p>' + P([
+      'Escriu l\'equació <i>x</i>(<i>t</i>).',
+      'Quina posició i quina velocitat té en <i>t</i> = 0,5 s?']),
+    s: P([
+      'A = 0,08 m; ω = 2π/T = π rad/s; x(0) = A → cos φ = 1 → φ = 0. Per tant ' + R('x(t) = 0,08·cos(π·t) m') + '.',
+      'x(0,5) = 0,08·cos(π/2) = ' + R('0 m') + ' (passa per l\'equilibri). v(t) = −0,08π·sin(π·t) → v(0,5) = ' + R('−0,25 m/s') + '. El signe negatiu indica que es mou cap a x negatives, és a dir, cap a l\'equilibri des de +A.']) },
+  { g: 1, ti: 'Massa–molla', hint: 'ω = √(k/m), i després T = 2π/ω.',
+    q: '<p>Una massa de 0,40 kg, unida a una molla horitzontal de constant <i>k</i> = 25 N/m, oscil·la sense fricció. Calcula la pulsació, el període i la freqüència del moviment.</p>',
+    s: '<p>ω = √(k/m) = √(25/0,40) = ' + R('7,91 rad/s') + '. T = 2π/ω = ' + R('0,79 s') + '. f = 1/T = ' + R('1,26 Hz') + '.</p><p>Aquests valors no depenen de l\'amplitud.</p>' },
+  { g: 1, ti: 'Pèndol simple', hint: 'T = 2π·√(L/g). Per aïllar L, eleva al quadrat els dos membres.',
+    q: '<p>Un pèndol simple té una longitud de 1,00 m.</p>' + P([
+      'Calcula\'n el període a la Terra (<i>g</i> = 9,81 m/s²) i a la Lluna (<i>g</i> = 1,62 m/s²).',
+      'Quina longitud ha de tenir a la Terra perquè el període sigui 1,00 s?']),
+    s: P([
+      'T<sub>Terra</sub> = 2π√(1,00/9,81) = ' + R('2,01 s') + '; T<sub>Lluna</sub> = 2π√(1,00/1,62) = ' + R('4,94 s') + ' (2,46 vegades més gran, perquè la gravetat és menor).',
+      'T² = 4π²·L/g → L = g·T²/(4π²) = 9,81·1,00²/(4π²) = ' + R('0,248 m') + ' (uns 25 cm).']) },
+
+  { g: 2, ti: 'Molla penjada', hint: 'En l\'equilibri, el pes i la força elàstica s\'igualen: k·Δx = m·g. Si s\'amolla des del repòs, l\'amplitud és el desplaçament inicial.',
+    q: '<p>Una molla penja verticalment i s\'allarga 10,0 cm quan hi pengem una massa de 0,200 kg. (<i>g</i> = 9,81 m/s²)</p>' + P([
+      'Calcula la constant elàstica <i>k</i>.',
+      'Separem la massa 3,0 cm cap avall de la posició d\'equilibri i la deixem anar. Calcula el període, la velocitat màxima i l\'acceleració màxima.']),
+    s: P([
+      'k·Δx = m·g → k = 0,200·9,81/0,100 = ' + R('19,6 N/m') + '.',
+      'ω = √(k/m) = √(19,62/0,200) = 9,90 rad/s → T = 2π/ω = ' + R('0,634 s') + '. A = 0,030 m (s\'amolla en repòs). v<sub>màx</sub> = A·ω = 0,030·9,90 = ' + R('0,30 m/s') + '; a<sub>màx</sub> = A·ω² = 0,030·98,1 = ' + R('2,9 m/s²') + '.']) +
+      '<p>El pes només desplaça l\'equilibri; l\'oscil·lació al voltant d\'ell té ω = √(k/m). Comprovació: T = 2π√(Δx/g) també dóna 0,634 s.</p>' },
+  { g: 2, ti: 'Energia en un oscil·lador', hint: 'E<sub>m</sub> = ½kA² és constant. E<sub>c</sub> = E<sub>m</sub> − E<sub>p</sub>. ',
+    q: '<p>Un oscil·lador té <i>m</i> = 0,250 kg, <i>k</i> = 64,0 N/m i una amplitud de 5,00 cm.</p>' + P([
+      'Calcula l\'energia mecànica.',
+      'Calcula <i>E</i><sub>c</sub>, <i>E</i><sub>p</sub> i la velocitat quan <i>x</i> = 3,00 cm.',
+      'Quina és la velocitat màxima?',
+      'En quina posició <i>E</i><sub>c</sub> = <i>E</i><sub>p</sub>?']),
+    s: P([
+      'E<sub>m</sub> = ½·k·A² = ½·64,0·0,0500² = ' + R('0,0800 J') + '.',
+      'E<sub>p</sub> = ½·64,0·0,0300² = ' + R('0,0288 J') + '; E<sub>c</sub> = E<sub>m</sub> − E<sub>p</sub> = ' + R('0,0512 J') + '; v = √(2·E<sub>c</sub>/m) = √(2·0,0512/0,250) = ' + R('0,640 m/s') + '.',
+      'v<sub>màx</sub> = A·ω = 0,0500·16,0 = ' + R('0,800 m/s') + ' (a x = 0, on E<sub>c</sub> = E<sub>m</sub>).',
+      'E<sub>c</sub> = E<sub>p</sub> → E<sub>p</sub> = E<sub>m</sub>/2 → ½kx² = ¼kA² → x = ±A/√2 = ' + R('±3,54 cm') + '.']) },
+  { g: 2, ti: 'Quant triga?', hint: 'Isola t de la condició x = 5 cm. Pensa en angles: sin(πt) = 0,5 quan πt = π/6.',
+    q: '<p>Una partícula descriu un MHS d\'amplitud 10 cm i període 2,0 s. Passa per <i>x</i> = 0 en <i>t</i> = 0 amb velocitat positiva, de manera que <i>x</i>(<i>t</i>) = 0,10·sin(π·<i>t</i>) (SI).</p>' + P([
+      'Quant triga a arribar a <i>x</i> = 5,0 cm per primera vegada?',
+      'Quant triga a anar de <i>x</i> = 5,0 cm a l\'extrem (<i>x</i> = 10 cm)?',
+      'Compara els dos temps i explica per què no són iguals.']),
+    s: P([
+      '0,05 = 0,10·sin(π·t) → sin(π·t) = 0,5 → π·t = π/6 → t = 1/6 = ' + R('0,17 s') + '.',
+      'L\'extrem s\'assoleix quan π·t = π/2 → t = 0,50 s (T/4). El temps de 5 cm a 10 cm és 0,50 − 0,167 = ' + R('0,33 s') + '.',
+      'Els primers 5 cm es recorren en 0,17 s i els últims 5 cm en 0,33 s, el doble. Prop de l\'equilibri la velocitat és màxima i prop de l\'extrem tendeix a 0, i per això el recorregut final és més lent.']) }
+];
+const PAU = [{"g": 3, "ti": "L'agulla d'una màquina de cosir", "src": "PAU Juny 2014 · Sèrie 4 · P5", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Juny/4/1346", "hint": "L'amplitud és la meitat de la distància entre els dos extrems. Cada puntada és una oscil·lació completa.", "q": "<p>L'agulla d'una màquina de cosir puja i baixa amb un MHS entre dos punts separats 20 mm. Segons el fabricant, pot fer 1 800 puntades per minut.</p><ol class=\"parts\"><li>Calculeu la freqüència en Hz i escriviu l'equació del moviment, si en l'instant inicial l'agulla és a la posició més alta.</li><li>Calculeu la velocitat màxima i l'acceleració màxima de l'agulla.</li></ol>", "s": "<ol class=\"parts\"><li><b>Amplitud.</b> Els extrems estan separats 20 mm, i l'amplitud és la meitat: A = 10 mm = 0,010 m.<br><b>Freqüència.</b> Cada puntada és una oscil·lació: f = 1 800 / 60 s = <span class=\"res\">30 Hz</span>. Pulsació: ω = 2π·f = 60π ≈ 188,5 rad/s.<br><b>Fase inicial.</b> Prenent l'eix positiu cap amunt, en t = 0 l'agulla és a x = +A, per tant cos φ = 1 i φ = 0.<br><b>Equació:</b> <span class=\"res\">x(t) = 0,010·cos(60π·t) m</span> (equivalent a x = 0,010·sin(60π·t + π/2)).</li><li>v<sub>màx</sub> = A·ω = 0,010·60π = <span class=\"res\">1,88 m/s</span> (en passar pel punt d'equilibri).<br>a<sub>màx</sub> = A·ω² = 0,010·(60π)² = <span class=\"res\">355 m/s²</span> (als extrems).</li></ol>"}, {"g": 3, "ti": "El pistó d'un motor", "src": "PAU Juny 2016 · Sèrie 5", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Juny/5/4004", "hint": "El recorregut d'extrem a extrem és 2A. Passa les rpm a Hz dividint entre 60. La força màxima és m·a<sub>màx</sub>.", "q": "<p>El pistó d'un motor fa un moviment vibratori harmònic simple. En un règim de funcionament determinat, el seu recorregut d'extrem a extrem és de 20,0 cm i el motor gira a 1,91 × 10³ rpm. En l'instant t = 0,00 s, el pistó és a 10,0 cm de la posició d'equilibri.</p><ol class=\"parts\"><li>Determineu l'equació del moviment i la velocitat màxima del pistó.</li><li>Calculeu la força màxima que actua sobre el pistó, si té una massa de 200 g.</li></ol>", "s": "<ol class=\"parts\"><li><b>Amplitud:</b> A = 20,0/2 = 10,0 cm = 0,100 m.<br><b>Freqüència:</b> cada volta del motor és una oscil·lació del pistó: f = 1,91 × 10³ / 60 = 31,8 Hz, i ω = 2π·f = <span class=\"res\">200 rad/s</span>.<br><b>Fase inicial:</b> en t = 0 el pistó és a 10,0 cm de l'equilibri, és a dir, a l'extrem x = +A: cos φ = 1, φ = 0.<br><b>Equació:</b> <span class=\"res\">x(t) = 0,100·cos(200·t) m</span>.<br><b>Velocitat màxima:</b> v<sub>màx</sub> = A·ω = 0,100·200 = <span class=\"res\">20,0 m/s</span>.</li><li>La força és màxima on l'acceleració és màxima, als extrems: F<sub>màx</sub> = m·a<sub>màx</sub> = m·A·ω² = 0,200·0,100·200² = <span class=\"res\">800 N</span>.</li></ol>"}, {"g": 3, "ti": "Una esfera a l'extrem d'una vareta", "src": "PAU Juny 2018 · Sèrie 5 · P3 (opció A)", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2018/Juny/5/594", "hint": "La constant surt de la llei de Hooke amb la força i el desplaçament que et donen. Per deduir ω, iguala −k·x = m·a i compara amb a = −ω²·x.", "q": "<p>Una esfera d'acer de 0,300 kg està fixada a l'extrem d'una vareta metàl·lica prima, de massa negligible, clavada verticalment en un suport fix, de manera que l'extrem amb l'esfera pot oscil·lar lliurement. Si s'aplica una força de 8,00 N sobre l'esfera, aquesta es desplaça 4,0 cm. Suposeu que el desplaçament és rectilini i horitzontal i que la força recuperadora de la vareta compleix la llei de Hooke.</p><ol class=\"parts\"><li>Calculeu la constant elàstica k. Deduïu, a partir de la segona llei de Newton, la fórmula de la freqüència d'oscil·lació i calculeu el període.</li><li>Deduïu, a partir de l'equació del MHS, la fórmula de l'acceleració màxima i calculeu-la en aquest cas.</li></ol>", "s": "<ol class=\"parts\"><li><b>Constant:</b> F = k·x → k = 8,00 / 0,040 = <span class=\"res\">200 N/m</span>.<br><b>Deducció:</b> l'única força horitzontal és la recuperadora, F = −k·x. Per la segona llei de Newton, m·a = −k·x → a = −(k/m)·x. Comparant amb l'equació característica del MHS, a = −ω²·x, s'obté ω = √(k/m) i, per tant, f = (1/2π)·√(k/m).<br><b>Valors:</b> ω = √(200/0,300) = 25,8 rad/s; f = 25,8/2π = 4,11 Hz; <span class=\"res\">T = 1/f = 0,243 s</span>.</li><li><b>Deducció:</b> x(t) = A·cos(ω·t + φ) → v(t) = −A·ω·sin(ω·t + φ) → a(t) = −A·ω²·cos(ω·t + φ). El valor màxim del cosinus és 1, per tant a<sub>màx</sub> = A·ω² = (k/m)·A, i s'assoleix als extrems.<br><b>Valor:</b> si l'esfera oscil·la després de desplaçar-la 4,0 cm, A = 0,040 m i a<sub>màx</sub> = 0,040·(200/0,300) = <span class=\"res\">26,7 m/s²</span>.</li></ol>"}, {"g": 3, "ti": "Un insecte a la teranyina", "src": "PAU Setembre 2020 · Sèrie 4 · P3", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2020/Setembre/4/2867", "hint": "La constant de la teranyina és la mateixa en els dos casos. Escriu k = m·(2πf)² per a l'aranya sola i per a l'aranya amb l'insecte, i iguala.", "q": "<p>El moviment d'un insecte en una teranyina es pot modelitzar com una massa a l'extrem d'una molla (MHS). Quan l'aranya és sola a la teranyina, aquesta vibra a 12 Hz. Si hi queda atrapat un insecte d'1,00 g, el conjunt aranya-insecte vibra a 10 Hz.</p><ol class=\"parts\"><li>Calculeu la massa de l'aranya.</li><li>Calculeu la constant elàstica de la teranyina. En quines posicions aquest MHS té la velocitat màxima? I l'acceleració màxima?</li></ol>", "s": "<ol class=\"parts\"><li>Per a una massa en una molla, ω = 2π·f = √(k/m), és a dir, k = m·(2π·f)². Com que k és la mateixa: m<sub>a</sub>·(2π·12)² = (m<sub>a</sub> + 1,00 g)·(2π·10)² → 144·m<sub>a</sub> = 100·(m<sub>a</sub> + 1,00) → 44·m<sub>a</sub> = 100 → <span class=\"res\">m<sub>a</sub> = 2,27 g</span>.</li><li>k = m<sub>a</sub>·(2π·f<sub>1</sub>)² = 2,27 × 10⁻³·(24π)² = <span class=\"res\">12,9 N/m</span> (comprovació amb l'insecte: 3,27 × 10⁻³·(20π)² = 12,9 N/m).<br><b>Velocitat màxima</b> a la posició d'equilibri (x = 0), perquè v = ±ω·√(A² − x²) és màxima quan x = 0.<br><b>Acceleració màxima</b> als extrems (x = ±A), perquè a = −ω²·x és màxima en valor absolut on |x| és màxim.</li></ol>"}, {"g": 3, "ti": "Salt de pont", "src": "PAU Juny 2021 · Sèrie 5 · P6", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2021/Juny/5/2886", "hint": "A l'equilibri, el pes i la força de la corda s'igualen: k·Δl = m·g. La longitud de la corda és la natural més l'allargament.", "q": "<p>Una saltadora de 60 kg fa salt de pont vertical amb una corda elàstica de 30 m de longitud natural. Un cop la corda es tensa, la saltadora fa 6 oscil·lacions en 30 s. La distància entre el punt d'equilibri i el punt més alt de l'oscil·lació és de 4 m. Negligiu els fregaments i considereu que la corda es comporta com una molla que compleix la llei de Hooke.</p><ol class=\"parts\"><li>Calculeu la freqüència, el període i la freqüència angular. Escriviu l'equació del moviment (desplaçament respecte de l'equilibri en funció del temps) si l'instant inicial correspon al punt més alt.</li><li>Quant val la constant elàstica de la corda? Quan la saltadora queda aturada en el punt d'equilibri, quina és la longitud de la corda?</li></ol>", "s": "<ol class=\"parts\"><li>f = 6 / 30 s = <span class=\"res\">0,20 Hz</span>; T = 1/f = <span class=\"res\">5,0 s</span>; ω = 2π·f = 0,4π = <span class=\"res\">1,26 rad/s</span>.<br>L'amplitud és la distància de l'equilibri a l'extrem: A = 4 m. Amb l'eix positiu cap amunt, en t = 0 és al punt més alt, x = +A → φ = 0.<br><b>Equació:</b> <span class=\"res\">x(t) = 4·cos(0,4π·t) m</span>.</li><li>k = m·ω² = 60·(0,4π)² = <span class=\"res\">94,7 N/m</span>.<br>A l'equilibri, la força de la corda equilibra el pes: k·Δl = m·g → Δl = 60·9,81 / 94,7 = 6,2 m. La longitud de la corda és 30 + 6,2 = <span class=\"res\">36,2 m</span>.</li></ol>"}, {"g": 3, "ti": "Pesar-se a l'espai i a la Lluna", "src": "PAU Juny 2019 · Sèrie 1 · P3 (opció A)", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2019/Juny/1/1142", "hint": "A l'espai no es pot pesar, però el període d'una molla depèn de la massa total que hi oscil·la (astronauta + cadira). Per a la Lluna, aïlla g del període del pèndol i després usa g = G·M/R².", "q": "<p>Un astronauta vol mesurar la seva massa a l'espai. S'asseu i es lliga a una cadira de 2,00 kg unida a una molla de constant k = 320 N/m. S'impulsa i triga 62,8 s a fer 20 oscil·lacions completes.</p><ol class=\"parts\"><li>Quina és la massa de l'astronauta?</li><li>A la Lluna, fa oscil·lar un pèndol simple d'1,00 kg i 1,50 m de longitud, que triga 2 min 1 s a fer 20 oscil·lacions completes. Quina és la intensitat del camp gravitatori a la superfície de la Lluna? Quina és la massa de la Lluna?<br>Dades: G = 6,67 × 10⁻¹¹ N·m²/kg²; R<sub>Lluna</sub> = 1,737 × 10⁶ m; T = 2π·√(L/g).</li></ol>", "s": "<ol class=\"parts\"><li>T = 62,8 / 20 = 3,14 s. Per a una massa en una molla, T = 2π·√(m<sub>total</sub>/k) → m<sub>total</sub> = k·T²/(4π²) = 320·3,14²/(4π²) = 79,9 kg. Aquesta massa inclou la cadira: m<sub>astronauta</sub> = 79,9 − 2,00 = <span class=\"res\">77,9 kg</span>.</li><li>T = 121 s / 20 = 6,05 s. De T = 2π·√(L/g): g = 4π²·L/T² = 4π²·1,50/6,05² = <span class=\"res\">1,62 m/s²</span> (la massa del pèndol no intervé).<br>A la superfície, g = G·M/R² → M = g·R²/G = 1,62·(1,737 × 10⁶)² / 6,67 × 10⁻¹¹ = <span class=\"res\">7,32 × 10²² kg</span>.</li></ol>"}, {"g": 3, "ti": "Bloc i molla: energia durant un període", "src": "PAU Juny 2021 · Sèrie 2 · P3", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2021/Juny/2/2875", "hint": "L'amplitud és l'allargament inicial respecte de la longitud natural. E<sub>p</sub> = E<sub>m</sub>·cos²(ωt) i E<sub>c</sub> = E<sub>m</sub>·sin²(ωt).", "q": "<p>Un bloc de 2 kg, inicialment en repòs, està lligat a l'extrem d'una molla horitzontal de constant 300 N/m i longitud natural 30 cm; l'altre extrem de la molla és fix a una paret. Es desplaça el bloc cap a la dreta fins que la molla fa 45 cm i es deixa anar, de manera que oscil·la al voltant de l'equilibri. La fricció és negligible.</p><ol class=\"parts\"><li>Determineu l'amplitud i el període de l'oscil·lació. Escriviu l'equació del moviment.</li><li>Representeu l'evolució de l'energia mecànica, l'energia cinètica i l'energia potencial en funció del temps durant un període.</li></ol>", "s": "<ol class=\"parts\"><li><b>Amplitud:</b> l'equilibri és a la longitud natural (30 cm) i el bloc s'amolla en repòs a 45 cm: A = 45 − 30 = 15 cm = 0,15 m.<br><b>Període:</b> ω = √(k/m) = √(300/2) = 12,2 rad/s; <span class=\"res\">T = 2π/ω = 0,513 s</span>.<br><b>Equació:</b> origen a l'equilibri, eix positiu cap a la dreta; en t = 0, x = +A → φ = 0: <span class=\"res\">x(t) = 0,15·cos(12,2·t) m</span>.</li><li>E<sub>m</sub> = ½·k·A² = ½·300·0,15² = <span class=\"res\">3,38 J</span>, constant.<br>E<sub>p</sub> = ½·k·x² = 3,38·cos²(12,2·t) J: comença a 3,38 J, és nul·la a T/4 = 0,128 s, torna a 3,38 J a T/2 = 0,257 s, etc.<br>E<sub>c</sub> = E<sub>m</sub> − E<sub>p</sub> = 3,38·sin²(12,2·t) J: comença a 0 i és màxima a T/4 i 3T/4.<br>Totes dues oscil·len amb període T/2 i es tallen a E<sub>m</sub>/2 = 1,69 J.<svg class=\"plot\" viewBox=\"0 0 520 210\" role=\"img\" aria-label=\"E (J) en funció de t (s)\"><line x1=\"58.0\" x2=\"58.0\" y1=\"22\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"58.0\" y=\"196\" text-anchor=\"middle\">0</text><line x1=\"169.5\" x2=\"169.5\" y1=\"22\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"169.5\" y=\"196\" text-anchor=\"middle\">0,128</text><line x1=\"281.0\" x2=\"281.0\" y1=\"22\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"281.0\" y=\"196\" text-anchor=\"middle\">0,257</text><line x1=\"392.5\" x2=\"392.5\" y1=\"22\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"392.5\" y=\"196\" text-anchor=\"middle\">0,385</text><line x1=\"504.0\" x2=\"504.0\" y1=\"22\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"504.0\" y=\"196\" text-anchor=\"middle\">0,513</text><line x1=\"58\" x2=\"504\" y1=\"46.7\" y2=\"46.7\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"52\" y=\"50.7\" text-anchor=\"end\">3,38</text><line x1=\"58\" x2=\"504\" y1=\"113.3\" y2=\"113.3\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"52\" y=\"117.3\" text-anchor=\"end\">1,69</text><line x1=\"58\" x2=\"504\" y1=\"180.0\" y2=\"180.0\" stroke=\"var(--muted)\"/><line x1=\"58\" x2=\"58\" y1=\"22\" y2=\"180\" stroke=\"var(--muted)\"/><text x=\"504\" y=\"174.0\" text-anchor=\"end\" class=\"ax\">t (s)</text><text x=\"64\" y=\"34\" text-anchor=\"start\" class=\"ax\">E (J)</text><path d=\"M58.0 46.7L60.2 46.7L62.5 46.7L64.7 46.7L66.9 46.7L69.2 46.7L71.4 46.7L73.6 46.7L75.8 46.7L78.1 46.7L80.3 46.7L82.5 46.7L84.8 46.7L87.0 46.7L89.2 46.7L91.4 46.7L93.7 46.7L95.9 46.7L98.1 46.7L100.4 46.7L102.6 46.7L104.8 46.7L107.1 46.7L109.3 46.7L111.5 46.7L113.8 46.7L116.0 46.7L118.2 46.7L120.4 46.7L122.7 46.7L124.9 46.7L127.1 46.7L129.4 46.7L131.6 46.7L133.8 46.7L136.1 46.7L138.3 46.7L140.5 46.7L142.7 46.7L145.0 46.7L147.2 46.7L149.4 46.7L151.7 46.7L153.9 46.7L156.1 46.7L158.4 46.7L160.6 46.7L162.8 46.7L165.0 46.7L167.3 46.7L169.5 46.7L171.7 46.7L174.0 46.7L176.2 46.7L178.4 46.7L180.7 46.7L182.9 46.7L185.1 46.7L187.3 46.7L189.6 46.7L191.8 46.7L194.0 46.7L196.3 46.7L198.5 46.7L200.7 46.7L203.0 46.7L205.2 46.7L207.4 46.7L209.6 46.7L211.9 46.7L214.1 46.7L216.3 46.7L218.6 46.7L220.8 46.7L223.0 46.7L225.2 46.7L227.5 46.7L229.7 46.7L231.9 46.7L234.2 46.7L236.4 46.7L238.6 46.7L240.9 46.7L243.1 46.7L245.3 46.7L247.5 46.7L249.8 46.7L252.0 46.7L254.2 46.7L256.5 46.7L258.7 46.7L260.9 46.7L263.2 46.7L265.4 46.7L267.6 46.7L269.9 46.7L272.1 46.7L274.3 46.7L276.5 46.7L278.8 46.7L281.0 46.7L283.2 46.7L285.5 46.7L287.7 46.7L289.9 46.7L292.1 46.7L294.4 46.7L296.6 46.7L298.8 46.7L301.1 46.7L303.3 46.7L305.5 46.7L307.8 46.7L310.0 46.7L312.2 46.7L314.5 46.7L316.7 46.7L318.9 46.7L321.1 46.7L323.4 46.7L325.6 46.7L327.8 46.7L330.1 46.7L332.3 46.7L334.5 46.7L336.8 46.7L339.0 46.7L341.2 46.7L343.4 46.7L345.7 46.7L347.9 46.7L350.1 46.7L352.4 46.7L354.6 46.7L356.8 46.7L359.1 46.7L361.3 46.7L363.5 46.7L365.7 46.7L368.0 46.7L370.2 46.7L372.4 46.7L374.7 46.7L376.9 46.7L379.1 46.7L381.3 46.7L383.6 46.7L385.8 46.7L388.0 46.7L390.3 46.7L392.5 46.7L394.7 46.7L397.0 46.7L399.2 46.7L401.4 46.7L403.7 46.7L405.9 46.7L408.1 46.7L410.3 46.7L412.6 46.7L414.8 46.7L417.0 46.7L419.3 46.7L421.5 46.7L423.7 46.7L425.9 46.7L428.2 46.7L430.4 46.7L432.6 46.7L434.9 46.7L437.1 46.7L439.3 46.7L441.6 46.7L443.8 46.7L446.0 46.7L448.2 46.7L450.5 46.7L452.7 46.7L454.9 46.7L457.2 46.7L459.4 46.7L461.6 46.7L463.9 46.7L466.1 46.7L468.3 46.7L470.5 46.7L472.8 46.7L475.0 46.7L477.2 46.7L479.5 46.7L481.7 46.7L483.9 46.7L486.2 46.7L488.4 46.7L490.6 46.7L492.8 46.7L495.1 46.7L497.3 46.7L499.5 46.7L501.8 46.7L504.0 46.7\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-dasharray=\"6 4\"/><path d=\"M58.0 46.7L60.2 46.8L62.5 47.2L64.7 47.9L66.9 48.8L69.2 49.9L71.4 51.4L73.6 53.0L75.8 54.9L78.1 57.1L80.3 59.4L82.5 62.0L84.8 64.8L87.0 67.7L89.2 70.9L91.4 74.2L93.7 77.6L95.9 81.2L98.1 85.0L100.4 88.8L102.6 92.7L104.8 96.8L107.1 100.9L109.3 105.0L111.5 109.2L113.8 113.3L116.0 117.5L118.2 121.7L120.4 125.8L122.7 129.9L124.9 133.9L127.1 137.9L129.4 141.7L131.6 145.5L133.8 149.1L136.1 152.5L138.3 155.8L140.5 159.0L142.7 161.9L145.0 164.7L147.2 167.3L149.4 169.6L151.7 171.8L153.9 173.7L156.1 175.3L158.4 176.7L160.6 177.9L162.8 178.8L165.0 179.5L167.3 179.9L169.5 180.0L171.7 179.9L174.0 179.5L176.2 178.8L178.4 177.9L180.7 176.7L182.9 175.3L185.1 173.7L187.3 171.8L189.6 169.6L191.8 167.3L194.0 164.7L196.3 161.9L198.5 159.0L200.7 155.8L203.0 152.5L205.2 149.1L207.4 145.5L209.6 141.7L211.9 137.9L214.1 133.9L216.3 129.9L218.6 125.8L220.8 121.7L223.0 117.5L225.2 113.3L227.5 109.2L229.7 105.0L231.9 100.9L234.2 96.8L236.4 92.7L238.6 88.8L240.9 85.0L243.1 81.2L245.3 77.6L247.5 74.2L249.8 70.9L252.0 67.7L254.2 64.8L256.5 62.0L258.7 59.4L260.9 57.1L263.2 54.9L265.4 53.0L267.6 51.4L269.9 49.9L272.1 48.8L274.3 47.9L276.5 47.2L278.8 46.8L281.0 46.7L283.2 46.8L285.5 47.2L287.7 47.9L289.9 48.8L292.1 49.9L294.4 51.4L296.6 53.0L298.8 54.9L301.1 57.1L303.3 59.4L305.5 62.0L307.8 64.8L310.0 67.7L312.2 70.9L314.5 74.2L316.7 77.6L318.9 81.2L321.1 85.0L323.4 88.8L325.6 92.7L327.8 96.8L330.1 100.9L332.3 105.0L334.5 109.2L336.8 113.3L339.0 117.5L341.2 121.7L343.4 125.8L345.7 129.9L347.9 133.9L350.1 137.9L352.4 141.7L354.6 145.5L356.8 149.1L359.1 152.5L361.3 155.8L363.5 159.0L365.7 161.9L368.0 164.7L370.2 167.3L372.4 169.6L374.7 171.8L376.9 173.7L379.1 175.3L381.3 176.7L383.6 177.9L385.8 178.8L388.0 179.5L390.3 179.9L392.5 180.0L394.7 179.9L397.0 179.5L399.2 178.8L401.4 177.9L403.7 176.7L405.9 175.3L408.1 173.7L410.3 171.8L412.6 169.6L414.8 167.3L417.0 164.7L419.3 161.9L421.5 159.0L423.7 155.8L425.9 152.5L428.2 149.1L430.4 145.5L432.6 141.7L434.9 137.9L437.1 133.9L439.3 129.9L441.6 125.8L443.8 121.7L446.0 117.5L448.2 113.3L450.5 109.2L452.7 105.0L454.9 100.9L457.2 96.8L459.4 92.7L461.6 88.8L463.9 85.0L466.1 81.2L468.3 77.6L470.5 74.2L472.8 70.9L475.0 67.7L477.2 64.8L479.5 62.0L481.7 59.4L483.9 57.1L486.2 54.9L488.4 53.0L490.6 51.4L492.8 49.9L495.1 48.8L497.3 47.9L499.5 47.2L501.8 46.8L504.0 46.7\" fill=\"none\" stroke=\"var(--ep)\" stroke-width=\"2.4\"/><path d=\"M58.0 180.0L60.2 179.9L62.5 179.5L64.7 178.8L66.9 177.9L69.2 176.7L71.4 175.3L73.6 173.7L75.8 171.8L78.1 169.6L80.3 167.3L82.5 164.7L84.8 161.9L87.0 159.0L89.2 155.8L91.4 152.5L93.7 149.1L95.9 145.5L98.1 141.7L100.4 137.9L102.6 133.9L104.8 129.9L107.1 125.8L109.3 121.7L111.5 117.5L113.8 113.3L116.0 109.2L118.2 105.0L120.4 100.9L122.7 96.8L124.9 92.7L127.1 88.8L129.4 85.0L131.6 81.2L133.8 77.6L136.1 74.2L138.3 70.9L140.5 67.7L142.7 64.8L145.0 62.0L147.2 59.4L149.4 57.1L151.7 54.9L153.9 53.0L156.1 51.4L158.4 49.9L160.6 48.8L162.8 47.9L165.0 47.2L167.3 46.8L169.5 46.7L171.7 46.8L174.0 47.2L176.2 47.9L178.4 48.8L180.7 49.9L182.9 51.4L185.1 53.0L187.3 54.9L189.6 57.1L191.8 59.4L194.0 62.0L196.3 64.8L198.5 67.7L200.7 70.9L203.0 74.2L205.2 77.6L207.4 81.2L209.6 85.0L211.9 88.8L214.1 92.7L216.3 96.8L218.6 100.9L220.8 105.0L223.0 109.2L225.2 113.3L227.5 117.5L229.7 121.7L231.9 125.8L234.2 129.9L236.4 133.9L238.6 137.9L240.9 141.7L243.1 145.5L245.3 149.1L247.5 152.5L249.8 155.8L252.0 159.0L254.2 161.9L256.5 164.7L258.7 167.3L260.9 169.6L263.2 171.8L265.4 173.7L267.6 175.3L269.9 176.7L272.1 177.9L274.3 178.8L276.5 179.5L278.8 179.9L281.0 180.0L283.2 179.9L285.5 179.5L287.7 178.8L289.9 177.9L292.1 176.7L294.4 175.3L296.6 173.7L298.8 171.8L301.1 169.6L303.3 167.3L305.5 164.7L307.8 161.9L310.0 159.0L312.2 155.8L314.5 152.5L316.7 149.1L318.9 145.5L321.1 141.7L323.4 137.9L325.6 133.9L327.8 129.9L330.1 125.8L332.3 121.7L334.5 117.5L336.8 113.3L339.0 109.2L341.2 105.0L343.4 100.9L345.7 96.8L347.9 92.7L350.1 88.8L352.4 85.0L354.6 81.2L356.8 77.6L359.1 74.2L361.3 70.9L363.5 67.7L365.7 64.8L368.0 62.0L370.2 59.4L372.4 57.1L374.7 54.9L376.9 53.0L379.1 51.4L381.3 49.9L383.6 48.8L385.8 47.9L388.0 47.2L390.3 46.8L392.5 46.7L394.7 46.8L397.0 47.2L399.2 47.9L401.4 48.8L403.7 49.9L405.9 51.4L408.1 53.0L410.3 54.9L412.6 57.1L414.8 59.4L417.0 62.0L419.3 64.8L421.5 67.7L423.7 70.9L425.9 74.2L428.2 77.6L430.4 81.2L432.6 85.0L434.9 88.8L437.1 92.7L439.3 96.8L441.6 100.9L443.8 105.0L446.0 109.2L448.2 113.3L450.5 117.5L452.7 121.7L454.9 125.8L457.2 129.9L459.4 133.9L461.6 137.9L463.9 141.7L466.1 145.5L468.3 149.1L470.5 152.5L472.8 155.8L475.0 159.0L477.2 161.9L479.5 164.7L481.7 167.3L483.9 169.6L486.2 171.8L488.4 173.7L490.6 175.3L492.8 176.7L495.1 177.9L497.3 178.8L499.5 179.5L501.8 179.9L504.0 180.0\" fill=\"none\" stroke=\"var(--ec)\" stroke-width=\"2.4\"/><line x1=\"68\" x2=\"86\" y1=\"10\" y2=\"10\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-dasharray=\"5 3\"/><text x=\"91\" y=\"14\" text-anchor=\"start\" style=\"fill:var(--ink)\">Em</text><line x1=\"138\" x2=\"156\" y1=\"10\" y2=\"10\" stroke=\"var(--ep)\" stroke-width=\"2.4\"/><text x=\"161\" y=\"14\" text-anchor=\"start\" style=\"fill:var(--ep)\">Ep</text><line x1=\"208\" x2=\"226\" y1=\"10\" y2=\"10\" stroke=\"var(--ec)\" stroke-width=\"2.4\"/><text x=\"231\" y=\"14\" text-anchor=\"start\" style=\"fill:var(--ec)\">Ec</text></svg></li></ol>"}, {"g": 3, "ti": "Constant, massa i fase a partir de les energies", "src": "PAU Juny 2013 · Sèrie 3 · P4 (opció B)", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2013/Juny/3/653", "hint": "Amb x i E<sub>p</sub> treus k; amb v i E<sub>c</sub>, la massa. Per a la fase, el signe de v₀ decideix entre φ = π/3 i φ = −π/3.", "q": "<p>Una massa lligada a una molla fa un MHS. En l'instant inicial, la posició és x = 1,00 m i la velocitat v = −5,44 m/s, i en aquest instant l'energia cinètica val 12,00 J i la potencial, 4,00 J.</p><ol class=\"parts\"><li>Calculeu la constant de recuperació de la molla, la massa del cos i l'energia mecànica total.</li><li>Calculeu l'amplitud, la freqüència angular i la fase inicial, i escriviu l'equació del moviment.</li></ol>", "s": "<ol class=\"parts\"><li>E<sub>p</sub> = ½·k·x² → k = 2·4,00 / 1,00² = <span class=\"res\">8,00 N/m</span>.<br>E<sub>c</sub> = ½·m·v² → m = 2·12,00 / 5,44² = <span class=\"res\">0,811 kg</span>.<br>E<sub>m</sub> = E<sub>c</sub> + E<sub>p</sub> = <span class=\"res\">16,0 J</span>.</li><li>E<sub>m</sub> = ½·k·A² → A = √(2·16,0/8,00) = <span class=\"res\">2,00 m</span>.<br>ω = √(k/m) = √(8,00/0,811) = <span class=\"res\">3,14 rad/s</span> (≈ π rad/s).<br><b>Fase:</b> x(0) = A·cos φ → cos φ = 1,00/2,00 = 0,5 → φ = ±π/3. Com que v(0) = −A·ω·sin φ és negativa, sin φ &gt; 0 i <span class=\"res\">φ = π/3 rad</span>.<br><b>Equació:</b> <span class=\"res\">x(t) = 2,00·cos(π·t + π/3) m</span>. Comprovació: v(0) = −2,00·π·sin(π/3) = −5,44 m/s ✓. Si s'escriu amb sinus, x = 2,00·sin(π·t + 5π/6) m, que és la mateixa funció.</li></ol>"}, {"g": 3, "ti": "Massa penjada: força elàstica i energia", "src": "PAU Setembre 2024 · Sèrie 3 · P7", "link": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2024/Setembre/3/6125", "hint": "La distància entre el punt més alt i el més baix és 2A. Si comences a comptar al punt més baix i l'eix és cap amunt, x(0) = −A.", "q": "<p>Una massa de 100 g penja d'una molla i oscil·la. Fa 40 oscil·lacions en un minut, i la diferència d'altura entre la posició més alta i la més baixa és de 15 cm.</p><ol class=\"parts\"><li>Determineu el període, la constant de la molla i l'equació del moviment si es comença a comptar quan la massa passa per la posició més baixa. Representeu la força elàstica durant dos períodes.</li><li>Calculeu l'energia mecànica de l'oscil·lador i l'expressió de l'energia cinètica en funció de la posició. Calculeu el mòdul de la velocitat quan la massa és 3 cm per sobre de la posició d'equilibri.</li></ol>", "s": "<ol class=\"parts\"><li>T = 60 s / 40 = <span class=\"res\">1,50 s</span>; ω = 2π/T = 4π/3 = 4,19 rad/s.<br>k = m·ω² = 0,100·(4π/3)² = <span class=\"res\">1,75 N/m</span>.<br>A = 15/2 = 7,5 cm = 0,075 m. Amb l'eix positiu cap amunt i l'origen a l'equilibri, en t = 0 la massa és a x = −A → cos φ = −1, φ = π:<br><span class=\"res\">x(t) = 0,075·cos(4π/3·t + π) m</span>.<br><b>Força elàstica</b> (força recuperadora respecte de l'equilibri): F = −k·x = k·A·cos(4π/3·t) = 0,132·cos(4π/3·t) N. Al punt més baix val +0,132 N (cap amunt), s'anul·la a l'equilibri i és −0,132 N al punt més alt.<svg class=\"plot\" viewBox=\"0 0 520 210\" role=\"img\" aria-label=\"F (N) en funció de t (s)\"><line x1=\"58.0\" x2=\"58.0\" y1=\"12\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"58.0\" y=\"196\" text-anchor=\"middle\">0</text><line x1=\"169.5\" x2=\"169.5\" y1=\"12\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"169.5\" y=\"196\" text-anchor=\"middle\">0,75</text><line x1=\"281.0\" x2=\"281.0\" y1=\"12\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"281.0\" y=\"196\" text-anchor=\"middle\">1,5</text><line x1=\"392.5\" x2=\"392.5\" y1=\"12\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"392.5\" y=\"196\" text-anchor=\"middle\">2,25</text><line x1=\"504.0\" x2=\"504.0\" y1=\"12\" y2=\"180\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"504.0\" y=\"196\" text-anchor=\"middle\">3,0</text><line x1=\"58\" x2=\"504\" y1=\"26.9\" y2=\"26.9\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"52\" y=\"30.9\" text-anchor=\"end\">0,132</text><line x1=\"58\" x2=\"504\" y1=\"165.1\" y2=\"165.1\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><text x=\"52\" y=\"169.1\" text-anchor=\"end\">−0,132</text><line x1=\"58\" x2=\"504\" y1=\"96.0\" y2=\"96.0\" stroke=\"var(--muted)\"/><line x1=\"58\" x2=\"58\" y1=\"12\" y2=\"180\" stroke=\"var(--muted)\"/><text x=\"504\" y=\"90.0\" text-anchor=\"end\" class=\"ax\">t (s)</text><text x=\"64\" y=\"24\" text-anchor=\"start\" class=\"ax\">F (N)</text><path d=\"M58.0 26.9L60.2 27.0L62.5 27.5L64.7 28.1L66.9 29.1L69.2 30.3L71.4 31.8L73.6 33.5L75.8 35.5L78.1 37.7L80.3 40.1L82.5 42.8L84.8 45.6L87.0 48.7L89.2 52.0L91.4 55.4L93.7 59.0L95.9 62.7L98.1 66.6L100.4 70.6L102.6 74.7L104.8 78.8L107.1 83.1L109.3 87.3L111.5 91.7L113.8 96.0L116.0 100.3L118.2 104.7L120.4 108.9L122.7 113.2L124.9 117.3L127.1 121.4L129.4 125.4L131.6 129.3L133.8 133.0L136.1 136.6L138.3 140.0L140.5 143.3L142.7 146.4L145.0 149.2L147.2 151.9L149.4 154.3L151.7 156.5L153.9 158.5L156.1 160.2L158.4 161.7L160.6 162.9L162.8 163.9L165.0 164.5L167.3 165.0L169.5 165.1L171.7 165.0L174.0 164.5L176.2 163.9L178.4 162.9L180.6 161.7L182.9 160.2L185.1 158.5L187.3 156.5L189.6 154.3L191.8 151.9L194.0 149.2L196.3 146.4L198.5 143.3L200.7 140.0L203.0 136.6L205.2 133.0L207.4 129.3L209.6 125.4L211.9 121.4L214.1 117.3L216.3 113.2L218.6 108.9L220.8 104.7L223.0 100.3L225.2 96.0L227.5 91.7L229.7 87.3L231.9 83.1L234.2 78.8L236.4 74.7L238.6 70.6L240.9 66.6L243.1 62.7L245.3 59.0L247.5 55.4L249.8 52.0L252.0 48.7L254.2 45.6L256.5 42.8L258.7 40.1L260.9 37.7L263.2 35.5L265.4 33.5L267.6 31.8L269.9 30.3L272.1 29.1L274.3 28.1L276.5 27.5L278.8 27.0L281.0 26.9L283.2 27.0L285.5 27.5L287.7 28.1L289.9 29.1L292.1 30.3L294.4 31.8L296.6 33.5L298.8 35.5L301.1 37.7L303.3 40.1L305.5 42.8L307.8 45.6L310.0 48.7L312.2 52.0L314.5 55.4L316.7 59.0L318.9 62.7L321.1 66.6L323.4 70.6L325.6 74.7L327.8 78.8L330.1 83.1L332.3 87.3L334.5 91.7L336.8 96.0L339.0 100.3L341.2 104.7L343.4 108.9L345.7 113.2L347.9 117.3L350.1 121.4L352.4 125.4L354.6 129.3L356.8 133.0L359.0 136.6L361.3 140.0L363.5 143.3L365.7 146.4L368.0 149.2L370.2 151.9L372.4 154.3L374.7 156.5L376.9 158.5L379.1 160.2L381.3 161.7L383.6 162.9L385.8 163.9L388.0 164.5L390.3 165.0L392.5 165.1L394.7 165.0L397.0 164.5L399.2 163.9L401.4 162.9L403.7 161.7L405.9 160.2L408.1 158.5L410.3 156.5L412.6 154.3L414.8 151.9L417.0 149.2L419.3 146.4L421.5 143.3L423.7 140.0L426.0 136.6L428.2 133.0L430.4 129.3L432.6 125.4L434.9 121.4L437.1 117.3L439.3 113.2L441.6 108.9L443.8 104.7L446.0 100.3L448.2 96.0L450.5 91.7L452.7 87.3L454.9 83.1L457.2 78.8L459.4 74.7L461.6 70.6L463.9 66.6L466.1 62.7L468.3 59.0L470.5 55.4L472.8 52.0L475.0 48.7L477.2 45.6L479.5 42.8L481.7 40.1L483.9 37.7L486.2 35.5L488.4 33.5L490.6 31.8L492.8 30.3L495.1 29.1L497.3 28.1L499.5 27.5L501.8 27.0L504.0 26.9\" fill=\"none\" stroke=\"var(--f)\" stroke-width=\"2.4\"/></svg></li><li>E<sub>m</sub> = ½·k·A² = ½·1,75·0,075² = <span class=\"res\">4,93 × 10⁻³ J</span>.<br>E<sub>c</sub>(x) = E<sub>m</sub> − ½·k·x² = ½·k·(A² − x²) = <span class=\"res\">0,877·(5,63 × 10⁻³ − x²) J</span> (x en m).<br>A x = +0,030 m: E<sub>c</sub> = 0,877·(5,63 × 10⁻³ − 9,0 × 10⁻⁴) = 4,15 × 10⁻³ J → v = √(2·E<sub>c</sub>/m) = <span class=\"res\">0,288 m/s</span>.</li></ol>"}];
+EX.push(...PAU);
+const GROUPS = {
+  1: ['★', 'Aplicació directa'],
+  2: ['★★', 'Combinació de conceptes'],
+  3: ['★★★', 'Problemes de la PAU']
+};
+(function render() {
+  const box = $('exlist'); let n = 0, html = '';
+  [1, 2, 3].forEach(g => {
+    html += '<div class="exgroup"><h3><span class="stars">' + GROUPS[g][0] + '</span>' + GROUPS[g][1] + '</h3>';
+    EX.filter(e => e.g === g).forEach(e => {
+      n++;
+      html += '<article class="panel ex"><div class="eh"><span class="num">' + n + '.</span><span class="ttl">' + e.ti + '</span>' + (e.src ? (e.link ? '<a class="chip" href="' + e.link + '" target="_blank" rel="noopener" title="Enunciat original">' + e.src + '</a>' : '<span class="chip">' + e.src + '</span>') : '') + '</div>' +
+        e.q +
+        '<details class="sol"><summary>Solució</summary><div class="body">' + e.s + '</div></details></article>';
+    });
+    html += '</div>';
+  });
+  box.innerHTML = html;
+})();
+
+/* ---------- gràfica del formulari ---------- */
+document.querySelectorAll('svg.xva').forEach(function formSvg(svg) {
+  const W = 560, H = 150, ml = 34, mr = 60, mid = 72, amp = 50, NS = 'http://www.w3.org/2000/svg';
+  const X = u => ml + u * (W - ml - mr);
+  const el = (n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  for (let q = 0; q <= 4; q++) {
+    svg.appendChild(el('line', { x1: X(q / 4), x2: X(q / 4), y1: mid - amp - 4, y2: mid + amp + 4, stroke: 'var(--grid2)', 'stroke-width': 1 }));
+    const t = el('text', { x: X(q / 4), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, 'font-family': FM, fill: 'var(--muted)' });
+    t.textContent = ['0', 'T/4', 'T/2', '3T/4', 'T'][q]; svg.appendChild(t);
+  }
+  svg.appendChild(el('line', { x1: ml, x2: W - mr + 6, y1: mid, y2: mid, stroke: 'var(--muted)', 'stroke-width': 1 }));
+  if (svg.dataset.temps) {
+    const yh = mid - amp * 0.5, xt = X(1 / 6);
+    svg.appendChild(el('line', { x1: ml, x2: xt, y1: yh, y2: yh, stroke: 'var(--ink)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+    svg.appendChild(el('line', { x1: xt, x2: xt, y1: yh, y2: mid + amp + 4, stroke: 'var(--ink)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+    svg.appendChild(el('circle', { cx: xt, cy: yh, r: 4, fill: 'var(--ink)' }));
+    svg.appendChild(el('circle', { cx: X(0.25), cy: mid, r: 4, fill: 'var(--ink)' }));
+    const t1 = el('text', { x: ml - 4, y: yh + 4, 'text-anchor': 'end', 'font-size': 11, 'font-family': FM, fill: 'var(--ink)' }); t1.textContent = 'A/2'; svg.appendChild(t1);
+    const t0 = el('text', { x: ml - 4, y: mid - amp + 4, 'text-anchor': 'end', 'font-size': 11, 'font-family': FM, fill: 'var(--ink)' }); t0.textContent = 'A'; svg.appendChild(t0);
+    const t2 = el('text', { x: xt, y: H - 6, 'text-anchor': 'middle', 'font-size': 11, 'font-family': FM, fill: 'var(--ink)' }); t2.textContent = 'T/6'; svg.appendChild(t2);
+  }
+  const S = [['x', u => Math.cos(2 * PI * u), 'var(--ink)', 1], ['v', u => -Math.sin(2 * PI * u), 'var(--x)', 0.75], ['a', u => -Math.cos(2 * PI * u), 'var(--y)', 0.9]];
+  S.forEach(([n, f, col, k], i) => {
+    let d = '';
+    for (let j = 0; j <= 100; j++) { const u = j / 100; d += (j ? 'L' : 'M') + X(u).toFixed(1) + ' ' + (mid - amp * k * f(u)).toFixed(1); }
+    svg.appendChild(el('path', { d, fill: 'none', stroke: col, 'stroke-width': 2.2 }));
+    const t = el('text', { x: W - mr + 12, y: mid - amp * k * f(1) + 4 + [0, -2, 0][i], 'font-size': 13, 'font-style': 'italic', 'font-family': FB, fill: col });
+    t.textContent = n + (n === 'x' ? ' (A)' : n === 'v' ? ' (Aω)' : ' (Aω²)'); svg.appendChild(t);
+  });
+});
+
+const SVGNS = 'http://www.w3.org/2000/svg';
+const sel = (n, a, txt) => { const e = document.createElementNS(SVGNS, n); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; return e; };
+/* ---------- gràfiques de l'energia (E–x i E–t) ---------- */
+document.querySelectorAll('svg.en').forEach(svg => {
+  const vb = svg.viewBox.baseVal, W = vb.width, H = vb.height, gap = 36, pw = (W - gap) / 2;
+  const mt = 24, mb = 34, ml = 38, mr = 12;
+  const T = (x, y, t, a, col, it, fs) => svg.appendChild(sel('text', { x, y, 'text-anchor': a || 'middle', 'font-size': fs || 11, 'font-family': it ? FB : FM, 'font-style': it ? 'italic' : 'normal', fill: col || 'var(--muted)' }, t));
+  let lx = W / 2 - 110;
+  [['Ec', 'var(--ec)'], ['Ep', 'var(--ep)'], ['Em', 'var(--ink)']].forEach(([n, c], i) => {
+    svg.appendChild(sel('line', { x1: lx, x2: lx + 18, y1: 10, y2: 10, stroke: c, 'stroke-width': 2.4, 'stroke-dasharray': i === 2 ? '5 3' : 'none' }));
+    T(lx + 23, 14, n, 'start', c, true, 12); lx += 78;
+  });
+  const panel = (x0, xs, fns, ticks, extra) => {
+    const X = u => x0 + ml + (u - xs[0]) / (xs[1] - xs[0]) * (pw - ml - mr), Y = e => H - mb - e / 1.2 * (H - mb - mt);
+    svg.appendChild(sel('line', { x1: x0 + ml, x2: x0 + pw - mr, y1: Y(0), y2: Y(0), stroke: 'var(--muted)' }));
+    svg.appendChild(sel('line', { x1: X(xs[0]), x2: X(xs[0]), y1: Y(1.2), y2: Y(0), stroke: 'var(--muted)' }));
+    T(x0 + ml - 5, Y(1) + 4, 'Em', 'end'); T(x0 + ml - 5, Y(0.5) + 4, 'Em/2', 'end');
+    svg.appendChild(sel('line', { x1: X(xs[0]), x2: X(xs[1]), y1: Y(1), y2: Y(1), stroke: 'var(--ink)', 'stroke-width': 1.6, 'stroke-dasharray': '6 4' }));
+    ticks.forEach(([u, t, row]) => { svg.appendChild(sel('line', { x1: X(u), x2: X(u), y1: Y(0), y2: Y(0) + (row ? 16 : 4), stroke: 'var(--muted)', 'stroke-dasharray': row ? '2 2' : 'none' })); T(X(u), row ? H - 4 : H - 18, t); });
+    if (extra) extra(X, Y);
+    fns.forEach(([f, c, a, b]) => {
+      let d = ''; for (let j = 0; j <= 120; j++) { const u = a + (b - a) * j / 120; d += (j ? 'L' : 'M') + X(u).toFixed(1) + ' ' + Y(f(u)).toFixed(1); }
+      svg.appendChild(sel('path', { d, fill: 'none', stroke: c, 'stroke-width': 2.4 }));
+    });
+  };
+  const r2 = 1 / Math.SQRT2;
+  panel(0, [-1.25, 1.25], [[u => u * u, 'var(--ep)', -1.08, 1.08], [u => 1 - u * u, 'var(--ec)', -1, 1]],
+    [[-1, '−A'], [-r2, '−A/√2', 1], [0, '0'], [r2, '+A/√2', 1], [1, '+A']],
+    (X, Y) => { [-r2, r2].forEach(u => svg.appendChild(sel('line', { x1: X(u), x2: X(u), y1: Y(0.5), y2: Y(0), stroke: 'var(--grid2)', 'stroke-dasharray': '3 3' }))); T(X(1.25), Y(0) - 6, 'x', 'end', 'var(--ink)', true, 13); });
+  panel(pw + gap, [0, 1], [[u => Math.cos(2 * PI * u) ** 2, 'var(--ep)', 0, 1], [u => Math.sin(2 * PI * u) ** 2, 'var(--ec)', 0, 1]],
+    [[0, '0'], [0.25, 'T/4'], [0.5, 'T/2'], [0.75, '3T/4'], [1, 'T']],
+    (X, Y) => T(X(1), Y(0) - 6, 't', 'end', 'var(--ink)', true, 13));
+});
+
+/* ---------- navegació: secció actual ---------- */
+/* enllaç a la portada només quan la pàgina és dins del lloc web del curs */
+if (!/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) { const h = $('homelink'); if (h) h.hidden = false; }
+
+/* ---------- subíndex de la teoria i botons cap a les demos ---------- */
+(function blocks() {
+  const smooth = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  const go = t => { if (!t) return; t.scrollIntoView({ behavior: smooth(), block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); };
+  document.querySelectorAll('.subidx a, a.godemo').forEach(a => a.addEventListener('click', e => { e.preventDefault(); go(document.querySelector(a.getAttribute('href'))); }));
+  document.querySelectorAll('button.godemo').forEach(b => b.addEventListener('click', () => go(document.querySelectorAll('#demos .demo')[+b.dataset.demo])));
+})();
+
+(function nav() {
+  const navEl = document.querySelector('nav.toc');
+  const links = [...navEl.querySelectorAll('a[href^="#"]:not(.top)')];
+  const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+  const smooth = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  let cur = -1;
+  function update() {
+    const line = navEl.getBoundingClientRect().bottom + window.innerHeight * 0.25;
+    let idx = -1;
+    secs.forEach((s, i) => { if (s && s.getBoundingClientRect().top <= line) idx = i; });
+    // al final de la pàgina, l'última secció
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = secs.length - 1;
+    if (idx === cur) return;
+    cur = idx;
+    links.forEach((a, i) => a.setAttribute('aria-current', i === idx ? 'true' : 'false'));
+    const a = links[idx];
+    if (a) { const l = a.offsetLeft - 12, r = a.offsetLeft + a.offsetWidth + 12;
+      if (l < navEl.scrollLeft || r > navEl.scrollLeft + navEl.clientWidth) navEl.scrollTo({ left: Math.max(0, l - 40), behavior: smooth() }); }
+  }
+  let pend = false;
+  window.addEventListener('scroll', () => { if (!pend) { pend = true; requestAnimationFrame(() => { pend = false; update(); }); } }, { passive: true });
+  window.addEventListener('resize', update);
+  navEl.addEventListener('click', e => {
+    const a = e.target.closest('a[href^="#"]'); if (!a) return;
+    e.preventDefault();
+    if (a.classList.contains('top')) { window.scrollTo({ top: 0, behavior: smooth() }); return; }
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { t.scrollIntoView({ behavior: smooth(), block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); }
+  });
+  update();
+})();
+
+/* ---------- PDF ---------- */
+const PDFS = (() => { try { return JSON.parse($('pdfdata').textContent); } catch (e) { return {}; } })();
+const NAMES = { f: 'MHS - Formulari.pdf', q: 'MHS - Enunciats.pdf', qs: 'MHS - Enunciats i solucions.pdf' };
+const PDF_FILES = { f: 'pdf/mhs-formulari.pdf', q: 'pdf/mhs-enunciats.pdf', qs: 'pdf/mhs-enunciats-solucions.pdf' };
+const dlReady = (window.claude && typeof window.claude.use === 'function')
+  ? window.claude.use('downloads').catch(() => null)
+  : Promise.resolve(null);
+const status = msg => { $('pdfstatus').textContent = msg; };
+let busy = false;
+async function getPdf(mode) {
+  if (busy) return;
+  busy = true;
+  const btns = ['pF', 'pF2', 'pQ', 'pQS'].map($);
+  btns.forEach(b => b.disabled = true);
+  try { await getPdfInner(mode); } finally { busy = false; btns.forEach(b => b.disabled = false); }
+}
+async function getPdfInner(mode) {
+  const b64 = PDFS[mode];
+  const DL = await Promise.race([dlReady, new Promise(r => setTimeout(() => r(null), 4000))]);
+  if (!DL && PDF_FILES[mode]) {
+    const a = document.createElement('a'); a.href = PDF_FILES[mode]; a.download = NAMES[mode];
+    document.body.appendChild(a); a.click(); a.remove(); return;
+  }
+  if (DL && b64) {
+    const bin = atob(b64), u = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+    status('');
+    try { await DL.save({ filename: NAMES[mode], data: new Blob([u], { type: 'application/pdf' }) }); }
+    catch (e) {
+      const c = e && e.code;
+      if (c === 'declined') return;
+      if (c === 'rate_limited') status('Ja hi ha una descàrrega pendent de confirmar.');
+      else if (c === 'too_large') status('El PDF és massa gran per desar-lo des d\'aquí.');
+      else status('No s\'ha pogut desar el PDF. Prova d\'obrir la pàgina en una pestanya nova.');
+    }
+    return;
+  }
+  // web normal (p. ex. GitHub Pages): descàrrega directa del PDF incrustat
+  if (!window.claude && b64) {
+    try {
+      const bin = atob(b64), u = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+      const url = URL.createObjectURL(new Blob([u], { type: 'application/pdf' }));
+      const a = document.createElement('a'); a.href = url; a.download = NAMES[mode];
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      status('');
+      return;
+    } catch (e) { /* si falla, provem la impressió */ }
+  }
+  status('Si no s\'obre el diàleg d\'impressió, obre la pàgina en una pestanya nova i torna-ho a provar.');
+  printMode(mode);
+}
+function printMode(mode) {
+  document.body.dataset.print = mode;
+  const prev = document.title;
+  document.title = NAMES[mode].replace('.pdf', '');
+  const dets = [...document.querySelectorAll('.ex details.sol')], was = dets.map(d => d.open);
+  if (mode === 'qs') dets.forEach(d => d.open = true);
+  const done = () => { delete document.body.dataset.print; document.title = prev; dets.forEach((d, i) => d.open = was[i]); window.removeEventListener('afterprint', done); };
+  window.addEventListener('afterprint', done);
+  window.print();
+}
+$('pF').onclick = () => getPdf('f');
+$('pF2').onclick = () => getPdf('f');
+$('pQ').onclick = () => getPdf('q');
+$('pQS').onclick = () => getPdf('qs');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Física · 2n de Batxillerat · Materials de repàs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#edf1f0;--surface:#fbfcfc;--ink:#15212a;--muted:#5a6a73;--line:#d2dcdf;--chip:#e4eaec;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;--f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e181d;--surface:#142229;--ink:#e1e9ec;--muted:#8fa2ab;--line:#26404b;--chip:#1c2f37;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:40px 16px 56px;display:flex;flex-direction:column;gap:30px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(32px,5vw,46px);margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:6px 0 0}
+h2{font-family:var(--f-display);font-size:22px;font-weight:600;margin:0 0 12px}
+.list{display:grid;gap:14px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.item h3{font-family:var(--f-display);font-size:21px;font-weight:600;margin:0}
+.item h3 a{color:var(--ink);text-decoration:none}
+.item h3 a:hover{text-decoration:underline}
+.item p{margin:0;color:var(--muted);max-width:68ch}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.links a{font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--chip);border-radius:20px;padding:4px 12px}
+.links a:hover{border-color:var(--muted)}
+.links a.main{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+footer{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Física · 2n de Batxillerat</h1>
+    <p class="sub">Materials de repàs: teoria orientada a exercicis, demos interactives, exercicis graduats i problemes de la PAU.</p>
+  </header>
+
+  <section>
+    <h2>Temes</h2>
+    <div class="list">
+      <article class="item">
+        <h3><a href="temes/mhs/index.html">Moviment harmònic simple</a></h3>
+        <p>Equacions, forces, energia, molla vertical i pèndol. Tres demos interactives i 16 exercicis, 9 de la PAU.</p>
+        <div class="links">
+          <a class="main" href="temes/mhs/index.html">Obre el tema</a>
+          <a href="temes/mhs/pdf/mhs-formulari.pdf">Formulari (PDF)</a>
+          <a href="temes/mhs/pdf/mhs-enunciats.pdf">Enunciats (PDF)</a>
+          <a href="temes/mhs/pdf/mhs-enunciats-solucions.pdf">Enunciats i solucions (PDF)</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer>Els enunciats dels problemes de la PAU estan adaptats a partir dels exàmens oficials de les PAU de Catalunya; cada problema enllaça a l'enunciat original.</footer>
+</div>
+</body>
+</html>
