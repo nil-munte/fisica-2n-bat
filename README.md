@@ -9,7 +9,7 @@ Són pàgines HTML estàtiques (sense servidor ni compilació): es poden obrir d
 | Tema | Pàgina | PDF |
 |---|---|---|
 | Moviment harmònic simple | `temes/mhs/index.html` | formulari (1 pàgina), enunciats, enunciats + solucions |
-| Ones (en construcció: només estructura i problemes de les PAU) | `temes/ones/index.html` | enunciats, enunciats + solucions |
+| Ones | `temes/ones/index.html` | formulari (1 pàgina), enunciats, enunciats + solucions |
 | Exàmens de les PAU | `pau/index.html` | cada sèrie de cada convocatòria, sense solucions i amb els criteris de correcció |
 
 ## Estructura
