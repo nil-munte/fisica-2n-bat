@@ -1,0 +1,220 @@
+{
+  "id": "2010-juny-s4-p3b",
+  "any": 2010,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P3",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [
+    "mhs-ones-so/mhs"
+  ],
+  "blocs": [
+    "b1",
+    "b4"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal escriure el MHS d'un extrem amb la fase inicial i avaluar-lo en un instant, i raonar la interferència de dues fonts coherents amb la condició de màxim.",
+  "titol": "Els dos extrems d'un diapasó",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jl",
+      "pdf": "pau_fisi10jl",
+      "pagina": 13
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jp",
+      "pdf": "pau_fisi10jp",
+      "pagina": 8
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2010/Juny/4/755"
+  },
+  "dades": [
+    {
+      "simbol": "f",
+      "valor": "1 000",
+      "unitat": "Hz",
+      "descripcio": "freqüència de vibració dels extrems del diapasó"
+    },
+    {
+      "simbol": "A",
+      "valor": "1",
+      "unitat": "mm",
+      "descripcio": "amplitud de vibració de cada extrem"
+    },
+    {
+      "simbol": "t₀",
+      "valor": "3,3·10⁻⁴",
+      "unitat": "s",
+      "descripcio": "instant en què es demanen l'elongació i la velocitat"
+    },
+    {
+      "simbol": "v<sub>so a l’aire</sub>",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so a l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Cadascun dels extrems d’un diapasó presenta un moviment vibratori harmònic amb una freqüència de 1 000 Hz i una amplitud d’1 mm. Aquest moviment genera en l’aire una ona harmònica de so de la mateixa freqüència. El moviment dels dos extrems està en fase.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu, per a un dels extrems del diapasó, l’elongació i la velocitat del seu moviment vibratori quan faci 3,3 · 10<sup>–4</sup> s que ha començat a vibrar, comptat a partir de la posició que correspon a la màxima amplitud."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Raoneu si, en l’aire, es produiria el fenomen d’interferència a partir de les ones de so que es generen en els dos extrems del diapasó. Si s’esdevé aquest fenomen, indiqueu en quins punts es produiran els màxims d’interferència."
+      }
+    ],
+    "dades_text": "Dada: <i>v</i><sub>so a l’aire</sub> = 340 m/s."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Forma general i fase inicial",
+          "html": "Escrivim l'elongació d'un extrem com <i>y</i> = <i>A</i>·sin(ω<i>t</i> + φ). Comencem a comptar el temps quan l'extrem és a la posició de màxima amplitud, <i>y</i>(0) = <i>A</i>: sin φ = 1 → φ = π/2 rad."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π<i>f</i> = 2π·1 000 = 2 000π rad/s."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "Amb <i>A</i> = 1 mm = 10<sup>−3</sup> m, i com que sin(α + π/2) = cos α: <span class=\"res\"><i>y</i> = 10<sup>−3</sup>·cos(2 000π<i>t</i>)</span>, amb <i>y</i> en m i <i>t</i> en s."
+        },
+        {
+          "titol": "Equació de la velocitat",
+          "html": "Derivant: <i>v</i> = d<i>y</i>/d<i>t</i> = −10<sup>−3</sup>·2 000π·sin(2 000π<i>t</i>) → <span class=\"res\"><i>v</i> = −2π·sin(2 000π<i>t</i>)</span>, amb <i>v</i> en m/s i <i>t</i> en s."
+        },
+        {
+          "titol": "Valors a t₀ = 3,3·10⁻⁴ s",
+          "html": "L'angle és 2 000π·3,3·10<sup>−4</sup> = 0,66π rad. Llavors <i>y</i>(<i>t</i><sub>0</sub>) = 10<sup>−3</sup>·cos(0,66π) = <span class=\"res\">−4,82·10<sup>−4</sup> m</span> i <i>v</i>(<i>t</i><sub>0</sub>) = −2π·sin(0,66π) = <span class=\"res\">−5,51 m/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Imposar que a t = 0 l'extrem és a y = A i obtenir φ = π/2 (o φ = 0 si s'usa el cosinus)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ω = 2 000π rad/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'equació de l'elongació amb valors i unitats."
+        },
+        {
+          "punts": 0.2,
+          "que": "Derivar per obtenir l'equació de la velocitat, amb unitats."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular l'elongació a t₀: −4,82·10⁻⁴ m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular la velocitat a t₀: −5,51 m/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Hi ha interferència",
+          "html": "Sí. Els dos extrems emeten ones sonores amb la mateixa freqüència i la mateixa amplitud i, a més, vibren en fase. Són dues fonts coherents, i a cada punt de l'aire on arriben totes dues ones aquestes se superposen: hi ha interferència."
+        },
+        {
+          "titol": "Condició de màxim",
+          "html": "Siguin <i>r</i><sub>1</sub> i <i>r</i><sub>2</sub> les distàncies d'un punt a cadascun dels extrems. Les dues ones hi arriben en fase (interferència constructiva) si la diferència de camins és un nombre enter de longituds d'ona: <i>r</i><sub>2</sub> − <i>r</i><sub>1</sub> = <i>n</i>·λ, amb <i>n</i> = 0, ±1, ±2, ±3…"
+        },
+        {
+          "titol": "Longitud d'ona",
+          "html": "λ = <i>v</i><sub>so a l’aire</sub>/<i>f</i> = 340/1 000 = <span class=\"res\">0,340 m</span>."
+        },
+        {
+          "titol": "Punts de màxim",
+          "html": "Els màxims d'interferència són als punts on <span class=\"res\"><i>r</i><sub>2</sub> − <i>r</i><sub>1</sub> = 0,340·<i>n</i> m</span>, amb <i>n</i> = 0, ±1, ±2, ±3…"
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Afirmar que hi ha interferència i justificar-ho: mateixa amplitud, mateixa freqüència i fonts en fase (0,3 si només s'afirma)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Condició de màxim: diferència de camins igual a un múltiple de λ."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular λ = v/f = 0,340 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Expressar els punts de màxim: r₂ − r₁ = 0,340·n."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 2 000π rad/s",
+      "valor": 6283.2,
+      "pauta": 6283.2
+    },
+    {
+      "apartat": "a",
+      "clau": "y0",
+      "text": "y(t₀) = −4,82·10⁻⁴ m",
+      "valor": -0.000482,
+      "pauta": -0.000482
+    },
+    {
+      "apartat": "a",
+      "clau": "v0",
+      "text": "v(t₀) = −5,51 m/s",
+      "valor": -5.51,
+      "pauta": -5.51
+    },
+    {
+      "apartat": "b",
+      "clau": "lam",
+      "text": "λ = 0,340 m",
+      "valor": 0.34,
+      "pauta": 0.34
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, cos, sin",
+    "f = 1000",
+    "A = 1e-3",
+    "w = 2 * pi * f",
+    "t0 = 3.3e-4",
+    "R = {'w': w, 'y0': A * cos(w * t0), 'v0': -A * w * sin(w * t0), 'lam': 340 / f}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

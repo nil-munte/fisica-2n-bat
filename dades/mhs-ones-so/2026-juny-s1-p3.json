@@ -1,0 +1,213 @@
+{
+  "id": "2026-juny-s1-p3",
+  "any": 2026,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [
+    "mhs-ones-so/mhs"
+  ],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Combina l'equació d'un MHS amb fase inicial, l'equació d'una ona harmònica (λ, nombre d'ona i fase) i el càlcul del nivell d'intensitat sonora d'una font puntual; cada pas és directe.",
+  "titol": "El motor vibrador d’un mòbil",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jl.pdf",
+      "pdf": "pau_fisi26jl",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jt_v2.pdf",
+      "pdf": "pau_fisi26jt_v2",
+      "pagina": 6
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2026/Juny/1/9036"
+  },
+  "dades": [
+    {
+      "simbol": "A",
+      "valor": "2,00",
+      "unitat": "mm",
+      "descripcio": "amplitud del MHS i de l’ona"
+    },
+    {
+      "simbol": "f",
+      "valor": "150",
+      "unitat": "Hz",
+      "descripcio": "freqüència de la vibració"
+    },
+    {
+      "simbol": "v",
+      "valor": "3 200",
+      "unitat": "m/s",
+      "descripcio": "velocitat de les ones transversals a la superfície metàl·lica"
+    },
+    {
+      "simbol": "P",
+      "valor": "1,00",
+      "unitat": "mW",
+      "descripcio": "potència acústica emesa (apartat 3.2)"
+    },
+    {
+      "simbol": "r",
+      "valor": "3,00",
+      "unitat": "m",
+      "descripcio": "distància de la persona al telèfon (apartat 3.2)"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "10⁻¹²",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Un telèfon mòbil conté un motor vibrador que genera un moviment harmònic simple (al llarg de l’eix <i>y</i>) al xassís del dispositiu quan es reben trucades o notificacions. Suposem que aquest moviment té una amplitud de 2,00 mm i una freqüència de 150 Hz.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "3.1",
+        "punts": 1.25,
+        "text": "Escriviu l’equació de moviment del telèfon si considerem que inicialment es troba a la posició d’equilibri <i>y</i> = 0 m. Quan es col·loca el telèfon damunt d’una superfície metàl·lica rígida, les vibracions es transmeten al material i generen ones mecàniques transversals que es propaguen a 3 200 m s<sup>–1</sup>. Calculeu la longitud d’ona de l’ona mecànica que es propaga per la superfície i escriviu l’equació de l’ona corresponent, suposant que la propagació es produeix en el sentit positiu de l’eix <i>x</i>, que inicialment es troba en la posició d’equilibri <i>y</i> = 0 m, i que l’amplitud de l’ona és de 2,00 mm."
+      },
+      {
+        "id": "3.2",
+        "punts": 1.25,
+        "text": "Suposant que el telèfon emet una potència acústica d’1,00 mW durant la vibració i que el so es propaga per l’aire de manera isotròpica (uniformement en totes direccions), calculeu el nivell d’intensitat sonora que percebrà una persona situada a 3,00 m del telèfon."
+      }
+    ],
+    "dades_text": "Dades: <i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>.<br>Nota: Assumiu que el front d’ona és esfèric."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "3.1",
+      "passos": [
+        {
+          "titol": "Equació del MHS",
+          "html": "Escrivim <i>y</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>), amb <i>A</i> = 2,00·10<sup>−3</sup> m i ω = 2π<i>f</i> = 2π·150 = 300π rad/s (942 rad/s). A <i>t</i> = 0 el telèfon és a l'equilibri: 0 = <i>A</i>·sin φ<sub>0</sub> → φ<sub>0</sub> = 0 (o π rad, perquè no se sap cap on es mou al principi). Per tant, <span class=\"res\"><i>y</i>(<i>t</i>) = 2,00·10<sup>−3</sup>·sin(300π<i>t</i>)</span>, amb <i>y</i> en m i <i>t</i> en s. Amb cosinus seria <i>y</i>(<i>t</i>) = 2,00·10<sup>−3</sup>·cos(300π<i>t</i> − π/2)."
+        },
+        {
+          "titol": "Longitud d'ona",
+          "html": "λ = <i>v</i>/<i>f</i> = 3 200/150 = <span class=\"res\">λ = 21,3 m</span>."
+        },
+        {
+          "titol": "Equació de l'ona",
+          "html": "El nombre d'ona és <i>k</i> = 2π/λ = 2π/21,3 = <span class=\"res\"><i>k</i> = 0,294 m<sup>−1</sup></span>. Per a una ona que avança en el sentit positiu de l'eix <i>x</i>, <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(<i>k</i><i>x</i> − ω<i>t</i> + φ<sub>0</sub>). La condició <i>y</i>(0, 0) = 0 dona sin φ<sub>0</sub> = 0 → φ<sub>0</sub> = 0 (o π rad). Així, <span class=\"res\"><i>y</i>(<i>x</i>, <i>t</i>) = 2,00·10<sup>−3</sup>·sin(0,294<i>x</i> − 300π<i>t</i>)</span>, amb <i>x</i> i <i>y</i> en m i <i>t</i> en s (o, amb cosinus, 2,00·10<sup>−3</sup>·cos(0,294<i>x</i> − 300π<i>t</i> − π/2)). El signe relatiu entre <i>k</i><i>x</i> i ω<i>t</i> ha de ser negatiu perquè l'ona avanci cap a les <i>x</i> positives."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Escriure l'equació del MHS amb ω = 300π rad/s i deduir la fase inicial de y(0) = 0: y(t) = 2,0·10⁻³·sin(300πt) (o una forma equivalent). Es resten 0,25 si no s'analitza la condició inicial."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la longitud d'ona: λ = v/f = 21,3 m."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular k = 0,294 m⁻¹ i escriure l'equació de l'ona, y(x, t) = 2,0·10⁻³·sin(0,294x − 300πt). Es resten 0,25 si la fase és kx + ωt."
+        }
+      ]
+    },
+    {
+      "apartat": "3.2",
+      "passos": [
+        {
+          "titol": "Intensitat a 3,00 m",
+          "html": "Amb front d'ona esfèric, la potència es reparteix sobre una esfera de radi <i>r</i>: <i>I</i> = <i>P</i>/(4π<i>r</i><sup>2</sup>) = 1,00·10<sup>−3</sup>/(4π·3,00<sup>2</sup>) = <span class=\"res\"><i>I</i> = 8,84·10<sup>−6</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Nivell d'intensitat sonora",
+          "html": "β = 10·log(<i>I</i>/<i>I</i><sub>0</sub>) = 10·log(8,84·10<sup>−6</sup>/10<sup>−12</sup>) = <span class=\"res\">β = 69,5 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Calcular la intensitat amb I = P/(4πr²): 8,84·10⁻⁶ W/m²."
+        },
+        {
+          "punts": 0.75,
+          "que": "Calcular el nivell d'intensitat sonora: β = 69,5 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "3.1",
+      "clau": "w",
+      "text": "ω = 300π rad/s",
+      "valor": 942.48,
+      "pauta": 942.48
+    },
+    {
+      "apartat": "3.1",
+      "clau": "phi",
+      "text": "φ₀ = 0",
+      "valor": 0.0,
+      "pauta": 0.0
+    },
+    {
+      "apartat": "3.1",
+      "clau": "lam",
+      "text": "λ = 21,3 m",
+      "valor": 21.33,
+      "pauta": 21.3
+    },
+    {
+      "apartat": "3.1",
+      "clau": "k",
+      "text": "k = 0,294 m⁻¹",
+      "valor": 0.2945,
+      "pauta": 0.294
+    },
+    {
+      "apartat": "3.2",
+      "clau": "I",
+      "text": "I = 8,84·10⁻⁶ W/m²",
+      "valor": 8.84e-06,
+      "pauta": 8.84e-06
+    },
+    {
+      "apartat": "3.2",
+      "clau": "beta",
+      "text": "β = 69,5 dB",
+      "valor": 69.47,
+      "pauta": 69.5
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, asin, log10",
+    "A, f, v = 2.00e-3, 150, 3200",
+    "w = 2 * pi * f",
+    "phi = asin(0 / A)",
+    "lam = v / f",
+    "P, r, I0 = 1.00e-3, 3.00, 1e-12",
+    "I = P / (4 * pi * r**2)",
+    "R = {'w': w, 'phi': phi, 'lam': lam, 'k': 2 * pi / lam, 'I': I, 'beta': 10 * log10(I / I0)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "2015-juny-s4-p5",
+  "any": 2015,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P5",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b3"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa de λ = v/f i de la definició de nivell d'intensitat, amb I = P/(4πR²) per a una font que emet en totes direccions.",
+  "titol": "La veu d’una soprano: longituds d’ona i potència",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jl",
+      "pdf": "pau_fisi15jl",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi15jp",
+      "pdf": "pau_fisi15jp",
+      "pagina": 15
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2015/Juny/4/1258"
+  },
+  "dades": [
+    {
+      "simbol": "f",
+      "valor": "261,7 – 1 174,7",
+      "unitat": "Hz",
+      "descripcio": "rang de freqüències de la veu de soprano (do₃ – re₅)"
+    },
+    {
+      "simbol": "R",
+      "valor": "10,0",
+      "unitat": "m",
+      "descripcio": "distància de l'espectador a la soprano"
+    },
+    {
+      "simbol": "L_I",
+      "valor": "80",
+      "unitat": "dB",
+      "descripcio": "nivell d'intensitat sonora percebut"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "1,0·10⁻¹²",
+      "unitat": "W m⁻²",
+      "descripcio": "intensitat del llindar d'audició"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m s⁻¹",
+      "descripcio": "velocitat del so en l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>El terme musical <i>soprano</i> es refereix a la veu més aguda, característica del sexe femení. El rang vocal típic d’aquesta veu és de més de dues octaves, del do<sub>3</sub> (261,7 Hz) al re<sub>5</sub> (1 174,7 Hz).</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu les longituds d’ona dels sons més greu i més agut que pot emetre una cantant <i>soprano</i>."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "En una actuació, un espectador situat a 10,0 m d’una <i>soprano</i> percep un nivell d’intensitat sonora de 80 dB. Calculeu la potència d’aquest so."
+      }
+    ],
+    "dades_text": "Dades: Intensitat del llindar d’audició (0 dB), <i>I</i><sub>0</sub> = 1,0 × 10<sup>–12</sup> W m<sup>–2</sup><br>Velocitat del so en l’aire = 340 m s<sup>–1</sup>"
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona i freqüència",
+          "html": "En l'aire totes les freqüències es propaguen a la mateixa velocitat, de manera que λ = <i>v</i>/<i>f</i>: com més aguda és la nota, més curta és la longitud d'ona."
+        },
+        {
+          "titol": "So més agut i so més greu",
+          "html": "λ<sub>agut</sub> = 340/1 174,7 = <span class=\"res\">0,290 m</span><br>λ<sub>greu</sub> = 340/261,7 = <span class=\"res\">1,30 m</span>"
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure la relació λ = v/f."
+        },
+        {
+          "punts": 0.8,
+          "que": "Calcular les dues longituds d'ona: 0,290 m (re₅) i 1,30 m (do₃)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Del nivell a la intensitat",
+          "html": "<i>L</i><sub>I</sub> = 10·log(<i>I</i>/<i>I</i><sub>0</sub>) → <i>I</i> = <i>I</i><sub>0</sub>·10<sup><i>L</i><sub>I</sub>/10</sup>."
+        },
+        {
+          "titol": "Intensitat a 10,0 m",
+          "html": "<i>I</i> = 10<sup>−12</sup>·10<sup>8</sup> = <span class=\"res\">1,0·10<sup>−4</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Potència i intensitat",
+          "html": "La potència es reparteix sobre una esfera centrada en la soprano, de radi igual a la distància a l'espectador: <i>P</i> = <i>I</i>·<i>A</i> = <i>I</i>·4π<i>R</i><sup>2</sup>."
+        },
+        {
+          "titol": "Potència del so",
+          "html": "<i>P</i> = 10<sup>−4</sup>·4π·10,0<sup>2</sup> = <span class=\"res\">0,126 W</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Escriure la definició del nivell d'intensitat i aïllar-ne I."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular la intensitat, I = 10⁻⁴ W/m²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Relacionar potència i intensitat a través de l'àrea d'una esfera, P = I·A."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular la potència, P = I·4πR² = 0,126 W."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lag",
+      "text": "λ_agut = 0,290 m",
+      "valor": 0.29,
+      "pauta": 0.29
+    },
+    {
+      "apartat": "a",
+      "clau": "lgr",
+      "text": "λ_greu = 1,30 m",
+      "valor": 1.3,
+      "pauta": 1.3
+    },
+    {
+      "apartat": "b",
+      "clau": "I",
+      "text": "I = 1,0·10⁻⁴ W/m²",
+      "valor": 0.0001,
+      "pauta": 0.0001
+    },
+    {
+      "apartat": "b",
+      "clau": "P",
+      "text": "P = 0,126 W",
+      "valor": 0.126,
+      "pauta": 0.126
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "v = 340",
+    "I = 1e-12 * 10 ** (80 / 10)",
+    "R = {\"lag\": v / 1174.7, \"lgr\": v / 261.7, \"I\": I, \"P\": I * 4 * pi * 10.0 ** 2}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

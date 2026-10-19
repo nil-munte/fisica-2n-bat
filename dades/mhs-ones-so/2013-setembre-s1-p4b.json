@@ -1,0 +1,189 @@
+{
+  "id": "2013-setembre-s1-p4b",
+  "any": 2013,
+  "convocatoria": "setembre",
+  "serie": 1,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b3",
+    "b5"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal llegir a l'esquema quantes fraccions de longitud d'ona caben al tub (5λ/4) i veure que, si la intensitat es duplica, el nivell augmenta 10·log 2 dB sense fer servir les dades sobreres.",
+  "titol": "El clarinet com un tub tancat per un extrem",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi13sl",
+      "pdf": "pau_fisi13sl",
+      "pagina": 4
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi13sp",
+      "pdf": "pau_fisi13sp",
+      "pagina": 5
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2013/Setembre/1/1711"
+  },
+  "dades": [
+    {
+      "simbol": "ν₃",
+      "valor": "637",
+      "unitat": "Hz",
+      "descripcio": "freqüència del mode tercer harmònic"
+    },
+    {
+      "simbol": "I",
+      "valor": "1,00·10⁻⁵",
+      "unitat": "W m⁻²",
+      "descripcio": "intensitat amb què es toca la nota (no cal per al càlcul)"
+    },
+    {
+      "simbol": "d",
+      "valor": "2",
+      "unitat": "m",
+      "descripcio": "distància on es mesura el nivell (no cal per al càlcul)"
+    },
+    {
+      "simbol": "v_so",
+      "valor": "340",
+      "unitat": "m s⁻¹",
+      "descripcio": "velocitat del so"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>El clarinet és un instrument de fusta en forma de tub en el qual es generen ones estacionàries. L’instrument es pot assimilar a un tub ple d’aire obert per un extrem i tancat per l’altre. La figura mostra el mode tercer harmònic, on l’aire vibra amb una freqüència de 637 Hz.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Quina és la llargària del clarinet?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Si la nota es toca amb una intensitat d’1,00 × 10<sup>–5</sup> W m<sup>–2</sup> i produeix una intensitat sonora determinada a dos metres de distància, en quants decibels augmenta el nivell de sensació sonora a la mateixa distància si la intensitat es duplica?"
+      }
+    ],
+    "dades_text": "Dada: <i>v</i><sub>so</sub> = 340 m s<sup>–1</sup>"
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 480 150\" role=\"img\" aria-label=\"Tub obert per l’extrem esquerre i tancat pel dret. L’envolupant de l’ona estacionària té un ventre a l’extrem obert, un node a una cinquena part de la llargària, un altre node a tres cinquenes parts i un node a l’extrem tancat.\"><path d=\"M40 35 L42 35 L44 35.1 L46 35.3 L48 35.5 L50 35.8 L52 36.1 L54 36.5 L56 37 L58 37.5 L60 38 L62 38.7 L64 39.4 L66 40.1 L68 40.9 L70 41.7 L72 42.6 L74 43.6 L76 44.6 L78 45.6 L80 46.7 L82 47.8 L84 49 L86 50.2 L88 51.5 L90 52.8 L92 54.1 L94 55.5 L96 56.8 L98 58.3 L100 59.7 L102 61.2 L104 62.6 L106 64.1 L108 65.7 L110 67.2 L112 68.7 L114 70.3 L116 71.9 L118 73.4 L120 75 L122 76.6 L124 78.1 L126 79.7 L128 81.3 L130 82.8 L132 84.3 L134 85.9 L136 87.4 L138 88.8 L140 90.3 L142 91.7 L144 93.2 L146 94.5 L148 95.9 L150 97.2 L152 98.5 L154 99.8 L156 101 L158 102.2 L160 103.3 L162 104.4 L164 105.4 L166 106.4 L168 107.4 L170 108.3 L172 109.1 L174 109.9 L176 110.6 L178 111.3 L180 112 L182 112.5 L184 113 L186 113.5 L188 113.9 L190 114.2 L192 114.5 L194 114.7 L196 114.9 L198 115 L200 115 L202 115 L204 114.9 L206 114.7 L208 114.5 L210 114.2 L212 113.9 L214 113.5 L216 113 L218 112.5 L220 112 L222 111.3 L224 110.6 L226 109.9 L228 109.1 L230 108.3 L232 107.4 L234 106.4 L236 105.4 L238 104.4 L240 103.3 L242 102.2 L244 101 L246 99.8 L248 98.5 L250 97.2 L252 95.9 L254 94.5 L256 93.2 L258 91.7 L260 90.3 L262 88.8 L264 87.4 L266 85.9 L268 84.3 L270 82.8 L272 81.3 L274 79.7 L276 78.1 L278 76.6 L280 75 L282 73.4 L284 71.9 L286 70.3 L288 68.7 L290 67.2 L292 65.7 L294 64.1 L296 62.6 L298 61.2 L300 59.7 L302 58.3 L304 56.8 L306 55.5 L308 54.1 L310 52.8 L312 51.5 L314 50.2 L316 49 L318 47.8 L320 46.7 L322 45.6 L324 44.6 L326 43.6 L328 42.6 L330 41.7 L332 40.9 L334 40.1 L336 39.4 L338 38.7 L340 38 L342 37.5 L344 37 L346 36.5 L348 36.1 L350 35.8 L352 35.5 L354 35.3 L356 35.1 L358 35 L360 35 L362 35 L364 35.1 L366 35.3 L368 35.5 L370 35.8 L372 36.1 L374 36.5 L376 37 L378 37.5 L380 38 L382 38.7 L384 39.4 L386 40.1 L388 40.9 L390 41.7 L392 42.6 L394 43.6 L396 44.6 L398 45.6 L400 46.7 L402 47.8 L404 49 L406 50.2 L408 51.5 L410 52.8 L412 54.1 L414 55.5 L416 56.8 L418 58.3 L420 59.7 L422 61.2 L424 62.6 L426 64.1 L428 65.7 L430 67.2 L432 68.7 L434 70.3 L436 71.9 L438 73.4 L440 75 L440 75 L438 76.6 L436 78.1 L434 79.7 L432 81.3 L430 82.8 L428 84.3 L426 85.9 L424 87.4 L422 88.8 L420 90.3 L418 91.7 L416 93.2 L414 94.5 L412 95.9 L410 97.2 L408 98.5 L406 99.8 L404 101 L402 102.2 L400 103.3 L398 104.4 L396 105.4 L394 106.4 L392 107.4 L390 108.3 L388 109.1 L386 109.9 L384 110.6 L382 111.3 L380 112 L378 112.5 L376 113 L374 113.5 L372 113.9 L370 114.2 L368 114.5 L366 114.7 L364 114.9 L362 115 L360 115 L358 115 L356 114.9 L354 114.7 L352 114.5 L350 114.2 L348 113.9 L346 113.5 L344 113 L342 112.5 L340 112 L338 111.3 L336 110.6 L334 109.9 L332 109.1 L330 108.3 L328 107.4 L326 106.4 L324 105.4 L322 104.4 L320 103.3 L318 102.2 L316 101 L314 99.8 L312 98.5 L310 97.2 L308 95.9 L306 94.5 L304 93.2 L302 91.7 L300 90.3 L298 88.8 L296 87.4 L294 85.9 L292 84.3 L290 82.8 L288 81.3 L286 79.7 L284 78.1 L282 76.6 L280 75 L278 73.4 L276 71.9 L274 70.3 L272 68.7 L270 67.2 L268 65.7 L266 64.1 L264 62.6 L262 61.2 L260 59.7 L258 58.3 L256 56.8 L254 55.5 L252 54.1 L250 52.8 L248 51.5 L246 50.2 L244 49 L242 47.8 L240 46.7 L238 45.6 L236 44.6 L234 43.6 L232 42.6 L230 41.7 L228 40.9 L226 40.1 L224 39.4 L222 38.7 L220 38 L218 37.5 L216 37 L214 36.5 L212 36.1 L210 35.8 L208 35.5 L206 35.3 L204 35.1 L202 35 L200 35 L198 35 L196 35.1 L194 35.3 L192 35.5 L190 35.8 L188 36.1 L186 36.5 L184 37 L182 37.5 L180 38 L178 38.7 L176 39.4 L174 40.1 L172 40.9 L170 41.7 L168 42.6 L166 43.6 L164 44.6 L162 45.6 L160 46.7 L158 47.8 L156 49 L154 50.2 L152 51.5 L150 52.8 L148 54.1 L146 55.5 L144 56.8 L142 58.3 L140 59.7 L138 61.2 L136 62.6 L134 64.1 L132 65.7 L130 67.2 L128 68.7 L126 70.3 L124 71.9 L122 73.4 L120 75 L118 76.6 L116 78.1 L114 79.7 L112 81.3 L110 82.8 L108 84.3 L106 85.9 L104 87.4 L102 88.8 L100 90.3 L98 91.7 L96 93.2 L94 94.5 L92 95.9 L90 97.2 L88 98.5 L86 99.8 L84 101 L82 102.2 L80 103.3 L78 104.4 L76 105.4 L74 106.4 L72 107.4 L70 108.3 L68 109.1 L66 109.9 L64 110.6 L62 111.3 L60 112 L58 112.5 L56 113 L54 113.5 L52 113.9 L50 114.2 L48 114.5 L46 114.7 L44 114.9 L42 115 L40 115 Z\" fill=\"var(--x)\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M40 35 L42 35 L44 35.1 L46 35.3 L48 35.5 L50 35.8 L52 36.1 L54 36.5 L56 37 L58 37.5 L60 38 L62 38.7 L64 39.4 L66 40.1 L68 40.9 L70 41.7 L72 42.6 L74 43.6 L76 44.6 L78 45.6 L80 46.7 L82 47.8 L84 49 L86 50.2 L88 51.5 L90 52.8 L92 54.1 L94 55.5 L96 56.8 L98 58.3 L100 59.7 L102 61.2 L104 62.6 L106 64.1 L108 65.7 L110 67.2 L112 68.7 L114 70.3 L116 71.9 L118 73.4 L120 75 L122 76.6 L124 78.1 L126 79.7 L128 81.3 L130 82.8 L132 84.3 L134 85.9 L136 87.4 L138 88.8 L140 90.3 L142 91.7 L144 93.2 L146 94.5 L148 95.9 L150 97.2 L152 98.5 L154 99.8 L156 101 L158 102.2 L160 103.3 L162 104.4 L164 105.4 L166 106.4 L168 107.4 L170 108.3 L172 109.1 L174 109.9 L176 110.6 L178 111.3 L180 112 L182 112.5 L184 113 L186 113.5 L188 113.9 L190 114.2 L192 114.5 L194 114.7 L196 114.9 L198 115 L200 115 L202 115 L204 114.9 L206 114.7 L208 114.5 L210 114.2 L212 113.9 L214 113.5 L216 113 L218 112.5 L220 112 L222 111.3 L224 110.6 L226 109.9 L228 109.1 L230 108.3 L232 107.4 L234 106.4 L236 105.4 L238 104.4 L240 103.3 L242 102.2 L244 101 L246 99.8 L248 98.5 L250 97.2 L252 95.9 L254 94.5 L256 93.2 L258 91.7 L260 90.3 L262 88.8 L264 87.4 L266 85.9 L268 84.3 L270 82.8 L272 81.3 L274 79.7 L276 78.1 L278 76.6 L280 75 L282 73.4 L284 71.9 L286 70.3 L288 68.7 L290 67.2 L292 65.7 L294 64.1 L296 62.6 L298 61.2 L300 59.7 L302 58.3 L304 56.8 L306 55.5 L308 54.1 L310 52.8 L312 51.5 L314 50.2 L316 49 L318 47.8 L320 46.7 L322 45.6 L324 44.6 L326 43.6 L328 42.6 L330 41.7 L332 40.9 L334 40.1 L336 39.4 L338 38.7 L340 38 L342 37.5 L344 37 L346 36.5 L348 36.1 L350 35.8 L352 35.5 L354 35.3 L356 35.1 L358 35 L360 35 L362 35 L364 35.1 L366 35.3 L368 35.5 L370 35.8 L372 36.1 L374 36.5 L376 37 L378 37.5 L380 38 L382 38.7 L384 39.4 L386 40.1 L388 40.9 L390 41.7 L392 42.6 L394 43.6 L396 44.6 L398 45.6 L400 46.7 L402 47.8 L404 49 L406 50.2 L408 51.5 L410 52.8 L412 54.1 L414 55.5 L416 56.8 L418 58.3 L420 59.7 L422 61.2 L424 62.6 L426 64.1 L428 65.7 L430 67.2 L432 68.7 L434 70.3 L436 71.9 L438 73.4 L440 75\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.6\"/><path d=\"M40 115 L42 115 L44 114.9 L46 114.7 L48 114.5 L50 114.2 L52 113.9 L54 113.5 L56 113 L58 112.5 L60 112 L62 111.3 L64 110.6 L66 109.9 L68 109.1 L70 108.3 L72 107.4 L74 106.4 L76 105.4 L78 104.4 L80 103.3 L82 102.2 L84 101 L86 99.8 L88 98.5 L90 97.2 L92 95.9 L94 94.5 L96 93.2 L98 91.7 L100 90.3 L102 88.8 L104 87.4 L106 85.9 L108 84.3 L110 82.8 L112 81.3 L114 79.7 L116 78.1 L118 76.6 L120 75 L122 73.4 L124 71.9 L126 70.3 L128 68.7 L130 67.2 L132 65.7 L134 64.1 L136 62.6 L138 61.2 L140 59.7 L142 58.3 L144 56.8 L146 55.5 L148 54.1 L150 52.8 L152 51.5 L154 50.2 L156 49 L158 47.8 L160 46.7 L162 45.6 L164 44.6 L166 43.6 L168 42.6 L170 41.7 L172 40.9 L174 40.1 L176 39.4 L178 38.7 L180 38 L182 37.5 L184 37 L186 36.5 L188 36.1 L190 35.8 L192 35.5 L194 35.3 L196 35.1 L198 35 L200 35 L202 35 L204 35.1 L206 35.3 L208 35.5 L210 35.8 L212 36.1 L214 36.5 L216 37 L218 37.5 L220 38 L222 38.7 L224 39.4 L226 40.1 L228 40.9 L230 41.7 L232 42.6 L234 43.6 L236 44.6 L238 45.6 L240 46.7 L242 47.8 L244 49 L246 50.2 L248 51.5 L250 52.8 L252 54.1 L254 55.5 L256 56.8 L258 58.3 L260 59.7 L262 61.2 L264 62.6 L266 64.1 L268 65.7 L270 67.2 L272 68.7 L274 70.3 L276 71.9 L278 73.4 L280 75 L282 76.6 L284 78.1 L286 79.7 L288 81.3 L290 82.8 L292 84.3 L294 85.9 L296 87.4 L298 88.8 L300 90.3 L302 91.7 L304 93.2 L306 94.5 L308 95.9 L310 97.2 L312 98.5 L314 99.8 L316 101 L318 102.2 L320 103.3 L322 104.4 L324 105.4 L326 106.4 L328 107.4 L330 108.3 L332 109.1 L334 109.9 L336 110.6 L338 111.3 L340 112 L342 112.5 L344 113 L346 113.5 L348 113.9 L350 114.2 L352 114.5 L354 114.7 L356 114.9 L358 115 L360 115 L362 115 L364 114.9 L366 114.7 L368 114.5 L370 114.2 L372 113.9 L374 113.5 L376 113 L378 112.5 L380 112 L382 111.3 L384 110.6 L386 109.9 L388 109.1 L390 108.3 L392 107.4 L394 106.4 L396 105.4 L398 104.4 L400 103.3 L402 102.2 L404 101 L406 99.8 L408 98.5 L410 97.2 L412 95.9 L414 94.5 L416 93.2 L418 91.7 L420 90.3 L422 88.8 L424 87.4 L426 85.9 L428 84.3 L430 82.8 L432 81.3 L434 79.7 L436 78.1 L438 76.6 L440 75\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.6\"/><path d=\"M40 30 H440 V120 H40\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.2\"/></svg>",
+      "peu": "El clarinet com un tub obert per un extrem (esquerra) i tancat per l’altre (dreta), vibrant en el mode tercer harmònic."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 480 200\" role=\"img\" aria-label=\"Tub del clarinet amb el mode tercer harmònic i les distàncies: un quart de longitud d’ona des de l’extrem obert fins al primer node i dues mitges longituds d’ona fins a l’extrem tancat.\"><defs><marker id=\"ta\" viewBox=\"0 0 8 8\" refX=\"1\" refY=\"4\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M8 0 L0 4 L8 8 z\" fill=\"var(--ink)\"/></marker><marker id=\"tb\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L8 4 L0 8 z\" fill=\"var(--ink)\"/></marker></defs><path d=\"M40 35 L42 35 L44 35.1 L46 35.3 L48 35.5 L50 35.8 L52 36.1 L54 36.5 L56 37 L58 37.5 L60 38 L62 38.7 L64 39.4 L66 40.1 L68 40.9 L70 41.7 L72 42.6 L74 43.6 L76 44.6 L78 45.6 L80 46.7 L82 47.8 L84 49 L86 50.2 L88 51.5 L90 52.8 L92 54.1 L94 55.5 L96 56.8 L98 58.3 L100 59.7 L102 61.2 L104 62.6 L106 64.1 L108 65.7 L110 67.2 L112 68.7 L114 70.3 L116 71.9 L118 73.4 L120 75 L122 76.6 L124 78.1 L126 79.7 L128 81.3 L130 82.8 L132 84.3 L134 85.9 L136 87.4 L138 88.8 L140 90.3 L142 91.7 L144 93.2 L146 94.5 L148 95.9 L150 97.2 L152 98.5 L154 99.8 L156 101 L158 102.2 L160 103.3 L162 104.4 L164 105.4 L166 106.4 L168 107.4 L170 108.3 L172 109.1 L174 109.9 L176 110.6 L178 111.3 L180 112 L182 112.5 L184 113 L186 113.5 L188 113.9 L190 114.2 L192 114.5 L194 114.7 L196 114.9 L198 115 L200 115 L202 115 L204 114.9 L206 114.7 L208 114.5 L210 114.2 L212 113.9 L214 113.5 L216 113 L218 112.5 L220 112 L222 111.3 L224 110.6 L226 109.9 L228 109.1 L230 108.3 L232 107.4 L234 106.4 L236 105.4 L238 104.4 L240 103.3 L242 102.2 L244 101 L246 99.8 L248 98.5 L250 97.2 L252 95.9 L254 94.5 L256 93.2 L258 91.7 L260 90.3 L262 88.8 L264 87.4 L266 85.9 L268 84.3 L270 82.8 L272 81.3 L274 79.7 L276 78.1 L278 76.6 L280 75 L282 73.4 L284 71.9 L286 70.3 L288 68.7 L290 67.2 L292 65.7 L294 64.1 L296 62.6 L298 61.2 L300 59.7 L302 58.3 L304 56.8 L306 55.5 L308 54.1 L310 52.8 L312 51.5 L314 50.2 L316 49 L318 47.8 L320 46.7 L322 45.6 L324 44.6 L326 43.6 L328 42.6 L330 41.7 L332 40.9 L334 40.1 L336 39.4 L338 38.7 L340 38 L342 37.5 L344 37 L346 36.5 L348 36.1 L350 35.8 L352 35.5 L354 35.3 L356 35.1 L358 35 L360 35 L362 35 L364 35.1 L366 35.3 L368 35.5 L370 35.8 L372 36.1 L374 36.5 L376 37 L378 37.5 L380 38 L382 38.7 L384 39.4 L386 40.1 L388 40.9 L390 41.7 L392 42.6 L394 43.6 L396 44.6 L398 45.6 L400 46.7 L402 47.8 L404 49 L406 50.2 L408 51.5 L410 52.8 L412 54.1 L414 55.5 L416 56.8 L418 58.3 L420 59.7 L422 61.2 L424 62.6 L426 64.1 L428 65.7 L430 67.2 L432 68.7 L434 70.3 L436 71.9 L438 73.4 L440 75 L440 75 L438 76.6 L436 78.1 L434 79.7 L432 81.3 L430 82.8 L428 84.3 L426 85.9 L424 87.4 L422 88.8 L420 90.3 L418 91.7 L416 93.2 L414 94.5 L412 95.9 L410 97.2 L408 98.5 L406 99.8 L404 101 L402 102.2 L400 103.3 L398 104.4 L396 105.4 L394 106.4 L392 107.4 L390 108.3 L388 109.1 L386 109.9 L384 110.6 L382 111.3 L380 112 L378 112.5 L376 113 L374 113.5 L372 113.9 L370 114.2 L368 114.5 L366 114.7 L364 114.9 L362 115 L360 115 L358 115 L356 114.9 L354 114.7 L352 114.5 L350 114.2 L348 113.9 L346 113.5 L344 113 L342 112.5 L340 112 L338 111.3 L336 110.6 L334 109.9 L332 109.1 L330 108.3 L328 107.4 L326 106.4 L324 105.4 L322 104.4 L320 103.3 L318 102.2 L316 101 L314 99.8 L312 98.5 L310 97.2 L308 95.9 L306 94.5 L304 93.2 L302 91.7 L300 90.3 L298 88.8 L296 87.4 L294 85.9 L292 84.3 L290 82.8 L288 81.3 L286 79.7 L284 78.1 L282 76.6 L280 75 L278 73.4 L276 71.9 L274 70.3 L272 68.7 L270 67.2 L268 65.7 L266 64.1 L264 62.6 L262 61.2 L260 59.7 L258 58.3 L256 56.8 L254 55.5 L252 54.1 L250 52.8 L248 51.5 L246 50.2 L244 49 L242 47.8 L240 46.7 L238 45.6 L236 44.6 L234 43.6 L232 42.6 L230 41.7 L228 40.9 L226 40.1 L224 39.4 L222 38.7 L220 38 L218 37.5 L216 37 L214 36.5 L212 36.1 L210 35.8 L208 35.5 L206 35.3 L204 35.1 L202 35 L200 35 L198 35 L196 35.1 L194 35.3 L192 35.5 L190 35.8 L188 36.1 L186 36.5 L184 37 L182 37.5 L180 38 L178 38.7 L176 39.4 L174 40.1 L172 40.9 L170 41.7 L168 42.6 L166 43.6 L164 44.6 L162 45.6 L160 46.7 L158 47.8 L156 49 L154 50.2 L152 51.5 L150 52.8 L148 54.1 L146 55.5 L144 56.8 L142 58.3 L140 59.7 L138 61.2 L136 62.6 L134 64.1 L132 65.7 L130 67.2 L128 68.7 L126 70.3 L124 71.9 L122 73.4 L120 75 L118 76.6 L116 78.1 L114 79.7 L112 81.3 L110 82.8 L108 84.3 L106 85.9 L104 87.4 L102 88.8 L100 90.3 L98 91.7 L96 93.2 L94 94.5 L92 95.9 L90 97.2 L88 98.5 L86 99.8 L84 101 L82 102.2 L80 103.3 L78 104.4 L76 105.4 L74 106.4 L72 107.4 L70 108.3 L68 109.1 L66 109.9 L64 110.6 L62 111.3 L60 112 L58 112.5 L56 113 L54 113.5 L52 113.9 L50 114.2 L48 114.5 L46 114.7 L44 114.9 L42 115 L40 115 Z\" fill=\"var(--x)\" fill-opacity=\"0.18\" stroke=\"none\"/><path d=\"M40 35 L42 35 L44 35.1 L46 35.3 L48 35.5 L50 35.8 L52 36.1 L54 36.5 L56 37 L58 37.5 L60 38 L62 38.7 L64 39.4 L66 40.1 L68 40.9 L70 41.7 L72 42.6 L74 43.6 L76 44.6 L78 45.6 L80 46.7 L82 47.8 L84 49 L86 50.2 L88 51.5 L90 52.8 L92 54.1 L94 55.5 L96 56.8 L98 58.3 L100 59.7 L102 61.2 L104 62.6 L106 64.1 L108 65.7 L110 67.2 L112 68.7 L114 70.3 L116 71.9 L118 73.4 L120 75 L122 76.6 L124 78.1 L126 79.7 L128 81.3 L130 82.8 L132 84.3 L134 85.9 L136 87.4 L138 88.8 L140 90.3 L142 91.7 L144 93.2 L146 94.5 L148 95.9 L150 97.2 L152 98.5 L154 99.8 L156 101 L158 102.2 L160 103.3 L162 104.4 L164 105.4 L166 106.4 L168 107.4 L170 108.3 L172 109.1 L174 109.9 L176 110.6 L178 111.3 L180 112 L182 112.5 L184 113 L186 113.5 L188 113.9 L190 114.2 L192 114.5 L194 114.7 L196 114.9 L198 115 L200 115 L202 115 L204 114.9 L206 114.7 L208 114.5 L210 114.2 L212 113.9 L214 113.5 L216 113 L218 112.5 L220 112 L222 111.3 L224 110.6 L226 109.9 L228 109.1 L230 108.3 L232 107.4 L234 106.4 L236 105.4 L238 104.4 L240 103.3 L242 102.2 L244 101 L246 99.8 L248 98.5 L250 97.2 L252 95.9 L254 94.5 L256 93.2 L258 91.7 L260 90.3 L262 88.8 L264 87.4 L266 85.9 L268 84.3 L270 82.8 L272 81.3 L274 79.7 L276 78.1 L278 76.6 L280 75 L282 73.4 L284 71.9 L286 70.3 L288 68.7 L290 67.2 L292 65.7 L294 64.1 L296 62.6 L298 61.2 L300 59.7 L302 58.3 L304 56.8 L306 55.5 L308 54.1 L310 52.8 L312 51.5 L314 50.2 L316 49 L318 47.8 L320 46.7 L322 45.6 L324 44.6 L326 43.6 L328 42.6 L330 41.7 L332 40.9 L334 40.1 L336 39.4 L338 38.7 L340 38 L342 37.5 L344 37 L346 36.5 L348 36.1 L350 35.8 L352 35.5 L354 35.3 L356 35.1 L358 35 L360 35 L362 35 L364 35.1 L366 35.3 L368 35.5 L370 35.8 L372 36.1 L374 36.5 L376 37 L378 37.5 L380 38 L382 38.7 L384 39.4 L386 40.1 L388 40.9 L390 41.7 L392 42.6 L394 43.6 L396 44.6 L398 45.6 L400 46.7 L402 47.8 L404 49 L406 50.2 L408 51.5 L410 52.8 L412 54.1 L414 55.5 L416 56.8 L418 58.3 L420 59.7 L422 61.2 L424 62.6 L426 64.1 L428 65.7 L430 67.2 L432 68.7 L434 70.3 L436 71.9 L438 73.4 L440 75\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.6\"/><path d=\"M40 115 L42 115 L44 114.9 L46 114.7 L48 114.5 L50 114.2 L52 113.9 L54 113.5 L56 113 L58 112.5 L60 112 L62 111.3 L64 110.6 L66 109.9 L68 109.1 L70 108.3 L72 107.4 L74 106.4 L76 105.4 L78 104.4 L80 103.3 L82 102.2 L84 101 L86 99.8 L88 98.5 L90 97.2 L92 95.9 L94 94.5 L96 93.2 L98 91.7 L100 90.3 L102 88.8 L104 87.4 L106 85.9 L108 84.3 L110 82.8 L112 81.3 L114 79.7 L116 78.1 L118 76.6 L120 75 L122 73.4 L124 71.9 L126 70.3 L128 68.7 L130 67.2 L132 65.7 L134 64.1 L136 62.6 L138 61.2 L140 59.7 L142 58.3 L144 56.8 L146 55.5 L148 54.1 L150 52.8 L152 51.5 L154 50.2 L156 49 L158 47.8 L160 46.7 L162 45.6 L164 44.6 L166 43.6 L168 42.6 L170 41.7 L172 40.9 L174 40.1 L176 39.4 L178 38.7 L180 38 L182 37.5 L184 37 L186 36.5 L188 36.1 L190 35.8 L192 35.5 L194 35.3 L196 35.1 L198 35 L200 35 L202 35 L204 35.1 L206 35.3 L208 35.5 L210 35.8 L212 36.1 L214 36.5 L216 37 L218 37.5 L220 38 L222 38.7 L224 39.4 L226 40.1 L228 40.9 L230 41.7 L232 42.6 L234 43.6 L236 44.6 L238 45.6 L240 46.7 L242 47.8 L244 49 L246 50.2 L248 51.5 L250 52.8 L252 54.1 L254 55.5 L256 56.8 L258 58.3 L260 59.7 L262 61.2 L264 62.6 L266 64.1 L268 65.7 L270 67.2 L272 68.7 L274 70.3 L276 71.9 L278 73.4 L280 75 L282 76.6 L284 78.1 L286 79.7 L288 81.3 L290 82.8 L292 84.3 L294 85.9 L296 87.4 L298 88.8 L300 90.3 L302 91.7 L304 93.2 L306 94.5 L308 95.9 L310 97.2 L312 98.5 L314 99.8 L316 101 L318 102.2 L320 103.3 L322 104.4 L324 105.4 L326 106.4 L328 107.4 L330 108.3 L332 109.1 L334 109.9 L336 110.6 L338 111.3 L340 112 L342 112.5 L344 113 L346 113.5 L348 113.9 L350 114.2 L352 114.5 L354 114.7 L356 114.9 L358 115 L360 115 L362 115 L364 114.9 L366 114.7 L368 114.5 L370 114.2 L372 113.9 L374 113.5 L376 113 L378 112.5 L380 112 L382 111.3 L384 110.6 L386 109.9 L388 109.1 L390 108.3 L392 107.4 L394 106.4 L396 105.4 L398 104.4 L400 103.3 L402 102.2 L404 101 L406 99.8 L408 98.5 L410 97.2 L412 95.9 L414 94.5 L416 93.2 L418 91.7 L420 90.3 L422 88.8 L424 87.4 L426 85.9 L428 84.3 L430 82.8 L432 81.3 L434 79.7 L436 78.1 L438 76.6 L440 75\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.6\"/><path d=\"M40 30 H440 V120 H40\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.2\"/><line x1=\"40\" y1=\"124\" x2=\"40\" y2=\"151\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"120\" y1=\"124\" x2=\"120\" y2=\"151\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"280\" y1=\"124\" x2=\"280\" y2=\"151\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"440\" y1=\"124\" x2=\"440\" y2=\"151\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"42\" y1=\"145\" x2=\"118\" y2=\"145\" stroke=\"var(--ink)\" stroke-width=\"1\" marker-start=\"url(#ta)\" marker-end=\"url(#tb)\"/><text x=\"66.0\" y=\"163\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">λ</tspan><tspan font-size=\"9\" dy=\"3\">3</tspan><tspan dy=\"-3\">/4</tspan></text><line x1=\"122\" y1=\"145\" x2=\"278\" y2=\"145\" stroke=\"var(--ink)\" stroke-width=\"1\" marker-start=\"url(#ta)\" marker-end=\"url(#tb)\"/><text x=\"186.0\" y=\"163\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">λ</tspan><tspan font-size=\"9\" dy=\"3\">3</tspan><tspan dy=\"-3\">/2</tspan></text><line x1=\"282\" y1=\"145\" x2=\"438\" y2=\"145\" stroke=\"var(--ink)\" stroke-width=\"1\" marker-start=\"url(#ta)\" marker-end=\"url(#tb)\"/><text x=\"346.0\" y=\"163\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">λ</tspan><tspan font-size=\"9\" dy=\"3\">3</tspan><tspan dy=\"-3\">/2</tspan></text><line x1=\"42\" y1=\"185\" x2=\"438\" y2=\"185\" stroke=\"var(--ep)\" stroke-width=\"1.2\" marker-start=\"url(#ta)\" marker-end=\"url(#tb)\"/><rect x=\"226.0\" y=\"176\" width=\"28\" height=\"18\" fill=\"var(--surface)\"/><text x=\"240.0\" y=\"190\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" font-style=\"italic\" fill=\"var(--ep)\">L</text><line x1=\"40\" y1=\"151\" x2=\"40\" y2=\"189\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"440\" y1=\"151\" x2=\"440\" y2=\"189\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><text x=\"44\" y=\"22\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--muted)\">obert: ventre</text><text x=\"440\" y=\"22\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--muted)\">tancat: node</text></svg>",
+      "peu": "Lectura de l’esquema: λ₃/4 des del ventre de l’extrem obert fins al primer node i dos fusos de λ₃/2 fins a l’extrem tancat."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Lectura de l'esquema",
+          "html": "A l'extrem obert l'aire vibra amb amplitud màxima (ventre) i a l'extrem tancat no pot vibrar (node). A la figura, del ventre de l'extrem obert al primer node hi ha un quart de longitud d'ona, i després hi ha dos fusos sencers, de mitja longitud d'ona cadascun: <i>L</i> = λ<sub>3</sub>/4 + 2·λ<sub>3</sub>/2 = 5λ<sub>3</sub>/4, és a dir, λ<sub>3</sub> = 4<i>L</i>/5. (És el tercer mode possible del tub: en un tub tancat per un extrem només hi ha els harmònics senars.)",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Relació amb la freqüència",
+          "html": "La velocitat del so lliga la longitud d'ona i la freqüència: <i>v</i><sub>so</sub> = λ<sub>3</sub>·ν<sub>3</sub> = (4<i>L</i>/5)·ν<sub>3</sub>."
+        },
+        {
+          "titol": "Llargària del clarinet",
+          "html": "Aïllant <i>L</i>: <i>L</i> = 5<i>v</i><sub>so</sub>/(4ν<sub>3</sub>) = 5·340/(4·637) = <span class=\"res\">0,667 m</span> (6,67·10<sup>−1</sup> m)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Deduir de l'esquema que L = 5λ₃/4, és a dir, λ₃ = 4L/5."
+        },
+        {
+          "punts": 0.2,
+          "que": "Relacionar longitud d’ona i freqüència: v_so = λ₃·ν₃."
+        },
+        {
+          "punts": 0.4,
+          "que": "Obtenir la llargària, L = 5v_so/(4ν₃) = 0,667 m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Nivell inicial",
+          "html": "Si a dos metres arriba una intensitat <i>I</i><sub>1</sub>, el nivell de sensació sonora és β<sub>1</sub> = 10·log(<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) dB."
+        },
+        {
+          "titol": "Nivell amb la intensitat doble",
+          "html": "Ara la intensitat és 2<i>I</i><sub>1</sub>: β<sub>2</sub> = 10·log(2<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) = 10·log 2 + 10·log(<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) = 10·log 2 + β<sub>1</sub>."
+        },
+        {
+          "titol": "Augment",
+          "html": "Δ<i>β</i> = β<sub>2</sub> − β<sub>1</sub> = 10·log 2 = <span class=\"res\">3,01 dB</span>. L'augment no depèn del nivell de partida, i per això no calen ni la intensitat d'1,00·10<sup>−5</sup> W m<sup>−2</sup> ni la distància."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Escriure el nivell inicial, β₁ = 10·log(I₁/I₀)."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure el nou nivell amb intensitat 2I₁ i separar-lo com a 10·log 2 + β₁."
+        },
+        {
+          "punts": 0.2,
+          "que": "Concloure que el nivell augmenta 3,01 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "L",
+      "text": "L = 0,667 m",
+      "valor": 0.667,
+      "pauta": 0.667
+    },
+    {
+      "apartat": "b",
+      "clau": "db",
+      "text": "Δβ = 3,01 dB",
+      "valor": 3.01,
+      "pauta": 3.01
+    }
+  ],
+  "comprovacio": [
+    "from math import log10",
+    "v = 340",
+    "nu3 = 637",
+    "R = {\"L\": 5 * v / (4 * nu3), \"db\": 10 * log10(2)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

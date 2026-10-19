@@ -1,0 +1,192 @@
+{
+  "id": "2022-juny-s5-p7",
+  "any": 2022,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P7",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b4"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "L'equació de l'ona surt directament de λ i v; l'apartat b és conceptual i demana raonar l'efecte Doppler descartant arguments un per un.",
+  "titol": "La sirena d'una alarma i l'observador del semàfor",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi22jl",
+      "pdf": "pau_fisi22jl",
+      "pagina": 29
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi22jp",
+      "pdf": "pau_fisi22jp",
+      "pagina": 31
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2022/Juny/5/2911"
+  },
+  "dades": [
+    {
+      "simbol": "λ",
+      "valor": "0,136",
+      "unitat": "m",
+      "descripcio": "longitud d'ona del so de la sirena"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so en l'aire"
+    },
+    {
+      "simbol": "A₀",
+      "valor": "A₀",
+      "unitat": "",
+      "descripcio": "amplitud de l'ona que arriba a l'observador"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; el repartiment intern és el de la pauta."
+  },
+  "enunciat": {
+    "intro": "<p>La sirena d’una alarma d’un edifici emet una ona sonora de 0,136 m de longitud d’ona, que en l’aire es propaga a una velocitat d’uns 340 m/s. L’ona sonora arriba a un observador que està aturat en un semàfor, segons la direcció de l’eix <i>x</i> en sentit positiu i amb una amplitud <i>A</i><sub>0</sub>.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Escriviu l’equació de l’ona harmònica plana, <i>A</i>(<i>x</i>, <i>t</i>), que arriba a l’observador. Suposeu que la fase inicial és zero."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "A continuació, el semàfor es posa verd, i l’observador es posa en moviment i s’acosta a l’alarma a una velocitat constant. En aquestes condicions, l’observador percep un canvi de la freqüència de l’ona. Quin canvi de la freqüència percep l’observador? Quin o quins dels arguments següents descriuen millor aquest fenomen?:<br>1. El canvi de la freqüència és degut al moviment de la font.<br>2. L’aparent canvi de la freqüència és degut al moviment relatiu entre la font i l’observador.<br>3. El canvi en la longitud d’ona de la font és degut al moviment de l’observador.<br>4. L’aparent canvi de la longitud d’ona és degut al moviment de l’observador.<br>Justifiqueu la tria i per què heu descartat la resta d’arguments, i indiqueu el fenomen en què us heu basat."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Nombre d'ona, freqüència i freqüència angular",
+          "html": "A partir de λ = 0,136 m i <i>v</i> = 340 m/s: <i>k</i> = 2π/λ = 2π/0,136 = <span class=\"res\">46,2 m<sup>−1</sup></span>; <i>f</i> = 1/<i>T</i> = <i>v</i>/λ = 340/0,136 = <span class=\"res\">2 500 Hz</span>; ω = 2π<i>f</i> = 2π·2 500 = <span class=\"res\">15 710 rad/s</span>."
+        },
+        {
+          "titol": "Equació de l'ona",
+          "html": "Una ona harmònica plana que avança en el sentit positiu de l'eix <i>x</i>, amb fase inicial nul·la, es pot escriure de diverses maneres equivalents: <i>A</i>(<i>x</i>, <i>t</i>) = <i>A</i><sub>0</sub>·sin(<i>kx</i> − ω<i>t</i>) = <i>A</i><sub>0</sub>·sin <i>k</i>(<i>x</i> − <i>vt</i>) = <i>A</i><sub>0</sub>·sin 2π(<i>x</i>/λ − <i>t</i>/<i>T</i>) = <i>A</i><sub>0</sub>·sin 2π<i>f</i>(<i>x</i>/<i>v</i> − <i>t</i>). Amb els valors calculats: <span class=\"res\"><i>A</i>(<i>x</i>, <i>t</i>) = <i>A</i><sub>0</sub>·sin(46,2<i>x</i> − 15 710<i>t</i>)</span>, amb <i>x</i> en m i <i>t</i> en s."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Calcular el nombre d'ona (46,2 m⁻¹), la freqüència (2 500 Hz) i la freqüència angular (15 710 rad/s)."
+        },
+        {
+          "punts": 0.75,
+          "que": "Escriure l'equació de l'ona plana que avança cap a les x positives, A(x, t) = A₀·sin(46,2x − 15 710t), o una forma equivalent."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Què percep",
+          "html": "En acostar-se a l'alarma, l'observador sent un so <span class=\"res\">més agut: una freqüència més alta</span> que l'emesa. És l'<span class=\"res\">efecte Doppler</span>."
+        },
+        {
+          "titol": "Argument correcte",
+          "html": "El que descriu millor el fenomen és el <span class=\"res\">2</span>: el canvi de freqüència és aparent i es deu al moviment relatiu entre la font i l'observador."
+        },
+        {
+          "titol": "Per què no l'1",
+          "html": "La sirena està quieta i continua emetent la mateixa freqüència: el canvi només el percep l'observador, no el produeix la font."
+        },
+        {
+          "titol": "Per què no el 3",
+          "html": "La longitud d'ona que emet la font no canvia pel fet que l'observador es mogui."
+        },
+        {
+          "titol": "Per què no el 4",
+          "html": "La longitud d'ona del so a l'aire tampoc canvia: les crestes continuen igual d'espaiades. A més, el que importa és el moviment relatiu entre observador i font, no només el de l'observador."
+        },
+        {
+          "titol": "Per què el 2",
+          "html": "L'oïda distingeix els sons per la seva freqüència. Quan l'observador avança cap a la font, va a trobar les crestes i el temps entre dues crestes que li arriben s'escurça: percep una freqüència més gran. A més, l'argument parla de moviment relatiu, que és el que compta, sense suposar que la font o l'observador hagin d'estar en repòs."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Dir que percep un so més agut (més freqüència) i associar-ho a l'efecte Doppler."
+        },
+        {
+          "punts": 0.2,
+          "que": "Triar l'argument 2 com a correcte."
+        },
+        {
+          "punts": 0.2,
+          "que": "Descartar l'1: la freqüència emesa no canvia i la font està en repòs."
+        },
+        {
+          "punts": 0.2,
+          "que": "Descartar el 3: la longitud d'ona de la font no canvia."
+        },
+        {
+          "punts": 0.2,
+          "que": "Descartar el 4: la longitud d'ona no canvia i el que importa és el moviment relatiu."
+        },
+        {
+          "punts": 0.2,
+          "que": "Justificar per què el 2 és el millor: l'oïda percep la freqüència, que augmenta aparentment perquè les crestes arriben més seguides, i el moviment és relatiu."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 46,2 m⁻¹",
+      "valor": 46.2,
+      "pauta": 46.2
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 2 500 Hz",
+      "valor": 2500,
+      "pauta": 2500
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 15 710 rad/s",
+      "valor": 15710,
+      "pauta": 15710
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "lam, v = 0.136, 340",
+    "f = v / lam",
+    "R = {'k': 2 * pi / lam, 'f': f, 'w': 2 * pi * f}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

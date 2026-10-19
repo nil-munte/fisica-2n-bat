@@ -1,0 +1,226 @@
+{
+  "id": "2014-juny-s4-p5b",
+  "any": 2014,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P5",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b5"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal raonar la condició dels harmònics d'una corda fixa pels dos extrems, situar-ne nodes i ventres i dibuixar dos modes superiors calculant-ne les freqüències.",
+  "titol": "La corda d’un violí: fonamental, tercer i cinquè modes",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jl",
+      "pdf": "pau_fisi14jl",
+      "pagina": 8
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jp",
+      "pdf": "pau_fisi14jp",
+      "pagina": 9
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Juny/4/1036"
+  },
+  "dades": [
+    {
+      "simbol": "L",
+      "valor": "32",
+      "unitat": "cm",
+      "descripcio": "longitud de la corda"
+    },
+    {
+      "simbol": "ν",
+      "valor": "196",
+      "unitat": "Hz",
+      "descripcio": "freqüència fonamental"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>La corda d’un violí fa 32 cm de llargària i vibra amb una freqüència fonamental de 196 Hz.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Expliqueu raonadament quina és la longitud d’ona del mode fonamental i digueu en quins punts de la corda hi ha els nodes i els ventres. Calculeu la velocitat de propagació de les ones que, per superposició, han generat l’ona estacionària de la corda."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Dibuixeu, de manera esquemàtica, el perfil de l’ona estacionària del tercer i del cinquè modes de vibració i calculeu-ne les freqüències."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 420 150\" role=\"img\" aria-label=\"Perfil del tercer mode de vibració de la corda: 3 fusos, 4 nodes (comptant els dos extrems) i 3 ventres.\"><line x1=\"40\" y1=\"70\" x2=\"380\" y2=\"70\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><path d=\"M40 70 L41.4 68.5 L42.8 67 L44.2 65.5 L45.7 64.1 L47.1 62.6 L48.5 61.1 L49.9 59.7 L51.3 58.3 L52.8 56.8 L54.2 55.5 L55.6 54.1 L57 52.7 L58.4 51.4 L59.8 50.1 L61.2 48.9 L62.7 47.7 L64.1 46.5 L65.5 45.3 L66.9 44.2 L68.3 43.1 L69.8 42.1 L71.2 41.1 L72.6 40.2 L74 39.3 L75.4 38.4 L76.8 37.6 L78.2 36.8 L79.7 36.1 L81.1 35.5 L82.5 34.9 L83.9 34.3 L85.3 33.9 L86.8 33.4 L88.2 33 L89.6 32.7 L91 32.5 L92.4 32.3 L93.8 32.1 L95.2 32 L96.7 32 L98.1 32 L99.5 32.1 L100.9 32.3 L102.3 32.5 L103.8 32.7 L105.2 33 L106.6 33.4 L108 33.9 L109.4 34.3 L110.8 34.9 L112.2 35.5 L113.7 36.1 L115.1 36.8 L116.5 37.6 L117.9 38.4 L119.3 39.3 L120.8 40.2 L122.2 41.1 L123.6 42.1 L125 43.1 L126.4 44.2 L127.8 45.3 L129.2 46.5 L130.7 47.7 L132.1 48.9 L133.5 50.1 L134.9 51.4 L136.3 52.7 L137.8 54.1 L139.2 55.5 L140.6 56.8 L142 58.3 L143.4 59.7 L144.8 61.1 L146.2 62.6 L147.7 64.1 L149.1 65.5 L150.5 67 L151.9 68.5 L153.3 70 L154.8 71.5 L156.2 73 L157.6 74.5 L159 75.9 L160.4 77.4 L161.8 78.9 L163.2 80.3 L164.7 81.7 L166.1 83.2 L167.5 84.5 L168.9 85.9 L170.3 87.3 L171.8 88.6 L173.2 89.9 L174.6 91.1 L176 92.3 L177.4 93.5 L178.8 94.7 L180.2 95.8 L181.7 96.9 L183.1 97.9 L184.5 98.9 L185.9 99.8 L187.3 100.7 L188.8 101.6 L190.2 102.4 L191.6 103.2 L193 103.9 L194.4 104.5 L195.8 105.1 L197.2 105.7 L198.7 106.1 L200.1 106.6 L201.5 107 L202.9 107.3 L204.3 107.5 L205.8 107.7 L207.2 107.9 L208.6 108 L210 108 L211.4 108 L212.8 107.9 L214.2 107.7 L215.7 107.5 L217.1 107.3 L218.5 107 L219.9 106.6 L221.3 106.1 L222.8 105.7 L224.2 105.1 L225.6 104.5 L227 103.9 L228.4 103.2 L229.8 102.4 L231.2 101.6 L232.7 100.7 L234.1 99.8 L235.5 98.9 L236.9 97.9 L238.3 96.9 L239.8 95.8 L241.2 94.7 L242.6 93.5 L244 92.3 L245.4 91.1 L246.8 89.9 L248.2 88.6 L249.7 87.3 L251.1 85.9 L252.5 84.5 L253.9 83.2 L255.3 81.7 L256.8 80.3 L258.2 78.9 L259.6 77.4 L261 75.9 L262.4 74.5 L263.8 73 L265.2 71.5 L266.7 70 L268.1 68.5 L269.5 67 L270.9 65.5 L272.3 64.1 L273.8 62.6 L275.2 61.1 L276.6 59.7 L278 58.3 L279.4 56.8 L280.8 55.5 L282.2 54.1 L283.7 52.7 L285.1 51.4 L286.5 50.1 L287.9 48.9 L289.3 47.7 L290.8 46.5 L292.2 45.3 L293.6 44.2 L295 43.1 L296.4 42.1 L297.8 41.1 L299.2 40.2 L300.7 39.3 L302.1 38.4 L303.5 37.6 L304.9 36.8 L306.3 36.1 L307.8 35.5 L309.2 34.9 L310.6 34.3 L312 33.9 L313.4 33.4 L314.8 33 L316.2 32.7 L317.7 32.5 L319.1 32.3 L320.5 32.1 L321.9 32 L323.3 32 L324.8 32 L326.2 32.1 L327.6 32.3 L329 32.5 L330.4 32.7 L331.8 33 L333.2 33.4 L334.7 33.9 L336.1 34.3 L337.5 34.9 L338.9 35.5 L340.3 36.1 L341.8 36.8 L343.2 37.6 L344.6 38.4 L346 39.3 L347.4 40.2 L348.8 41.1 L350.2 42.1 L351.7 43.1 L353.1 44.2 L354.5 45.3 L355.9 46.5 L357.3 47.7 L358.8 48.9 L360.2 50.1 L361.6 51.4 L363 52.7 L364.4 54.1 L365.8 55.5 L367.2 56.8 L368.7 58.3 L370.1 59.7 L371.5 61.1 L372.9 62.6 L374.3 64.1 L375.8 65.5 L377.2 67 L378.6 68.5 L380 70\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2\"/><path d=\"M40 70 L41.4 71.5 L42.8 73 L44.2 74.5 L45.7 75.9 L47.1 77.4 L48.5 78.9 L49.9 80.3 L51.3 81.7 L52.8 83.2 L54.2 84.5 L55.6 85.9 L57 87.3 L58.4 88.6 L59.8 89.9 L61.2 91.1 L62.7 92.3 L64.1 93.5 L65.5 94.7 L66.9 95.8 L68.3 96.9 L69.8 97.9 L71.2 98.9 L72.6 99.8 L74 100.7 L75.4 101.6 L76.8 102.4 L78.2 103.2 L79.7 103.9 L81.1 104.5 L82.5 105.1 L83.9 105.7 L85.3 106.1 L86.8 106.6 L88.2 107 L89.6 107.3 L91 107.5 L92.4 107.7 L93.8 107.9 L95.2 108 L96.7 108 L98.1 108 L99.5 107.9 L100.9 107.7 L102.3 107.5 L103.8 107.3 L105.2 107 L106.6 106.6 L108 106.1 L109.4 105.7 L110.8 105.1 L112.2 104.5 L113.7 103.9 L115.1 103.2 L116.5 102.4 L117.9 101.6 L119.3 100.7 L120.8 99.8 L122.2 98.9 L123.6 97.9 L125 96.9 L126.4 95.8 L127.8 94.7 L129.2 93.5 L130.7 92.3 L132.1 91.1 L133.5 89.9 L134.9 88.6 L136.3 87.3 L137.8 85.9 L139.2 84.5 L140.6 83.2 L142 81.7 L143.4 80.3 L144.8 78.9 L146.2 77.4 L147.7 75.9 L149.1 74.5 L150.5 73 L151.9 71.5 L153.3 70 L154.8 68.5 L156.2 67 L157.6 65.5 L159 64.1 L160.4 62.6 L161.8 61.1 L163.2 59.7 L164.7 58.3 L166.1 56.8 L167.5 55.5 L168.9 54.1 L170.3 52.7 L171.8 51.4 L173.2 50.1 L174.6 48.9 L176 47.7 L177.4 46.5 L178.8 45.3 L180.2 44.2 L181.7 43.1 L183.1 42.1 L184.5 41.1 L185.9 40.2 L187.3 39.3 L188.8 38.4 L190.2 37.6 L191.6 36.8 L193 36.1 L194.4 35.5 L195.8 34.9 L197.2 34.3 L198.7 33.9 L200.1 33.4 L201.5 33 L202.9 32.7 L204.3 32.5 L205.8 32.3 L207.2 32.1 L208.6 32 L210 32 L211.4 32 L212.8 32.1 L214.2 32.3 L215.7 32.5 L217.1 32.7 L218.5 33 L219.9 33.4 L221.3 33.9 L222.8 34.3 L224.2 34.9 L225.6 35.5 L227 36.1 L228.4 36.8 L229.8 37.6 L231.2 38.4 L232.7 39.3 L234.1 40.2 L235.5 41.1 L236.9 42.1 L238.3 43.1 L239.8 44.2 L241.2 45.3 L242.6 46.5 L244 47.7 L245.4 48.9 L246.8 50.1 L248.2 51.4 L249.7 52.7 L251.1 54.1 L252.5 55.5 L253.9 56.8 L255.3 58.3 L256.8 59.7 L258.2 61.1 L259.6 62.6 L261 64.1 L262.4 65.5 L263.8 67 L265.2 68.5 L266.7 70 L268.1 71.5 L269.5 73 L270.9 74.5 L272.3 75.9 L273.8 77.4 L275.2 78.9 L276.6 80.3 L278 81.7 L279.4 83.2 L280.8 84.5 L282.2 85.9 L283.7 87.3 L285.1 88.6 L286.5 89.9 L287.9 91.1 L289.3 92.3 L290.8 93.5 L292.2 94.7 L293.6 95.8 L295 96.9 L296.4 97.9 L297.8 98.9 L299.2 99.8 L300.7 100.7 L302.1 101.6 L303.5 102.4 L304.9 103.2 L306.3 103.9 L307.8 104.5 L309.2 105.1 L310.6 105.7 L312 106.1 L313.4 106.6 L314.8 107 L316.2 107.3 L317.7 107.5 L319.1 107.7 L320.5 107.9 L321.9 108 L323.3 108 L324.8 108 L326.2 107.9 L327.6 107.7 L329 107.5 L330.4 107.3 L331.8 107 L333.2 106.6 L334.7 106.1 L336.1 105.7 L337.5 105.1 L338.9 104.5 L340.3 103.9 L341.8 103.2 L343.2 102.4 L344.6 101.6 L346 100.7 L347.4 99.8 L348.8 98.9 L350.2 97.9 L351.7 96.9 L353.1 95.8 L354.5 94.7 L355.9 93.5 L357.3 92.3 L358.8 91.1 L360.2 89.9 L361.6 88.6 L363 87.3 L364.4 85.9 L365.8 84.5 L367.2 83.2 L368.7 81.7 L370.1 80.3 L371.5 78.9 L372.9 77.4 L374.3 75.9 L375.8 74.5 L377.2 73 L378.6 71.5 L380 70\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"2\"/><rect x=\"32\" y=\"48\" width=\"8\" height=\"44\" fill=\"var(--muted)\"/><rect x=\"380\" y=\"48\" width=\"8\" height=\"44\" fill=\"var(--muted)\"/><circle cx=\"40\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"40\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"153.3\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"153.3\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"266.7\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"266.7\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"380\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"380\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><text x=\"96.7\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"210\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"323.3\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"148.0\" y=\"146\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\"><tspan font-style=\"italic\">L</tspan> = 32 cm = 3·<tspan font-style=\"italic\">λ</tspan><tspan font-size=\"9\" dy=\"3\">3</tspan><tspan dy=\"-3\">/2</tspan></text></svg>",
+      "peu": "Tercer mode de vibració: tres fusos, quatre nodes (N) i tres ventres (V)."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 420 150\" role=\"img\" aria-label=\"Perfil del cinquè mode de vibració de la corda: 5 fusos, 6 nodes (comptant els dos extrems) i 5 ventres.\"><line x1=\"40\" y1=\"70\" x2=\"380\" y2=\"70\" stroke=\"var(--grid2)\" stroke-width=\"1\"/><path d=\"M40 70 L41.4 67.5 L42.8 65 L44.2 62.6 L45.7 60.2 L47.1 57.8 L48.5 55.5 L49.9 53.2 L51.3 51 L52.8 48.9 L54.2 46.9 L55.6 44.9 L57 43.1 L58.4 41.4 L59.8 39.9 L61.2 38.4 L62.7 37.1 L64.1 35.9 L65.5 34.9 L66.9 34 L68.3 33.3 L69.8 32.7 L71.2 32.3 L72.6 32.1 L74 32 L75.4 32.1 L76.8 32.3 L78.2 32.7 L79.7 33.3 L81.1 34 L82.5 34.9 L83.9 35.9 L85.3 37.1 L86.8 38.4 L88.2 39.9 L89.6 41.4 L91 43.1 L92.4 44.9 L93.8 46.9 L95.2 48.9 L96.7 51 L98.1 53.2 L99.5 55.5 L100.9 57.8 L102.3 60.2 L103.8 62.6 L105.2 65 L106.6 67.5 L108 70 L109.4 72.5 L110.8 75 L112.2 77.4 L113.7 79.8 L115.1 82.2 L116.5 84.5 L117.9 86.8 L119.3 89 L120.8 91.1 L122.2 93.1 L123.6 95.1 L125 96.9 L126.4 98.6 L127.8 100.1 L129.2 101.6 L130.7 102.9 L132.1 104.1 L133.5 105.1 L134.9 106 L136.3 106.7 L137.8 107.3 L139.2 107.7 L140.6 107.9 L142 108 L143.4 107.9 L144.8 107.7 L146.2 107.3 L147.7 106.7 L149.1 106 L150.5 105.1 L151.9 104.1 L153.3 102.9 L154.8 101.6 L156.2 100.1 L157.6 98.6 L159 96.9 L160.4 95.1 L161.8 93.1 L163.2 91.1 L164.7 89 L166.1 86.8 L167.5 84.5 L168.9 82.2 L170.3 79.8 L171.8 77.4 L173.2 75 L174.6 72.5 L176 70 L177.4 67.5 L178.8 65 L180.2 62.6 L181.7 60.2 L183.1 57.8 L184.5 55.5 L185.9 53.2 L187.3 51 L188.8 48.9 L190.2 46.9 L191.6 44.9 L193 43.1 L194.4 41.4 L195.8 39.9 L197.2 38.4 L198.7 37.1 L200.1 35.9 L201.5 34.9 L202.9 34 L204.3 33.3 L205.8 32.7 L207.2 32.3 L208.6 32.1 L210 32 L211.4 32.1 L212.8 32.3 L214.2 32.7 L215.7 33.3 L217.1 34 L218.5 34.9 L219.9 35.9 L221.3 37.1 L222.8 38.4 L224.2 39.9 L225.6 41.4 L227 43.1 L228.4 44.9 L229.8 46.9 L231.2 48.9 L232.7 51 L234.1 53.2 L235.5 55.5 L236.9 57.8 L238.3 60.2 L239.8 62.6 L241.2 65 L242.6 67.5 L244 70 L245.4 72.5 L246.8 75 L248.2 77.4 L249.7 79.8 L251.1 82.2 L252.5 84.5 L253.9 86.8 L255.3 89 L256.8 91.1 L258.2 93.1 L259.6 95.1 L261 96.9 L262.4 98.6 L263.8 100.1 L265.2 101.6 L266.7 102.9 L268.1 104.1 L269.5 105.1 L270.9 106 L272.3 106.7 L273.8 107.3 L275.2 107.7 L276.6 107.9 L278 108 L279.4 107.9 L280.8 107.7 L282.2 107.3 L283.7 106.7 L285.1 106 L286.5 105.1 L287.9 104.1 L289.3 102.9 L290.8 101.6 L292.2 100.1 L293.6 98.6 L295 96.9 L296.4 95.1 L297.8 93.1 L299.2 91.1 L300.7 89 L302.1 86.8 L303.5 84.5 L304.9 82.2 L306.3 79.8 L307.8 77.4 L309.2 75 L310.6 72.5 L312 70 L313.4 67.5 L314.8 65 L316.2 62.6 L317.7 60.2 L319.1 57.8 L320.5 55.5 L321.9 53.2 L323.3 51 L324.8 48.9 L326.2 46.9 L327.6 44.9 L329 43.1 L330.4 41.4 L331.8 39.9 L333.2 38.4 L334.7 37.1 L336.1 35.9 L337.5 34.9 L338.9 34 L340.3 33.3 L341.8 32.7 L343.2 32.3 L344.6 32.1 L346 32 L347.4 32.1 L348.8 32.3 L350.2 32.7 L351.7 33.3 L353.1 34 L354.5 34.9 L355.9 35.9 L357.3 37.1 L358.8 38.4 L360.2 39.9 L361.6 41.4 L363 43.1 L364.4 44.9 L365.8 46.9 L367.2 48.9 L368.7 51 L370.1 53.2 L371.5 55.5 L372.9 57.8 L374.3 60.2 L375.8 62.6 L377.2 65 L378.6 67.5 L380 70\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2\"/><path d=\"M40 70 L41.4 72.5 L42.8 75 L44.2 77.4 L45.7 79.8 L47.1 82.2 L48.5 84.5 L49.9 86.8 L51.3 89 L52.8 91.1 L54.2 93.1 L55.6 95.1 L57 96.9 L58.4 98.6 L59.8 100.1 L61.2 101.6 L62.7 102.9 L64.1 104.1 L65.5 105.1 L66.9 106 L68.3 106.7 L69.8 107.3 L71.2 107.7 L72.6 107.9 L74 108 L75.4 107.9 L76.8 107.7 L78.2 107.3 L79.7 106.7 L81.1 106 L82.5 105.1 L83.9 104.1 L85.3 102.9 L86.8 101.6 L88.2 100.1 L89.6 98.6 L91 96.9 L92.4 95.1 L93.8 93.1 L95.2 91.1 L96.7 89 L98.1 86.8 L99.5 84.5 L100.9 82.2 L102.3 79.8 L103.8 77.4 L105.2 75 L106.6 72.5 L108 70 L109.4 67.5 L110.8 65 L112.2 62.6 L113.7 60.2 L115.1 57.8 L116.5 55.5 L117.9 53.2 L119.3 51 L120.8 48.9 L122.2 46.9 L123.6 44.9 L125 43.1 L126.4 41.4 L127.8 39.9 L129.2 38.4 L130.7 37.1 L132.1 35.9 L133.5 34.9 L134.9 34 L136.3 33.3 L137.8 32.7 L139.2 32.3 L140.6 32.1 L142 32 L143.4 32.1 L144.8 32.3 L146.2 32.7 L147.7 33.3 L149.1 34 L150.5 34.9 L151.9 35.9 L153.3 37.1 L154.8 38.4 L156.2 39.9 L157.6 41.4 L159 43.1 L160.4 44.9 L161.8 46.9 L163.2 48.9 L164.7 51 L166.1 53.2 L167.5 55.5 L168.9 57.8 L170.3 60.2 L171.8 62.6 L173.2 65 L174.6 67.5 L176 70 L177.4 72.5 L178.8 75 L180.2 77.4 L181.7 79.8 L183.1 82.2 L184.5 84.5 L185.9 86.8 L187.3 89 L188.8 91.1 L190.2 93.1 L191.6 95.1 L193 96.9 L194.4 98.6 L195.8 100.1 L197.2 101.6 L198.7 102.9 L200.1 104.1 L201.5 105.1 L202.9 106 L204.3 106.7 L205.8 107.3 L207.2 107.7 L208.6 107.9 L210 108 L211.4 107.9 L212.8 107.7 L214.2 107.3 L215.7 106.7 L217.1 106 L218.5 105.1 L219.9 104.1 L221.3 102.9 L222.8 101.6 L224.2 100.1 L225.6 98.6 L227 96.9 L228.4 95.1 L229.8 93.1 L231.2 91.1 L232.7 89 L234.1 86.8 L235.5 84.5 L236.9 82.2 L238.3 79.8 L239.8 77.4 L241.2 75 L242.6 72.5 L244 70 L245.4 67.5 L246.8 65 L248.2 62.6 L249.7 60.2 L251.1 57.8 L252.5 55.5 L253.9 53.2 L255.3 51 L256.8 48.9 L258.2 46.9 L259.6 44.9 L261 43.1 L262.4 41.4 L263.8 39.9 L265.2 38.4 L266.7 37.1 L268.1 35.9 L269.5 34.9 L270.9 34 L272.3 33.3 L273.8 32.7 L275.2 32.3 L276.6 32.1 L278 32 L279.4 32.1 L280.8 32.3 L282.2 32.7 L283.7 33.3 L285.1 34 L286.5 34.9 L287.9 35.9 L289.3 37.1 L290.8 38.4 L292.2 39.9 L293.6 41.4 L295 43.1 L296.4 44.9 L297.8 46.9 L299.2 48.9 L300.7 51 L302.1 53.2 L303.5 55.5 L304.9 57.8 L306.3 60.2 L307.8 62.6 L309.2 65 L310.6 67.5 L312 70 L313.4 72.5 L314.8 75 L316.2 77.4 L317.7 79.8 L319.1 82.2 L320.5 84.5 L321.9 86.8 L323.3 89 L324.8 91.1 L326.2 93.1 L327.6 95.1 L329 96.9 L330.4 98.6 L331.8 100.1 L333.2 101.6 L334.7 102.9 L336.1 104.1 L337.5 105.1 L338.9 106 L340.3 106.7 L341.8 107.3 L343.2 107.7 L344.6 107.9 L346 108 L347.4 107.9 L348.8 107.7 L350.2 107.3 L351.7 106.7 L353.1 106 L354.5 105.1 L355.9 104.1 L357.3 102.9 L358.8 101.6 L360.2 100.1 L361.6 98.6 L363 96.9 L364.4 95.1 L365.8 93.1 L367.2 91.1 L368.7 89 L370.1 86.8 L371.5 84.5 L372.9 82.2 L374.3 79.8 L375.8 77.4 L377.2 75 L378.6 72.5 L380 70\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"2\"/><rect x=\"32\" y=\"48\" width=\"8\" height=\"44\" fill=\"var(--muted)\"/><rect x=\"380\" y=\"48\" width=\"8\" height=\"44\" fill=\"var(--muted)\"/><circle cx=\"40\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"40\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"108\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"108\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"176\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"176\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"244\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"244\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"312\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"312\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><circle cx=\"380\" cy=\"70\" r=\"3.2\" fill=\"var(--ink)\"/><text x=\"380\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">N</text><text x=\"74\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"142\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"210\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"278\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"346\" y=\"24\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">V</text><text x=\"148.0\" y=\"146\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\"><tspan font-style=\"italic\">L</tspan> = 32 cm = 5·<tspan font-style=\"italic\">λ</tspan><tspan font-size=\"9\" dy=\"3\">5</tspan><tspan dy=\"-3\">/2</tspan></text></svg>",
+      "peu": "Cinquè mode de vibració: cinc fusos, sis nodes (N) i cinc ventres (V)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Harmònics d’una corda fixa",
+          "html": "Els dos extrems de la corda no es poden moure, així que són nodes. Entre dos nodes consecutius hi ha mitja longitud d'ona, de manera que a la corda hi ha de cabre un nombre enter de mitges longituds d'ona: <i>n</i>·λ/2 = <i>L</i>, amb <i>n</i> = 1, 2, 3…"
+        },
+        {
+          "titol": "Longitud d'ona del mode fonamental",
+          "html": "El mode fonamental és el de <i>n</i> = 1: λ = 2<i>L</i> = 2·32 = <span class=\"res\">64 cm</span>."
+        },
+        {
+          "titol": "Nodes i ventres",
+          "html": "En aquest mode hi ha <span class=\"res\">un node a cada extrem</span> de la corda i <span class=\"res\">un ventre just al mig</span>, a 16 cm de cada extrem."
+        },
+        {
+          "titol": "Velocitat de propagació",
+          "html": "<i>v</i><sub>p</sub> = λ·<i>ν</i> = 0,64·196 = <span class=\"res\">125 m/s</span> (125,4 m/s)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure la condició dels harmònics d'una corda fixa, n·λ/2 = L."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir per a n = 1 la longitud d’ona λ = 2L = 64 cm."
+        },
+        {
+          "punts": 0.2,
+          "que": "Situar els nodes als extrems i el ventre al centre de la corda."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure v_p = λ·ν."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir v_p = 125 m/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Tercer mode",
+          "html": "Amb <i>n</i> = 3 la corda fa tres fusos (figura). λ<sub>3</sub> = 2<i>L</i>/3 = 2·32/3 = <span class=\"res\">21,3 cm</span> i ν<sub>3</sub> = <i>v</i><sub>p</sub>/λ<sub>3</sub> = 125,4/0,213 = <span class=\"res\">588 Hz</span>, que és 3·196 Hz. (La pauta, amb <i>v</i><sub>p</sub> = 125 m/s, dona 587 Hz.)",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Cinquè mode",
+          "html": "Amb <i>n</i> = 5 la corda fa cinc fusos (figura). λ<sub>5</sub> = 2<i>L</i>/5 = 2·32/5 = <span class=\"res\">12,8 cm</span> i ν<sub>5</sub> = <i>v</i><sub>p</sub>/λ<sub>5</sub> = 125,4/0,128 = <span class=\"res\">980 Hz</span>, que és 5·196 Hz. (La pauta, amb <i>v</i><sub>p</sub> = 125 m/s, dona 977 Hz.)",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Dibuixar el perfil del tercer mode, amb tres fusos."
+        },
+        {
+          "punts": 0.1,
+          "que": "Obtenir λ₃ = 2L/3 = 21,3 cm."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ν₃ = v_p/λ₃ ≈ 587 Hz."
+        },
+        {
+          "punts": 0.3,
+          "que": "Dibuixar el perfil del cinquè mode, amb cinc fusos."
+        },
+        {
+          "punts": 0.1,
+          "que": "Obtenir λ₅ = 2L/5 = 12,8 cm."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ν₅ = v_p/λ₅ ≈ 977 Hz."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 64 cm",
+      "valor": 0.64,
+      "pauta": 0.64
+    },
+    {
+      "apartat": "a",
+      "clau": "vp",
+      "text": "v_p = 125 m/s",
+      "valor": 125.4,
+      "pauta": 125
+    },
+    {
+      "apartat": "b",
+      "clau": "lam3",
+      "text": "λ₃ = 21,3 cm",
+      "valor": 0.2133,
+      "pauta": 0.213
+    },
+    {
+      "apartat": "b",
+      "clau": "nu3",
+      "text": "ν₃ = 588 Hz",
+      "valor": 588,
+      "pauta": 587
+    },
+    {
+      "apartat": "b",
+      "clau": "lam5",
+      "text": "λ₅ = 12,8 cm",
+      "valor": 0.128,
+      "pauta": 0.128
+    },
+    {
+      "apartat": "b",
+      "clau": "nu5",
+      "text": "ν₅ = 980 Hz",
+      "valor": 980,
+      "pauta": 977
+    }
+  ],
+  "comprovacio": [
+    "L = 0.32",
+    "nu = 196",
+    "lam = 2 * L",
+    "vp = lam * nu",
+    "R = {\"lam\": lam, \"vp\": vp, \"lam3\": 2 * L / 3, \"nu3\": vp / (2 * L / 3), \"lam5\": 2 * L / 5, \"nu5\": vp / (2 * L / 5)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

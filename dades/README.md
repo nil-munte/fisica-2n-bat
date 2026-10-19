@@ -40,8 +40,8 @@ Els PDF oficials són a `fonts/pdf/` (no es publiquen). `pau_fisiAAjl` és l'exa
 | `id` | igual que el nom del fitxer: `2014-juny-s4-p5` |
 | `any`, `convocatoria`, `serie`, `problema`, `opcio` | `2014`, `"juny"`, `4`, `"P5"`, `"A"` (o `null`). Des del 2025, `"P3"` vol dir *Exercici 3* |
 | `tambe_a` | altres sèries on va sortir el mateix problema: `[{"serie": 4, "problema": "P4", "opcio": "B"}]` |
-| `tema_principal`, `subtema` | clau de `temes.json` i, si el tema té subtemes, el subtema (`"mhs"`, `"ones"`, `"so"`) |
-| `temes_secundaris` | claus de tema (`"gravitatori"`) o `"tema/subtema"` (`"mhs-ones-so/so"`) |
+| `tema_principal`, `subtema` | clau de `temes.json` i, si el tema té subtemes, el subtema (`"mhs"`, `"ones"`) |
+| `temes_secundaris` | claus de tema (`"gravitatori"`) o `"tema/subtema"` (`"mhs-ones-so/ones"`) |
 | `blocs` | blocs de teoria de la pàgina principal relacionats (`["b1", "b3"]`) |
 | `dificultat`, `dificultat_motiu` | de 1 a 10, i per què. 1–3 ★ bàsic · 4–6 ★★ intermedi · 7–10 ★★★ avançat |
 | `titol` | títol curt propi |

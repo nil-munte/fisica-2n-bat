@@ -1,0 +1,234 @@
+{
+  "id": "2024-juny-s5-p3",
+  "any": 2024,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b4"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal calcular la longitud d'ona, representar quantes longituds d'ona caben en cada recorregut i raonar el tipus d'interferència a partir de la diferència de camins en tres situacions diferents, sense càlculs llargs.",
+  "titol": "Dos altaveus connectats a un ordinador: on se sent i on no",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/fisica/ord/pau_fisi24jl_tei.pdf",
+      "pdf": "pau_fisi24jl_tei",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/fisica/ord/pau_fisi24jp_tei.pdf",
+      "pdf": "pau_fisi24jp_tei",
+      "pagina": 6
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2024/Juny/5/6114"
+  },
+  "dades": [
+    {
+      "simbol": "f",
+      "valor": "170",
+      "unitat": "Hz",
+      "descripcio": "freqüència de les dues ones (en fase)"
+    },
+    {
+      "simbol": "",
+      "valor": "6,00",
+      "unitat": "m",
+      "descripcio": "separació entre els dos altaveus"
+    },
+    {
+      "simbol": "R₁",
+      "valor": "6,00",
+      "unitat": "m",
+      "descripcio": "distància del punt 1 a un altaveu"
+    },
+    {
+      "simbol": "R₂",
+      "valor": "3,00",
+      "unitat": "m",
+      "descripcio": "distància del punt 1 a l'altre altaveu"
+    },
+    {
+      "simbol": "",
+      "valor": "1,00",
+      "unitat": "m",
+      "descripcio": "desplaçament de l'altaveu de l'esquerra al llarg de R₁ (apartat b)"
+    },
+    {
+      "simbol": "",
+      "valor": "3,00",
+      "unitat": "m",
+      "descripcio": "distància del nou punt a l'ordinador, equidistant dels altaveus (apartat b)"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so a l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat. Problema del tribunal especial (pau_fisi24jl_tei)."
+  },
+  "enunciat": {
+    "intro": "<p>Quan dos o més senyals acústics coherents coincideixen en l’espai, les ones es combinen i l’ona resultant és la suma algebraica de les ones individuals. Aquest fenomen es coneix com a <i>interferència</i>. En una experiència d’interferències disposem de dos altaveus connectats a un ordinador i separats entre ells 6,00 m i equidistants de l’ordinador. Ambdós altaveus emeten la mateixa ona harmònica amb una freqüència de 170 Hz i amb la mateixa fase inicial.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Determineu la longitud d’ona emesa pels altaveus. El punt 1 es troba a una distància de 6,00 m d’un altaveu (recta <i>R</i><sub>1</sub>) i a 3,00 m de l’altre altaveu (recta <i>R</i><sub>2</sub>). Representeu esquemàticament i en gràfiques separades l’amplitud de l’ona en funció de la posició sobre la recta <i>R</i><sub>1</sub> i sobre la recta <i>R</i><sub>2</sub>, i determineu quin tipus d’interferència té lloc al punt 1. Justifiqueu la resposta."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Determineu com variarà el so pel que fa a la freqüència i la intensitat en les situacions següents:<br>— si un dels altaveus deixa de funcionar.<br>— si l’altaveu de l’esquerra es desplaça 1,00 m al llarg de la recta <i>R</i><sub>1</sub> de manera que el punt 1 queda situat a 5,00 m d’aquest altaveu i es manté a 3,00 m de l’altaveu de la dreta.<br>— si canviem el punt on mesurem la intensitat sonora, i ara el nou punt està a 3,00 m de l’ordinador i equidistant dels dos altaveus.<br>Justifiqueu les respostes."
+      }
+    ],
+    "dades_text": "Dada: La velocitat del so en l’aire és de 340 m s<sup>–1</sup>."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 520 320\" role=\"img\" aria-label=\"Muntatge: dos altaveus separats 6,00 m, units per una línia que passa per un ordinador portàtil situat al mig. Des de l'altaveu de l'esquerra surt la recta R1 i des del de la dreta la recta R2; les dues rectes es troben al punt 1, situat per sota, més a prop de l'altaveu de la dreta.\"><rect x=\"220\" y=\"50\" width=\"80\" height=\"52\" rx=\"3\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><rect x=\"227\" y=\"56\" width=\"66\" height=\"40\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><path d=\"M220 102 L300 102 L310 114 L210 114 Z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"226\" y1=\"106\" x2=\"294\" y2=\"106\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"2 1.5\"/><line x1=\"226\" y1=\"110\" x2=\"294\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"2 1.5\"/><line x1=\"80\" y1=\"112\" x2=\"440\" y2=\"112\" stroke=\"var(--ink)\" stroke-width=\"2.2\"/><line x1=\"80\" y1=\"112\" x2=\"395\" y2=\"286.3\" stroke=\"var(--ink)\" stroke-width=\"2.2\"/><line x1=\"440\" y1=\"112\" x2=\"395\" y2=\"286.3\" stroke=\"var(--ink)\" stroke-width=\"2.2\"/><rect x=\"68\" y=\"82\" width=\"24\" height=\"40\" rx=\"2\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><circle cx=\"80\" cy=\"93\" r=\"5\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><circle cx=\"80\" cy=\"112\" r=\"8\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><circle cx=\"80\" cy=\"112\" r=\"2.5\" fill=\"var(--ink)\"/><path d=\"M66 102.4 A17 17 0 0 0 66 121.6\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M61.8 99.6 A22 22 0 0 0 61.8 124.4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M94 102.4 A17 17 0 0 1 94 121.6\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M98.2 99.6 A22 22 0 0 1 98.2 124.4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><rect x=\"428\" y=\"82\" width=\"24\" height=\"40\" rx=\"2\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><circle cx=\"440\" cy=\"93\" r=\"5\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><circle cx=\"440\" cy=\"112\" r=\"8\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><circle cx=\"440\" cy=\"112\" r=\"2.5\" fill=\"var(--ink)\"/><path d=\"M426 102.4 A17 17 0 0 0 426 121.6\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M421.8 99.6 A22 22 0 0 0 421.8 124.4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M454 102.4 A17 17 0 0 1 454 121.6\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><path d=\"M458.2 99.6 A22 22 0 0 1 458.2 124.4\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.1\"/><circle cx=\"395\" cy=\"286.3\" r=\"4.5\" fill=\"var(--ink)\"/><text x=\"395\" y=\"308.3\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">Punt 1</text><text x=\"217.5\" y=\"223.1\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">R</text><text x=\"228\" y=\"227.6\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">1</text><text x=\"433.5\" y=\"193.1\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">R</text><text x=\"444\" y=\"197.6\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">2</text></svg>",
+      "peu": "Els dos altaveus, l'ordinador i el punt 1, on es troben les rectes R₁ i R₂ (dibuixat a escala)."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 500 330\" role=\"img\" aria-label=\"Dues gràfiques separades de l'amplitud en funció de la posició. Sobre la recta R1, de 0 a 6 m, l'ona fa tres oscil·lacions completes (3 longituds d'ona) i arriba al punt 1 passant per zero cap amunt. Sobre la recta R2, de 0 a 3 m, fa una oscil·lació i mitja (1,5 longituds d'ona) i arriba al punt 1 passant per zero cap avall.\"><line x1=\"70\" y1=\"18\" x2=\"70\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"110\" x2=\"450\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"62\" x2=\"442\" y2=\"62\" stroke=\"var(--muted)\" stroke-width=\"0.9\"/><line x1=\"70\" y1=\"110\" x2=\"70\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"70\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"132\" y1=\"110\" x2=\"132\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"132\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"194\" y1=\"110\" x2=\"194\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"194\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2</text><line x1=\"256\" y1=\"110\" x2=\"256\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"256\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3</text><line x1=\"318\" y1=\"110\" x2=\"318\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"318\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">4</text><line x1=\"380\" y1=\"110\" x2=\"380\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"380\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">5</text><line x1=\"442\" y1=\"110\" x2=\"442\" y2=\"115\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"442\" y=\"128\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">6</text><path d=\"M70 62 L71.2 59.9 L72.5 57.7 L73.7 55.6 L75 53.5 L76.2 51.5 L77.4 49.5 L78.7 47.5 L79.9 45.6 L81.2 43.8 L82.4 42 L83.6 40.3 L84.9 38.7 L86.1 37.2 L87.4 35.8 L88.6 34.5 L89.8 33.3 L91.1 32.2 L92.3 31.2 L93.6 30.4 L94.8 29.7 L96 29.1 L97.3 28.6 L98.5 28.3 L99.8 28.1 L101 28 L102.2 28.1 L103.5 28.3 L104.7 28.6 L106 29.1 L107.2 29.7 L108.4 30.4 L109.7 31.2 L110.9 32.2 L112.2 33.3 L113.4 34.5 L114.6 35.8 L115.9 37.2 L117.1 38.7 L118.4 40.3 L119.6 42 L120.8 43.8 L122.1 45.6 L123.3 47.5 L124.6 49.5 L125.8 51.5 L127 53.5 L128.3 55.6 L129.5 57.7 L130.8 59.9 L132 62 L133.2 64.1 L134.5 66.3 L135.7 68.4 L137 70.5 L138.2 72.5 L139.4 74.5 L140.7 76.5 L141.9 78.4 L143.2 80.2 L144.4 82 L145.6 83.7 L146.9 85.3 L148.1 86.8 L149.4 88.2 L150.6 89.5 L151.8 90.7 L153.1 91.8 L154.3 92.8 L155.6 93.6 L156.8 94.3 L158 94.9 L159.3 95.4 L160.5 95.7 L161.8 95.9 L163 96 L164.2 95.9 L165.5 95.7 L166.7 95.4 L168 94.9 L169.2 94.3 L170.4 93.6 L171.7 92.8 L172.9 91.8 L174.2 90.7 L175.4 89.5 L176.6 88.2 L177.9 86.8 L179.1 85.3 L180.4 83.7 L181.6 82 L182.8 80.2 L184.1 78.4 L185.3 76.5 L186.6 74.5 L187.8 72.5 L189 70.5 L190.3 68.4 L191.5 66.3 L192.8 64.1 L194 62 L195.2 59.9 L196.5 57.7 L197.7 55.6 L199 53.5 L200.2 51.5 L201.4 49.5 L202.7 47.5 L203.9 45.6 L205.2 43.8 L206.4 42 L207.6 40.3 L208.9 38.7 L210.1 37.2 L211.4 35.8 L212.6 34.5 L213.8 33.3 L215.1 32.2 L216.3 31.2 L217.6 30.4 L218.8 29.7 L220 29.1 L221.3 28.6 L222.5 28.3 L223.8 28.1 L225 28 L226.2 28.1 L227.5 28.3 L228.7 28.6 L230 29.1 L231.2 29.7 L232.4 30.4 L233.7 31.2 L234.9 32.2 L236.2 33.3 L237.4 34.5 L238.6 35.8 L239.9 37.2 L241.1 38.7 L242.4 40.3 L243.6 42 L244.8 43.8 L246.1 45.6 L247.3 47.5 L248.6 49.5 L249.8 51.5 L251 53.5 L252.3 55.6 L253.5 57.7 L254.8 59.9 L256 62 L257.2 64.1 L258.5 66.3 L259.7 68.4 L261 70.5 L262.2 72.5 L263.4 74.5 L264.7 76.5 L265.9 78.4 L267.2 80.2 L268.4 82 L269.6 83.7 L270.9 85.3 L272.1 86.8 L273.4 88.2 L274.6 89.5 L275.8 90.7 L277.1 91.8 L278.3 92.8 L279.6 93.6 L280.8 94.3 L282 94.9 L283.3 95.4 L284.5 95.7 L285.8 95.9 L287 96 L288.2 95.9 L289.5 95.7 L290.7 95.4 L292 94.9 L293.2 94.3 L294.4 93.6 L295.7 92.8 L296.9 91.8 L298.2 90.7 L299.4 89.5 L300.6 88.2 L301.9 86.8 L303.1 85.3 L304.4 83.7 L305.6 82 L306.8 80.2 L308.1 78.4 L309.3 76.5 L310.6 74.5 L311.8 72.5 L313 70.5 L314.3 68.4 L315.5 66.3 L316.8 64.1 L318 62 L319.2 59.9 L320.5 57.7 L321.7 55.6 L323 53.5 L324.2 51.5 L325.4 49.5 L326.7 47.5 L327.9 45.6 L329.2 43.8 L330.4 42 L331.6 40.3 L332.9 38.7 L334.1 37.2 L335.4 35.8 L336.6 34.5 L337.8 33.3 L339.1 32.2 L340.3 31.2 L341.6 30.4 L342.8 29.7 L344 29.1 L345.3 28.6 L346.5 28.3 L347.8 28.1 L349 28 L350.2 28.1 L351.5 28.3 L352.7 28.6 L354 29.1 L355.2 29.7 L356.4 30.4 L357.7 31.2 L358.9 32.2 L360.2 33.3 L361.4 34.5 L362.6 35.8 L363.9 37.2 L365.1 38.7 L366.4 40.3 L367.6 42 L368.8 43.8 L370.1 45.6 L371.3 47.5 L372.6 49.5 L373.8 51.5 L375 53.5 L376.3 55.6 L377.5 57.7 L378.8 59.9 L380 62 L381.2 64.1 L382.5 66.3 L383.7 68.4 L385 70.5 L386.2 72.5 L387.4 74.5 L388.7 76.5 L389.9 78.4 L391.2 80.2 L392.4 82 L393.6 83.7 L394.9 85.3 L396.1 86.8 L397.4 88.2 L398.6 89.5 L399.8 90.7 L401.1 91.8 L402.3 92.8 L403.6 93.6 L404.8 94.3 L406 94.9 L407.3 95.4 L408.5 95.7 L409.8 95.9 L411 96 L412.2 95.9 L413.5 95.7 L414.7 95.4 L416 94.9 L417.2 94.3 L418.4 93.6 L419.7 92.8 L420.9 91.8 L422.2 90.7 L423.4 89.5 L424.6 88.2 L425.9 86.8 L427.1 85.3 L428.4 83.7 L429.6 82 L430.8 80.2 L432.1 78.4 L433.3 76.5 L434.6 74.5 L435.8 72.5 L437 70.5 L438.3 68.4 L439.5 66.3 L440.8 64.1 L442 62\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2\"/><text x=\"286\" y=\"148\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">Posició a la recta</text><text x=\"290\" y=\"148\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">R</text><text x=\"299.3\" y=\"151.9\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"9\" fill=\"var(--ink)\">1</text><text x=\"308.6\" y=\"148\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(m)</text><text x=\"56\" y=\"62\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" transform=\"rotate(-90 56 62)\">Amplitud</text><text x=\"464\" y=\"66\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--x)\">3λ</text><line x1=\"70\" y1=\"188\" x2=\"70\" y2=\"280\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"280\" x2=\"264\" y2=\"280\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"232\" x2=\"256\" y2=\"232\" stroke=\"var(--muted)\" stroke-width=\"0.9\"/><line x1=\"70\" y1=\"280\" x2=\"70\" y2=\"285\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"70\" y=\"298\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">0</text><line x1=\"132\" y1=\"280\" x2=\"132\" y2=\"285\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"132\" y=\"298\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">1</text><line x1=\"194\" y1=\"280\" x2=\"194\" y2=\"285\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"194\" y=\"298\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">2</text><line x1=\"256\" y1=\"280\" x2=\"256\" y2=\"285\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"256\" y=\"298\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"12\" fill=\"var(--muted)\">3</text><path d=\"M70 232 L70.6 230.9 L71.2 229.9 L71.9 228.8 L72.5 227.7 L73.1 226.7 L73.7 225.6 L74.3 224.6 L75 223.5 L75.6 222.5 L76.2 221.5 L76.8 220.5 L77.4 219.5 L78.1 218.5 L78.7 217.5 L79.3 216.6 L79.9 215.6 L80.5 214.7 L81.2 213.8 L81.8 212.9 L82.4 212 L83 211.2 L83.6 210.3 L84.3 209.5 L84.9 208.7 L85.5 208 L86.1 207.2 L86.7 206.5 L87.4 205.8 L88 205.1 L88.6 204.5 L89.2 203.9 L89.8 203.3 L90.5 202.7 L91.1 202.2 L91.7 201.7 L92.3 201.2 L92.9 200.8 L93.6 200.4 L94.2 200 L94.8 199.7 L95.4 199.4 L96 199.1 L96.7 198.8 L97.3 198.6 L97.9 198.4 L98.5 198.3 L99.1 198.2 L99.8 198.1 L100.4 198 L101 198 L101.6 198 L102.2 198.1 L102.9 198.2 L103.5 198.3 L104.1 198.4 L104.7 198.6 L105.3 198.8 L106 199.1 L106.6 199.4 L107.2 199.7 L107.8 200 L108.4 200.4 L109.1 200.8 L109.7 201.2 L110.3 201.7 L110.9 202.2 L111.5 202.7 L112.2 203.3 L112.8 203.9 L113.4 204.5 L114 205.1 L114.6 205.8 L115.3 206.5 L115.9 207.2 L116.5 208 L117.1 208.7 L117.7 209.5 L118.4 210.3 L119 211.2 L119.6 212 L120.2 212.9 L120.8 213.8 L121.5 214.7 L122.1 215.6 L122.7 216.6 L123.3 217.5 L123.9 218.5 L124.6 219.5 L125.2 220.5 L125.8 221.5 L126.4 222.5 L127 223.5 L127.7 224.6 L128.3 225.6 L128.9 226.7 L129.5 227.7 L130.1 228.8 L130.8 229.9 L131.4 230.9 L132 232 L132.6 233.1 L133.2 234.1 L133.9 235.2 L134.5 236.3 L135.1 237.3 L135.7 238.4 L136.3 239.4 L137 240.5 L137.6 241.5 L138.2 242.5 L138.8 243.5 L139.4 244.5 L140.1 245.5 L140.7 246.5 L141.3 247.4 L141.9 248.4 L142.5 249.3 L143.2 250.2 L143.8 251.1 L144.4 252 L145 252.8 L145.6 253.7 L146.3 254.5 L146.9 255.3 L147.5 256 L148.1 256.8 L148.7 257.5 L149.4 258.2 L150 258.9 L150.6 259.5 L151.2 260.1 L151.8 260.7 L152.5 261.3 L153.1 261.8 L153.7 262.3 L154.3 262.8 L154.9 263.2 L155.6 263.6 L156.2 264 L156.8 264.3 L157.4 264.6 L158 264.9 L158.7 265.2 L159.3 265.4 L159.9 265.6 L160.5 265.7 L161.1 265.8 L161.8 265.9 L162.4 266 L163 266 L163.6 266 L164.2 265.9 L164.9 265.8 L165.5 265.7 L166.1 265.6 L166.7 265.4 L167.3 265.2 L168 264.9 L168.6 264.6 L169.2 264.3 L169.8 264 L170.4 263.6 L171.1 263.2 L171.7 262.8 L172.3 262.3 L172.9 261.8 L173.5 261.3 L174.2 260.7 L174.8 260.1 L175.4 259.5 L176 258.9 L176.6 258.2 L177.3 257.5 L177.9 256.8 L178.5 256 L179.1 255.3 L179.7 254.5 L180.4 253.7 L181 252.8 L181.6 252 L182.2 251.1 L182.8 250.2 L183.5 249.3 L184.1 248.4 L184.7 247.4 L185.3 246.5 L185.9 245.5 L186.6 244.5 L187.2 243.5 L187.8 242.5 L188.4 241.5 L189 240.5 L189.7 239.4 L190.3 238.4 L190.9 237.3 L191.5 236.3 L192.1 235.2 L192.8 234.1 L193.4 233.1 L194 232 L194.6 230.9 L195.2 229.9 L195.9 228.8 L196.5 227.7 L197.1 226.7 L197.7 225.6 L198.3 224.6 L199 223.5 L199.6 222.5 L200.2 221.5 L200.8 220.5 L201.4 219.5 L202.1 218.5 L202.7 217.5 L203.3 216.6 L203.9 215.6 L204.5 214.7 L205.2 213.8 L205.8 212.9 L206.4 212 L207 211.2 L207.6 210.3 L208.3 209.5 L208.9 208.7 L209.5 208 L210.1 207.2 L210.7 206.5 L211.4 205.8 L212 205.1 L212.6 204.5 L213.2 203.9 L213.8 203.3 L214.5 202.7 L215.1 202.2 L215.7 201.7 L216.3 201.2 L216.9 200.8 L217.6 200.4 L218.2 200 L218.8 199.7 L219.4 199.4 L220 199.1 L220.7 198.8 L221.3 198.6 L221.9 198.4 L222.5 198.3 L223.1 198.2 L223.8 198.1 L224.4 198 L225 198 L225.6 198 L226.2 198.1 L226.9 198.2 L227.5 198.3 L228.1 198.4 L228.7 198.6 L229.3 198.8 L230 199.1 L230.6 199.4 L231.2 199.7 L231.8 200 L232.4 200.4 L233.1 200.8 L233.7 201.2 L234.3 201.7 L234.9 202.2 L235.5 202.7 L236.2 203.3 L236.8 203.9 L237.4 204.5 L238 205.1 L238.6 205.8 L239.3 206.5 L239.9 207.2 L240.5 208 L241.1 208.7 L241.7 209.5 L242.4 210.3 L243 211.2 L243.6 212 L244.2 212.9 L244.8 213.8 L245.5 214.7 L246.1 215.6 L246.7 216.6 L247.3 217.5 L247.9 218.5 L248.6 219.5 L249.2 220.5 L249.8 221.5 L250.4 222.5 L251 223.5 L251.7 224.6 L252.3 225.6 L252.9 226.7 L253.5 227.7 L254.1 228.8 L254.8 229.9 L255.4 230.9 L256 232\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"2\"/><text x=\"193\" y=\"318\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">Posició a la recta</text><text x=\"197\" y=\"318\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">R</text><text x=\"206.3\" y=\"321.9\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"9\" fill=\"var(--ink)\">2</text><text x=\"215.6\" y=\"318\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">(m)</text><text x=\"56\" y=\"232\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" transform=\"rotate(-90 56 232)\">Amplitud</text><text x=\"278\" y=\"236\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--y)\">1,5λ</text></svg>",
+      "peu": "Amplitud de cada ona en funció de la posició sobre la recta R₁ (3λ) i sobre la recta R₂ (1,5λ)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "Totes dues ones tenen la mateixa freqüència i viatgen per l'aire a la mateixa velocitat: λ = <i>v</i>/<i>f</i> = 340/170 = <span class=\"res\">λ = 2,00 m</span>."
+        },
+        {
+          "titol": "Ones sobre cada recta",
+          "html": "Comptem quantes longituds d'ona caben en cada recorregut: sobre <i>R</i><sub>1</sub>, 6,00/2,00 = <span class=\"res\">3 longituds d’ona</span>; sobre <i>R</i><sub>2</sub>, 3,00/2,00 = <span class=\"res\">1,5 longituds d’ona</span>. Com que els altaveus emeten en fase, les dues gràfiques comencen igual (amplitud nul·la que creix). L'ona de <i>R</i><sub>1</sub> arriba al punt 1 després de tres oscil·lacions completes, i la de <i>R</i><sub>2</sub> després d'una oscil·lació i mitja, de manera que hi arriben en estats de vibració oposats.",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Tipus d’interferència al punt 1",
+          "html": "La diferència de camins és Δ<i>r</i> = 6,00 − 3,00 = 3,00 m = 1,5λ, és a dir, un nombre semienter de longituds d'ona. Les dues ones arriben al punt 1 en oposició de fase: hi ha <span class=\"res\">interferència destructiva</span>, i si les amplituds són iguals no s'hi sent res."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Calcular la longitud d'ona, λ = v/f = 2 m."
+        },
+        {
+          "punts": 0.5,
+          "que": "Fer les dues representacions de manera que es vegin 3 longituds d'ona sobre R₁ i 1,5 sobre R₂."
+        },
+        {
+          "punts": 0.5,
+          "que": "Justificar que la diferència de camins és 1,5λ, que les ones arriben en oposició de fase i que la interferència és destructiva (no se sent res si les amplituds són iguals)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Un altaveu deixa de funcionar",
+          "html": "Al punt 1 només arriba una ona i ja no hi ha interferència: es passa de no sentir res a sentir el so d'un sol altaveu. La freqüència continua sent <span class=\"res\">170 Hz</span> i l'amplitud és la d'un sol altaveu, de manera que la intensitat ja no és nul·la."
+        },
+        {
+          "titol": "L'altaveu de l'esquerra s'acosta 1,00 m",
+          "html": "Ara el recorregut per <i>R</i><sub>1</sub> és 5,00 m = 2,5λ (s'ha escurçat 1,00 m = λ/2) i el de <i>R</i><sub>2</sub> continua sent 1,5λ. La diferència de camins és 2,5λ − 1,5λ = λ, un nombre enter de longituds d'ona: les ones arriben en fase i hi ha <span class=\"res\">interferència constructiva</span>. La freqüència és 170 Hz i l'amplitud és la suma de les amplituds de cada altaveu (intensitat màxima)."
+        },
+        {
+          "titol": "Punt equidistant dels dos altaveus",
+          "html": "Si el nou punt és a la mateixa distància dels dos altaveus, les dues ones fan el mateix recorregut (diferència de camins nul·la) i arriben en fase: també hi ha <span class=\"res\">interferència constructiva</span>. La freqüència continua sent 170 Hz i l'amplitud és la suma de les dues amplituds."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Un altaveu apagat: sense interferència se sent el so d'un altaveu, amb freqüència 170 Hz i l'amplitud d'un sol altaveu."
+        },
+        {
+          "punts": 0.4,
+          "que": "Altaveu desplaçat: recorreguts de 2,5λ i 1,5λ, diferència λ, ones en fase i interferència constructiva; 170 Hz i amplitud suma de les dues."
+        },
+        {
+          "punts": 0.45,
+          "que": "Punt equidistant: mateix recorregut, ones en fase i interferència constructiva; 170 Hz i amplitud suma de les dues."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 2,00 m",
+      "valor": 2.0,
+      "pauta": 2.0
+    },
+    {
+      "apartat": "a",
+      "clau": "nR1",
+      "text": "R₁ = 3λ",
+      "valor": 3.0,
+      "pauta": 3.0
+    },
+    {
+      "apartat": "a",
+      "clau": "nR2",
+      "text": "R₂ = 1,5λ",
+      "valor": 1.5,
+      "pauta": 1.5
+    },
+    {
+      "apartat": "a",
+      "clau": "difa",
+      "text": "Δr = 1,5λ (destructiva)",
+      "valor": 1.5,
+      "pauta": 1.5
+    },
+    {
+      "apartat": "b",
+      "clau": "n1b",
+      "text": "nou recorregut per R₁ = 2,5λ",
+      "valor": 2.5,
+      "pauta": 2.5
+    },
+    {
+      "apartat": "b",
+      "clau": "difb",
+      "text": "Δr = λ (constructiva)",
+      "valor": 1.0,
+      "pauta": 1.0
+    }
+  ],
+  "comprovacio": [
+    "v, f = 340, 170",
+    "lam = v / f",
+    "R = {'lam': lam, 'nR1': 6.00 / lam, 'nR2': 3.00 / lam, 'difa': (6.00 - 3.00) / lam,",
+    "     'n1b': 5.00 / lam, 'difb': (5.00 - 3.00) / lam}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

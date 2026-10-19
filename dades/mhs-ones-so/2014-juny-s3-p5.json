@@ -1,0 +1,232 @@
+{
+  "id": "2014-juny-s3-p5",
+  "any": 2014,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P5",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b5"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal plantejar la condició d'ona estacionària en un tub tancat per un extrem, aplicar-la als tres primers modes i, a la inversa, trobar la longitud del tub a partir de la freqüència d'un mode concret.",
+  "titol": "Els modes de vibració d’una trompeta",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jl",
+      "pdf": "pau_fisi14jl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jp",
+      "pdf": "pau_fisi14jp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Juny/3/1598"
+  },
+  "dades": [
+    {
+      "simbol": "l₀",
+      "valor": "0,975",
+      "unitat": "m",
+      "descripcio": "longitud total del tub"
+    },
+    {
+      "simbol": "f",
+      "valor": "247",
+      "unitat": "Hz",
+      "descripcio": "freqüència de la nota si amb el segon pistó premut"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m s⁻¹",
+      "descripcio": "velocitat del so en l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>D’una manera molt simplificada, podem dir que la trompeta és un instrument musical de vent en què les diferents notes són produïdes aplicant aire per un extrem (que es considera tancat a causa de la presència dels llavis del músic) i que s’emeten per l’altre, considerat obert.</p><p>Les notes produïdes corresponen a determinats harmònics associats a les ones estacionàries que s’originen a l’instrument. La trompeta consta també de tres pistons que, quan es premen, augmenten de manera efectiva la longitud i canvien les notes emeses.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Si la longitud total del tub que representa la trompeta és <i>l</i><sub>0</sub> = 0,975 m, indiqueu quina és la longitud d’ona i la freqüència dels tres primers modes de vibració estacionaris que es poden generar a la trompeta."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Quan el músic fa sonar l’instrument mentre prem el segon pistó, produeix la nota <i>si</i> de la tercera octava, de freqüència <i>f</i> = 247 Hz. Sabent que aquesta nota correspon al segon mode de vibració permès a la cavitat de l’instrument, quina és ara la longitud efectiva de la cavitat? Quin és el recorregut extra Δ<i>l</i> que fa l’aire dins de la trompeta quan es prem aquest pistó?"
+      }
+    ],
+    "dades_text": "Dada: Velocitat del so en l’aire, 340 m s<sup>–1</sup>"
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Condició d'ona estacionària",
+          "html": "A l'extrem tancat hi ha d'haver un node i a l'extrem obert, un ventre. Entre un node i el ventre següent hi ha un quart de longitud d'ona, i cada fus addicional n'afegeix mitja. Per tant, la longitud del tub ha de complir <i>l</i><sub>0</sub> = λ<sub><i>n</i></sub>/4 + <i>n</i>·λ<sub><i>n</i></sub>/2 = (2<i>n</i> + 1)·λ<sub><i>n</i></sub>/4, amb <i>n</i> = 0, 1, 2, 3…"
+        },
+        {
+          "titol": "Longituds d'ona possibles",
+          "html": "Aïllant: λ<sub><i>n</i></sub> = 4<i>l</i><sub>0</sub>/(2<i>n</i> + 1)."
+        },
+        {
+          "titol": "Freqüències possibles",
+          "html": "Amb λ = <i>v</i>/<i>f</i>, on <i>v</i> és la velocitat del so: <i>f</i><sub><i>n</i></sub> = <i>v</i>/λ<sub><i>n</i></sub> = (2<i>n</i> + 1)·<i>v</i>/(4<i>l</i><sub>0</sub>). Només hi ha els múltiples senars de la freqüència més baixa."
+        },
+        {
+          "titol": "Els tres primers modes",
+          "html": "<i>n</i> = 0: λ<sub>0</sub> = 4·0,975/1 = <span class=\"res\">3,90 m</span> i <i>f</i><sub>0</sub> = 340/(4·0,975) = <span class=\"res\">87,2 Hz</span>.<br><i>n</i> = 1: λ<sub>1</sub> = 4·0,975/3 = <span class=\"res\">1,30 m</span> i <i>f</i><sub>1</sub> = 3·340/(4·0,975) = <span class=\"res\">262 Hz</span>.<br><i>n</i> = 2: λ<sub>2</sub> = 4·0,975/5 = <span class=\"res\">0,78 m</span> i <i>f</i><sub>2</sub> = 5·340/(4·0,975) = <span class=\"res\">436 Hz</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Plantejar la condició d'ona estacionària en un tub tancat per un extrem: l₀ = (2n + 1)·λₙ/4."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir les longituds d'ona possibles, λₙ = 4l₀/(2n + 1)."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir les freqüències possibles, fₙ = (2n + 1)·v/(4l₀)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Mode n = 0: 3,90 m i 87,2 Hz."
+        },
+        {
+          "punts": 0.1,
+          "que": "Mode n = 1: 1,30 m i 262 Hz."
+        },
+        {
+          "punts": 0.1,
+          "que": "Mode n = 2: 0,78 m i 436 Hz."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Quin mode és",
+          "html": "El segon mode permès correspon a <i>n</i> = 1 de les expressions anteriors, és a dir, a una longitud de cavitat <i>l</i> = 3λ/4."
+        },
+        {
+          "titol": "Longitud efectiva",
+          "html": "Amb λ = <i>v</i>/<i>f</i>: <i>l</i> = (3/4)·<i>v</i>/<i>f</i> = 3·340/(4·247) = <span class=\"res\">1,03 m</span>."
+        },
+        {
+          "titol": "Recorregut extra",
+          "html": "Δ<i>l</i> = <i>l</i> − <i>l</i><sub>0</sub> = 1,032 − 0,975 = <span class=\"res\">5,7·10<sup>−2</sup> m</span>. Si abans de restar s'arrodoneix <i>l</i> a 1,03 m, com fa la pauta, surt 5,5·10<sup>−2</sup> m."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Identificar el segon mode amb n = 1, és a dir, l = 3λ/4."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular la longitud efectiva, l = 3v/(4f) = 1,03 m."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular el recorregut extra, Δl = l − l₀ ≈ 5,5·10⁻² m."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam0",
+      "text": "λ₀ = 3,90 m",
+      "valor": 3.9,
+      "pauta": 3.9
+    },
+    {
+      "apartat": "a",
+      "clau": "f0",
+      "text": "f₀ = 87,2 Hz",
+      "valor": 87.2,
+      "pauta": 87.2
+    },
+    {
+      "apartat": "a",
+      "clau": "lam1",
+      "text": "λ₁ = 1,30 m",
+      "valor": 1.3,
+      "pauta": 1.3
+    },
+    {
+      "apartat": "a",
+      "clau": "f1",
+      "text": "f₁ = 262 Hz",
+      "valor": 261.5,
+      "pauta": 262
+    },
+    {
+      "apartat": "a",
+      "clau": "lam2",
+      "text": "λ₂ = 0,78 m",
+      "valor": 0.78,
+      "pauta": 0.78
+    },
+    {
+      "apartat": "a",
+      "clau": "f2",
+      "text": "f₂ = 436 Hz",
+      "valor": 435.9,
+      "pauta": 436
+    },
+    {
+      "apartat": "b",
+      "clau": "l",
+      "text": "l = 1,03 m",
+      "valor": 1.032,
+      "pauta": 1.03
+    },
+    {
+      "apartat": "b",
+      "clau": "dl",
+      "text": "Δl = 5,7·10⁻² m",
+      "valor": 0.0574,
+      "pauta": 0.055
+    }
+  ],
+  "comprovacio": [
+    "l0 = 0.975",
+    "v = 340",
+    "f = 247",
+    "lam0, lam1, lam2 = 4 * l0 / 1, 4 * l0 / 3, 4 * l0 / 5",
+    "l = 3 * v / (4 * f)",
+    "R = {\"lam0\": lam0, \"f0\": v / lam0, \"lam1\": lam1, \"f1\": v / lam1, \"lam2\": lam2, \"f2\": v / lam2, \"l\": l, \"dl\": l - l0}"
+  ],
+  "verificacio": {
+    "estat": "revisar",
+    "errors": [],
+    "diferencies_pauta": [
+      "dl: Python dona 0.0573887 però la pauta diu 0.055"
+    ],
+    "avisos": [],
+    "notes_manuals": [
+      "Δl: la pauta arrodoneix l = 3·340/(4·247) = 1,0324 m a 1,03 m abans de restar i dona Δl = 1,03 − 0,975 = 5,5·10⁻² m. Amb l sense arrodonir, Δl = 5,74·10⁻² m ≈ 5,7·10⁻² m. Mantenim 5,7·10⁻² m i esmentem el valor de la pauta a la resolució."
+    ]
+  }
+}

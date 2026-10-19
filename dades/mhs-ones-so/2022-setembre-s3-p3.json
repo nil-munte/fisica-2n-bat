@@ -1,0 +1,219 @@
+{
+  "id": "2022-setembre-s3-p3",
+  "any": 2022,
+  "convocatoria": "setembre",
+  "serie": 3,
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b3",
+    "b5"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Aplicació directa de λ = v/f i del fonamental d'un tub tancat per un extrem (L = λ/4), amb un dibuix senzill, i atenuació del nivell sonor amb la distància per la llei de l'invers del quadrat.",
+  "titol": "El volcà Cumbre Vieja com un tub sonor gegant",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi22sl",
+      "pdf": "pau_fisi22sl",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi22sp",
+      "pdf": "pau_fisi22sp",
+      "pagina": 6
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2022/Setembre/3/2915"
+  },
+  "dades": [
+    {
+      "simbol": "f",
+      "valor": "5,40",
+      "unitat": "Hz",
+      "descripcio": "freqüència fonamental del so del volcà"
+    },
+    {
+      "simbol": "β₁",
+      "valor": "72,0",
+      "unitat": "dB",
+      "descripcio": "nivell d’intensitat sonora a Todoque"
+    },
+    {
+      "simbol": "r₁",
+      "valor": "5,22",
+      "unitat": "km",
+      "descripcio": "distància de Todoque al volcà"
+    },
+    {
+      "simbol": "r₂",
+      "valor": "92,3",
+      "unitat": "km",
+      "descripcio": "distància de la costa d'El Hierro al volcà"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "10⁻¹²",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so en l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; el repartiment intern és el de la pauta."
+  },
+  "enunciat": {
+    "intro": "<p>El volcà Cumbre Vieja va entrar en erupció el 19 de setembre de 2021 a l’illa de La Palma. El so de l’erupció volcànica va ser mesurat per un equip de vulcanòlegs, que van detectar que estava format per diferents freqüències i que tenia un nivell d’intensitat sonora variant. Pel que fa al so que produeix en alguns moments de l’erupció, un volcà es pot modelitzar com si fos un instrument musical de vent gegant. D’una manera simplificada, podem considerar un volcà com un tub d’aire amb un extrem tancat i l’altre obert, on es produeixen ones estacionàries d’una manera semblant a una trompeta.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "En un moment determinat de l’erupció del Cumbre Vieja, es va detectar que la freqüència fonamental del so que emetia era de 5,40 Hz. Calculeu la longitud d’ona d’aquest so. Dibuixeu el perfil de l’ona estacionària corresponent i calculeu la longitud del tub, que correspon a la longitud del tram de la xemeneia ple d’aire."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "En un moment de l’erupció, es va detectar un nivell d’intensitat sonora de 72,0 dB a la localitat de Todoque, que és a 5,22 km del con del volcà. Calculeu el nivell d’intensitat sonora que se sentirà des de la costa de l’illa d’El Hierro, que és a 92,3 km del volcà Cumbre Vieja. (Suposeu que no hi ha obstacles en la propagació del so entre el volcà Cumbre Vieja i l’illa d’El Hierro.)"
+      }
+    ],
+    "dades_text": "Dades: <i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>.<br>La velocitat del so en l’aire és de 340 m/s."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 290 290\" role=\"img\" aria-label=\"Tub d'aire tancat per la lava a baix i obert a dalt: l'ona estacionària fonamental té un node N a la superfície de la lava i un ventre V a l'extrem obert; la longitud L del tub és un quart de longitud d'ona.\"><rect x=\"60\" y=\"246\" width=\"110\" height=\"34\" fill=\"var(--y)\" fill-opacity=\"0.35\"/><text x=\"115\" y=\"269\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\">Lava</text><rect x=\"54\" y=\"50\" width=\"6\" height=\"230\" fill=\"var(--muted)\"/><rect x=\"170\" y=\"50\" width=\"6\" height=\"230\" fill=\"var(--muted)\"/><line x1=\"60\" y1=\"50\" x2=\"170\" y2=\"50\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"115\" y1=\"50\" x2=\"115\" y2=\"246\" stroke=\"var(--grid2)\" stroke-width=\"1\" stroke-dasharray=\"1.5 3\"/><path d=\"M115 246 L114.2 244 L113.4 242.1 L112.6 240.1 L111.8 238.2 L111 236.2 L110.2 234.2 L109.4 232.3 L108.6 230.3 L107.8 228.4 L107 226.4 L106.2 224.4 L105.4 222.5 L104.7 220.5 L103.9 218.6 L103.1 216.6 L102.3 214.6 L101.5 212.7 L100.8 210.7 L100 208.8 L99.2 206.8 L98.5 204.8 L97.7 202.9 L97 200.9 L96.2 199 L95.5 197 L94.7 195 L94 193.1 L93.3 191.1 L92.6 189.2 L91.8 187.2 L91.1 185.2 L90.4 183.3 L89.7 181.3 L89 179.4 L88.4 177.4 L87.7 175.4 L87 173.5 L86.3 171.5 L85.7 169.6 L85 167.6 L84.4 165.6 L83.7 163.7 L83.1 161.7 L82.5 159.8 L81.9 157.8 L81.3 155.8 L80.7 153.9 L80.1 151.9 L79.5 150 L78.9 148 L78.4 146 L77.8 144.1 L77.3 142.1 L76.7 140.2 L76.2 138.2 L75.7 136.2 L75.2 134.3 L74.7 132.3 L74.2 130.4 L73.7 128.4 L73.3 126.4 L72.8 124.5 L72.4 122.5 L71.9 120.6 L71.5 118.6 L71.1 116.6 L70.7 114.7 L70.3 112.7 L69.9 110.8 L69.6 108.8 L69.2 106.8 L68.9 104.9 L68.5 102.9 L68.2 101 L67.9 99 L67.6 97 L67.3 95.1 L67 93.1 L66.7 91.2 L66.5 89.2 L66.3 87.2 L66 85.3 L65.8 83.3 L65.6 81.4 L65.4 79.4 L65.2 77.4 L65.1 75.5 L64.9 73.5 L64.8 71.6 L64.6 69.6 L64.5 67.6 L64.4 65.7 L64.3 63.7 L64.2 61.8 L64.2 59.8 L64.1 57.8 L64.1 55.9 L64 53.9 L64 52 L64 50\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><path d=\"M115 246 L115.8 244 L116.6 242.1 L117.4 240.1 L118.2 238.2 L119 236.2 L119.8 234.2 L120.6 232.3 L121.4 230.3 L122.2 228.4 L123 226.4 L123.8 224.4 L124.6 222.5 L125.3 220.5 L126.1 218.6 L126.9 216.6 L127.7 214.6 L128.5 212.7 L129.2 210.7 L130 208.8 L130.8 206.8 L131.5 204.8 L132.3 202.9 L133 200.9 L133.8 199 L134.5 197 L135.3 195 L136 193.1 L136.7 191.1 L137.4 189.2 L138.2 187.2 L138.9 185.2 L139.6 183.3 L140.3 181.3 L141 179.4 L141.6 177.4 L142.3 175.4 L143 173.5 L143.7 171.5 L144.3 169.6 L145 167.6 L145.6 165.6 L146.3 163.7 L146.9 161.7 L147.5 159.8 L148.1 157.8 L148.7 155.8 L149.3 153.9 L149.9 151.9 L150.5 150 L151.1 148 L151.6 146 L152.2 144.1 L152.7 142.1 L153.3 140.2 L153.8 138.2 L154.3 136.2 L154.8 134.3 L155.3 132.3 L155.8 130.4 L156.3 128.4 L156.7 126.4 L157.2 124.5 L157.6 122.5 L158.1 120.6 L158.5 118.6 L158.9 116.6 L159.3 114.7 L159.7 112.7 L160.1 110.8 L160.4 108.8 L160.8 106.8 L161.1 104.9 L161.5 102.9 L161.8 101 L162.1 99 L162.4 97 L162.7 95.1 L163 93.1 L163.3 91.2 L163.5 89.2 L163.7 87.2 L164 85.3 L164.2 83.3 L164.4 81.4 L164.6 79.4 L164.8 77.4 L164.9 75.5 L165.1 73.5 L165.2 71.6 L165.4 69.6 L165.5 67.6 L165.6 65.7 L165.7 63.7 L165.8 61.8 L165.8 59.8 L165.9 57.8 L165.9 55.9 L166 53.9 L166 52 L166 50\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><circle cx=\"115.0\" cy=\"246\" r=\"3\" fill=\"var(--y)\"/><text x=\"128\" y=\"240\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--y)\" font-style=\"italic\">N</text><circle cx=\"115.0\" cy=\"50\" r=\"3\" fill=\"var(--x)\"/><text x=\"125\" y=\"43\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--x)\" font-style=\"italic\">V</text><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"246\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M200 246 L197.7 240.5 L202.3 240.5 Z\" fill=\"var(--ink)\"/><path d=\"M200 50 L202.3 55.5 L197.7 55.5 Z\" fill=\"var(--ink)\"/><text x=\"210\" y=\"153\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">L</tspan> = λ/4</text><text x=\"115\" y=\"16\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--muted)\">extrem obert</text></svg>",
+      "peu": "Harmònic fonamental a la xemeneia: node (N) a la lava, que fa de fons tancat, i ventre (V) a l'extrem obert."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "<i>v</i> = λ/<i>T</i> = λ·<i>f</i> → λ = <i>v</i>/<i>f</i> = 340/5,40 = <span class=\"res\">63,0 m</span>."
+        },
+        {
+          "titol": "Perfil de l'ona estacionària",
+          "html": "La lava fa de fons tancat: l'aire no s'hi pot moure i hi ha un node (N). L'extrem superior és obert, i hi ha un ventre (V). En el fonamental, entre el node i el ventre hi ha només un quart de longitud d'ona.",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Longitud del tub",
+          "html": "<i>L</i> = λ/4 = 63,0/4 = <span class=\"res\">15,7 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Calcular la longitud d'ona, λ = v/f = 63,0 m."
+        },
+        {
+          "punts": 0.4,
+          "que": "Dibuixar el perfil correcte, amb el node a la superfície de la lava i el ventre a l'extrem obert."
+        },
+        {
+          "punts": 0.45,
+          "que": "Calcular la longitud del tub, L = λ/4 = 15,7 m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Intensitat a Todoque",
+          "html": "Amb β<sub>1</sub> = 72,0 dB i <i>r</i><sub>1</sub> = 5,22·10<sup>3</sup> m: β<sub>1</sub> = 10·log(<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) → <i>I</i><sub>1</sub> = <i>I</i><sub>0</sub>·10<sup>β<sub>1</sub>/10</sup> = 10<sup>−12</sup>·10<sup>7,2</sup> = <span class=\"res\">1,58·10<sup>−5</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Intensitat a El Hierro",
+          "html": "La potència emesa és la mateixa i es reparteix en superfícies esfèriques cada cop més grans: <i>I</i> = <i>P</i>/<i>A</i> → <i>I</i><sub>1</sub>·<i>A</i><sub>1</sub> = <i>I</i><sub>2</sub>·<i>A</i><sub>2</sub> → <i>I</i><sub>2</sub> = <i>I</i><sub>1</sub>·<i>A</i><sub>1</sub>/<i>A</i><sub>2</sub> = <i>I</i><sub>1</sub>·<i>r</i><sub>1</sub><sup>2</sup>/<i>r</i><sub>2</sub><sup>2</sup> = 1,58·10<sup>−5</sup>·(5,22·10<sup>3</sup>)<sup>2</sup>/(92,3·10<sup>3</sup>)<sup>2</sup> = <span class=\"res\">5,07·10<sup>−8</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Nivell sonor a El Hierro",
+          "html": "β<sub>2</sub> = 10·log(<i>I</i><sub>2</sub>/<i>I</i><sub>0</sub>) = 10·log(5,07·10<sup>−8</sup>/10<sup>−12</sup>) = <span class=\"res\">47,0 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Obtenir la intensitat sonora a Todoque a partir del nivell, I₁ = 1,58·10⁻⁵ W/m²."
+        },
+        {
+          "punts": 0.6,
+          "que": "Relacionar les intensitats amb el quadrat de les distàncies (mateixa potència) i obtenir I₂ = 5,07·10⁻⁸ W/m²."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular el nivell d'intensitat sonora a El Hierro, β₂ = 47,0 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 63,0 m",
+      "valor": 62.96,
+      "pauta": 63.0
+    },
+    {
+      "apartat": "a",
+      "clau": "L",
+      "text": "L = 15,7 m",
+      "valor": 15.74,
+      "pauta": 15.7
+    },
+    {
+      "apartat": "b",
+      "clau": "I1",
+      "text": "I₁ = 1,58·10⁻⁵ W/m²",
+      "valor": 1.585e-05,
+      "pauta": 1.58e-05
+    },
+    {
+      "apartat": "b",
+      "clau": "I2",
+      "text": "I₂ = 5,07·10⁻⁸ W/m²",
+      "valor": 5.07e-08,
+      "pauta": 5.07e-08
+    },
+    {
+      "apartat": "b",
+      "clau": "beta2",
+      "text": "β₂ = 47,0 dB",
+      "valor": 47.05,
+      "pauta": 47.0
+    }
+  ],
+  "comprovacio": [
+    "from math import log10",
+    "v, f = 340, 5.40",
+    "I0, b1, r1, r2 = 1e-12, 72.0, 5.22e3, 92.3e3",
+    "lam = v / f",
+    "I1 = I0 * 10**(b1 / 10)",
+    "I2 = I1 * r1**2 / r2**2",
+    "R = {'lam': lam, 'L': lam / 4, 'I1': I1, 'I2': I2, 'beta2': 10 * log10(I2 / I0)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

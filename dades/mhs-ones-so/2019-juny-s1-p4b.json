@@ -1,0 +1,200 @@
+{
+  "id": "2019-juny-s1-p4b",
+  "any": 2019,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b5"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa de la relació λ = 2L/n per al tercer harmònic, un dibuix senzill i la idea que un ventre passa de dalt a baix en mig període.",
+  "titol": "El tercer harmònic d'una corda de violoncel",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jl",
+      "pdf": "pau_fisi19jl",
+      "pagina": 4
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi19jp",
+      "pdf": "pau_fisi19jp",
+      "pagina": 6
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2019/Juny/1/548"
+  },
+  "dades": [
+    {
+      "simbol": "L",
+      "valor": "70",
+      "unitat": "cm",
+      "descripcio": "longitud de la corda del violoncel"
+    },
+    {
+      "simbol": "v",
+      "valor": "308",
+      "unitat": "m/s",
+      "descripcio": "velocitat de propagació de les ones a la corda"
+    },
+    {
+      "simbol": "n",
+      "valor": "3",
+      "unitat": "",
+      "descripcio": "harmònic considerat (tercer)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1 punt per apartat; la pauta en detalla el repartiment."
+  },
+  "enunciat": {
+    "intro": "<p>La longitud de la corda d’un violoncel és de 70 cm i la velocitat de propagació de les ones en aquesta corda és de 308 m s<sup>–1</sup>. Per al tercer harmònic:</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Representeu esquemàticament l’ona estacionària d’aquest harmònic i indiqueu-hi tots els nodes i tots els ventres. Calculeu la longitud d’ona. Quina és la distància entre dos nodes consecutius?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Suposant que la corda està en posició horitzontal, calculeu, per a un ventre, el temps que triga la posició vertical a passar del seu valor màxim al valor mínim (del punt més alt al punt més baix)."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 380 194\" role=\"img\" aria-label=\"Tercer harmònic d'una corda fixa pels dos extrems: tres ventres i quatre nodes, dos als extrems i dos a un terç i dos terços de la longitud L = 70 cm.\"><rect x=\"23\" y=\"12\" width=\"7\" height=\"124\" fill=\"var(--muted)\" opacity=\"0.55\"/><rect x=\"350\" y=\"12\" width=\"7\" height=\"124\" fill=\"var(--muted)\" opacity=\"0.55\"/><line x1=\"30\" y1=\"80\" x2=\"350\" y2=\"80\" stroke=\"var(--grid2)\" stroke-width=\"1\" stroke-dasharray=\"2 3\"/><line x1=\"83.3\" y1=\"30\" x2=\"83.3\" y2=\"130\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"4 3\"/><line x1=\"190.0\" y1=\"30\" x2=\"190.0\" y2=\"130\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"4 3\"/><line x1=\"296.7\" y1=\"30\" x2=\"296.7\" y2=\"130\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"4 3\"/><path d=\"M30.0 80.0 L32.0 77.1 L34.0 74.1 L36.0 71.2 L38.0 68.3 L40.0 65.5 L42.0 62.7 L44.0 60.0 L46.0 57.3 L48.0 54.7 L50.0 52.2 L52.0 49.8 L54.0 47.5 L56.0 45.3 L58.0 43.3 L60.0 41.3 L62.0 39.5 L64.0 37.9 L66.0 36.4 L68.0 35.0 L70.0 33.8 L72.0 32.8 L74.0 31.9 L76.0 31.2 L78.0 30.6 L80.0 30.2 L82.0 30.0 L84.0 30.0 L86.0 30.2 L88.0 30.5 L90.0 31.0 L92.0 31.6 L94.0 32.4 L96.0 33.4 L98.0 34.6 L100.0 35.9 L102.0 37.4 L104.0 39.0 L106.0 40.7 L108.0 42.6 L110.0 44.6 L112.0 46.8 L114.0 49.0 L116.0 51.4 L118.0 53.9 L120.0 56.4 L122.0 59.1 L124.0 61.8 L126.0 64.5 L128.0 67.4 L130.0 70.2 L132.0 73.1 L134.0 76.1 L136.0 79.0 L138.0 82.0 L140.0 84.9 L142.0 87.8 L144.0 90.7 L146.0 93.6 L148.0 96.4 L150.0 99.1 L152.0 101.8 L154.0 104.4 L156.0 107.0 L158.0 109.4 L160.0 111.7 L162.0 113.9 L164.0 116.0 L166.0 118.0 L168.0 119.9 L170.0 121.6 L172.0 123.1 L174.0 124.6 L176.0 125.8 L178.0 126.9 L180.0 127.8 L182.0 128.6 L184.0 129.2 L186.0 129.7 L188.0 129.9 L190.0 130.0 L192.0 129.9 L194.0 129.7 L196.0 129.2 L198.0 128.6 L200.0 127.8 L202.0 126.9 L204.0 125.8 L206.0 124.6 L208.0 123.1 L210.0 121.6 L212.0 119.9 L214.0 118.0 L216.0 116.0 L218.0 113.9 L220.0 111.7 L222.0 109.4 L224.0 107.0 L226.0 104.4 L228.0 101.8 L230.0 99.1 L232.0 96.4 L234.0 93.6 L236.0 90.7 L238.0 87.8 L240.0 84.9 L242.0 82.0 L244.0 79.0 L246.0 76.1 L248.0 73.1 L250.0 70.2 L252.0 67.4 L254.0 64.5 L256.0 61.8 L258.0 59.1 L260.0 56.4 L262.0 53.9 L264.0 51.4 L266.0 49.0 L268.0 46.8 L270.0 44.6 L272.0 42.6 L274.0 40.7 L276.0 39.0 L278.0 37.4 L280.0 35.9 L282.0 34.6 L284.0 33.4 L286.0 32.4 L288.0 31.6 L290.0 31.0 L292.0 30.5 L294.0 30.2 L296.0 30.0 L298.0 30.0 L300.0 30.2 L302.0 30.6 L304.0 31.2 L306.0 31.9 L308.0 32.8 L310.0 33.8 L312.0 35.0 L314.0 36.4 L316.0 37.9 L318.0 39.5 L320.0 41.3 L322.0 43.3 L324.0 45.3 L326.0 47.5 L328.0 49.8 L330.0 52.2 L332.0 54.7 L334.0 57.3 L336.0 60.0 L338.0 62.7 L340.0 65.5 L342.0 68.3 L344.0 71.2 L346.0 74.1 L348.0 77.1 L350.0 80.0\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2.2\"/><path d=\"M30.0 80.0 L32.0 82.9 L34.0 85.9 L36.0 88.8 L38.0 91.7 L40.0 94.5 L42.0 97.3 L44.0 100.0 L46.0 102.7 L48.0 105.3 L50.0 107.8 L52.0 110.2 L54.0 112.5 L56.0 114.7 L58.0 116.7 L60.0 118.7 L62.0 120.5 L64.0 122.1 L66.0 123.6 L68.0 125.0 L70.0 126.2 L72.0 127.2 L74.0 128.1 L76.0 128.8 L78.0 129.4 L80.0 129.8 L82.0 130.0 L84.0 130.0 L86.0 129.8 L88.0 129.5 L90.0 129.0 L92.0 128.4 L94.0 127.6 L96.0 126.6 L98.0 125.4 L100.0 124.1 L102.0 122.6 L104.0 121.0 L106.0 119.3 L108.0 117.4 L110.0 115.4 L112.0 113.2 L114.0 111.0 L116.0 108.6 L118.0 106.1 L120.0 103.6 L122.0 100.9 L124.0 98.2 L126.0 95.5 L128.0 92.6 L130.0 89.8 L132.0 86.9 L134.0 83.9 L136.0 81.0 L138.0 78.0 L140.0 75.1 L142.0 72.2 L144.0 69.3 L146.0 66.4 L148.0 63.6 L150.0 60.9 L152.0 58.2 L154.0 55.6 L156.0 53.0 L158.0 50.6 L160.0 48.3 L162.0 46.1 L164.0 44.0 L166.0 42.0 L168.0 40.1 L170.0 38.4 L172.0 36.9 L174.0 35.4 L176.0 34.2 L178.0 33.1 L180.0 32.2 L182.0 31.4 L184.0 30.8 L186.0 30.3 L188.0 30.1 L190.0 30.0 L192.0 30.1 L194.0 30.3 L196.0 30.8 L198.0 31.4 L200.0 32.2 L202.0 33.1 L204.0 34.2 L206.0 35.4 L208.0 36.9 L210.0 38.4 L212.0 40.1 L214.0 42.0 L216.0 44.0 L218.0 46.1 L220.0 48.3 L222.0 50.6 L224.0 53.0 L226.0 55.6 L228.0 58.2 L230.0 60.9 L232.0 63.6 L234.0 66.4 L236.0 69.3 L238.0 72.2 L240.0 75.1 L242.0 78.0 L244.0 81.0 L246.0 83.9 L248.0 86.9 L250.0 89.8 L252.0 92.6 L254.0 95.5 L256.0 98.2 L258.0 100.9 L260.0 103.6 L262.0 106.1 L264.0 108.6 L266.0 111.0 L268.0 113.2 L270.0 115.4 L272.0 117.4 L274.0 119.3 L276.0 121.0 L278.0 122.6 L280.0 124.1 L282.0 125.4 L284.0 126.6 L286.0 127.6 L288.0 128.4 L290.0 129.0 L292.0 129.5 L294.0 129.8 L296.0 130.0 L298.0 130.0 L300.0 129.8 L302.0 129.4 L304.0 128.8 L306.0 128.1 L308.0 127.2 L310.0 126.2 L312.0 125.0 L314.0 123.6 L316.0 122.1 L318.0 120.5 L320.0 118.7 L322.0 116.7 L324.0 114.7 L326.0 112.5 L328.0 110.2 L330.0 107.8 L332.0 105.3 L334.0 102.7 L336.0 100.0 L338.0 97.3 L340.0 94.5 L342.0 91.7 L344.0 88.8 L346.0 85.9 L348.0 82.9 L350.0 80.0\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><circle cx=\"30.0\" cy=\"80\" r=\"3.4\" fill=\"var(--y)\"/><text x=\"30.0\" y=\"150\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--y)\">N</text><circle cx=\"136.7\" cy=\"80\" r=\"3.4\" fill=\"var(--y)\"/><text x=\"136.7\" y=\"150\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--y)\">N</text><circle cx=\"243.3\" cy=\"80\" r=\"3.4\" fill=\"var(--y)\"/><text x=\"243.3\" y=\"150\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--y)\">N</text><circle cx=\"350.0\" cy=\"80\" r=\"3.4\" fill=\"var(--y)\"/><text x=\"350.0\" y=\"150\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--y)\">N</text><circle cx=\"83.3\" cy=\"80\" r=\"2.6\" fill=\"var(--ink)\"/><text x=\"83.3\" y=\"22\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--f)\">V</text><circle cx=\"190.0\" cy=\"80\" r=\"2.6\" fill=\"var(--ink)\"/><text x=\"190.0\" y=\"22\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--f)\">V</text><circle cx=\"296.7\" cy=\"80\" r=\"2.6\" fill=\"var(--ink)\"/><text x=\"296.7\" y=\"22\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" font-style=\"italic\" font-weight=\"700\" fill=\"var(--f)\">V</text><line x1=\"30\" y1=\"164\" x2=\"350\" y2=\"164\" stroke=\"var(--muted)\" stroke-width=\"1\"/><path d=\"M30 164 l8 -4 v8 z M350 164 l-8 -4 v8 z\" fill=\"var(--muted)\"/><text x=\"190.0\" y=\"181\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">70 cm</text></svg>",
+      "peu": "Tercer harmònic de la corda: 4 nodes i 3 ventres. Les línies contínua i discontínua són les dues posicions extremes de la corda; N = node, V = ventre."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Esquema de l'harmònic",
+          "html": "Els dos extrems de la corda estan subjectes, de manera que sempre hi ha un node a cada extrem. En el tercer harmònic la corda vibra en tres fusos: hi ha <b>3 ventres</b> i <b>4 nodes</b> (els dos extrems i dos d'interns, a <i>L</i>/3 i 2<i>L</i>/3).",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Longitud d'ona",
+          "html": "Al dibuix hi cap una ona i mitja: <i>L</i> = 1,5·λ. De manera general, per a l'harmònic <i>n</i> d'una corda fixa pels dos extrems, λ = 2<i>L</i>/<i>n</i>. Amb <i>n</i> = 3: λ = 2·0,70/3 = <span class=\"res\">0,467 m</span>."
+        },
+        {
+          "titol": "Distància entre nodes consecutius",
+          "html": "Entre dos nodes seguits hi ha mitja longitud d'ona (també es veu al dibuix que és un terç de la corda): distància = λ/2 = <i>L</i>/3 = 0,70/3 = <span class=\"res\">0,233 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Dibuixar el tercer harmònic amb els 3 ventres i els 4 nodes (si falten els nodes dels extrems es resten 0,1 p)."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir la longitud d'ona, λ = 2L/3 = 0,467 m (o bé de L = 1,5λ)."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular la distància entre nodes consecutius, λ/2 = L/3 = 0,233 m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Freqüència",
+          "html": "<i>f</i> = <i>v</i>/λ = 308/0,467 = <span class=\"res\">660 Hz</span>."
+        },
+        {
+          "titol": "Període",
+          "html": "<i>T</i> = 1/<i>f</i> = 1/660 = <span class=\"res\">1,51·10<sup>−3</sup> s</span>."
+        },
+        {
+          "titol": "Temps entre el punt més alt i el més baix",
+          "html": "Un ventre oscil·la verticalment amb el període de l'ona. Passar de l'elongació màxima a la mínima és només mitja oscil·lació: Δ<i>t</i> = <i>T</i>/2 = 1,51·10<sup>−3</sup>/2 = <span class=\"res\">7,58·10<sup>−4</sup> s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Calcular la freqüència, f = v/λ = 660 Hz."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular el període, T = 1/f = 1,51·10⁻³ s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Raonar que de dalt a baix el ventre triga mig període: Δt = T/2 = 7,58·10⁻⁴ s."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 0,467 m",
+      "valor": 0.4667,
+      "pauta": 0.467
+    },
+    {
+      "apartat": "a",
+      "clau": "dn",
+      "text": "distància entre nodes = 0,233 m",
+      "valor": 0.2333,
+      "pauta": 0.233
+    },
+    {
+      "apartat": "b",
+      "clau": "f",
+      "text": "f = 660 Hz",
+      "valor": 660,
+      "pauta": 660
+    },
+    {
+      "apartat": "b",
+      "clau": "T",
+      "text": "T = 1,51·10⁻³ s",
+      "valor": 0.001515,
+      "pauta": 0.00151
+    },
+    {
+      "apartat": "b",
+      "clau": "dt",
+      "text": "Δt = 7,58·10⁻⁴ s",
+      "valor": 0.0007576,
+      "pauta": 0.000758
+    }
+  ],
+  "comprovacio": [
+    "L = 0.70",
+    "v = 308",
+    "n = 3",
+    "lam = 2 * L / n",
+    "f = v / lam",
+    "T = 1 / f",
+    "R = {'lam': lam, 'dn': lam / 2, 'f': f, 'T': T, 'dt': T / 2}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "id": "2012-juny-s3-p4b",
+  "any": 2012,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Càlcul directe de v, ω i k i de l'equació de l'ona; després cal derivar-la dues vegades i avaluar-la en un punt i un instant.",
+  "titol": "Un emissor de 25,0 Hz en una corda",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi12jl",
+      "pdf": "pau_fisi12jl",
+      "pagina": 4
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi12jp",
+      "pdf": "pau_fisi12jp",
+      "pagina": 4
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2012/Juny/3/1619"
+  },
+  "dades": [
+    {
+      "simbol": "ν",
+      "valor": "25,0",
+      "unitat": "Hz",
+      "descripcio": "freqüència de l'emissor"
+    },
+    {
+      "simbol": "λ",
+      "valor": "24,0",
+      "unitat": "cm",
+      "descripcio": "distància entre dos punts consecutius en el mateix estat de vibració"
+    },
+    {
+      "simbol": "A",
+      "valor": "3,00",
+      "unitat": "cm",
+      "descripcio": "amplitud de l'ona"
+    },
+    {
+      "simbol": "x",
+      "valor": "6,00",
+      "unitat": "m",
+      "descripcio": "posició del punt de l'apartat b"
+    },
+    {
+      "simbol": "t",
+      "valor": "3,00",
+      "unitat": "s",
+      "descripcio": "instant de l'apartat b"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Una ona transversal avança per una corda. L’emissor que la produeix vibra amb una freqüència de 25,0 Hz. Considereu que l’ona avança en el sentit positiu de l’eix <i>x</i>. El centre emissor està situat a l’origen de coordenades, i l’elongació en l’instant inicial és nul·la. Sabem que la distància entre dos punts consecutius que estan en el mateix estat de vibració és 24,0 cm i que l’amplitud de l’ona és 3,00 cm. Calculeu:</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "La velocitat de l’ona, la freqüència angular (pulsació), el nombre d’ona i l’equació de l’ona."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "La velocitat d’oscil·lació i l’acceleració d’un punt situat en <i>x</i> = 6,00 m en l’instant <i>t</i> = 3,00 s."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Freqüència i longitud d'ona",
+          "html": "La freqüència de l'ona és la de l'emissor, ν = 25,0 Hz. Dos punts consecutius en el mateix estat de vibració estan separats una longitud d'ona: λ = 24,0 cm = 0,240 m."
+        },
+        {
+          "titol": "Velocitat de l'ona",
+          "html": "<i>v</i> = λ·ν = 0,240·25,0 = <span class=\"res\">6,00 m/s</span>."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2πν = 2π·25,0 = 50π ≈ <span class=\"res\">157 rad/s</span>."
+        },
+        {
+          "titol": "Nombre d'ona",
+          "html": "<i>k</i> = 2π/λ = 2π/0,240 ≈ <span class=\"res\">26,2 m<sup>−1</sup></span>."
+        },
+        {
+          "titol": "Forma general",
+          "html": "Com que l'ona avança cap a les <i>x</i> positives, <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(ω<i>t</i> − <i>kx</i> + φ). Es pot fer amb sinus o amb cosinus, però el terme <i>kx</i> ha d'anar amb signe negatiu."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "A l'origen i a <i>t</i> = 0 l'elongació és nul·la: <i>y</i>(0, 0) = <i>A</i>·sin φ = 0 → φ = 0."
+        },
+        {
+          "titol": "Equació de l'ona",
+          "html": "Amb <i>A</i> = 3,00 cm = 0,03 m, i traient factor comú 50π (ja que <i>k</i>/ω = 1/<i>v</i> = 1/6): <span class=\"res\"><i>y</i>(<i>x</i>, <i>t</i>) = 0,03·sin[50π(<i>t</i> − <i>x</i>/6)]</span>, amb <i>y</i> i <i>x</i> en m i <i>t</i> en s. Amb cosinus, la fase inicial seria ±π/2."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Identificar ν = 25 Hz i λ = 0,24 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular v = λ·ν = 6,00 m/s."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ω = 2πν = 157 rad/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular k = 2π/λ = 26,2 m⁻¹."
+        },
+        {
+          "punts": 0.1,
+          "que": "Escriure la forma general de l'ona amb −kx."
+        },
+        {
+          "punts": 0.1,
+          "que": "Imposar y(0, 0) = 0 i obtenir φ = 0."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'equació de l'ona amb valors i unitats."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Velocitat d'oscil·lació",
+          "html": "Derivem l'elongació respecte del temps: <i>v</i>(<i>x</i>, <i>t</i>) = d<i>y</i>/d<i>t</i> = 0,03·50π·cos[50π(<i>t</i> − <i>x</i>/6)] = 1,5π·cos[50π(<i>t</i> − <i>x</i>/6)], en m/s."
+        },
+        {
+          "titol": "Valor a x = 6,00 m i t = 3,00 s",
+          "html": "L'argument val 50π(3 − 6/6) = 100π, i cos(100π) = 1: <i>v</i> = 1,5π = <span class=\"res\">4,71 m/s</span>."
+        },
+        {
+          "titol": "Acceleració",
+          "html": "Tornem a derivar: <i>a</i>(<i>x</i>, <i>t</i>) = d<i>v</i>/d<i>t</i> = −1,5π·50π·sin[50π(<i>t</i> − <i>x</i>/6)] = −75π<sup>2</sup>·sin[50π(<i>t</i> − <i>x</i>/6)], en m/s<sup>2</sup>."
+        },
+        {
+          "titol": "Valor de l'acceleració",
+          "html": "Amb el mateix argument, sin(100π) = 0: <i>a</i> = <span class=\"res\">0</span>. En aquest instant el punt passa per la posició d'equilibri, on la velocitat d'oscil·lació és màxima."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Derivar per obtenir l'expressió de la velocitat d'oscil·lació."
+        },
+        {
+          "punts": 0.2,
+          "que": "Avaluar-la: 1,5π = 4,71 m/s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Derivar la velocitat per obtenir l'expressió de l'acceleració."
+        },
+        {
+          "punts": 0.2,
+          "que": "Avaluar-la: a = 0."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 0,240 m",
+      "valor": 0.24,
+      "pauta": 0.24
+    },
+    {
+      "apartat": "a",
+      "clau": "v",
+      "text": "v = 6,00 m/s",
+      "valor": 6.0,
+      "pauta": 6.0
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 157 rad/s",
+      "valor": 157.08,
+      "pauta": 157
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 26,2 m⁻¹",
+      "valor": 26.18,
+      "pauta": 26.2
+    },
+    {
+      "apartat": "b",
+      "clau": "vosc",
+      "text": "v(6,00 m; 3,00 s) = 4,71 m/s",
+      "valor": 4.712,
+      "pauta": 4.71
+    },
+    {
+      "apartat": "b",
+      "clau": "acc",
+      "text": "a(6,00 m; 3,00 s) = 0",
+      "valor": 0,
+      "pauta": 0
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, sin, cos",
+    "nu = 25.0",
+    "lam = 0.240",
+    "A = 0.0300",
+    "w = 2 * pi * nu",
+    "k = 2 * pi / lam",
+    "x, t = 6.00, 3.00",
+    "fase = w * t - k * x",
+    "R = {'lam': lam, 'v': lam * nu, 'w': w, 'k': k, 'vosc': A * w * cos(fase), 'acc': round(-A * w**2 * sin(fase), 6) + 0.0}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

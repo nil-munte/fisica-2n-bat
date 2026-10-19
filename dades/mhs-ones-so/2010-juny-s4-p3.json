@@ -1,0 +1,232 @@
+{
+  "id": "2010-juny-s4-p3",
+  "any": 2010,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [
+    "mhs-ones-so/mhs"
+  ],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Lectura directa de la freqüència i la longitud d'ona; l'apartat b és l'equació d'un MHS amb fase inicial i la seva derivada.",
+  "titol": "Dues boies que oscil·len igual",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jl",
+      "pdf": "pau_fisi10jl",
+      "pagina": 11
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jp",
+      "pdf": "pau_fisi10jp",
+      "pagina": 6
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2010/Juny/4/2123"
+  },
+  "dades": [
+    {
+      "simbol": "λ",
+      "valor": "2",
+      "unitat": "m",
+      "descripcio": "separació mínima entre les dues boies que oscil·len de la mateixa manera"
+    },
+    {
+      "simbol": "n",
+      "valor": "30",
+      "unitat": "oscil·lacions/min",
+      "descripcio": "ritme d'oscil·lació de les boies"
+    },
+    {
+      "simbol": "A",
+      "valor": "20",
+      "unitat": "cm",
+      "descripcio": "alçada fins on pugen les boies"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Observem que dues boies de senyalització en una zona de bany d’una platja, separades una distància de 2 m, oscil·len de la mateixa manera amb l’onatge de l’aigua del mar. Veiem que la mínima distància en què té lloc aquest fet és, justament, la separació entre les dues boies. Comptem que oscil·len trenta vegades en un minut i observem que pugen fins a una alçada de 20 cm.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Determineu la freqüència, la longitud d’ona i la velocitat de les ones del mar."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Escriviu l’equació que descriu el moviment de les boies en funció del temps, si comencem a comptar el temps quan les boies són en la posició més alta. Escriviu l’equació de la velocitat de les boies en funció del temps."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Període",
+          "html": "Les boies fan 30 oscil·lacions en un minut (60 s): <i>T</i> = 60 s/30 = <span class=\"res\">2 s</span>."
+        },
+        {
+          "titol": "Freqüència",
+          "html": "<i>f</i> = 1/<i>T</i> = 1/2 = <span class=\"res\">0,5 Hz</span>."
+        },
+        {
+          "titol": "Longitud d'ona",
+          "html": "Les dues boies oscil·len igual, és a dir, en fase, i són els punts més pròxims que ho fan. Per tant, la seva separació és una longitud d'ona: λ = <span class=\"res\">2 m</span>."
+        },
+        {
+          "titol": "Velocitat de les ones",
+          "html": "<i>v</i> = λ·<i>f</i> = 2·0,5 = <span class=\"res\">1 m/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Calcular el període a partir del recompte, T = 2 s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir f = 1/T = 0,5 Hz."
+        },
+        {
+          "punts": 0.2,
+          "que": "Identificar la separació entre les boies amb la longitud d'ona, λ = 2 m."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular v = λ·f = 1 m/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Forma general",
+          "html": "Cada boia puja i baixa amb un MHS. Amb <i>y</i> mesurada des de la posició d'equilibri, <i>y</i> = <i>A</i>·sin(ω<i>t</i> + φ)."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π<i>f</i> = 2π·0,5 = <span class=\"res\">π rad/s</span>."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "A <i>t</i> = 0 les boies són a la posició més alta, <i>y</i> = <i>A</i>: <i>A</i> = <i>A</i>·sin φ → sin φ = 1 → φ = <span class=\"res\">π/2 rad</span>."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "L'amplitud és l'alçada que pugen respecte de l'equilibri, <i>A</i> = 20 cm = 0,20 m: <span class=\"res\"><i>y</i> = 0,20·sin(π<i>t</i> + π/2)</span>, amb <i>y</i> en m i <i>t</i> en s. Amb cosinus s'escriu <i>y</i> = 0,20·cos(π<i>t</i>)."
+        },
+        {
+          "titol": "Velocitat",
+          "html": "Derivem respecte del temps: <i>v</i> = d<i>y</i>/d<i>t</i> = <i>A</i>ω·cos(ω<i>t</i> + φ), i amb valors <span class=\"res\"><i>v</i> = 0,20·π·cos(π<i>t</i> + π/2)</span>, amb <i>v</i> en m/s i <i>t</i> en s."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.1,
+          "que": "Escriure la forma general y = A·sin(ωt + φ)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular ω = 2πf = π rad/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Imposar y = A a t = 0 i obtenir φ = π/2."
+        },
+        {
+          "punts": 0.3,
+          "que": "Escriure l'equació del moviment amb valors i unitats."
+        },
+        {
+          "punts": 0.3,
+          "que": "Derivar per obtenir l'equació de la velocitat, amb unitats."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 2 s",
+      "valor": 2,
+      "pauta": 2
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 0,5 Hz",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 2 m",
+      "valor": 2,
+      "pauta": 2
+    },
+    {
+      "apartat": "a",
+      "clau": "v",
+      "text": "v = 1 m/s",
+      "valor": 1,
+      "pauta": 1
+    },
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = π rad/s",
+      "valor": 3.1416,
+      "pauta": 3.1416
+    },
+    {
+      "apartat": "b",
+      "clau": "A",
+      "text": "A = 0,20 m",
+      "valor": 0.2,
+      "pauta": 0.2
+    },
+    {
+      "apartat": "b",
+      "clau": "vmax",
+      "text": "Aω = 0,20·π m/s",
+      "valor": 0.6283,
+      "pauta": 0.6283
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "T = 60 / 30",
+    "f = 1 / T",
+    "lam = 2",
+    "A = 0.20",
+    "w = 2 * pi * f",
+    "R = {'T': T, 'f': f, 'lam': lam, 'v': lam * f, 'w': w, 'A': A, 'vmax': A * w}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "2012-setembre-s4-p4",
+  "any": 2012,
+  "convocatoria": "setembre",
+  "serie": 4,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b4"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa de v = λ·ν, ω = 2πν i T = 1/ν, i dos raonaments qualitatius (efecte Doppler i reflexió).",
+  "titol": "Un altaveu de 300 Hz: Doppler i reflexió",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi12sl",
+      "pdf": "pau_fisi12sl",
+      "pagina": 3
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi12sp",
+      "pdf": "pau_fisi12sp",
+      "pagina": 4
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2012/Setembre/4/2462"
+  },
+  "dades": [
+    {
+      "simbol": "ν",
+      "valor": "300",
+      "unitat": "Hz",
+      "descripcio": "freqüència de vibració de la membrana"
+    },
+    {
+      "simbol": "A",
+      "valor": "1,00",
+      "unitat": "mm",
+      "descripcio": "amplitud de vibració de la membrana"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>La membrana d’un altaveu vibra amb una freqüència de 300 Hz i una amplitud de 1,00 mm i produeix un to pur. En les condicions de l’experiment, la velocitat del so és 340 m s<sup>–1</sup>.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la longitud d’ona, la pulsació i el període del so produït."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Indiqueu com seran, qualitativament, la freqüència i la longitud d’ona enregistrades per un observador en cada un dels casos següents, comparades (més gran / més petit / igual) amb la freqüència i la longitud d’ona originals:<br>— L’altaveu s’acosta ràpidament a l’observador.<br>— El so arriba a l’observador després d’haver-se reflectit en una paret."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "El so té la freqüència de la membrana, ν = 300 Hz. De <i>v</i> = λ·ν: λ = <i>v</i>/ν = 340/300 = <span class=\"res\">1,13 m</span>."
+        },
+        {
+          "titol": "Pulsació",
+          "html": "ω = 2πν = 2π·300 = <span class=\"res\">1,88·10<sup>3</sup> rad/s</span>."
+        },
+        {
+          "titol": "Període",
+          "html": "<i>T</i> = 1/ν = 1/300 = <span class=\"res\">3,33·10<sup>−3</sup> s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.4,
+          "que": "Calcular λ = v/ν = 1,13 m."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular ω = 2πν = 1,88·10³ rad/s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Calcular T = 1/ν = 3,33·10⁻³ s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "L'altaveu s'acosta",
+          "html": "És l'efecte Doppler: la font avança cap a l'observador mentre emet, i els fronts d'ona que li arriben queden més junts. L'observador enregistra <span class=\"res\">una freqüència més gran i una longitud d'ona més petita</span> que les originals."
+        },
+        {
+          "titol": "Reflexió en una paret",
+          "html": "En la reflexió el so només canvia la direcció de propagació: continua en el mateix medi, amb la mateixa velocitat, i la freqüència la fixa la font. <span class=\"res\">La freqüència i la longitud d'ona són iguals</span> que les originals."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Font que s'acosta: freqüència més gran i longitud d'ona més petita, justificat amb l'efecte Doppler o amb els fronts d'ona."
+        },
+        {
+          "punts": 0.5,
+          "que": "Reflexió: no canvien ni la freqüència ni la longitud d'ona, perquè no hi ha canvi de medi i només canvia la direcció de propagació."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 1,13 m",
+      "valor": 1.133,
+      "pauta": 1.13
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 1,88·10³ rad/s",
+      "valor": 1885,
+      "pauta": 1880
+    },
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 3,33·10⁻³ s",
+      "valor": 0.003333,
+      "pauta": 0.00333
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "nu = 300",
+    "v = 340",
+    "R = {'lam': v / nu, 'w': 2 * pi * nu, 'T': 1 / nu}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

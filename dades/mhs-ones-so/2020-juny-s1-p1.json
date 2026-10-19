@@ -1,0 +1,211 @@
+{
+  "id": "2020-juny-s1-p1",
+  "any": 2020,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b3"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Càlcul directe de longituds d'ona amb λ = v/f i d'un nivell d'intensitat sumant potències i repartint-les sobre una esfera.",
+  "titol": "La veu de Freddie Mercury i el públic de Rock in Rio",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20jl",
+      "pdf": "pau_fisi20jl",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20jp",
+      "pdf": "pau_fisi20jp",
+      "pagina": 2
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2020/Juny/1/2849"
+  },
+  "dades": [
+    {
+      "simbol": "f<sub>greu</sub>",
+      "valor": "92,2",
+      "unitat": "Hz",
+      "descripcio": "freqüència del so més greu (fa 2)"
+    },
+    {
+      "simbol": "f<sub>agut</sub>",
+      "valor": "784",
+      "unitat": "Hz",
+      "descripcio": "freqüència del so més agut (sol 5)"
+    },
+    {
+      "simbol": "N",
+      "valor": "350 000",
+      "unitat": "",
+      "descripcio": "nombre d'assistents al concert"
+    },
+    {
+      "simbol": "P<sub>persona</sub>",
+      "valor": "10<sup>–7</sup>",
+      "unitat": "W",
+      "descripcio": "potència amb què canta cada assistent"
+    },
+    {
+      "simbol": "r",
+      "valor": "1",
+      "unitat": "km",
+      "descripcio": "distància al concert"
+    },
+    {
+      "simbol": "I<sub>0</sub>",
+      "valor": "10<sup>–12</sup>",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so en l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; la pauta en detalla el repartiment."
+  },
+  "enunciat": {
+    "intro": "<p>Freddie Mercury ha passat a la història com una de les millors veus del rock. La seva màgica veu ha estat objecte de discussió i estudi, també per a la ciència. El biofísic austríac Christian Herbst va estudiar la veu del cantant de Queen i va determinar que Mercury era un baríton amb un registre vocal que anava del fa 2 (al voltant de 92,2 Hz) al sol 5 (al voltant de 784 Hz).</p><p>Font: <i>https://queenphotos.wordpress.com</i>.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Calculeu les longituds d’ona dels sons més greus i més aguts que Mercury podia emetre."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "L’any 1985, Queen va actuar al festival Rock in Rio, en un concert que va aplegar unes 350 000 persones. En un moment de molta emoció, els assistents van començar a cantar <i>a cappella</i> la famosa cançó <i>Love of my life</i>. Si cada assistent al concert cantava amb una potència de 10<sup>–7</sup> W, quin nivell d’intensitat sonora (en decibels) es podia percebre a 1 km del concert? (A aquesta distància, podeu considerar que el concert és una font puntual de so.)"
+      }
+    ],
+    "dades_text": "Dades: <i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>.<br>La velocitat del so en l’aire és de 340 m s<sup>–1</sup>."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "So més agut",
+          "html": "La longitud d'ona és inversament proporcional a la freqüència, λ = <i>v</i>/<i>f</i>; el so més agut (784 Hz) té la longitud d'ona més curta: λ<sub>mín</sub> = 340/784 = <span class=\"res\">0,43 m</span>."
+        },
+        {
+          "titol": "So més greu",
+          "html": "El so més greu (92,2 Hz) té la longitud d'ona més llarga: λ<sub>màx</sub> = <i>v</i>/<i>f</i> = 340/92,2 = <span class=\"res\">3,69 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.65,
+          "que": "Calcular la longitud d'ona del so més agut, λ = v/f = 0,43 m."
+        },
+        {
+          "punts": 0.6,
+          "que": "Calcular la longitud d'ona del so més greu, 3,69 m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Superfície on es reparteix el so",
+          "html": "Si el concert es comporta com una font puntual, a una distància <i>r</i> = 1 000 m la potència es distribueix sobre una esfera: <i>A</i> = 4π<i>r</i><sup>2</sup> = 4π·1 000<sup>2</sup> = <span class=\"res\">1,26·10<sup>7</sup> m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Intensitat a 1 km",
+          "html": "Les potències de tots els assistents se sumen, i la intensitat és la potència per unitat de superfície: <i>I</i> = <i>N</i>·<i>P</i><sub>persona</sub>/<i>A</i> = 350 000·10<sup>−7</sup>/1,26·10<sup>7</sup> = <span class=\"res\">2,78·10<sup>−9</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Nivell d'intensitat sonora",
+          "html": "β = 10·log(<i>I</i>/<i>I</i><sub>0</sub>) = 10·log(2,78·10<sup>−9</sup>/10<sup>−12</sup>) = <span class=\"res\">34,45 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Calcular la superfície de l'esfera de radi 1 km, 1,26·10⁷ m²."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular la intensitat amb la potència total dels assistents, 2,78·10⁻⁹ W/m²."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular el nivell d'intensitat sonora, β = 10·log(I/I₀) = 34,45 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lmin",
+      "text": "λ_mín = 0,43 m",
+      "valor": 0.4337,
+      "pauta": 0.43,
+      "tol": 0.01
+    },
+    {
+      "apartat": "a",
+      "clau": "lmax",
+      "text": "λ_màx = 3,69 m",
+      "valor": 3.688,
+      "pauta": 3.69
+    },
+    {
+      "apartat": "b",
+      "clau": "A",
+      "text": "A = 1,26·10⁷ m²",
+      "valor": 12566000.0,
+      "pauta": 12600000.0
+    },
+    {
+      "apartat": "b",
+      "clau": "I",
+      "text": "I = 2,78·10⁻⁹ W/m²",
+      "valor": 2.785e-09,
+      "pauta": 2.78e-09
+    },
+    {
+      "apartat": "b",
+      "clau": "beta",
+      "text": "β = 34,45 dB",
+      "valor": 34.45,
+      "pauta": 34.45
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, log10",
+    "v = 340",
+    "N = 350000",
+    "Pp = 1e-7",
+    "r = 1000",
+    "I0 = 1e-12",
+    "A = 4 * pi * r**2",
+    "I = N * Pp / A",
+    "R = {'lmin': v / 784, 'lmax': v / 92.2, 'A': A, 'I': I, 'beta': 10 * log10(I / I0)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "2021-setembre-s1-p6",
+  "any": 2021,
+  "convocatoria": "setembre",
+  "serie": 1,
+  "problema": "P6",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b3"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa de la definició de nivell d'intensitat sonora sumant intensitats iguals.",
+  "titol": "Cinc violins: quants decibels més?",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi21sl",
+      "pdf": "pau_fisi21sl",
+      "pagina": 12
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi21sp",
+      "pdf": "pau_fisi21sp",
+      "pagina": 7
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2021/Setembre/1/2894"
+  },
+  "dades": [
+    {
+      "simbol": "",
+      "valor": "1 + 4",
+      "unitat": "violins",
+      "descripcio": "un violí sol i quatre més que s'hi afegeixen amb la mateixa intensitat"
+    },
+    {
+      "simbol": "β",
+      "valor": "76,98",
+      "unitat": "dB",
+      "descripcio": "nivell dels cinc violins tocant forte (apartat b)"
+    },
+    {
+      "simbol": "I<sub>0</sub>",
+      "valor": "10<sup>–12</sup>",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; la pauta en detalla el repartiment."
+  },
+  "enunciat": {
+    "intro": "<p>Un violinista interpreta un solo durant un concert. De cop i volta, quatre violins més l’acompanyen, tocant amb la mateixa intensitat que el primer.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Quants decibels ha augmentat el nivell d’intensitat del so?"
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Ara els cinc violins passen de <i>mezzo piano</i> a <i>forte</i> i mesurem un nivell d’intensitat del so de 76,98 dB. Suposant que tots els violins toquen amb la mateixa intensitat, quina és la intensitat <i>I</i> amb la qual toca un sol violí?"
+      }
+    ],
+    "dades_text": "Dada: <i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Nivell d'un sol violí",
+          "html": "Si un violí produeix una intensitat <i>I</i>, el nivell inicial és β<sub>i</sub> = 10·log(<i>I</i>/<i>I</i><sub>0</sub>)."
+        },
+        {
+          "titol": "Nivell dels cinc violins",
+          "html": "Les intensitats de fonts independents se sumen: amb cinc violins iguals la intensitat és 5<i>I</i> i β<sub>f</sub> = 10·log(5<i>I</i>/<i>I</i><sub>0</sub>)."
+        },
+        {
+          "titol": "Augment del nivell",
+          "html": "Δβ = β<sub>f</sub> − β<sub>i</sub> = 10·[log(5<i>I</i>/<i>I</i><sub>0</sub>) − log(<i>I</i>/<i>I</i><sub>0</sub>)] = 10·log 5 = <span class=\"res\">6,99 dB</span>. Fixeu-vos que no depèn de quina sigui la intensitat <i>I</i>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Escriure el nivell d'un sol violí, β = 10·log(I/I₀)."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure el nivell dels cinc violins, amb intensitat 5I."
+        },
+        {
+          "punts": 0.4,
+          "que": "Restar els dos nivells i arribar a Δβ = 10·log 5."
+        },
+        {
+          "punts": 0.15,
+          "que": "Resultat: 6,99 dB."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Intensitat d'un violí",
+          "html": "Els cinc violins junts fan una intensitat 5<i>I</i>: 76,98 = 10·log(5<i>I</i>/<i>I</i><sub>0</sub>) → 5<i>I</i>/<i>I</i><sub>0</sub> = 10<sup>7,698</sup> → <i>I</i> = 10<sup>−12</sup>·10<sup>7,698</sup>/5 = <span class=\"res\">9,98·10<sup>−6</sup> W/m<sup>2</sup></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 1,
+          "que": "Plantejar 76,98 = 10·log(5I/I₀) i aïllar la intensitat d'un violí."
+        },
+        {
+          "punts": 0.25,
+          "que": "Resultat: I = 9,98·10⁻⁶ W/m²."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "db",
+      "text": "Δβ = 6,99 dB",
+      "valor": 6.99,
+      "pauta": 6.99
+    },
+    {
+      "apartat": "b",
+      "clau": "I",
+      "text": "I = 9,98·10⁻⁶ W/m²",
+      "valor": 9.98e-06,
+      "pauta": 9.98e-06
+    }
+  ],
+  "comprovacio": [
+    "from math import log10",
+    "I0 = 1e-12",
+    "R = {'db': 10 * log10(5), 'I': I0 * 10**(76.98 / 10) / 5}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

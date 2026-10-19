@@ -1,0 +1,181 @@
+{
+  "id": "2014-juny-s3-p5b",
+  "any": 2014,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P5",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b3"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa de la definició de nivell d'intensitat i de I = P/(4πr²) per a una font puntual, primer per trobar la potència i després la distància on la intensitat baixa fins al llindar.",
+  "titol": "Fins on se sent el timbre de l'escola",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jl",
+      "pdf": "pau_fisi14jl",
+      "pagina": 4
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi14jp",
+      "pdf": "pau_fisi14jp",
+      "pagina": 4
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2014/Juny/3/1204"
+  },
+  "dades": [
+    {
+      "simbol": "r",
+      "valor": "7,0",
+      "unitat": "m",
+      "descripcio": "distància on es fa la mesura"
+    },
+    {
+      "simbol": "β",
+      "valor": "50",
+      "unitat": "dB",
+      "descripcio": "nivell d'intensitat sonora mesurat"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "1,0·10⁻¹²",
+      "unitat": "W m⁻²",
+      "descripcio": "intensitat mínima audible"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta dona 1 punt a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>El timbre que sona en una escola a l’hora del pati perquè els alumnes tornin a classe és molt fort. Per tal de saber fins on el sentiran, en cas de no haver-hi edificis ni cap mena de pèrdua d’energia, mesurem amb el telèfon intel·ligent (<i>smartphone</i>) el nivell d’intensitat sonora a 7,0 m de distància del timbre i obtenim un valor de 50 dB. Calculeu:</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "La intensitat del so en el lloc on fem la mesura."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "La potència del timbre. A partir de quina distància del timbre els alumnes deixaran de sentir el so?"
+      }
+    ],
+    "dades_text": "Dada: Les persones no poden percebre els sons que tenen una intensitat inferior a <i>I</i><sub>0</sub> = 1,0 × 10<sup>–12</sup> W m<sup>–2</sup>. Suposeu que el timbre és un emissor de so puntual que emet en totes les direccions."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Nivell d'intensitat",
+          "html": "El nivell en decibels es defineix a partir de la intensitat llindar: <i>β</i> = 10·log(<i>I</i>/<i>I</i><sub>0</sub>)."
+        },
+        {
+          "titol": "Substitució",
+          "html": "50 = 10·log(<i>I</i>/10<sup>−12</sup>), d'on log(<i>I</i>/10<sup>−12</sup>) = 5 i <i>I</i>/10<sup>−12</sup> = 10<sup>5</sup>."
+        },
+        {
+          "titol": "Intensitat",
+          "html": "<i>I</i> = 10<sup>5</sup>·10<sup>−12</sup> = <span class=\"res\">1,0·10<sup>−7</sup> W/m<sup>2</sup></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Escriure la definició del nivell d'intensitat, β = 10·log(I/I₀)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Substituir-hi β = 50 dB i I₀ = 10⁻¹² W/m²."
+        },
+        {
+          "punts": 0.2,
+          "que": "Desfer el logaritme: I/I₀ = 10⁵."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir I = 10⁻⁷ W/m²."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Potència del timbre",
+          "html": "Una font puntual reparteix la potència per igual sobre esferes centrades en ella: <i>I</i> = <i>P</i>/(4π<i>r</i><sup>2</sup>). A 7,0 m: <i>P</i> = <i>I</i>·4π<i>r</i><sup>2</sup> = 10<sup>−7</sup>·4π·7,0<sup>2</sup> = <span class=\"res\">6,2·10<sup>−5</sup> W</span>."
+        },
+        {
+          "titol": "Distància a partir de la qual no se sent",
+          "html": "El so deixa de sentir-se quan la intensitat baixa fins al llindar, <i>I</i> = <i>I</i><sub>0</sub>: <i>P</i>/(4π<i>r</i><sup>2</sup>) = <i>I</i><sub>0</sub> → <i>r</i> = √(<i>P</i>/(4π<i>I</i><sub>0</sub>)) = √(6,2·10<sup>−5</sup>/(4π·10<sup>−12</sup>)) = <span class=\"res\">2,2·10<sup>3</sup> m</span>. Més enllà d'uns 2,2 km els alumnes ja no el sentirien."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.3,
+          "que": "Relacionar intensitat i potència per a una font puntual, I = P/(4πr²)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la potència, P = 6,2·10⁻⁵ W."
+        },
+        {
+          "punts": 0.3,
+          "que": "Plantejar que el so deixa de sentir-se quan I = I₀."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir la distància, r = 2,2·10³ m."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "I",
+      "text": "I = 1,0·10⁻⁷ W/m²",
+      "valor": 1e-07,
+      "pauta": 1e-07
+    },
+    {
+      "apartat": "b",
+      "clau": "P",
+      "text": "P = 6,2·10⁻⁵ W",
+      "valor": 6.16e-05,
+      "pauta": 6.2e-05,
+      "tol": 0.01
+    },
+    {
+      "apartat": "b",
+      "clau": "r",
+      "text": "r = 2,2·10³ m",
+      "valor": 2214,
+      "pauta": 2200,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, sqrt",
+    "I0 = 1e-12",
+    "I = I0 * 10 ** (50 / 10)",
+    "P = I * 4 * pi * 7.0 ** 2",
+    "R = {\"I\": I, \"P\": P, \"r\": sqrt(P / (4 * pi * I0))}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

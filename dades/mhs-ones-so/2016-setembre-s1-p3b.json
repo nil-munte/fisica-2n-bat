@@ -1,0 +1,163 @@
+{
+  "id": "2016-setembre-s1-p3b",
+  "any": 2016,
+  "convocatoria": "setembre",
+  "serie": 1,
+  "problema": "P3",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa: λ = v/f, nombre d'ona i equació de l'ona amb fase inicial zero.",
+  "titol": "Boies marines: longitud d'ona i equació de l'ona",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16sl",
+      "pdf": "pau_fisi16sl",
+      "pagina": 3
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16sp",
+      "pdf": "pau_fisi16sp",
+      "pagina": 5
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Setembre/1/3689"
+  },
+  "dades": [
+    {
+      "simbol": "A",
+      "valor": "3,00",
+      "unitat": "m",
+      "descripcio": "amplitud de l'oscil·lació de la boia"
+    },
+    {
+      "simbol": "f",
+      "valor": "0,10",
+      "unitat": "Hz",
+      "descripcio": "freqüència de l'oscil·lació"
+    },
+    {
+      "simbol": "v",
+      "valor": "0,50",
+      "unitat": "m/s",
+      "descripcio": "velocitat de propagació de l'ona"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Les boies marines s’utilitzen sovint per a mesurar l’alçària de l’onatge. Una d’aquestes boies es mou seguint una oscil·lació harmònica de 3,00 m d’amplitud i 0,10 Hz de freqüència i l’ona es propaga a una velocitat de 0,50 m s<sup>–1</sup>.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la longitud d’ona i el nombre d’ona."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Escriviu l’equació de les ones que fan moure la boia suposant que la fase inicial és zero."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "λ = <i>v</i>/<i>f</i> = 0,50/0,10 = <span class=\"res\">5,0 m</span>."
+        },
+        {
+          "titol": "Nombre d'ona",
+          "html": "<i>k</i> = 2π/λ = 2π/5,0 = <span class=\"res\">0,4π m<sup>−1</sup> ≈ 1,26 m<sup>−1</sup></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Calcular la longitud d'ona, λ = v/f = 5,0 m."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular el nombre d'ona, k = 2π/λ = 0,4π m⁻¹."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Forma general",
+          "html": "Amb fase inicial zero, l'elongació vertical de cada punt de la superfície és <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(<i>k</i><i>x</i> − ω<i>t</i>), en què <i>x</i> és la posició en la direcció de propagació."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π<i>f</i> = 2π·0,10 = <span class=\"res\">0,2π rad/s ≈ 0,63 rad/s</span>."
+        },
+        {
+          "titol": "Equació amb valors",
+          "html": "<span class=\"res\"><i>y</i>(<i>x</i>, <i>t</i>) = 3,00·sin(0,4π<i>x</i> − 0,2π<i>t</i>) = 3,00·sin[0,2π(2<i>x</i> − <i>t</i>)]</span>, amb <i>x</i> i <i>y</i> en m i <i>t</i> en s."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Plantejar l'equació y(x, t) = A·sin(kx − ωt) i calcular ω = 2πf = 0,2π rad/s."
+        },
+        {
+          "punts": 0.8,
+          "que": "Escriure l'equació amb els valors, y(x, t) = 3,00·sin(0,4πx − 0,2πt) en unitats del SI."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 5,0 m",
+      "valor": 5.0,
+      "pauta": 5.0
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 0,4π m⁻¹ ≈ 1,26 m⁻¹",
+      "valor": 1.2566,
+      "pauta": 1.2566
+    },
+    {
+      "apartat": "b",
+      "clau": "w",
+      "text": "ω = 0,2π rad/s ≈ 0,63 rad/s",
+      "valor": 0.6283,
+      "pauta": 0.6283
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "v, f = 0.50, 0.10",
+    "lam = v / f",
+    "R = {'lam': lam, 'k': 2 * pi / lam, 'w': 2 * pi * f}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

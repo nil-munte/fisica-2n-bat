@@ -1,0 +1,180 @@
+{
+  "id": "2017-juny-s5-p2",
+  "any": 2017,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P2",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa: identificar període i longitud d'ona, escriure l'equació de l'ona i calcular la diferència de fase entre dos punts.",
+  "titol": "Les ones que passen per la proa d'una barca",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi17jl",
+      "pdf": "pau_fisi17jl",
+      "pagina": 5
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi17jp",
+      "pdf": "pau_fisi17jp",
+      "pagina": 11
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2017/Juny/5/628"
+  },
+  "dades": [
+    {
+      "simbol": "T",
+      "valor": "4,00",
+      "unitat": "s",
+      "descripcio": "temps entre dues crestes que passen per la proa"
+    },
+    {
+      "simbol": "A",
+      "valor": "0,30",
+      "unitat": "m",
+      "descripcio": "amplitud de les crestes"
+    },
+    {
+      "simbol": "λ",
+      "valor": "9,00",
+      "unitat": "m",
+      "descripcio": "distància entre dues crestes"
+    },
+    {
+      "simbol": "d",
+      "valor": "4,00",
+      "unitat": "m",
+      "descripcio": "distància entre els dos punts (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Un remer assegut a la seva barca, de comportament estacionari respecte a l’aigua, observa que les crestes de les ones passen per la proa cada 4,00 s, que l’amplitud de les crestes és de 0,30 m i que la distància entre dues crestes és de 9,00 m.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la velocitat de propagació de les ones. Determineu l’equació de l’ona suposant que la fase inicial és zero."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "En un instant donat, calculeu la diferència de fase entre dos punts que disten 4,00 m l’un de l’altre."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Velocitat de propagació",
+          "html": "El temps entre dues crestes és el període, <i>T</i> = 4,00 s, i la distància entre crestes és la longitud d'ona, λ = 9,00 m: <i>v</i> = λ/<i>T</i> = 9,00/4,00 = <span class=\"res\">2,25 m/s</span>."
+        },
+        {
+          "titol": "Magnituds de l'equació",
+          "html": "Escrivim l'ona com <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(ω<i>t</i> − <i>k</i><i>x</i> + φ<sub>0</sub>), amb φ<sub>0</sub> = 0. La pulsació és ω = 2π/<i>T</i> = 2π/4,00 = <span class=\"res\">π/2 rad/s</span> i el nombre d'ona, <i>k</i> = 2π/λ = <span class=\"res\">2π/9 m<sup>−1</sup></span>."
+        },
+        {
+          "titol": "Equació amb valors",
+          "html": "<span class=\"res\"><i>y</i>(<i>x</i>, <i>t</i>) = 0,30·sin(π<i>t</i>/2 − 2π<i>x</i>/9)</span>, amb <i>x</i> i <i>y</i> en m i <i>t</i> en s."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular la velocitat de propagació, v = λ/T = 2,25 m/s."
+        },
+        {
+          "punts": 0.4,
+          "que": "Plantejar l'equació general amb φ₀ = 0 i calcular ω = π/2 rad/s i k = 2π/9 m⁻¹."
+        },
+        {
+          "punts": 0.4,
+          "que": "Escriure l'equació amb els valors, y = 0,30·sin(πt/2 − 2πx/9)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Resta de les fases",
+          "html": "En un mateix instant <i>t</i>, la fase de dos punts <i>x</i><sub>1</sub> i <i>x</i><sub>2</sub> és Δφ = (π<i>t</i>/2 − 2π<i>x</i><sub>2</sub>/9) − (π<i>t</i>/2 − 2π<i>x</i><sub>1</sub>/9): el terme del temps desapareix."
+        },
+        {
+          "titol": "Valor",
+          "html": "Δφ = (2π/9)·(<i>x</i><sub>1</sub> − <i>x</i><sub>2</sub>), en valor absolut (2π/9)·4,00 = <span class=\"res\">8π/9 rad ≈ 2,79 rad</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Escriure la diferència de fase com la resta de les fases dels dos punts en el mateix instant."
+        },
+        {
+          "punts": 0.5,
+          "que": "Obtenir Δφ = (2π/9)·4 = 8π/9 rad."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "v",
+      "text": "v = 2,25 m/s",
+      "valor": 2.25,
+      "pauta": 2.25
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = π/2 rad/s",
+      "valor": 1.5708,
+      "pauta": 1.5708
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 2π/9 m⁻¹",
+      "valor": 0.6981,
+      "pauta": 0.6981
+    },
+    {
+      "apartat": "b",
+      "clau": "dphi",
+      "text": "Δφ = 8π/9 rad ≈ 2,79 rad",
+      "valor": 2.7925,
+      "pauta": 2.7925
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "T, lam = 4.00, 9.00",
+    "k = 2 * pi / lam",
+    "R = {'v': lam / T, 'w': 2 * pi / T, 'k': k, 'dphi': k * 4.00}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

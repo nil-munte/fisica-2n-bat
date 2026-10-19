@@ -1,0 +1,216 @@
+{
+  "id": "2020-juny-s3-p7",
+  "any": 2020,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P7",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b4"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal identificar ω i k a l'equació d'una ona electromagnètica, encadenar λ, f, v i l'índex de refracció, i raonar la direcció del camp magnètic.",
+  "titol": "El camp elèctric d'un làser dins d'un vidre",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20jl",
+      "pdf": "pau_fisi20jl",
+      "pagina": 8
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi20jp",
+      "pdf": "pau_fisi20jp",
+      "pagina": 14
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2020/Juny/3/2863"
+  },
+  "dades": [
+    {
+      "simbol": "E(x, t)",
+      "valor": "28 cos(2,4 × 10<sup>15</sup> t – 1,2 × 10<sup>7</sup> x) k⃗",
+      "unitat": "SI",
+      "descripcio": "camp elèctric del feix làser dins del vidre"
+    },
+    {
+      "simbol": "c",
+      "valor": "3,00 × 10<sup>8</sup>",
+      "unitat": "m/s",
+      "descripcio": "velocitat de la llum al buit"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; la pauta en detalla el repartiment."
+  },
+  "enunciat": {
+    "intro": "<p>El camp elèctric d’un feix de llum emès per un làser quan passa a través d’un vidre el podem expressar amb l’equació <i>E⃗</i>(<i>x</i>, <i>t</i>) = 28 cos(2,4 × 10<sup>15</sup> <i>t</i> – 1,2 × 10<sup>7</sup> <i>x</i>)<i>k⃗</i>, tot en unitats del sistema internacional.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Determineu la longitud d’ona i la velocitat de l’ona electromagnètica dins d’aquest vidre. Quant val l’índex de refracció d’aquest vidre? Quan la llum canvia de medi, la freqüència de l’ona electromagnètica no canvia. Quina és la longitud d’ona quan aquest feix de llum viatja pel buit?"
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Quina és la direcció de propagació d’aquesta ona? En quin eix oscil·la el camp magnètic? Justifiqueu la resposta."
+      }
+    ],
+    "dades_text": "Dada: <i>c</i> = 3,00 × 10<sup>8</sup> m s<sup>–1</sup>."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Equació general d'una ona harmònica",
+          "html": "Una ona harmònica que avança en el sentit positiu de l'eix <i>x</i> es pot escriure ψ(<i>x</i>, <i>t</i>) = <i>A</i>·cos(ω<i>t</i> − <i>k</i><i>x</i>) = <i>A</i>·cos 2π(<i>t</i>/<i>T</i> − <i>x</i>/λ). Aquí <i>k</i> és el nombre d'ona, que no s'ha de confondre amb el vector unitari <i>k⃗</i> que dona la direcció del camp."
+        },
+        {
+          "titol": "Freqüència angular, nombre d'ona, període i freqüència",
+          "html": "Comparant amb l'equació de l'enunciat: ω = 2,40·10<sup>15</sup> rad/s i <i>k</i> = 1,20·10<sup>7</sup> rad/m. D'aquí, <i>T</i> = 2π/ω = 2π/2,40·10<sup>15</sup> = 2,618·10<sup>−15</sup> s i <i>f</i> = 1/<i>T</i> = ω/2π = <span class=\"res\">3,82·10<sup>14</sup> Hz</span>."
+        },
+        {
+          "titol": "Longitud d'ona dins del vidre",
+          "html": "λ = 2π/<i>k</i> = 2π/1,20·10<sup>7</sup> = <span class=\"res\">5,24·10<sup>−7</sup> m</span>."
+        },
+        {
+          "titol": "Velocitat dins del vidre",
+          "html": "<i>v</i> = λ/<i>T</i> = λ·<i>f</i> = 5,24·10<sup>−7</sup>·3,82·10<sup>14</sup> = <span class=\"res\">2,00·10<sup>8</sup> m/s</span>."
+        },
+        {
+          "titol": "Índex de refracció",
+          "html": "<i>n</i> = <i>c</i>/<i>v</i> = 3,00·10<sup>8</sup>/2,00·10<sup>8</sup> = <span class=\"res\">1,5</span>."
+        },
+        {
+          "titol": "Longitud d'ona al buit",
+          "html": "La freqüència no varia en sortir del vidre, però al buit la llum es propaga a <i>c</i> = 3,00·10<sup>8</sup> m/s. Per tant, λ<sub>buit</sub> = <i>c</i>/<i>f</i> = 3,00·10<sup>8</sup>/3,82·10<sup>14</sup> = <span class=\"res\">7,85·10<sup>−7</sup> m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Escriure l'equació general d'una ona harmònica, ψ(x, t) = A·cos(ωt − kx)."
+        },
+        {
+          "punts": 0.25,
+          "que": "Identificar ω i k i obtenir-ne el període i la freqüència (3,82·10¹⁴ Hz)."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular la longitud d'ona al vidre, λ = 2π/k = 5,24·10⁻⁷ m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Calcular la velocitat al vidre, v = λ·f = 2,00·10⁸ m/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular l'índex de refracció, n = c/v = 1,5."
+        },
+        {
+          "punts": 0.15,
+          "que": "Indicar que al buit la llum va a c = 3,00·10⁸ m/s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la longitud d'ona al buit amb la mateixa freqüència, 7,85·10⁻⁷ m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Direcció de propagació",
+          "html": "L'argument del cosinus només depèn del temps i de la coordenada <i>x</i>: l'ona es propaga al llarg de l'<b>eix <i>x</i></b> (el signe − entre ω<i>t</i> i <i>k</i><i>x</i> indica que avança cap a les <i>x</i> positives)."
+        },
+        {
+          "titol": "Direcció del camp magnètic",
+          "html": "En una ona electromagnètica els camps <i>E⃗</i> i <i>B⃗</i> són perpendiculars entre si i, alhora, perpendiculars a la direcció de propagació. El camp elèctric té la direcció del vector unitari <i>k⃗</i>, és a dir, oscil·la en l'eix <i>z</i>, i l'ona avança en l'eix <i>x</i>. L'única direcció perpendicular a totes dues és la de l'eix <i>y</i>: el camp magnètic <span class=\"res\">oscil·la en l'eix <i>y</i></span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.65,
+          "que": "Justificar que l'ona es propaga en l'eix x perquè és la coordenada que apareix a l'argument."
+        },
+        {
+          "punts": 0.6,
+          "que": "Raonar que B és perpendicular a la propagació (x) i a E (eix z, vector k) i, per tant, oscil·la en l'eix y."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 2,618·10⁻¹⁵ s",
+      "valor": 2.618e-15,
+      "pauta": 2.618e-15
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 3,82·10¹⁴ Hz",
+      "valor": 382000000000000.0,
+      "pauta": 382000000000000.0
+    },
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 5,24·10⁻⁷ m",
+      "valor": 5.236e-07,
+      "pauta": 5.24e-07
+    },
+    {
+      "apartat": "a",
+      "clau": "v",
+      "text": "v = 2,00·10⁸ m/s",
+      "valor": 200000000.0,
+      "pauta": 200000000.0
+    },
+    {
+      "apartat": "a",
+      "clau": "n",
+      "text": "n = 1,5",
+      "valor": 1.5,
+      "pauta": 1.5
+    },
+    {
+      "apartat": "a",
+      "clau": "lam0",
+      "text": "λ (buit) = 7,85·10⁻⁷ m",
+      "valor": 7.854e-07,
+      "pauta": 7.85e-07
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "w = 2.4e15",
+    "k = 1.2e7",
+    "c = 3.00e8",
+    "T = 2 * pi / w",
+    "f = 1 / T",
+    "lam = 2 * pi / k",
+    "v = lam * f",
+    "R = {'T': T, 'f': f, 'lam': lam, 'v': v, 'n': c / v, 'lam0': c / f}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

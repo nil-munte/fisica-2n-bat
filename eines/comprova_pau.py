@@ -60,6 +60,9 @@ def valida(p, nom, temes):
     if not conv:
         err.append('convocatoria ha de ser juny o setembre')
     esperat = f"{p['any']}-{p['convocatoria']}-s{p['serie']}-{p['problema'].lower()}"
+    # si l'opció A i la B d'una sèrie tenen el mateix número de problema, l'id porta la lletra de l'opció (p3b)
+    if p.get('opcio') and p['id'] == esperat + p['opcio'].lower():
+        esperat = p['id']
     if p['id'] != esperat or nom != esperat:
         err.append(f'l\'id i el nom del fitxer han de ser {esperat}')
     tp = p['tema_principal']

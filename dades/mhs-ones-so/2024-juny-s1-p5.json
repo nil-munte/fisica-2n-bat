@@ -1,0 +1,233 @@
+{
+  "id": "2024-juny-s1-p5",
+  "any": 2024,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P5",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b3"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Diversos passos de nivell sonor, intensitat i potència amb ones esfèriques, una distància que cal convertir en altura amb el teorema de Pitàgores i la suma de les intensitats de dues fonts.",
+  "titol": "L'altura dels coets de Sant Joan",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi24jl",
+      "pdf": "pau_fisi24jl",
+      "pagina": 10
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi24jp",
+      "pdf": "pau_fisi24jp",
+      "pagina": 8
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2024/Juny/1/6109"
+  },
+  "dades": [
+    {
+      "simbol": "r",
+      "valor": "50",
+      "unitat": "m",
+      "descripcio": "distància de l'Ainhoa al punt de llançament"
+    },
+    {
+      "simbol": "β",
+      "valor": "100",
+      "unitat": "dB",
+      "descripcio": "nivell sonor de l’explosió a terra"
+    },
+    {
+      "simbol": "t",
+      "valor": "0,03",
+      "unitat": "s",
+      "descripcio": "durada de l'explosió"
+    },
+    {
+      "simbol": "β",
+      "valor": "90",
+      "unitat": "dB",
+      "descripcio": "nivell sonor de l’explosió en l’aire"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "10⁻¹²",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat; el repartiment intern és el de la pauta. A l'apartat b, l'altura també es pot obtenir directament amb la relació entre intensitats i distàncies (0,5 punts en conjunt)."
+  },
+  "enunciat": {
+    "intro": "<p>L’Ainhoa està intrigada per saber a quina altura exploten els coets llançats a la revetlla de Sant Joan. Per a poder-ho determinar se situa a una distància de 50 metres del punt on es llancen els coets i enregistra, amb un sonòmetre, un nivell d’intensitat sonora de 100 decibels en l’explosió d’un coet que no s’ha enlairat.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Quina potència sonora emet el coet en el moment de l’explosió? Si l’explosió ha durat 0,03 s, quina energia sonora s’ha alliberat?"
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Des de la mateixa distància al punt de llançament, enregistra 90 decibels d’intensitat sonora en el cas d’un coet igual a l’anterior que s’ha enlairat verticalment i ha explotat a certa altura. Calculeu a quina altura ha explotat el coet. Si dos coets idèntics a l’anterior exploten simultàniament a la mateixa altura que abans, quin nivell d’intensitat sonora percebrà l’Ainhoa, si està situada a la mateixa posició d’abans?"
+      }
+    ],
+    "dades_text": "Nota: Considereu que les ones sonores es propaguen en les tres dimensions de l’espai i la seva energia es distribueix en superfícies esfèriques.<br>Dades: <i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>.<br>La velocitat del so en l’aire és de 340 m/s.<br>Superfície esfèrica: 4π<i>r</i><sup>2</sup>."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 270 268\" role=\"img\" aria-label=\"Esquema: l'Ainhoa és a terra a 50 m del punt de llançament; el coet explota a una altura h sobre aquest punt, i la distància entre l'explosió i l'Ainhoa és la hipotenusa r.\"><line x1=\"20\" y1=\"236\" x2=\"250\" y2=\"236\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"140\" y1=\"236\" x2=\"140\" y2=\"26\" stroke=\"var(--ink)\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"70\" y1=\"236\" x2=\"140\" y2=\"26\" stroke=\"var(--x)\" stroke-width=\"1.8\"/><path d=\"M130 236 L130 226 L140 226\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"70\" cy=\"236\" r=\"4\" fill=\"var(--ink)\"/><text x=\"70\" y=\"256\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">Ainhoa</text><circle cx=\"140\" cy=\"236\" r=\"3\" fill=\"var(--muted)\"/><text x=\"146\" y=\"256\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">llançament</text><line x1=\"147\" y1=\"26\" x2=\"155\" y2=\"26\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"144.9\" y1=\"30.9\" x2=\"150.6\" y2=\"36.6\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"140\" y1=\"33\" x2=\"140\" y2=\"41\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"135.1\" y1=\"30.9\" x2=\"129.4\" y2=\"36.6\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"133\" y1=\"26\" x2=\"125\" y2=\"26\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"135.1\" y1=\"21.1\" x2=\"129.4\" y2=\"15.4\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"140\" y1=\"19\" x2=\"140\" y2=\"11\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><line x1=\"144.9\" y1=\"21.1\" x2=\"150.6\" y2=\"15.4\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><text x=\"105\" y=\"228\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">50 m</text><text x=\"148\" y=\"135\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\"><tspan font-style=\"italic\">h</tspan></text><text x=\"91\" y=\"135\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--x)\"><tspan font-style=\"italic\">r</tspan></text></svg>",
+      "peu": "Esquema a escala de la posició de l'Ainhoa i del punt on explota el coet."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Intensitat a 50 m",
+          "html": "β = 10·log(<i>I</i>/<i>I</i><sub>0</sub>) → 100 = 10·log(<i>I</i>/10<sup>−12</sup>) → <i>I</i> = 10<sup>10</sup>·10<sup>−12</sup> = <span class=\"res\">10<sup>−2</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Potència",
+          "html": "El so es reparteix sobre una esfera de radi <i>r</i> = 50 m: <i>P</i> = <i>I</i>·4π<i>r</i><sup>2</sup> = 10<sup>−2</sup>·4π·50<sup>2</sup> = <span class=\"res\">314,16 W</span>."
+        },
+        {
+          "titol": "Energia alliberada",
+          "html": "<i>E</i> = <i>P</i>·<i>t</i> = 314,16·0,03 = <span class=\"res\">9,42 J</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Obtenir la intensitat a partir del nivell sonor, I = 10⁻² W/m²."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular la potència repartida en una superfície esfèrica, P = I·4πr² = 314,16 W."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular l'energia sonora, E = P·t = 9,42 J."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Intensitat amb 90 dB",
+          "html": "90 = 10·log(<i>I</i>/10<sup>−12</sup>) → <i>I</i> = 10<sup>9</sup>·10<sup>−12</sup> = <span class=\"res\">10<sup>−3</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Distància fins a l'explosió",
+          "html": "El coet és igual i emet la mateixa potència, que es reparteix en esferes: <i>P</i> = <i>I</i>·4π<i>r</i><sup>2</sup> → <i>r</i><sup>2</sup> = <i>P</i>/(4π<i>I</i>) = 314,16/(4π·10<sup>−3</sup>) = 25 000 m<sup>2</sup> → <span class=\"res\"><i>r</i> = 158,11 m</span>."
+        },
+        {
+          "titol": "Altura",
+          "html": "La distància <i>r</i> és la hipotenusa d'un triangle rectangle de catets 50 m (a terra) i <i>h</i> (vertical). Per Pitàgores: <i>h</i> = √(158,11<sup>2</sup> − 50<sup>2</sup>) = <span class=\"res\">150 m</span>. Una altra manera: com que la potència és la mateixa, <i>I</i><sub>2</sub>/<i>I</i><sub>1</sub> = <i>r</i><sub>1</sub><sup>2</sup>/<i>r</i><sub>2</sub><sup>2</sup> → 10<sup>−3</sup>/10<sup>−2</sup> = 0,1 = 50<sup>2</sup>/(<i>h</i><sup>2</sup> + 50<sup>2</sup>) → <i>h</i><sup>2</sup> = 9·50<sup>2</sup> → <i>h</i> = 3·50 = 150 m.",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Dos coets alhora",
+          "html": "Dos coets iguals a la mateixa altura emeten el doble de potència, i a la posició de l'Ainhoa la intensitat es duplica: β = 10·log(2·10<sup>−3</sup>/10<sup>−12</sup>) = <span class=\"res\">93 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Obtenir la intensitat que correspon a 90 dB, 10⁻³ W/m²."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la distància a l'explosió amb la mateixa potència: r = 158,11 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Aplicar Pitàgores per obtenir l'altura, h = 150 m. (Alternativament, la relació entre intensitats i distàncies dona h = 150 m: 0,5 punts per als dos passos.)"
+        },
+        {
+          "punts": 0.5,
+          "que": "Duplicar la intensitat per als dos coets i calcular el nivell sonor, 93 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "I1",
+      "text": "I = 10⁻² W/m²",
+      "valor": 0.01,
+      "pauta": 0.01
+    },
+    {
+      "apartat": "a",
+      "clau": "P",
+      "text": "P = 314,16 W",
+      "valor": 314.16,
+      "pauta": 314.16
+    },
+    {
+      "apartat": "a",
+      "clau": "E",
+      "text": "E = 9,42 J",
+      "valor": 9.42,
+      "pauta": 9.42
+    },
+    {
+      "apartat": "b",
+      "clau": "I2",
+      "text": "I = 10⁻³ W/m²",
+      "valor": 0.001,
+      "pauta": 0.001
+    },
+    {
+      "apartat": "b",
+      "clau": "r",
+      "text": "r = 158,11 m",
+      "valor": 158.11,
+      "pauta": 158.11
+    },
+    {
+      "apartat": "b",
+      "clau": "h",
+      "text": "h = 150 m",
+      "valor": 150,
+      "pauta": 150
+    },
+    {
+      "apartat": "b",
+      "clau": "beta2",
+      "text": "β = 93 dB",
+      "valor": 93.0,
+      "pauta": 93
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, sqrt, log10",
+    "I0, d, t = 1e-12, 50, 0.03",
+    "I1 = I0 * 10**(100 / 10)",
+    "P = I1 * 4 * pi * d**2",
+    "I2 = I0 * 10**(90 / 10)",
+    "r = sqrt(P / (4 * pi * I2))",
+    "R = {'I1': I1, 'P': P, 'E': P * t, 'I2': I2, 'r': r, 'h': sqrt(r**2 - d**2), 'beta2': 10 * log10(2 * I2 / I0)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

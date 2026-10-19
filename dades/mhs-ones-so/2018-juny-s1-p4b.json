@@ -1,0 +1,173 @@
+{
+  "id": "2018-juny-s1-p4b",
+  "any": 2018,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P4",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b3"
+  ],
+  "dificultat": 2,
+  "dificultat_motiu": "Aplicació directa: intensitat d'una font puntual, nivell en dB i efecte de doblar la intensitat.",
+  "titol": "Un gos que borda, i després dos",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi18jl",
+      "pdf": "pau_fisi18jl",
+      "pagina": 4
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi18jp",
+      "pdf": "pau_fisi18jp",
+      "pagina": 5
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2018/Juny/1/1341"
+  },
+  "dades": [
+    {
+      "simbol": "P",
+      "valor": "2,00",
+      "unitat": "mW",
+      "descripcio": "potència sonora del gos"
+    },
+    {
+      "simbol": "r",
+      "valor": "5,00",
+      "unitat": "m",
+      "descripcio": "distància al gos"
+    },
+    {
+      "simbol": "I0",
+      "valor": "1,00·10⁻¹²",
+      "unitat": "W/m²",
+      "descripcio": "intensitat del llindar d'audició"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": true,
+    "nota": ""
+  },
+  "enunciat": {
+    "intro": "<p>Un gos borda amb una potència de 2,00 mW.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Si aquest so es distribueix uniformement per l’espai, quin és el nivell d’intensitat sonora (en dB) a una distància de 5,00 m?"
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Si en comptes d’un gos, fossin dos gossos bordant alhora, quin seria el nivell d’intensitat sonora?"
+      }
+    ],
+    "dades_text": "Dada: Intensitat del llindar d’audició (0 dB), <i>I</i><sub>0</sub> = 1,00 × 10<sup>–12</sup> W m<sup>–2</sup>."
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Nivell d'intensitat",
+          "html": "<i>L</i><sub>1</sub> = 10·log(<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>); primer cal la intensitat a 5,00 m."
+        },
+        {
+          "titol": "Intensitat",
+          "html": "La potència es reparteix uniformement sobre una esfera de radi <i>r</i>: <i>I</i><sub>1</sub> = <i>P</i>/(4π<i>r</i><sup>2</sup>) = 2,00·10<sup>−3</sup>/(4π·5,00<sup>2</sup>) = <span class=\"res\">6,37·10<sup>−6</sup> W/m<sup>2</sup></span>."
+        },
+        {
+          "titol": "Nivell",
+          "html": "<i>L</i><sub>1</sub> = 10·log(6,37·10<sup>−6</sup>/1,00·10<sup>−12</sup>) = <span class=\"res\">68,0 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure la definició del nivell d'intensitat sonora, L = 10·log(I/I₀)."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular la intensitat a 5,00 m, I = P/(4πr²) = 6,37·10⁻⁶ W/m²."
+        },
+        {
+          "punts": 0.4,
+          "que": "Obtenir el nivell, 68,0 dB."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Dos gossos",
+          "html": "Les intensitats de les dues fonts se sumen: <i>I</i><sub>2</sub> = 2<i>I</i><sub>1</sub>. Aleshores <i>L</i><sub>2</sub> = 10·log(2<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) = 10·log 2 + 10·log(<i>I</i><sub>1</sub>/<i>I</i><sub>0</sub>) = 10·log 2 + <i>L</i><sub>1</sub>."
+        },
+        {
+          "titol": "Resultat",
+          "html": "<i>L</i><sub>2</sub> = 3,0 + 68,0 = <span class=\"res\">71,0 dB</span>. També es pot fer amb una potència de 4,00 mW: <i>I</i><sub>2</sub> = 1,27·10<sup>−5</sup> W/m<sup>2</sup>, que dona el mateix nivell."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.8,
+          "que": "Veure que la intensitat es duplica i expressar L₂ = 10·log 2 + L₁ (o calcular-ho amb P = 4 mW)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir L₂ = 71,0 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "I1",
+      "text": "I₁ = 6,37·10⁻⁶ W/m²",
+      "valor": 6.37e-06,
+      "pauta": 6.37e-06
+    },
+    {
+      "apartat": "a",
+      "clau": "L1",
+      "text": "L₁ = 68,0 dB",
+      "valor": 68.0,
+      "pauta": 68.0
+    },
+    {
+      "apartat": "b",
+      "clau": "I2",
+      "text": "I₂ = 1,27·10⁻⁵ W/m²",
+      "valor": 1.27e-05,
+      "pauta": 1.27e-05
+    },
+    {
+      "apartat": "b",
+      "clau": "L2",
+      "text": "L₂ = 71,0 dB",
+      "valor": 71.0,
+      "pauta": 71.0
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, log10",
+    "P, r, I0 = 2.00e-3, 5.00, 1.00e-12",
+    "I1 = P / (4 * pi * r**2)",
+    "R = {'I1': I1, 'L1': 10 * log10(I1 / I0), 'I2': 2 * I1, 'L2': 10 * log10(2 * I1 / I0)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

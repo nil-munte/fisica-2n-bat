@@ -1,0 +1,203 @@
+{
+  "id": "2017-setembre-s2-p2",
+  "any": 2017,
+  "convocatoria": "setembre",
+  "serie": 2,
+  "problema": "P2",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [
+    "mhs-ones-so/mhs"
+  ],
+  "blocs": [
+    "b1"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Cal identificar el tipus d'ona, interpretar la longitud d'ona i el període en una situació quotidiana i escriure un MHS amb fase inicial −π/2.",
+  "titol": "L'onada a la graderia d'un estadi",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi17sl",
+      "pdf": "pau_fisi17sl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi17sp",
+      "pdf": "pau_fisi17sp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2017/Setembre/2/1592"
+  },
+  "dades": [
+    {
+      "simbol": "λ",
+      "valor": "50",
+      "unitat": "m",
+      "descripcio": "separació mínima entre dos espectadors que es mouen igual"
+    },
+    {
+      "simbol": "T",
+      "valor": "10",
+      "unitat": "s",
+      "descripcio": "cada quant es repeteix el moviment"
+    },
+    {
+      "simbol": "2A",
+      "valor": "1,0",
+      "unitat": "m",
+      "descripcio": "desplaçament vertical total d'un espectador (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>En un estadi el públic fa l’onada per celebrar la bona actuació de l’equip local. L’onada és tan gran que dos espectadors de la mateixa fila separats com a mínim per 50 m es mouen igual i ho fan cada 10 s.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Si modelitzéssim aquesta onada a l’estadi com una ona, de quin tipus d’ona estaríem parlant? Calculeu-ne la longitud d’ona i la pulsació (freqüència angular)."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Un espectador es mou 1,0 m verticalment quan s’aixeca i s’asseu per fer passar l’onada. Escriviu l’equació del moviment d’aquest espectador considerant que descriu un moviment harmònic simple i que en l’instant inicial es troba assegut, és a dir, en la seva posició mínima."
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Tipus d'ona",
+          "html": "Seria una ona <b>mecànica</b>, perquè necessita un medi material (el públic) per propagar-se, i <b>transversal</b>, perquè cada espectador es mou amunt i avall mentre l'onada avança al llarg de la fila. Si considerem la graderia com un pla, també es pot dir que és bidimensional."
+        },
+        {
+          "titol": "Longitud d'ona",
+          "html": "La longitud d'ona és la distància mínima entre dos punts que es mouen exactament igual: <span class=\"res\">λ = 50 m</span>."
+        },
+        {
+          "titol": "Pulsació",
+          "html": "Cada espectador repeteix el moviment cada 10 s, que és el període: ω = 2π/<i>T</i> = 2π/10 = <span class=\"res\">0,2π rad/s ≈ 0,63 rad/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Dir que és una ona mecànica."
+        },
+        {
+          "punts": 0.2,
+          "que": "Dir que és una ona transversal."
+        },
+        {
+          "punts": 0.2,
+          "que": "Identificar la longitud d'ona, λ = 50 m."
+        },
+        {
+          "punts": 0.4,
+          "que": "Calcular la pulsació, ω = 2π/T = 0,2π ≈ 0,63 rad/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Forma general",
+          "html": "Per a un MHS vertical escrivim <i>y</i>(<i>t</i>) = <i>A</i>·sin(ω<i>t</i> + φ<sub>0</sub>), on <i>A</i> és l'amplitud, ω la pulsació de l'apartat anterior i φ<sub>0</sub> la fase inicial."
+        },
+        {
+          "titol": "Amplitud",
+          "html": "L'espectador recorre 1,0 m entre la posició més baixa i la més alta, que són dues amplituds: <i>A</i> = 1,0/2 = <span class=\"res\">0,5 m</span>."
+        },
+        {
+          "titol": "Condició inicial",
+          "html": "A <i>t</i> = 0 és assegut, a la posició mínima: <i>y</i>(0) = −<i>A</i> = −0,5 m."
+        },
+        {
+          "titol": "Fase inicial",
+          "html": "<i>A</i>·sin φ<sub>0</sub> = −<i>A</i> → sin φ<sub>0</sub> = −1 → <span class=\"res\">φ<sub>0</sub> = −π/2 rad</span>."
+        },
+        {
+          "titol": "Equació del moviment",
+          "html": "<span class=\"res\"><i>y</i>(<i>t</i>) = 0,5·sin(0,2π<i>t</i> − π/2)</span>, amb <i>y</i> en m i <i>t</i> en s. Escrita amb cosinus, la fase inicial seria ±π."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure l'equació general del MHS, y(t) = A·sin(ωt + φ₀)."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir l'amplitud, A = 0,5 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Traduir la condició inicial: y(0) = −A."
+        },
+        {
+          "punts": 0.2,
+          "que": "Deduir la fase inicial, φ₀ = −π/2 rad."
+        },
+        {
+          "punts": 0.2,
+          "que": "Escriure l'equació amb els valors, y(t) = 0,5·sin(0,2πt − π/2)."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 50 m",
+      "valor": 50,
+      "pauta": 50
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 0,2π rad/s ≈ 0,63 rad/s",
+      "valor": 0.628,
+      "pauta": 0.63
+    },
+    {
+      "apartat": "b",
+      "clau": "A",
+      "text": "A = 0,5 m",
+      "valor": 0.5,
+      "pauta": 0.5
+    },
+    {
+      "apartat": "b",
+      "clau": "phi0",
+      "text": "φ₀ = −π/2 rad",
+      "valor": -1.5708,
+      "pauta": -1.5708
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, asin",
+    "T = 10",
+    "A = 1.0 / 2",
+    "R = {'lam': 50, 'w': 2 * pi / T, 'A': A, 'phi0': asin(-A / A)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

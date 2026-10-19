@@ -1,0 +1,236 @@
+{
+  "id": "2010-juny-s1-p2",
+  "any": 2010,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P2",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Càlcul directe de les magnituds de l'ona, però cal escriure l'equació amb la fase inicial i derivar-la per obtenir la velocitat de vibració d'un punt.",
+  "titol": "Punts en fase a 0,40 m en una corda",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jl",
+      "pdf": "pau_fisi10jl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi10jp",
+      "pdf": "pau_fisi10jp",
+      "pagina": 1
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2010/Juny/1/1830"
+  },
+  "dades": [
+    {
+      "simbol": "v",
+      "valor": "6,00",
+      "unitat": "m/s",
+      "descripcio": "velocitat de propagació de l'ona"
+    },
+    {
+      "simbol": "A",
+      "valor": "20",
+      "unitat": "mm",
+      "descripcio": "amplitud de l'ona"
+    },
+    {
+      "simbol": "λ",
+      "valor": "0,40",
+      "unitat": "m",
+      "descripcio": "distància mínima entre dos punts en fase"
+    },
+    {
+      "simbol": "x",
+      "valor": "10",
+      "unitat": "m",
+      "descripcio": "posició del punt on es demana la velocitat de vibració"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Una ona harmònica transversal es propaga per una corda a una velocitat de 6,00 m/s. L’amplitud de l’ona és 20 mm i la distància mínima entre dos punts que estan en fase és 0,40 m. Considereu la direcció de la corda com l’eix <i>x</i> i que l’ona es propaga en el sentit positiu d’aquest eix.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la longitud d’ona, el nombre d’ona, la freqüència, el període i la freqüència angular (pulsació)."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Escriviu l’equació de l’ona sabent que, en l’instant inicial, l’elongació d’un punt situat a l’origen de coordenades és màxima. Calculeu l’expressió de la velocitat amb què vibra un punt de la corda situat a una distància de 10 m respecte de l’origen de la vibració. Quina és la velocitat màxima d’aquest punt?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "Dos punts consecutius que vibren en fase estan separats exactament una longitud d'ona: λ = <span class=\"res\">0,40 m</span>."
+        },
+        {
+          "titol": "Nombre d'ona",
+          "html": "<i>k</i> = 2π/λ = 2π/0,40 = 5π = <span class=\"res\">15,7 m<sup>−1</sup></span>."
+        },
+        {
+          "titol": "Freqüència i període",
+          "html": "De <i>v</i> = λ·<i>f</i> traiem <i>f</i> = <i>v</i>/λ = 6,00/0,40 = <span class=\"res\">15 Hz</span>. El període n'és l'invers: <i>T</i> = 1/<i>f</i> = 1/15 = <span class=\"res\">0,067 s</span>."
+        },
+        {
+          "titol": "Freqüència angular",
+          "html": "ω = 2π<i>f</i> = 2π·15 = 30π rad/s ≈ <span class=\"res\">94 rad/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Identificar λ = 0,40 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular k = 2π/λ = 15,7 m⁻¹."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir f = v/λ = 15 Hz."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir T = 1/f = 0,067 s."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular ω = 2πf = 30π ≈ 94 rad/s."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Equació general i fase inicial",
+          "html": "Per a una ona que avança cap a les <i>x</i> positives escrivim <i>y</i> = <i>A</i>·cos(ω<i>t</i> − <i>kx</i> + φ). A l'origen i a <i>t</i> = 0 l'elongació és màxima: <i>y</i>(0, 0) = <i>A</i>·cos φ = <i>A</i> → cos φ = 1 → φ = 0."
+        },
+        {
+          "titol": "Equació amb valors",
+          "html": "Amb <i>A</i> = 20 mm = 2,0·10<sup>−2</sup> m: <span class=\"res\"><i>y</i> = 2,0·10<sup>−2</sup>·cos(30π<i>t</i> − 5,0π<i>x</i>)</span>, amb <i>y</i> i <i>x</i> en m i <i>t</i> en s. També és vàlid escriure-la amb sinus, i aleshores la fase inicial és π/2."
+        },
+        {
+          "titol": "Velocitat de vibració",
+          "html": "Cada punt de la corda vibra transversalment, i la seva velocitat és la derivada temporal de l'elongació: <i>v</i> = d<i>y</i>/d<i>t</i> = −<i>A</i>ω·sin(ω<i>t</i> − <i>kx</i> + φ)."
+        },
+        {
+          "titol": "Punt situat a 10 m",
+          "html": "Ara <i>A</i>ω = 2,0·10<sup>−2</sup>·30π = 0,60π m/s i <i>kx</i> = 5,0π·10 = 50π. Per tant, <span class=\"res\"><i>v</i>(<i>x</i> = 10 m) = −0,60π·sin(30π<i>t</i> − 50π)</span>, amb <i>v</i> en m/s i <i>t</i> en s."
+        },
+        {
+          "titol": "Velocitat màxima",
+          "html": "És màxima quan el sinus val ±1: <i>v</i><sub>max</sub> = <i>A</i>ω = 2,0·10<sup>−2</sup>·30π = 0,6π = <span class=\"res\">1,9 m/s</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Imposar la condició inicial y(0, 0) = A i obtenir φ = 0."
+        },
+        {
+          "punts": 0.3,
+          "que": "Escriure l'equació de l'ona amb els valors i les unitats."
+        },
+        {
+          "punts": 0.1,
+          "que": "Derivar l'elongació per obtenir l'expressió general de la velocitat de vibració."
+        },
+        {
+          "punts": 0.2,
+          "que": "Particularitzar la velocitat per a x = 10 m, amb unitats."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la velocitat màxima, Aω = 1,9 m/s."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 0,40 m",
+      "valor": 0.4,
+      "pauta": 0.4
+    },
+    {
+      "apartat": "a",
+      "clau": "k",
+      "text": "k = 15,7 m⁻¹",
+      "valor": 15.7,
+      "pauta": 15.7
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f = 15 Hz",
+      "valor": 15,
+      "pauta": 15
+    },
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 0,067 s",
+      "valor": 0.0667,
+      "pauta": 0.067,
+      "tol": 0.01
+    },
+    {
+      "apartat": "a",
+      "clau": "w",
+      "text": "ω = 30π ≈ 94 rad/s",
+      "valor": 94.2,
+      "pauta": 94,
+      "tol": 0.01
+    },
+    {
+      "apartat": "b",
+      "clau": "vmax",
+      "text": "v_max = 0,6π ≈ 1,9 m/s",
+      "valor": 1.885,
+      "pauta": 1.9,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import pi",
+    "v = 6.00",
+    "A = 20e-3",
+    "lam = 0.40",
+    "f = v / lam",
+    "w = 2 * pi * f",
+    "R = {'lam': lam, 'k': 2 * pi / lam, 'f': f, 'T': 1 / f, 'w': w, 'vmax': A * w}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

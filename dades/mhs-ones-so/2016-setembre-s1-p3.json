@@ -1,0 +1,190 @@
+{
+  "id": "2016-setembre-s1-p3",
+  "any": 2016,
+  "convocatoria": "setembre",
+  "serie": 1,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b5"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa de les ones estacionàries en un tub obert: longitud d'ona fonamental, harmònics i canvi de velocitat del so.",
+  "titol": "Un tub d'orgue amb aire i amb heli",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16sl",
+      "pdf": "pau_fisi16sl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16sp",
+      "pdf": "pau_fisi16sp",
+      "pagina": 3
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Setembre/1/3686"
+  },
+  "dades": [
+    {
+      "simbol": "l",
+      "valor": "1,0",
+      "unitat": "m",
+      "descripcio": "longitud del tub, obert pels dos extrems"
+    },
+    {
+      "simbol": "v0",
+      "valor": "343,0",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so en l'aire"
+    },
+    {
+      "simbol": "vHe",
+      "valor": "975,0",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so en l'heli (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Un tub d’un orgue de la basílica de la Sagrada Família està obert pels dos extrems i fa 1,0 m de longitud.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu les freqüències i les longituds d’ona de les ones estacionàries que es poden propagar per aquest tub."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Si el tub estigués ple d’heli, el so s’hi propagaria a una velocitat de 975,0 m s<sup>–1</sup>. En aquest cas, quines serien les freqüències?"
+      }
+    ],
+    "dades_text": "Dada: Velocitat del so en l’aire = 343,0 m s<sup>–1</sup>."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 480 170\" role=\"img\" aria-label=\"Tub obert pels dos extrems, de longitud l = 1,0 m. L'ona estacionària del primer harmònic té un ventre a cada extrem i un node al mig.\"><rect x=\"70\" y=\"42\" width=\"340\" height=\"76\" fill=\"var(--surface)\" stroke=\"none\"/><line x1=\"70\" y1=\"42\" x2=\"410\" y2=\"42\" stroke=\"var(--ink)\" stroke-width=\"2\"/><line x1=\"70\" y1=\"118\" x2=\"410\" y2=\"118\" stroke=\"var(--ink)\" stroke-width=\"2\"/><polyline points=\"70.0,46.0 74.2,46.0 78.5,46.1 82.8,46.2 87.0,46.4 91.2,46.7 95.5,46.9 99.8,47.3 104.0,47.7 108.2,48.1 112.5,48.6 116.8,49.1 121.0,49.7 125.2,50.3 129.5,51.0 133.8,51.7 138.0,52.5 142.2,53.3 146.5,54.1 150.8,55.0 155.0,56.0 159.2,56.9 163.5,57.9 167.8,59.0 172.0,60.0 176.2,61.1 180.5,62.2 184.8,63.4 189.0,64.6 193.2,65.8 197.5,67.0 201.8,68.2 206.0,69.5 210.2,70.8 214.5,72.1 218.8,73.4 223.0,74.7 227.2,76.0 231.5,77.3 235.8,78.7 240.0,80.0 244.2,81.3 248.5,82.7 252.8,84.0 257.0,85.3 261.2,86.6 265.5,87.9 269.8,89.2 274.0,90.5 278.2,91.8 282.5,93.0 286.8,94.2 291.0,95.4 295.2,96.6 299.5,97.8 303.8,98.9 308.0,100.0 312.2,101.0 316.5,102.1 320.8,103.1 325.0,104.0 329.2,105.0 333.5,105.9 337.8,106.7 342.0,107.5 346.2,108.3 350.5,109.0 354.8,109.7 359.0,110.3 363.2,110.9 367.5,111.4 371.8,111.9 376.0,112.3 380.2,112.7 384.5,113.1 388.8,113.3 393.0,113.6 397.2,113.8 401.5,113.9 405.8,114.0 410.0,114.0\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2\"/><polyline points=\"70.0,114.0 74.2,114.0 78.5,113.9 82.8,113.8 87.0,113.6 91.2,113.3 95.5,113.1 99.8,112.7 104.0,112.3 108.2,111.9 112.5,111.4 116.8,110.9 121.0,110.3 125.2,109.7 129.5,109.0 133.8,108.3 138.0,107.5 142.2,106.7 146.5,105.9 150.8,105.0 155.0,104.0 159.2,103.1 163.5,102.1 167.8,101.0 172.0,100.0 176.2,98.9 180.5,97.8 184.8,96.6 189.0,95.4 193.2,94.2 197.5,93.0 201.8,91.8 206.0,90.5 210.2,89.2 214.5,87.9 218.8,86.6 223.0,85.3 227.2,84.0 231.5,82.7 235.8,81.3 240.0,80.0 244.2,78.7 248.5,77.3 252.8,76.0 257.0,74.7 261.2,73.4 265.5,72.1 269.8,70.8 274.0,69.5 278.2,68.2 282.5,67.0 286.8,65.8 291.0,64.6 295.2,63.4 299.5,62.2 303.8,61.1 308.0,60.0 312.2,59.0 316.5,57.9 320.8,56.9 325.0,56.0 329.2,55.0 333.5,54.1 337.8,53.3 342.0,52.5 346.2,51.7 350.5,51.0 354.8,50.3 359.0,49.7 363.2,49.1 367.5,48.6 371.8,48.1 376.0,47.7 380.2,47.3 384.5,46.9 388.8,46.7 393.0,46.4 397.2,46.2 401.5,46.1 405.8,46.0 410.0,46.0\" fill=\"none\" stroke=\"var(--x)\" stroke-width=\"2\"/><circle cx=\"240.0\" cy=\"80\" r=\"3\" fill=\"var(--y)\"/><text x=\"240\" y=\"34\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--y)\">node</text><text x=\"70\" y=\"34\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--x)\">ventre</text><text x=\"410\" y=\"34\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--x)\">ventre</text><line x1=\"70\" y1=\"140\" x2=\"410\" y2=\"140\" stroke=\"var(--muted)\" stroke-width=\"1\"/><path d=\"M70,140 l8,-4 l0,8 z M410,140 l-8,-4 l0,8 z\" fill=\"var(--muted)\"/><line x1=\"70\" y1=\"122\" x2=\"70\" y2=\"146\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"410\" y1=\"122\" x2=\"410\" y2=\"146\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><text x=\"214\" y=\"158\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">l</text><text x=\"220\" y=\"158\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"> = 1,0 m</text></svg>",
+      "peu": "Primer harmònic en un tub obert pels dos extrems: un ventre a cada extrem i un node al mig, de manera que la longitud del tub és mitja longitud d'ona."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Condició del tub obert",
+          "html": "Als dos extrems oberts hi ha d'haver ventres. L'ona estacionària més senzilla (el fonamental) té un sol node, al mig del tub, i aleshores la longitud del tub és mitja longitud d'ona: <i>l</i> = λ/2.",
+          "figures": [
+            "fig1"
+          ]
+        },
+        {
+          "titol": "Longitud d'ona fonamental",
+          "html": "λ<sub>0</sub> = 2<i>l</i> = 2·1,0 = <span class=\"res\">2,0 m</span>."
+        },
+        {
+          "titol": "Freqüència fonamental",
+          "html": "De <i>v</i><sub>0</sub> = λ<sub>0</sub>·<i>f</i><sub>0</sub>: <i>f</i><sub>0</sub> = <i>v</i><sub>0</sub>/λ<sub>0</sub> = 343,0/2,0 = <span class=\"res\">171,5 Hz</span>."
+        },
+        {
+          "titol": "Totes les freqüències",
+          "html": "En un tub obert pels dos extrems són possibles tots els harmònics, múltiples enters del fonamental: <span class=\"res\"><i>f</i><sub><i>n</i></sub> = <i>n</i>·<i>f</i><sub>0</sub> = <i>n</i>·171,5 Hz</span>, amb <i>n</i> = 1, 2, 3…"
+        },
+        {
+          "titol": "Totes les longituds d'ona",
+          "html": "Les longituds d'ona corresponents són <span class=\"res\">λ<sub><i>n</i></sub> = 2<i>l</i>/<i>n</i> = 2,0/<i>n</i> m</span>, amb <i>n</i> = 1, 2, 3…"
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Relacionar la longitud del tub amb la longitud d'ona del fonamental, l = λ/2."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir λ₀ = 2l = 2,0 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular la freqüència fonamental, f₀ = v₀/λ₀ = 171,5 Hz."
+        },
+        {
+          "punts": 0.2,
+          "que": "Donar les freqüències permeses, fₙ = n·171,5 Hz."
+        },
+        {
+          "punts": 0.2,
+          "que": "Donar les longituds d'ona permeses, λₙ = 2,0/n m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Què canvia amb l'heli",
+          "html": "Les longituds d'ona les fixa la geometria del tub, que no canvia; només canvia la velocitat del so. Per tant, <i>f</i>′<sub><i>n</i></sub> = <i>n</i>·<i>f</i>′<sub>0</sub> = <i>n</i>·<i>v</i><sub>He</sub>/λ<sub>0</sub>."
+        },
+        {
+          "titol": "Freqüències amb heli",
+          "html": "<i>f</i>′<sub><i>n</i></sub> = <i>n</i>·975,0/2,0 = <span class=\"res\"><i>n</i>·487,5 Hz</span>, amb <i>n</i> = 1, 2, 3…"
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Escriure les freqüències permeses amb la nova velocitat, f′ₙ = n·v He/λ₀."
+        },
+        {
+          "punts": 0.5,
+          "que": "Obtenir f′ₙ = n·487,5 Hz."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam0",
+      "text": "λ₀ = 2,0 m",
+      "valor": 2.0,
+      "pauta": 2.0
+    },
+    {
+      "apartat": "a",
+      "clau": "f0",
+      "text": "f₀ = 171,5 Hz",
+      "valor": 171.5,
+      "pauta": 171.5
+    },
+    {
+      "apartat": "b",
+      "clau": "fHe",
+      "text": "f′₀ = 487,5 Hz",
+      "valor": 487.5,
+      "pauta": 487.5
+    }
+  ],
+  "comprovacio": [
+    "l = 1.0",
+    "lam0 = 2 * l",
+    "R = {'lam0': lam0, 'f0': 343.0 / lam0, 'fHe': 975.0 / lam0}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

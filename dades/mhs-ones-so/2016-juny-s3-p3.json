@@ -1,0 +1,224 @@
+{
+  "id": "2016-juny-s3-p3",
+  "any": 2016,
+  "convocatoria": "juny",
+  "serie": 3,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Combina λ i T amb la diferència de fase entre dos punts a distàncies diferents de la font i amb el quocient d'intensitats i la diferència de nivells en dB.",
+  "titol": "El ratpenat que localitza un mosquit",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jl",
+      "pdf": "pau_fisi16jl",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi16jp",
+      "pdf": "pau_fisi16jp",
+      "pagina": 4
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2016/Juny/3/3998"
+  },
+  "dades": [
+    {
+      "simbol": "f",
+      "valor": "83,0",
+      "unitat": "kHz",
+      "descripcio": "freqüència dels ultrasons"
+    },
+    {
+      "simbol": "x1, x2",
+      "valor": "1,5000 i 1,5030",
+      "unitat": "m",
+      "descripcio": "distàncies del mosquit a l'orella dreta i a l'esquerra (apartat a)"
+    },
+    {
+      "simbol": "R dreta, R esquerra",
+      "valor": "33 i 34",
+      "unitat": "cm",
+      "descripcio": "distàncies del mosquit a l'orella dreta i a l'esquerra (apartat b)"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat dels ultrasons en l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2,
+    "apartats_a_l_enunciat": false,
+    "nota": "L'enunciat només diu que cada problema val 2 punts; la pauta reparteix 1 punt per apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Els ratpenats emeten uns xiscles en forma d’ultrasons i utilitzen els ecos d’aquests ultrasons per a orientar-se i per a detectar obstacles i preses. Una espècie de ratpenats emet ultrasons amb una freqüència de 83,0 kHz quan caça mosquits.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1,
+        "text": "Calculeu la longitud d’ona i el període dels ultrasons emesos per aquests ratpenats. Considereu un mosquit situat a 1,5000 m de l’orella dreta i a 1,5030 m de l’orella esquerra del ratpenat. Calculeu la diferència de fase en l’eco percebut per cada orella, provinent del mosquit."
+      },
+      {
+        "id": "b",
+        "punts": 1,
+        "text": "Quan el mosquit està més a prop, el ratpenat també podria utilitzar la diferència d’intensitats dels ecos. Calculeu el quocient d’intensitats sonores <i>I</i><sub>dreta</sub>/<i>I</i><sub>esquerra</sub> quan el mosquit està a 33 cm de l’orella dreta i a 34 cm de l’orella esquerra i expresseu en decibels la diferència de nivells d’intensitat sonora. Considereu que l’eco es propaga uniformement des del mosquit en totes les direccions de l’espai."
+      }
+    ],
+    "dades_text": "Dada: Velocitat dels ultrasons en l’aire = 340 m s<sup>–1</sup>."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 420 200\" role=\"img\" aria-label=\"Esquema: un ratpenat a l'esquerra, amb les ales obertes en vertical; de dos punts del cap (les dues orelles) surten línies cap a dos mosquits, un a sota i a prop, i l'altre a la dreta i més lluny, dibuixats com a cercles concèntrics.\"><path d=\"M66,80 L46,14 Q52,24 60,22 Q57,34 66,36 Q63,48 74,50 Q72,62 80,66 Z\" fill=\"var(--ink)\"/><path d=\"M66,100 L46,166 Q52,156 60,158 Q57,146 66,144 Q63,132 74,130 Q72,118 80,114 Z\" fill=\"var(--ink)\"/><ellipse cx=\"70\" cy=\"90\" rx=\"9\" ry=\"24\" fill=\"var(--ink)\"/><path d=\"M74,80 L88,83 L92,90 L88,97 L74,100 Z\" fill=\"var(--ink)\"/><path d=\"M82,82 L90,74 L88,84 Z M82,98 L90,106 L88,96 Z\" fill=\"var(--ink)\"/><line x1=\"90\" y1=\"76\" x2=\"140\" y2=\"165\" stroke=\"var(--ink)\" stroke-width=\"1\"/><line x1=\"90\" y1=\"76\" x2=\"385\" y2=\"118\" stroke=\"var(--ink)\" stroke-width=\"1\"/><line x1=\"90\" y1=\"104\" x2=\"140\" y2=\"165\" stroke=\"var(--ink)\" stroke-width=\"1\"/><line x1=\"90\" y1=\"104\" x2=\"385\" y2=\"118\" stroke=\"var(--ink)\" stroke-width=\"1\"/><circle cx=\"140\" cy=\"165\" r=\"3\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"140\" cy=\"165\" r=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"140\" cy=\"165\" r=\"11\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"385\" cy=\"118\" r=\"3\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"385\" cy=\"118\" r=\"7\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/><circle cx=\"385\" cy=\"118\" r=\"11\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1\"/></svg>",
+      "peu": "El ratpenat i el mosquit en dues posicions: les línies uneixen cada orella amb el mosquit (esquema redibuixat de la figura de l'examen)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "La longitud d'ona és la distància que recorre l'ona en un període: λ = <i>v</i>/<i>f</i> = 340/(83,0·10<sup>3</sup>) = <span class=\"res\">4,1·10<sup>−3</sup> m = 4,1 mm</span>."
+        },
+        {
+          "titol": "Període",
+          "html": "<i>T</i> = 1/<i>f</i> = 1/(83,0·10<sup>3</sup>) = <span class=\"res\">1,20·10<sup>−5</sup> s = 12 μs</span>."
+        },
+        {
+          "titol": "Fase a cada orella",
+          "html": "L'eco surt del mosquit i viatja fins a cada orella com una ona harmònica <i>y</i>(<i>x</i>, <i>t</i>) = <i>A</i>·sin(ω<i>t</i> − <i>k</i><i>x</i>), en què <i>x</i> és la distància recorreguda. En un mateix instant, la fase només canvia pel terme <i>k</i><i>x</i>, de manera que la diferència de fase entre les dues orelles és <i>k</i><i>x</i><sub>1</sub> − <i>k</i><i>x</i><sub>2</sub>, en valor absolut <i>k</i>·(<i>x</i><sub>2</sub> − <i>x</i><sub>1</sub>), amb <i>k</i> = 2π/λ."
+        },
+        {
+          "titol": "Diferència de fase",
+          "html": "Δφ = (2π/λ)·(<i>x</i><sub>2</sub> − <i>x</i><sub>1</sub>) = 2π/(4,1·10<sup>−3</sup>)·(1,5030 − 1,5000) = <span class=\"res\">4,60 rad</span>. Com que una fase es defineix llevat de múltiples de 2π, és equivalent dir que una ona va 2π − 4,60 ≈ 1,68 rad avançada respecte de l'altra (la pauta ho escriu 1,69 rad)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Calcular la longitud d'ona, λ = v/f = 4,1·10⁻³ m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Calcular el període, T = 1/f = 1,20·10⁻⁵ s."
+        },
+        {
+          "punts": 0.3,
+          "que": "Escriure l'equació de l'ona i expressar la diferència de fase com k·x₁ − k·x₂."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir la diferència de fase, 4,60 rad (o el valor equivalent 2π − 4,60)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Intensitat a una distància R",
+          "html": "El mosquit reemet l'ultrasò amb una potència <i>W</i> que es reparteix per igual sobre esferes centrades en ell: <i>I</i> = <i>W</i>/(4π<i>R</i><sup>2</sup>). La intensitat és inversament proporcional al quadrat de la distància."
+        },
+        {
+          "titol": "Quocient d'intensitats",
+          "html": "Dividint les dues expressions, <i>W</i> i 4π se simplifiquen: <i>I</i><sub>dreta</sub>/<i>I</i><sub>esquerra</sub> = <i>R</i><sub>esquerra</sub><sup>2</sup>/<i>R</i><sub>dreta</sub><sup>2</sup> = 34<sup>2</sup>/33<sup>2</sup> = <span class=\"res\">1,06</span>."
+        },
+        {
+          "titol": "Diferència de nivells",
+          "html": "Cada nivell és <i>L</i> = 10·log(<i>I</i>/<i>I</i><sub>0</sub>). En restar-los, <i>I</i><sub>0</sub> desapareix: <i>L</i><sub>dreta</sub> − <i>L</i><sub>esquerra</sub> = 10·log(<i>I</i><sub>dreta</sub>/<i>I</i><sub>0</sub>) − 10·log(<i>I</i><sub>esquerra</sub>/<i>I</i><sub>0</sub>) = 10·log(<i>I</i><sub>dreta</sub>/<i>I</i><sub>esquerra</sub>) = 10·log 1,06 = <span class=\"res\">0,26 dB</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.2,
+          "que": "Escriure la intensitat d'una ona esfèrica, I = W/(4πR²)."
+        },
+        {
+          "punts": 0.3,
+          "que": "Obtenir el quocient d'intensitats, 34²/33² = 1,06."
+        },
+        {
+          "punts": 0.5,
+          "que": "Expressar la diferència de nivells com 10·log(I dreta/I esquerra) i obtenir 0,26 dB."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "lam",
+      "text": "λ = 4,1·10⁻³ m",
+      "valor": 0.0041,
+      "pauta": 0.0041
+    },
+    {
+      "apartat": "a",
+      "clau": "T",
+      "text": "T = 1,20·10⁻⁵ s",
+      "valor": 1.2e-05,
+      "pauta": 1.2e-05
+    },
+    {
+      "apartat": "a",
+      "clau": "dphi",
+      "text": "Δφ = 4,60 rad",
+      "valor": 4.6,
+      "pauta": 4.6
+    },
+    {
+      "apartat": "a",
+      "clau": "dphi2",
+      "text": "2π − Δφ = 1,68 rad",
+      "valor": 1.68,
+      "pauta": 1.69,
+      "tol": 0.01
+    },
+    {
+      "apartat": "b",
+      "clau": "q",
+      "text": "I dreta/I esquerra = 1,06",
+      "valor": 1.06,
+      "pauta": 1.06
+    },
+    {
+      "apartat": "b",
+      "clau": "dL",
+      "text": "ΔL = 0,26 dB",
+      "valor": 0.26,
+      "pauta": 0.26,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import pi, log10",
+    "f = 83.0e3",
+    "v = 340",
+    "lam = v / f",
+    "T = 1 / f",
+    "dphi = 2 * pi / lam * (1.5030 - 1.5000)",
+    "q = 34**2 / 33**2",
+    "R = {'lam': lam, 'T': T, 'dphi': dphi, 'dphi2': 2 * pi - dphi, 'q': q, 'dL': 10 * log10(q)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

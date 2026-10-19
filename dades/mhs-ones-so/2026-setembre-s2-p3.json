@@ -1,0 +1,296 @@
+{
+  "id": "2026-setembre-s2-p3",
+  "any": 2026,
+  "convocatoria": "setembre",
+  "serie": 2,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "mhs-ones-so",
+  "subtema": "ones",
+  "temes_secundaris": [],
+  "blocs": [
+    "b3",
+    "b4"
+  ],
+  "dificultat": 6,
+  "dificultat_motiu": "Cal passar de la diferència de decibels a una raó d'intensitats, relacionar-la amb les distàncies (1/r²) i la geometria de l'altura, i plantejar la condició d'interferència destructiva sobre un segment, comprovant quines solucions hi cauen dins.",
+  "titol": "Elefants: decibels des dels arbres i punts de silenci",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ext/pau_fisi26sl.pdf",
+      "pdf": "pau_fisi26sl",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ext/pau_fisi26st.pdf",
+      "pdf": "pau_fisi26st",
+      "pagina": 7
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2026/Setembre/2/9042"
+  },
+  "dades": [
+    {
+      "simbol": "β₁",
+      "valor": "65,0",
+      "unitat": "dB",
+      "descripcio": "nivell d'intensitat sonora que percep l'observador 1"
+    },
+    {
+      "simbol": "",
+      "valor": "15,0",
+      "unitat": "m",
+      "descripcio": "distància horitzontal de l'observador 1 a l'elefant"
+    },
+    {
+      "simbol": "",
+      "valor": "5,00",
+      "unitat": "m",
+      "descripcio": "altura de l'observador 1"
+    },
+    {
+      "simbol": "β₂",
+      "valor": "62,0",
+      "unitat": "dB",
+      "descripcio": "nivell d'intensitat sonora que percep l'observador 2"
+    },
+    {
+      "simbol": "",
+      "valor": "20,0",
+      "unitat": "m",
+      "descripcio": "distància horitzontal de l'observador 2 a l'elefant"
+    },
+    {
+      "simbol": "",
+      "valor": "10,0",
+      "unitat": "m",
+      "descripcio": "separació entre els dos elefants (apartat 3.2)"
+    },
+    {
+      "simbol": "f",
+      "valor": "80,0",
+      "unitat": "Hz",
+      "descripcio": "freqüència del so coherent i en fase (apartat 3.2)"
+    },
+    {
+      "simbol": "v",
+      "valor": "340",
+      "unitat": "m/s",
+      "descripcio": "velocitat del so a l'aire"
+    },
+    {
+      "simbol": "I₀",
+      "valor": "10⁻¹²",
+      "unitat": "W/m²",
+      "descripcio": "intensitat de referència"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat; a la pauta aquesta opció s'anomena «opció 1»."
+  },
+  "enunciat": {
+    "intro": "<p>Un elefant es troba en un parc nacional i, en un moment determinat, és observat per dos investigadors amagats en arbres amb l’objectiu de fer un estudi científic.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "3.1",
+        "punts": 1.25,
+        "text": "L’elefant bramula i l’observador 1 percep un nivell d’intensitat sonora de 65,0 dB. Aquest observador es troba a una distància horitzontal de 15,0 m de l’elefant i està situat a una altura de 5,00 m sobre el terra. Un segon observador percep el so amb un nivell d’intensitat de 62,0 dB i es troba a una distància horitzontal de 20,0 m de l’elefant. Determineu a quina altura està situat el segon observador.",
+        "figures": [
+          "fig1"
+        ]
+      },
+      {
+        "id": "3.2",
+        "punts": 1.25,
+        "text": "En una altra observació es detecten dos elefants separats 10,0 m sobre el pla. Suposant que tots dos emeten un so coherent a una freqüència de 80,0 Hz, i amb la mateixa amplitud i en fase, determineu en quins punts de la línia recta que uneix els dos elefants no es percep cap so."
+      }
+    ],
+    "dades_text": "Dades: Velocitat del so en l’aire = 340 m s<sup>–1</sup>.<br><i>I</i><sub>0</sub> = 10<sup>–12</sup> W m<sup>–2</sup>.<br>Nota: Assumiu que el front d’ona és esfèric."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 560 240\" role=\"img\" aria-label=\"Esquema: un elefant a terra; a l'esquerra, a 15,0 m de distància horitzontal, l'observador 1 dalt d'un arbre a 5,00 m d'altura; a la dreta, a 20,0 m, l'observador 2 dalt d'un arbre més alt, a una altura h.\"><line x1=\"30\" y1=\"200\" x2=\"540\" y2=\"200\" stroke=\"var(--muted)\" stroke-width=\"1.5\"/><rect x=\"75\" y=\"154\" width=\"10\" height=\"46\" fill=\"var(--wood)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><ellipse cx=\"80\" cy=\"159.8\" rx=\"22\" ry=\"19.8\" fill=\"var(--ec)\" fill-opacity=\"0.45\" stroke=\"var(--ec)\" stroke-width=\"1.4\"/><rect x=\"495\" y=\"94.7\" width=\"10\" height=\"105.3\" fill=\"var(--wood)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><ellipse cx=\"500\" cy=\"118.9\" rx=\"22\" ry=\"38.2\" fill=\"var(--ec)\" fill-opacity=\"0.45\" stroke=\"var(--ec)\" stroke-width=\"1.4\"/><circle cx=\"80\" cy=\"134\" r=\"5\" fill=\"var(--ink)\"/><path d=\"M73 146 Q80 136 87 146 Z\" fill=\"var(--ink)\"/><circle cx=\"500\" cy=\"74.7\" r=\"5\" fill=\"var(--ink)\"/><path d=\"M493 86.7 Q500 76.7 507 86.7 Z\" fill=\"var(--ink)\"/><ellipse cx=\"254\" cy=\"183\" rx=\"17\" ry=\"11\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><rect x=\"240.5\" y=\"190\" width=\"5\" height=\"10\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><rect x=\"247.5\" y=\"190\" width=\"5\" height=\"10\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><rect x=\"256.5\" y=\"190\" width=\"5\" height=\"10\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><rect x=\"262.5\" y=\"190\" width=\"5\" height=\"10\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><circle cx=\"271\" cy=\"178\" r=\"8\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><path d=\"M277 181 Q283 190 280 198\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><ellipse cx=\"267\" cy=\"178\" rx=\"4\" ry=\"6\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"84\" y=\"108\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\">Obs. 1</text><text x=\"496\" y=\"58.7\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\">Obs. 2</text><line x1=\"48\" y1=\"200\" x2=\"48\" y2=\"140\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M48 140 L45.3 146 L50.7 146 Z\" fill=\"var(--ink)\"/><path d=\"M48 200 L50.7 194 L45.3 194 Z\" fill=\"var(--ink)\"/><text x=\"42\" y=\"170\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\" transform=\"rotate(-90 42 170)\">5,00 m</text><line x1=\"534\" y1=\"200\" x2=\"534\" y2=\"80.7\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M534 80.7 L531.3 86.7 L536.7 86.7 Z\" fill=\"var(--ink)\"/><path d=\"M534 200 L536.7 194 L531.3 194 Z\" fill=\"var(--ink)\"/><text x=\"540\" y=\"145.4\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">h</text><line x1=\"80\" y1=\"202\" x2=\"80\" y2=\"221\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"260\" y1=\"202\" x2=\"260\" y2=\"221\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"500\" y1=\"202\" x2=\"500\" y2=\"221\" stroke=\"var(--muted)\" stroke-width=\"1\"/><line x1=\"80\" y1=\"216\" x2=\"260\" y2=\"216\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M260 216 L254 213.3 L254 218.7 Z\" fill=\"var(--ink)\"/><path d=\"M80 216 L86 218.7 L86 213.3 Z\" fill=\"var(--ink)\"/><line x1=\"260\" y1=\"216\" x2=\"500\" y2=\"216\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M500 216 L494 213.3 L494 218.7 Z\" fill=\"var(--ink)\"/><path d=\"M260 216 L266 218.7 L266 213.3 Z\" fill=\"var(--ink)\"/><text x=\"170\" y=\"232\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">15,0 m</text><text x=\"380\" y=\"232\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">20,0 m</text></svg>",
+      "peu": "L'elefant i els dos observadors amagats als arbres."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "3.1",
+      "passos": [
+        {
+          "titol": "Raó d'intensitats",
+          "html": "De β = 10·log(<i>I</i>/<i>I</i><sub>0</sub>) s'obté <i>I</i> = <i>I</i><sub>0</sub>·10<sup>β/10</sup>. Dividint les intensitats dels dos observadors, <i>I</i><sub>0</sub> se simplifica: <i>I</i><sub>1</sub>/<i>I</i><sub>2</sub> = 10<sup>(β<sub>1</sub> − β<sub>2</sub>)/10</sup> = 10<sup>3/10</sup> = 10<sup>0,3</sup> = <span class=\"res\">1,995</span>."
+        },
+        {
+          "titol": "Relació amb les distàncies",
+          "html": "La potència de l'elefant es reparteix sobre esferes: <i>I</i> = <i>P</i>/(4π<i>r</i><sup>2</sup>). Per tant, <i>I</i><sub>1</sub>/<i>I</i><sub>2</sub> = (<i>r</i><sub>2</sub>/<i>r</i><sub>1</sub>)<sup>2</sup> → <i>r</i><sub>2</sub> = <i>r</i><sub>1</sub>·√(<i>I</i><sub>1</sub>/<i>I</i><sub>2</sub>)."
+        },
+        {
+          "titol": "Distància de l'elefant a cada observador",
+          "html": "L'observador 1 és a <i>r</i><sub>1</sub> = √(15,0<sup>2</sup> + 5,00<sup>2</sup>) = <span class=\"res\">15,8 m</span>, i aleshores <i>r</i><sub>2</sub> = 15,8·√1,995 = <span class=\"res\">22,3 m</span>."
+        },
+        {
+          "titol": "Altura del segon observador",
+          "html": "<i>r</i><sub>2</sub> = √(20,0<sup>2</sup> + <i>h</i><sup>2</sup>) → <i>h</i> = √(<i>r</i><sub>2</sub><sup>2</sup> − 20,0<sup>2</sup>) = √(22,3<sup>2</sup> − 20,0<sup>2</sup>) = <span class=\"res\"><i>h</i> = 9,94 m</span> (amb <i>r</i><sub>2</sub> sense arrodonir)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 1.0,
+          "que": "Passar dels nivells a la raó d'intensitats (I₁/I₂ = 10^0,3 = 1,995), relacionar-la amb (r₂/r₁)², calcular r₁ = 15,8 m i obtenir r₂ = 22,3 m. També es puntua calcular I₁ i I₂, la potència (9,93·10⁻³ W) i r₂ a partir d'I₂."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular l'altura amb Pitàgores: h = 9,94 m."
+        }
+      ]
+    },
+    {
+      "apartat": "3.2",
+      "passos": [
+        {
+          "titol": "Longitud d'ona",
+          "html": "λ = <i>v</i>/<i>f</i> = 340/80,0 = <span class=\"res\">λ = 4,25 m</span>."
+        },
+        {
+          "titol": "Punts entre els dos elefants",
+          "html": "Per a un punt del segment que uneix els elefants, siguin <i>x</i><sub>1</sub> i <i>x</i><sub>2</sub> les distàncies que recorren les ones des de cada elefant fins al punt: <i>x</i><sub>1</sub> + <i>x</i><sub>2</sub> = 10,0 m."
+        },
+        {
+          "titol": "Condició d'interferència destructiva",
+          "html": "Com que les fonts emeten en fase i amb la mateixa amplitud, no se sent res on la diferència de camins és un nombre semienter de longituds d'ona: |<i>x</i><sub>1</sub> − <i>x</i><sub>2</sub>| = (<i>n</i> + ½)·λ, amb <i>n</i> = 0, 1, 2…"
+        },
+        {
+          "titol": "Solucions",
+          "html": "Per a <i>n</i> = 0: |<i>x</i><sub>1</sub> − <i>x</i><sub>2</sub>| = 2,125 m, i amb <i>x</i><sub>1</sub> + <i>x</i><sub>2</sub> = 10,0 m s'obté <i>x</i><sub>1</sub> = 6,06 m i <i>x</i><sub>2</sub> = 3,94 m (o a l'inrevés). Per a <i>n</i> = 1: |<i>x</i><sub>1</sub> − <i>x</i><sub>2</sub>| = 6,375 m → <i>x</i><sub>1</sub> = 8,19 m i <i>x</i><sub>2</sub> = 1,81 m (o a l'inrevés). Per a <i>n</i> = 2 la diferència seria 10,625 m, més gran que la separació dels elefants: surt una distància negativa (−0,31 m), fora del segment, i passa el mateix per a valors més grans. Per tant, no se sent res als punts situats a <span class=\"res\">1,81 m; 3,94 m; 6,06 m i 8,19 m</span> d'un dels elefants."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Calcular la longitud d'ona: λ = 4,25 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Plantejar que, per a un punt entre els elefants, x₁ + x₂ = 10 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Escriure la condició d'interferència destructiva: |x₁ − x₂| = (n + ½)λ."
+        },
+        {
+          "punts": 0.5,
+          "que": "Resoldre els casos n = 0 i n = 1 (6,06 m, 3,94 m, 8,19 m i 1,81 m) i descartar els següents. Es resten 0,25 si només es donen la meitat de les solucions."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "3.1",
+      "clau": "rati",
+      "text": "I₁/I₂ = 1,995",
+      "valor": 1.995,
+      "pauta": 1.995
+    },
+    {
+      "apartat": "3.1",
+      "clau": "r1",
+      "text": "r₁ = 15,8 m",
+      "valor": 15.81,
+      "pauta": 15.8
+    },
+    {
+      "apartat": "3.1",
+      "clau": "r2",
+      "text": "r₂ = 22,3 m",
+      "valor": 22.33,
+      "pauta": 22.3
+    },
+    {
+      "apartat": "3.1",
+      "clau": "h",
+      "text": "h = 9,94 m",
+      "valor": 9.94,
+      "pauta": 9.94
+    },
+    {
+      "apartat": "3.2",
+      "clau": "lam",
+      "text": "λ = 4,25 m",
+      "valor": 4.25,
+      "pauta": 4.25
+    },
+    {
+      "apartat": "3.2",
+      "clau": "a0",
+      "text": "n = 0: x₁ = 6,06 m",
+      "valor": 6.0625,
+      "pauta": 6.06
+    },
+    {
+      "apartat": "3.2",
+      "clau": "b0",
+      "text": "n = 0: x₂ = 3,94 m",
+      "valor": 3.9375,
+      "pauta": 3.94
+    },
+    {
+      "apartat": "3.2",
+      "clau": "a1",
+      "text": "n = 1: x₁ = 8,19 m",
+      "valor": 8.1875,
+      "pauta": 8.19
+    },
+    {
+      "apartat": "3.2",
+      "clau": "b1",
+      "text": "n = 1: x₂ = 1,81 m",
+      "valor": 1.8125,
+      "pauta": 1.81
+    },
+    {
+      "apartat": "3.2",
+      "clau": "a2",
+      "text": "n = 2: x₂ = −0,31 m (fora)",
+      "valor": -0.3125,
+      "pauta": -0.31,
+      "tol": 0.01
+    }
+  ],
+  "comprovacio": [
+    "from math import sqrt",
+    "beta1, beta2 = 65.0, 62.0",
+    "rati = 10 ** ((beta1 - beta2) / 10)",
+    "r1 = sqrt(15.0**2 + 5.00**2)",
+    "r2 = r1 * sqrt(rati)",
+    "h = sqrt(r2**2 - 20.0**2)",
+    "lam = 340 / 80.0",
+    "D = 10.0",
+    "sol = [((D + (n + 0.5) * lam) / 2, (D - (n + 0.5) * lam) / 2) for n in range(3)]",
+    "R = {'rati': rati, 'r1': r1, 'r2': r2, 'h': h, 'lam': lam, 'a0': sol[0][0], 'b0': sol[0][1],",
+    "     'a1': sol[1][0], 'b1': sol[1][1], 'a2': sol[2][1]}"
+  ],
+  "verificacio": {
+    "estat": "error",
+    "errors": [
+      "error en executar la comprovació: NameError(\"name 'D' is not defined\")",
+      "R no té la clau «rati»",
+      "R no té la clau «r1»",
+      "R no té la clau «r2»",
+      "R no té la clau «h»",
+      "R no té la clau «lam»",
+      "R no té la clau «a0»",
+      "R no té la clau «b0»",
+      "R no té la clau «a1»",
+      "R no té la clau «b1»",
+      "R no té la clau «a2»"
+    ],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}
