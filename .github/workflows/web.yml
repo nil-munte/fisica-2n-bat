@@ -1,5 +1,6 @@
 # Construeix el web (eines/build.py) i el publica a GitHub Pages.
-# - A cada push a main: comprova, construeix i publica (tot el web; triga uns 3 minuts).
+# - A cada push a main: comprova, construeix i publica. Els passos lents (exàmens per sèries,
+#   exercicis prerenderitzats, PDF dels temes) només es tornen a fer si n'han canviat les entrades.
 # - A cada pull request: comprova i construeix, sense publicar.
 # - Els canvis que només toquen documentació (*.md) no construeixen res.
 # - Es pot llançar a mà des de la pestanya Actions (workflow_dispatch).
@@ -58,6 +59,13 @@ jobs:
 
       - name: PDF oficials (release «fonts-oficials»)
         run: python eines/fonts_oficials.py baixa
+
+      - name: Memòria cau de la construcció (passos sense canvis)
+        uses: actions/cache@v4
+        with:
+          path: build/memoria
+          key: memoria-${{ github.sha }}
+          restore-keys: memoria-
 
       - name: Construcció del web
         run: python eines/build.py

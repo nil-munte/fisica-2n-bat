@@ -41,7 +41,7 @@ A cada `push` a `main` que canviï el web, les dades o les eines, GitHub Actions
 
 1. comprova els problemes de les PAU (si n'hi ha cap amb errors, no es publica res);
 2. pren la còpia dels PDF oficials de la release [`fonts-oficials`](https://github.com/nil-munte/fisica-2n-bat/releases/tag/fonts-oficials) (desada en memòria cau) i en verifica el SHA-256;
-3. construeix el web a `dist/` i comprova que cap enllaç intern sigui trencat;
+3. construeix el web a `dist/` (els passos lents només es refan si n'han canviat les entrades: vegeu la memòria cau a `eines/build.py`) i comprova que cap enllaç intern sigui trencat;
 4. el publica a GitHub Pages.
 
 Els *pull requests* es comproven i es construeixen, però no es publiquen. Els canvis que només toquen documentació (`*.md`) no fan construir res.
@@ -52,7 +52,7 @@ Els *pull requests* es comproven i es construeixen, però no es publiquen. Els c
 pip install -r eines/requirements.txt
 python -m playwright install chromium
 python eines/fonts_oficials.py baixa      # només la primera vegada (o quan n'hi hagi de nous)
-python eines/build.py                     # construcció completa a dist/ (o --rapid, sense PDF)
+python eines/build.py                     # construcció completa a dist/ (--rapid: sense PDF; --net: sense memòria cau)
 python -m http.server -d dist 8765        # previsualització a http://localhost:8765
 ```
 
