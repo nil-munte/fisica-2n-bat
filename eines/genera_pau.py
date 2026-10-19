@@ -17,12 +17,10 @@ També actualitza el recompte de problemes de la portada (<span data-pau-compte=
 """
 import html, json, os, pathlib, re, sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-DADES = ROOT / 'dades'
-PLANT = pathlib.Path(__file__).resolve().parent / 'plantilles'
+from rutes import DADES, OBRA, PLANTILLES as PLANT, WEB as ROOT   # ROOT: arrel del web generat (dist/)
 MESOS = {'juny': 'Juny', 'setembre': 'Setembre'}
 NIVELLS = {1: ('★', 'Bàsic'), 2: ('★★', 'Intermedi'), 3: ('★★★', 'Avançat')}
-_d = DADES / 'destins_pau.json'   # generat per eines/examens_pau.py
+_d = OBRA / 'destins_pau.json'   # generat per eines/examens_pau.py
 DESTINS = json.loads(_d.read_text(encoding='utf-8'))['problemes'] if _d.exists() else {}
 
 

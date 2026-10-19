@@ -22,7 +22,8 @@ INI, FI = '<!-- EXERCICIS:inici -->', '<!-- EXERCICIS:fi -->'
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     prova = '--prova' in sys.argv
-    arrel = pathlib.Path(__file__).resolve().parent.parent
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    from rutes import WEB as arrel   # treballa sobre el web generat (dist/)
     pagina = pathlib.Path(args[0]) if args else arrel / 'temes' / 'mhs' / 'index.html'
     if not pagina.is_absolute(): pagina = (pathlib.Path.cwd() / pagina).resolve()
     with sync_playwright() as p:

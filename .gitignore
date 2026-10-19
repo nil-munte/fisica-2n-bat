@@ -1,10 +1,14 @@
-.DS_Store
+# Web generat i fitxers intermedis (els fa eines/build.py; es publiquen des de la CI)
+/dist/
+/build/
+
+# PDF oficials de les PAU i fitxers derivats (es baixen amb eines/fonts_oficials.py)
+/fonts/
+
+# Entorn local
+.claude/
+.venv/
 __pycache__/
 *.pyc
-.venv/
+.DS_Store
 node_modules/
-
-# PDF oficials de les PAU (fonts de treball, no es publiquen)
-fonts/pdf/
-fonts/txt/
-fonts/png/

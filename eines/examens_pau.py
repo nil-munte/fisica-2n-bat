@@ -19,15 +19,15 @@ Requereix PyMuPDF (pip install pymupdf).
 import html, json, pathlib, re, sys
 import pymupdf
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-FONTS = ROOT / 'fonts' / 'pdf'
+from rutes import DADES, OBRA, WEB as ROOT, FONTS as _FONTS   # ROOT: arrel del web generat (dist/)
+FONTS = _FONTS / 'pdf'
 PAU = ROOT / 'pau'
 SORTIDA = PAU / 'pdf'
 CONV = {'j': 'juny', 's': 'setembre'}
 NOM_CONV = {'juny': ('Juny', 'Convocatòria ordinària'), 'setembre': ('Setembre', 'Convocatòria extraordinària')}
 FITXER = re.compile(r'pau_fisi(\d\d)([js])([lpt])(?:_v(\d+))?\.pdf$')
 SERIE = re.compile(r'S[ÈEèe]?RIE\s*(\d)', re.I)
-DESTINS = ROOT / 'dades' / 'destins_pau.json'
+DESTINS = OBRA / 'destins_pau.json'
 DOC_DESTINS = ("Generat per eines/examens_pau.py; no s'edita a mà. Per a cada problema, l'enllaç (des de l'arrel) "
                "a l'enunciat i a la pauta dins dels PDF de la seva sèrie a pau/pdf/. El fa servir eines/genera_pau.py.")
 
@@ -86,9 +86,9 @@ def desa(parts, desti, titol, marques, llocs=()):
 
 def carrega_problemes():
     """Problemes resolts al web, amb la pàgina del tema on són (None si encara no en té)."""
-    temes = json.loads((ROOT / 'dades' / 'temes.json').read_text(encoding='utf-8'))['temes']
+    temes = json.loads((DADES / 'temes.json').read_text(encoding='utf-8'))['temes']
     out = []
-    for f in sorted((ROOT / 'dades').glob('*/*.json')):
+    for f in sorted(DADES.glob('*/*.json')):
         p = json.loads(f.read_text(encoding='utf-8'))
         t = temes.get(p['tema_principal'], {})
         t = t.get('subtemes', {}).get(p.get('subtema'), t)
@@ -258,6 +258,7 @@ def main():
     for vell in SORTIDA.glob('*.pdf'):
         if vell.name not in fets:
             vell.unlink()
+    DESTINS.parent.mkdir(parents=True, exist_ok=True)
     DESTINS.write_text(json.dumps({'_doc': DOC_DESTINS, 'problemes': dict(sorted(enllacos.items()))},
                                   ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
     substitueix(PAU / 'index.html', 'anys', html_anys(examens))

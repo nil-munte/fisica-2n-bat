@@ -9,7 +9,7 @@ Requereix: pip install -r eines/requirements.txt && python -m playwright install
 import pathlib, re, sys
 from playwright.sync_api import sync_playwright
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+from rutes import WEB as ROOT   # arrel del web generat (dist/)
 
 def main(tema: str, titol: str) -> None:
     page_path = ROOT / 'temes' / tema / 'index.html'

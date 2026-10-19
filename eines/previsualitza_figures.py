@@ -8,12 +8,12 @@ Substitueix les variables CSS (var(--ink), var(--x)...) pels colors del tema cla
 """
 import json, pathlib, re, sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+from rutes import ARREL as ROOT, SRC
 OUT = ROOT / 'fonts' / 'png' / 'figures'
 
 
 def colors(fosc: bool) -> dict:
-    t = (ROOT / 'temes' / 'mhs' / 'index.html').read_text(encoding='utf-8')
+    t = (SRC / 'temes' / 'mhs' / 'index.html').read_text(encoding='utf-8')
     clar = re.search(r':root\{(.*?)\}', t, re.S).group(1)
     v = dict(re.findall(r'--([\w-]+):\s*([^;]+);', clar))
     if fosc:

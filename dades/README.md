@@ -1,6 +1,7 @@
 # Banc de problemes de les PAU
 
-Cada problema de les PAU de Física és un JSON a `dades/<tema>/<any>-<juny|setembre>-s<sèrie>-p<n>.json`.
+Cada problema de les PAU de Física és un JSON a `dades/<tema>/<any>-<juny|setembre>-s<sèrie>-p<n>.json`
+(amb la lletra de l'opció al final, `…-p3b`, quan l'opció A i la B d'una sèrie tenen el mateix número).
 El mapa de temes i pàgines és a `temes.json`. Exemple complet: `mhs-ones-so/2014-juny-s4-p5.json`.
 
 ## Flux de treball
@@ -10,11 +11,12 @@ python eines/fonts_pau.py cerca pau_fisi14jl "màquina de cosir"   # pàgina de 
 python eines/fonts_pau.py png pau_fisi14jp 7                      # mirar la pauta o una figura
 python eines/comprova_pau.py dades/mhs-ones-so/2014-juny-s4-p5.json
 python eines/previsualitza_figures.py dades/mhs-ones-so/2014-juny-s4-p5.json
-python eines/genera_pau.py                                        # insereix-ho a les pàgines
+python eines/build.py --rapid                                     # web a dist/ amb els problemes inserits
 ```
 
-Els PDF oficials són a `fonts/pdf/` (no es publiquen). `pau_fisiAAjl` és l'examen de juny,
-`pau_fisiAAjp` (o `jt`) la pauta de correcció; `sl`/`sp` (o `st`) els de setembre.
+Els PDF oficials són a `fonts/pdf/` (no es comiten; `python eines/fonts_oficials.py baixa` els baixa de la
+release `fonts-oficials`). `pau_fisiAAjl` és l'examen de juny, `pau_fisiAAjp` (o `jt`) la pauta de correcció;
+`sl`/`sp` (o `st`) els de setembre; `_tei`, els del tribunal especial.
 
 ## Normes de contingut
 

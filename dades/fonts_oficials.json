@@ -1,0 +1,336 @@
+{
+  "_doc": "PDF oficials de les PAU de Física (Generalitat de Catalunya) que fa servir la construcció. Es baixen de la release «fonts-oficials» del repositori amb eines/fonts_oficials.py; «origen» és d'on es van obtenir.",
+  "release": "fonts-oficials",
+  "fitxers": {
+    "pau_fisi10jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi10jl.pdf",
+      "mida": 510908,
+      "sha256": "11d8330ce9319dd2d30ca9af59bbcf1a75046503a295660ab5dbc990daf6938d"
+    },
+    "pau_fisi10jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi10jp.pdf",
+      "mida": 126951,
+      "sha256": "bcca95c2d1e3262afe61832c696dcbe69e77fd58049318f0cb491ea71969b158"
+    },
+    "pau_fisi12jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi12jl.pdf",
+      "mida": 586195,
+      "sha256": "050609f5eee3ed42d376d82395dd164e51696d088ef06bdf1d1dce106d0f1c3b"
+    },
+    "pau_fisi12jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi12jp.pdf",
+      "mida": 288553,
+      "sha256": "d54854125cbfa3dedd8e9c228aac386743b47569864ad4fed66824d55f5eb082"
+    },
+    "pau_fisi12sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi12sl.pdf",
+      "mida": 150878,
+      "sha256": "b1fa874b7c7e73d9fc17caf7904275ff2d08853c44b64ea8907b05f5145ecbd0"
+    },
+    "pau_fisi12sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi12sp.pdf",
+      "mida": 218414,
+      "sha256": "c97a751658915103262c0c1e0e413e84aebab5948d5fc8b048daa48f5df6d89b"
+    },
+    "pau_fisi13jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi13jl.pdf",
+      "mida": 501726,
+      "sha256": "a38feaf8c3b838f8be3fca2f8f3370727583699cd69865141320b33a2f23d89b"
+    },
+    "pau_fisi13jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi13jp.pdf",
+      "mida": 136534,
+      "sha256": "1039174b9e8e26e1cac534283cb58231b7fea6eec8bb12ca5aa3814cc19b1724"
+    },
+    "pau_fisi13sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi13sl.pdf",
+      "mida": 471101,
+      "sha256": "74081fa5404a89433df75483dac8b17c7ee6932120c012b3249147a85701e88b"
+    },
+    "pau_fisi13sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi13sp.pdf",
+      "mida": 117782,
+      "sha256": "243860af6a5e7a30376e7b36d547d747adc4437b500596e8d105b4701bb6c2b4"
+    },
+    "pau_fisi14jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi14jl.pdf",
+      "mida": 289165,
+      "sha256": "fc4bc4c9fcdea0244b919d4a595367a018c2e1a646bc4dcb9e6f9a74f2c9c111"
+    },
+    "pau_fisi14jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi14jp.pdf",
+      "mida": 259923,
+      "sha256": "7afaaaeb73b33a191c45f05ebb86ed150098ba3ff6d7868f08557c90afc208cd"
+    },
+    "pau_fisi14sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi14sl.pdf",
+      "mida": 281544,
+      "sha256": "12546b240b92c25389df5fa71e554ab01b4afa81e1f1eee4768876d20d701083"
+    },
+    "pau_fisi14sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi14sp.pdf",
+      "mida": 215823,
+      "sha256": "9ce0c8b24b9ac09510465f0b55894b456997446666f4a8fbe9ca16b9b477cbd0"
+    },
+    "pau_fisi15jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi15jl.pdf",
+      "mida": 776407,
+      "sha256": "9e4ada1b2a8ef8203cecb4eab9fa2b738b8127ad3b2da59400726d20e242dd32"
+    },
+    "pau_fisi15jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi15jp.pdf",
+      "mida": 895264,
+      "sha256": "d8e8910a5df6c2eb7dfb308ebd76202876115605ac9feb073354e64e25d384e2"
+    },
+    "pau_fisi15sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi15sl.pdf",
+      "mida": 157147,
+      "sha256": "f5bd11da51d00d1c13723f6e2348551149b3d505dd5142cd0465e8a42e52b2ac"
+    },
+    "pau_fisi15sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi15sp.pdf",
+      "mida": 358550,
+      "sha256": "e834f0e8be203f3e9dab9bf2b82eb3f2ed232de47ef75958924fe13860c9378e"
+    },
+    "pau_fisi16jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi16jl.pdf",
+      "mida": 726594,
+      "sha256": "9b0b9c9ab81419c559c4f82e302f658220038d5c01b14ba79f8d0655c1670695"
+    },
+    "pau_fisi16jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi16jp.pdf",
+      "mida": 563475,
+      "sha256": "ae88c3218fa1d1c3b4303f69e74076ec9d111d3662f3d6ee784515bbb4f306e1"
+    },
+    "pau_fisi16sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi16sl.pdf",
+      "mida": 146364,
+      "sha256": "272a8005fefcbd6d3bbdb2ab44af5df59290d68bfc9c3b694c67973bb9a19f2f"
+    },
+    "pau_fisi16sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi16sp.pdf",
+      "mida": 274586,
+      "sha256": "525f9d4cce2d4182a1f126758701a6d637c7ca68a190fad62322e71077ffd945"
+    },
+    "pau_fisi17jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi17jl.pdf",
+      "mida": 250657,
+      "sha256": "be565ea63cdba496ac7a8bc9fbc9f3d7eaefeacedbe5e2b043ea90fc06388670"
+    },
+    "pau_fisi17jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi17jp.pdf",
+      "mida": 696896,
+      "sha256": "be95c7d7f5b26fb71940cb0a92894f8c043e79d37ffcf5f46aaa95718787346b"
+    },
+    "pau_fisi17sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi17sl.pdf",
+      "mida": 158140,
+      "sha256": "05b7f3da21c9be21762f2dc7fda5678417e2204bac54e7c28699a130d2344eae"
+    },
+    "pau_fisi17sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi17sp.pdf",
+      "mida": 259847,
+      "sha256": "f5748f311fa4bf2079159ded491010b318f6032989422d86c12e4e163555cd7b"
+    },
+    "pau_fisi18jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi18jl.pdf",
+      "mida": 229545,
+      "sha256": "f64a65543016b7d2309c9020c537d0a8ad7d3cb7e379a5e20af7457a96441fae"
+    },
+    "pau_fisi18jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi18jp.pdf",
+      "mida": 608517,
+      "sha256": "2f9e03b7d2eea738ec628ce3e400683e6e7ae3088145c0c1ce498f9e932b01d2"
+    },
+    "pau_fisi18sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi18sl.pdf",
+      "mida": 138961,
+      "sha256": "a060b18e9db8ca69ea8de5268dd611696b83215f438c643e8a11f48ddbead2f7"
+    },
+    "pau_fisi18sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi18sp.pdf",
+      "mida": 438138,
+      "sha256": "eb4f23327e4e83b9c2c7e4b5a3b5a7d43467e140cd8a5925e8fefc6b785421f3"
+    },
+    "pau_fisi19jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi19jl.pdf",
+      "mida": 931046,
+      "sha256": "6c16f12e2939bb3f7d1f5e2ce5dfbee1b54081ddfc27690e21338656672155a3"
+    },
+    "pau_fisi19jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi19jp.pdf",
+      "mida": 1327288,
+      "sha256": "1a6b0d6c11cb79587097eb5b298984e067e6df321e69231f7f1473ba4c57efdf"
+    },
+    "pau_fisi19sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi19sl.pdf",
+      "mida": 146692,
+      "sha256": "d527d7997328aa9fddefe4ba36f1866ce6d923a19f89eb82247af074cb22848f"
+    },
+    "pau_fisi19sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi19sp.pdf",
+      "mida": 694804,
+      "sha256": "ca592bb5dbc6baaf55da819aebc6204bc3e7f3e514a965db5318ccbf454a9b13"
+    },
+    "pau_fisi20jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi20jl.pdf",
+      "mida": 342640,
+      "sha256": "51071e0bea1272d48f129239764e24448755f92a7870ef2c772a8aca6f9c826f"
+    },
+    "pau_fisi20jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi20jp.pdf",
+      "mida": 1113962,
+      "sha256": "95db1f8716cdd717d0e6836c22ff9915a39e63fd0b8d4d596886d3259e77e751"
+    },
+    "pau_fisi20sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi20sl.pdf",
+      "mida": 174311,
+      "sha256": "09fbc9028a392e9ce47a237255a59d806601b04453ca08fd5b2cf6f3b9a3a351"
+    },
+    "pau_fisi20sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi20sp.pdf",
+      "mida": 972119,
+      "sha256": "de844ead6e295ecc465adc57cab5c9a676787732816370fc4b512cb41005ebbf"
+    },
+    "pau_fisi21jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi21jl.pdf",
+      "mida": 399697,
+      "sha256": "39380d294417f66b324a1128b62b1268a4656e24f6faf39c335262160be463c0"
+    },
+    "pau_fisi21jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi21jp.pdf",
+      "mida": 1212831,
+      "sha256": "54f2dfa8c1d1dd8e0f0da604a4f459c900f6a316a0c833e59d0e7cc61b687a42"
+    },
+    "pau_fisi21sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi21sl.pdf",
+      "mida": 221296,
+      "sha256": "756ac5a66bd3f9bc84a0ece53a76c5cb71f2e042fe90a85ebdddb11ea0703d58"
+    },
+    "pau_fisi21sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi21sp.pdf",
+      "mida": 732759,
+      "sha256": "9f895089dbb5a251f704b32d137fdd5e1e181ac73f90e6fc9667ac4aa423fff0"
+    },
+    "pau_fisi22jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi22jl.pdf",
+      "mida": 396337,
+      "sha256": "d27352294a7cced830924ad630146d08f536e6be528e0a5cc3213819e90e15ca"
+    },
+    "pau_fisi22jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi22jp.pdf",
+      "mida": 2239183,
+      "sha256": "6b8fb2c6fa87a2d258a900797b2408ce287a18ec5b1d84df1c9d815385544b4c"
+    },
+    "pau_fisi22sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi22sl.pdf",
+      "mida": 217257,
+      "sha256": "ce81e4620d700af7fc05153d50f9f565e5d5969b501ea4c221d6f76a7ff9217c"
+    },
+    "pau_fisi22sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi22sp.pdf",
+      "mida": 1435166,
+      "sha256": "7380f355a38cd162e6e2995f9d5b1b69feaa7b6f6d8e0f78a68689838bddc802"
+    },
+    "pau_fisi23jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi23jl.pdf",
+      "mida": 331940,
+      "sha256": "c43399555783b9e1b2a012a9ab0a33adacc34e4e161499f95207fa95fca1cc8e"
+    },
+    "pau_fisi23jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi23jp.pdf",
+      "mida": 2144270,
+      "sha256": "344051364e3efdafd107c406b9181d4d32c6c5757c6b9687824a0c47efa3f6dd"
+    },
+    "pau_fisi23sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi23sl.pdf",
+      "mida": 848486,
+      "sha256": "f3ce371e279a98585dd2e30e73faabe7c89b2e052a9fa85d2e63f752877440a2"
+    },
+    "pau_fisi23sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi23sp.pdf",
+      "mida": 1370058,
+      "sha256": "84d47786c93281d5084582a29351c090530c17cbd0dee2fb90a0e96dfab7b3dd"
+    },
+    "pau_fisi24jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi24jl.pdf",
+      "mida": 373861,
+      "sha256": "561507922a07e57ba3d72c38936d86644c38c25dd3d85cea9b1dc42712b55985"
+    },
+    "pau_fisi24jl_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/fisica/ord/pau_fisi24jl_tei.pdf",
+      "mida": 229203,
+      "sha256": "1d1ce76e104efe580cb9e168b6b3af2d0171573be7caa1df720abaaf60df1d40"
+    },
+    "pau_fisi24jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi24jp.pdf",
+      "mida": 1186333,
+      "sha256": "6f314ed95670321cb969a8b617f1236a19e0f7d7d1b53452107393a8f9086ae6"
+    },
+    "pau_fisi24jp_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/fisica/ord/pau_fisi24jp_tei.pdf",
+      "mida": 1265289,
+      "sha256": "87d7aae7c96e6b5280e171939ac03e20367e05faf499e51b73c02dfc4d027d39"
+    },
+    "pau_fisi24sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi24sl.pdf",
+      "mida": 849797,
+      "sha256": "a2c81afc7732c41795a1a2848b78985d6028a90ac9af70c9aae0626886b17df8"
+    },
+    "pau_fisi24sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi24sp.pdf",
+      "mida": 1181135,
+      "sha256": "2901df0034200bee0bca8f082b273f109414eaea7c85d4108fcbef2df7f0a228"
+    },
+    "pau_fisi25jl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi25jl.pdf",
+      "mida": 643742,
+      "sha256": "a43a035982cb7a6350ee71c1e49d42ce6e970387d2c654dc315878da44871cc9"
+    },
+    "pau_fisi25jp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi25jp.pdf",
+      "mida": 471421,
+      "sha256": "587121e10a0104d03a111a74138d99048f4aa3803560989fc947943f644d95e0"
+    },
+    "pau_fisi25sl.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi25sl.pdf",
+      "mida": 1025824,
+      "sha256": "81c8eb37432ca2454f5cc73807480ede5e0d00cc328b4d07aae9f54d237a1c39"
+    },
+    "pau_fisi25sp.pdf": {
+      "origen": "https://www.selecat.cat/pau/pau_fisi25sp.pdf",
+      "mida": 655695,
+      "sha256": "83a3238532861132dc79c95e3e269f043806bc184998af5b9c416154e52ed740"
+    },
+    "pau_fisi26jl.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jl.pdf",
+      "mida": 854681,
+      "sha256": "8611d194c974cb56d07f78b1f02bac776ef980e6daf25bd7e5247c6a4fad8ae5"
+    },
+    "pau_fisi26jl_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jl_tei.pdf",
+      "mida": 1044473,
+      "sha256": "30d582b7cbf5fc744a780bc34dfce7136eaa72262fe130ca0e028456f8954aa5"
+    },
+    "pau_fisi26jt_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jt_tei.pdf",
+      "mida": 671307,
+      "sha256": "d64ddb1f2633f8c7af28e921a112e729f4bb75c7615b42f86a5489fb0d423b1b"
+    },
+    "pau_fisi26jt_v2.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jt_v2.pdf",
+      "mida": 689261,
+      "sha256": "acfe4cb7ad7e0292f9381579f582ae751969929eab2563c13f879f7bcfcdd40f"
+    },
+    "pau_fisi26sl.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ext/pau_fisi26sl.pdf",
+      "mida": 532294,
+      "sha256": "0a2b0a566c4cbfa9e47f97f650ea28b1c6e34fdd7045bbb2ed2b4827a2e2e291"
+    },
+    "pau_fisi26st.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ext/pau_fisi26st.pdf",
+      "mida": 976965,
+      "sha256": "485e307df97c2eba861c92ac42530e8c754f4d7dbfaeb0dcab9f4f20d872f093"
+    }
+  }
+}

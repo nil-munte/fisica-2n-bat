@@ -2,6 +2,7 @@
 
 Ús (des de l'arrel del repositori):
     python eines/comprova_pau.py                 tots els problemes
+    python eines/comprova_pau.py --resum        només el recompte i els errors, sense desar (CI)
     python eines/comprova_pau.py dades/mhs-ones-so/2014-juny-s4-p5.json
 
 Per a cada problema:
@@ -157,13 +158,18 @@ def comprova(path, temes, desa=True):
 
 
 def main(args):
+    """--resum: només mostra els problemes que no són ok (la CI i eines/build.py el fan servir així, sense desar)."""
     sys.stdout.reconfigure(encoding='utf-8')
+    resum = '--resum' in args
+    args = [a for a in args if not a.startswith('--')]
     temes = carrega_temes()
     fitxers = [pathlib.Path(a).resolve() for a in args] or sorted(DADES.glob('*/*.json'))
     compte = {'ok': 0, 'revisar': 0, 'error': 0}
     for f in fitxers:
-        pid, v = comprova(f, temes)
+        pid, v = comprova(f, temes, desa=not resum)
         compte[v['estat']] += 1
+        if resum and v['estat'] != 'error':
+            continue
         marca = {'ok': '✓', 'revisar': '?', 'error': '✗'}[v['estat']]
         print(f'{marca} {pid}')
         for clau in ('errors', 'diferencies_pauta', 'avisos', 'notes_manuals'):
