@@ -238,6 +238,25 @@ input[type=checkbox]{accent-color:var(--ink);width:16px;height:16px;margin:0}
 .now{font-family:var(--f-mono);font-size:13.5px;background:var(--chip);border-radius:6px;padding:6px 10px;font-variant-numeric:tabular-nums;overflow-x:auto;white-space:nowrap}
 i.v{font-family:var(--f-body)}
 
+/* simulador de la fase inicial */
+.fidemo{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:760px){.fidemo{grid-template-columns:minmax(0,1fr)}}
+.fictl{display:flex;flex-direction:column;gap:12px;min-width:0}
+.fictl fieldset{border:1px solid var(--line);border-radius:8px;margin:0;padding:8px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fictl legend{font-size:13px;color:var(--muted);padding:0 4px}
+.fictl .seg{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fictl .seg button{min-height:34px}
+.fipre{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+.fipre button{padding:5px 6px;min-height:32px;font-size:13px}
+.fivis{display:flex;flex-direction:column;gap:12px;min-width:0}
+.fisvgs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:12px}
+@media (max-width:560px){.fisvgs{grid-template-columns:minmax(0,1fr)}}
+.fisvgs svg{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.fisvgs svg text{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
+.fiout{font-size:14.5px;display:flex;flex-direction:column;gap:6px}
+.fiout ol{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:3px}
+.fiout .big{font-size:16px}
+
 /* demos: tota la informació en una sola pantalla (sense scroll) */
 .stackcol{display:flex;flex-direction:column;gap:16px;min-width:0}
 .side{display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -866,6 +885,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
         </ol>
         <p class="note"><b>*</b> Només caldrà en alguns problemes: per triar entre +φ i −φ, si <b>v &gt; 0</b> en t = 0, φ és <b>negatiu</b>; si <b>v &lt; 0</b>, φ és <b>positiu</b>.</p>
         <p><b>Exemple:</b> x₀ = A/2 i v &lt; 0. cos φ = 1/2 → φ = ±π/3. Com que v &lt; 0, φ és positiu → <span class="res">φ = π/3</span>.</p>
+        <p><b>Amb sinus</b> (x = A·sin(ωt + φ)): sin φ = x₀/A i v₀ = A·ω·cos φ. Si v₀ &gt; 0, φ = arcsin(x₀/A); si v₀ &lt; 0, φ = π − arcsin(x₀/A). Les dues formes es relacionen així: <b>φ<sub>sin</sub> = φ<sub>cos</sub> + π/2</b>. Pots veure-ho al <a href="#fase-demo">simulador</a>.</p>
       </section>
       <div class="stackcol">
       <section class="panel eq a">
@@ -886,10 +906,52 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <li>Confondre la pulsació ω (rad/s) amb la freqüència f (Hz).</li>
           <li>Oblidar que si el cos s'amolla en repòs, l'amplitud és el desplaçament inicial.</li>
           <li>Triar el signe de φ sense mirar el signe de v.</li>
+          <li>Quedar-se amb l'angle de la calculadora: arccos només dona un dels dos candidats (0…π) i arcsin també (−π/2…π/2).</li>
+          <li>Dir φ = 0 amb sinus quan x₀ = +A: amb sinus és φ = π/2.</li>
         </ul>
       </section>
       </div>
     </div>
+      <section class="panel eq a" id="fase-demo">
+        <h3>Simulador: com surt la fase inicial</h3>
+        <p>La posició sola no n'hi ha prou: +φ i −φ donen la mateixa x₀, però el cos va cap a costats oposats. Imagina un vector que gira amb angle <b>ωt + φ</b>: la posició x és la seva <b>ombra</b> sobre l'eix horitzontal (punt blau) i φ és l'angle a t = 0. Mou x₀, tria cap on va el cos i mira què passa.</p>
+        <div class="fidemo">
+          <div class="fictl">
+            <div class="param"><label for="fiA">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="fiA" min="0.5" max="20" step="0.5" value="5">m</div></div>
+            <div class="param"><label for="fiX">Posició inicial <i class="v">x</i><sub>0</sub></label><div class="pin"><span class="val" id="fiXv"></span>m</div><input type="range" id="fiX" min="-100" max="100" step="1" value="50"></div>
+            <fieldset><legend>Cap on es mou en t = 0</legend>
+              <div class="seg" id="fiDir"><button type="button" data-d="1" aria-pressed="false">cap a +x</button><button type="button" data-d="-1" aria-pressed="true">cap a −x</button></div>
+              <p class="note" id="fiDirNote" hidden>A l'extrem el cos és un instant aturat (v₀ = 0).</p>
+            </fieldset>
+            <fieldset><legend>Forma de l'equació</legend>
+              <div class="seg" id="fiConv"><button type="button" data-c="cos" aria-pressed="true">cosinus</button><button type="button" data-c="sin" aria-pressed="false">sinus</button></div>
+            </fieldset>
+            <div class="fipre">
+              <button type="button" data-x="1" data-d="1">x₀ = +A</button>
+              <button type="button" data-x="-1" data-d="1">x₀ = −A</button>
+              <button type="button" data-x="0" data-d="1">x₀ = 0, va a +x</button>
+              <button type="button" data-x="0" data-d="-1">x₀ = 0, va a −x</button>
+            </div>
+            <button type="button" id="fiPlay" aria-pressed="false">Reprodueix</button>
+          </div>
+          <div class="fivis">
+            <div class="fisvgs">
+              <svg id="fiPh" viewBox="0 0 200 200" role="img" aria-label="Vector que gira i la seva ombra sobre l'eix horitzontal"></svg>
+              <svg id="fiGr" viewBox="0 0 320 200" role="img" aria-label="Gràfica de la posició x en funció del temps"></svg>
+            </div>
+            <div class="fiout" id="fiOut" aria-live="polite"></div>
+          </div>
+        </div>
+        <p class="try"><b>Prova:</b> posa x₀ = A/2 i canvia el sentit del moviment: φ passa de +π/3 a −π/3 i la corba comença baixant o pujant. Després passa a «sinus» sense tocar res més: φ augmenta π/2, però és el mateix moviment. Mira també què passa a x₀ = +A: amb cosinus φ = 0, amb sinus φ = π/2.</p>
+        <details class="more"><summary>Tres casos per practicar (forma cosinus)</summary>
+          <p><b>a)</b> A = 0,10 m i x₀ = +0,05 m cap a la dreta: cos φ = 1/2 → ±π/3; v₀ &gt; 0 → <span class="res">φ = −π/3</span>.</p>
+          <p><b>b)</b> El mateix amb sinus: sin φ = 1/2 → arcsin = π/6; v₀ &gt; 0 → <span class="res">φ = π/6</span> (= −π/3 + π/2).</p>
+          <p><b>c)</b> x₀ = −A/2 cap a la dreta: cos φ = −1/2 → ±2π/3; v₀ &gt; 0 → <span class="res">φ = −2π/3</span> (≡ 4π/3).</p>
+        </details>
+        <details class="more"><summary>De la fase a la posició: y = 5·sin(2πt + π/2) m</summary>
+          <p>A = 5 m, ω = 2π rad/s, φ = π/2, T = 1 s, f = 1 Hz. Posició inicial: y(0) = 5·sin(π/2) = <span class="res">5 m</span> (l'extrem positiu; v(0) = A·ω·cos(π/2) = 0). A t = 3,5 s: y = 5·sin(7π + π/2) = 5·sin(15π/2) = <span class="res">−5 m</span> (calculadora en radians).</p>
+        </details>
+      </section>
     <article class="panel ex" id="exemple" style="break-inside:avoid">
       <div class="eh"><span class="num">Exemple resolt</span></div>
       <p>Una massa de 0,10 kg unida a una molla de constant k = 40 N/m es separa 6,0 cm de l'equilibri i s'amolla. Escriu l'equació x(t) i calcula la velocitat màxima, l'acceleració màxima i l'energia mecànica.</p>
@@ -1658,6 +1720,146 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 </div>
 
 <script>
+/* Simulador de la fase inicial φ */
+(function () {
+  const $ = id => document.getElementById(id);
+  const NS = 'http://www.w3.org/2000/svg';
+  let A = 5, xr = 0.5, dir = -1, conv = 'cos', playing = false, raf = 0, last = 0, tAnim = 0;
+  const norm = a => { const t = 2 * Math.PI; a = a % t; if (a <= -Math.PI) a += t; if (a > Math.PI) a -= t; return a; };
+  const gcd = (a, b) => b ? gcd(b, a % b) : a;
+  function frac(a) {
+    if (Math.abs(a) < 1e-9) return '0';
+    for (const d of [1, 2, 3, 4, 6, 8, 12]) {
+      const k = Math.round(a / Math.PI * d);
+      if (Math.abs(a - k * Math.PI / d) < 1e-6) {
+        const g = gcd(Math.abs(k), d), n = Math.abs(k) / g, den = d / g;
+        return (k < 0 ? '−' : '') + (n === 1 ? 'π' : n + 'π') + (den === 1 ? '' : '/' + den);
+      }
+    }
+    return a.toFixed(2).replace('.', ',');
+  }
+  const f2 = x => x.toFixed(2).replace('.', ',').replace('-', '−');
+  const deg = a => Math.round(a * 180 / Math.PI) + '°';
+  const clamp = c => Math.max(-1, Math.min(1, c));
+
+  function solve() {
+    const x0 = xr * A, ext = Math.abs(xr) > 0.9999, steps = [];
+    let phi;
+    if (conv === 'cos') {
+      const al = Math.acos(clamp(xr));
+      steps.push('t = 0: x₀ = A·cos φ → cos φ = ' + f2(x0) + ' / ' + f2(A) + ' = <b>' + f2(xr) + '</b>');
+      if (ext) { phi = xr > 0 ? 0 : Math.PI; steps.push('És un extrem (v₀ = 0): només hi ha un angle, φ = ' + frac(phi)); }
+      else {
+        steps.push('arccos(' + f2(xr) + ') = <b>' + frac(al) + '</b> (' + deg(al) + '), així que els candidats són +' + frac(al) + ' i −' + frac(al));
+        if (dir > 0) { phi = -al; steps.push('v₀ &gt; 0 → sin φ &lt; 0 → φ = −' + frac(al)); }
+        else { phi = al; steps.push('v₀ &lt; 0 → sin φ &gt; 0 → φ = +' + frac(al)); }
+      }
+    } else {
+      const as = Math.asin(clamp(xr));
+      steps.push('t = 0: x₀ = A·sin φ → sin φ = ' + f2(x0) + ' / ' + f2(A) + ' = <b>' + f2(xr) + '</b>');
+      if (ext) { phi = xr > 0 ? Math.PI / 2 : -Math.PI / 2; steps.push('És un extrem (v₀ = 0 → cos φ = 0): φ = ' + frac(phi)); }
+      else {
+        steps.push('arcsin(' + f2(xr) + ') = <b>' + frac(as) + '</b> (' + deg(as) + '); l\'altre candidat és π − ' + frac(as) + ' = ' + frac(norm(Math.PI - as)));
+        if (dir > 0) { phi = as; steps.push('v₀ &gt; 0 → cos φ &gt; 0 → φ = ' + frac(phi)); }
+        else { phi = norm(Math.PI - as); steps.push('v₀ &lt; 0 → cos φ &lt; 0 → φ = π − ' + frac(as) + ' = ' + frac(phi)); }
+      }
+    }
+    return { x0, ext, steps, phi: norm(phi) };
+  }
+  const theta = phi => conv === 'cos' ? phi : phi - Math.PI / 2; // angle del vector respecte de +x
+  function el(n, a, t) { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (t != null) e.textContent = t; return e; }
+  const V = v => 'var(' + v + ')';
+
+  function drawPhasor(s, off) {
+    const svg = $('fiPh'); svg.innerHTML = '';
+    const cx = 100, cy = 100, r = 70, th0 = theta(s.phi), th = th0 + off;
+    svg.appendChild(el('circle', { cx, cy, r, fill: 'none', stroke: V('--line'), 'stroke-width': 1.5 }));
+    svg.appendChild(el('line', { x1: 15, y1: cy, x2: 185, y2: cy, stroke: V('--muted') }));
+    svg.appendChild(el('line', { x1: cx, y1: 20, x2: cx, y2: 180, stroke: V('--line'), 'stroke-dasharray': '3 3' }));
+    svg.appendChild(el('text', { x: 186, y: cy - 5, 'text-anchor': 'end' }, 'x'));
+    if (!off && Math.abs(th0) > 0.02) {
+      const ra = 24, ex = cx + ra * Math.cos(th0), ey = cy - ra * Math.sin(th0);
+      svg.appendChild(el('path', { d: 'M' + (cx + ra) + ' ' + cy + ' A' + ra + ' ' + ra + ' 0 ' + (Math.abs(th0) > Math.PI ? 1 : 0) + ' ' + (th0 > 0 ? 0 : 1) + ' ' + ex + ' ' + ey, fill: 'none', stroke: V('--ink'), 'stroke-width': 2 }));
+      svg.appendChild(el('text', { x: cx + 40 * Math.cos(th0 / 2), y: cy - 40 * Math.sin(th0 / 2) + 4, 'text-anchor': 'middle', style: 'fill:var(--ink);font-size:13px' }, 'φ'));
+    }
+    const px = cx + r * Math.cos(th), py = cy - r * Math.sin(th);
+    svg.appendChild(el('line', { x1: cx, y1: cy, x2: px, y2: py, stroke: V('--y'), 'stroke-width': 2.5 }));
+    svg.appendChild(el('circle', { cx: px, cy: py, r: 5, fill: V('--y') }));
+    svg.appendChild(el('line', { x1: px, y1: py, x2: px, y2: cy, stroke: V('--muted'), 'stroke-dasharray': '4 3' }));
+    svg.appendChild(el('circle', { cx: px, cy: cy, r: 5, fill: V('--x') }));
+    const vs = off ? -Math.sign(Math.sin(th)) : (s.ext ? 0 : dir);
+    if (vs) {
+      const ax = px + vs * 26;
+      svg.appendChild(el('line', { x1: px + vs * 8, y1: cy + 14, x2: ax, y2: cy + 14, stroke: V('--x'), 'stroke-width': 2.5 }));
+      svg.appendChild(el('path', { d: 'M' + ax + ' ' + (cy + 14) + ' l' + (-vs * 7) + ' -4 l0 8 z', fill: V('--x') }));
+    }
+  }
+  function drawGraph(s, tm) {
+    const svg = $('fiGr'); svg.innerHTML = '';
+    const L = 34, R = 310, T = 14, B = 176, cy = (T + B) / 2, h = (B - T) / 2 - 8, th0 = theta(s.phi);
+    svg.appendChild(el('line', { x1: L, y1: cy, x2: R, y2: cy, stroke: V('--muted') }));
+    svg.appendChild(el('line', { x1: L, y1: T, x2: L, y2: B, stroke: V('--muted') }));
+    svg.appendChild(el('text', { x: R, y: cy - 5, 'text-anchor': 'end' }, 't'));
+    svg.appendChild(el('text', { x: L + 4, y: T + 8 }, 'x'));
+    for (let k = 1; k <= 2; k++) {
+      const xk = L + (R - L) * k / 2;
+      svg.appendChild(el('line', { x1: xk, y1: cy - 3, x2: xk, y2: cy + 3, stroke: V('--muted') }));
+      svg.appendChild(el('text', { x: xk, y: cy + 16, 'text-anchor': 'middle' }, k + 'T'));
+    }
+    svg.appendChild(el('text', { x: L - 4, y: cy - h + 4, 'text-anchor': 'end' }, 'A'));
+    svg.appendChild(el('text', { x: L - 4, y: cy + h + 4, 'text-anchor': 'end' }, '−A'));
+    const pts = [];
+    for (let i = 0; i <= 200; i++) { const t = 2 * i / 200; pts.push((L + (R - L) * t / 2).toFixed(1) + ',' + (cy - h * Math.cos(2 * Math.PI * t + th0)).toFixed(1)); }
+    svg.appendChild(el('polyline', { points: pts.join(' '), fill: 'none', stroke: V('--x'), 'stroke-width': 2.2 }));
+    const y0 = cy - h * Math.cos(th0);
+    svg.appendChild(el('line', { x1: L, y1: y0, x2: L + 40, y2: y0, stroke: V('--y'), 'stroke-dasharray': '3 3' }));
+    svg.appendChild(el('circle', { cx: L, cy: y0, r: 5, fill: V('--y') }));
+    svg.appendChild(el('text', { x: L + 46, y: y0 + 4, style: 'fill:var(--y)' }, 'x₀'));
+    if (tm != null) {
+      const xm = L + (R - L) * tm / 2;
+      svg.appendChild(el('line', { x1: xm, y1: T, x2: xm, y2: B, stroke: V('--line') }));
+      svg.appendChild(el('circle', { cx: xm, cy: cy - h * Math.cos(2 * Math.PI * tm + th0), r: 4, fill: V('--x') }));
+    }
+  }
+  function render() {
+    const s = solve();
+    $('fiXv').textContent = f2(s.x0);
+    $('fiDirNote').hidden = !s.ext;
+    $('fiDir').querySelectorAll('button').forEach(b => { b.disabled = s.ext; b.setAttribute('aria-pressed', String(!s.ext && +b.dataset.d === dir)); });
+    $('fiConv').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.c === conv)));
+    drawPhasor(s, playing ? tAnim * 2 * Math.PI : 0);
+    drawGraph(s, playing ? tAnim : null);
+    const body = Math.abs(s.phi) < 1e-9 ? 'ωt' : 'ωt ' + (s.phi < 0 ? '−' : '+') + ' ' + frac(Math.abs(s.phi));
+    const chk = A * (conv === 'cos' ? Math.cos(s.phi) : Math.sin(s.phi));
+    $('fiOut').innerHTML = '<ol>' + s.steps.map(x => '<li>' + x + '</li>').join('') + '</ol>' +
+      '<div class="big"><span class="res">φ = ' + frac(s.phi) + ' rad</span> (' + deg(s.phi) + ')</div>' +
+      '<div class="keyf">x(t) = ' + f2(A).replace(/,00$/, '') + '·' + conv + '(' + body + ')</div>' +
+      '<p class="note">Comprovació: x(0) = ' + f2(chk) + ' m ✓. Qualsevol φ + 2π·n també serveix.</p>';
+  }
+  function tick(ts) {
+    if (!playing) return;
+    if (!last) last = ts;
+    tAnim = (tAnim + (ts - last) / 4000) % 2; last = ts; render(); raf = requestAnimationFrame(tick);
+  }
+  function setPlay(on) {
+    playing = on; last = 0; tAnim = 0;
+    $('fiPlay').textContent = on ? 'Atura' : 'Reprodueix';
+    $('fiPlay').setAttribute('aria-pressed', String(on));
+    cancelAnimationFrame(raf);
+    if (on) raf = requestAnimationFrame(tick); else render();
+  }
+  $('fiA').addEventListener('input', e => { const v = parseFloat(e.target.value); if (v > 0) { A = v; render(); } });
+  $('fiX').addEventListener('input', e => { xr = e.target.value / 100; render(); });
+  $('fiDir').addEventListener('click', e => { const b = e.target.closest('button'); if (b && !b.disabled) { dir = +b.dataset.d; render(); } });
+  $('fiConv').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { conv = b.dataset.c; render(); } });
+  document.querySelectorAll('.fipre button').forEach(b => b.addEventListener('click', () => {
+    xr = +b.dataset.x; dir = +b.dataset.d; $('fiX').value = xr * 100; render();
+  }));
+  $('fiPlay').addEventListener('click', () => setPlay(!playing));
+  render();
+})();
+</script>
+<script>
 (() => {
 const $ = id => document.getElementById(id);
 const PI = Math.PI, DEG = PI / 180;
@@ -2368,7 +2570,7 @@ document.querySelectorAll('svg.en').forEach(svg => {
   const SECS = [
     { id: 'teoria', t: 'Teoria', items: () => [...document.querySelectorAll('#teoria .tblock')].map(b => ({ id: b.id, t: txt(b.querySelector('.bn')) + ' · ' + txt(b.querySelector('h3')) })) },
     { id: 'demos', t: 'Demos', items: () => [...document.querySelectorAll('#demos .demo')].map(d => ({ id: d.id, t: txt(d.querySelector('.hd h3')).replace(/:.*$/, '') })) },
-    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'exemple', t: 'Exemple resolt' }] },
+    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'fase-demo', t: 'Simulador de φ' }, { id: 'exemple', t: 'Exemple resolt' }] },
     { id: 'exercicis', t: 'Exercicis', groups: true }
   ];
   let cur = null, links = [], pinned = null;
