@@ -158,7 +158,7 @@ def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
                for k, v in NIVELLS.items()]
     h = ['<div class="exgroup" id="pau">',
          '<h3><span class="stars">PAU</span>Problemes de les PAU</h3>',
-         f'<p class="lead">{len(probs)} problemes de les PAU de Catalunya, ordenats de més fàcil a més difícil. '
+         f'<p class="lead">{len(probs)} {"problema" if len(probs) == 1 else "problemes"} de les PAU de Catalunya{"" if len(probs) == 1 else ", ordenats de més fàcil a més difícil"}. '
          'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció. '
          'Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d\'acord amb '
          'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>',

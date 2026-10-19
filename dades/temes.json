@@ -18,7 +18,17 @@
             "b4": "Molla vertical i pèndol"
           }
         },
-        "ones": { "nom": "Ones", "pagina": null },
+        "ones": {
+          "nom": "Ones",
+          "pagina": "temes/ones/index.html",
+          "seccio": "exercicis",
+          "blocs": {
+            "b1": "Què és una ona",
+            "b2": "Equació de l'ona harmònica",
+            "b3": "Energia i intensitat",
+            "b4": "Fenòmens ondulatoris"
+          }
+        },
         "so": { "nom": "So", "pagina": null }
       }
     },
