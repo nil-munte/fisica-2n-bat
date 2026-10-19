@@ -506,7 +506,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           </ul>
         </section>
       </div>
-      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: ona harmònica</button></div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Mira-ho animat a la demo 1: transversal i longitudinal</button><button class="godemo" data-demo="1">Prova-ho a la demo 2: ona harmònica</button></div>
     </article>
 
     <!-- BLOC 2 -->
@@ -554,7 +554,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <div class="keyf">y(0, 0) = A·sin φ<sub>0</sub></div>
         </section>
       </div>
-      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: canvia λ i f i mira com canvia v</button></div>
+      <div class="bfoot"><button class="godemo" data-demo="1">Prova-ho a la demo 2: canvia λ i f i mira com canvia v</button></div>
     </article>
 
     <!-- BLOC 3 -->
@@ -651,7 +651,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           </details>
         </section>
       </div>
-      <div class="bfoot"><button class="godemo" data-demo="1">Prova-ho a la demo 2: interferència de dues fonts</button></div>
+      <div class="bfoot"><button class="godemo" data-demo="2">Prova-ho a la demo 3: interferència de dues fonts</button></div>
     </article>
 
     <!-- BLOC 5 -->
@@ -722,7 +722,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           <p><b>Exemple:</b> una corda de 60 cm vibra amb 4 nodes comptant els extrems. Té 3 fusos, per tant n = 3 i λ<sub>3</sub> = 2·0,60/3 = 0,40 m. Si v = 120 m/s, f<sub>3</sub> = 120/0,40 = 300 Hz i el fonamental és f<sub>1</sub> = 100 Hz.</p>
         </section>
       </div>
-      <div class="bfoot"><button class="godemo" data-demo="2">Prova-ho a la demo 3: cordes i tubs</button></div>
+      <div class="bfoot"><button class="godemo" data-demo="3">Prova-ho a la demo 4: cordes i tubs</button></div>
     </article>
   </section>
 
@@ -732,7 +732,61 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
     <!-- DEMO 1 -->
     <div class="demo" id="demo1">
-      <div class="hd"><h3>1 · Ona harmònica: la corda i un punt</h3><p class="note">A dalt, la corda en cada instant (y en funció de x). A sota, el moviment dels punts P i Q (y en funció de t). L'ona avança, però cada punt només puja i baixa.</p></div>
+      <div class="hd"><h3>1 · Ona transversal i ona longitudinal</h3><p class="note">Totes dues ones tenen la mateixa amplitud, la mateixa longitud d'ona i la mateixa freqüència, i viatgen cap a la dreta. A dalt, cada partícula oscil·la <b>perpendicularment</b> a la propagació; a sota, <b>en la mateixa direcció</b>, i es formen compressions (C) i dilatacions (D). L'ona avança, però cada partícula es queda oscil·lant al voltant del seu lloc.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c0" aria-label="Ona transversal (partícules que oscil·len amunt i avall) i ona longitudinal (partícules que oscil·len endavant i endarrere, amb compressions i dilatacions)"></canvas></div>
+          <div class="bar">
+            <button class="primary" id="d0play">Pausa</button>
+            <button id="d0reset">Reinicia</button>
+            <div class="scrub"><input type="range" id="d0scrub" min="0" max="1" step="0.001" value="0" aria-label="Instant de temps"><output id="d0tout">t = 0,00 s</output></div>
+          </div>
+          <div class="panel readout">
+            <div><span>λ</span><b id="d0rl"></b></div>
+            <div><span>T</span><b id="d0rT"></b></div>
+            <div><span class="tf">v = λ·f</span><b id="d0rv" class="tf"></b></div>
+            <div><span class="tx">despl. transversal</span><b id="d0ry" class="tx"></b></div>
+            <div><span class="ty">despl. longitudinal</span><b id="d0rs" class="ty"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 1">
+          <div class="group">
+            <h4>Ona</h4>
+            <div class="param"><label for="d0A">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="d0An" min="0.05" max="0.3" step="0.01" aria-label="A en metres">m</div><input type="range" id="d0A" min="0.05" max="0.3" step="0.01"></div>
+            <div class="param"><label for="d0l">Long. d'ona <i class="v">λ</i></label><div class="pin"><input type="number" id="d0ln" min="1" max="4" step="0.1" aria-label="λ en metres">m</div><input type="range" id="d0l" min="1" max="4" step="0.1"></div>
+            <div class="param"><label for="d0f">Freqüència <i class="v">f</i></label><div class="pin"><input type="number" id="d0fn" min="0.1" max="1" step="0.05" aria-label="f en hertz">Hz</div><input type="range" id="d0f" min="0.1" max="1" step="0.05"></div>
+          </div>
+          <div class="group">
+            <h4>Partícula marcada</h4>
+            <div class="param"><label for="d0p">Posició d'equilibri <i class="v">x</i></label><div class="pin"><input type="number" id="d0pn" min="0.5" max="5.5" step="0.1" aria-label="posició de la partícula marcada en metres">m</div><input type="range" id="d0p" min="0.5" max="5.5" step="0.1"></div>
+            <label class="chk"><input type="checkbox" id="d0arr" checked> <span>Fletxes de propagació <span class="swatch" style="background:var(--f)"></span> i d'oscil·lació <span class="swatch" style="background:var(--x)"></span></span></label>
+            <label class="chk"><input type="checkbox" id="d0cd" checked> <span>Marca les compressions i dilatacions</span></label>
+          </div>
+          <div class="group">
+            <h4>Velocitat de l'animació</h4>
+            <div class="seg s3" id="d0seg"><button data-v="1">1×</button><button data-v="0.5">½×</button><button data-v="0.2">⅕×</button></div>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Què les diferencia</h3>
+          <div class="f"><div><b>Transversal:</b> oscil·lació ⟂ propagació (corda, llum)</div><div><b>Longitudinal:</b> oscil·lació ∥ propagació (so, molla)</div></div>
+          <p class="note" style="margin:0">En totes dues, λ és la distància entre dos punts que es mouen igual: dues crestes, o dues compressions.</p>
+        </section>
+        <section class="panel eq b">
+          <h3>En l'instant actual</h3>
+          <div class="now tx" id="d0n1"></div><div class="now ty" id="d0n2"></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> posa la velocitat a ⅕× i segueix la partícula marcada: a dalt només puja i baixa, a sota només va endavant i endarrere, i cap de les dues no avança amb l'ona. Mesura λ entre dues crestes (a dalt) i entre dues compressions (a sota): és la mateixa. Duplica la freqüència: l'ona va el doble de ràpid perquè aquí λ i f són independents.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 2 -->
+    <div class="demo" id="demo2">
+      <div class="hd"><h3>2 · Ona harmònica: la corda i un punt</h3><p class="note">A dalt, la corda en cada instant (y en funció de x). A sota, el moviment dels punts P i Q (y en funció de t). L'ona avança, però cada punt només puja i baixa.</p></div>
       <div class="main">
         <div class="stagecol">
           <div class="panel cvs scene"><canvas id="c1s" aria-label="Corda per on es propaga una ona harmònica, amb dos punts marcats"></canvas></div>
@@ -752,7 +806,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           </div>
         </div>
         <div class="side">
-        <aside class="panel controls" aria-label="Paràmetres de la demo 1">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 2">
           <div class="group">
             <h4>Ona</h4>
             <div class="param"><label for="d1A">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="d1An" min="0.02" max="0.2" step="0.01" aria-label="A en metres">m</div><input type="range" id="d1A" min="0.02" max="0.2" step="0.01"></div>
@@ -785,9 +839,9 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
       </div>
     </div>
 
-    <!-- DEMO 2 -->
-    <div class="demo" id="demo2">
-      <div class="hd"><h3>2 · Interferència de dues fonts</h3><p class="note">Dos altaveus S<sub>1</sub> i S<sub>2</sub> fan el mateix so (v = 340 m/s). Arrossega el punt P: la diferència de camins Δr = |r<sub>1</sub> − r<sub>2</sub>| decideix si el so hi és fort o fluix. L'animació va alentida.</p></div>
+    <!-- DEMO 3 -->
+    <div class="demo" id="demo3">
+      <div class="hd"><h3>3 · Interferència de dues fonts</h3><p class="note">Dos altaveus S<sub>1</sub> i S<sub>2</sub> fan el mateix so (v = 340 m/s). Arrossega el punt P: la diferència de camins Δr = |r<sub>1</sub> − r<sub>2</sub>| decideix si el so hi és fort o fluix. L'animació va alentida.</p></div>
       <div class="main">
         <div class="stagecol">
           <div class="panel cvs pend"><canvas id="c2f" aria-label="Camp d'ones de dues fonts, amb el punt P i les distàncies a cada font" style="touch-action:none;cursor:crosshair"></canvas></div>
@@ -806,7 +860,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           </div>
         </div>
         <div class="side">
-        <aside class="panel controls" aria-label="Paràmetres de la demo 2">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 3">
           <div class="group">
             <h4>Fonts</h4>
             <div class="param"><label for="d2l">Long. d'ona <i class="v">λ</i></label><div class="pin"><input type="number" id="d2ln" min="0.5" max="3" step="0.05" aria-label="λ en metres">m</div><input type="range" id="d2l" min="0.5" max="3" step="0.05"></div>
@@ -835,9 +889,9 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
       </div>
     </div>
 
-    <!-- DEMO 3 -->
-    <div class="demo" id="demo3">
-      <div class="hd"><h3>3 · Ones estacionàries: cordes i tubs</h3><p class="note">Tria el medi i l'harmònic. N són nodes i V ventres. En els tubs, la corba representa com es mou l'aire al llarg del tub (desplaçament), no la forma del tub.</p></div>
+    <!-- DEMO 4 -->
+    <div class="demo" id="demo4">
+      <div class="hd"><h3>4 · Ones estacionàries: cordes i tubs</h3><p class="note">Tria el medi i l'harmònic. N són nodes i V ventres. En els tubs, la corba representa com es mou l'aire al llarg del tub (desplaçament), no la forma del tub.</p></div>
       <div class="main">
         <div class="stagecol">
           <div class="panel cvs pend"><canvas id="c3" aria-label="Ona estacionària en una corda o en un tub, amb els nodes i els ventres"></canvas></div>
@@ -855,7 +909,7 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
           </div>
         </div>
         <div class="side">
-        <aside class="panel controls" aria-label="Paràmetres de la demo 3">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 4">
           <div class="group">
             <h4>Medi</h4>
             <div class="seg s3" id="d3med"><button data-k="0">corda</button><button data-k="1">tub obert</button><button data-k="2">tub tancat</button></div>
@@ -1092,7 +1146,129 @@ function scrubGuard(id) {
 const setScrub = (id, t) => { if (!dragging.has(id)) $(id).value = t; };
 
 /* =====================================================
-   DEMO 1 · ona harmònica
+   DEMO 1 · ona transversal i ona longitudinal
+   ===================================================== */
+const D0 = { A: 0.2, l: 2, f: 0.5, p: 2.5, t: 0, play: true, speed: 1, arr: true, cd: true };
+const XMAX0 = 6, FILES0 = 5;
+const d0 = () => ({ w: 2 * PI * D0.f, k: 2 * PI / D0.l, T: 1 / D0.f, v: D0.l * D0.f });
+const s0 = (x, t) => { const { w, k } = d0(); return D0.A * Math.sin(w * t - k * x); };
+const wrap0 = () => { const T = 1 / D0.f; D0.t = ((D0.t % (2 * T)) + 2 * T) % (2 * T); };
+bind('d0A', 'd0An', D0, 'A', 0.05, 0.3);
+bind('d0l', 'd0ln', D0, 'l', 1, 4);
+bind('d0f', 'd0fn', D0, 'f', 0.1, 1, wrap0);
+bind('d0p', 'd0pn', D0, 'p', 0.5, 5.5);
+segBind('d0seg', 'v', D0, 'speed');
+$('d0arr').onchange = e => { D0.arr = e.target.checked; };
+$('d0cd').onchange = e => { D0.cd = e.target.checked; };
+$('d0play').onclick = () => { D0.play = !D0.play; };
+$('d0reset').onclick = () => { D0.t = 0; };
+$('d0scrub').addEventListener('input', e => { D0.t = +e.target.value; D0.play = false; });
+scrubGuard('d0scrub');
+function step0(dt) { if (!D0.play) return; D0.t += dt * D0.speed; const T = 1 / D0.f; if (D0.t >= 2 * T) D0.t -= 2 * T; }
+
+function n0(W) { return W < 520 ? 25 : 41; }   // menys partícules en pantalles estretes
+function drawTL0() {
+  const { c, W, H } = fit($('c0'));
+  c.fillStyle = TK.surface; c.fillRect(0, 0, W, H);
+  const estret = W < 520, ml = 22, mr = 22, sx = (W - ml - mr) / XMAX0;   // mateixa escala en x i en y (m → px)
+  const X = x => ml + x * sx;
+  const t = D0.t, { w, k } = d0(), N = n0(W), dx = XMAX0 / (N - 1);
+  const marc = Math.round(D0.p / dx), xm = marc * dx;
+  const rT = Math.max(4, D0.A * sx);                       // amplitud a la pantalla
+  // ---- disposició vertical: [títol][λ][ona transversal] | [títol][C/D][files][oscil·lació][escala]
+  const top1 = 8, yT = top1 + 22 + Math.max(18, rT) + 4 + rT;
+  const hT = yT + rT + 16;
+  const top2 = hT + 8, yCD = top2 + 30, escH = 16, oscH = D0.arr ? 22 : 6;
+  const gapL = Math.max(8, Math.min(20, (H - escH - oscH - yCD - 12) / (FILES0 - 1)));
+  const yL = j => yCD + 10 + j * gapL;
+  const yFi = yL(FILES0 - 1);
+  // si sobra alçada, el conjunt de les dues ones es centra verticalment (l'escala queda a baix)
+  const oy = Math.max(0, (H - escH - 8 - (yFi + oscH)) / 2);
+  c.save(); c.translate(0, oy);
+  // títols i propagació, a la mateixa línia
+  c.font = '600 13px ' + FB; c.fillStyle = TK.ink; c.textAlign = 'left'; c.textBaseline = 'top';
+  c.fillText('Transversal', ml, top1); c.fillText('Longitudinal', ml, top2);
+  c.strokeStyle = TK.line; c.lineWidth = 1; c.beginPath(); c.moveTo(ml, hT + .5); c.lineTo(W - mr, hT + .5); c.stroke();
+  if (D0.arr) {
+    [top1 + 8, top2 + 8].forEach(yy => {
+      const ax = W - mr - 46;
+      arrow(c, ax, yy, ax + 42, yy, TK.f, 2.2);
+      if (!estret) { c.fillStyle = TK.f; c.font = '12px ' + FB; c.textAlign = 'right'; c.textBaseline = 'middle'; c.fillText('propagació', ax - 6, yy); }
+    });
+  }
+  // ---- transversal
+  c.strokeStyle = TK.grid2; c.beginPath(); c.moveTo(ml, yT + .5); c.lineTo(W - mr, yT + .5); c.stroke();
+  c.strokeStyle = TK.muted; c.globalAlpha = 0.45; c.lineWidth = 1.2; curve(c, x => s0(x, t), 0, XMAX0, X, y => yT - y * sx, 300); c.stroke(); c.globalAlpha = 1;
+  const rp = estret ? 3.2 : 4;
+  for (let i = 0; i < N; i++) {
+    const x = i * dx, m = i === marc;
+    c.fillStyle = m ? TK.x : TK.ball; c.beginPath(); c.arc(X(x), yT - s0(x, t) * sx, m ? 6.5 : rp, 0, 7); c.fill();
+  }
+  // λ entre dues crestes
+  const xc = ((((w * t - PI / 2) / k) % D0.l) + D0.l) % D0.l;
+  if (xc + D0.l <= XMAX0) {
+    const yy = yT - rT - 12;
+    arrow(c, X(xc) + 2, yy, X(xc + D0.l) - 2, yy, TK.muted, 1.1); arrow(c, X(xc + D0.l) - 2, yy, X(xc) + 2, yy, TK.muted, 1.1);
+    c.fillStyle = TK.ink; c.font = 'italic 500 14px ' + FB; c.textAlign = 'center'; c.textBaseline = 'bottom'; c.fillText('λ', X(xc + D0.l / 2), yy - 2);
+  }
+  // ---- longitudinal: compressions (fase ω·t − k·x = 0) i dilatacions (= π)
+  if (D0.cd) {
+    c.font = '600 12px ' + FB; c.textAlign = 'center'; c.textBaseline = 'bottom';
+    for (let n = -3; n <= 8; n++) {
+      [[0, 'C', TK.y], [PI, 'D', TK.muted]].forEach(([ph, lab, col]) => {
+        const x = (w * t - ph) / k + n * D0.l;
+        if (x < 0.05 || x > XMAX0 - 0.05) return;
+        if (lab === 'C') { c.fillStyle = col; c.globalAlpha = 0.13; c.fillRect(X(x) - sx * D0.l * 0.12, yL(0) - 8, sx * D0.l * 0.24, yFi - yL(0) + 16); c.globalAlpha = 1; }
+        c.fillStyle = col; c.fillText(lab, X(x), yCD);
+      });
+    }
+  }
+  const rl = estret ? 2.8 : 3.6;
+  for (let j = 0; j < FILES0; j++) {
+    for (let i = 0; i < N; i++) {
+      const x = i * dx, m = i === marc && j === (FILES0 - 1) / 2;
+      c.fillStyle = m ? TK.y : TK.ball; c.beginPath(); c.arc(X(x + s0(x, t)), yL(j), m ? 6 : rl, 0, 7); c.fill();
+    }
+  }
+  // posició d'equilibri de les partícules marcades
+  c.strokeStyle = TK.muted; c.lineWidth = 1; c.save(); c.setLineDash([2, 3]);
+  c.beginPath(); c.moveTo(X(xm) + .5, yT - rT - 4); c.lineTo(X(xm) + .5, yT + rT + 4);
+  c.moveTo(X(xm) + .5, yL(0) - 8); c.lineTo(X(xm) + .5, yFi + 8); c.stroke(); c.restore();
+  // fletxes d'oscil·lació
+  if (D0.arr) {
+    const xa = X(xm) + 12;
+    arrow(c, xa, yT - rT, xa, yT + rT, TK.x, 1.4); arrow(c, xa, yT + rT, xa, yT - rT, TK.x, 1.4);
+    const yo = yFi + 14;
+    arrow(c, X(xm - D0.A), yo, X(xm + D0.A), yo, TK.x, 1.4); arrow(c, X(xm + D0.A), yo, X(xm - D0.A), yo, TK.x, 1.4);
+    if (!estret) {
+      c.fillStyle = TK.x; c.font = '11px ' + FB; c.textBaseline = 'middle';
+      c.textAlign = 'left'; c.fillText('oscil·lació', xa + 6, yT);
+      c.fillText('oscil·lació', X(xm + D0.A) + 6, yo);
+    }
+  }
+  c.restore();
+  // escala horitzontal
+  c.font = '10.5px ' + FM; c.fillStyle = TK.muted; c.textAlign = 'center'; c.textBaseline = 'bottom';
+  for (let x = 0; x < XMAX0; x++) c.fillText(x, X(x), H - 3);
+  c.textAlign = 'right'; c.fillText('6 m', W - 4, H - 3);
+}
+
+let key0 = '';
+function texts0() {
+  const { T, v } = d0(), t = D0.t, dx = XMAX0 / (n0($('c0').getBoundingClientRect().width) - 1), xm = Math.round(D0.p / dx) * dx, s = s0(xm, t);
+  const key = [D0.A, D0.l, D0.f].join('|');
+  if (key !== key0) { key0 = key; $('d0scrub').max = (2 * T).toFixed(3); }
+  $('d0rl').textContent = fmt(D0.l) + ' m'; $('d0rT').textContent = fmt(T) + ' s'; $('d0rv').textContent = fmt(v) + ' m/s';
+  $('d0ry').textContent = fmt(s, 3) + ' m'; $('d0rs').textContent = fmt(s, 3) + ' m';
+  $('d0tout').textContent = 't = ' + fmt(t) + ' s'; setScrub('d0scrub', t);
+  $('d0n1').textContent = 'Transversal: la partícula de x = ' + fmt(xm, 1) + ' m és a ' + fmt(s, 3) + ' m de l\'equilibri, en vertical';
+  $('d0n2').textContent = 'Longitudinal: la partícula de x = ' + fmt(xm, 1) + ' m és a ' + fmt(s, 3) + ' m de l\'equilibri, en horitzontal';
+  $('d0play').textContent = D0.play ? 'Pausa' : 'Continua';
+}
+register($('c0'), step0, () => { drawTL0(); texts0(); });
+
+/* =====================================================
+   DEMO 2 · ona harmònica
    ===================================================== */
 const D1 = { A: 0.10, l: 2, f: 0.5, s: 1, p: 1.5, q: 0.5, t: 0, play: true, speed: 1 };
 const XMAX1 = 6;
@@ -1206,7 +1382,7 @@ function texts1() {
 register($('c1s'), step1, () => { drawScene1(); plot1(); texts1(); });
 
 /* =====================================================
-   DEMO 2 · interferència de dues fonts
+   DEMO 3 · interferència de dues fonts
    ===================================================== */
 const D2 = { l: 1.5, d: 3, ph: 0, x: 6, y: 1.2, m: 0, lines: true, t: 0, play: true };
 const VSO = 340, FVIS = 0.6, YH = 5;
@@ -1332,7 +1508,7 @@ function texts2() {
 register($('c2f'), step2, () => { drawField2(); plot2(); texts2(); });
 
 /* =====================================================
-   DEMO 3 · ones estacionàries
+   DEMO 4 · ones estacionàries
    ===================================================== */
 const D3 = { k: 0, n: 1, L: 0.65, v: 143, comp: false, t: 0, play: true };
 const MED3 = [

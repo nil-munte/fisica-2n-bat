@@ -239,6 +239,9 @@ input[type=checkbox]{accent-color:var(--ink);width:16px;height:16px;margin:0}
 i.v{font-family:var(--f-body)}
 
 /* simulador de la fase inicial */
+.demo.demo-lliure{height:auto!important;min-height:0!important}
+.tsub h5.mini{font-family:var(--f-display);font-size:14px;font-weight:600;margin:0;color:var(--muted)}
+.bfoot{display:flex;flex-wrap:wrap;gap:8px}
 .fidemo{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:16px;align-items:start}
 @media (max-width:760px){.fidemo{grid-template-columns:minmax(0,1fr)}}
 .fictl{display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -523,8 +526,44 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
             </div>
           </div>
         </section>
+        <section class="tsub wide2" id="fase">
+          <h4>La fase inicial φ</h4>
+          <div class="pair">
+            <div class="stack">
+              <p>φ diu on és el cos, i cap on va, en t = 0. Posant t = 0 a x(t):</p>
+        <div class="keyf">x₀ = A·cos φ</div>
+        <p><b>Cas habitual:</b> el cos s'amolla en repòs des d'un extrem. Aleshores x₀ = +A dona <span class="res">φ = 0</span> i x₀ = −A dona <span class="res">φ = π</span>.</p>
+        <p><b>Cas general:</b></p>
+        <ol class="tight">
+          <li>Aïlla el cosinus: <b>cos φ = x₀/A</b>. Això dóna dos angles, +φ i −φ.<b>*</b></li>
+          <li>Comprova-ho amb la gràfica de x(t): ha de començar a x₀ i anar cap al costat correcte.</li>
+        </ol>
+        <p class="note"><b>*</b> Només caldrà en alguns problemes: per triar entre +φ i −φ, si <b>v &gt; 0</b> en t = 0, φ és <b>negatiu</b>; si <b>v &lt; 0</b>, φ és <b>positiu</b>.</p>
+        <p><b>Exemple:</b> x₀ = A/2 i v &lt; 0. cos φ = 1/2 → φ = ±π/3. Com que v &lt; 0, φ és positiu → <span class="res">φ = π/3</span>.</p>
+        <p><b>Amb sinus</b> (x = A·sin(ωt + φ)): sin φ = x₀/A i v₀ = A·ω·cos φ. Si v₀ &gt; 0, φ = arcsin(x₀/A); si v₀ &lt; 0, φ = π − arcsin(x₀/A). Les dues formes es relacionen així: <b>φ<sub>sin</sub> = φ<sub>cos</sub> + π/2</b>. Pots veure-ho a la <a href="#demo4">demo 4</a>.</p>
+            </div>
+            <div class="stack">
+              <h5 class="mini">Casos habituals (forma cosinus)</h5>
+              <table class="t">
+          <tr><th>Situació en t = 0</th><th>φ</th></tr>
+          <tr><td>x = +A (en repòs)</td><td class="n">0</td></tr>
+          <tr><td>x = −A (en repòs)</td><td class="n">π</td></tr>
+          <tr><td>x = 0, v &gt; 0</td><td class="n">−π/2 (≡ 3π/2)</td></tr>
+          <tr><td>x = 0, v &lt; 0</td><td class="n">π/2</td></tr>
+        </table>
+              <details class="more"><summary>Tres casos per practicar (forma cosinus)</summary>
+          <p><b>a)</b> A = 0,10 m i x₀ = +0,05 m cap a la dreta: cos φ = 1/2 → ±π/3; v₀ &gt; 0 → <span class="res">φ = −π/3</span>.</p>
+          <p><b>b)</b> El mateix amb sinus: sin φ = 1/2 → arcsin = π/6; v₀ &gt; 0 → <span class="res">φ = π/6</span> (= −π/3 + π/2).</p>
+          <p><b>c)</b> x₀ = −A/2 cap a la dreta: cos φ = −1/2 → ±2π/3; v₀ &gt; 0 → <span class="res">φ = −2π/3</span> (≡ 4π/3).</p>
+        </details>
+              <details class="more"><summary>De la fase a la posició: y = 5·sin(2πt + π/2) m</summary>
+          <p>A = 5 m, ω = 2π rad/s, φ = π/2, T = 1 s, f = 1 Hz. Posició inicial: y(0) = 5·sin(π/2) = <span class="res">5 m</span> (l'extrem positiu; v(0) = A·ω·cos(π/2) = 0). A t = 3,5 s: y = 5·sin(7π + π/2) = 5·sin(15π/2) = <span class="res">−5 m</span> (calculadora en radians).</p>
+        </details>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: oscil·lador massa–molla</button></div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: oscil·lador massa–molla</button><button class="godemo" data-demo="3">Troba la fase a la demo 4: el vector que gira</button></div>
     </article>
 
     <!-- BLOC 2 -->
@@ -810,62 +849,11 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ===================== MÈTODE ===================== -->
-  <section class="blk" id="metode">
-    <h2>Com atacar un problema de MHS</h2>
-    <div class="steps">
-      <div class="panel step"><b>Dades en SI</b><span>cm → m, g → kg. Anota què et donen i què et demanen.</span></div>
-      <div class="panel step"><b>Troba ω</b><span>√(k/m), √(g/L) o 2π/T segons el sistema.</span></div>
-      <div class="panel step"><b>Troba A i φ</b><span>A és el desplaçament inicial si s'amolla en repòs. φ, amb les condicions inicials (mira com, a sota).</span></div>
-      <div class="panel step"><b>Escriu x, v, a</b><span>Substitueix els valors numèrics abans de calcular res més.</span></div>
-      <div class="panel step"><b>Respon i comprova</b><span>Unitats, signes i límits: |v| ≤ A·ω, |a| ≤ A·ω², E<sub>m</sub> = ½·m·v<sub>màx</sub>².</span></div>
-    </div>
-    <div class="lower">
-      <section class="panel eq a" id="fase">
-        <h3>Com trobar la fase inicial φ</h3>
-        <p>φ diu on és el cos, i cap on va, en t = 0. Posant t = 0 a x(t):</p>
-        <div class="keyf">x₀ = A·cos φ</div>
-        <p><b>Cas habitual:</b> el cos s'amolla en repòs des d'un extrem. Aleshores x₀ = +A dona <span class="res">φ = 0</span> i x₀ = −A dona <span class="res">φ = π</span>.</p>
-        <p><b>Cas general:</b></p>
-        <ol class="tight">
-          <li>Aïlla el cosinus: <b>cos φ = x₀/A</b>. Això dóna dos angles, +φ i −φ.<b>*</b></li>
-          <li>Comprova-ho amb la gràfica de x(t): ha de començar a x₀ i anar cap al costat correcte.</li>
-        </ol>
-        <p class="note"><b>*</b> Només caldrà en alguns problemes: per triar entre +φ i −φ, si <b>v &gt; 0</b> en t = 0, φ és <b>negatiu</b>; si <b>v &lt; 0</b>, φ és <b>positiu</b>.</p>
-        <p><b>Exemple:</b> x₀ = A/2 i v &lt; 0. cos φ = 1/2 → φ = ±π/3. Com que v &lt; 0, φ és positiu → <span class="res">φ = π/3</span>.</p>
-        <p><b>Amb sinus</b> (x = A·sin(ωt + φ)): sin φ = x₀/A i v₀ = A·ω·cos φ. Si v₀ &gt; 0, φ = arcsin(x₀/A); si v₀ &lt; 0, φ = π − arcsin(x₀/A). Les dues formes es relacionen així: <b>φ<sub>sin</sub> = φ<sub>cos</sub> + π/2</b>. Pots veure-ho al <a href="#fase-demo">simulador</a>.</p>
-      </section>
-      <div class="stackcol">
-      <section class="panel eq a">
-        <h3>Casos habituals de φ</h3>
-        <table class="t">
-          <tr><th>Situació en t = 0</th><th>φ</th></tr>
-          <tr><td>x = +A (en repòs)</td><td class="n">0</td></tr>
-          <tr><td>x = −A (en repòs)</td><td class="n">π</td></tr>
-          <tr><td>x = 0, v &gt; 0</td><td class="n">−π/2 (≡ 3π/2)</td></tr>
-          <tr><td>x = 0, v &lt; 0</td><td class="n">π/2</td></tr>
-        </table>
-      </section>
-      <section class="panel eq b warn" id="errades" style="border-top-color:var(--y)">
-        <h3>Errades típiques</h3>
-        <ul class="tight">
-          <li>Calculadora en <b>graus</b> quan l'argument del cosinus és en radians.</li>
-          <li>Posar cm en lloc de m, o g en lloc de kg, dins de k i m.</li>
-          <li>Confondre la pulsació ω (rad/s) amb la freqüència f (Hz).</li>
-          <li>Oblidar que si el cos s'amolla en repòs, l'amplitud és el desplaçament inicial.</li>
-          <li>Triar el signe de φ sense mirar el signe de v.</li>
-          <li>Quedar-se amb l'angle de la calculadora: arccos només dona un dels dos candidats (0…π) i arcsin també (−π/2…π/2).</li>
-          <li>Dir φ = 0 amb sinus quan x₀ = +A: amb sinus és φ = π/2.</li>
-        </ul>
-      </section>
-      </div>
-    </div>
-      <section class="panel eq a" id="fase-demo">
-        <h3>Simulador: com surt la fase inicial</h3>
-        <p>La posició sola no n'hi ha prou: +φ i −φ donen la mateixa x₀, però el cos va cap a costats oposats. Imagina un vector que gira amb angle <b>ωt + φ</b>: la posició x és la seva <b>ombra</b> sobre l'eix horitzontal (punt blau) i φ és l'angle a t = 0. Mou x₀, tria cap on va el cos i mira què passa.</p>
-        <div class="fidemo">
+    <!-- DEMO 4 -->
+    <div class="demo demo-lliure" id="demo4">
+      <div class="hd"><h3>4 · Fase inicial: el vector que gira</h3><p class="note">La posició sola no n'hi ha prou: +φ i −φ donen la mateixa x₀, però el cos va cap a costats oposats. Imagina un vector que gira amb angle <b>ωt + φ</b>: la posició x és la seva <b>ombra</b> sobre l'eix horitzontal (punt blau) i φ és l'angle a t = 0. Mou x₀, tria cap on va el cos i mira què passa.</p></div>
+      <div class="fidemo">
           <div class="fictl">
             <div class="param"><label for="fiA">Amplitud <i class="v">A</i></label><div class="pin"><input type="number" id="fiA" min="0.5" max="20" step="0.5" value="5">m</div></div>
             <div class="param"><label for="fiX">Posició inicial <i class="v">x</i><sub>0</sub></label><div class="pin"><span class="val" id="fiXv"></span>m</div><input type="range" id="fiX" min="-100" max="100" step="1" value="50"></div>
@@ -892,16 +880,34 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
             <div class="fiout" id="fiOut" aria-live="polite"></div>
           </div>
         </div>
-        <p class="try"><b>Prova:</b> posa x₀ = A/2 i canvia el sentit del moviment: φ passa de +π/3 a −π/3 i la corba comença baixant o pujant. Després passa a «sinus» sense tocar res més: φ augmenta π/2, però és el mateix moviment. Mira també què passa a x₀ = +A: amb cosinus φ = 0, amb sinus φ = π/2.</p>
-        <details class="more"><summary>Tres casos per practicar (forma cosinus)</summary>
-          <p><b>a)</b> A = 0,10 m i x₀ = +0,05 m cap a la dreta: cos φ = 1/2 → ±π/3; v₀ &gt; 0 → <span class="res">φ = −π/3</span>.</p>
-          <p><b>b)</b> El mateix amb sinus: sin φ = 1/2 → arcsin = π/6; v₀ &gt; 0 → <span class="res">φ = π/6</span> (= −π/3 + π/2).</p>
-          <p><b>c)</b> x₀ = −A/2 cap a la dreta: cos φ = −1/2 → ±2π/3; v₀ &gt; 0 → <span class="res">φ = −2π/3</span> (≡ 4π/3).</p>
-        </details>
-        <details class="more"><summary>De la fase a la posició: y = 5·sin(2πt + π/2) m</summary>
-          <p>A = 5 m, ω = 2π rad/s, φ = π/2, T = 1 s, f = 1 Hz. Posició inicial: y(0) = 5·sin(π/2) = <span class="res">5 m</span> (l'extrem positiu; v(0) = A·ω·cos(π/2) = 0). A t = 3,5 s: y = 5·sin(7π + π/2) = 5·sin(15π/2) = <span class="res">−5 m</span> (calculadora en radians).</p>
-        </details>
+      <p class="try"><b>Prova:</b> posa x₀ = A/2 i canvia el sentit del moviment: φ passa de +π/3 a −π/3 i la corba comença baixant o pujant. Després passa a «sinus» sense tocar res més: φ augmenta π/2, però és el mateix moviment. Mira també què passa a x₀ = +A: amb cosinus φ = 0, amb sinus φ = π/2.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MÈTODE ===================== -->
+  <section class="blk" id="metode">
+    <h2>Com atacar un problema de MHS</h2>
+    <div class="steps">
+      <div class="panel step"><b>Dades en SI</b><span>cm → m, g → kg. Anota què et donen i què et demanen.</span></div>
+      <div class="panel step"><b>Troba ω</b><span>√(k/m), √(g/L) o 2π/T segons el sistema.</span></div>
+      <div class="panel step"><b>Troba A i φ</b><span>A és el desplaçament inicial si s'amolla en repòs. φ, amb les condicions inicials: vegeu <a href="#fase">la fase inicial</a> a la teoria i la <a href="#demo4">demo 4</a>.</span></div>
+      <div class="panel step"><b>Escriu x, v, a</b><span>Substitueix els valors numèrics abans de calcular res més.</span></div>
+      <div class="panel step"><b>Respon i comprova</b><span>Unitats, signes i límits: |v| ≤ A·ω, |a| ≤ A·ω², E<sub>m</sub> = ½·m·v<sub>màx</sub>².</span></div>
+    </div>
+    <div class="lower">
+      <section class="panel eq b warn" id="errades" style="border-top-color:var(--y)">
+        <h3>Errades típiques</h3>
+        <ul class="tight">
+          <li>Calculadora en <b>graus</b> quan l'argument del cosinus és en radians.</li>
+          <li>Posar cm en lloc de m, o g en lloc de kg, dins de k i m.</li>
+          <li>Confondre la pulsació ω (rad/s) amb la freqüència f (Hz).</li>
+          <li>Oblidar que si el cos s'amolla en repòs, l'amplitud és el desplaçament inicial.</li>
+          <li>Triar el signe de φ sense mirar el signe de v.</li>
+          <li>Quedar-se amb l'angle de la calculadora: arccos només dona un dels dos candidats (0…π) i arcsin també (−π/2…π/2).</li>
+          <li>Dir φ = 0 amb sinus quan x₀ = +A: amb sinus és φ = π/2.</li>
+        </ul>
       </section>
+    </div>
     <article class="panel ex" id="exemple" style="break-inside:avoid">
       <div class="eh"><span class="num">Exemple resolt</span></div>
       <p>Una massa de 0,10 kg unida a una molla de constant k = 40 N/m es separa 6,0 cm de l'equilibri i s'amolla. Escriu l'equació x(t) i calcula la velocitat màxima, l'acceleració màxima i l'energia mecànica.</p>
@@ -1824,7 +1830,7 @@ document.querySelectorAll('svg.en').forEach(svg => {
   const SECS = [
     { id: 'teoria', t: 'Teoria', items: () => [...document.querySelectorAll('#teoria .tblock')].map(b => ({ id: b.id, t: txt(b.querySelector('.bn')) + ' · ' + txt(b.querySelector('h3')) })) },
     { id: 'demos', t: 'Demos', items: () => [...document.querySelectorAll('#demos .demo')].map(d => ({ id: d.id, t: txt(d.querySelector('.hd h3')).replace(/:.*$/, '') })) },
-    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'fase', t: 'Fase inicial φ' }, { id: 'fase-demo', t: 'Simulador de φ' }, { id: 'exemple', t: 'Exemple resolt' }] },
+    { id: 'metode', t: 'Com atacar un problema', items: () => [{ id: 'metode', t: 'Passos' }, { id: 'errades', t: 'Errades típiques' }, { id: 'exemple', t: 'Exemple resolt' }] },
     { id: 'exercicis', t: 'Exercicis', groups: true }
   ];
   let cur = null, links = [], pinned = null;
