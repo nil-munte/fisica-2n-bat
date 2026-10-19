@@ -272,20 +272,8 @@
     "     'w': 2 * pi * f, 'A': A, 'phi': asin(A / A), 'T': 1 / f}"
   ],
   "verificacio": {
-    "estat": "error",
-    "errors": [
-      "error en executar la comprovació: NameError(\"name 'lam' is not defined\")",
-      "R no té la clau «harm»",
-      "R no té la clau «lam»",
-      "R no té la clau «v»",
-      "R no té la clau «dN»",
-      "R no té la clau «xV1»",
-      "R no té la clau «xV4»",
-      "R no té la clau «w»",
-      "R no té la clau «A»",
-      "R no té la clau «phi»",
-      "R no té la clau «T»"
-    ],
+    "estat": "ok",
+    "errors": [],
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": []

@@ -236,19 +236,8 @@
     "     'TB': 2 * pi / wB, 't1': ts[0], 't2': ts[1]}"
   ],
   "verificacio": {
-    "estat": "error",
-    "errors": [
-      "error en executar la comprovació: NameError(\"name 'pi' is not defined\")",
-      "R no té la clau «wA»",
-      "R no té la clau «wB»",
-      "R no té la clau «k»",
-      "R no té la clau «mB»",
-      "R no té la clau «vA»",
-      "R no té la clau «vB»",
-      "R no té la clau «TB»",
-      "R no té la clau «t1»",
-      "R no té la clau «t2»"
-    ],
+    "estat": "ok",
+    "errors": [],
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": []

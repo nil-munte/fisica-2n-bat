@@ -291,21 +291,8 @@
     "     'I1': I1, 'I2': I2, 'I': I, 'beta': 10 * log10(I / I0)}"
   ],
   "verificacio": {
-    "estat": "error",
-    "errors": [
-      "error en executar la comprovació: NameError(\"name 'v' is not defined\")",
-      "R no té la clau «dA»",
-      "R no té la clau «fA3»",
-      "R no té la clau «fA4»",
-      "R no té la clau «dB»",
-      "R no té la clau «fB2»",
-      "R no té la clau «fB3»",
-      "R no té la clau «fB4»",
-      "R no té la clau «I1»",
-      "R no té la clau «I2»",
-      "R no té la clau «I»",
-      "R no té la clau «beta»"
-    ],
+    "estat": "ok",
+    "errors": [],
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": []

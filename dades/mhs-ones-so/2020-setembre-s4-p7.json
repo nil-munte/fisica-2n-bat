@@ -259,23 +259,8 @@
     "     'fA2': v / lam2[1], 'fB2': v / lam2[2], 'fC2': v / lam2[3], 'fD2': v / lam2[4]}"
   ],
   "verificacio": {
-    "estat": "error",
-    "errors": [
-      "error en executar la comprovació: NameError(\"name 'L' is not defined\")",
-      "R no té la clau «lA»",
-      "R no té la clau «lB»",
-      "R no té la clau «lC»",
-      "R no té la clau «lD»",
-      "R no té la clau «v»",
-      "R no té la clau «lA2»",
-      "R no té la clau «lB2»",
-      "R no té la clau «lC2»",
-      "R no té la clau «lD2»",
-      "R no té la clau «fA2»",
-      "R no té la clau «fB2»",
-      "R no té la clau «fC2»",
-      "R no té la clau «fD2»"
-    ],
+    "estat": "ok",
+    "errors": [],
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": []

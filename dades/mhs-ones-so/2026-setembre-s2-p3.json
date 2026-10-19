@@ -275,20 +275,8 @@
     "     'a1': sol[1][0], 'b1': sol[1][1], 'a2': sol[2][1]}"
   ],
   "verificacio": {
-    "estat": "error",
-    "errors": [
-      "error en executar la comprovació: NameError(\"name 'D' is not defined\")",
-      "R no té la clau «rati»",
-      "R no té la clau «r1»",
-      "R no té la clau «r2»",
-      "R no té la clau «h»",
-      "R no té la clau «lam»",
-      "R no té la clau «a0»",
-      "R no té la clau «b0»",
-      "R no té la clau «a1»",
-      "R no té la clau «b1»",
-      "R no té la clau «a2»"
-    ],
+    "estat": "ok",
+    "errors": [],
     "diferencies_pauta": [],
     "avisos": [],
     "notes_manuals": []

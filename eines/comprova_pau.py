@@ -109,8 +109,10 @@ def valida(p, nom, temes):
 
 
 def calcula(p):
-    ns = {}
-    exec('\n'.join(p['comprovacio']), {'__builtins__': __builtins__, 'math': math}, ns)
+    # un sol espai de noms: amb globals i locals separats, les comprensions i les lambdas
+    # no veuen les variables definides abans (p. ex. {n: 2 * L / n for n in ...})
+    ns = {'__builtins__': __builtins__, 'math': math}
+    exec('\n'.join(p['comprovacio']), ns)
     if 'R' not in ns:
         raise ValueError('el codi de comprovació no defineix R')
     return ns['R']
