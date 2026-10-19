@@ -17,6 +17,8 @@ subagents, perquè l'usuari les veu.
 - `dist/`, `build/` i `fonts/` no es comiten. No editis mai `dist/`: es regenera sencer a cada construcció.
 - **No comitis mai res generat**: ni HTML amb problemes inserits, ni PDF, ni el sitemap. Si un canvi només es veu a
   `dist/`, el que s'ha de canviar és la font (`src/`, `dades/`, `eines/plantilles/`) o l'eina que el genera.
+- Les imatges per compartir (`img/og-*.png`) també es generen (`eines/imatges_og.py`, text a `dades/imatges_og.json`):
+  no hi posis PNG a mà. Una pàgina nova hi ha de tenir una entrada i declarar-la a `og:image` i `twitter:image`.
 - Les marques `<!-- PAU:inici -->`, `<!-- PAU-ENLLACOS:… -->`, `<!-- EXERCICIS:… -->` i `<!-- examens:… -->` de les
   pàgines de `src/` han de quedar buides: les omple la construcció.
 

@@ -14,7 +14,7 @@ Web: <https://nil-munte.github.io/fisica-2n-bat/>
 
 ## Com està organitzat
 
-El repositori només conté el que s'escriu a mà. Tot el que es pot generar (els blocs de problemes de les PAU, els PDF dels temes, els exàmens separats per sèries, el sitemap) es genera a l'hora de construir el web i no es comita.
+El repositori només conté el que s'escriu a mà. Tot el que es pot generar (els blocs de problemes de les PAU, els PDF dels temes, els exàmens separats per sèries, les imatges per compartir, el sitemap) es genera a l'hora de construir el web i no es comita.
 
 ```
 .
@@ -22,12 +22,12 @@ El repositori només conté el que s'escriu a mà. Tot el que es pot generar (el
 │   ├── index.html              Portada
 │   ├── temes/<tema>/index.html Teoria, demos, mètode i exercicis de cada tema
 │   ├── pau/index.html          Plantilla de la pàgina d'exàmens
-│   ├── img/                    Imatges per compartir (Open Graph)
 │   └── robots.txt
 ├── dades/
 │   ├── temes.json              Mapa tema → pàgina
 │   ├── <tema>/*.json           Un fitxer per problema de les PAU
 │   ├── fonts_oficials.json     Inventari dels PDF oficials de les PAU (origen, mida, SHA-256)
+│   ├── imatges_og.json         Text de les imatges per compartir de cada pàgina
 │   └── README.md               Format dels problemes i normes de contingut
 ├── eines/                      Construcció i eines d'autoria (Python)
 └── .github/workflows/web.yml   Comprova, construeix i publica el web
@@ -89,6 +89,7 @@ python eines/fonts_oficials.py puja        # puja els nous a la release fonts-of
 | `genera_pau.py` | Insereix els problemes de les PAU a les pàgines dels temes |
 | `prerender_exercicis.py` | Escriu a l'HTML els exercicis que crea el JavaScript, per als cercadors |
 | `build_pdfs.py` | PDF d'un tema: formulari, enunciats i enunciats + solucions |
+| `imatges_og.py` | Imatges per compartir (Open Graph) de cada pàgina, amb els recomptes de demos, problemes i exàmens al dia |
 | `fonts_oficials.py` | Còpia dels PDF oficials: inventari, baixada i pujada a la release |
 | `fonts_pau.py` | Text, cerca i imatges de les pàgines dels PDF oficials (per redactar problemes) |
 | `previsualitza_figures.py` | Figures SVG d'un problema com a PNG, en tema clar i fosc |

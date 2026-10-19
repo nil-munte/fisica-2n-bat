@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<!-- Plantilla de les imatges per compartir (1200 × 630). La omple eines/imatges_og.py. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;700&display=block">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{background:#edf1f0;color:#15212a;font-family:"IBM Plex Sans",Arial,sans-serif;position:relative}
+  .barra{position:absolute;left:0;top:0;bottom:0;width:18px;background:#1f5fbf}
+  .text{position:absolute;left:56px;right:56px;top:46px}
+  .ante{font-family:"IBM Plex Mono",monospace;font-size:23px;letter-spacing:.09em;text-transform:uppercase;color:#5a6a73}
+  h1{font-size:76px;font-weight:700;line-height:1.08;letter-spacing:-.012em;margin-top:14px;max-width:1080px}
+  h1.llarg{font-size:62px}
+  .sub{font-size:29px;line-height:1.38;color:#3e4c55;margin-top:22px;max-width:960px}
+  .etiq{position:absolute;left:56px;top:362px;display:flex;flex-wrap:wrap;gap:12px}
+  .etiq span{background:#15212a;color:#fbfcfc;font-size:22px;font-weight:400;border-radius:8px;padding:9px 20px}
+  .dibuix{position:absolute;left:56px;right:56px;bottom:0;height:200px}
+  .dibuix svg{width:100%;height:100%;display:block}
+  .targeta{position:absolute;right:56px;bottom:10px;width:448px;height:190px;background:#fbfcfc;border:1.5px solid #d2dcdf;border-radius:12px;padding:30px 26px;font-family:"IBM Plex Mono",monospace}
+  .targeta .a{color:#1f5fbf;font-size:30px}
+  .targeta .b{color:#5a6a73;font-size:24px;margin-top:16px}
+  .targeta .c{color:#c4461a;font-size:24px;margin-top:10px}
+</style>
+</head>
+<body>
+  <div class="barra"></div>
+  <div class="text">
+    <div class="ante">$antetitol</div>
+    <h1 class="$classe_titol">$titol</h1>
+    <p class="sub">$subtitol</p>
+  </div>
+  <div class="etiq">$etiquetes</div>
+  $dibuix
+</body>
+</html>

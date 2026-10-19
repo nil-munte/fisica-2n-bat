@@ -1,0 +1,37 @@
+{
+  "_doc": "Imatges per compartir (Open Graph) que genera eines/imatges_og.py a dist/img/. A les etiquetes, {demos}, {pau} i {examens} es substitueixen pel recompte de la pàgina construïda. «dibuix»: ona, particules o examens. Cada pàgina ha de declarar la seva imatge a og:image i twitter:image.",
+  "imatges": {
+    "og-index.png": {
+      "pagina": "index.html",
+      "antetitol": "Materials de repàs",
+      "titol": "Física · 2n de Batxillerat",
+      "subtitol": "Teoria orientada a exercicis, demos interactives i problemes de les PAU de Catalunya",
+      "etiquetes": ["Demos interactives", "Exercicis amb solució", "Exàmens de selectivitat"],
+      "dibuix": "ona"
+    },
+    "og-mhs.png": {
+      "pagina": "temes/mhs/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Moviment harmònic simple",
+      "subtitol": "Equacions, forces, energia, molla vertical i pèndol, amb demos interactives i exercicis graduats",
+      "etiquetes": ["Teoria", "{demos} demos", "{pau} problemes de les PAU", "Formulari PDF"],
+      "dibuix": "ona"
+    },
+    "og-ones.png": {
+      "pagina": "temes/ones/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Ones",
+      "subtitol": "Equació de l’ona, so i decibels, interferències i ones estacionàries en cordes i tubs",
+      "etiquetes": ["Teoria", "{demos} demos", "{pau} problemes de les PAU", "Formulari PDF"],
+      "dibuix": "particules"
+    },
+    "og-pau.png": {
+      "pagina": "pau/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Exàmens de selectivitat",
+      "subtitol": "Tots els exàmens de Física de les PAU de Catalunya, per any, convocatòria i sèrie",
+      "etiquetes": ["{examens} exàmens", "Criteris de correcció oficials", "PDF"],
+      "dibuix": "examens"
+    }
+  }
+}

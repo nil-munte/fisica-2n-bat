@@ -5,7 +5,7 @@
     python eines/build.py --rapid    sense prerenderitzar ni PDF dels temes, per previsualitzar de pressa
     python eines/build.py --net      sense fer servir la memòria cau (ho torna a generar tot)
 
-Memòria cau: els passos lents (exàmens per sèries, exercicis prerenderitzats i PDF de cada tema) desen el
+Memòria cau: els passos lents (exàmens per sèries, exercicis prerenderitzats, PDF de cada tema i imatges) desen el
 resultat a build/memoria/, amb una empremta de totes les seves entrades (fitxers font, dades i l'eina que el
 genera). Si a la construcció següent cap entrada no ha canviat, es reutilitza el resultat en lloc de tornar-lo
 a generar. La CI conserva aquesta carpeta entre execucions.
@@ -18,8 +18,9 @@ Passos:
   5. insereix els problemes de les PAU a les pàgines dels temes (eines/genera_pau.py)
   6. escriu a l'HTML els exercicis que crea el JavaScript, per als cercadors (eines/prerender_exercicis.py)
   7. genera els PDF de cada tema (eines/build_pdfs.py)
-  8. escriu sitemap.xml
-  9. comprova que cap enllaç intern del web sigui trencat (eines/comprova_enllacos.py)
+  8. genera les imatges per compartir de cada pàgina (eines/imatges_og.py, dades a dades/imatges_og.json)
+  9. escriu sitemap.xml
+ 10. comprova que cap enllaç intern del web sigui trencat (eines/comprova_enllacos.py)
 
 Previsualització: python -m http.server -d dist 8765
 """
@@ -151,9 +152,13 @@ def main(rapid: bool) -> None:
         for c, nom in temes:
             amb_memoria(f'pdf-{c}', [WEB / 'temes' / c / 'index.html', EINES / 'build_pdfs.py', EINES / 'requirements.txt', nom],
                         [WEB / 'temes' / c / 'pdf'], lambda c=c, nom=nom: executa('eines/build_pdfs.py', c, nom))
-    pas(8, 'Sitemap')
+        pas(8, 'Imatges per compartir')
+        pagines = [WEB / 'index.html', WEB / 'pau' / 'index.html'] + [WEB / 'temes' / c / 'index.html' for c, _ in temes]
+        amb_memoria('imatges', [DADES / 'imatges_og.json', EINES / 'plantilles' / 'og.html', EINES / 'imatges_og.py', *pagines],
+                    [WEB / 'img'], lambda: executa('eines/imatges_og.py'))
+    pas(9, 'Sitemap')
     sitemap(temes)
-    pas(9, 'Enllaços interns')
+    pas(10, 'Enllaços interns')
     executa('eines/comprova_enllacos.py', *(['--ignora', 'temes/*/pdf/*'] if rapid else []))
     print(f'\n✓ Web construït a {WEB} en {time.time() - t0:.0f} s')
 
