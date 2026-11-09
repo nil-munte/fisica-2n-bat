@@ -76,6 +76,16 @@ def valida(p, nom, temes):
     for s in p['temes_secundaris']:
         if s not in valides:
             err.append(f'tema secundari desconegut: {s} (cal «tema» o «tema/subtema»: {", ".join(sorted(valides))})')
+    if tp in temes:
+        info = temes[tp].get('subtemes', {}).get(p.get('subtema'), temes[tp]) if 'subtemes' in temes[tp] else temes[tp]
+        vocab = info.get('etiquetes', {})
+        if vocab:
+            et = p.get('etiquetes') or []
+            if not et:
+                err.append(f"falten les etiquetes (llista: {', '.join(vocab)})")
+            for e in et:
+                if e not in vocab:
+                    err.append(f"etiqueta desconeguda: {e} (llista: {', '.join(vocab)})")
     if not 1 <= p['dificultat'] <= 10:
         err.append('dificultat ha de ser entre 1 i 10')
     ids = [a['id'] for a in p['enunciat']['apartats']]

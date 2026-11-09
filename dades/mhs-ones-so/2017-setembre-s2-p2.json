@@ -14,6 +14,10 @@
   "blocs": [
     "b1"
   ],
+  "etiquetes": [
+    "equacio",
+    "mhs"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Cal identificar el tipus d'ona, interpretar la longitud d'ona i el període en una situació quotidiana i escriure un MHS amb fase inicial −π/2.",
   "titol": "L'onada a la graderia d'un estadi",

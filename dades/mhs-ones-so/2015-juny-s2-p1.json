@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal deduir k = m·ω² combinant la segona llei de Newton amb l'acceleració del MHS i aplicar-ho a dues situacions amb la mateixa teranyina.",
   "titol": "Les vibracions que detecta una aranya",

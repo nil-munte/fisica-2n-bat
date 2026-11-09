@@ -13,6 +13,11 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "tubs",
+    "cordes",
+    "intensitat"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal llegir l'espectre, comparar els harmònics possibles d'una corda (tots) i d'un tub tancat per un extrem (només els senars) i, a l'apartat b, sumar les intensitats de cinc fonts i repartir la potència en una semiesfera.",
   "titol": "L'espectre d'un oboè i un quintet de vent",

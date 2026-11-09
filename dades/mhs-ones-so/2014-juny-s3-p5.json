@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "tubs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal plantejar la condició d'ona estacionària en un tub tancat per un extrem, aplicar-la als tres primers modes i, a la inversa, trobar la longitud del tub a partir de la freqüència d'un mode concret.",
   "titol": "Els modes de vibració d’una trompeta",

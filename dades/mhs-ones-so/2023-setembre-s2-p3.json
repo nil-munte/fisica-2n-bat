@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "tubs"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal dibuixar les ones estacionàries d'un tub tancat per l'aigua, identificar quin harmònic és cada ressonància, raonar per què λ no canvia i aplicar-ho al cinquè harmònic i a la velocitat del so, distingint el medi on es propaga l'ona.",
   "titol": "Ressonància en un tub amb un diapasó de 442 Hz",

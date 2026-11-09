@@ -12,6 +12,9 @@
   "blocs": [
     "b3"
   ],
+  "etiquetes": [
+    "intensitat"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa de la definició de nivell d'intensitat sonora sumant intensitats iguals.",
   "titol": "Cinc violins: quants decibels més?",

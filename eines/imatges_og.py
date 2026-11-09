@@ -27,6 +27,9 @@ SORTIDA = WEB / 'img'
 
 def recomptes(pagina: str) -> dict:
     t = (WEB / pagina).read_text(encoding='utf-8')
+    ex = WEB / pagina.replace('index.html', 'exercicis/index.html')   # els problemes d'un tema són a la pàgina d'exercicis
+    if pagina.startswith('temes/') and '/exercicis/' not in pagina and ex.exists():
+        t += ex.read_text(encoding='utf-8')
     examens = re.search(r'(\d+) exàmens', (WEB / 'pau' / 'index.html').read_text(encoding='utf-8'))
     return {
         'demos': len(re.findall(r'<div class="demo[" ]', t)),

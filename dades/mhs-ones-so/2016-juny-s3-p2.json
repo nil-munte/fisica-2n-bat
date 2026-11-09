@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 7,
   "dificultat_motiu": "Relaciona freqüència i massa amb ω = √(k/m) i, sobretot, cal dibuixar dues gràfiques v–t amb escales correctes i interpretar la diferència de fase.",
   "titol": "Dues molles iguals i una gràfica velocitat–temps",

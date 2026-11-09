@@ -20,11 +20,13 @@ El repositori només conté el que s'escriu a mà. Tot el que es pot generar (el
 .
 ├── src/                        El web tal com s'escriu (no conté res generat)
 │   ├── index.html              Portada
-│   ├── temes/<tema>/index.html Teoria, demos, mètode i exercicis de cada tema
+│   ├── temes/<tema>/index.html Teoria, demos i mètode de cada tema
+│   ├── temes/<tema>/exercicis/ Exercicis graduats i problemes de les PAU del tema
+│   ├── temes/<tema>/tema.css, tema.js  Estil i codi comuns a les dues pàgines del tema
 │   ├── pau/index.html          Plantilla de la pàgina d'exàmens
 │   └── robots.txt
 ├── dades/
-│   ├── temes.json              Mapa tema → pàgina
+│   ├── temes.json              Mapa tema → pàgines, i vocabulari d'etiquetes de cada tema
 │   ├── <tema>/*.json           Un fitxer per problema de les PAU
 │   ├── fonts_oficials.json     Inventari dels PDF oficials de les PAU (origen, mida, SHA-256)
 │   ├── imatges_og.json         Text de les imatges per compartir de cada pàgina
@@ -67,7 +69,7 @@ python eines/previsualitza_figures.py dades/<tema>/<id>.json      # figures SVG 
 python eines/comprova_pau.py                                      # estructura, càlculs i notació
 ```
 
-Un tema nou: crea `src/temes/<tema>/index.html` i afegeix-ne la ruta a `dades/temes.json`. La construcció hi posarà els problemes i en farà els PDF.
+Un tema nou: crea `src/temes/<tema>/index.html` (teoria) i `src/temes/<tema>/exercicis/index.html` (exercicis i PAU) i afegeix-ne les rutes i les etiquetes a `dades/temes.json`. La construcció hi posarà els problemes, els afegirà a la secció «Per temes» de la pàgina d'exàmens i en farà els PDF.
 
 ### Afegir PDF oficials
 

@@ -14,6 +14,10 @@
   "blocs": [
     "b1"
   ],
+  "etiquetes": [
+    "mhs",
+    "doppler"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal llegir amplitud i període d'una gràfica, escriure x(t), dibuixar una gràfica nova amb l'escala correcta i raonar qualitativament sobre la reflexió, la refracció i l'efecte Doppler del so.",
   "titol": "Gràfica x-t d'un MHS i el so que genera",

@@ -15,6 +15,10 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "mhs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal identificar l'harmònic comptant nodes i ventres, obtenir λ, la velocitat i les posicions dels nodes i ventres, i després escriure l'equació d'un MHS que comença a l'extrem i dibuixar-ne un període triant l'escala.",
   "titol": "Ones estacionàries amb un raspall de dents elèctric",

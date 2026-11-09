@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal interpretar el pendent d'una gràfica T²–m per obtenir k i després escriure l'equació del moviment amb fase inicial π i avaluar-la en un instant donat.",
   "titol": "Set masses penjades i la gràfica T²–m",

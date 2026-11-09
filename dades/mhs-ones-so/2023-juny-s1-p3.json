@@ -14,6 +14,10 @@
   "blocs": [
     "b1"
   ],
+  "etiquetes": [
+    "equacio",
+    "mhs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Magnituds de l'ona directes, però cal escriure el MHS de la boia amb la fase inicial, derivar-lo per obtenir velocitat i acceleració i representar la velocitat triant l'escala a la quadrícula.",
   "titol": "Onades a la platja i la velocitat d'una boia",

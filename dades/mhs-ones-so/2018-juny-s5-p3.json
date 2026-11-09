@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Combina la llei de Hooke, la deducció de ω = √(k/m) a partir de la segona llei de Newton i la derivació de x(t) per trobar l'acceleració màxima.",
   "titol": "Una esfera a l'extrem d'una vareta elàstica",

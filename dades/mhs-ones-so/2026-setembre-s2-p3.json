@@ -13,6 +13,10 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "intensitat",
+    "interferencies"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal passar de la diferència de decibels a una raó d'intensitats, relacionar-la amb les distàncies (1/r²) i la geometria de l'altura, i plantejar la condició d'interferència destructiva sobre un segment, comprovant quines solucions hi cauen dins.",
   "titol": "Elefants: decibels des dels arbres i punts de silenci",

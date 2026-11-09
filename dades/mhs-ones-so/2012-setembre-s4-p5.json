@@ -12,6 +12,9 @@
   "blocs": [
     "b5"
   ],
+  "etiquetes": [
+    "cordes"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal dibuixar dos harmònics d'una corda fixa pels extrems i situar-ne els nodes i els ventres a partir de L = n·λ/2.",
   "titol": "Harmònics d'una corda de guitarra",

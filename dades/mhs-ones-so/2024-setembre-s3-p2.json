@@ -13,6 +13,10 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "interferencies",
+    "intensitat"
+  ],
   "dificultat": 7,
   "dificultat_motiu": "Cal plantejar les condicions de màxim i de mínim a partir de la diferència de camins, trobar totes les freqüències d'un interval per a cada condició i buscar-ne la comuna; després, sumar intensitats de dues fonts a distàncies diferents i passar a decibels.",
   "titol": "Freqüències que una persona sent i l'altra no",

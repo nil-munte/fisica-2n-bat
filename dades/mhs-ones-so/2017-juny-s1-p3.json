@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal llegir el període i l'amplitud en un gràfic elongació-temps, deduir la fase inicial i escriure l'equació de l'ona; després derivar-la per obtenir la velocitat màxima.",
   "titol": "Del gràfic d'un vibrador a l'equació de l'ona",

@@ -50,6 +50,17 @@ def nom_examen(p: dict, curt=False) -> str:
     return s
 
 
+def rotul(p: dict) -> str:
+    """Rètol destacat del problema: PAU 2014 · Juny · Sèrie 4 · P5 · Opció A (des del 2025, «Exercici 3»)."""
+    q = p['problema']
+    pn = f'Exercici {q[1:]}' if p['any'] >= 2025 and q.upper().startswith('P') else q
+    parts = [f'<b>PAU {p["any"]}</b>', MESOS[p['convocatoria']], f'Sèrie {p["serie"]}', pn]
+    if p.get('opcio'):
+        parts.append(f'Opció {p["opcio"]}')
+    parts += [f'també Sèrie {x["serie"]} {x["problema"]}' for x in p.get('tambe_a', [])]
+    return '<span class="sep">·</span>'.join(f'<span>{x}</span>' for x in parts)
+
+
 def mapa_pagines(temes: dict) -> dict:
     """clau de tema ('gravitatori' o 'mhs-ones-so/mhs') → {'nom', 'pagina', 'seccio', 'blocs'}"""
     m = {}
@@ -98,13 +109,15 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     fe = p['fonts']['enunciat']
     he, propi = enllac_pdf(p, 'enunciat', pagina)
     te = 'Enunciat original (PDF de la sèrie, obert al problema)' if propi else f'Enunciat original (PDF, pàgina {fe["pagina"]})'
-    tambe = ''.join(f" · també Sèrie {t['serie']} {t['problema']}" for t in p.get('tambe_a', []))
-    h = [f'<article class="panel ex pau" id="pau-{p["id"]}" data-nivell="{nv}" data-dificultat="{p["dificultat"]}">',
+    vocab = mapa.get(clau_principal(p, TEMES), {}).get('etiquetes', {})
+    ets = [x for x in p.get('etiquetes', []) if x in vocab]
+    xips = ''.join(f'<span class="pau-et" data-et="{x}">{html.escape(vocab[x])}</span>' for x in ets)
+    h = [f'<article class="panel ex pau" id="pau-{p["id"]}" data-nivell="{nv}" data-dificultat="{p["dificultat"]}" data-etiquetes="{" ".join(ets)}">',
+         f'<div class="pau-cap"><a class="pau-rotul" href="{html.escape(he)}" target="_blank" rel="noopener" title="{te}">{rotul(p)}</a>'
+         + (f'<span class="pau-ets">{xips}</span>' if xips else '') + '</div>',
          f'<div class="eh"><span class="num">{n}.</span><h4 class="ttl">{p["titol"]}</h4>'
          f'<a class="perma" href="#pau-{p["id"]}" aria-label="Enllaç directe a aquest problema" title="Copia l&#39;enllaç d&#39;aquest problema">#</a>'
-         f'<span class="nv" title="Nivell: {nom_nv}">{est}</span>'
-         f'<a class="chip" href="{html.escape(he)}" target="_blank" rel="noopener" '
-         f'title="{te}">{nom_examen(p)}{tambe}</a></div>',
+         f'<span class="nv" title="Nivell: {nom_nv}">{est}</span></div>',
          e.get('intro', '')]
     h += [figura(p, f) for f in e.get('figures', [])]
     h.append('<ol class="pau-parts">')
@@ -117,9 +130,12 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
         h.append(f'<p class="pau-dades">{e["dades_text"]}</p>')
     # teoria relacionada i altres temes (no s'imprimeixen)
     meta = []
-    blocs = mapa.get(clau_principal(p, TEMES), {}).get('blocs', {})
+    info_tema = mapa.get(clau_principal(p, TEMES), {})
+    blocs = info_tema.get('blocs', {})
+    teoria = (os.path.relpath(ROOT / info_tema['teoria'], pagina.parent).replace(os.sep, '/')
+              if info_tema.get('teoria') else '')   # els blocs de teoria poden ser a una altra pàgina
     if p.get('blocs') and blocs:
-        meta.append('Teoria: ' + ', '.join(f'<a href="#{b}">{blocs[b]}</a>' for b in p['blocs'] if b in blocs))
+        meta.append('Teoria: ' + ', '.join(f'<a href="{teoria}#{b}">{blocs[b]}</a>' for b in p['blocs'] if b in blocs))
     sec = [mapa[s]['nom'] if s in mapa else TEMES[s]['nom'] for s in p['temes_secundaris']]
     if sec:
         meta.append('També: ' + ', '.join(sec))
@@ -150,6 +166,15 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
 
 
 def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
+    vocab = mapa.get(clau_principal(probs[0], TEMES), {}).get('etiquetes', {}) if probs else {}
+    n_et = {k: sum(1 for p in probs if k in p.get('etiquetes', [])) for k in vocab}
+    usades = [k for k in vocab if n_et[k]]
+    botons_et = ''
+    if len(usades) > 1:   # amb una sola etiqueta (p. ex. tot MHS) el filtre no aporta res
+        botons_et = ('<div class="pau-filtre pau-filtre-et" role="group" aria-label="Filtra per tema"><span>Tema:</span>'
+                     f'<button type="button" data-et="" aria-pressed="true">Tots<small>{len(probs)}</small></button>'
+                     + ''.join(f'<button type="button" data-et="{k}" aria-pressed="false">{html.escape(vocab[k])}<small>{n_et[k]}</small></button>'
+                               for k in usades) + '</div>')
     compte = {k: sum(1 for p in probs if nivell(p['dificultat']) == k) for k in NIVELLS}
     botons = [f'<button type="button" data-f="0" aria-pressed="true">Tots<small>{len(probs)}</small></button>']
     botons += [f'<button type="button" data-f="{k}" aria-pressed="false" title="{v[1]}">{v[0]}<small>{compte[k]}</small></button>'
@@ -161,7 +186,8 @@ def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
          'Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d\'acord amb '
          'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>',
          '<div class="pau-filtre" role="group" aria-label="Filtra per nivell"><span>Nivell:</span>' + ''.join(botons) + '</div>',
-         '<p class="pau-buit" hidden>No hi ha cap problema d\'aquest nivell.</p>']
+         botons_et,
+         '<p class="pau-buit" hidden>No hi ha cap problema amb aquests filtres.</p>']
     h += [html_problema(p, i + 1, mapa, pagina) for i, p in enumerate(probs)]
     h.append('</div>')
     return '\n'.join(h)
@@ -245,6 +271,27 @@ def main(prova: bool) -> None:
             pagina.write_text(t, encoding='utf-8')
         print(f"{'✓' if canvi else '='} {info['pagina']}: {len(ps)} problemes, {len(enllacos)} enllaços"
               f"{' (sense canvis)' if not canvi else (' (prova, no escrit)' if prova else '')}")
+    # pàgina d'exàmens: els problemes resolts per temes, amb les etiquetes (enllacen a la pàgina filtrada)
+    examens = ROOT / 'pau' / 'index.html'
+    if examens.exists() and '<!-- PAU-TEMES:inici -->' in examens.read_text(encoding='utf-8'):
+        targetes = []
+        for clau, info in mapa.items():
+            ps = per_clau.get(clau, [])
+            if not ps or not info.get('pagina') or not (ROOT / info['pagina']).exists():
+                continue
+            href = os.path.relpath(ROOT / info['pagina'], examens.parent).replace(os.sep, '/').removesuffix('index.html')
+            vocab = info.get('etiquetes', {})
+            n_et = {k: sum(1 for p in ps if k in p.get('etiquetes', [])) for k in vocab}
+            tgs = ''.join(f'<a href="{href}?etiqueta={k}#pau">{html.escape(v)}<small>{n_et[k]}</small></a>'
+                          for k, v in vocab.items() if n_et[k] and len([x for x in n_et.values() if x]) > 1)
+            targetes.append(f'<article class="panel tema-pau"><h3><a href="{href}#pau">{html.escape(info["nom"])}</a>'
+                            f'<small>{len(ps)} {"problema" if len(ps) == 1 else "problemes"}</small></h3>'
+                            + (f'<div class="tgs">{tgs}</div>' if tgs else '') + '</article>')
+        t0 = examens.read_text(encoding='utf-8')
+        t = substitueix(t0, 'PAU-TEMES', '<div class="temes-pau">' + ''.join(targetes) + '</div>', 'per-temes')
+        if t != t0 and not prova:
+            examens.write_text(t, encoding='utf-8')
+            print(f'✓ pau/index.html: {len(targetes)} temes amb problemes resolts')
     # portada: recompte de problemes de cada pàgina
     portada = ROOT / 'index.html'
     if portada.exists():

@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal relacionar el pendent de la gràfica T²–m amb k, escriure l'equació amb la fase inicial i justificar on són màximes la velocitat i l'acceleració.",
   "titol": "Període d'una molla horitzontal: gràfica T²–m",

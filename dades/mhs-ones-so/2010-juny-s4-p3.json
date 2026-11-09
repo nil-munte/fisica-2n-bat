@@ -15,6 +15,10 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio",
+    "mhs"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Lectura directa de la freqüència i la longitud d'ona; l'apartat b és l'equació d'un MHS amb fase inicial i la seva derivada.",
   "titol": "Dues boies que oscil·len igual",

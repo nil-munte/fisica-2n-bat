@@ -14,6 +14,9 @@
     "b2",
     "b4"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Combina la cinemàtica del MHS (període, fase inicial) amb ω = √(k/m) i la condició d'equilibri d'una molla vertical.",
   "titol": "Salt de pont amb corda elàstica",

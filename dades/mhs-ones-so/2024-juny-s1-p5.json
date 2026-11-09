@@ -12,6 +12,9 @@
   "blocs": [
     "b3"
   ],
+  "etiquetes": [
+    "intensitat"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Diversos passos de nivell sonor, intensitat i potència amb ones esfèriques, una distància que cal convertir en altura amb el teorema de Pitàgores i la suma de les intensitats de dues fonts.",
   "titol": "L'altura dels coets de Sant Joan",

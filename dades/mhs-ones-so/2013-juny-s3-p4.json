@@ -14,6 +14,9 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Combina les expressions de les energies per trobar k, m i A amb la determinació de la fase inicial a partir de la posició i la velocitat inicials.",
   "titol": "Molla, massa i fase a partir de les energies inicials",

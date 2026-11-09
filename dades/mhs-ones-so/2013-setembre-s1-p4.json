@@ -14,6 +14,9 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal llegir l'amplitud, el període i la fase en una gràfica x–t i combinar-ho amb k = m·ω² per calcular l'energia mecànica.",
   "titol": "Gràfica elongació–temps d'un cos de 250 g",

@@ -14,6 +14,9 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal linealitzar el període (m proporcional a T²) per treure k del pendent d'una gràfica i després combinar-ho amb l'energia i l'acceleració màxima.",
   "titol": "Gràfica m–T², energia i fregament",

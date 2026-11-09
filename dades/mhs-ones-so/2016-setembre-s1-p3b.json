@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa: λ = v/f, nombre d'ona i equació de l'ona amb fase inicial zero.",
   "titol": "Boies marines: longitud d'ona i equació de l'ona",

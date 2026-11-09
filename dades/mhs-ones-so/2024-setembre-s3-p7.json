@@ -15,6 +15,9 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 7,
   "dificultat_motiu": "Molla vertical amb inici a l'extrem inferior: cal trobar la fase, representar la força durant dos períodes triant l'escala i aplicar la conservació de l'energia en funció de la posició.",
   "titol": "Una massa penjada: força i energia",

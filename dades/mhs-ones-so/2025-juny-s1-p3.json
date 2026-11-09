@@ -12,6 +12,9 @@
   "blocs": [
     "b5"
   ],
+  "etiquetes": [
+    "tubs"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Aplicació de les condicions d'ona estacionària en tubs oberts i tancats per un extrem: freqüències dels harmònics, posicions de nodes i ventres i dibuix de quatre modes.",
   "titol": "Els harmònics d’una flauta travessera",

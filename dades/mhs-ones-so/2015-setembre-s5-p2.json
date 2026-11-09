@@ -13,6 +13,10 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "doppler",
+    "intensitat"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal reconèixer l'efecte Doppler en una gràfica, llegir-hi dues freqüències i interpretar el canvi quan la font ens sobrepassa; després passar de decibels a intensitat i buscar la distància en una taula.",
   "titol": "Efecte Doppler en una gràfica i intensitats en una taula",

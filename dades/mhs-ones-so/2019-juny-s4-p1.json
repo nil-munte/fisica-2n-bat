@@ -12,6 +12,9 @@
   "blocs": [
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Aplica ω = √(k/m) dues vegades amb la mateixa k, però cal adonar-se que amb el virus oscil·la la massa total i treballar amb potències de deu molt grans.",
   "titol": "La massa d'un virus",

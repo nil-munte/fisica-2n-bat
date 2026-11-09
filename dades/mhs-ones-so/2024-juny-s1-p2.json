@@ -15,6 +15,9 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 8,
   "dificultat_motiu": "Cal veure el MHS com la projecció d'un moviment circular, deduir la fase de la condició inicial, relacionar ω amb una molla vertical, derivar v(t) i dibuixar tres energies en funció de la posició amb una escala adequada.",
   "titol": "Les ombres d'un disc que gira i d'una molla",

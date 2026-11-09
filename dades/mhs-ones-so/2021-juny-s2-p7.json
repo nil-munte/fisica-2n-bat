@@ -14,6 +14,10 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "intensitat"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Combina dos dibuixos d'harmònics i el càlcul de v i de la nova freqüència en escurçar la corda amb un problema de nivell d'intensitat (potència i reducció a la meitat).",
   "titol": "Bach al Palau: harmònics d'un violí i nivell sonor",

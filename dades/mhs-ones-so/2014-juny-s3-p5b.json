@@ -12,6 +12,9 @@
   "blocs": [
     "b3"
   ],
+  "etiquetes": [
+    "intensitat"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa de la definició de nivell d'intensitat i de I = P/(4πr²) per a una font puntual, primer per trobar la potència i després la distància on la intensitat baixa fins al llindar.",
   "titol": "Fins on se sent el timbre de l'escola",

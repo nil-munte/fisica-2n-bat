@@ -12,6 +12,9 @@
   "blocs": [
     "b1"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa: freqüència a partir d'un recompte, amplitud com a meitat del recorregut i valors màxims.",
   "titol": "L'agulla d'una màquina de cosir",

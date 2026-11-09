@@ -14,6 +14,10 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "tubs",
+    "intensitat"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Aplicació directa de λ = v/f i del fonamental d'un tub tancat per un extrem (L = λ/4), amb un dibuix senzill, i atenuació del nivell sonor amb la distància per la llei de l'invers del quadrat.",
   "titol": "El volcà Cumbre Vieja com un tub sonor gegant",

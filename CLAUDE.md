@@ -11,7 +11,7 @@ subagents, perquè l'usuari les veu.
 ## Estructura i regles d'or
 
 - `src/` és el web tal com s'escriu. **No hi ha res generat** i mai no s'hi ha d'escriure res generat.
-- `dades/` conté els problemes de les PAU (JSON), `temes.json` (mapa tema → pàgina) i `fonts_oficials.json`
+- `dades/` conté els problemes de les PAU (JSON), `temes.json` (mapa tema → pàgines i vocabulari d'etiquetes) i `fonts_oficials.json`
   (inventari dels PDF oficials).
 - `eines/` conté la construcció i les eines d'autoria. Les rutes surten totes de `eines/rutes.py`.
 - `dist/`, `build/` i `fonts/` no es comiten. No editis mai `dist/`: es regenera sencer a cada construcció.
@@ -63,6 +63,9 @@ Les normes completes són a `dades/README.md`. Les essencials:
 
 ## Temes nous
 
-1. Crea `src/temes/<tema>/index.html` (amb la mateixa estructura que les pàgines existents i les marques buides).
-2. Afegeix la ruta a `dades/temes.json`.
+1. Crea `src/temes/<tema>/index.html` (teoria i demos) i `src/temes/<tema>/exercicis/index.html` (exercicis i PAU,
+   amb les marques buides), amb la mateixa estructura que les existents; l'estil i el JavaScript comuns van a
+   `tema.css` i `tema.js`.
+2. Afegeix a `dades/temes.json` les rutes (`pagina`: exercicis, `teoria`) i el vocabulari d'`etiquetes`. Cada
+   problema n'ha de portar almenys una (ho comprova `comprova_pau.py`).
 3. `python eines/build.py`: hi posarà els problemes que ja hi hagi preparats i en farà els PDF.

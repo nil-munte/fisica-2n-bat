@@ -106,6 +106,12 @@ def pagines_temes() -> list[tuple[str, str]]:
     return out
 
 
+def pagina_exercicis(carpeta: str):
+    """Pàgina d'exercicis del tema al web generat (la de teoria si el tema no en té de pròpia)."""
+    p = WEB / 'temes' / carpeta / 'exercicis' / 'index.html'
+    return p if (SRC / 'temes' / carpeta / 'exercicis' / 'index.html').exists() else WEB / 'temes' / carpeta / 'index.html'
+
+
 def data_git(path) -> str:
     """Data de l'últim commit que va tocar un fitxer font (avui si no n'hi ha cap)."""
     r = subprocess.run(['git', 'log', '-1', '--follow', '--format=%cs', '--', str(path)], cwd=ARREL, capture_output=True, text=True)
@@ -113,7 +119,11 @@ def data_git(path) -> str:
 
 
 def sitemap(temes: list[tuple[str, str]]) -> None:
-    pagines = [('', SRC / 'index.html')] + [(f'temes/{c}/', SRC / 'temes' / c / 'index.html') for c, _ in temes]
+    pagines = [('', SRC / 'index.html')]
+    for c, _ in temes:
+        pagines.append((f'temes/{c}/', SRC / 'temes' / c / 'index.html'))
+        if (SRC / 'temes' / c / 'exercicis' / 'index.html').exists():
+            pagines.append((f'temes/{c}/exercicis/', SRC / 'temes' / c / 'exercicis' / 'index.html'))
     if (SRC / 'pau' / 'index.html').exists():
         pagines.append(('pau/', SRC / 'pau' / 'index.html'))
     files = '\n'.join(f'  <url><loc>{URL_BASE}{u}</loc><lastmod>{data_git(f)}</lastmod></url>' for u, f in pagines)
@@ -145,15 +155,15 @@ def main(rapid: bool) -> None:
     if not rapid:
         pas(6, 'Exercicis prerenderitzats')
         for c, _ in temes:
-            pagina = WEB / 'temes' / c / 'index.html'
+            pagina = pagina_exercicis(c)
             amb_memoria(f'prerender-{c}', [pagina, EINES / 'prerender_exercicis.py'], [pagina],
                         lambda pagina=pagina: executa('eines/prerender_exercicis.py', str(pagina)))
         pas(7, 'PDF dels temes')
         for c, nom in temes:
-            amb_memoria(f'pdf-{c}', [WEB / 'temes' / c / 'index.html', EINES / 'build_pdfs.py', EINES / 'requirements.txt', nom],
+            amb_memoria(f'pdf-{c}', [WEB / 'temes' / c / 'index.html', pagina_exercicis(c), EINES / 'build_pdfs.py', EINES / 'requirements.txt', nom],
                         [WEB / 'temes' / c / 'pdf'], lambda c=c, nom=nom: executa('eines/build_pdfs.py', c, nom))
         pas(8, 'Imatges per compartir')
-        pagines = [WEB / 'index.html', WEB / 'pau' / 'index.html'] + [WEB / 'temes' / c / 'index.html' for c, _ in temes]
+        pagines = [WEB / 'index.html', WEB / 'pau' / 'index.html'] + [WEB / 'temes' / c / 'index.html' for c, _ in temes]             + [pagina_exercicis(c) for c, _ in temes]
         amb_memoria('imatges', [DADES / 'imatges_og.json', EINES / 'plantilles' / 'og.html', EINES / 'imatges_og.py', *pagines],
                     [WEB / 'img'], lambda: executa('eines/imatges_og.py'))
     pas(9, 'Sitemap')

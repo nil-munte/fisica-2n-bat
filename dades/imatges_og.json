@@ -6,7 +6,11 @@
       "antetitol": "Materials de repàs",
       "titol": "Física · 2n de Batxillerat",
       "subtitol": "Teoria orientada a exercicis, demos interactives i problemes de les PAU de Catalunya",
-      "etiquetes": ["Demos interactives", "Exercicis amb solució", "Exàmens de selectivitat"],
+      "etiquetes": [
+        "Demos interactives",
+        "Exercicis amb solució",
+        "Exàmens de selectivitat"
+      ],
       "dibuix": "ona"
     },
     "og-mhs.png": {
@@ -14,7 +18,24 @@
       "antetitol": "Física · 2n de Batxillerat",
       "titol": "Moviment harmònic simple",
       "subtitol": "Equacions, forces, energia, molla vertical i pèndol, amb demos interactives i exercicis graduats",
-      "etiquetes": ["Teoria", "{demos} demos", "{pau} problemes de les PAU", "Formulari PDF"],
+      "etiquetes": [
+        "Teoria",
+        "{demos} demos",
+        "{pau} problemes de les PAU",
+        "Formulari PDF"
+      ],
+      "dibuix": "ona"
+    },
+    "og-mhs-exercicis.png": {
+      "pagina": "temes/mhs/exercicis/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "MHS · Exercicis",
+      "subtitol": "Exercicis graduats amb solució i problemes de selectivitat (PAU) resolts pas a pas, amb la pauta de correcció",
+      "etiquetes": [
+        "{pau} problemes de les PAU",
+        "Exercicis graduats",
+        "PDF enunciats i solucions"
+      ],
       "dibuix": "ona"
     },
     "og-ones.png": {
@@ -22,7 +43,24 @@
       "antetitol": "Física · 2n de Batxillerat",
       "titol": "Ones",
       "subtitol": "Equació de l’ona, so i decibels, interferències i ones estacionàries en cordes i tubs",
-      "etiquetes": ["Teoria", "{demos} demos", "{pau} problemes de les PAU", "Formulari PDF"],
+      "etiquetes": [
+        "Teoria",
+        "{demos} demos",
+        "{pau} problemes de les PAU",
+        "Formulari PDF"
+      ],
+      "dibuix": "particules"
+    },
+    "og-ones-exercicis.png": {
+      "pagina": "temes/ones/exercicis/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Ones · Exercicis",
+      "subtitol": "Exercicis graduats amb solució i problemes de selectivitat (PAU) resolts pas a pas, amb la pauta de correcció",
+      "etiquetes": [
+        "{pau} problemes de les PAU",
+        "Exercicis graduats",
+        "PDF enunciats i solucions"
+      ],
       "dibuix": "particules"
     },
     "og-pau.png": {
@@ -30,7 +68,11 @@
       "antetitol": "Física · 2n de Batxillerat",
       "titol": "Exàmens de selectivitat",
       "subtitol": "Tots els exàmens de Física de les PAU de Catalunya, per any, convocatòria i sèrie",
-      "etiquetes": ["{examens} exàmens", "Criteris de correcció oficials", "PDF"],
+      "etiquetes": [
+        "{examens} exàmens",
+        "Criteris de correcció oficials",
+        "PDF"
+      ],
       "dibuix": "examens"
     }
   }

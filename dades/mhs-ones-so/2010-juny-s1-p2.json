@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Càlcul directe de les magnituds de l'ona, però cal escriure l'equació amb la fase inicial i derivar-la per obtenir la velocitat de vibració d'un punt.",
   "titol": "Punts en fase a 0,40 m en una corda",

@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 7,
   "dificultat_motiu": "Cal llegir amplitud i període d'una gràfica, triar la fase inicial correcta entre dues solucions, derivar la velocitat i dibuixar-la, i interpretar el pendent de v(t) com a acceleració.",
   "titol": "De la gràfica x(t) a la velocitat",

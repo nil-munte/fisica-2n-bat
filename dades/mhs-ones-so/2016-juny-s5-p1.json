@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa: passar rpm a rad/s, amplitud com a meitat del recorregut, fase inicial en un extrem i força màxima amb k = m·ω².",
   "titol": "El pistó d'un motor",

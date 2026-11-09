@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal deduir la fase inicial a partir de dues condicions (elongació nul·la i velocitat positiva), derivar l'equació d'ona dues vegades i avaluar velocitat i acceleració en un punt i un instant concrets.",
   "titol": "L'ona que recorre el cos d'una anguila",

@@ -15,6 +15,10 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs",
+    "equacio"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal interpretar el pendent d'una gràfica Ep–x² per obtenir k, aplicar la conservació de l'energia i escriure l'equació d'una ona a partir del període de l'oscil·lador.",
   "titol": "Energia potencial en funció de x² i l'ona que genera",

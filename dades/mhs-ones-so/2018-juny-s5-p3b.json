@@ -13,6 +13,10 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "intensitat"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal interpretar un espectre (so complex, harmònics) per trobar la freqüència fonamental i passar de nivells en dB a un quocient d'intensitats.",
   "titol": "L'espectre d'un instrument musical",

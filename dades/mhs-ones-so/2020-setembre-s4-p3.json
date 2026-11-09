@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal plantejar ω = √(k/m) per a dues masses amb la mateixa constant i fer-ne el quocient per eliminar k; la resta és aplicació directa.",
   "titol": "Una aranya i un insecte a la teranyina",

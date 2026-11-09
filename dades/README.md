@@ -45,6 +45,7 @@ release `fonts-oficials`). `pau_fisiAAjl` és l'examen de juny, `pau_fisiAAjp` (
 | `tema_principal`, `subtema` | clau de `temes.json` i, si el tema té subtemes, el subtema (`"mhs"`, `"ones"`) |
 | `temes_secundaris` | claus de tema (`"gravitatori"`) o `"tema/subtema"` (`"mhs-ones-so/ones"`) |
 | `blocs` | blocs de teoria de la pàgina principal relacionats (`["b1", "b3"]`) |
+| `etiquetes` | temes del problema, del vocabulari `etiquetes` del (sub)tema a `temes.json` (`["interferencies", "intensitat"]`); serveixen per filtrar a la pàgina d'exercicis i a «Per temes» |
 | `dificultat`, `dificultat_motiu` | de 1 a 10, i per què. 1–3 ★ bàsic · 4–6 ★★ intermedi · 7–10 ★★★ avançat |
 | `titol` | títol curt propi |
 | `fonts` | `enunciat` i `pauta`: `url` (selecat `view.php?p=…` o PDF de universitats.gencat.cat), `pdf` (nom a `fonts/pdf/`), `pagina`; `classificacio` (examenselectivitat) |

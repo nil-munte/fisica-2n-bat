@@ -13,6 +13,10 @@
     "b1",
     "b3"
   ],
+  "etiquetes": [
+    "equacio",
+    "intensitat"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Càlcul directe de longituds d'ona amb λ = v/f i d'un nivell d'intensitat sumant potències i repartint-les sobre una esfera.",
   "titol": "La veu de Freddie Mercury i el públic de Rock in Rio",

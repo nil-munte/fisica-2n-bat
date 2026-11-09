@@ -14,6 +14,10 @@
     "b2",
     "b4"
   ],
+  "etiquetes": [
+    "equacio",
+    "doppler"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal identificar ω i k a l'equació d'una ona electromagnètica, encadenar λ, f, v i l'índex de refracció, i raonar la direcció del camp magnètic.",
   "titol": "El camp elèctric d'un làser dins d'un vidre",

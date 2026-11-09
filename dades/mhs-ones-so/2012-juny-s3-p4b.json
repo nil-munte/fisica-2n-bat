@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Càlcul directe de v, ω i k i de l'equació de l'ona; després cal derivar-la dues vegades i avaluar-la en un punt i un instant.",
   "titol": "Un emissor de 25,0 Hz en una corda",

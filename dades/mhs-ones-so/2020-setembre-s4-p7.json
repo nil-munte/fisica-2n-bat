@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "cordes"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal llegir les freqüències d'un espectre, reconèixer-hi la sèrie harmònica, dibuixar quatre ones estacionàries i deduir com canvien λ i f en escurçar la corda.",
   "titol": "L'espectre d'una corda de 40 cm",

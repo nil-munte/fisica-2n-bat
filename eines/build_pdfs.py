@@ -3,7 +3,8 @@
 Ús (des de l'arrel del repositori):
     python eines/build_pdfs.py mhs "Moviment harmònic simple"
 
-Llegeix temes/<tema>/index.html i escriu els PDF a temes/<tema>/pdf/.
+Llegeix temes/<tema>/index.html (formulari) i temes/<tema>/exercicis/index.html (enunciats i solucions)
+del web generat i escriu els PDF a temes/<tema>/pdf/.
 Requereix: pip install -r eines/requirements.txt && python -m playwright install chromium
 """
 import pathlib, re, sys
@@ -12,7 +13,10 @@ from playwright.sync_api import sync_playwright
 from rutes import WEB as ROOT   # arrel del web generat (dist/)
 
 def main(tema: str, titol: str) -> None:
-    page_path = ROOT / 'temes' / tema / 'index.html'
+    teoria = ROOT / 'temes' / tema / 'index.html'
+    exercicis = ROOT / 'temes' / tema / 'exercicis' / 'index.html'
+    if not exercicis.exists():
+        exercicis = teoria
     out = ROOT / 'temes' / tema / 'pdf'
     out.mkdir(parents=True, exist_ok=True)
     noms = {'f': f'{tema}-formulari.pdf', 'q': f'{tema}-enunciats.pdf', 'qs': f'{tema}-enunciats-solucions.pdf'}
@@ -25,11 +29,15 @@ def main(tema: str, titol: str) -> None:
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': 1200, 'height': 900})
-        pg.goto(page_path.as_uri())
-        pg.evaluate('document.fonts.ready')
-        pg.wait_for_timeout(800)
         pg.emulate_media(media='print', color_scheme='light')
+        actual = None
         for mode, nom in noms.items():
+            pagina = teoria if mode == 'f' else exercicis
+            if pagina != actual:
+                pg.goto(pagina.as_uri())
+                pg.evaluate('document.fonts.ready')
+                pg.wait_for_timeout(800)
+                actual = pagina
             obre = 'true' if mode == 'qs' else 'false'
             pg.evaluate(f"document.body.dataset.print='{mode}';"
                         f"document.querySelectorAll('.ex details.sol').forEach(d=>d.open={obre})")

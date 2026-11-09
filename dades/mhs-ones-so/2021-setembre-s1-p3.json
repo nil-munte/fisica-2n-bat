@@ -14,6 +14,10 @@
     "b4",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "doppler"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa de λ = 2L per al fonamental, un dibuix del segon harmònic i la idea que la freqüència no canvia en passar a l'aire.",
   "titol": "Del violí a l'aire: el so del primer harmònic",

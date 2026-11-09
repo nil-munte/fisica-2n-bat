@@ -13,6 +13,9 @@
     "b2",
     "b5"
   ],
+  "etiquetes": [
+    "cordes"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal identificar el tercer harmònic pel nombre de nodes, calcular λ i v, obtenir la velocitat vertical màxima d'un ventre i situar nodes i ventres a la corda.",
   "titol": "Quatre nodes en una corda de 60 cm",

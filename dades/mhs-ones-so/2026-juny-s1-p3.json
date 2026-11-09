@@ -16,6 +16,11 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs",
+    "equacio",
+    "intensitat"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Combina l'equació d'un MHS amb fase inicial, l'equació d'una ona harmònica (λ, nombre d'ona i fase) i el càlcul del nivell d'intensitat sonora d'una font puntual; cada pas és directe.",
   "titol": "El motor vibrador d’un mòbil",

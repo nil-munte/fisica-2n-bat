@@ -13,6 +13,10 @@
     "b1",
     "b3"
   ],
+  "etiquetes": [
+    "equacio",
+    "intensitat"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa de λ = v/f i de la definició de nivell d'intensitat, amb I = P/(4πR²) per a una font que emet en totes direccions.",
   "titol": "La veu d’una soprano: longituds d’ona i potència",

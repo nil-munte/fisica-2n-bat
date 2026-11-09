@@ -34,15 +34,22 @@
 .ex.pau .pauta .pp{font-family:var(--f-mono);font-weight:500;text-align:right}
 .ex.pau .fontpauta{font-size:13px;color:var(--muted)}
 .ex.pau .fontpauta a{color:var(--ink)}
-#pau[data-filtre="1"] .ex.pau:not([data-nivell="1"]),
-#pau[data-filtre="2"] .ex.pau:not([data-nivell="2"]),
-#pau[data-filtre="3"] .ex.pau:not([data-nivell="3"]){display:none}
+.ex.pau.fora{display:none}
+/* rètol d'any, convocatòria i sèrie, i etiquetes de tema */
+.ex.pau .pau-cap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.ex.pau .pau-rotul{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:5px;font-family:var(--f-mono);font-size:13px;color:var(--ink);text-decoration:none;background:var(--chip);border:1px solid var(--line);border-left:3px solid var(--x);border-radius:6px;padding:3px 10px}
+.ex.pau .pau-rotul b{font-weight:600}
+.ex.pau .pau-rotul .sep{color:var(--muted)}
+.ex.pau .pau-rotul:hover{border-color:var(--muted);border-left-color:var(--x)}
+.ex.pau .pau-ets{display:flex;flex-wrap:wrap;gap:5px}
+.ex.pau .pau-et{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:1px 9px;white-space:nowrap}
+.pau-filtre-et button{font-size:13px}
 .pau-enllacos{display:flex;flex-direction:column;gap:8px}
 .pau-enllacos ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
 .pau-enllacos a{color:var(--ink);text-underline-offset:3px}
 .pau-enllacos small{color:var(--muted)}
 @media print{
-  .pau-filtre,.ex.pau .pau-meta,.ex.pau .pau-report{display:none!important}
+  .pau-filtre,.ex.pau .pau-ets,.ex.pau .pau-meta,.ex.pau .pau-report{display:none!important}
   .ex.pau .pauta{background:#fff;border-color:#999}
   .ex.pau figure svg{max-width:13cm}
 }

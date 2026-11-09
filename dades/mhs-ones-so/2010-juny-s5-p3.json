@@ -13,6 +13,9 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal llegir una gràfica d'energia cinètica, aplicar la conservació de l'energia mecànica i relacionar la constant elàstica amb la massa i la freqüència.",
   "titol": "Energia cinètica d'un oscil·lador en funció de l'elongació",

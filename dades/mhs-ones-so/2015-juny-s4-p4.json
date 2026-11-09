@@ -13,6 +13,9 @@
     "b1",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa: amplitud i període a partir de l'onatge, fase inicial i energia cinètica màxima.",
   "titol": "Una boia que puja i baixa amb les ones",

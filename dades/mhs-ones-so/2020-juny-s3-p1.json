@@ -13,6 +13,9 @@
     "b2",
     "b3"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 6,
   "dificultat_motiu": "Cal llegir la constant elàstica d'una gràfica d'energia, relacionar període i massa i dibuixar les energies cinètica i mecànica sobre la mateixa gràfica.",
   "titol": "La paràbola de l'energia potencial d'una molla",

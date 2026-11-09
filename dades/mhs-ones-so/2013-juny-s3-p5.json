@@ -14,6 +14,10 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "intensitat"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa: λ = 2L per al mode fonamental d'una corda, v = λν i suma de les intensitats de tres fonts iguals expressada en decibels.",
   "titol": "La primera corda de la guitarra i tres guitarres alhora",

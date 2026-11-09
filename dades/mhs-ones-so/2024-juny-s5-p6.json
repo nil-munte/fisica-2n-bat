@@ -13,6 +13,9 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal llegir amplitud i període d'una gràfica (amb el període marcat en múltiples de π), escriure l'equació amb la fase inicial, derivar fins a l'acceleració i fer servir ω = √(k/m) per raonar com canvia la massa.",
   "titol": "La punta vibrant d'un microscopi de forces atòmiques",

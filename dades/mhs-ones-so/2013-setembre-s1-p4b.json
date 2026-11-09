@@ -14,6 +14,10 @@
     "b3",
     "b5"
   ],
+  "etiquetes": [
+    "tubs",
+    "intensitat"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal llegir a l'esquema quantes fraccions de longitud d'ona caben al tub (5λ/4) i veure que, si la intensitat es duplica, el nivell augmenta 10·log 2 dB sense fer servir les dades sobreres.",
   "titol": "El clarinet com un tub tancat per un extrem",

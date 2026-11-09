@@ -12,6 +12,9 @@
   "blocs": [
     "b3"
   ],
+  "etiquetes": [
+    "intensitat"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa: intensitat d'una font puntual, nivell en dB i efecte de doblar la intensitat.",
   "titol": "Un gos que borda, i després dos",

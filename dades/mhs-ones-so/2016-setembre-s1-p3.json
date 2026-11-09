@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "tubs"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa de les ones estacionàries en un tub obert: longitud d'ona fonamental, harmònics i canvi de velocitat del so.",
   "titol": "Un tub d'orgue amb aire i amb heli",

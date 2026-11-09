@@ -13,6 +13,10 @@
     "b2",
     "b5"
   ],
+  "etiquetes": [
+    "cordes",
+    "equacio"
+  ],
   "dificultat": 5,
   "dificultat_motiu": "Cal llegir la figura (nodes, longitud i amplitud), relacionar l'ona estacionària amb les dues ones que la formen i escriure l'equació de l'ona incident.",
   "titol": "Ona estacionària de tres fusos en 12 m",

@@ -13,6 +13,9 @@
     "b3",
     "b4"
   ],
+  "etiquetes": [
+    "mhs"
+  ],
   "dificultat": 7,
   "dificultat_motiu": "Cal linealitzar dades experimentals (T² davant L), dibuixar-les a escala, treure g del pendent i, a més, aplicar la conservació de l'energia al pèndol amb la geometria de l'altura.",
   "titol": "Mesurar g amb un pèndol de taller",

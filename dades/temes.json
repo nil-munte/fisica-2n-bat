@@ -1,5 +1,5 @@
 {
-  "_doc": "Mapa tema → pàgina. 'pagina' és la ruta des de l'arrel del repositori, o null si encara no existeix. Els problemes es desen a dades/<carpeta del tema>/. Si un tema té subtemes, cada subtema té la seva pàgina; el camp 'subtema' de cada problema diu on va. 'blocs' són els blocs de teoria de la pàgina on es pot enllaçar un problema.",
+  "_doc": "Mapa tema → pàgina. 'pagina' és la pàgina on van els problemes (la d'exercicis del tema), des de l'arrel del web (src/), o null si encara no existeix; 'teoria' és la pàgina de teoria del tema. Els problemes es desen a dades/<carpeta del tema>/. Si un tema té subtemes, cada subtema té la seva pàgina; el camp 'subtema' de cada problema diu on va. 'blocs' són els blocs de teoria de la pàgina on es pot enllaçar un problema; 'etiquetes', la llista tancada d'etiquetes per classificar-ne els problemes (camp «etiquetes» de cada problema).",
   "temes": {
     "gravitatori": { "nom": "Camp gravitatori", "pagina": null },
     "electric": { "nom": "Camp elèctric", "pagina": null },
@@ -9,18 +9,21 @@
       "subtemes": {
         "mhs": {
           "nom": "Moviment harmònic simple",
-          "pagina": "temes/mhs/index.html",
+          "pagina": "temes/mhs/exercicis/index.html",
+          "teoria": "temes/mhs/index.html",
           "seccio": "exercicis",
           "blocs": {
             "b1": "Com es mou (cinemàtica)",
             "b2": "Per què es mou: forces",
             "b3": "Energia",
             "b4": "Molla vertical i pèndol"
-          }
+          },
+          "etiquetes": { "mhs": "MHS" }
         },
         "ones": {
           "nom": "Ones",
-          "pagina": "temes/ones/index.html",
+          "pagina": "temes/ones/exercicis/index.html",
+          "teoria": "temes/ones/index.html",
           "seccio": "exercicis",
           "blocs": {
             "b1": "Què és una ona",
@@ -28,6 +31,16 @@
             "b3": "Energia i intensitat",
             "b4": "Fenòmens ondulatoris",
             "b5": "Ones estacionàries"
+          },
+          "etiquetes": {
+            "equacio": "Equació i magnituds de l'ona",
+            "fase": "En fase i en oposició de fase",
+            "intensitat": "Intensitat i nivell sonor",
+            "interferencies": "Interferències",
+            "cordes": "Ones estacionàries en cordes",
+            "tubs": "Ones estacionàries en tubs",
+            "doppler": "Doppler, reflexió i refracció",
+            "mhs": "MHS"
           }
         }
       }

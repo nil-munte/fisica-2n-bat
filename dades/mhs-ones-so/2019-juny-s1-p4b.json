@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "cordes"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa de la relació λ = 2L/n per al tercer harmònic, un dibuix senzill i la idea que un ventre passa de dalt a baix en mig període.",
   "titol": "El tercer harmònic d'una corda de violoncel",

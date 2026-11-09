@@ -13,6 +13,10 @@
     "b1",
     "b2"
   ],
+  "etiquetes": [
+    "equacio",
+    "fase"
+  ],
   "dificultat": 3,
   "dificultat_motiu": "Aplicació directa: identificar període i longitud d'ona, escriure l'equació de l'ona i calcular la diferència de fase entre dos punts.",
   "titol": "Les ones que passen per la proa d'una barca",

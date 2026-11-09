@@ -13,6 +13,10 @@
     "b1",
     "b4"
   ],
+  "etiquetes": [
+    "equacio",
+    "doppler"
+  ],
   "dificultat": 2,
   "dificultat_motiu": "Aplicació directa de v = λ·ν, ω = 2πν i T = 1/ν, i dos raonaments qualitatius (efecte Doppler i reflexió).",
   "titol": "Un altaveu de 300 Hz: Doppler i reflexió",

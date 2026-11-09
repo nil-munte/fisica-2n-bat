@@ -13,6 +13,9 @@
     "b1",
     "b5"
   ],
+  "etiquetes": [
+    "cordes"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "Cal raonar la condició dels harmònics d'una corda fixa pels dos extrems, situar-ne nodes i ventres i dibuixar dos modes superiors calculant-ne les freqüències.",
   "titol": "La corda d’un violí: fonamental, tercer i cinquè modes",

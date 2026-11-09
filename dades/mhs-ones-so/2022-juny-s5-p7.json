@@ -14,6 +14,10 @@
     "b2",
     "b4"
   ],
+  "etiquetes": [
+    "equacio",
+    "doppler"
+  ],
   "dificultat": 4,
   "dificultat_motiu": "L'equació de l'ona surt directament de λ i v; l'apartat b és conceptual i demana raonar l'efecte Doppler descartant arguments un per un.",
   "titol": "La sirena d'una alarma i l'observador del semàfor",
