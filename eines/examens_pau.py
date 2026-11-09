@@ -5,6 +5,8 @@
 
 Els PDF oficials es diuen pau_fisiAAcX.pdf: AA és l'any, c la convocatòria (j juny, s setembre)
 i X el tipus (l enunciat; p o t pauta de correcció; si n'hi ha diverses versions, _v2… mana la darrera).
+Els acabats en _tei són els del Tribunal Especial d'Incidències (alumnes que van tenir una incidència el dia de
+l'examen o que necessiten adaptacions): una sèrie més de la mateixa convocatòria, marcada com a tal a la llista.
 Cada PDF pot portar diverses sèries: es detecten per la marca «Sèrie N» de la primera pàgina de cadascuna.
 Per a cada sèrie escriu:
     pau/pdf/AAAA-convocatoria-sN.pdf             enunciat (sense solucions)
@@ -25,7 +27,7 @@ PAU = ROOT / 'pau'
 SORTIDA = PAU / 'pdf'
 CONV = {'j': 'juny', 's': 'setembre'}
 NOM_CONV = {'juny': ('Juny', 'Convocatòria ordinària'), 'setembre': ('Setembre', 'Convocatòria extraordinària')}
-FITXER = re.compile(r'pau_fisi(\d\d)([js])([lpt])(?:_v(\d+))?\.pdf$')
+FITXER = re.compile(r'pau_fisi(\d\d)([js])([lpt])(?:_v(\d+))?(_tei)?\.pdf$')
 SERIE = re.compile(r'S[ÈEèe]?RIE\s*(\d)', re.I)
 DESTINS = OBRA / 'destins_pau.json'
 DOC_DESTINS = ("Generat per eines/examens_pau.py; no s'edita a mà. Per a cada problema, l'enllaç (des de l'arrel) "
@@ -33,16 +35,16 @@ DOC_DESTINS = ("Generat per eines/examens_pau.py; no s'edita a mà. Per a cada p
 
 
 def fonts():
-    """{(any, convocatòria): {'enunciat': Path, 'pauta': Path}}"""
+    """{(any, convocatòria, tei): {'enunciat': Path, 'pauta': Path}}"""
     out = {}
     for p in sorted(FONTS.glob('pau_fisi*.pdf')):
         m = FITXER.match(p.name)
         if not m:
             print(f'  (ignoro {p.name})')
             continue
-        aa, c, x, v = m.groups()
+        aa, c, x, v, tei = m.groups()
         tipus = 'enunciat' if x == 'l' else 'pauta'
-        clau = (2000 + int(aa), CONV[c])
+        clau = (2000 + int(aa), CONV[c], bool(tei))
         ant = out.setdefault(clau, {}).get(tipus)
         if ant is None or int(v or 1) >= ant[1]:
             out[clau][tipus] = (p, int(v or 1))
@@ -208,7 +210,9 @@ def html_examens(examens, web):
                 base = f'pdf/{a}-{conv}-s{s["serie"]}'
                 que = f'la sèrie {s["serie"]} de {nom.lower()} {a}'
                 fitxer = f'PAU Física {a} {nom} - Sèrie {s["serie"]}'
-                h.append(f'      <div class="serie"><span class="sn">Sèrie {s["serie"]}</span><div class="botons">'
+                tei = ('<small class="tei" title="Tribunal Especial d\'Incidències: alumnes que van tenir una incidència '
+                       'el dia de l\'examen o que necessiten adaptacions">Tribunal d\'incidències</small>') if s['tei'] else ''
+                h.append(f'      <div class="serie"><span class="sn">Sèrie {s["serie"]}{tei}</span><div class="botons">'
                          + boto(base + '.pdf', 'PDF enunciat', mb(s['mida_e']), f"l'enunciat de {que}",
                                 f'{fitxer} - Enunciat.pdf')
                          + boto(base + '-solucions.pdf', 'PDF enunciat + solucions', mb(s['mida_s']),
@@ -235,9 +239,9 @@ def main():
     SORTIDA.mkdir(parents=True, exist_ok=True)
     examens, fets = {}, set()
     problemes, enllacos = carrega_problemes(), {}
-    for (a, conv), f in sorted(fonts().items()):
+    for (a, conv, tei), f in sorted(fonts().items()):
         if set(f) != {'enunciat', 'pauta'}:
-            sys.exit(f'{a} {conv}: falta la pauta o l\'enunciat ({", ".join(map(str, f.values()))})')
+            sys.exit(f'{a} {conv}{" TEI" if tei else ""}: falta la pauta o l\'enunciat ({", ".join(map(str, f.values()))})')
         e, p = pymupdf.open(f['enunciat']), pymupdf.open(f['pauta'])
         se, sp = series(e), series(p)
         if [s for s, *_ in se] != [s for s, *_ in sp]:
@@ -245,16 +249,20 @@ def main():
         nom = NOM_CONV[conv][0]
         for (s, e0, e1), (_, p0, p1) in sorted(zip(se, sp)):
             base = SORTIDA / f'{a}-{conv}-s{s}'
-            titol = f'PAU Física · {nom} {a} · Sèrie {s}'
+            titol = f'PAU Física · {nom} {a} · Sèrie {s}' + (' (Tribunal d\'incidències)' if tei else '')
             probs = [pr for pr, _ in problemes if (pr['any'], pr['convocatoria'], pr['serie']) == (a, conv, s)]
             le, ls = llocs_serie(e, e0, p, p0, e1 - e0 + 1, probs)
             me = desa([(e, e0, e1)], base.with_suffix('.pdf'), f'{titol} · Enunciat', [[1, 'Enunciat', 1]], le)
             ms = desa([(e, e0, e1), (p, p0, p1)], base.with_name(base.name + '-solucions.pdf'),
                       f'{titol} · Enunciat i solucions', [[1, 'Enunciat', 1], [1, 'Solucions', e1 - e0 + 2]], ls)
             enllacos.update(destins(probs, base, le, ls))
-            examens.setdefault((a, conv), []).append({'serie': s, 'mida_e': me, 'mida_s': ms})
+            sèries = examens.setdefault((a, conv), [])
+            if any(x['serie'] == s for x in sèries):
+                sys.exit(f'{a} {conv}: la sèrie {s} surt en dos PDF')
+            sèries.append({'serie': s, 'tei': tei, 'mida_e': me, 'mida_s': ms})
+            sèries.sort(key=lambda x: x['serie'])
             fets |= {base.name + '.pdf', base.name + '-solucions.pdf'}
-            print(f'{a} {conv:8} sèrie {s}: enunciat {e1 - e0 + 1} p., pauta {p1 - p0 + 1} p.')
+            print(f'{a} {conv:8} sèrie {s}{" (TEI)" if tei else ""}: enunciat {e1 - e0 + 1} p., pauta {p1 - p0 + 1} p.')
     for vell in SORTIDA.glob('*.pdf'):
         if vell.name not in fets:
             vell.unlink()

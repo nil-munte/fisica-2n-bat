@@ -73,7 +73,7 @@ Un tema nou: crea `src/temes/<tema>/index.html` (teoria) i `src/temes/<tema>/exe
 
 ### Afegir PDF oficials
 
-Desa'ls a `fonts/pdf/` amb el nom oficial (`pau_fisiAAjl.pdf`, `pau_fisiAAjp.pdf`…) i actualitza'n la còpia:
+Desa'ls a `fonts/pdf/` amb el nom oficial (`pau_fisiAAjl.pdf`, `pau_fisiAAjp.pdf`…; els del Tribunal Especial d'Incidències acaben en `_tei` i surten com una sèrie més de la convocatòria) i actualitza'n la còpia:
 
 ```bash
 python eines/fonts_oficials.py inventari   # refà dades/fonts_oficials.json

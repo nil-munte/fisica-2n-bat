@@ -59,6 +59,13 @@ nav.toc .sep{flex:none;width:1px;align-self:stretch;background:var(--line);margi
 nav.toc a.top{font-family:var(--f-display);font-weight:600}
 section[tabindex="-1"]:focus,article[tabindex="-1"]:focus,div[tabindex="-1"]:focus{outline:none}
 .printbtns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+/* mòbil: els botons de la capçalera en una sola fila */
+@media (max-width:620px){
+  .printbtns{gap:6px}
+  .printbtns .btn,.printbtns .sharebtn{padding:6px 10px;min-height:34px;font-size:13.5px}
+  .printbtns .btn.ic{padding-inline:8px}
+  .printbtns .sharebtn .st{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+}
 .dlg{display:inline-flex}
 .btn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-weight:500;text-decoration:none;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;min-height:38px;white-space:nowrap}
 .btn:hover{border-color:var(--muted)}

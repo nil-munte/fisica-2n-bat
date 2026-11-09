@@ -287,10 +287,20 @@
       "mida": 643742,
       "sha256": "a43a035982cb7a6350ee71c1e49d42ce6e970387d2c654dc315878da44871cc9"
     },
+    "pau_fisi25jl_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jl_tei.pdf",
+      "mida": 1228885,
+      "sha256": "dac9337f2a56b0a3b51f22ba4e9331284bc453441f34fb38dc56273bbc254ac3"
+    },
     "pau_fisi25jp.pdf": {
       "origen": "https://www.selecat.cat/pau/pau_fisi25jp.pdf",
       "mida": 471421,
       "sha256": "587121e10a0104d03a111a74138d99048f4aa3803560989fc947943f644d95e0"
+    },
+    "pau_fisi25jp_tei.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jp_tei.pdf",
+      "mida": 685979,
+      "sha256": "75ba0c266ee9ad2e4f7e10efe6d9f60d2de1085cbac333d3c8fd63019d025510"
     },
     "pau_fisi25sl.pdf": {
       "origen": "https://www.selecat.cat/pau/pau_fisi25sl.pdf",

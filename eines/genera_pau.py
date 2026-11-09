@@ -111,7 +111,12 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     te = 'Enunciat original (PDF de la sèrie, obert al problema)' if propi else f'Enunciat original (PDF, pàgina {fe["pagina"]})'
     vocab = mapa.get(clau_principal(p, TEMES), {}).get('etiquetes', {})
     ets = [x for x in p.get('etiquetes', []) if x in vocab]
-    xips = ''.join(f'<span class="pau-et" data-et="{x}">{html.escape(vocab[x])}</span>' for x in ets)
+    # les etiquetes filtren en clicar-les (pau.js); només si el tema en té més d'una
+    if len(vocab) > 1:
+        xips = ''.join(f'<button type="button" class="pau-et" data-et="{x}" title="Mostra només els problemes de: '
+                       f'{html.escape(vocab[x])}">{html.escape(vocab[x])}</button>' for x in ets)
+    else:
+        xips = ''.join(f'<span class="pau-et">{html.escape(vocab[x])}</span>' for x in ets)
     h = [f'<article class="panel ex pau" id="pau-{p["id"]}" data-nivell="{nv}" data-dificultat="{p["dificultat"]}" data-etiquetes="{" ".join(ets)}">',
          f'<div class="pau-cap"><a class="pau-rotul" href="{html.escape(he)}" target="_blank" rel="noopener" title="{te}">{rotul(p)}</a>'
          + (f'<span class="pau-ets">{xips}</span>' if xips else '') + '</div>',
@@ -171,7 +176,7 @@ def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
     usades = [k for k in vocab if n_et[k]]
     botons_et = ''
     if len(usades) > 1:   # amb una sola etiqueta (p. ex. tot MHS) el filtre no aporta res
-        botons_et = ('<div class="pau-filtre pau-filtre-et" role="group" aria-label="Filtra per tema"><span>Tema:</span>'
+        botons_et = ('<div class="pau-filtre pau-filtre-et" role="group" aria-label="Filtra per tema"><span>Tema</span>'
                      f'<button type="button" data-et="" aria-pressed="true">Tots<small>{len(probs)}</small></button>'
                      + ''.join(f'<button type="button" data-et="{k}" aria-pressed="false">{html.escape(vocab[k])}<small>{n_et[k]}</small></button>'
                                for k in usades) + '</div>')
@@ -182,13 +187,15 @@ def bloc_problemes(probs: list, mapa: dict, pagina: pathlib.Path) -> str:
     h = ['<div class="exgroup" id="pau">',
          '<h3><span class="stars">PAU</span>Problemes de les PAU</h3>',
          f'<p class="lead">{len(probs)} {"problema" if len(probs) == 1 else "problemes"} de les PAU de Catalunya{"" if len(probs) == 1 else ", ordenats de més fàcil a més difícil"}. '
-         'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció. '
-         'Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), reproduïts d\'acord amb '
-         'les condicions de reutilització de la informació del sector públic; cada problema enllaça a l\'examen original.</p>',
-         '<div class="pau-filtre" role="group" aria-label="Filtra per nivell"><span>Nivell:</span>' + ''.join(botons) + '</div>',
-         botons_et,
+         'Cada apartat porta la puntuació oficial i, a la solució, com la reparteix la pauta de correcció.</p>',
+         '<div class="pau-filtres">'
+         '<div class="pau-filtre" role="group" aria-label="Filtra per nivell"><span>Nivell</span>' + ''.join(botons) + '</div>'
+         + botons_et + '</div>',
          '<p class="pau-buit" hidden>No hi ha cap problema amb aquests filtres.</p>']
     h += [html_problema(p, i + 1, mapa, pagina) for i, p in enumerate(probs)]
+    h.append('<p class="pau-avis">Els enunciats són els oficials de les PAU de Catalunya (Generalitat de Catalunya), '
+             'reproduïts d\'acord amb les condicions de reutilització de la informació del sector públic; '
+             'cada problema enllaça a l\'examen original.</p>')
     h.append('</div>')
     return '\n'.join(h)
 
@@ -284,9 +291,11 @@ def main(prova: bool) -> None:
             n_et = {k: sum(1 for p in ps if k in p.get('etiquetes', [])) for k in vocab}
             tgs = ''.join(f'<a href="{href}?etiqueta={k}#pau">{html.escape(v)}<small>{n_et[k]}</small></a>'
                           for k, v in vocab.items() if n_et[k] and len([x for x in n_et.values() if x]) > 1)
-            targetes.append(f'<article class="panel tema-pau"><h3><a href="{href}#pau">{html.escape(info["nom"])}</a>'
-                            f'<small>{len(ps)} {"problema" if len(ps) == 1 else "problemes"}</small></h3>'
-                            + (f'<div class="tgs">{tgs}</div>' if tgs else '') + '</article>')
+            n_ps = f'{len(ps)} {"problema" if len(ps) == 1 else "problemes"}'
+            targetes.append(f'<article class="tema-pau"><h3><a href="{href}#pau">{html.escape(info["nom"])}</a>'
+                            f'<small>{n_ps}</small></h3>'
+                            + (f'<div class="tgs">{tgs}</div>' if tgs else f'<a class="tot" href="{href}#pau">Tots els {n_ps} →</a>')
+                            + '</article>')
         t0 = examens.read_text(encoding='utf-8')
         t = substitueix(t0, 'PAU-TEMES', '<div class="temes-pau">' + ''.join(targetes) + '</div>', 'per-temes')
         if t != t0 and not prova:

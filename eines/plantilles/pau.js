@@ -12,6 +12,7 @@
   function aplica() {
     barN.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f === estat.n)));
     if (barE) barE.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.et === estat.et)));
+    box.querySelectorAll('button.pau-et').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.et === estat.et)));
     const amagats = exs.filter(e => {
       const fora = (estat.n !== '0' && e.dataset.nivell !== estat.n) ||
                    (estat.et && !(e.dataset.etiquetes || '').split(' ').includes(estat.et));
@@ -24,12 +25,18 @@
   }
   function tots() { estat.n = '0'; estat.et = ''; aplica(); }
   barN.addEventListener('click', e => { const b = e.target.closest('button[data-f]'); if (b) { estat.n = b.dataset.f; aplica(); } });
-  if (barE) barE.addEventListener('click', e => {
-    const b = e.target.closest('button[data-et]'); if (!b) return;
-    estat.et = b.dataset.et; aplica();
+  function triaEt(et) {
+    estat.et = et; aplica();
     const u = new URL(location.href);   // l'URL recorda l'etiqueta triada, per poder-la compartir
     if (estat.et) u.searchParams.set('etiqueta', estat.et); else u.searchParams.delete('etiqueta');
     history.replaceState(null, '', u);
+  }
+  if (barE) barE.addEventListener('click', e => { const b = e.target.closest('button[data-et]'); if (b) triaEt(b.dataset.et); });
+  // l'etiqueta d'un problema filtra per aquell tema (i, si ja és el filtre actiu, el treu) i torna als filtres
+  box.addEventListener('click', e => {
+    const b = e.target.closest('button.pau-et'); if (!b) return;
+    triaEt(estat.et === b.dataset.et ? '' : b.dataset.et);
+    (barE || barN).scrollIntoView({ block: 'center' });
   });
   // un enllaç a un problema amagat pels filtres (p. ex. el número a la barra de navegació) els treu
   document.addEventListener('click', e => {

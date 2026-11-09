@@ -729,8 +729,10 @@ const GROUPS = {
     if (sec.groups) {
       document.querySelectorAll('#exercicis .exgroup').forEach(g => {
         const st = txt(g.querySelector('.stars')), name = txt(g.querySelector('h3')).replace(st, '').trim();
+        const exs = [...g.querySelectorAll('.ex')];
+        // amb molts exercicis (els problemes de les PAU), només l'enllaç al grup: els números no hi cabrien
         h += '<div class="sn-g"><a class="sn-gl" href="#' + g.id + '" title="' + name + '"><span>' + st + '</span>' + name + '</a><div class="sn-nums">' +
-          [...g.querySelectorAll('.ex')].map(e => '<a href="#' + e.id + '" title="' + txt(e.querySelector('.ttl')) + '">' + txt(e.querySelector('.num')).replace('.', '') + '</a>').join('') + '</div></div>';
+          (exs.length > 12 ? [] : exs).map(e => '<a href="#' + e.id + '" title="' + txt(e.querySelector('.ttl')) + '">' + txt(e.querySelector('.num')).replace('.', '') + '</a>').join('') + '</div></div>';
       });
     } else {
       sec.items().forEach(it => { h += '<a href="#' + it.id + '">' + it.t + '</a>'; });
@@ -814,7 +816,7 @@ document.addEventListener('click', function (ev) {
   var ICONA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
   document.querySelectorAll('[data-share]').forEach(function (el) {
     el.hidden = false; el.classList.add('share');
-    el.innerHTML = '<button type="button" class="sharebtn" aria-expanded="false">' + ICONA + 'Comparteix</button><div class="sharemenu" role="group" aria-label="Comparteix a" hidden></div>';
+    el.innerHTML = '<button type="button" class="sharebtn" aria-expanded="false">' + ICONA + '<span class="st">Comparteix</span></button><div class="sharemenu" role="group" aria-label="Comparteix a" hidden></div>';
     var btn = el.querySelector('.sharebtn'), menu = el.querySelector('.sharemenu');
     function tanca(tornaFoco) { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); if (tornaFoco) btn.focus(); }
     function obre() {
