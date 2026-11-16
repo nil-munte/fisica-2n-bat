@@ -57,10 +57,14 @@ def valida(p, nom, temes):
             err.append(f'falta el camp «{c}»')
     if err:
         return err, avis
-    conv = {'juny': 'juny', 'setembre': 'setembre'}.get(p['convocatoria'])
+    conv = {'juny': 'juny', 'setembre': 'setembre', 'mostra': 'mostra'}.get(p['convocatoria'])
     if not conv:
-        err.append('convocatoria ha de ser juny o setembre')
+        err.append('convocatoria ha de ser juny, setembre o mostra')
     esperat = f"{p['any']}-{p['convocatoria']}-s{p['serie']}-{p['problema'].lower()}"
+    if conv == 'mostra':   # exercicis de mostra oficials, sense sèrie: 2025-mostra-optica-p1
+        esperat = f"{p['any']}-mostra-{p.get('mostra')}-{p['problema'].lower()}"
+        if p['serie'] is not None or not p.get('mostra'):
+            err.append('un problema de mostra porta "serie": null i "mostra" (p. ex. "optica")')
     # si l'opció A i la B d'una sèrie tenen el mateix número de problema, l'id porta la lletra de l'opció (p3b)
     if p.get('opcio') and p['id'] == esperat + p['opcio'].lower():
         esperat = p['id']

@@ -33,8 +33,17 @@ def sha256(path) -> str:
     return h.hexdigest()
 
 
+# exercicis de mostra oficials (no són cap examen: examens_pau.py no els separa per sèries)
+MOSTRES = {
+    'pau_fisi25_mostra_optica.pdf': 'https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/'
+                                    'ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf',
+}
+
+
 def origen(nom: str) -> str:
     """URL oficial d'on es va baixar cada PDF (només informativa: la construcció fa servir la release)."""
+    if nom in MOSTRES:
+        return MOSTRES[nom]
     any_ = int(nom[8:10])
     if any_ == 26:
         carpeta = 'ext' if nom[10] == 's' else 'ord'

@@ -282,6 +282,11 @@
       "mida": 1181135,
       "sha256": "2901df0034200bee0bca8f082b273f109414eaea7c85d4108fcbef2df7f0a228"
     },
+    "pau_fisi25_mostra_optica.pdf": {
+      "origen": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf",
+      "mida": 928050,
+      "sha256": "60b4c5f33b8ddcf8c027acbef265c860962df706297aa9525508860f60eb2dfe"
+    },
     "pau_fisi25jl.pdf": {
       "origen": "https://www.selecat.cat/pau/pau_fisi25jl.pdf",
       "mida": 643742,

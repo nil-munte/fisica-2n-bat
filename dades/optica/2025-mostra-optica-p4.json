@@ -1,0 +1,224 @@
+{
+  "id": "2025-mostra-optica-p4",
+  "any": 2025,
+  "convocatoria": "mostra",
+  "serie": null,
+  "mostra": "optica",
+  "problema": "P4",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b2",
+    "b3"
+  ],
+  "etiquetes": [
+    "reflexio-total",
+    "refraccio"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Deducció habitual de l’angle límit a partir de la llei de Snell i raonament de per què no existeix en sentit invers; el radi surt d’una sola relació trigonomètrica.",
+  "titol": "El cercle de llum a la lona de la piscina",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=2",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 2
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=6",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 6
+    }
+  },
+  "dades": [
+    {
+      "simbol": "h",
+      "valor": "2",
+      "unitat": "m",
+      "descripcio": "profunditat de la piscina (la llanterna és al fons)"
+    },
+    {
+      "simbol": "n<sub>0</sub>",
+      "valor": "1",
+      "unitat": "",
+      "descripcio": "índex de refracció de l’aire"
+    },
+    {
+      "simbol": "n<sub>a</sub>",
+      "valor": "1,33",
+      "unitat": "",
+      "descripcio": "índex de refracció de l’aigua"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat no indica la puntuació: la pauta dona 1,25 punts a cada apartat, amb 0,25 per a l’esquema de l’apartat b."
+  },
+  "enunciat": {
+    "intro": "<p>En el fons d’una piscina de 2 m de profunditat hi ha una llanterna encesa, que emet llum en totes les direccions. La piscina està tapada amb una lona que queda just per sobre de l’aigua i en la lona s’observa un cercle de llum a causa dels raigs refractats. Això es deu a l’existència d’un angle límit, a partir del qual es dona el fenomen de reflexió total. Els rajos que arriben a la superfície amb un angle més gran que l’angle límit són plenament reflectits, i no emergeixen a la superfície. L’índex de refracció de l’aire és <i>n</i><sub>0</sub> = 1 i de l’aigua és <i>n</i><sub>a</sub> = 1,33.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "A partir de la llei d’Snell, deduïu l’expressió de l’angle límit. Expresseu el resultat en funció de l’índex de refracció de l’aigua i de l’aire. Justifiqueu si podria donar-se el mateix fenomen si la situació fos la contrària (la llanterna estigués situada 2 m per sobre la superfície de la piscina i la lona dins de l’aigua just per sota la superfície)."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Calcula el radi del cercle de llum, sabent que l’índex de refracció de l’aigua és <i>n</i> = 1,33"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 520 215\" role=\"img\" aria-label=\"Piscina en perspectiva, plena d’aigua i tapada amb una lona just per sobre de la superfície. Al centre del fons hi ha una llanterna encesa i a la lona es veu un cercle de llum, just a sobre de la llanterna.\"><path d=\"M30 80 L70 48 L70 168 L30 200 Z\" fill=\"var(--muted)\" fill-opacity=\"0.22\"/><rect x=\"30\" y=\"86\" width=\"420\" height=\"114\" fill=\"var(--x)\" fill-opacity=\"0.13\"/><path d=\"M450 86 L490 54 L490 168 L450 200 Z\" fill=\"var(--x)\" fill-opacity=\"0.10\"/><line x1=\"30\" y1=\"86\" x2=\"450\" y2=\"86\" stroke=\"var(--x)\" stroke-width=\"1\"/><line x1=\"450\" y1=\"86\" x2=\"490\" y2=\"54\" stroke=\"var(--x)\" stroke-width=\"1\"/><line x1=\"70\" y1=\"168\" x2=\"490\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"48\" x2=\"70\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"30\" y1=\"200\" x2=\"70\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><path d=\"M30 80 L450 80 L490 48 L70 48 Z M198 64 a62 9 0 1 0 124 0 a62 9 0 1 0 -124 0 Z\" fill=\"var(--wood2)\" fill-opacity=\"0.75\" fill-rule=\"evenodd\"/><path d=\"M30 80 L450 80 L490 48 L70 48 Z\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M198 64 a62 9 0 1 0 124 0 a62 9 0 1 0 -124 0 Z\" fill=\"var(--ep)\" fill-opacity=\"0.7\"/><rect x=\"30\" y=\"80\" width=\"420\" height=\"120\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><path d=\"M450 200 L490 168 L490 48\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><ellipse cx=\"260\" cy=\"184\" rx=\"9\" ry=\"3.5\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/></svg>",
+      "peu": "La piscina tapada amb la lona i la llanterna al fons."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"Superfície de separació entre l’aigua (n1 = 1,33), a sota, i l’aire (n2 = 1), a sobre, amb la normal vertical. Un raig que arriba amb un angle petit es refracta i s’allunya de la normal, i una part es reflecteix. El que arriba amb l’angle límit θ1c es refracta a 90°, rasant a la superfície. Un raig que arriba amb un angle més gran que el límit es reflecteix totalment.\"><rect x=\"20\" y=\"125\" width=\"380\" height=\"117\" fill=\"var(--x)\" fill-opacity=\"0.13\"/><line x1=\"20\" y1=\"125\" x2=\"400\" y2=\"125\" stroke=\"var(--x)\" stroke-width=\"1.4\"/><line x1=\"210\" y1=\"12\" x2=\"210\" y2=\"242\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"30\" y=\"34\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">aire</text><text x=\"30\" y=\"52\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">n</tspan><tspan font-size=\"9\" dy=\"3\">2</tspan><tspan dy=\"-3\"> = </tspan><tspan font-style=\"italic\">n</tspan><tspan font-size=\"9\" dy=\"3\">0</tspan><tspan dy=\"-3\"> = 1</tspan></text><text x=\"30\" y=\"222\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">aigua</text><text x=\"30\" y=\"240\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\"><tspan font-style=\"italic\">n</tspan><tspan font-size=\"9\" dy=\"3\">1</tspan><tspan dy=\"-3\"> = </tspan><tspan font-style=\"italic\">n</tspan><tspan font-size=\"9\" dy=\"3\">a</tspan><tspan dy=\"-3\"> = 1,33</tspan></text><line x1=\"181.5\" y1=\"231.3\" x2=\"210\" y2=\"125\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><path d=\"M197.2 172.8 L198 181.3 L192.2 179.8 Z\" fill=\"var(--ink)\"/><line x1=\"210\" y1=\"125\" x2=\"242.7\" y2=\"35.8\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><path d=\"M242.7 35.8 L242.8 44.3 L237.1 42.3 Z\" fill=\"var(--ink)\"/><line x1=\"210\" y1=\"125\" x2=\"228.1\" y2=\"192.6\" stroke=\"var(--ink)\" stroke-width=\"1\" opacity=\"0.6\"/><path d=\"M228.1 192.6 L223.1 185.7 L228.9 184.1 Z\" fill=\"var(--ink)\"/><line x1=\"127.3\" y1=\"197.5\" x2=\"210\" y2=\"125\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><path d=\"M172.8 157.6 L168.7 165.2 L164.8 160.7 Z\" fill=\"var(--y)\"/><line x1=\"210\" y1=\"125\" x2=\"330\" y2=\"125\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><path d=\"M330 125 L322 128 L322 122 Z\" fill=\"var(--y)\"/><line x1=\"210\" y1=\"125\" x2=\"292.7\" y2=\"197.5\" stroke=\"var(--y)\" stroke-width=\"1.4\"/><path d=\"M292.7 197.5 L284.7 194.5 L288.7 190 Z\" fill=\"var(--y)\"/><line x1=\"112.9\" y1=\"176.6\" x2=\"210\" y2=\"125\" stroke=\"var(--f)\" stroke-width=\"1.8\"/><path d=\"M166.3 148.2 L160.6 154.6 L157.8 149.3 Z\" fill=\"var(--f)\"/><line x1=\"210\" y1=\"125\" x2=\"307.1\" y2=\"176.6\" stroke=\"var(--f)\" stroke-width=\"1.8\"/><path d=\"M307.1 176.6 L298.7 175.5 L301.5 170.2 Z\" fill=\"var(--f)\"/><path d=\"M210 175 A50 50 0 0 1 172.4 158\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"1\"/><text x=\"154.2\" y=\"193.1\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--y)\">θ<tspan font-size=\"9\" dy=\"3\">1c</tspan></text><path d=\"M210 101 A24 24 0 0 1 234 125\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"1\"/><text x=\"236\" y=\"103\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--y)\">90°</text></svg>",
+      "peu": "Tres raigs que van de l’aigua a l’aire: per sota de l’angle límit, es refracta i es reflecteix en part; amb l’angle límit (taronja), el refractat surt rasant; per sobre (violeta), reflexió total."
+    },
+    "fig3": {
+      "svg": "<svg viewBox=\"0 0 520 215\" role=\"img\" aria-label=\"Secció de la piscina per la llanterna, a escala. Des de la llanterna, al fons, la vertical h = 2 m arriba al centre del cercle de llum. El raig que arriba a la superfície amb l’angle límit θ1c toca la vora del cercle, a una distància r del centre, i el refractat surt rasant. Un raig més inclinat es reflecteix totalment cap a dins i un de menys inclinat surt a l’aire allunyant-se de la normal.\"><path d=\"M30 80 L70 48 L70 168 L30 200 Z\" fill=\"var(--muted)\" fill-opacity=\"0.22\"/><rect x=\"30\" y=\"86\" width=\"420\" height=\"114\" fill=\"var(--x)\" fill-opacity=\"0.13\"/><path d=\"M450 86 L490 54 L490 168 L450 200 Z\" fill=\"var(--x)\" fill-opacity=\"0.10\"/><line x1=\"30\" y1=\"86\" x2=\"450\" y2=\"86\" stroke=\"var(--x)\" stroke-width=\"1\"/><line x1=\"450\" y1=\"86\" x2=\"490\" y2=\"54\" stroke=\"var(--x)\" stroke-width=\"1\"/><line x1=\"70\" y1=\"168\" x2=\"490\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"48\" x2=\"70\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"30\" y1=\"200\" x2=\"70\" y2=\"168\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><path d=\"M30 80 L450 80 L490 48 L70 48 Z M123.1 64 a136.9 10 0 1 0 273.7 0 a136.9 10 0 1 0 -273.7 0 Z\" fill=\"var(--wood2)\" fill-opacity=\"0.75\" fill-rule=\"evenodd\"/><path d=\"M30 80 L450 80 L490 48 L70 48 Z\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><path d=\"M123.1 64 a136.9 10 0 1 0 273.7 0 a136.9 10 0 1 0 -273.7 0 Z\" fill=\"var(--ep)\" fill-opacity=\"0.7\"/><rect x=\"30\" y=\"80\" width=\"420\" height=\"120\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><path d=\"M450 200 L490 168 L490 48\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><ellipse cx=\"260\" cy=\"184\" rx=\"9\" ry=\"3.5\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"260\" y1=\"179\" x2=\"260\" y2=\"24\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"260\" y1=\"64\" x2=\"396.9\" y2=\"64\" stroke=\"var(--ink)\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><text x=\"348.4\" y=\"60\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">r</text><line x1=\"260\" y1=\"184\" x2=\"303.7\" y2=\"64\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><path d=\"M284 118 L284.1 126.5 L278.5 124.5 Z\" fill=\"var(--ink)\"/><line x1=\"303.7\" y1=\"64\" x2=\"328.7\" y2=\"15\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><path d=\"M328.7 15 L327.7 23.5 L322.4 20.8 Z\" fill=\"var(--ink)\"/><line x1=\"260\" y1=\"184\" x2=\"396.9\" y2=\"64\" stroke=\"var(--y)\" stroke-width=\"2\"/><path d=\"M335.3 118 L331.2 125.5 L327.3 121 Z\" fill=\"var(--y)\"/><line x1=\"396.9\" y1=\"64\" x2=\"448.9\" y2=\"64\" stroke=\"var(--y)\" stroke-width=\"2\"/><path d=\"M448.9 64 L440.9 67 L440.9 61 Z\" fill=\"var(--y)\"/><line x1=\"260\" y1=\"184\" x2=\"425.2\" y2=\"64\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M350.8 118 L346.1 125.1 L342.6 120.3 Z\" fill=\"var(--f)\"/><line x1=\"425.2\" y1=\"64\" x2=\"466.5\" y2=\"94\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M466.5 94 L458.2 91.7 L461.7 86.9 Z\" fill=\"var(--f)\"/><path d=\"M260 144 A40 40 0 0 1 290.1 157.6\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"1\"/><text x=\"282\" y=\"138\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--y)\">θ<tspan font-size=\"9\" dy=\"3\">1c</tspan></text><text x=\"204\" y=\"128\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">h</text><text x=\"217\" y=\"128\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">= 2 m</text></svg>",
+      "peu": "Secció de la piscina a escala: el raig que arriba amb l’angle límit marca la vora del cercle de llum."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Llei de Snell",
+          "html": "Per a la llum que passa d’un medi 1 a un medi 2, amb els angles mesurats des de la normal: <i>n</i><sub>1</sub>·sin θ<sub>1</sub> = <i>n</i><sub>2</sub>·sin θ<sub>2</sub>. Si <i>n</i><sub>1</sub> &gt; <i>n</i><sub>2</sub>, aleshores sin θ<sub>2</sub> = (<i>n</i><sub>1</sub>/<i>n</i><sub>2</sub>)·sin θ<sub>1</sub> &gt; sin θ<sub>1</sub>: l’angle és més gran en el medi d’índex més petit, i el raig refractat s’allunya de la normal."
+        },
+        {
+          "titol": "Angle límit",
+          "html": "L’angle de refracció només pot arribar a 90° (π/2 rad): llavors el raig refractat surt rasant a la superfície. L’angle d’incidència que li correspon és l’angle límit θ<sub>1c</sub>: <i>n</i><sub>1</sub>·sin θ<sub>1c</sub> = <i>n</i><sub>2</sub>·sin 90° → sin θ<sub>1c</sub> = <i>n</i><sub>2</sub>/<i>n</i><sub>1</sub>. Per a angles d’incidència més grans no hi ha raig refractat: tota la llum es reflecteix (reflexió total). Aquí la llum va de l’aigua (<i>n</i><sub>1</sub> = <i>n</i><sub>a</sub>) a l’aire (<i>n</i><sub>2</sub> = <i>n</i><sub>0</sub>): <span class=\"res\">sin θ<sub>1c</sub> = <i>n</i><sub>0</sub>/<i>n</i><sub>a</sub></span>.",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Valor",
+          "html": "sin θ<sub>1c</sub> = 1/1,33 = 0,752 → θ<sub>1c</sub> = arcsin 0,752 = 0,851 rad = <span class=\"res\">θ<sub>1c</sub> = 48,75°</span> (≈ 48,8°)."
+        },
+        {
+          "titol": "Situació contrària",
+          "html": "Si la llanterna fos a l’aire i la lona dins l’aigua, la llum aniria de l’aire (<i>n</i><sub>1</sub> = 1) a l’aigua (<i>n</i><sub>2</sub> = 1,33). El raig refractat s’acostaria a la normal, θ<sub>2</sub> &lt; θ<sub>1</sub>, i no arribaria mai a 90°: l’angle límit hauria de ser més gran de 90°. Amb l’expressió, sin θ<sub>1c</sub> = 1,33/1 = 1,33 &gt; 1, que és impossible perquè el sinus d’un angle no passa d’1. L’angle límit només existeix si <i>n</i><sub>2</sub> &lt; <i>n</i><sub>1</sub>: <span class=\"res\">no hi hauria reflexió total</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Escriure la llei de Snell i veure que l’angle és més gran en el medi de menys índex."
+        },
+        {
+          "punts": 0.25,
+          "que": "Definir l’angle límit com l’incident que dona un refractat de 90° i obtenir sin θ1c = n2/n1; més enllà, reflexió total."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular-lo per a l’aigua i l’aire: sin θ1c = 0,752, θ1c = 48,7°."
+        },
+        {
+          "punts": 0.25,
+          "que": "Raonar que, amb els índexs intercanviats, l’angle límit hauria de passar de 90°."
+        },
+        {
+          "punts": 0.25,
+          "que": "Justificar-ho amb l’expressió: el sinus no pot superar 1, per tant cal n2 < n1."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Vora del cercle de llum",
+          "html": "A la lona només hi arriba la llum que travessa la superfície, és a dir, la dels raigs que hi arriben amb un angle més petit que θ<sub>1c</sub>; la resta es reflecteix totalment. La vora del cercle la marca el raig que arriba just amb l’angle límit. Com que la normal és vertical, aquest raig és la hipotenusa d’un triangle rectangle que té per catets la profunditat <i>h</i> i el radi <i>r</i> del cercle."
+        },
+        {
+          "titol": "Relació trigonomètrica",
+          "html": "L’angle entre el raig i la vertical és θ<sub>1c</sub>: tg θ<sub>1c</sub> = <i>r</i>/<i>h</i>."
+        },
+        {
+          "titol": "Radi",
+          "html": "<i>r</i> = <i>h</i>·tg θ<sub>1c</sub> = 2·tg 48,75° = <span class=\"res\"><i>r</i> = 2,28 m</span>.",
+          "figures": [
+            "fig3"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Identificar el raig de l’angle límit com la hipotenusa del triangle rectangle de catets h i r."
+        },
+        {
+          "punts": 0.25,
+          "que": "Escriure tg θ1c = r/h."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular el radi: r = 2,28 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Esquema."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "sin",
+      "text": "sin θ1c = 0,752",
+      "valor": 0.752,
+      "pauta": 0.752
+    },
+    {
+      "apartat": "a",
+      "clau": "thc_rad",
+      "text": "θ1c = 0,851 rad",
+      "valor": 0.851,
+      "pauta": 0.848
+    },
+    {
+      "apartat": "a",
+      "clau": "thc",
+      "text": "θ1c = 48,75°",
+      "valor": 48.75,
+      "pauta": 48.7
+    },
+    {
+      "apartat": "b",
+      "clau": "r",
+      "text": "r = 2,28 m",
+      "valor": 2.28,
+      "pauta": 2.28
+    }
+  ],
+  "comprovacio": [
+    "from math import asin, tan, degrees",
+    "n0, na, h = 1, 1.33, 2",
+    "thc = asin(n0 / na)",
+    "R = {'sin': n0 / na, 'thc_rad': thc, 'thc': degrees(thc), 'r': h * tan(thc)}"
+  ],
+  "verificacio": {
+    "estat": "revisar",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": [
+      "L’angle límit és arcsin(1/1,33) = 48,75°. La pauta l’arrodoneix a 48,7° i la solució del full d’enunciats en dona 48,6°. La pauta escriu també 0,848 rad, que correspon a 48,6°; el valor correcte és 0,851 rad. El radi, 2,28 m, coincideix a tot arreu (2·tg 48,75° = 2,281 m; amb 48,6° sortiria 2,27 m)."
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": "2025-mostra-optica-p1",
+  "any": 2025,
+  "convocatoria": "mostra",
+  "serie": null,
+  "mostra": "optica",
+  "problema": "P1",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b4",
+    "b6"
+  ],
+  "etiquetes": [
+    "lents"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Equació de les lents primes i augment lateral amb el conveni de signes, però cal treure s′ de l’augment abans de trobar la focal i, a l’apartat b, veure que la làmpada fa d’objecte, que el paper fa de pantalla (imatge real) i sumar les dues distàncies.",
+  "titol": "La lupa de taula i la làmpada del sostre",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=1",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=3",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 3
+    }
+  },
+  "dades": [
+    {
+      "simbol": "s",
+      "valor": "10",
+      "unitat": "cm",
+      "descripcio": "distància entre la lent i el paper (apartat a)"
+    },
+    {
+      "simbol": "β",
+      "valor": "2",
+      "unitat": "",
+      "descripcio": "augment lateral de la lupa (apartat a)"
+    },
+    {
+      "simbol": "s′",
+      "valor": "22",
+      "unitat": "cm",
+      "descripcio": "distància de la lupa a la taula quan hi forma la imatge de la làmpada (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat de la mostra no indica la puntuació. La pauta dona 1,25 punts a cada apartat, repartits en passos de 0,25."
+  },
+  "enunciat": {
+    "intro": "<p>Utilitzem una lupa de taula per llegir un paper situat sobre l’escriptori. El suport de la lent fixa la distància entre la lent i el paper en 10 cm, creant un augment lateral de 2.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Quina és la distància focal de la lent? Calcula la seva potència."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "L’habitació està il·luminada per una làmpada que penja del sostre i que es troba just sobre nostre. Observem que hem de situar la lupa just a 22 cm de la taula per crear la imatge de la làmpada al paper.<br>Quina és la distància entre la superfície de l’escriptori i la làmpada?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {},
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Conveni de signes",
+          "html": "Fem servir el conveni normalitzat (DIN): la llum va del paper cap a la lent i l’ull, la lent és a l’origen i les distàncies mesurades en sentit contrari al de la llum són negatives. El paper és l’objecte: <i>s</i> = −10 cm = −0,10 m."
+        },
+        {
+          "titol": "Posició de la imatge",
+          "html": "L’augment lateral compara la mida de la imatge amb la de l’objecte i, per semblança de triangles, també les seves posicions: β = <i>y</i>′/<i>y</i> = <i>s</i>′/<i>s</i>. Com que β = 2: <i>s</i>′ = 2<i>s</i> = 2·(−10) = <span class=\"res\"><i>s</i>′ = −20 cm = −0,20 m</span>. La imatge és virtual (al mateix costat que el paper), dreta i el doble de gran: és el que fa una lupa."
+        },
+        {
+          "titol": "Distància focal",
+          "html": "Equació de les lents primes: 1/<i>s</i>′ − 1/<i>s</i> = 1/<i>f</i>′ → 1/(−20) − 1/(−10) = −1/20 + 2/20 = 1/20 cm<sup>−1</sup> → <span class=\"res\"><i>f</i>′ = 20 cm = 0,20 m</span>. És positiva: la lupa és una lent convergent."
+        },
+        {
+          "titol": "Potència",
+          "html": "La potència, en diòptries, és l’invers de la distància focal imatge expressada en metres: <i>P</i> = 1/<i>f</i>′ = 1/0,20 = <span class=\"res\"><i>P</i> = 5 D</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Plantejar l’equació de les lents primes amb l’objecte a s = −10 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Fer servir β = y′/y = s′/s = 2 per obtenir s′ = 2s = −20 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Substituir s i s′ a l’equació de la lent."
+        },
+        {
+          "punts": 0.25,
+          "que": "Obtenir la distància focal f′ = 20 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la potència com l’invers de la focal en metres: P = 5 D."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "La làmpada és l’objecte",
+          "html": "Ara la llum baixa de la làmpada, travessa la lupa i forma la imatge sobre el paper, que fa de pantalla: és una imatge real, al costat de la lent per on surt la llum. Prenent positiu el sentit de la llum (cap avall), <i>s</i>′ = +22 cm."
+        },
+        {
+          "titol": "Posició de la làmpada respecte de la lent",
+          "html": "Aïllem 1/<i>s</i> de l’equació de les lents amb la focal de l’apartat a: 1/<i>s</i> = 1/<i>s</i>′ − 1/<i>f</i>′ = 1/22 − 1/20 = (20 − 22)/440 = −2/440 = −1/220 cm<sup>−1</sup> → <span class=\"res\"><i>s</i> = −220 cm = −2,20 m</span>: la làmpada és 2,20 m per sobre de la lupa."
+        },
+        {
+          "titol": "Distància de l’escriptori a la làmpada",
+          "html": "La làmpada i el paper són a banda i banda de la lupa, de manera que la distància entre tots dos és la suma de les dues distàncies a la lent: <i>d</i> = |<i>s</i>| + |<i>s</i>′| = 220 + 22 = <span class=\"res\"><i>d</i> = 242 cm = 2,42 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Identificar que la imatge es forma al paper: s′ = 22 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Plantejar l’equació de la lent per trobar la posició de la làmpada respecte de la lupa."
+        },
+        {
+          "punts": 0.25,
+          "que": "Substituir s′ = 22 cm i f′ = 20 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Obtenir s = −220 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Sumar les dues distàncies (|s′ − s| = |s| + |s′|): 242 cm."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "sp",
+      "text": "s′ = −0,20 m",
+      "valor": -0.2,
+      "pauta": -0.2
+    },
+    {
+      "apartat": "a",
+      "clau": "fp",
+      "text": "f′ = 0,20 m",
+      "valor": 0.2,
+      "pauta": 0.2
+    },
+    {
+      "apartat": "a",
+      "clau": "P",
+      "text": "P = 5 D",
+      "valor": 5,
+      "pauta": 5
+    },
+    {
+      "apartat": "b",
+      "clau": "s",
+      "text": "s = −2,20 m",
+      "valor": -2.2,
+      "pauta": -2.2
+    },
+    {
+      "apartat": "b",
+      "clau": "d",
+      "text": "d = 2,42 m",
+      "valor": 2.42,
+      "pauta": 2.42
+    }
+  ],
+  "comprovacio": [
+    "s, beta = -0.10, 2",
+    "sp = beta * s",
+    "fp = 1 / (1 / sp - 1 / s)",
+    "P = 1 / fp",
+    "sp2 = 0.22",
+    "s2 = 1 / (1 / sp2 - 1 / fp)",
+    "d = abs(s2) + abs(sp2)",
+    "R = {'sp': sp, 'fp': fp, 'P': P, 's': s2, 'd': d}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

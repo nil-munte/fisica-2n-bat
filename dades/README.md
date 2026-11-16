@@ -2,6 +2,7 @@
 
 Cada problema de les PAU de Física és un JSON a `dades/<tema>/<any>-<juny|setembre>-s<sèrie>-p<n>.json`
 (amb la lletra de l'opció al final, `…-p3b`, quan l'opció A i la B d'una sèrie tenen el mateix número).
+Els exercicis de mostra oficials (sense sèrie) són `dades/<tema>/<any>-mostra-<tema>-p<n>.json`.
 El mapa de temes i pàgines és a `temes.json`. Exemple complet: `mhs-ones-so/2014-juny-s4-p5.json`.
 
 ## Flux de treball
@@ -41,6 +42,7 @@ release `fonts-oficials`). `pau_fisiAAjl` és l'examen de juny, `pau_fisiAAjp` (
 |---|---|
 | `id` | igual que el nom del fitxer: `2014-juny-s4-p5` |
 | `any`, `convocatoria`, `serie`, `problema`, `opcio` | `2014`, `"juny"`, `4`, `"P5"`, `"A"` (o `null`). Des del 2025, `"P3"` vol dir *Exercici 3* |
+| `mostra` | només als exercicis de mostra oficials (no són de cap examen): el tema de la mostra (`"optica"`), amb `"convocatoria": "mostra"`, `"serie": null` i id `2025-mostra-optica-p1` |
 | `tambe_a` | altres sèries on va sortir el mateix problema: `[{"serie": 4, "problema": "P4", "opcio": "B"}]` |
 | `tema_principal`, `subtema` | clau de `temes.json` i, si el tema té subtemes, el subtema (`"mhs"`, `"ones"`) |
 | `temes_secundaris` | claus de tema (`"gravitatori"`) o `"tema/subtema"` (`"mhs-ones-so/ones"`) |

@@ -18,7 +18,7 @@ També actualitza el recompte de problemes de la portada (<span data-pau-compte=
 import html, json, os, pathlib, re, sys
 
 from rutes import DADES, OBRA, PLANTILLES as PLANT, WEB as ROOT   # ROOT: arrel del web generat (dist/)
-MESOS = {'juny': 'Juny', 'setembre': 'Setembre'}
+MESOS = {'juny': 'Juny', 'setembre': 'Setembre', 'mostra': "Mostra d'exercicis"}
 NIVELLS = {1: ('★', 'Bàsic'), 2: ('★★', 'Intermedi'), 3: ('★★★', 'Avançat')}
 _d = OBRA / 'destins_pau.json'   # generat per eines/examens_pau.py
 DESTINS = json.loads(_d.read_text(encoding='utf-8'))['problemes'] if _d.exists() else {}
@@ -44,6 +44,8 @@ def etiqueta_apartat(a: str) -> str:
 def nom_examen(p: dict, curt=False) -> str:
     q = p['problema']
     pn = (f'Exercici {q[1:]}' if p['any'] >= 2025 else q) if q.upper().startswith('P') else q
+    if p['convocatoria'] == 'mostra':   # exercicis de mostra oficials: no són de cap sèrie
+        return f"PAU {p['any']} · {MESOS['mostra']} · {pn}"
     s = f"PAU {MESOS[p['convocatoria']]} {p['any']} · Sèrie {p['serie']} · {pn}"
     if p.get('opcio') and not curt:
         s += f" · Opció {p['opcio']}"
@@ -54,7 +56,7 @@ def rotul(p: dict) -> str:
     """Rètol destacat del problema: PAU 2014 · Juny · Sèrie 4 · P5 · Opció A (des del 2025, «Exercici 3»)."""
     q = p['problema']
     pn = f'Exercici {q[1:]}' if p['any'] >= 2025 and q.upper().startswith('P') else q
-    parts = [f'<b>PAU {p["any"]}</b>', MESOS[p['convocatoria']], f'Sèrie {p["serie"]}', pn]
+    parts = [f'<b>PAU {p["any"]}</b>', MESOS[p['convocatoria']]] + ([f'Sèrie {p["serie"]}'] if p.get('serie') else []) + [pn]
     if p.get('opcio'):
         parts.append(f'Opció {p["opcio"]}')
     parts += [f'també Sèrie {x["serie"]} {x["problema"]}' for x in p.get('tambe_a', [])]

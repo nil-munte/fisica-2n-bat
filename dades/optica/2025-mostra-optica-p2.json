@@ -1,0 +1,206 @@
+{
+  "id": "2025-mostra-optica-p2",
+  "any": 2025,
+  "convocatoria": "mostra",
+  "serie": null,
+  "mostra": "optica",
+  "problema": "P2",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b4",
+    "b6"
+  ],
+  "etiquetes": [
+    "ull",
+    "lents"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Càlculs directes amb l’equació de les lents (objecte a l’infinit i focal negativa), però cal entendre que la lent ha de portar la imatge al punt remot i fer a escala el diagrama de rajos d’una lent divergent, amb prolongacions cap enrere i F′ a l’esquerra.",
+  "titol": "Les ulleres del Joan, miop",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=1",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=4",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 4
+    }
+  },
+  "dades": [
+    {
+      "simbol": "",
+      "valor": "4",
+      "unitat": "m",
+      "descripcio": "distància màxima a què el Joan enfoca bé (punt remot)"
+    },
+    {
+      "simbol": "s",
+      "valor": "12",
+      "unitat": "m",
+      "descripcio": "distància de l’arbre al Joan (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat de la mostra no indica la puntuació. La pauta dona 1,25 punts a cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>La miopia és una alteració ocular en la qual la persona veu borrosos els objectes llunyans. Un ull miop és massa convergent i crea la imatge d’objectes llunyans per davant de la retina. La miopia de l’ull es pot rectificar amb una lent correctora. El Joan és miop i sols pot enfocar bé objectes situats a una distància màxima de 4 metres.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Quin tipus de lent és necessària per corregir la miopia? Calcula la focal i la potència de la lent correctora per a que el Joan pugui veure focalitzat un objecte llunyà (a l’infinit)."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "En Joan veu un arbre situat a 12 metres d’ell mentre porta posades les seves ulleres<br>Troba a quina distància d’en Joan es forma la imatge de l’arbre creada per la lent correctora. Fes el diagrama de rajos a escala en la següent quadrícula per localitzar gràficament la imatge de l’arbre.",
+        "figures": [
+          "fig1"
+        ]
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 656 254\" role=\"img\" aria-label=\"Quadrícula de 30 quadres d’amplada per 10 d’alçària, amb x (m) de −15 a 15 i y (m) de −5 a 5, 1 quadre = 1 m. L’eix òptic és la línia y = 0, la lent és una línia blava vertical a x = 0 i hi ha un arbre de 3 m a x = −12 m.\"><path d=\"M64 10V210M84 10V210M104 10V210M124 10V210M144 10V210M164 10V210M184 10V210M204 10V210M224 10V210M244 10V210M264 10V210M284 10V210M304 10V210M324 10V210M344 10V210M364 10V210M384 10V210M404 10V210M424 10V210M444 10V210M464 10V210M484 10V210M504 10V210M524 10V210M544 10V210M564 10V210M584 10V210M604 10V210M624 10V210M44 190H644M44 170H644M44 150H644M44 130H644M44 90H644M44 70H644M44 50H644M44 30H644\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"0.8\"/><rect x=\"44\" y=\"10\" width=\"600\" height=\"200\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"44\" y1=\"110\" x2=\"644\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"2.2\"/><text x=\"44\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−15</text><text x=\"64\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−14</text><text x=\"84\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−13</text><text x=\"104\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−12</text><text x=\"124\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−11</text><text x=\"144\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−10</text><text x=\"164\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−9</text><text x=\"184\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−8</text><text x=\"204\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−7</text><text x=\"224\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−6</text><text x=\"244\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−5</text><text x=\"264\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−4</text><text x=\"284\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−3</text><text x=\"304\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−2</text><text x=\"324\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−1</text><text x=\"344\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">0</text><text x=\"364\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">1</text><text x=\"384\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">2</text><text x=\"404\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">3</text><text x=\"424\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">4</text><text x=\"444\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">5</text><text x=\"464\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">6</text><text x=\"484\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">7</text><text x=\"504\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">8</text><text x=\"524\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">9</text><text x=\"544\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">10</text><text x=\"564\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">11</text><text x=\"584\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">12</text><text x=\"604\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">13</text><text x=\"624\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">14</text><text x=\"644\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">15</text><text x=\"38\" y=\"213.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−5</text><text x=\"38\" y=\"193.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−4</text><text x=\"38\" y=\"173.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−3</text><text x=\"38\" y=\"153.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−2</text><text x=\"38\" y=\"133.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−1</text><text x=\"38\" y=\"113.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">0</text><text x=\"38\" y=\"93.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">1</text><text x=\"38\" y=\"73.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">2</text><text x=\"38\" y=\"53.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">3</text><text x=\"38\" y=\"33.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">4</text><text x=\"38\" y=\"13.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">5</text><text x=\"344\" y=\"246\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">x (m)</text><text transform=\"translate(13 110) rotate(-90)\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">y (m)</text><line x1=\"344\" y1=\"20\" x2=\"344\" y2=\"200\" stroke=\"var(--x)\" stroke-width=\"3\"/><g opacity=\"1.0\"><line x1=\"104\" y1=\"110\" x2=\"104\" y2=\"74\" stroke=\"var(--ep)\" stroke-width=\"3\" stroke-linecap=\"round\"/><ellipse cx=\"104\" cy=\"68\" rx=\"10\" ry=\"18\" fill=\"var(--ec)\" fill-opacity=\"0.55\" stroke=\"var(--ec)\" stroke-width=\"1.4\"/></g></svg>",
+      "peu": "Quadrícula per dibuixar el diagrama de rajos (1 quadre = 1 m)."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 656 254\" role=\"img\" aria-label=\"Diagrama de rajos a escala (1 quadre = 1 m): lent divergent a x = 0, focus imatge F′ a −4 m i focus objecte F a +4 m, arbre de 3 m a −12 m. Des del capdamunt de l’arbre, el raig paral·lel a l’eix surt de la lent com si vingués de F′; el raig pel centre no es desvia; el raig dirigit cap a F surt paral·lel a l’eix. Les prolongacions cap enrere dels rajos que surten es tallen a x = −3 m i y = 0,75 m: la imatge és virtual, dreta i quatre vegades més petita.\"><path d=\"M64 10V210M84 10V210M104 10V210M124 10V210M144 10V210M164 10V210M184 10V210M204 10V210M224 10V210M244 10V210M264 10V210M284 10V210M304 10V210M324 10V210M344 10V210M364 10V210M384 10V210M404 10V210M424 10V210M444 10V210M464 10V210M484 10V210M504 10V210M524 10V210M544 10V210M564 10V210M584 10V210M604 10V210M624 10V210M44 190H644M44 170H644M44 150H644M44 130H644M44 90H644M44 70H644M44 50H644M44 30H644\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"0.8\"/><rect x=\"44\" y=\"10\" width=\"600\" height=\"200\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"44\" y1=\"110\" x2=\"644\" y2=\"110\" stroke=\"var(--muted)\" stroke-width=\"2.2\"/><text x=\"44\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−15</text><text x=\"64\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−14</text><text x=\"84\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−13</text><text x=\"104\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−12</text><text x=\"124\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−11</text><text x=\"144\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−10</text><text x=\"164\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−9</text><text x=\"184\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−8</text><text x=\"204\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−7</text><text x=\"224\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−6</text><text x=\"244\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−5</text><text x=\"264\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−4</text><text x=\"284\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−3</text><text x=\"304\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−2</text><text x=\"324\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">−1</text><text x=\"344\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">0</text><text x=\"364\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">1</text><text x=\"384\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">2</text><text x=\"404\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">3</text><text x=\"424\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">4</text><text x=\"444\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">5</text><text x=\"464\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">6</text><text x=\"484\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">7</text><text x=\"504\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">8</text><text x=\"524\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">9</text><text x=\"544\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">10</text><text x=\"564\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">11</text><text x=\"584\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">12</text><text x=\"604\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">13</text><text x=\"624\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">14</text><text x=\"644\" y=\"225\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"9.5\" fill=\"var(--muted)\">15</text><text x=\"38\" y=\"213.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−5</text><text x=\"38\" y=\"193.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−4</text><text x=\"38\" y=\"173.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−3</text><text x=\"38\" y=\"153.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−2</text><text x=\"38\" y=\"133.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">−1</text><text x=\"38\" y=\"113.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">0</text><text x=\"38\" y=\"93.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">1</text><text x=\"38\" y=\"73.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">2</text><text x=\"38\" y=\"53.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">3</text><text x=\"38\" y=\"33.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">4</text><text x=\"38\" y=\"13.8\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"10.5\" fill=\"var(--muted)\">5</text><text x=\"344\" y=\"246\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">x (m)</text><text transform=\"translate(13 110) rotate(-90)\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">y (m)</text><line x1=\"344\" y1=\"20\" x2=\"344\" y2=\"200\" stroke=\"var(--x)\" stroke-width=\"3\"/><g opacity=\"1.0\"><line x1=\"104\" y1=\"110\" x2=\"104\" y2=\"74\" stroke=\"var(--ep)\" stroke-width=\"3\" stroke-linecap=\"round\"/><ellipse cx=\"104\" cy=\"68\" rx=\"10\" ry=\"18\" fill=\"var(--ec)\" fill-opacity=\"0.55\" stroke=\"var(--ec)\" stroke-width=\"1.4\"/></g><line x1=\"104\" y1=\"50\" x2=\"344\" y2=\"50\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M228 50 L220 53.2 L220 46.8 Z\" fill=\"var(--f)\"/><line x1=\"344\" y1=\"50\" x2=\"388\" y2=\"17\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M379.2 23.6 L374.7 31 L370.9 25.8 Z\" fill=\"var(--f)\"/><line x1=\"344\" y1=\"50\" x2=\"204\" y2=\"155\" stroke=\"var(--f)\" stroke-width=\"1.1\" stroke-dasharray=\"5 4\"/><line x1=\"104\" y1=\"50\" x2=\"392\" y2=\"122\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M227.9 81 L219.3 82.1 L220.9 75.9 Z\" fill=\"var(--f)\"/><path d=\"M383.9 120 L375.3 121.1 L376.9 114.9 Z\" fill=\"var(--f)\"/><line x1=\"104\" y1=\"50\" x2=\"344\" y2=\"95\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M187.9 65.7 L179.5 67.4 L180.7 61.1 Z\" fill=\"var(--f)\"/><line x1=\"344\" y1=\"95\" x2=\"424\" y2=\"95\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M408 95 L400 98.2 L400 91.8 Z\" fill=\"var(--f)\"/><line x1=\"344\" y1=\"95\" x2=\"444\" y2=\"113.8\" stroke=\"var(--f)\" stroke-width=\"1.1\" stroke-dasharray=\"5 4\"/><line x1=\"344\" y1=\"95\" x2=\"234\" y2=\"95\" stroke=\"var(--f)\" stroke-width=\"1.1\" stroke-dasharray=\"5 4\"/><g opacity=\"1.0\"><line x1=\"284\" y1=\"110\" x2=\"284\" y2=\"101\" stroke=\"var(--ep)\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><ellipse cx=\"284\" cy=\"99.5\" rx=\"2.5\" ry=\"4.5\" fill=\"var(--ec)\" fill-opacity=\"0.55\" stroke=\"var(--ec)\" stroke-width=\"0.8\"/></g><circle cx=\"284\" cy=\"95\" r=\"2.6\" fill=\"var(--y)\"/><text x=\"290\" y=\"127\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--y)\">imatge</text><circle cx=\"264\" cy=\"110\" r=\"3.4\" fill=\"var(--ink)\"/><text x=\"264\" y=\"127\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">F′</text><circle cx=\"424\" cy=\"110\" r=\"3.4\" fill=\"var(--ink)\"/><text x=\"424\" y=\"127\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">F</text><text x=\"350\" y=\"200\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--x)\">lent divergent</text><text x=\"104\" y=\"44\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">arbre</text></svg>",
+      "peu": "Diagrama de rajos de l’apartat b, a escala (1 quadre = 1 m)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Tipus de lent",
+          "html": "L’ull miop fa convergir massa la llum i la imatge dels objectes llunyans queda davant de la retina. Cal posar-hi al davant una lent que obri el feix de llum abans que entri a l’ull, de manera que la imatge es desplaci fins a la retina: una <span class=\"res\">lent divergent</span>."
+        },
+        {
+          "titol": "Què ha de fer la lent",
+          "html": "Amb el conveni DIN (llum d’esquerra a dreta, lent a l’origen) i negligint la distància entre les ulleres i l’ull: d’un objecte a l’infinit (<i>s</i> → −∞) la lent n’ha de fer una imatge virtual al punt més llunyà que el Joan enfoca, 4 m davant seu: <i>s</i>′ = −4 m."
+        },
+        {
+          "titol": "Distància focal",
+          "html": "Equació de les lents primes: 1/<i>s</i>′ − 1/<i>s</i> = 1/<i>f</i>′ → 1/(−4) − 1/(−∞) = −1/4 − 0 = 1/<i>f</i>′ → <span class=\"res\"><i>f</i>′ = −4 m</span>. Surt negativa, com correspon a una lent divergent: el focus imatge F′ coincideix amb el punt remot del Joan."
+        },
+        {
+          "titol": "Potència",
+          "html": "<i>P</i> = 1/<i>f</i>′ = 1/(−4) = <span class=\"res\"><i>P</i> = −0,25 D</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Justificar que cal una lent divergent perquè l’ull miop forma la imatge davant de la retina."
+        },
+        {
+          "punts": 0.25,
+          "que": "Veure que la lent ha de portar la imatge d’un objecte a l’infinit a s′ = −4 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Plantejar l’equació de les lents per trobar la focal."
+        },
+        {
+          "punts": 0.25,
+          "que": "Substituir s = −∞ i s′ = −4 m i obtenir f′ = −4 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la potència com l’invers de la focal: P = −0,25 D."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Posició de la imatge",
+          "html": "Ara l’objecte és l’arbre, a <i>s</i> = −12 m, i la focal és la de l’apartat a, <i>f</i>′ = −4 m: 1/<i>s</i>′ = 1/<i>f</i>′ + 1/<i>s</i> = 1/(−4) + 1/(−12) = (−3 − 1)/12 = −4/12 = −1/3 m<sup>−1</sup> → <span class=\"res\"><i>s</i>′ = −3 m</span>. La imatge és virtual, <span class=\"res\">3 m davant del Joan</span>: com que és més a prop que el seu punt remot (4 m), la veu nítida."
+        },
+        {
+          "titol": "Diagrama de rajos",
+          "html": "Amb 1 quadre = 1 m, la lent és a <i>x</i> = 0, el focus imatge F′ a −4 m (a l’esquerra, perquè la lent és divergent) i el focus objecte F a +4 m; l’arbre, de 3 m, és a −12 m. Des del capdamunt de l’arbre: el raig paral·lel a l’eix surt de la lent com si vingués de F′; el que passa pel centre de la lent no es desvia; el que va dirigit cap a F surt paral·lel a l’eix. Els rajos que surten de la lent se separen, i són les seves prolongacions cap enrere les que es tallen, a <i>x</i> = −3 m: allà hi ha la imatge, virtual, dreta i més petita (fa 0,75 m, d’acord amb β = <i>s</i>′/<i>s</i> = (−3)/(−12) = 0,25).",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Plantejar l’equació de les lents amb s = −12 m i la focal f′ = −4 m de l’apartat a."
+        },
+        {
+          "punts": 0.25,
+          "que": "Obtenir s′ = −3 m: la imatge es forma a 3 m del Joan."
+        },
+        {
+          "punts": 0.75,
+          "que": "Dibuixar a escala el diagrama de rajos amb almenys dos rajos principals (paral·lel que surt com si vingués de F′, pel centre sense desviar-se, dirigit a F que surt paral·lel) i trobar-hi la imatge."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "fp",
+      "text": "f′ = −4 m",
+      "valor": -4,
+      "pauta": -4
+    },
+    {
+      "apartat": "a",
+      "clau": "P",
+      "text": "P = −0,25 D",
+      "valor": -0.25,
+      "pauta": -0.25
+    },
+    {
+      "apartat": "b",
+      "clau": "sp",
+      "text": "s′ = −3 m",
+      "valor": -3,
+      "pauta": -3
+    },
+    {
+      "apartat": "b",
+      "clau": "beta",
+      "text": "β = 0,25",
+      "valor": 0.25,
+      "pauta": null
+    }
+  ],
+  "comprovacio": [
+    "sp = -4.0",
+    "inv_s = 0.0  # objecte a l'infinit: 1/s = 0",
+    "fp = 1 / (1 / sp - inv_s)",
+    "P = 1 / fp",
+    "s2 = -12.0",
+    "sp2 = 1 / (1 / fp + 1 / s2)",
+    "beta = sp2 / s2",
+    "R = {'fp': fp, 'P': P, 'sp': sp2, 'beta': beta}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "id": "2025-mostra-optica-p3",
+  "any": 2025,
+  "convocatoria": "mostra",
+  "serie": null,
+  "mostra": "optica",
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b2",
+    "b5"
+  ],
+  "etiquetes": [
+    "miralls"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal aplicar la llei de la reflexió per veure que cada raig es reflecteix a mitja altura entre el punt del cos i els ulls; a l’apartat b, cal triar el raig que limita l’alçada i seguir-lo amb la tangent fins a una distància doble.",
+  "titol": "La Meritxell i el Guifré davant d’un mirall pla",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=1",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 1
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/fisica/02_pau25_fisica_MostraExercicis_optica.pdf#page=5",
+      "pdf": "pau_fisi25_mostra_optica",
+      "pagina": 5
+    }
+  },
+  "dades": [
+    {
+      "simbol": "",
+      "valor": "1,6",
+      "unitat": "m",
+      "descripcio": "alçada de la Meritxell"
+    },
+    {
+      "simbol": "",
+      "valor": "10",
+      "unitat": "cm",
+      "descripcio": "distància dels ulls al punt més alt del cap"
+    },
+    {
+      "simbol": "",
+      "valor": "2",
+      "unitat": "",
+      "descripcio": "el Guifré és al doble de distància del mirall que la Meritxell (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": false,
+    "nota": "L’enunciat no indica la puntuació: la pauta dona 1,25 punts a cada apartat, amb 0,25 per a l’esquema. La pauta no resol ni puntua la segona pregunta de l’apartat b (on és la imatge del Guifré); el resultat, 3 vegades la distància de la Meritxell al mirall, és el que dona la solució del full d’enunciats."
+  },
+  "enunciat": {
+    "intro": "<p>La Meritxell té una alçada de 1,6 m, i es troba dreta, a una certa distància d’un mirall pla vertical. Els seus ulls són 10 cm per sota del punt més alt del seu cap.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Si la Meritxell vol veure el seu cos sencer, quina és l’alçada mínima del mirall que ha d’utilitzar? A quina distància del terra ha de situar la part inferior d’aquest mirall per veure’s sencera?"
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "El Guifré és darrera d’ella al doble de distància del mirall.<br>Quina alçada màxima pot tenir el Guifré perquè la Meritxell el vegi sencer? A quina distància de la Meritxell es troba la imatge del Guifré creada pel mirall?"
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 520 365\" role=\"img\" aria-label=\"Esquema de perfil: la Meritxell, d’1,6 m i amb els ulls a 1,50 m, davant d’un mirall pla vertical a una distància d, i la seva imatge a la mateixa distància darrere del mirall. El raig dels peus es reflecteix a 0,75 m del terra, a mitja altura dels ulls, i el del punt més alt del cap a 1,55 m, 5 cm per sobre dels ulls. El mirall mínim fa 80 cm, de 0,75 m a 1,55 m.\"><line x1=\"120\" y1=\"175\" x2=\"500\" y2=\"175\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"120\" y1=\"40\" x2=\"500\" y2=\"40\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"120\" y1=\"31\" x2=\"500\" y2=\"31\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"120\" y1=\"22\" x2=\"500\" y2=\"22\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"40\" y1=\"310\" x2=\"500\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"290\" y1=\"175\" x2=\"290\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"2 3\"/><line x1=\"290\" y1=\"31\" x2=\"290\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"3.5\"/><line x1=\"292\" y1=\"39\" x2=\"298\" y2=\"33\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"54\" x2=\"298\" y2=\"48\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"69\" x2=\"298\" y2=\"63\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"84\" x2=\"298\" y2=\"78\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"99\" x2=\"298\" y2=\"93\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"114\" x2=\"298\" y2=\"108\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"129\" x2=\"298\" y2=\"123\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"144\" x2=\"298\" y2=\"138\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"159\" x2=\"298\" y2=\"153\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"174\" x2=\"298\" y2=\"168\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><g><circle cx=\"172\" cy=\"40\" r=\"18\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"58\" x2=\"172\" y2=\"166\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"172\" y1=\"70.6\" x2=\"184\" y2=\"146.2\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"172\" y1=\"70.6\" x2=\"165\" y2=\"151.6\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"172\" y1=\"166\" x2=\"166\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"172\" y1=\"166\" x2=\"178\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><circle cx=\"180\" cy=\"40\" r=\"2.2\" fill=\"var(--ink)\"/></g><g opacity=\"0.55\"><circle cx=\"408\" cy=\"40\" r=\"18\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"58\" x2=\"408\" y2=\"166\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"70.6\" x2=\"396\" y2=\"146.2\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"70.6\" x2=\"415\" y2=\"151.6\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"166\" x2=\"414\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"166\" x2=\"402\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><circle cx=\"400\" cy=\"40\" r=\"2.2\" fill=\"var(--muted)\"/></g><line x1=\"180\" y1=\"310\" x2=\"290\" y2=\"175\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M240.5 235.8 L237.8 243.8 L233.1 240.1 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"175\" x2=\"180\" y2=\"40\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M229.5 100.8 L236.9 105.1 L232.2 108.8 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"175\" x2=\"400\" y2=\"310\" stroke=\"var(--y)\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/><line x1=\"172\" y1=\"22\" x2=\"290\" y2=\"31.3\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M236.9 27.1 L228.7 29.5 L229.2 23.5 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"31.3\" x2=\"180\" y2=\"40\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M229.5 36.1 L237.2 32.5 L237.7 38.5 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"31.3\" x2=\"408\" y2=\"22\" stroke=\"var(--y)\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/><circle cx=\"290\" cy=\"175\" r=\"2.6\" fill=\"var(--y)\"/><circle cx=\"290\" cy=\"31.3\" r=\"2.6\" fill=\"var(--y)\"/><line x1=\"140\" y1=\"175\" x2=\"140\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 175 L142.5 181 L137.5 181 Z\" fill=\"var(--ink)\"/><path d=\"M140 310 L137.5 304 L142.5 304 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"246.5\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">75 cm</text><line x1=\"140\" y1=\"40\" x2=\"140\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 40 L142.5 46 L137.5 46 Z\" fill=\"var(--ink)\"/><path d=\"M140 175 L137.5 169 L142.5 169 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"111.5\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">75 cm</text><line x1=\"140\" y1=\"22\" x2=\"140\" y2=\"40\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 22 L142.5 28 L137.5 28 Z\" fill=\"var(--ink)\"/><path d=\"M140 40 L137.5 34 L142.5 34 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"35\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">10 cm</text><line x1=\"312\" y1=\"31\" x2=\"312\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M312 31 L314.5 37 L309.5 37 Z\" fill=\"var(--ink)\"/><path d=\"M312 175 L309.5 169 L314.5 169 Z\" fill=\"var(--ink)\"/><text x=\"317\" y=\"107\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">80 cm</text><text x=\"172\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">Meritxell</text><text x=\"290\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">mirall</text><text x=\"408\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">imatge</text><line x1=\"180\" y1=\"342\" x2=\"290\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M180 342 L186 339.5 L186 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M290 342 L284 344.5 L284 339.5 Z\" fill=\"var(--ink)\"/><text x=\"235\" y=\"359\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><line x1=\"290\" y1=\"342\" x2=\"400\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M290 342 L296 339.5 L296 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M400 342 L394 344.5 L394 339.5 Z\" fill=\"var(--ink)\"/><text x=\"345\" y=\"359\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text></svg>",
+      "peu": "Raigs que van dels peus i del punt més alt del cap als ulls (alçades a escala). Les línies discontínues, darrere del mirall, van cap a la imatge."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 560 380\" role=\"img\" aria-label=\"Esquema de perfil: el Guifré és a una distància d darrere la Meritxell, és a dir, a 2d del mirall. El raig que surt del punt més alt del seu cap, a 1,65 m, es reflecteix a l’extrem superior del mirall, a 1,55 m, i arriba als ulls de la Meritxell, a 1,50 m: baixa 10 cm en 2d i 5 cm en d. La imatge del Guifré és 2d darrere del mirall, a 3d de la Meritxell.\"><line x1=\"40\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"40\" y1=\"40\" x2=\"545\" y2=\"40\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"40\" y1=\"31\" x2=\"545\" y2=\"31\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"40\" y1=\"22\" x2=\"545\" y2=\"22\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"40\" y1=\"13\" x2=\"545\" y2=\"13\" stroke=\"var(--grid2)\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\"/><line x1=\"20\" y1=\"310\" x2=\"545\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"290\" y1=\"175\" x2=\"290\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"0.8\" stroke-dasharray=\"2 3\"/><line x1=\"290\" y1=\"31\" x2=\"290\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"3.5\"/><line x1=\"292\" y1=\"39\" x2=\"298\" y2=\"33\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"54\" x2=\"298\" y2=\"48\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"69\" x2=\"298\" y2=\"63\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"84\" x2=\"298\" y2=\"78\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"99\" x2=\"298\" y2=\"93\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"114\" x2=\"298\" y2=\"108\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"129\" x2=\"298\" y2=\"123\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"144\" x2=\"298\" y2=\"138\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"159\" x2=\"298\" y2=\"153\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"292\" y1=\"174\" x2=\"298\" y2=\"168\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><g><circle cx=\"70\" cy=\"31\" r=\"18\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"49\" x2=\"70\" y2=\"161.5\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"61.6\" x2=\"82\" y2=\"137.2\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"70\" y1=\"61.6\" x2=\"63\" y2=\"142.6\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"70\" y1=\"161.5\" x2=\"64\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"70\" y1=\"161.5\" x2=\"76\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><circle cx=\"78\" cy=\"31\" r=\"2.2\" fill=\"var(--ink)\"/></g><g><circle cx=\"172\" cy=\"40\" r=\"18\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"58\" x2=\"172\" y2=\"166\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"172\" y1=\"70.6\" x2=\"184\" y2=\"146.2\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"172\" y1=\"70.6\" x2=\"165\" y2=\"151.6\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"172\" y1=\"166\" x2=\"166\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"172\" y1=\"166\" x2=\"178\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><circle cx=\"180\" cy=\"40\" r=\"2.2\" fill=\"var(--ink)\"/></g><g opacity=\"0.55\"><circle cx=\"408\" cy=\"40\" r=\"18\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"58\" x2=\"408\" y2=\"166\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"70.6\" x2=\"396\" y2=\"146.2\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"70.6\" x2=\"415\" y2=\"151.6\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"166\" x2=\"414\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"408\" y1=\"166\" x2=\"402\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><circle cx=\"400\" cy=\"40\" r=\"2.2\" fill=\"var(--muted)\"/></g><g opacity=\"0.55\"><circle cx=\"510\" cy=\"31\" r=\"18\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"510\" y1=\"49\" x2=\"510\" y2=\"161.5\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"510\" y1=\"61.6\" x2=\"498\" y2=\"137.2\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"510\" y1=\"61.6\" x2=\"517\" y2=\"142.6\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"510\" y1=\"161.5\" x2=\"516\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"510\" y1=\"161.5\" x2=\"504\" y2=\"310\" stroke=\"var(--muted)\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><circle cx=\"502\" cy=\"31\" r=\"2.2\" fill=\"var(--muted)\"/></g><line x1=\"180\" y1=\"310\" x2=\"290\" y2=\"175\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M240.5 235.8 L237.8 243.8 L233.1 240.1 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"175\" x2=\"180\" y2=\"40\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M229.5 100.8 L236.9 105.1 L232.2 108.8 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"175\" x2=\"400\" y2=\"310\" stroke=\"var(--y)\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/><line x1=\"172\" y1=\"22\" x2=\"290\" y2=\"31.3\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M236.9 27.1 L228.7 29.5 L229.2 23.5 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"31.3\" x2=\"180\" y2=\"40\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M229.5 36.1 L237.2 32.5 L237.7 38.5 Z\" fill=\"var(--y)\"/><line x1=\"290\" y1=\"31.3\" x2=\"408\" y2=\"22\" stroke=\"var(--y)\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/><circle cx=\"290\" cy=\"175\" r=\"2.6\" fill=\"var(--y)\"/><circle cx=\"290\" cy=\"31.3\" r=\"2.6\" fill=\"var(--y)\"/><line x1=\"70\" y1=\"13\" x2=\"290\" y2=\"31\" stroke=\"var(--f)\" stroke-width=\"1.8\"/><path d=\"M191 22.9 L182.8 25.2 L183.3 19.3 Z\" fill=\"var(--f)\"/><line x1=\"290\" y1=\"31\" x2=\"180\" y2=\"40\" stroke=\"var(--f)\" stroke-width=\"1.8\"/><path d=\"M229.5 36 L237.2 32.3 L237.7 38.3 Z\" fill=\"var(--f)\"/><line x1=\"290\" y1=\"31\" x2=\"510\" y2=\"13\" stroke=\"var(--f)\" stroke-width=\"1.1\" stroke-dasharray=\"4 3\" opacity=\"0.75\"/><circle cx=\"290\" cy=\"31\" r=\"2.8\" fill=\"var(--f)\"/><line x1=\"45\" y1=\"13\" x2=\"45\" y2=\"31\" stroke=\"var(--f)\" stroke-width=\"1\"/><path d=\"M45 13 L47.5 19 L42.5 19 Z\" fill=\"var(--f)\"/><path d=\"M45 31 L42.5 25 L47.5 25 Z\" fill=\"var(--f)\"/><text x=\"39\" y=\"26\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--f)\">10 cm</text><line x1=\"140\" y1=\"175\" x2=\"140\" y2=\"310\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 175 L142.5 181 L137.5 181 Z\" fill=\"var(--ink)\"/><path d=\"M140 310 L137.5 304 L142.5 304 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"246.5\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">75 cm</text><line x1=\"140\" y1=\"40\" x2=\"140\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 40 L142.5 46 L137.5 46 Z\" fill=\"var(--ink)\"/><path d=\"M140 175 L137.5 169 L142.5 169 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"111.5\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">75 cm</text><line x1=\"140\" y1=\"22\" x2=\"140\" y2=\"40\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M140 22 L142.5 28 L137.5 28 Z\" fill=\"var(--ink)\"/><path d=\"M140 40 L137.5 34 L142.5 34 Z\" fill=\"var(--ink)\"/><text x=\"134\" y=\"35\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">10 cm</text><line x1=\"312\" y1=\"31\" x2=\"312\" y2=\"175\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M312 31 L314.5 37 L309.5 37 Z\" fill=\"var(--ink)\"/><path d=\"M312 175 L309.5 169 L314.5 169 Z\" fill=\"var(--ink)\"/><text x=\"317\" y=\"107\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">80 cm</text><text x=\"70\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">Guifré</text><text x=\"172\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">Meritxell</text><text x=\"290\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">mirall</text><text x=\"455\" y=\"328\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">imatges</text><line x1=\"70\" y1=\"342\" x2=\"180\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M70 342 L76 339.5 L76 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M180 342 L174 344.5 L174 339.5 Z\" fill=\"var(--ink)\"/><text x=\"125\" y=\"357\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><line x1=\"180\" y1=\"342\" x2=\"290\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M180 342 L186 339.5 L186 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M290 342 L284 344.5 L284 339.5 Z\" fill=\"var(--ink)\"/><text x=\"235\" y=\"357\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><line x1=\"290\" y1=\"342\" x2=\"400\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M290 342 L296 339.5 L296 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M400 342 L394 344.5 L394 339.5 Z\" fill=\"var(--ink)\"/><text x=\"345\" y=\"357\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><line x1=\"400\" y1=\"342\" x2=\"510\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M400 342 L406 339.5 L406 344.5 Z\" fill=\"var(--ink)\"/><path d=\"M510 342 L504 344.5 L504 339.5 Z\" fill=\"var(--ink)\"/><text x=\"455\" y=\"357\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><line x1=\"180\" y1=\"366\" x2=\"510\" y2=\"366\" stroke=\"var(--f)\" stroke-width=\"1\"/><path d=\"M180 366 L186 363.5 L186 368.5 Z\" fill=\"var(--f)\"/><path d=\"M510 366 L504 368.5 L504 363.5 Z\" fill=\"var(--f)\"/><text x=\"345\" y=\"380\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--f)\" font-style=\"italic\">3d</text></svg>",
+      "peu": "El raig que surt del cap del Guifré i es reflecteix a l’extrem superior del mirall fixa la seva alçada màxima (alçades a escala; la distància d és arbitrària)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Llei de la reflexió",
+          "html": "En un mirall pla, l’angle de reflexió és igual a l’angle d’incidència. Com que el mirall és vertical, la normal és horitzontal. Si un raig va d’un punt del cos de la Meritxell fins als seus ulls, tots dos a la mateixa distància <i>d</i> del mirall, els dos triangles que formen el raig incident i el reflectit amb la normal són iguals: el raig puja (o baixa) el mateix abans i després de reflectir-se, i el punt de reflexió és a mitja altura entre el punt del cos i els ulls. Els ulls són a <i>h</i><sub>ulls</sub> = 1,60 − 0,10 = 1,50 m del terra."
+        },
+        {
+          "titol": "Raig que surt dels peus",
+          "html": "Es reflecteix a mitja altura entre els peus (0 m) i els ulls: <i>h</i><sub>reflexió peus</sub> = <i>h</i><sub>ulls</sub>/2 = 1,50/2 = <span class=\"res\"><i>h</i><sub>reflexió peus</sub> = 0,75 m</span>. Aquí ha de ser la part inferior del mirall."
+        },
+        {
+          "titol": "Raig que surt del punt més alt del cap",
+          "html": "El cap és 0,10 m per sobre dels ulls, i el raig es reflecteix a mig camí: <i>h</i><sub>reflexió cap</sub> = <i>h</i><sub>ulls</sub> + 0,10/2 = 1,50 + 0,05 = <span class=\"res\"><i>h</i><sub>reflexió cap</sub> = 1,55 m</span>. Aquí ha de ser la part superior del mirall."
+        },
+        {
+          "titol": "Alçada mínima del mirall",
+          "html": "<i>h</i><sub>mirall</sub> = <i>h</i><sub>reflexió cap</sub> − <i>h</i><sub>reflexió peus</sub> = 1,55 − 0,75 = <span class=\"res\"><i>h</i><sub>mirall</sub> = 0,80 m</span>, la meitat de l’alçada de la Meritxell, amb la part inferior a <span class=\"res\">0,75 m del terra</span>. Cap dels dos resultats no depèn de la distància al mirall."
+        },
+        {
+          "titol": "Esquema",
+          "html": "El mirall va de 0,75 m a 1,55 m. Els raigs que arriben als ulls semblen venir de la imatge, que és a la mateixa distància <i>d</i> darrere del mirall.",
+          "figures": [
+            "fig1"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Enunciar que en la reflexió l’angle reflectit és igual a l’incident."
+        },
+        {
+          "punts": 0.25,
+          "que": "Deduir que el raig dels peus es reflecteix a la meitat de l’alçada dels ulls: 0,75 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Deduir que el raig del punt més alt del cap es reflecteix 5 cm per sobre dels ulls: 1,55 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Restar les dues alçades per obtenir el mirall mínim: 0,80 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Esquema dels raigs."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Raig que limita l’alçada del Guifré",
+          "html": "El mirall és el de l’apartat a, amb l’extrem superior a 1,55 m. Com més alt és el Guifré, més amunt toca el mirall la llum del seu cap que va cap als ulls de la Meritxell. El cas límit és el raig que es reflecteix just a l’extrem superior del mirall i arriba als ulls de la Meritxell, a 1,50 m."
+        },
+        {
+          "titol": "Angle d’incidència",
+          "html": "Si la Meritxell és a una distància <i>d</i> del mirall, entre l’extrem del mirall i els seus ulls hi ha un desnivell de 1,55 − 1,50 = 0,05 m = 5 cm, i l’angle α del raig amb la normal compleix tg α = 5 cm/<i>d</i>. Per la llei de la reflexió, el raig que ve del Guifré forma el mateix angle α amb la normal."
+        },
+        {
+          "titol": "Desnivell fins al Guifré",
+          "html": "El Guifré és a 2<i>d</i> del mirall. Al llarg d’aquesta distància, el raig s’enfila per sobre de l’extrem del mirall: Δ<i>h</i> = 2<i>d</i>·tg α = 2<i>d</i>·(5 cm/<i>d</i>) = <span class=\"res\">Δ<i>h</i> = 10 cm</span>."
+        },
+        {
+          "titol": "Alçada màxima",
+          "html": "<i>h</i><sub>màx Guifré</sub> = 1,55 m + 10 cm = <span class=\"res\"><i>h</i><sub>màx Guifré</sub> = 1,65 m</span>. Si fos més alt, la llum del seu cap s’hauria de reflectir per sobre del mirall. Els peus sí que els veu: el raig que en surt es reflecteix a 1,50·2<i>d</i>/3<i>d</i> = 1,00 m del terra, dins del mirall."
+        },
+        {
+          "titol": "Imatge del Guifré",
+          "html": "La imatge d’un mirall pla és tan lluny darrere del mirall com l’objecte ho és davant: la del Guifré és a 2<i>d</i> darrere del mirall. La Meritxell és a <i>d</i> davant, per tant la imatge és a <i>d</i> + 2<i>d</i> = <span class=\"res\">3<i>d</i></span> de la Meritxell: tres vegades la seva distància al mirall.",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Identificar el raig que limita: el que va dels ulls de la Meritxell a l’extrem superior del mirall (1,55 m)."
+        },
+        {
+          "punts": 0.25,
+          "que": "Escriure l’angle d’incidència, tg α = 5 cm/d, igual que el de reflexió."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular quant s’eleva el raig a la distància del Guifré: 2d·tg α = 10 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Sumar-ho a l’extrem del mirall: 1,65 m."
+        },
+        {
+          "punts": 0.25,
+          "que": "Esquema dels raigs."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "hp",
+      "text": "h_reflexió peus = 0,75 m",
+      "valor": 0.75,
+      "pauta": 0.75
+    },
+    {
+      "apartat": "a",
+      "clau": "hc",
+      "text": "h_reflexió cap = 1,55 m",
+      "valor": 1.55,
+      "pauta": 1.55
+    },
+    {
+      "apartat": "a",
+      "clau": "hm",
+      "text": "h_mirall = 0,80 m",
+      "valor": 0.8,
+      "pauta": 0.8
+    },
+    {
+      "apartat": "b",
+      "clau": "dh",
+      "text": "Δh = 2d·tg α = 10 cm",
+      "valor": 0.1,
+      "pauta": 0.1
+    },
+    {
+      "apartat": "b",
+      "clau": "hg",
+      "text": "h_màx Guifré = 1,65 m",
+      "valor": 1.65,
+      "pauta": 1.65
+    },
+    {
+      "apartat": "b",
+      "clau": "hpg",
+      "text": "reflexió dels peus del Guifré a 1,00 m",
+      "valor": 1.0,
+      "pauta": null
+    },
+    {
+      "apartat": "b",
+      "clau": "dimg",
+      "text": "imatge del Guifré a 3d de la Meritxell",
+      "valor": 3,
+      "pauta": null
+    }
+  ],
+  "comprovacio": [
+    "H, dcap = 1.6, 0.10",
+    "ulls = H - dcap",
+    "hp = ulls / 2",
+    "hc = ulls + dcap / 2",
+    "d = 1.0  # distància Meritxell–mirall (arbitrària: els resultats no en depenen)",
+    "tga = (hc - ulls) / d",
+    "dh = 2 * d * tga",
+    "hpg = ulls - ulls * d / (d + 2 * d)  # raig dels peus del Guifré (imatge a 2d) cap als ulls",
+    "R = {'hp': hp, 'hc': hc, 'hm': hc - hp, 'dh': dh, 'hg': hc + dh, 'hpg': hpg, 'dimg': (d + 2 * d) / d}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}
