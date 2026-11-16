@@ -4,7 +4,7 @@
     python eines/previsualitza_figures.py dades/mhs-ones-so/2021-juny-s2-p3.json [--fosc]
 
 Substitueix les variables CSS (var(--ink), var(--x)...) pels colors del tema clar
-(o fosc) de temes/mhs/index.html i desa un PNG per figura a fonts/png/figures/.
+(o fosc) de temes/mhs/tema.css i desa un PNG per figura a fonts/png/figures/.
 """
 import json, pathlib, re, sys
 
@@ -13,7 +13,7 @@ OUT = ROOT / 'fonts' / 'png' / 'figures'
 
 
 def colors(fosc: bool) -> dict:
-    t = (SRC / 'temes' / 'mhs' / 'index.html').read_text(encoding='utf-8')
+    t = (SRC / 'temes' / 'mhs' / 'tema.css').read_text(encoding='utf-8')
     clar = re.search(r':root\{(.*?)\}', t, re.S).group(1)
     v = dict(re.findall(r'--([\w-]+):\s*([^;]+);', clar))
     if fosc:

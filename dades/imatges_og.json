@@ -1,5 +1,5 @@
 {
-  "_doc": "Imatges per compartir (Open Graph) que genera eines/imatges_og.py a dist/img/. A les etiquetes, {demos}, {pau} i {examens} es substitueixen pel recompte de la pàgina construïda. «dibuix»: ona, particules o examens. Cada pàgina ha de declarar la seva imatge a og:image i twitter:image.",
+  "_doc": "Imatges per compartir (Open Graph) que genera eines/imatges_og.py a dist/img/. A les etiquetes, {demos}, {pau} i {examens} es substitueixen pel recompte de la pàgina construïda. «dibuix»: ona, particules, raigs o examens. Cada pàgina ha de declarar la seva imatge a og:image i twitter:image.",
   "imatges": {
     "og-index.png": {
       "pagina": "index.html",
@@ -62,6 +62,31 @@
         "PDF enunciats i solucions"
       ],
       "dibuix": "particules"
+    },
+    "og-optica.png": {
+      "pagina": "temes/optica/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Òptica",
+      "subtitol": "Índex de refracció, llei de Snell, reflexió total, lents, miralls i l’ull, amb demos interactives",
+      "etiquetes": [
+        "Teoria",
+        "{demos} demos",
+        "{pau} problemes de les PAU",
+        "Formulari PDF"
+      ],
+      "dibuix": "raigs"
+    },
+    "og-optica-exercicis.png": {
+      "pagina": "temes/optica/exercicis/index.html",
+      "antetitol": "Física · 2n de Batxillerat",
+      "titol": "Òptica · Exercicis",
+      "subtitol": "Exercicis graduats amb solució i problemes de selectivitat (PAU) resolts pas a pas, amb la pauta de correcció",
+      "etiquetes": [
+        "{pau} problemes de les PAU",
+        "Exercicis graduats",
+        "PDF enunciats i solucions"
+      ],
+      "dibuix": "raigs"
     },
     "og-pau.png": {
       "pagina": "pau/index.html",

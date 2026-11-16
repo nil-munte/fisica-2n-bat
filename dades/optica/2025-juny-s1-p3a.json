@@ -1,0 +1,195 @@
+{
+  "id": "2025-juny-s1-p3a",
+  "any": 2025,
+  "convocatoria": "juny",
+  "serie": 1,
+  "problema": "P3",
+  "opcio": "A",
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b2",
+    "b3"
+  ],
+  "etiquetes": [
+    "reflexio-total",
+    "refraccio"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal deduir l’angle límit de la llei de Snell i raonar per què no existeix en el sentit invers; després, traduir la condició de visibilitat en una relació geomètrica senzilla (tg θ = d/2) i fer l’esquema dels tres raigs.",
+  "titol": "Una moneda dins un bloc de policarbonat",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jl.pdf",
+      "pdf": "pau_fisi25jl",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jp.pdf",
+      "pdf": "pau_fisi25jp",
+      "pagina": 5
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2025/Juny/1/7786"
+  },
+  "dades": [
+    {
+      "simbol": "n<sub>bloc</sub>",
+      "valor": "1,58",
+      "unitat": "",
+      "descripcio": "índex de refracció del policarbonat"
+    },
+    {
+      "simbol": "n<sub>aire</sub>",
+      "valor": "1",
+      "unitat": "",
+      "descripcio": "índex de refracció de l’aire"
+    },
+    {
+      "simbol": "",
+      "valor": "2",
+      "unitat": "m",
+      "descripcio": "distància de la moneda a la cara oposada (fons del bloc)"
+    },
+    {
+      "simbol": "",
+      "valor": "4",
+      "unitat": "m",
+      "descripcio": "amplada del bloc (2 m a cada costat de la moneda)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L’examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat; a la pauta aquesta opció s’anomena «opció 1». A l’examen és l’opció A de l’Exercici 3 («Vibracions i ones»); l’opció B és el problema de la flauta travessera."
+  },
+  "enunciat": {
+    "intro": "<p>En una exposició d’art hi ha una obra que consisteix en una moneda situada a l’interior d’un bloc massís de policarbonat transparent, just al centre de la cara posterior, tal com indica la figura. El bloc té forma d’ortoedre (de capsa de sabates) i un índex de refracció d’1,58. Una persona està observant l’obra des del punt mitjà de la cara oposada i arriba una segona persona i se situa a la dreta de la primera. Sorprenentment, no veu la moneda de l’interior del bloc.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "A partir de la llei de Snell, deduïu l’expressió de l’angle límit (o angle crític) en funció dels índexs de refracció dels dos medis. Calculeu l’angle límit amb les dades del problema. Justifiqueu si es podria donar aquest fenomen en el cas que s’invertissin els medis."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "A quina distància màxima, <i>d</i>, s’hauria de col·locar la segona persona respecte de la primera per veure la moneda? Considereu un raig de llum que surt de la moneda i arriba a la interfície de policarbonat-aire amb aquest angle límit i dibuixeu un esquema dels raigs incident, reflectit i refractat per a aquest cas."
+      }
+    ],
+    "dades_text": "Dada: Índex de refracció de l’aire = 1."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 400 262\" role=\"img\" aria-label=\"Vista des de dalt d’un bloc de policarbonat rectangular de 4 m d’amplada (2 m + 2 m) i 2 m de fons. Una moneda és al centre de la cara posterior i una línia discontínua la uneix amb el punt mitjà de la cara oposada, davant del qual hi ha la primera persona. La segona persona és a la seva dreta, a una distància d.\"><line x1=\"220\" y1=\"30\" x2=\"80\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M80 30 L87 27 L87 33 Z\" fill=\"var(--ink)\"/><path d=\"M220 30 L213 33 L213 27 Z\" fill=\"var(--ink)\"/><line x1=\"220\" y1=\"30\" x2=\"360\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M360 30 L353 33 L353 27 Z\" fill=\"var(--ink)\"/><path d=\"M220 30 L227 27 L227 33 Z\" fill=\"var(--ink)\"/><line x1=\"220\" y1=\"25\" x2=\"220\" y2=\"35\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><text x=\"150\" y=\"23\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">2 m</text><text x=\"290\" y=\"23\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">2 m</text><line x1=\"58\" y1=\"50\" x2=\"58\" y2=\"190\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M58 190 L55 183 L61 183 Z\" fill=\"var(--ink)\"/><path d=\"M58 50 L61 57 L55 57 Z\" fill=\"var(--ink)\"/><text x=\"50\" y=\"120\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" transform=\"rotate(-90 50 120)\">2 m</text><rect x=\"80\" y=\"50\" width=\"280\" height=\"140\" fill=\"var(--x)\" fill-opacity=\"0.10\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><rect x=\"212.0\" y=\"50\" width=\"16\" height=\"7\" fill=\"var(--ink)\"/><line x1=\"220\" y1=\"57\" x2=\"220\" y2=\"190\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"220\" cy=\"203\" r=\"6\" fill=\"var(--ink)\"/><path d=\"M209 222 Q209 210 220 210 Q231 210 231 222 Z\" fill=\"var(--ink)\"/><circle cx=\"300\" cy=\"203\" r=\"6\" fill=\"var(--ink)\"/><path d=\"M289 222 Q289 210 300 210 Q311 210 311 222 Z\" fill=\"var(--ink)\"/><line x1=\"220\" y1=\"236\" x2=\"300\" y2=\"236\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M300 236 L293 239 L293 233 Z\" fill=\"var(--ink)\"/><path d=\"M220 236 L227 233 L227 239 Z\" fill=\"var(--ink)\"/><text x=\"260\" y=\"252\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text></svg>",
+      "peu": "La moneda dins el bloc i les dues persones, vist des de dalt."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 460 290\" role=\"img\" aria-label=\"Bloc de 4 m per 2 m vist des de dalt. Des de la moneda, al centre de la cara posterior, un raig arriba a la cara frontal a 1,64 m del punt mitjà formant 39,3° amb la normal. El raig reflectit torna a l’interior amb el mateix angle de 39,3° i el refractat surt rasant a la cara, a 90° de la normal.\"><line x1=\"230\" y1=\"30\" x2=\"70\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M70 30 L77 27 L77 33 Z\" fill=\"var(--ink)\"/><path d=\"M230 30 L223 33 L223 27 Z\" fill=\"var(--ink)\"/><line x1=\"230\" y1=\"30\" x2=\"390\" y2=\"30\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M390 30 L383 33 L383 27 Z\" fill=\"var(--ink)\"/><path d=\"M230 30 L237 27 L237 33 Z\" fill=\"var(--ink)\"/><line x1=\"230\" y1=\"25\" x2=\"230\" y2=\"35\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><text x=\"150\" y=\"23\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">2 m</text><text x=\"310\" y=\"23\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">2 m</text><line x1=\"48\" y1=\"50\" x2=\"48\" y2=\"210\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M48 210 L45 203 L51 203 Z\" fill=\"var(--ink)\"/><path d=\"M48 50 L51 57 L45 57 Z\" fill=\"var(--ink)\"/><text x=\"40\" y=\"130\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" transform=\"rotate(-90 40 130)\">2 m</text><rect x=\"70\" y=\"50\" width=\"320\" height=\"160\" fill=\"var(--x)\" fill-opacity=\"0.10\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><rect x=\"222.0\" y=\"50\" width=\"16\" height=\"7\" fill=\"var(--ink)\"/><line x1=\"230\" y1=\"57\" x2=\"230\" y2=\"240\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"360.8\" y1=\"50\" x2=\"360.8\" y2=\"250\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"230\" y1=\"57\" x2=\"360.8\" y2=\"210\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><path d=\"M301.9 141.2 L294.3 137.1 L299.2 133 Z\" fill=\"var(--y)\"/><line x1=\"360.8\" y1=\"210\" x2=\"390\" y2=\"174.3\" stroke=\"var(--y)\" stroke-width=\"1.8\"/><path d=\"M382.7 183.2 L380.1 191.4 L375.2 187.4 Z\" fill=\"var(--y)\"/><line x1=\"360.8\" y1=\"210\" x2=\"435\" y2=\"210\" stroke=\"var(--f)\" stroke-width=\"2.2\"/><path d=\"M435 210 L426 214 L426 206 Z\" fill=\"var(--f)\"/><path d=\"M360.8 180 A30 30 0 0 0 341.8 186.8\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><path d=\"M360.8 180 A30 30 0 0 1 379.8 186.8\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"324.8\" y=\"198\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">39,3°</text><text x=\"390.8\" y=\"198\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">39,3°</text><path d=\"M360.8 226 A16 16 0 0 0 376.8 210\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"380.8\" y=\"234\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">90°</text><text x=\"238\" y=\"114\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">θ</text><text x=\"246\" y=\"118\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"10\" fill=\"var(--ink)\">límit</text><line x1=\"230\" y1=\"262\" x2=\"360.8\" y2=\"262\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M360.8 262 L353.8 265 L353.8 259 Z\" fill=\"var(--ink)\"/><path d=\"M230 262 L237 259 L237 265 Z\" fill=\"var(--ink)\"/><text x=\"265.4\" y=\"280\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">d</text><text x=\"275.4\" y=\"280\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\">= 1,64 m</text><text x=\"420\" y=\"230\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">aire</text></svg>",
+      "peu": "Raig que arriba a la cara frontal amb l’angle límit: el reflectit torna a dins i el refractat surt rasant."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Llei de Snell",
+          "html": "La llum de la moneda passa del policarbonat a l’aire. Amb els angles mesurats des de la normal a la cara del bloc: <i>n</i><sub>bloc</sub>·sin θ<sub><i>i</i></sub> = <i>n</i><sub>aire</sub>·sin θ<sub><i>r</i></sub>. Com que <i>n</i><sub>bloc</sub> &gt; <i>n</i><sub>aire</sub>, el raig refractat s’allunya de la normal: θ<sub><i>r</i></sub> &gt; θ<sub><i>i</i></sub>."
+        },
+        {
+          "titol": "Expressió de l’angle límit",
+          "html": "L’angle límit és l’angle d’incidència per al qual el raig refractat surt rasant a la superfície, θ<sub><i>r</i></sub> = 90°: <i>n</i><sub>bloc</sub>·sin θ<sub>límit</sub> = <i>n</i><sub>aire</sub>·sin 90° → sin θ<sub>límit</sub> = <i>n</i><sub>aire</sub>/<i>n</i><sub>bloc</sub> → <span class=\"res\">θ<sub>límit</sub> = arcsin(<i>n</i><sub>aire</sub>/<i>n</i><sub>bloc</sub>)</span>. Per a angles d’incidència més grans no hi ha refracció: tota la llum es reflecteix (reflexió total)."
+        },
+        {
+          "titol": "Valor",
+          "html": "θ<sub>límit</sub> = arcsin(1/1,58) = <span class=\"res\">θ<sub>límit</sub> = 39,3°</span>."
+        },
+        {
+          "titol": "Si s’invertissin els medis",
+          "html": "Si la llum anés de l’aire al policarbonat (d’índex petit a índex gran), sin θ<sub>2</sub> = (<i>n</i><sub>aire</sub>/<i>n</i><sub>bloc</sub>)·sin θ<sub>1</sub> &lt; sin θ<sub>1</sub>: el raig refractat s’acosta a la normal i el seu angle sempre és més petit que el d’incidència, de manera que mai no arriba a 90°. Formalment caldria sin θ<sub>límit</sub> = 1,58/1 &gt; 1, que no té solució: <span class=\"res\">no hi hauria angle límit ni reflexió total</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Definir l’angle límit (refracció a 90°) i deduir-ne l’expressió a partir de la llei de Snell: θ_límit = arcsin(n_aire/n_bloc)."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular-ne el valor: 39,3°."
+        },
+        {
+          "punts": 0.5,
+          "que": "Justificar que amb els medis invertits no hi ha angle límit: el refractat s’acosta a la normal, i arcsin(1,58) no existeix."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Quan es veu la moneda",
+          "html": "Com més a la dreta mira la segona persona, amb més inclinació arriben a la cara frontal els raigs de la moneda que li han d’arribar. Mentre l’angle d’incidència sigui més petit que l’angle límit, una part de la llum surt a l’aire i la moneda es veu; si el supera, hi ha reflexió total i no se la veu. La distància màxima correspon a θ<sub><i>i</i></sub> = θ<sub>límit</sub>."
+        },
+        {
+          "titol": "Relació geomètrica",
+          "html": "La moneda és a 2 m de la cara frontal. Un raig que hi arriba a una distància <i>d</i> del punt mitjà forma amb la normal un angle θ<sub><i>i</i></sub> que compleix tg θ<sub><i>i</i></sub> = <i>d</i>/2."
+        },
+        {
+          "titol": "Distància màxima",
+          "html": "<i>d</i><sub>màx</sub> = 2·tg θ<sub>límit</sub> = 2·tg 39,3° = <span class=\"res\"><i>d</i><sub>màx</sub> = 1,635 m ≈ 1,64 m</span>. Més enllà d’aquesta distància la segona persona ja no veu la moneda."
+        },
+        {
+          "titol": "Esquema dels raigs",
+          "html": "En el punt on el raig toca la cara frontal: el reflectit torna cap a dins del bloc formant amb la normal el mateix angle que l’incident, 39,3°, i el refractat surt a 90° de la normal, arran de la cara (també es pot dir que no hi ha raig refractat).",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.75,
+          "que": "Raonar que per veure la moneda l’angle d’incidència ha de ser menor que el límit, relacionar tg θ_i = d/2 i obtenir d_màx = 1,635 m."
+        },
+        {
+          "punts": 0.5,
+          "que": "Esquema: reflectit amb el mateix angle que l’incident i refractat a 90° (o sense raig refractat)."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "thl",
+      "text": "θ_límit = 39,3°",
+      "valor": 39.3,
+      "pauta": 39.3
+    },
+    {
+      "apartat": "b",
+      "clau": "d",
+      "text": "d_màx = 1,635 m",
+      "valor": 1.635,
+      "pauta": 1.635
+    }
+  ],
+  "comprovacio": [
+    "from math import asin, tan, degrees",
+    "n_bloc, n_aire = 1.58, 1",
+    "th = asin(n_aire / n_bloc)",
+    "R = {'thl': degrees(th), 'd': 2 * tan(th)}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

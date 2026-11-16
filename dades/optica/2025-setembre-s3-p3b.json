@@ -1,0 +1,284 @@
+{
+  "id": "2025-setembre-s3-p3b",
+  "any": 2025,
+  "convocatoria": "setembre",
+  "serie": 3,
+  "problema": "P3",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "etiquetes": [
+    "refraccio",
+    "reflexio-total",
+    "llum"
+  ],
+  "dificultat": 4,
+  "dificultat_motiu": "Cal aplicar la llei de Snell a la superfície de l'aigua i dividir la distància horitzontal en dos trams amb trigonometria; la segona part és una aplicació directa de l'angle límit i del canvi de v i λ en un medi.",
+  "titol": "L'Alaitz al trampolí i el làser de la piscina",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ext/pau_fisi25sl.pdf",
+      "pdf": "pau_fisi25sl",
+      "pagina": 7
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ext/pau_fisi25sp.pdf",
+      "pdf": "pau_fisi25sp",
+      "pagina": 7
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2025/Setembre/3/8404"
+  },
+  "dades": [
+    {
+      "simbol": "",
+      "valor": "40,0",
+      "unitat": "°",
+      "descripcio": "angle respecte a la vertical amb què l'Alaitz veu l'objecte"
+    },
+    {
+      "simbol": "",
+      "valor": "0,90",
+      "unitat": "m",
+      "descripcio": "alçària del trampolí sobre la superfície de l'aigua"
+    },
+    {
+      "simbol": "",
+      "valor": "2,00",
+      "unitat": "m",
+      "descripcio": "profunditat de la piscina"
+    },
+    {
+      "simbol": "",
+      "valor": "1,60",
+      "unitat": "m",
+      "descripcio": "altura dels ulls de l'Alaitz sobre el trampolí"
+    },
+    {
+      "simbol": "λ",
+      "valor": "632,8",
+      "unitat": "nm",
+      "descripcio": "longitud d'ona del làser a l'aire (apartat b)"
+    },
+    {
+      "simbol": "c",
+      "valor": "3,00 × 10⁸",
+      "unitat": "m/s",
+      "descripcio": "velocitat de la llum"
+    },
+    {
+      "simbol": "n_aire",
+      "valor": "1,00",
+      "unitat": "",
+      "descripcio": "índex de refracció de l'aire"
+    },
+    {
+      "simbol": "n_aigua",
+      "valor": "1,33",
+      "unitat": "",
+      "descripcio": "índex de refracció de l'aigua"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat. A la pauta aquesta opció s'anomena «opció 2»."
+  },
+  "enunciat": {
+    "intro": "<p>L’Alaitz es troba dalt d’un trampolí situat just a sobre la vora de la piscina i està a punt de llançar-se. En aquest moment observa un objecte al fons de la piscina amb un angle de 40,0° respecte a la vertical. L’alçària del trampolí és de 0,90 metres respecte a la superfície de l’aigua, la profunditat de la piscina és de 2,00 metres i els ulls de l’Alaitz es troben a 1,60 metres respecte al trampolí.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Calculeu a quina distància <i>x</i> es troba l’objecte respecte a la vora de la piscina."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "L’objecte submergit és un apuntador làser encès i dirigit cap amunt amb una certa inclinació. A partir de quin angle d’inclinació respecte a la vertical el raig del làser no sortirà de la piscina? A quina velocitat es propagarà el feix làser dins de la piscina? Si sabem que la llum que emet el làser té una longitud d’ona de 632,8 nm en l’aire, quina és la freqüència i la longitud d’ona del feix làser dins de la piscina?"
+      }
+    ],
+    "dades_text": "Dades: <i>c</i> = 3,00 × 10<sup>8</sup> m s<sup>–1</sup>.<br><i>n</i><sub>aire</sub> = 1,00.<br><i>n</i><sub>aigua</sub> = 1,33."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 450 350\" role=\"img\" aria-label=\"Esquema: l'Alaitz dreta a l'extrem d'un trampolí, just a sobre de la vora de la piscina. Els seus ulls són 1,6 m per sobre del trampolí, el trampolí és 0,9 m per sobre de l'aigua i la piscina fa 2 m de fondària. Al fons hi ha un objecte a una distància horitzontal x de la vora.\"><rect x=\"170\" y=\"184\" width=\"270\" height=\"120\" fill=\"var(--x)\" fill-opacity=\"0.14\" stroke=\"none\"/><line x1=\"170\" y1=\"184\" x2=\"440\" y2=\"184\" stroke=\"var(--x)\" stroke-width=\"1.5\"/><line x1=\"440\" y1=\"184\" x2=\"440\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"304\" x2=\"440\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"184\" x2=\"170\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"18\" x2=\"170\" y2=\"184\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"40\" y1=\"130\" x2=\"170\" y2=\"130\" stroke=\"var(--ink)\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"34\" r=\"7\" fill=\"var(--ink)\"/><line x1=\"170\" y1=\"41\" x2=\"170\" y2=\"92\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"56\" x2=\"160\" y2=\"74\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"56\" x2=\"180\" y2=\"74\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"92\" x2=\"162\" y2=\"128\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"92\" x2=\"178\" y2=\"128\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"34\" x2=\"150\" y2=\"130\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 130 L147.3 124 L152.7 124 Z\" fill=\"var(--ink)\"/><path d=\"M150 34 L152.7 40 L147.3 40 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"86\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">1,6 m</text><line x1=\"150\" y1=\"132\" x2=\"150\" y2=\"184\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 184 L147.3 178 L152.7 178 Z\" fill=\"var(--ink)\"/><path d=\"M150 132 L152.7 138 L147.3 138 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"166\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">0,9 m</text><line x1=\"150\" y1=\"184\" x2=\"150\" y2=\"304\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 304 L147.3 298 L152.7 298 Z\" fill=\"var(--ink)\"/><path d=\"M150 184 L152.7 190 L147.3 190 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"248\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">2 m</text><rect x=\"358.6\" y=\"297\" width=\"7\" height=\"7\" fill=\"var(--ink)\"/><line x1=\"170\" y1=\"322\" x2=\"362.1\" y2=\"322\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M362.1 322 L356.1 324.7 L356.1 319.3 Z\" fill=\"var(--ink)\"/><path d=\"M170 322 L176 319.3 L176 324.7 Z\" fill=\"var(--ink)\"/><text x=\"266.1\" y=\"340\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">x</text></svg>",
+      "peu": "L'Alaitz al trampolí, just a sobre de la vora de la piscina, i l'objecte al fons."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 450 365\" role=\"img\" aria-label=\"Camí de la llum des de l'objecte fins als ulls de l'Alaitz: a l'aigua forma un angle θ amb la vertical i avança una distància horitzontal b; a l'aire forma 40,0° amb la vertical i avança una distància a des de la vora. La distància de l'objecte a la vora és x = a + b.\"><rect x=\"170\" y=\"184\" width=\"270\" height=\"120\" fill=\"var(--x)\" fill-opacity=\"0.14\" stroke=\"none\"/><line x1=\"170\" y1=\"184\" x2=\"440\" y2=\"184\" stroke=\"var(--x)\" stroke-width=\"1.5\"/><line x1=\"440\" y1=\"184\" x2=\"440\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"304\" x2=\"440\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"184\" x2=\"170\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"18\" x2=\"170\" y2=\"184\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"40\" y1=\"130\" x2=\"170\" y2=\"130\" stroke=\"var(--ink)\" stroke-width=\"4\"/><circle cx=\"170\" cy=\"34\" r=\"7\" fill=\"var(--ink)\"/><line x1=\"170\" y1=\"41\" x2=\"170\" y2=\"92\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"56\" x2=\"160\" y2=\"74\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"56\" x2=\"180\" y2=\"74\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"92\" x2=\"162\" y2=\"128\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"92\" x2=\"178\" y2=\"128\" stroke=\"var(--ink)\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"34\" x2=\"150\" y2=\"130\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 130 L147.3 124 L152.7 124 Z\" fill=\"var(--ink)\"/><path d=\"M150 34 L152.7 40 L147.3 40 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"86\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">1,6 m</text><line x1=\"150\" y1=\"132\" x2=\"150\" y2=\"184\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 184 L147.3 178 L152.7 178 Z\" fill=\"var(--ink)\"/><path d=\"M150 132 L152.7 138 L147.3 138 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"166\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">0,9 m</text><line x1=\"150\" y1=\"184\" x2=\"150\" y2=\"304\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M150 304 L147.3 298 L152.7 298 Z\" fill=\"var(--ink)\"/><path d=\"M150 184 L152.7 190 L147.3 190 Z\" fill=\"var(--ink)\"/><text x=\"144\" y=\"248\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">2 m</text><rect x=\"358.6\" y=\"297\" width=\"7\" height=\"7\" fill=\"var(--ink)\"/><line x1=\"295.9\" y1=\"100\" x2=\"295.9\" y2=\"304\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M362.1 300.5 L295.9 184 L175 38\" fill=\"none\" stroke=\"var(--y)\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M327.3 239.2 L334.1 244.5 L328.3 247.8 Z\" fill=\"var(--y)\"/><path d=\"M233.2 108.3 L240.8 112.4 L235.8 116.6 Z\" fill=\"var(--y)\"/><path d=\"M295.9 142 A42 42 0 0 0 268.9 151.8\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"276.7\" y=\"135.4\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--ink)\">40,0°</text><path d=\"M295.9 224 A40 40 0 0 0 315.2 219\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"310.8\" y=\"239.4\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">θ</text><line x1=\"170\" y1=\"198\" x2=\"295.9\" y2=\"198\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M295.9 198 L289.9 200.7 L289.9 195.3 Z\" fill=\"var(--ink)\"/><path d=\"M170 198 L176 195.3 L176 200.7 Z\" fill=\"var(--ink)\"/><text x=\"232.9\" y=\"214\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">a</text><line x1=\"170\" y1=\"322\" x2=\"362.1\" y2=\"322\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M362.1 322 L356.1 324.7 L356.1 319.3 Z\" fill=\"var(--ink)\"/><path d=\"M170 322 L176 319.3 L176 324.7 Z\" fill=\"var(--ink)\"/><text x=\"266.1\" y=\"338\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">x</text><line x1=\"295.9\" y1=\"306\" x2=\"295.9\" y2=\"348\" stroke=\"var(--muted)\" stroke-width=\"0.8\"/><line x1=\"295.9\" y1=\"342\" x2=\"362.1\" y2=\"342\" stroke=\"var(--ink)\" stroke-width=\"1.1\"/><path d=\"M362.1 342 L356.1 344.7 L356.1 339.3 Z\" fill=\"var(--ink)\"/><path d=\"M295.9 342 L301.9 339.3 L301.9 344.7 Z\" fill=\"var(--ink)\"/><text x=\"329\" y=\"358\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">b</text></svg>",
+      "peu": "Camí de la llum de l'objecte als ulls (a escala): a la superfície es refracta i s'allunya de la normal en sortir a l'aire."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Camí de la llum",
+          "html": "La llum surt de l'objecte, travessa l'aigua, es refracta a la superfície i arriba als ulls de l'Alaitz, que són just a la vertical de la vora. Anomenem <i>a</i> la distància horitzontal que recorre per l'aire (des de la vora fins al punt on surt de l'aigua) i <i>b</i> la que recorre dins l'aigua, de manera que <i>x</i> = <i>a</i> + <i>b</i>. La superfície és horitzontal, per tant la normal és vertical i els angles respecte a la vertical són els angles d'incidència i de refracció.",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Angle dins l'aigua",
+          "html": "Llei de Snell a la superfície, amb 40,0° a l'aire i θ a l'aigua: <i>n</i><sub>aire</sub>·sin 40,0° = <i>n</i><sub>aigua</sub>·sin θ → θ = arcsin(<i>n</i><sub>aire</sub>·sin 40,0°/<i>n</i><sub>aigua</sub>) = arcsin(1,00·sin 40,0°/1,33) = arcsin 0,483 = <span class=\"res\">θ = 28,9°</span>."
+        },
+        {
+          "titol": "Tram dins l'aigua",
+          "html": "La llum baixa els 2,00 m de profunditat formant un angle θ amb la vertical: tan θ = <i>b</i>/2,00 → <i>b</i> = 2,00·tan 28,9° = <span class=\"res\"><i>b</i> = 1,10 m</span>."
+        },
+        {
+          "titol": "Tram per l'aire",
+          "html": "Els ulls són 1,60 + 0,90 = 2,50 m per sobre de l'aigua, i la línia de visió forma 40,0° amb la vertical: tan 40,0° = <i>a</i>/2,50 → <i>a</i> = 2,50·tan 40,0° = <span class=\"res\"><i>a</i> = 2,10 m</span>."
+        },
+        {
+          "titol": "Distància a la vora",
+          "html": "<i>x</i> = <i>a</i> + <i>b</i> = 2,10 + 1,10 = <span class=\"res\"><i>x</i> = 3,20 m</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.75,
+          "que": "Aplicar la llei de Snell a la superfície de l'aigua per trobar l'angle dins l'aigua: θ = 28,9°."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir el tram horitzontal dins l'aigua: b = 2·tan θ = 1,10 m."
+        },
+        {
+          "punts": 0.2,
+          "que": "Obtenir el tram horitzontal per l'aire: a = 2,5·tan 40° = 2,10 m."
+        },
+        {
+          "punts": 0.1,
+          "que": "Sumar els dos trams: x = 3,20 m."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Angle límit",
+          "html": "El feix passa de l'aigua a l'aire, un medi de menys índex: si l'angle d'incidència a la superfície (l'angle amb la vertical) és igual o més gran que l'angle límit, el raig refractat ja no existeix i hi ha reflexió total. A l'angle límit, el refractat sortiria a 90°: <i>n</i><sub>aigua</sub>·sin θ<sub>lím</sub> = <i>n</i><sub>aire</sub>·sin 90° → θ<sub>lím</sub> = arcsin(<i>n</i><sub>aire</sub>/<i>n</i><sub>aigua</sub>) = arcsin(1,00/1,33) = <span class=\"res\">θ<sub>lím</sub> = 48,75°</span>. El làser no surt de la piscina si s'inclina 48,75° (≈ 48,8°) o més respecte a la vertical."
+        },
+        {
+          "titol": "Velocitat a l'aigua",
+          "html": "<i>v</i> = <i>c</i>/<i>n</i><sub>aigua</sub> = 3,00·10<sup>8</sup>/1,33 = <span class=\"res\"><i>v</i> = 2,26·10<sup>8</sup> m/s</span>."
+        },
+        {
+          "titol": "Freqüència",
+          "html": "En passar d'un medi a un altre la freqüència no canvia (la fixa la font); canvien la velocitat i la longitud d'ona. A l'aire (<i>n</i><sub>aire</sub> = 1,00) la llum va a <i>c</i>, per tant: <i>f</i> = <i>c</i>/λ<sub>0</sub> = 3,00·10<sup>8</sup>/(632,8·10<sup>−9</sup>) = <span class=\"res\"><i>f</i> = 4,74·10<sup>14</sup> Hz</span>, també dins l'aigua."
+        },
+        {
+          "titol": "Longitud d'ona a l'aigua",
+          "html": "λ = <i>v</i>/<i>f</i> = 2,26·10<sup>8</sup>/4,74·10<sup>14</sup> = <span class=\"res\">λ = 4,76·10<sup>−7</sup> m = 476 nm</span>, més curta que a l'aire."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Justificar que hi ha reflexió total quan l'angle d'incidència és igual o més gran que l'angle límit i calcular-lo amb la llei de Snell: θ_lím = 48,75°."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la velocitat dins l'aigua: v = 2,26·10⁸ m/s."
+        },
+        {
+          "punts": 0.25,
+          "que": "Raonar que la freqüència no depèn del medi i calcular-la: f = 4,74·10¹⁴ Hz."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la longitud d'ona dins l'aigua: λ = 476 nm."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "th",
+      "text": "θ = 28,9°",
+      "valor": 28.9,
+      "pauta": 28.9
+    },
+    {
+      "apartat": "a",
+      "clau": "b",
+      "text": "b = 1,10 m",
+      "valor": 1.1,
+      "pauta": 1.1
+    },
+    {
+      "apartat": "a",
+      "clau": "a",
+      "text": "a = 2,10 m",
+      "valor": 2.1,
+      "pauta": 2.1
+    },
+    {
+      "apartat": "a",
+      "clau": "x",
+      "text": "x = 3,20 m",
+      "valor": 3.2,
+      "pauta": 3.2
+    },
+    {
+      "apartat": "b",
+      "clau": "thlim",
+      "text": "θ_lím = 48,75°",
+      "valor": 48.75,
+      "pauta": 48.75
+    },
+    {
+      "apartat": "b",
+      "clau": "v",
+      "text": "v = 2,26·10⁸ m/s",
+      "valor": 226000000.0,
+      "pauta": 226000000.0
+    },
+    {
+      "apartat": "b",
+      "clau": "f",
+      "text": "f = 4,74·10¹⁴ Hz",
+      "valor": 474000000000000.0,
+      "pauta": 474000000000000.0
+    },
+    {
+      "apartat": "b",
+      "clau": "lam",
+      "text": "λ = 476 nm",
+      "valor": 4.76e-07,
+      "pauta": 4.76e-07
+    }
+  ],
+  "comprovacio": [
+    "from math import asin, sin, tan, radians, degrees",
+    "c, n_aire, n_aigua = 3.00e8, 1.00, 1.33",
+    "th = asin(n_aire * sin(radians(40.0)) / n_aigua)",
+    "b = 2.00 * tan(th)",
+    "a = (1.60 + 0.90) * tan(radians(40.0))",
+    "thlim = degrees(asin(n_aire / n_aigua))",
+    "v = c / n_aigua",
+    "f = c / 632.8e-9",
+    "R = {'th': degrees(th), 'b': b, 'a': a, 'x': a + b, 'thlim': thlim, 'v': v, 'f': f, 'lam': v / f}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

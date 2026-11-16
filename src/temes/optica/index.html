@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Òptica: teoria i demos interactives</title>
+<meta name="description" content="Òptica a 2n de Batxillerat: índex de refracció, llei de Snell, angle límit i reflexió total, fibra òptica, lents primes, miralls, l'ull i les ulleres, amb demos interactives, exercicis resolts i problemes de les PAU.">
+<link rel="canonical" href="https://nil-munte.github.io/fisica-2n-bat/temes/optica/">
+<!-- Previsualització en compartir (WhatsApp, Telegram, LinkedIn, X, Bluesky...). Si canvieu de domini, substituïu https://nil-munte.github.io/fisica-2n-bat/ (og:url, og:image, canonical). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Física · 2n de Batxillerat">
+<meta property="og:locale" content="ca_ES">
+<meta property="og:title" content="Òptica · Física 2n de Batxillerat">
+<meta property="og:description" content="Òptica a 2n de Batxillerat: índex de refracció, llei de Snell, angle límit i reflexió total, fibra òptica, lents primes, miralls, l'ull i les ulleres, amb demos interactives, exercicis resolts i problemes de les PAU.">
+<meta property="og:url" content="https://nil-munte.github.io/fisica-2n-bat/temes/optica/">
+<meta property="og:image" content="https://nil-munte.github.io/fisica-2n-bat/img/og-optica.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Física · 2n de Batxillerat: òptica">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Òptica · Física 2n de Batxillerat">
+<meta name="twitter:description" content="Òptica a 2n de Batxillerat: índex de refracció, llei de Snell, angle límit i reflexió total, fibra òptica, lents primes, miralls, l'ull i les ulleres, amb demos interactives, exercicis resolts i problemes de les PAU.">
+<meta name="twitter:image" content="https://nil-munte.github.io/fisica-2n-bat/img/og-optica.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="tema.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Òptica", "url": "https://nil-munte.github.io/fisica-2n-bat/temes/optica/", "inLanguage": "ca", "educationalLevel": "2n de Batxillerat", "teaches": "Òptica", "learningResourceType": ["teoria", "demostració interactiva", "exercicis resolts"], "isAccessibleForFree": true, "author": {"@type": "Person", "name": "Nil Munté Guerrero", "url": "https://nil-munte.github.io", "sameAs": ["https://www.linkedin.com/in/nilmunte/"]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Física · 2n de Batxillerat", "item": "https://nil-munte.github.io/fisica-2n-bat/"}, {"@type": "ListItem", "position": 2, "name": "Òptica", "item": "https://nil-munte.github.io/fisica-2n-bat/temes/optica/"}]}</script>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="printhead ph-ex">
+    <div class="ph1">Òptica</div>
+    <p>Física 2n de Batxillerat</p>
+  </div>
+  <div class="printhead ph-f">
+    <div class="ph1">Formulari · Òptica</div>
+    <p>Física 2n de Batxillerat</p>
+  </div>
+
+  <header id="inici">
+    <div>
+      <nav class="crumbs" aria-label="Ruta"><a href="../../index.html">Física · 2n de Batxillerat</a><span aria-hidden="true">›</span><span aria-current="page">Òptica</span></nav>
+      <h1>Òptica</h1>
+      <p class="sub">Teoria i demos interactives. Els exercicis graduats i els problemes de selectivitat (PAU) resolts són a la <a href="exercicis/">pàgina d'exercicis</a>.</p>
+    </div>
+    <div class="printbtns">
+      <span class="dlg"><a class="btn" href="pdf/optica-formulari.pdf" target="_blank" rel="noopener" title="Obre el formulari d'òptica en una pestanya nova">PDF formulari</a><a class="btn ic" href="pdf/optica-formulari.pdf" download="Òptica - Formulari.pdf" title="Descarrega el formulari d'òptica" aria-label="Descarrega el formulari d'òptica"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      <span class="dlg"><a class="btn" href="pdf/optica-enunciats.pdf" target="_blank" rel="noopener" title="Obre els enunciats d'òptica en una pestanya nova">PDF enunciats</a><a class="btn ic" href="pdf/optica-enunciats.pdf" download="Òptica - Enunciats.pdf" title="Descarrega els enunciats d'òptica" aria-label="Descarrega els enunciats d'òptica"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      <span class="dlg"><a class="btn" href="pdf/optica-enunciats-solucions.pdf" target="_blank" rel="noopener" title="Obre els enunciats d'òptica amb les solucions en una pestanya nova">PDF amb solucions</a><a class="btn ic" href="pdf/optica-enunciats-solucions.pdf" download="Òptica - Enunciats i solucions.pdf" title="Descarrega els enunciats d'òptica amb les solucions" aria-label="Descarrega els enunciats d'òptica amb les solucions"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      <span data-share hidden></span>
+    </div>
+  </header>
+
+  <div class="topbar" id="topbar">
+  <nav class="toc" aria-label="Seccions">
+    <a href="../../index.html" class="home" title="Torna a la llista de temes">← Tots els temes</a><span class="sep"></span><a href="#inici" class="top" title="Torna al principi d'aquesta pàgina">↑ Amunt</a>
+    <a href="#teoria">Teoria</a><a href="#demos">Demos</a><a href="#metode">Com atacar un problema</a><a href="exercicis/">Exercicis</a>
+  </nav>
+  <nav class="secnav" id="secnav" aria-label="Apartats d'aquesta secció"></nav>
+  </div>
+
+  <!-- ===================== TEORIA ===================== -->
+  <main>
+  <section class="blk" id="teoria">
+    <h2>Teoria</h2>
+
+    <!-- BLOC 1 -->
+    <article class="tblock" id="b1">
+      <header class="bhd"><span class="bn">1</span><div><h3>La llum en un medi</h3><p class="lede">La llum és una ona electromagnètica: no necessita medi i al buit avança a c = 3,00·10<sup>8</sup> m/s. Dins d'un medi transparent (aigua, vidre) va més a poc a poc, i l'índex de refracció diu quantes vegades més lenta.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">n = c/v</div>
+          <div class="keysec">f no canvia &nbsp;·&nbsp; v = c/n &nbsp;·&nbsp; λ = λ<sub>0</sub>/n</div>
+          <p>Quan la llum passa d'un medi a un altre, la freqüència és la de la font i <b>es manté</b>. Com que v = λ·f, si la velocitat es divideix per n, la longitud d'ona també: λ = λ<sub>0</sub>/n, on λ<sub>0</sub> és la longitud d'ona al buit (o a l'aire).</p>
+          <p class="units">n: índex de refracció (sense unitats, n ≥ 1) · c: velocitat de la llum al buit [m/s] · v: velocitat al medi [m/s] · λ<sub>0</sub>, λ: longitud d'ona al buit i al medi [m] · f: freqüència [Hz]</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 560 190" role="img" aria-label="Una ona de llum passa de l'aire al vidre: la freqüència no canvia, però la velocitat i la longitud d'ona es fan més petites"><rect x="280.0" y="26.0" width="250.0" height="132.0" fill="var(--t)" opacity="0.16"/><text x="150.0" y="22.0" text-anchor="middle" style="fill:var(--muted);font-size:12px">aire · n ≈ 1,00</text><text x="405.0" y="22.0" text-anchor="middle" style="fill:var(--muted);font-size:12px">vidre · n = 1,50</text><line x1="280.0" y1="26.0" x2="280.0" y2="158.0" stroke="var(--muted)" stroke-width="1"/><path d="M30.0 92.0 L32.0 88.4 L34.0 84.9 L36.0 81.5 L38.0 78.2 L40.0 75.0 L42.0 72.0 L44.0 69.2 L46.0 66.7 L48.0 64.5 L50.0 62.6 L52.0 60.9 L54.0 59.7 L56.0 58.7 L58.0 58.2 L60.0 58.0 L62.0 58.2 L64.0 58.7 L66.0 59.7 L68.0 60.9 L70.0 62.6 L72.0 64.5 L74.0 66.7 L76.0 69.2 L78.0 72.0 L80.0 75.0 L82.0 78.2 L84.0 81.5 L86.0 84.9 L88.0 88.4 L90.0 92.0 L92.0 95.6 L94.0 99.1 L96.0 102.5 L98.0 105.8 L100.0 109.0 L102.0 112.0 L104.0 114.8 L106.0 117.3 L108.0 119.5 L110.0 121.4 L112.0 123.1 L114.0 124.3 L116.0 125.3 L118.0 125.8 L120.0 126.0 L122.0 125.8 L124.0 125.3 L126.0 124.3 L128.0 123.1 L130.0 121.4 L132.0 119.5 L134.0 117.3 L136.0 114.8 L138.0 112.0 L140.0 109.0 L142.0 105.8 L144.0 102.5 L146.0 99.1 L148.0 95.6 L150.0 92.0 L152.0 88.4 L154.0 84.9 L156.0 81.5 L158.0 78.2 L160.0 75.0 L162.0 72.0 L164.0 69.2 L166.0 66.7 L168.0 64.5 L170.0 62.6 L172.0 60.9 L174.0 59.7 L176.0 58.7 L178.0 58.2 L180.0 58.0 L182.0 58.2 L184.0 58.7 L186.0 59.7 L188.0 60.9 L190.0 62.6 L192.0 64.5 L194.0 66.7 L196.0 69.2 L198.0 72.0 L200.0 75.0 L202.0 78.2 L204.0 81.5 L206.0 84.9 L208.0 88.4 L210.0 92.0 L212.0 95.6 L214.0 99.1 L216.0 102.5 L218.0 105.8 L220.0 109.0 L222.0 112.0 L224.0 114.8 L226.0 117.3 L228.0 119.5 L230.0 121.4 L232.0 123.1 L234.0 124.3 L236.0 125.3 L238.0 125.8 L240.0 126.0 L242.0 125.8 L244.0 125.3 L246.0 124.3 L248.0 123.1 L250.0 121.4 L252.0 119.5 L254.0 117.3 L256.0 114.8 L258.0 112.0 L260.0 109.0 L262.0 105.8 L264.0 102.5 L266.0 99.1 L268.0 95.6 L270.0 92.0 L272.0 88.4 L274.0 84.9 L276.0 81.5 L278.0 78.2 L280.0 75.0 L282.0 70.6 L284.0 66.7 L286.0 63.5 L288.0 60.9 L290.0 59.2 L292.0 58.2 L294.0 58.0 L296.0 58.7 L298.0 60.3 L300.0 62.6 L302.0 65.6 L304.0 69.2 L306.0 73.5 L308.0 78.2 L310.0 83.2 L312.0 88.4 L314.0 93.8 L316.0 99.1 L318.0 104.2 L320.0 109.0 L322.0 113.4 L324.0 117.3 L326.0 120.5 L328.0 123.1 L330.0 124.8 L332.0 125.8 L334.0 126.0 L336.0 125.3 L338.0 123.7 L340.0 121.4 L342.0 118.4 L344.0 114.8 L346.0 110.5 L348.0 105.8 L350.0 100.8 L352.0 95.6 L354.0 90.2 L356.0 84.9 L358.0 79.8 L360.0 75.0 L362.0 70.6 L364.0 66.7 L366.0 63.5 L368.0 60.9 L370.0 59.2 L372.0 58.2 L374.0 58.0 L376.0 58.7 L378.0 60.3 L380.0 62.6 L382.0 65.6 L384.0 69.2 L386.0 73.5 L388.0 78.2 L390.0 83.2 L392.0 88.4 L394.0 93.8 L396.0 99.1 L398.0 104.2 L400.0 109.0 L402.0 113.4 L404.0 117.3 L406.0 120.5 L408.0 123.1 L410.0 124.8 L412.0 125.8 L414.0 126.0 L416.0 125.3 L418.0 123.7 L420.0 121.4 L422.0 118.4 L424.0 114.8 L426.0 110.5 L428.0 105.8 L430.0 100.8 L432.0 95.6 L434.0 90.2 L436.0 84.9 L438.0 79.8 L440.0 75.0 L442.0 70.6 L444.0 66.7 L446.0 63.5 L448.0 60.9 L450.0 59.2 L452.0 58.2 L454.0 58.0 L456.0 58.7 L458.0 60.3 L460.0 62.6 L462.0 65.6 L464.0 69.2 L466.0 73.5 L468.0 78.2 L470.0 83.2 L472.0 88.4 L474.0 93.8 L476.0 99.1 L478.0 104.2 L480.0 109.0 L482.0 113.4 L484.0 117.3 L486.0 120.5 L488.0 123.1 L490.0 124.8 L492.0 125.8 L494.0 126.0 L496.0 125.3 L498.0 123.7 L500.0 121.4 L502.0 118.4 L504.0 114.8 L506.0 110.5 L508.0 105.8 L510.0 100.8 L512.0 95.6 L514.0 90.2 L516.0 84.9 L518.0 79.8 L520.0 75.0 L522.0 70.6 L524.0 66.7 L526.0 63.5 L528.0 60.9 L530.0 59.2" fill="none" stroke="var(--y)" stroke-width="2.4"/><line x1="60.0" y1="52.0" x2="60.0" y2="140.0" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="180.0" y1="52.0" x2="180.0" y2="140.0" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="120.0" y1="148.0" x2="175.8" y2="148.0" stroke="var(--ink)" stroke-width="1.2"/><polygon points="180.0,148.0 173.0,150.9 173.0,145.1" fill="var(--ink)"/><line x1="120.0" y1="148.0" x2="64.2" y2="148.0" stroke="var(--ink)" stroke-width="1.2"/><polygon points="60.0,148.0 67.0,145.1 67.0,150.9" fill="var(--ink)"/><text x="120.0" y="172.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:15px">λ<tspan dy="4" font-size="10">0</tspan></text><line x1="293.3" y1="52.0" x2="293.3" y2="140.0" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="373.3" y1="52.0" x2="373.3" y2="140.0" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="3 3"/><line x1="333.3" y1="148.0" x2="369.1" y2="148.0" stroke="var(--ink)" stroke-width="1.2"/><polygon points="373.3,148.0 366.3,150.9 366.3,145.1" fill="var(--ink)"/><line x1="333.3" y1="148.0" x2="297.5" y2="148.0" stroke="var(--ink)" stroke-width="1.2"/><polygon points="293.3,148.0 300.3,145.1 300.3,150.9" fill="var(--ink)"/><text x="333.3" y="172.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:15px">λ = λ<tspan dy="4" font-size="10">0</tspan><tspan dy="-4">/n</tspan></text><line x1="205.0" y1="40.0" x2="245.2" y2="40.0" stroke="var(--f)" stroke-width="2"/><polygon points="250.0,40.0 242.0,43.4 242.0,36.6" fill="var(--f)"/><text x="198.0" y="44.0" text-anchor="end" class="lab" style="fill:var(--f);font-size:15px">c</text><line x1="460.0" y1="40.0" x2="485.2" y2="40.0" stroke="var(--f)" stroke-width="2"/><polygon points="490.0,40.0 482.0,43.4 482.0,36.6" fill="var(--f)"/><text x="453.0" y="44.0" text-anchor="end" class="lab" style="fill:var(--f);font-size:14px">v = c/n</text></svg></div>
+          <figcaption>En entrar al vidre, la llum va més lenta i les crestes s'apropen: λ es fa n vegades més petita. El ritme d'oscil·lació (f) és el mateix a tots dos costats.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Índexs de refracció habituals</h4>
+          <table class="t">
+            <tr><th>Medi</th><th>n</th><th>v</th></tr>
+            <tr><td>buit (i aire, a la pràctica)</td><td class="n">1,00</td><td class="n">3,00·10<sup>8</sup> m/s</td></tr>
+            <tr><td>aigua</td><td class="n">1,33</td><td class="n">2,26·10<sup>8</sup> m/s</td></tr>
+            <tr><td>vidre</td><td class="n">≈ 1,5</td><td class="n">≈ 2,0·10<sup>8</sup> m/s</td></tr>
+            <tr><td>diamant</td><td class="n">2,42</td><td class="n">1,24·10<sup>8</sup> m/s</td></tr>
+          </table>
+          <p>Com més gran és n, més «dens òpticament» és el medi i més lenta hi va la llum. Les PAU solen donar els índexs; si no, l'aire és n = 1,00.</p>
+        </section>
+        <section class="tsub">
+          <h4>L'espectre visible</h4>
+          <p>La llum visible és la part de l'espectre electromagnètic que detecta l'ull: longituds d'ona (al buit) d'uns <b>400 nm</b> (violeta) a uns <b>700 nm</b> (vermell). Per sota hi ha l'ultraviolat, els raigs X i els gamma; per sobre, l'infraroig, les microones i les ones de ràdio.</p>
+          <div class="keyf">c = λ<sub>0</sub>·f &nbsp;→&nbsp; f = c/λ<sub>0</sub></div>
+          <p>El color el fixa la freqüència, i per això no canvia en canviar de medi encara que canviï λ.</p>
+        </section>
+        <section class="tsub">
+          <h4>Dispersió: per què un prisma separa els colors</h4>
+          <p>L'índex de refracció d'un material depèn una mica de la longitud d'ona: en el vidre, el violeta té una n més gran que el vermell. Per això cada color es desvia un angle diferent en un prisma (o en una gota de pluja, l'arc de Sant Martí) i la llum blanca s'obre en colors.</p>
+        </section>
+        <section class="tsub">
+          <h4>Raigs: el model geomètric</h4>
+          <p>En un medi homogeni la llum va en línia recta. Per estudiar miralls i lents la representem amb <b>raigs</b>: línies que indiquen cap on avança l'energia, perpendiculars als fronts d'ona. És l'òptica geomètrica, vàlida quan els objectes són molt més grans que λ.</p>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: llei de Snell</button></div>
+    </article>
+
+    <!-- BLOC 2 -->
+    <article class="tblock" id="b2">
+      <header class="bhd"><span class="bn">2</span><div><h3>Reflexió i refracció</h3><p class="lede">Quan la llum arriba a la superfície entre dos medis, una part es reflecteix i una part passa a l'altre medi canviant de direcció (refracció). Tots els angles es mesuren respecte de la <b>normal</b>, la perpendicular a la superfície.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">n<sub>1</sub>·sin θ<sub>1</sub> = n<sub>2</sub>·sin θ<sub>2</sub></div>
+          <div class="keysec">reflexió: θ<sub>1</sub>′ = θ<sub>1</sub> &nbsp;·&nbsp; els tres raigs i la normal són al mateix pla</div>
+          <p>És la <b>llei de Snell</b>. Si la llum entra a un medi amb n més gran (n<sub>2</sub> &gt; n<sub>1</sub>), θ<sub>2</sub> &lt; θ<sub>1</sub>: el raig <b>s'apropa a la normal</b>. Si passa a un medi amb n més petita, se n'allunya.</p>
+          <p class="units">θ<sub>1</sub>: angle d'incidència · θ<sub>1</sub>′: angle de reflexió · θ<sub>2</sub>: angle de refracció (tots respecte de la normal) · n<sub>1</sub>, n<sub>2</sub>: índexs dels dos medis</p>
+          <details class="more"><summary>D'on surt</summary>
+            <p>Un front d'ona que arriba inclinat toca la superfície primer per un extrem. Aquest extrem ja avança dins el segon medi amb velocitat v<sub>2</sub> mentre l'altre encara va a v<sub>1</sub>, i el front gira. Igualant el temps que triguen tots dos extrems surt sin θ<sub>1</sub>/v<sub>1</sub> = sin θ<sub>2</sub>/v<sub>2</sub>, i amb v = c/n, la llei de Snell.</p>
+          </details>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 560 250" role="img" aria-label="Raig que passa de l'aire a l'aigua: el reflectit surt amb el mateix angle i el refractat s'apropa a la normal"><rect x="30.0" y="120.0" width="500.0" height="115.0" fill="var(--x)" opacity="0.13"/><line x1="30.0" y1="120.0" x2="530.0" y2="120.0" stroke="var(--muted)" stroke-width="1.2"/><line x1="280.0" y1="14.0" x2="280.0" y2="236.0" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5 4"/><text x="286.0" y="26.0" text-anchor="start" style="fill:var(--muted);font-size:11px">normal</text><text x="40.0" y="110.0" text-anchor="start" style="fill:var(--muted);font-size:12px">aire · n₁ = 1,00</text><text x="40.0" y="142.0" text-anchor="start" style="fill:var(--muted);font-size:12px">aigua · n₂ = 1,33</text><path d="M195.7 49.3 L280.0 120.0" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="240.9,87.2 233.7,85.0 237.5,80.5" fill="var(--y)"/><path d="M280.0 120.0 L364.3 49.3" fill="none" stroke="var(--y)" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="6 4"/><polygon points="325.2,82.1 321.7,88.8 317.9,84.3" fill="var(--y)"/><path d="M280.0 120.0 L343.4 209.9" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="314.0,168.2 307.5,164.2 312.4,160.8" fill="var(--y)"/><path d="M280.0 76.0 A44 44 0 0 0 246.3 91.7" fill="none" stroke="var(--ink)" stroke-width="1.2"/><text x="256.0" y="68.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:15px">θ₁</text><path d="M319.8 86.6 A52 52 0 0 0 280.0 68.0" fill="none" stroke="var(--muted)" stroke-width="1.2"/><text x="308.0" y="62.0" text-anchor="middle" class="lab" style="fill:var(--muted);font-size:15px">θ₁′</text><path d="M280.0 168.0 A48 48 0 0 0 307.6 159.2" fill="none" stroke="var(--ink)" stroke-width="1.2"/><text x="298.0" y="186.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:15px">θ₂</text><text x="191.7" y="43.3" text-anchor="end" style="fill:var(--y);font-size:11px">incident</text><text x="368.3" y="43.3" text-anchor="start" style="fill:var(--y);font-size:11px">reflectit</text><text x="349.4" y="209.9" text-anchor="start" style="fill:var(--y);font-size:11px">refractat</text><text x="530.0" y="246.0" text-anchor="end" style="fill:var(--muted);font-size:11px">θ₁ = 50° → θ₂ = 35,2°</text></svg></div>
+          <figcaption>De l'aire a l'aigua, el raig refractat s'apropa a la normal. El reflectit surt amb el mateix angle que l'incident, a l'altre costat de la normal.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Angles respecte de la normal</h4>
+          <p>Si l'enunciat dona l'angle amb la superfície (o amb l'horitzontal), passa'l a l'angle amb la normal: θ = 90° − α. És l'errada més habitual en aquests problemes.</p>
+          <div class="keyf">α amb la superfície &nbsp;→&nbsp; θ = 90° − α</div>
+        </section>
+        <section class="tsub">
+          <h4>Incidència normal</h4>
+          <p>Si el raig arriba perpendicular a la superfície (θ<sub>1</sub> = 0), sin θ<sub>2</sub> = 0 i no es desvia: canvien la velocitat i la longitud d'ona, però no la direcció.</p>
+        </section>
+        <section class="tsub">
+          <h4>Làmina de cares paral·leles</h4>
+          <p>Un raig que travessa un vidre pla surt <b>paral·lel</b> a com havia entrat (aplicant Snell a l'entrada i a la sortida, n<sub>aire</sub>·sin θ = n<sub>aire</sub>·sin θ′), però desplaçat lateralment. Com més gruixuda la làmina, més desplaçament.</p>
+        </section>
+        <section class="tsub">
+          <h4>Objectes sota l'aigua</h4>
+          <p>Veiem un objecte submergit on arriben els raigs, prolongats en línia recta: la refracció a la superfície fa que sembli més amunt del que és. Per localitzar-lo, aplica Snell al punt on el raig surt de l'aigua i fes la geometria a cada costat (dos triangles rectangles).</p>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Prova-ho a la demo 1: canvia els medis i l'angle</button></div>
+    </article>
+
+    <!-- BLOC 3 -->
+    <article class="tblock" id="b3">
+      <header class="bhd"><span class="bn">3</span><div><h3>Angle límit i reflexió total</h3><p class="lede">Quan la llum va d'un medi a un altre amb n més petita (de l'aigua a l'aire), el raig refractat s'allunya de la normal. A partir d'un angle d'incidència, l'angle límit, ja no pot sortir: tota la llum es reflecteix.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">sin θ<sub>L</sub> = n<sub>2</sub>/n<sub>1</sub></div>
+          <div class="keysec">només si n<sub>1</sub> &gt; n<sub>2</sub> &nbsp;·&nbsp; θ<sub>1</sub> &gt; θ<sub>L</sub> → reflexió total</div>
+          <p>A l'angle límit, el refractat surt rasant: θ<sub>2</sub> = 90°. A la llei de Snell, n<sub>1</sub>·sin θ<sub>L</sub> = n<sub>2</sub>·sin 90° = n<sub>2</sub>. Si s'inverteixen els medis (de menys a més n) no hi ha angle límit: sempre hi ha raig refractat.</p>
+          <p class="units">θ<sub>L</sub>: angle límit o crític · n<sub>1</sub>: medi d'on ve la llum · n<sub>2</sub>: medi on hauria de passar</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 560 230" role="img" aria-label="Tres raigs que surten d'un punt sota l'aigua: un es refracta, el que arriba amb l'angle límit surt rasant i el que arriba amb més angle es reflecteix totalment"><rect x="20.0" y="80.0" width="520.0" height="140.0" fill="var(--x)" opacity="0.13"/><line x1="20.0" y1="80.0" x2="540.0" y2="80.0" stroke="var(--muted)" stroke-width="1.2"/><text x="30.0" y="70.0" text-anchor="start" style="fill:var(--muted);font-size:12px">aire · n = 1,00</text><text x="530.0" y="212.0" text-anchor="end" style="fill:var(--muted);font-size:12px">aigua · n = 1,33</text><line x1="156.9" y1="34.0" x2="156.9" y2="126.0" stroke="var(--muted)" stroke-width="0.9" stroke-dasharray="4 3"/><path d="M110.0 196.0 L156.9 80.0 L191.7 19.3" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="134.9,134.3 135.0,141.9 129.6,139.7" fill="var(--y)"/><polygon points="176.3,46.2 175.4,53.7 170.3,50.8" fill="var(--y)"/><path d="M145.6 107.8 A30 30 0 0 0 156.9 110.0" fill="none" stroke="var(--y)" stroke-width="1.2"/><text x="148.9" y="126.0" text-anchor="middle" class="lab" style="fill:var(--y);font-size:13px">θ</text><line x1="242.3" y1="34.0" x2="242.3" y2="126.0" stroke="var(--muted)" stroke-width="0.9" stroke-dasharray="4 3"/><path d="M110.0 196.0 L242.3 80.0 L337.3 80.0" fill="none" stroke="var(--f)" stroke-width="2" stroke-linejoin="round"/><polygon points="179.2,135.4 175.8,142.2 172.0,137.8" fill="var(--f)"/><polygon points="293.8,80.0 286.8,82.9 286.8,77.1" fill="var(--f)"/><path d="M219.7 99.8 A30 30 0 0 0 242.3 110.0" fill="none" stroke="var(--f)" stroke-width="1.2"/><text x="228.3" y="126.0" text-anchor="middle" class="lab" style="fill:var(--f);font-size:14px">θ<tspan dy="4" font-size="10">L</tspan></text><text x="312.3" y="74.0" text-anchor="middle" style="fill:var(--f);font-size:11px">surt rasant (90°)</text><line x1="347.8" y1="34.0" x2="347.8" y2="126.0" stroke="var(--muted)" stroke-width="0.9" stroke-dasharray="4 3"/><path d="M110.0 196.0 L347.8 80.0 L478.6 143.8" fill="none" stroke="var(--ec)" stroke-width="2" stroke-linejoin="round"/><polygon points="232.5,136.2 227.5,142.0 224.9,136.7" fill="var(--ec)"/><polygon points="416.8,113.7 409.3,113.2 411.8,107.9" fill="var(--ec)"/><text x="458.6" y="159.8" text-anchor="middle" style="fill:var(--ec);font-size:11px">reflexió total</text><circle cx="110" cy="196" r="5" fill="var(--ink)"/><text x="100.0" y="200.0" text-anchor="end" style="fill:var(--ink);font-size:11px">font</text><text x="540.0" y="30.0" text-anchor="end" style="fill:var(--muted);font-size:12px">sin θ<tspan dy="3" font-size="9">L</tspan><tspan dy="-3"> = 1/1,33 → θ</tspan><tspan dy="3" font-size="9">L</tspan><tspan dy="-3"> = 48,8°</tspan></text></svg></div>
+          <figcaption>Des d'un punt sota l'aigua: amb poc angle el raig surt; amb θ<sub>L</sub> = 48,8° surt rasant; amb més angle es reflecteix tot cap a dins.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Angles límit habituals (cap a l'aire)</h4>
+          <table class="t">
+            <tr><th>Medi</th><th>n</th><th>θ<sub>L</sub></th></tr>
+            <tr><td>aigua</td><td class="n">1,33</td><td class="n">48,8°</td></tr>
+            <tr><td>vidre</td><td class="n">1,50</td><td class="n">41,8°</td></tr>
+            <tr><td>diamant</td><td class="n">2,42</td><td class="n">24,4°</td></tr>
+          </table>
+          <p>El diamant té un angle límit molt petit: la llum hi queda atrapada i rebota moltes vegades abans de sortir. Per això brilla tant.</p>
+        </section>
+        <section class="tsub">
+          <h4>Fibra òptica</h4>
+          <p>Un nucli de vidre (n<sub>1</sub>) envoltat d'un revestiment amb n<sub>2</sub> una mica més petita. Si la llum arriba a la paret amb un angle més gran que θ<sub>L</sub>, es reflecteix totalment i avança rebotant sense perdre llum, encara que la fibra es corbi.</p>
+          <div class="figwrap"><svg class="fig" viewBox="0 0 560 170" role="img" aria-label="Fibra òptica: el raig entra amb un angle φ, es refracta i rebota a les parets per reflexió total"><rect x="80" y="32" width="460" height="106" fill="var(--muted)" opacity="0.12"/><rect x="80.0" y="50.0" width="460.0" height="70.0" fill="var(--t)" opacity="0.2"/><line x1="80.0" y1="50.0" x2="540.0" y2="50.0" stroke="var(--t)" stroke-width="1.2"/><line x1="80.0" y1="120.0" x2="540.0" y2="120.0" stroke="var(--t)" stroke-width="1.2"/><line x1="80.0" y1="32.0" x2="80.0" y2="138.0" stroke="var(--muted)" stroke-width="1"/><line x1="20.0" y1="85.0" x2="540.0" y2="85.0" stroke="var(--muted)" stroke-width="0.8" stroke-dasharray="6 4"/><path d="M20.0 119.6 L80.0 85.0 L179.0 50.0 L377.0 120.0 L540.0 62.4" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="53.5,100.3 48.9,106.4 45.9,101.3" fill="var(--y)"/><polygon points="133.3,66.2 127.6,71.3 125.7,65.7" fill="var(--y)"/><polygon points="281.8,86.3 274.2,86.8 276.1,81.2" fill="var(--y)"/><polygon points="462.3,89.8 456.6,95.0 454.7,89.4" fill="var(--y)"/><path d="M44.0 85.0 A36 36 0 0 0 48.8 103.0" fill="none" stroke="var(--ink)" stroke-width="1.2"/><text x="30.0" y="101.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:15px">φ</text><line x1="179.0" y1="36.0" x2="179.0" y2="100.0" stroke="var(--muted)" stroke-width="0.9" stroke-dasharray="4 3"/><text x="191.0" y="88.0" text-anchor="start" class="lab" style="fill:var(--ink);font-size:13px">θ ≥ θ<tspan dy="3" font-size="9">L</tspan></text><text x="300.0" y="24.0" text-anchor="middle" style="fill:var(--muted);font-size:11px">revestiment · n₂</text><text x="300.0" y="152.0" text-anchor="middle" style="fill:var(--muted);font-size:11px">nucli · n₁ > n₂</text></svg></div>
+          <p>A l'entrada: n<sub>aire</sub>·sin φ = n<sub>1</sub>·sin θ<sub>r</sub>, i dins la fibra l'angle amb la paret és 90° − θ<sub>r</sub>. Imposant que sigui θ<sub>L</sub> surt l'angle φ màxim d'entrada.</p>
+        </section>
+        <section class="tsub">
+          <h4>Com saber si hi haurà reflexió total</h4>
+          <ol class="tight">
+            <li>La llum ha d'anar cap a un medi amb <b>n més petita</b>.</li>
+            <li>Calcula θ<sub>L</sub> amb sin θ<sub>L</sub> = n<sub>2</sub>/n<sub>1</sub>.</li>
+            <li>Compara-hi l'angle d'incidència (respecte de la normal!): si és més gran, reflexió total.</li>
+          </ol>
+          <p>També ho veuràs si, en aplicar Snell, et surt sin θ<sub>2</sub> &gt; 1: vol dir que el raig no pot sortir.</p>
+        </section>
+        <section class="tsub">
+          <h4>El con de llum sota l'aigua</h4>
+          <p>Una llum al fons d'una piscina només il·lumina la superfície dins d'un cercle: els raigs que hi arriben amb més de θ<sub>L</sub> es reflecteixen cap avall. Si la llum és a una profunditat h, el radi del cercle és r = h·tan θ<sub>L</sub>.</p>
+          <div class="keyf">r = h·tan θ<sub>L</sub></div>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="0">Mira-ho a la demo 1</button><button class="godemo" data-demo="1">Prova-ho a la demo 2: fibra òptica</button></div>
+    </article>
+
+    <!-- BLOC 4 -->
+    <article class="tblock" id="b4">
+      <header class="bhd"><span class="bn">4</span><div><h3>Lents primes</h3><p class="lede">Una lent desvia els raigs per refracció a les seves dues cares i forma una imatge de l'objecte. Les <b>convergents</b> (més gruixudes al centre) concentren els raigs paral·lels en el focus F′; les <b>divergents</b> (més primes al centre) els obren.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">1/s′ − 1/s = 1/f′</div>
+          <div class="keysec">β = y′/y = s′/s &nbsp;·&nbsp; P = 1/f′ [D = m<sup>−1</sup>]</div>
+          <p>Conveni de signes normalitzat (el de les PAU): la llum va d'esquerra a dreta i les distàncies es mesuren des de la lent, <b>positives cap a la dreta</b> i negatives cap a l'esquerra. L'objecte real té s &lt; 0. Si surt s′ &gt; 0 la imatge és real (es pot projectar en una pantalla); si s′ &lt; 0, virtual.</p>
+          <p class="units">s: posició de l'objecte · s′: posició de la imatge · f′: distància focal imatge (f′ &gt; 0 convergent, f′ &lt; 0 divergent) · y, y′: alçàries (positives cap amunt) · β: augment lateral · P: potència [diòptries]</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 600 230" role="img" aria-label="Lent convergent amb l'objecte entre F i 2F: els tres raigs principals formen una imatge real, invertida i més gran"><line x1="10.0" y1="119.6" x2="590.0" y2="119.6" stroke="var(--muted)" stroke-width="1"/><path d="M270.0 27.6 Q283.0 119.6 270.0 211.6 Q257.0 119.6 270.0 27.6 Z" fill="var(--t)" opacity="0.22"/><line x1="270.0" y1="27.6" x2="270.0" y2="211.6" stroke="var(--t)" stroke-width="2"/><polygon points="270.0,26.6 273.8,35.6 266.2,35.6" fill="var(--t)"/><polygon points="270.0,212.6 266.2,203.6 273.8,203.6" fill="var(--t)"/><circle cx="200.0" cy="119.6" r="3" fill="var(--ink)"/><text x="200.0" y="137.6" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F</text><circle cx="340.0" cy="119.6" r="3" fill="var(--ink)"/><text x="340.0" y="137.6" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F′</text><circle cx="130.0" cy="119.6" r="3" fill="var(--ink)"/><text x="130.0" y="137.6" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F</text><circle cx="410.0" cy="119.6" r="3" fill="var(--ink)"/><text x="410.0" y="137.6" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F′</text><line x1="165.0" y1="119.6" x2="165.0" y2="79.6" stroke="var(--ec)" stroke-width="2.6"/><polygon points="165.0,73.6 169.2,83.6 160.8,83.6" fill="var(--ec)"/><path d="M165.0 73.6 L270.0 73.6 L588.0 282.6" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="221.5,73.6 214.5,76.5 214.5,70.7" fill="var(--y)"/><polygon points="432.3,180.3 424.9,178.9 428.1,174.0" fill="var(--y)"/><path d="M165.0 73.6 L588.0 258.9" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="380.2,167.9 372.6,167.7 374.9,162.4" fill="var(--y)"/><path d="M165.0 73.6 L270.0 211.6 L588.0 211.6" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="219.9,145.8 213.3,142.0 218.0,138.4" fill="var(--y)"/><polygon points="433.0,211.6 426.0,214.5 426.0,208.7" fill="var(--y)"/><line x1="480.0" y1="119.6" x2="480.0" y2="205.6" stroke="var(--f)" stroke-width="2.6"/><polygon points="480.0,211.6 475.8,201.6 484.2,201.6" fill="var(--f)"/><text x="159.0" y="77.6" text-anchor="end" style="fill:var(--ec);font-size:11px">objecte</text><text x="472.0" y="207.6" text-anchor="end" style="fill:var(--f);font-size:11px">imatge</text></svg></div>
+          <figcaption>Lent convergent amb l'objecte entre F i 2F: la imatge és real, invertida i més gran. Amb dos dels tres raigs principals n'hi ha prou per trobar-la.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Els tres raigs principals</h4>
+          <ol class="tight">
+            <li>El que arriba <b>paral·lel a l'eix</b> surt passant per F′ (en una divergent, surt com si vingués de F′).</li>
+            <li>El que passa pel <b>centre</b> de la lent no es desvia.</li>
+            <li>El que passa per <b>F</b> (o hi apunta) surt paral·lel a l'eix.</li>
+          </ol>
+          <p>On es tallen els raigs que surten hi ha la imatge real; si se separen, la imatge virtual és on es tallen les seves prolongacions (dibuixa-les discontínues).</p>
+        </section>
+        <section class="tsub">
+          <h4>Interpretar els signes</h4>
+          <table class="t">
+            <tr><th>Resultat</th><th>Vol dir</th></tr>
+            <tr><td>s′ &gt; 0</td><td>imatge real, a la dreta de la lent</td></tr>
+            <tr><td>s′ &lt; 0</td><td>imatge virtual, al costat de l'objecte</td></tr>
+            <tr><td>β &lt; 0</td><td>imatge invertida</td></tr>
+            <tr><td>|β| &gt; 1</td><td>imatge més gran que l'objecte</td></tr>
+          </table>
+          <p>En una lent, imatge real ⇔ invertida, i virtual ⇔ dreta.</p>
+        </section>
+        <section class="tsub">
+          <h4>Lent convergent: depèn d'on és l'objecte</h4>
+          <table class="t">
+            <tr><th>Objecte</th><th>Imatge</th></tr>
+            <tr><td>més enllà de 2F</td><td>real, invertida, més petita (càmera, ull)</td></tr>
+            <tr><td>a 2F</td><td>real, invertida, igual (s′ = −s)</td></tr>
+            <tr><td>entre 2F i F</td><td>real, invertida, més gran (projector)</td></tr>
+            <tr><td>a F</td><td>no es forma (raigs paral·lels)</td></tr>
+            <tr><td>entre F i la lent</td><td>virtual, dreta, més gran (lupa)</td></tr>
+          </table>
+        </section>
+        <section class="tsub">
+          <h4>Lent divergent</h4>
+          <p>Amb un objecte real, la imatge és <b>sempre virtual, dreta i més petita</b>, entre F′ i la lent. Com que f′ &lt; 0, també P &lt; 0.</p>
+          <div class="figwrap"><svg class="fig" viewBox="0 0 560 200" role="img" aria-label="Lent divergent: la imatge sempre és virtual, dreta i més petita"><line x1="10.0" y1="104.0" x2="550.0" y2="104.0" stroke="var(--muted)" stroke-width="1"/><path d="M322.0 24.0 L338.0 24.0 Q331.0 104.0 338.0 184.0 L322.0 184.0 Q329.0 104.0 322.0 24.0 Z" fill="var(--t)" opacity="0.22"/><line x1="330.0" y1="24.0" x2="330.0" y2="184.0" stroke="var(--t)" stroke-width="2"/><polygon points="330.0,32.0 326.2,23.0 333.8,23.0" fill="var(--t)"/><polygon points="330.0,176.0 333.8,185.0 326.2,185.0" fill="var(--t)"/><circle cx="410.0" cy="104.0" r="3" fill="var(--ink)"/><text x="410.0" y="122.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F</text><circle cx="250.0" cy="104.0" r="3" fill="var(--ink)"/><text x="250.0" y="122.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F′</text><circle cx="490.0" cy="104.0" r="3" fill="var(--ink)"/><text x="490.0" y="122.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F</text><circle cx="170.0" cy="104.0" r="3" fill="var(--ink)"/><text x="170.0" y="122.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F′</text><line x1="200.0" y1="104.0" x2="200.0" y2="54.0" stroke="var(--ec)" stroke-width="2.6"/><polygon points="200.0,48.0 204.2,58.0 195.8,58.0" fill="var(--ec)"/><path d="M200.0 48.0 L330.0 48.0 L548.0 -104.6" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="269.0,48.0 262.0,50.9 262.0,45.1" fill="var(--y)"/><polygon points="442.3,-30.6 438.2,-24.2 434.9,-29.0" fill="var(--y)"/><line x1="250.0" y1="104.0" x2="330.0" y2="48.0" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.8"/><path d="M200.0 48.0 L548.0 197.9" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="377.7,124.5 370.1,124.5 372.4,119.1" fill="var(--y)"/><path d="M200.0 48.0 L330.0 82.7 L548.0 82.7" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="268.9,66.4 261.3,67.4 262.9,61.7" fill="var(--y)"/><polygon points="443.0,82.7 436.0,85.6 436.0,79.7" fill="var(--y)"/><line x1="330.0" y1="82.7" x2="410.0" y2="104.0" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.8"/><line x1="330.0" y1="82.7" x2="280.5" y2="82.7" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.8"/><line x1="280.5" y1="104.0" x2="280.5" y2="88.7" stroke="var(--f)" stroke-width="2.6" stroke-dasharray="6 4"/><polygon points="280.5,82.7 284.7,92.7 276.3,92.7" fill="var(--f)"/><text x="194.0" y="52.0" text-anchor="end" style="fill:var(--ec);font-size:11px">objecte</text><text x="280.5" y="140.0" text-anchor="middle" style="fill:var(--f);font-size:11px">imatge virtual</text></svg></div>
+        </section>
+        <section class="tsub wide2">
+          <h4>Potència i lents juntes</h4>
+          <p>La potència P = 1/f′ es mesura en <b>diòptries</b> (D) amb f′ en metres: una lent de f′ = 25 cm té P = 1/0,25 = 4 D. Si dues lents primes estan enganxades, les potències se sumen: P = P<sub>1</sub> + P<sub>2</sub>. Les ulleres es receiten en diòptries: positives (convergents) per a hipermetropia i presbícia, negatives (divergents) per a miopia.</p>
+          <div class="keyf">P = 1/f′ (f′ en m) &nbsp;·&nbsp; P = P<sub>1</sub> + P<sub>2</sub></div>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="2">Prova-ho a la demo 3: mou l'objecte i mira la imatge</button></div>
+    </article>
+
+    <!-- BLOC 5 -->
+    <article class="tblock" id="b5">
+      <header class="bhd"><span class="bn">5</span><div><h3>Miralls</h3><p class="lede">Un mirall forma imatges per reflexió. En un <b>pla</b>, la imatge és virtual, dreta, igual i simètrica. Un mirall <b>còncau</b> concentra els raigs (com una lent convergent) i un <b>convex</b> els obre (com una divergent).</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">1/s′ + 1/s = 1/f</div>
+          <div class="keysec">f = R/2 &nbsp;·&nbsp; β = y′/y = −s′/s</div>
+          <p>Amb el mateix conveni de signes que les lents (la llum arriba per l'esquerra). Un mirall còncau té el centre C a l'esquerra: R &lt; 0 i f &lt; 0. Un convex, R &gt; 0 i f &gt; 0. Aquí, s′ &lt; 0 vol dir imatge <b>real</b> (davant del mirall, on torna la llum).</p>
+          <p class="units">s, s′: posicions de l'objecte i de la imatge des del vèrtex del mirall · R: radi de curvatura · f: distància focal · β: augment lateral</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 560 230" role="img" aria-label="Mirall còncau amb l'objecte més enllà del centre de curvatura: la imatge és real, invertida i més petita"><path d="M447.6 26.0 A200.0 200.0 0 0 1 447.6 210.0" fill="none" stroke="var(--t)" stroke-width="3"/><line x1="449.6" y1="26.0" x2="456.6" y2="20.0" stroke="var(--t)" stroke-width="1"/><line x1="459.7" y1="49.0" x2="466.7" y2="43.0" stroke="var(--t)" stroke-width="1"/><line x1="466.6" y1="72.0" x2="473.6" y2="66.0" stroke="var(--t)" stroke-width="1"/><line x1="470.7" y1="95.0" x2="477.7" y2="89.0" stroke="var(--t)" stroke-width="1"/><line x1="472.0" y1="118.0" x2="479.0" y2="112.0" stroke="var(--t)" stroke-width="1"/><line x1="470.7" y1="141.0" x2="477.7" y2="135.0" stroke="var(--t)" stroke-width="1"/><line x1="466.6" y1="164.0" x2="473.6" y2="158.0" stroke="var(--t)" stroke-width="1"/><line x1="459.7" y1="187.0" x2="466.7" y2="181.0" stroke="var(--t)" stroke-width="1"/><line x1="449.6" y1="210.0" x2="456.6" y2="204.0" stroke="var(--t)" stroke-width="1"/><line x1="10.0" y1="118.0" x2="550.0" y2="118.0" stroke="var(--muted)" stroke-width="1"/><circle cx="270.0" cy="118" r="3" fill="var(--ink)"/><text x="270.0" y="136.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">C</text><circle cx="370.0" cy="118" r="3" fill="var(--ink)"/><text x="370.0" y="136.0" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F</text><line x1="170.0" y1="118.0" x2="170.0" y2="74.0" stroke="var(--ec)" stroke-width="2.6"/><polygon points="170.0,68.0 174.2,78.0 165.8,78.0" fill="var(--ec)"/><text x="170.0" y="60.0" text-anchor="middle" style="fill:var(--ec);font-size:11px">objecte</text><path d="M170.0 68.0 L463.6 68.0 L284.1 163.9" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="320.8,68.0 313.8,70.9 313.8,65.1" fill="var(--y)"/><polygon points="370.3,117.8 375.1,111.9 377.9,117.1" fill="var(--y)"/><path d="M170.0 68.0 L449.1 207.5" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="313.1,139.6 305.5,139.1 308.2,133.8" fill="var(--y)"/><path d="M449.1 207.5 L287.7 126.9" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="364.8,165.4 372.4,165.9 369.8,171.2" fill="var(--y)"/><line x1="320.0" y1="118.0" x2="320.0" y2="137.0" stroke="var(--f)" stroke-width="2.6"/><polygon points="320.0,143.0 315.8,133.0 324.2,133.0" fill="var(--f)"/><text x="320.0" y="159.0" text-anchor="middle" style="fill:var(--f);font-size:11px">imatge</text></svg></div>
+          <figcaption>Mirall còncau amb l'objecte més enllà de C: la imatge és real, invertida i més petita. El raig paral·lel es reflecteix pel focus i el que passa per C torna per on ha vingut.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Mirall pla</h4>
+          <p>La imatge és a la mateixa distància darrere del mirall que l'objecte al davant (s′ = −s), dreta, de la mateixa mida i virtual. Ens veiem invertits d'esquerra a dreta.</p>
+        </section>
+        <section class="tsub">
+          <h4>Raigs principals en un mirall esfèric</h4>
+          <ol class="tight">
+            <li>Paral·lel a l'eix → es reflecteix passant per F (convex: com si vingués de F).</li>
+            <li>Pel centre de curvatura C → torna per on ha vingut.</li>
+            <li>Per F → es reflecteix paral·lel a l'eix.</li>
+          </ol>
+        </section>
+        <section class="tsub">
+          <h4>Usos</h4>
+          <p><b>Còncaus:</b> miralls de maquillatge (objecte dins de F: imatge dreta i ampliada), fars i telescopis. <b>Convexos:</b> retrovisors i miralls de cruïlles: imatge sempre virtual, dreta i més petita, però amb un camp de visió molt ample.</p>
+        </section>
+        <section class="tsub">
+          <h4>Mirall i lent: el mateix raonament</h4>
+          <p>Els passos són els d'una lent: posa els signes, aplica l'equació, calcula β i interpreta-ho. Només canvien l'equació i el criteri de real o virtual, perquè la llum torna enrere.</p>
+        </section>
+      </div>
+    </article>
+
+    <!-- BLOC 6 -->
+    <article class="tblock" id="b6">
+      <header class="bhd"><span class="bn">6</span><div><h3>L'ull i els instruments òptics</h3><p class="lede">L'ull és un sistema convergent (còrnia i cristal·lí) que forma una imatge real i invertida a la retina. El cristal·lí canvia de forma per enfocar objectes a diferents distàncies: és l'<b>acomodació</b>.</p></div></header>
+      <div class="hero">
+        <div class="herof">
+          <div class="keybig">P = 1/f′</div>
+          <div class="keysec">ull normal: punt remot a l'infinit · punt pròxim ≈ 25 cm</div>
+          <p>El <b>punt remot</b> és el més llunyà que l'ull veu nítid sense esforç; el <b>punt pròxim</b>, el més proper que pot enfocar. Una lent davant de l'ull corregeix un defecte si porta l'objecte que es vol veure a una imatge que l'ull sí que pot enfocar.</p>
+          <p class="units">Les ulleres es tracten com una lent prima enganxada a l'ull: l'objecte és el que es vol mirar (s) i la imatge (s′) ha de caure dins de l'interval que l'ull enfoca.</p>
+        </div>
+        <figure class="herofig"><div class="figwrap"><svg class="fig" viewBox="0 0 560 200" role="img" aria-label="Ull hipermetrop: els raigs d'un objecte proper s'enfoquen darrere la retina; amb una lent convergent davant, s'enfoquen a la retina"><text x="120.0" y="22.0" text-anchor="middle" style="fill:var(--ink);font-size:12px">Sense ulleres</text><circle cx="150" cy="104" r="52" fill="var(--surface)" stroke="var(--muted)" stroke-width="1.6"/><path d="M176.0 59.0 A52 52 0 0 1 176.0 149.0" fill="none" stroke="var(--y)" stroke-width="3"/><text x="206.0" y="70.0" text-anchor="start" style="fill:var(--y);font-size:10px">retina</text><ellipse cx="112" cy="104" rx="7" ry="22" fill="var(--t)" opacity="0.35" stroke="var(--t)"/><path d="M6.0 104.0 L112.0 86.0 L200.0 99.7" fill="none" stroke="var(--y)" stroke-width="1.6" stroke-linejoin="round"/><line x1="200.0" y1="99.7" x2="228.0" y2="104.0" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.8"/><path d="M6.0 104.0 L112.0 122.0 L200.0 108.3" fill="none" stroke="var(--y)" stroke-width="1.6" stroke-linejoin="round"/><line x1="200.0" y1="108.3" x2="228.0" y2="104.0" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.8"/><circle cx="6" cy="104" r="4" fill="var(--ec)"/><text x="150.0" y="176.0" text-anchor="middle" style="fill:var(--f);font-size:11px">focus darrere la retina</text><text x="400.0" y="22.0" text-anchor="middle" style="fill:var(--ink);font-size:12px">Amb una lent convergent</text><circle cx="430" cy="104" r="52" fill="var(--surface)" stroke="var(--muted)" stroke-width="1.6"/><path d="M456.0 59.0 A52 52 0 0 1 456.0 149.0" fill="none" stroke="var(--y)" stroke-width="3"/><text x="486.0" y="70.0" text-anchor="start" style="fill:var(--y);font-size:10px">retina</text><ellipse cx="392" cy="104" rx="7" ry="22" fill="var(--t)" opacity="0.35" stroke="var(--t)"/><path d="M338.0 70.0 Q351.0 104.0 338.0 138.0 Q325.0 104.0 338.0 70.0 Z" fill="var(--t)" opacity="0.22"/><line x1="338.0" y1="70.0" x2="338.0" y2="138.0" stroke="var(--t)" stroke-width="2"/><polygon points="338.0,69.0 341.8,78.0 334.2,78.0" fill="var(--t)"/><polygon points="338.0,139.0 334.2,130.0 341.8,130.0" fill="var(--t)"/><path d="M286.0 104.0 L338.0 97.4 L392.0 87.8 L482.0 104.0" fill="none" stroke="var(--y)" stroke-width="1.6" stroke-linejoin="round"/><path d="M338.0 70.0 Q351.0 104.0 338.0 138.0 Q325.0 104.0 338.0 70.0 Z" fill="var(--t)" opacity="0.22"/><line x1="338.0" y1="70.0" x2="338.0" y2="138.0" stroke="var(--t)" stroke-width="2"/><polygon points="338.0,69.0 341.8,78.0 334.2,78.0" fill="var(--t)"/><polygon points="338.0,139.0 334.2,130.0 341.8,130.0" fill="var(--t)"/><path d="M286.0 104.0 L338.0 110.6 L392.0 120.2 L482.0 104.0" fill="none" stroke="var(--y)" stroke-width="1.6" stroke-linejoin="round"/><circle cx="286" cy="104" r="4" fill="var(--ec)"/><text x="430.0" y="176.0" text-anchor="middle" style="fill:var(--f);font-size:11px">focus a la retina</text></svg></div>
+          <figcaption>Un ull hipermetrop enfoca darrere la retina els objectes propers. Una lent convergent hi afegeix potència i la imatge torna a caure a la retina.</figcaption>
+        </figure>
+      </div>
+      <div class="subgrid">
+        <section class="tsub">
+          <h4>Miopia</h4>
+          <p>L'ull convergeix massa: veu bé de prop, però el punt remot és a una distància finita PR. Es corregeix amb una lent <b>divergent</b> que fa que un objecte a l'infinit tingui la imatge al punt remot:</p>
+          <div class="keyf">s = −∞, s′ = −PR &nbsp;→&nbsp; f′ = −PR, P = −1/PR</div>
+        </section>
+        <section class="tsub">
+          <h4>Hipermetropia i presbícia</h4>
+          <p>L'ull no convergeix prou de prop: el punt pròxim PP és massa lluny. Es corregeix amb una lent <b>convergent</b> que fa que un objecte a la distància de lectura (25 cm, o la que digui l'enunciat) tingui la imatge virtual al punt pròxim:</p>
+          <div class="keyf">s = −0,25 m, s′ = −PP &nbsp;→&nbsp; 1/f′ = 1/s′ − 1/s</div>
+          <p>La presbícia (vista cansada) és la pèrdua d'acomodació amb l'edat: el punt pròxim s'allunya i també es corregeix amb lents convergents.</p>
+        </section>
+        <section class="tsub">
+          <h4>La lupa</h4>
+          <p>Una lent convergent amb l'objecte <b>entre el focus i la lent</b>: la imatge és virtual, dreta i més gran. Se sol posar la imatge al punt pròxim (25 cm) per veure-la amb tot detall.</p>
+          <div class="figwrap"><svg class="fig" viewBox="0 0 560 210" role="img" aria-label="Lupa: objecte entre el focus i la lent; la imatge és virtual, dreta i més gran"><line x1="10.0" y1="109.2" x2="550.0" y2="109.2" stroke="var(--muted)" stroke-width="1"/><path d="M330.0 25.2 Q343.0 109.2 330.0 193.2 Q317.0 109.2 330.0 25.2 Z" fill="var(--t)" opacity="0.22"/><line x1="330.0" y1="25.2" x2="330.0" y2="193.2" stroke="var(--t)" stroke-width="2"/><polygon points="330.0,24.2 333.8,33.2 326.2,33.2" fill="var(--t)"/><polygon points="330.0,194.2 326.2,185.2 333.8,185.2" fill="var(--t)"/><circle cx="240.0" cy="109.2" r="3" fill="var(--ink)"/><text x="240.0" y="127.2" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F</text><circle cx="420.0" cy="109.2" r="3" fill="var(--ink)"/><text x="420.0" y="127.2" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">F′</text><circle cx="150.0" cy="109.2" r="3" fill="var(--ink)"/><text x="150.0" y="127.2" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F</text><circle cx="510.0" cy="109.2" r="3" fill="var(--ink)"/><text x="510.0" y="127.2" text-anchor="middle" class="lab" style="fill:var(--ink);font-size:13px">2F′</text><line x1="280.0" y1="109.2" x2="280.0" y2="81.2" stroke="var(--ec)" stroke-width="2.6"/><polygon points="280.0,75.2 284.2,85.2 275.8,85.2" fill="var(--ec)"/><path d="M280.0 75.2 L330.0 75.2 L548.0 157.6" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="309.0,75.2 302.0,78.1 302.0,72.3" fill="var(--y)"/><polygon points="442.7,117.8 435.2,118.1 437.2,112.6" fill="var(--y)"/><path d="M280.0 75.2 L548.0 257.4" fill="none" stroke="var(--y)" stroke-width="2" stroke-linejoin="round"/><polygon points="417.3,168.6 409.9,167.1 413.2,162.2" fill="var(--y)"/><line x1="330.0" y1="75.2" x2="217.5" y2="32.7" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.8"/><line x1="280.0" y1="75.2" x2="217.5" y2="32.7" stroke="var(--y)" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.6"/><line x1="217.5" y1="109.2" x2="217.5" y2="38.7" stroke="var(--f)" stroke-width="2.6" stroke-dasharray="6 4"/><polygon points="217.5,32.7 221.7,42.7 213.3,42.7" fill="var(--f)"/><text x="274.0" y="79.2" text-anchor="end" style="fill:var(--ec);font-size:11px">objecte</text><text x="217.5" y="145.2" text-anchor="middle" style="fill:var(--f);font-size:11px">imatge virtual</text></svg></div>
+        </section>
+        <section class="tsub">
+          <h4>Projectors, càmeres i escàners</h4>
+          <p>Necessiten una imatge <b>real</b> sobre una pantalla, un sensor o una pel·lícula: l'objecte ha de ser més enllà de F. Si es coneixen la mida de l'objecte i la de la imatge, β = y′/y dona la relació entre s′ i s, i amb l'equació de la lent es troba f′.</p>
+          <div class="keyf">β = y′/y = s′/s &nbsp;(invertida: β &lt; 0)</div>
+        </section>
+      </div>
+      <div class="bfoot"><button class="godemo" data-demo="3">Prova-ho a la demo 4: l'ull i les ulleres</button></div>
+    </article>
+  </section>
+
+  <!-- ===================== DEMOS ===================== -->
+  <section class="blk" id="demos">
+    <h2>Demos interactives</h2>
+
+    <!-- DEMO 1 -->
+    <div class="demo" id="demo1">
+      <div class="hd"><h3>1 · Llei de Snell i reflexió total</h3><p class="note">Un raig arriba a la superfície entre dos medis. Canvia els medis i l'angle d'incidència: mira cap on es desvia el refractat i què passa quan la llum va cap a un medi amb n més petita i supera l'angle límit. També pots arrossegar la font de llum.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c0" aria-label="Raig incident, reflectit i refractat a la superfície entre dos medis, amb la normal i els angles" style="touch-action:none;cursor:crosshair"></canvas></div>
+          <div class="panel readout">
+            <div><span>θ<sub>1</sub></span><b id="d0r1"></b></div>
+            <div><span>θ<sub>2</sub></span><b id="d0r2"></b></div>
+            <div><span>θ<sub>L</sub></span><b id="d0rL"></b></div>
+            <div><span>v<sub>1</sub></span><b id="d0v1"></b></div>
+            <div><span>v<sub>2</sub></span><b id="d0v2"></b></div>
+            <div><span>λ<sub>2</sub> (λ<sub>0</sub> = 600 nm)</span><b id="d0l2"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 1">
+          <div class="group">
+            <h4>Medi 1 (d'on ve la llum)</h4>
+            <div class="seg" id="d0m1"><button data-n="1">aire</button><button data-n="1.33">aigua</button><button data-n="1.5">vidre</button><button data-n="2.42">diamant</button></div>
+            <div class="param"><label for="d0n1">Índex <i class="v">n<sub>1</sub></i></label><div class="pin"><input type="number" id="d0n1n" min="1" max="2.5" step="0.01" aria-label="n1"></div><input type="range" id="d0n1" min="1" max="2.5" step="0.01"></div>
+          </div>
+          <div class="group">
+            <h4>Medi 2</h4>
+            <div class="seg" id="d0m2"><button data-n="1">aire</button><button data-n="1.33">aigua</button><button data-n="1.5">vidre</button><button data-n="2.42">diamant</button></div>
+            <div class="param"><label for="d0n2">Índex <i class="v">n<sub>2</sub></i></label><div class="pin"><input type="number" id="d0n2n" min="1" max="2.5" step="0.01" aria-label="n2"></div><input type="range" id="d0n2" min="1" max="2.5" step="0.01"></div>
+          </div>
+          <div class="group">
+            <h4>Raig</h4>
+            <div class="param"><label for="d0t">Incidència <i class="v">θ<sub>1</sub></i></label><div class="pin"><input type="number" id="d0tn" min="0" max="89" step="0.5" aria-label="angle d'incidència en graus">°</div><input type="range" id="d0t" min="0" max="89" step="0.5"></div>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Amb els teus valors</h3>
+          <div class="f"><div id="d0e1"></div><div id="d0e2"></div><div id="d0e3"></div></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> posa aire → vidre i puja l'angle fins a 89°: el refractat no passa mai de 41,8°. Ara inverteix-ho (vidre → aire): a 41,8° el raig surt rasant i a partir d'aquí tota la llum es reflecteix. Posa diamant → aire: l'angle límit és només de 24,4°.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 2 -->
+    <div class="demo" id="demo2">
+      <div class="hd"><h3>2 · Fibra òptica</h3><p class="note">La llum entra des de l'aire per l'extrem de la fibra amb un angle φ respecte de l'eix. Dins el nucli rebota a la paret: si hi arriba amb un angle més gran que l'angle límit amb el revestiment, es reflecteix totalment i queda guiada; si no, a cada rebot se n'escapa una part.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c1" aria-label="Fibra òptica amb el raig que entra per l'extrem i rebota a les parets del nucli"></canvas></div>
+          <div class="panel readout">
+            <div><span>θ<sub>r</sub> (entrada)</span><b id="d1rr"></b></div>
+            <div><span>θ a la paret</span><b id="d1rw"></b></div>
+            <div><span>θ<sub>L</sub></span><b id="d1rL"></b></div>
+            <div><span>φ<sub>màx</sub></span><b id="d1rm"></b></div>
+            <div><span>v al nucli</span><b id="d1rv"></b></div>
+            <div><span>estat</span><b id="d1rs"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 2">
+          <div class="group">
+            <h4>Raig</h4>
+            <div class="param"><label for="d1p">Entrada <i class="v">φ</i></label><div class="pin"><input type="number" id="d1pn" min="0" max="80" step="0.5" aria-label="angle d'entrada en graus">°</div><input type="range" id="d1p" min="0" max="80" step="0.5"></div>
+          </div>
+          <div class="group">
+            <h4>Materials</h4>
+            <div class="param"><label for="d1n1">Nucli <i class="v">n<sub>1</sub></i></label><div class="pin"><input type="number" id="d1n1n" min="1.3" max="1.7" step="0.01" aria-label="índex del nucli"></div><input type="range" id="d1n1" min="1.3" max="1.7" step="0.01"></div>
+            <div class="param"><label for="d1n2">Revestiment <i class="v">n<sub>2</sub></i></label><div class="pin"><input type="number" id="d1n2n" min="1" max="1.69" step="0.01" aria-label="índex del revestiment"></div><input type="range" id="d1n2" min="1" max="1.69" step="0.01"></div>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Amb els teus valors</h3>
+          <div class="f"><div id="d1e1"></div><div id="d1e2"></div><div id="d1e3"></div></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> puja φ a poc a poc: dins la fibra el raig s'inclina més i arriba a la paret amb un angle més petit. Quan passa φ<sub>màx</sub>, la llum s'escapa. Apropa n<sub>2</sub> a n<sub>1</sub>: l'angle límit puja i la fibra accepta menys angle d'entrada.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 3 -->
+    <div class="demo" id="demo3">
+      <div class="hd"><h3>3 · Lent prima: on es forma la imatge</h3><p class="note">Arrossega l'objecte (la fletxa verda) o fes servir els controls. Els tres raigs principals mostren on es forma la imatge: si es tallen els raigs, és real; si es tallen les prolongacions (discontínues), és virtual. Distàncies amb el conveni de signes de les PAU.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c2" aria-label="Lent amb l'objecte, els raigs principals i la imatge" style="touch-action:none;cursor:ew-resize"></canvas></div>
+          <div class="panel readout">
+            <div><span>s</span><b id="d2rs"></b></div>
+            <div><span>s′</span><b id="d2rsp"></b></div>
+            <div><span>β</span><b id="d2rb"></b></div>
+            <div><span>y′</span><b id="d2ry"></b></div>
+            <div><span>P</span><b id="d2rP"></b></div>
+            <div><span>imatge</span><b id="d2rt"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 3">
+          <div class="group">
+            <h4>Lent</h4>
+            <div class="seg" id="d2k" style="grid-template-columns:repeat(2,1fr)"><button data-k="1">convergent</button><button data-k="-1">divergent</button></div>
+            <div class="param"><label for="d2f">Focal <i class="v">|f′|</i></label><div class="pin"><input type="number" id="d2fn" min="5" max="30" step="0.5" aria-label="distància focal en centímetres">cm</div><input type="range" id="d2f" min="5" max="30" step="0.5"></div>
+          </div>
+          <div class="group">
+            <h4>Objecte</h4>
+            <div class="param"><label for="d2s">Distància <i class="v">|s|</i></label><div class="pin"><input type="number" id="d2sn" min="2" max="80" step="0.5" aria-label="distància de l'objecte a la lent en centímetres">cm</div><input type="range" id="d2s" min="2" max="80" step="0.5"></div>
+            <div class="param"><label for="d2y">Alçària <i class="v">y</i></label><div class="pin"><input type="number" id="d2yn" min="1" max="6" step="0.5" aria-label="alçària de l'objecte en centímetres">cm</div><input type="range" id="d2y" min="1" max="6" step="0.5"></div>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Amb els teus valors</h3>
+          <div class="f"><div id="d2e1"></div><div id="d2e2"></div><div id="d2e3"></div></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> amb la convergent, porta l'objecte des de lluny fins a la lent: la imatge real creix i s'allunya; a 2F és igual (β = −1); a F desapareix (raigs paral·lels) i, més a prop, es fa virtual i dreta: és una lupa. Canvia a divergent: la imatge és sempre virtual, dreta i més petita.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEMO 4 -->
+    <div class="demo" id="demo4">
+      <div class="hd"><h3>4 · L'ull i les ulleres</h3><p class="note">Un ull simplificat: una lent i la retina a 2,0 cm. L'ull pot canviar la seva potència (acomodació) només entre dos límits, que fixen el punt pròxim i el remot. Tria el defecte, la distància de l'objecte i si porta ulleres. A l'esquerra les distàncies no són a escala, i dins l'ull el desenfocament està exagerat perquè es vegi.</p></div>
+      <div class="main">
+        <div class="stagecol">
+          <div class="panel cvs pend"><canvas id="c3" aria-label="Ull amb els raigs d'un punt objecte que s'enfoquen davant, a sobre o darrere de la retina"></canvas></div>
+          <div class="panel readout">
+            <div><span>objecte</span><b id="d3ro"></b></div>
+            <div><span>punt pròxim</span><b id="d3rp"></b></div>
+            <div><span>punt remot</span><b id="d3rr"></b></div>
+            <div><span>P ulleres</span><b id="d3rg"></b></div>
+            <div><span>P ull</span><b id="d3re"></b></div>
+            <div><span>es veu</span><b id="d3rs"></b></div>
+          </div>
+        </div>
+        <div class="side">
+        <aside class="panel controls" aria-label="Paràmetres de la demo 4">
+          <div class="group">
+            <h4>Ull</h4>
+            <div class="seg s3" id="d3t"><button data-t="0">normal</button><button data-t="1">miop</button><button data-t="2">hipermetrop</button></div>
+            <p class="note" id="d3tn"></p>
+          </div>
+          <div class="group">
+            <h4>Objecte</h4>
+            <div class="seg" id="d3o"><button data-o="0.25">25 cm</button><button data-o="0.5">50 cm</button><button data-o="2">2 m</button><button data-o="1000">lluny</button></div>
+          </div>
+          <div class="group">
+            <h4>Ulleres</h4>
+            <label class="chk"><input type="checkbox" id="d3g"> <span>Posa-li les ulleres que corregeixen el defecte</span></label>
+          </div>
+        </aside>
+      <div class="lower">
+        <section class="panel eq a">
+          <h3>Amb els teus valors</h3>
+          <div class="f"><div id="d3e1"></div><div id="d3e2"></div><div id="d3e3"></div></div>
+        </section>
+      </div>
+      <p class="try"><b>Prova:</b> amb l'ull miop, mira «lluny»: la imatge cau davant la retina. Posa-hi les ulleres (divergents): torna a ser nítida. Amb l'hipermetrop, mira a 25 cm: cau darrere la retina; les ulleres convergents ho arreglen. Fixa't que l'ull normal enfoca de 25 cm a l'infinit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MÈTODE ===================== -->
+  <section class="blk" id="metode">
+    <h2>Com atacar un problema d'òptica</h2>
+    <div class="steps">
+      <div class="panel step"><b>Dibuixa</b><span>Superfície i normal (refracció) o eix, lent i focus (lents). Situa l'objecte i escriu les dades amb el seu signe.</span></div>
+      <div class="panel step"><b>Angles i signes</b><span>Angles respecte de la normal. Lents i miralls: conveni normalitzat, objecte real s &lt; 0, f′ &gt; 0 convergent.</span></div>
+      <div class="panel step"><b>Tria l'equació</b><span>Canvi de medi: n = c/v, λ = λ<sub>0</sub>/n. Desviació: Snell. Sortir o no: θ<sub>L</sub>. Imatges: 1/s′ − 1/s = 1/f′ i β = s′/s.</span></div>
+      <div class="panel step"><b>Calcula en SI</b><span>Potència en diòptries amb f′ en metres. Calculadora en graus per als angles.</span></div>
+      <div class="panel step"><b>Interpreta i comprova</b><span>Real o virtual, dreta o invertida, més gran o més petita. El diagrama de raigs ha de donar el mateix que el càlcul.</span></div>
+    </div>
+    <div class="lower">
+      <section class="panel eq a" id="llegir">
+        <h3>Llegir el resultat d'una lent</h3>
+        <p>Amb s, s′ i β ja saps com és la imatge:</p>
+        <div class="keyf">f′ = +10 cm, s = −15 cm → s′ = +30 cm, β = −2</div>
+        <ol class="tight">
+          <li><b>s′ &gt; 0</b>: la imatge és real, a 30 cm a la dreta (es pot recollir en una pantalla).</li>
+          <li><b>β &lt; 0</b>: invertida.</li>
+          <li><b>|β| = 2</b>: el doble de gran.</li>
+          <li>Comprovació: l'objecte és entre F i 2F, i en aquest cas la imatge ha de ser real, invertida i més gran ✓.</li>
+        </ol>
+      </section>
+      <div class="stackcol">
+      <section class="panel eq b warn" id="errades" style="border-top-color:var(--y)">
+        <h3>Errades típiques</h3>
+        <ul class="tight">
+          <li>Mesurar els angles respecte de la superfície i no de la normal.</li>
+          <li>Calculadora en radians amb angles en graus.</li>
+          <li>Pensar que en canviar de medi canvia la freqüència: canvien v i λ.</li>
+          <li>Buscar angle límit quan la llum va cap a un medi amb n més gran.</li>
+          <li>Oblidar el signe de s: un objecte real a 30 cm és s = −0,30 m.</li>
+          <li>Potència amb f′ en centímetres: ha d'anar en metres.</li>
+        </ul>
+      </section>
+      <section class="panel eq a">
+        <h3>Valors que convé saber</h3>
+        <table class="t">
+          <tr><td>Velocitat de la llum al buit</td><td class="n">3,00·10<sup>8</sup> m/s</td></tr>
+          <tr><td>Índex de l'aire / de l'aigua</td><td class="n">1,00 / 1,33</td></tr>
+          <tr><td>Llum visible (al buit)</td><td class="n">≈ 400 nm – 700 nm</td></tr>
+          <tr><td>Punt pròxim d'un ull normal</td><td class="n">≈ 25 cm</td></tr>
+        </table>
+      </section>
+      </div>
+    </div>
+    <article class="panel ex" id="exemple" style="break-inside:avoid">
+      <div class="eh"><span class="num">Exemple resolt</span></div>
+      <p>Un objecte de 4,0 cm d'alçària és a 30 cm davant d'una lent convergent de 20 cm de distància focal. Calcula on es forma la imatge, la seva mida i la potència de la lent, i descriu la imatge.</p>
+      <div class="body" style="display:flex;flex-direction:column;gap:6px;font-size:14.5px">
+        <p><b>1.</b> Dades amb el conveni de signes: s = −0,30 m, f′ = +0,20 m, y = 4,0 cm.</p>
+        <p><b>2.</b> Equació de la lent: 1/s′ = 1/f′ + 1/s = 1/0,20 + 1/(−0,30) = 5,00 − 3,33 = 1,67 m<sup>−1</sup> → <span class="res">s′ = +0,60 m</span>.</p>
+        <p><b>3.</b> Augment: β = s′/s = 0,60/(−0,30) = −2,0 → y′ = β·y = −2,0·4,0 = <span class="res">−8,0 cm</span>.</p>
+        <p><b>4.</b> Potència: P = 1/f′ = 1/0,20 = <span class="res">5,0 D</span>.</p>
+        <p><b>5.</b> s′ &gt; 0: imatge <b>real</b>, a 60 cm a la dreta de la lent; β &lt; 0: <b>invertida</b>; |β| = 2: el <b>doble</b> de gran. Encaixa amb un objecte entre F i 2F ✓.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===================== FORMULARI ===================== -->
+  <section class="blk" id="formulari">
+    <h2>Formulari</h2>
+    <div class="formgrid">
+      <div class="panel fbox"><h3>La llum en un medi</h3>
+        <div class="fm">n = c/v &nbsp; c = 3,00·10<sup>8</sup> m/s<br>c = λ<sub>0</sub>·f &nbsp; v = λ·f<br>λ = λ<sub>0</sub>/n</div>
+        <p>La f no canvia en canviar de medi; v i λ sí.</p></div>
+      <div class="panel fbox"><h3>Reflexió i refracció</h3>
+        <div class="fm">θ<sub>1</sub>′ = θ<sub>1</sub><br>n<sub>1</sub>·sin θ<sub>1</sub> = n<sub>2</sub>·sin θ<sub>2</sub></div>
+        <p>Angles respecte de la normal. Cap a n més gran, s'apropa a la normal.</p></div>
+      <div class="panel fbox"><h3>Angle límit</h3>
+        <div class="fm">sin θ<sub>L</sub> = n<sub>2</sub>/n<sub>1</sub> &nbsp;(n<sub>1</sub> &gt; n<sub>2</sub>)<br>θ<sub>1</sub> &gt; θ<sub>L</sub> → reflexió total</div>
+        <p>Aigua–aire 48,8° · vidre–aire 41,8°.</p></div>
+      <div class="panel fbox"><h3>Lents primes</h3>
+        <div class="fm">1/s′ − 1/s = 1/f′<br>β = y′/y = s′/s<br>P = 1/f′ [D]</div>
+        <p>f′ &gt; 0 convergent, f′ &lt; 0 divergent. s′ &gt; 0 real; β &lt; 0 invertida.</p></div>
+      <div class="panel fbox"><h3>Miralls esfèrics</h3>
+        <div class="fm">1/s′ + 1/s = 1/f<br>f = R/2 &nbsp; β = −s′/s</div>
+        <p>Còncau: f &lt; 0. Convex: f &gt; 0. s′ &lt; 0 real.</p></div>
+      <div class="panel fbox"><h3>Conveni de signes</h3>
+        <ul class="tight"><li>Llum d'esquerra a dreta.</li><li>Distàncies des de la lent o el mirall: + a la dreta, − a l'esquerra.</li><li>Alçàries: + amunt, − avall.</li><li>Objecte real: s &lt; 0.</li></ul></div>
+      <div class="panel fbox"><h3>L'ull</h3>
+        <div class="fm">miopia: f′ = −PR<br>hipermetropia:<br>s = −0,25 m → s′ = −PP</div>
+        <p>Miopia: lent divergent. Hipermetropia i presbícia: convergent.</p></div>
+      <div class="panel fbox"><h3>Raigs principals (lent)</h3>
+        <ul class="tight"><li>Paral·lel → per F′.</li><li>Pel centre → recte.</li><li>Per F → paral·lel.</li></ul></div>
+      <div class="panel fbox"><h3>Abans d'entregar</h3>
+        <ul class="tight"><li>Calculadora en graus.</li><li>Signes de s, s′, f′ i y′.</li><li>Potència amb f′ en metres.</li><li>Descriu la imatge: real/virtual, dreta/invertida, mida.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ===================== EXERCICIS ===================== -->
+  <section class="blk" id="exercicis">
+    <h2>Exercicis</h2>
+    <p class="lead">Els exercicis graduats i els problemes de les PAU resolts, amb filtres per nivell i per tema, són a la <a href="exercicis/">pàgina d'exercicis</a>.</p>
+    <p><a class="godemo" href="exercicis/">Ves als exercicis i problemes de les PAU →</a></p>
+  </section>
+
+  </main>
+
+  <footer>
+    <p>Convenis: unitats del SI, angles en graus mesurats respecte de la normal i, per a lents i miralls, el conveni de signes normalitzat (DIN) de les PAU.</p>
+    <p>Els enunciats i els criteris de correcció de les PAU són oficials (Generalitat de Catalunya) i es reprodueixen d'acord amb les condicions de reutilització de la informació del sector públic. Cada problema enllaça a l'examen original.</p>
+    <p class="autor">Materials elaborats per <a href="https://nil-munte.github.io" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://nil-munte.github.io" target="_blank" rel="noopener">nil-munte.github.io</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></p>
+  </footer>
+</div>
+
+<script src="tema.js"></script>
+</body>
+</html>

@@ -673,7 +673,7 @@ const GROUPS = {
 (function blocks() {
   const smooth = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   const go = t => { if (!t) return; t.scrollIntoView({ behavior: smooth(), block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); };
-  document.querySelectorAll('.subidx a, a.godemo').forEach(a => a.addEventListener('click', e => { e.preventDefault(); go(document.querySelector(a.getAttribute('href'))); }));
+  document.querySelectorAll('.subidx a[href^="#"], a.godemo[href^="#"]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); go(document.querySelector(a.getAttribute('href'))); }));
   document.querySelectorAll('button.godemo').forEach(b => b.addEventListener('click', () => go(document.querySelectorAll('#demos .demo')[+b.dataset.demo])));
 })();
 
@@ -852,3 +852,10 @@ document.addEventListener('click', function (ev) {
     document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !menu.hidden) tanca(true); });
   });
 })();
+
+/* en arribar d'una altra pàgina amb una àncora (p. ex. ../#demos), el JavaScript canvia l'alçada del que hi ha
+   a sobre després del salt del navegador: s'hi torna a anar quan la pàgina ja és completa */
+if (location.hash && !location.hash.startsWith('#pau-')) addEventListener('load', () => {
+  const t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (t) t.scrollIntoView({ behavior: 'instant', block: 'start' });
+});

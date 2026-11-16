@@ -10,6 +10,7 @@ Web: <https://nil-munte.github.io/fisica-2n-bat/>
 |---|---|---|
 | Moviment harmònic simple | `temes/mhs/` | formulari, enunciats, enunciats + solucions |
 | Ones | `temes/ones/` | formulari, enunciats, enunciats + solucions |
+| Òptica | `temes/optica/` | formulari, enunciats, enunciats + solucions |
 | Exàmens de les PAU | `pau/` | cada sèrie de cada convocatòria, sense solucions i amb els criteris de correcció |
 
 ## Com està organitzat

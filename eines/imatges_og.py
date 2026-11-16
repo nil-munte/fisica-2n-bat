@@ -4,7 +4,7 @@
     python eines/imatges_og.py
 
 Les dades són a dades/imatges_og.json: per a cada imatge, la pàgina a què pertany, l'avantítol, el títol,
-el subtítol, les etiquetes i el dibuix de sota («ona», «particules» o «examens»). A les etiquetes,
+el subtítol, les etiquetes i el dibuix de sota («ona», «particules», «raigs» o «examens»). A les etiquetes,
 {demos}, {pau} i {examens} es substitueixen pel recompte que surt de la pàgina construïda (dist/),
 de manera que no queden mai desfasades. La plantilla és eines/plantilles/og.html.
 
@@ -77,7 +77,29 @@ def examens(amplada=1088, alcada=200) -> str:
             '<div class="c">Sèrie 1 · 2 · 3 · 4 · 5</div></div>')
 
 
-DIBUIXOS = {'ona': ona, 'particules': particules, 'examens': examens}
+def raigs(amplada=1088, alcada=200, **_) -> str:
+    """Una lent convergent amb els tres raigs principals, que van de l'objecte a la imatge."""
+    yc, xl, f = 96, 544, 150
+    xo, yo = xl - 250, yc - 52
+    sp = 1 / (1 / f + 1 / (xo - xl))
+    xi, yi = xl + sp, yc - 52 * sp / (xo - xl)
+
+    def fins(x1, y1, x2, y2, x):
+        return x, y1 + (y2 - y1) * (x - x1) / (x2 - x1)
+    y3 = yc + (yo - yc) * f / (xo - (xl - f))
+    trams = ([(xo, yo), (xl, yo), fins(xl, yo, xi, yi, amplada)], [(xo, yo), fins(xo, yo, xi, yi, amplada)],
+             [(xo, yo), (xl, y3), (amplada, y3)])
+    pl = ''.join('<polyline points="' + ' '.join(f'{x:.1f},{y:.1f}' for x, y in t) +
+                 '" fill="none" stroke="#c4461a" stroke-width="4" stroke-linejoin="round"/>' for t in trams)
+    return (f'<div class="dibuix"><svg viewBox="0 0 {amplada} {alcada}">'
+            f'<line x1="0" y1="{yc}" x2="{amplada}" y2="{yc}" stroke="#c6d4d8" stroke-width="2"/>'
+            f'<path d="M{xl} 8 Q{xl + 26} {yc} {xl} {2 * yc - 8} Q{xl - 26} {yc} {xl} 8 Z" fill="#0e7c86" opacity="0.25"/>'
+            f'<line x1="{xl}" y1="8" x2="{xl}" y2="{2 * yc - 8}" stroke="#0e7c86" stroke-width="4"/>{pl}'
+            f'<line x1="{xo}" y1="{yc}" x2="{xo}" y2="{yo}" stroke="#2c8540" stroke-width="7"/>'
+            f'<line x1="{xi:.1f}" y1="{yc}" x2="{xi:.1f}" y2="{yi:.1f}" stroke="#7a3fb0" stroke-width="7"/></svg></div>')
+
+
+DIBUIXOS = {'ona': ona, 'particules': particules, 'examens': examens, 'raigs': raigs}
 
 
 def comprova_meta(pagina: str, nom: str) -> list:

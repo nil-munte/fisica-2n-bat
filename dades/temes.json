@@ -45,7 +45,28 @@
         }
       }
     },
-    "optica": { "nom": "Òptica", "pagina": null },
+    "optica": {
+      "nom": "Òptica",
+      "pagina": "temes/optica/exercicis/index.html",
+      "teoria": "temes/optica/index.html",
+      "seccio": "exercicis",
+      "blocs": {
+        "b1": "La llum en un medi",
+        "b2": "Reflexió i refracció",
+        "b3": "Angle límit i reflexió total",
+        "b4": "Lents primes",
+        "b5": "Miralls",
+        "b6": "L'ull i els instruments òptics"
+      },
+      "etiquetes": {
+        "llum": "La llum en un medi: n, v, λ i f",
+        "refraccio": "Refracció i llei de Snell",
+        "reflexio-total": "Angle límit i reflexió total",
+        "lents": "Lents i diagrames de raigs",
+        "miralls": "Miralls",
+        "ull": "L'ull i les ulleres"
+      }
+    },
     "moderna": { "nom": "Física moderna", "pagina": null }
   }
 }

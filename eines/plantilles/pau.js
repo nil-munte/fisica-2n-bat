@@ -48,10 +48,14 @@
   const et = new URLSearchParams(location.search).get('etiqueta');
   if (et && barE && barE.querySelector(`button[data-et="${CSS.escape(et)}"]`)) estat.et = et;
   aplica();
-  // si s'arriba amb un enllaç a un problema amagat pels filtres, es mostren tots
-  function obre() {
+  // si s'arriba amb un enllaç a un problema amagat pels filtres, es mostren tots; i, com que els filtres
+  // canvien l'alçada de la pàgina després del salt del navegador, s'hi torna a anar
+  function obre(inici) {
     const t = location.hash && document.getElementById(location.hash.slice(1));
-    if (t && t.matches('.ex.pau.fora')) { tots(); t.scrollIntoView(); }
+    if (!t || !t.matches('.ex.pau')) return;
+    const amagat = t.matches('.fora');
+    if (amagat) tots();
+    if (amagat || inici) t.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
-  addEventListener('hashchange', obre); obre();
+  addEventListener('hashchange', () => obre(false)); obre(true);
 })();

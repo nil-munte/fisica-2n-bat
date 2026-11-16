@@ -1,0 +1,226 @@
+{
+  "id": "2025-juny-s4-p3",
+  "any": 2025,
+  "convocatoria": "juny",
+  "serie": 4,
+  "problema": "P3",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b4",
+    "b6"
+  ],
+  "etiquetes": [
+    "lents"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "Cal interpretar la inversió de la imatge com un augment lateral negatiu, trobar la posició de la pel·lícula a partir de β abans d’usar l’equació de les lents i fer un diagrama de raigs amb escales diferents als dos eixos per a un objecte molt petit i proper al focus.",
+  "titol": "El projector de súper-8",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jl_tei.pdf",
+      "pdf": "pau_fisi25jl_tei",
+      "pagina": 6
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/fisica/ord/pau_fisi25jp_tei.pdf",
+      "pdf": "pau_fisi25jp_tei",
+      "pagina": 5
+    }
+  },
+  "dades": [
+    {
+      "simbol": "y",
+      "valor": "4,00",
+      "unitat": "mm",
+      "descripcio": "alçària dels fotogrames"
+    },
+    {
+      "simbol": "s′",
+      "valor": "16,0",
+      "unitat": "m",
+      "descripcio": "distància de la pantalla a la lent"
+    },
+    {
+      "simbol": "y′",
+      "valor": "2,00",
+      "unitat": "m",
+      "descripcio": "alçària de la pantalla"
+    },
+    {
+      "simbol": "s′",
+      "valor": "20,0",
+      "unitat": "cm",
+      "descripcio": "distància de la pantalla de visionat a la lent (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L’examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat. Problema del tribunal especial (pau_fisi25jl_tei), on és l’Exercici 3 («Vibracions i ones»), sense opcions."
+  },
+  "enunciat": {
+    "intro": "<p>Avui al cinema es projecta una pel·lícula antiga amb el format de súper-8, en què els fotogrames tenen una alçària de 4,00 mm. El projector té una sola lent i es pot variar la posició de la pel·lícula per a focalitzar la imatge a la pantalla. La pantalla és a 16,0 m de la lent del projector i té 2,00 m d’alçària.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "Si sabem que el projector inverteix la imatge, a quina distància de la lent hem de posar la pel·lícula perquè la imatge projectada encaixi exactament a la pantalla? Calculeu la potència que ha de tenir la lent del projector perquè s’obtingui una imatge enfocada."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Abans de projectar la pel·lícula, l’operador de cabina la vol visionar en una pantalla situada a 20,0 cm de la lent. Quina ha de ser la distància entre la lent i la pel·lícula perquè aquesta quedi enfocada a la pantalla? Feu el diagrama de raigs corresponent en la quadrícula de sota.",
+        "figures": [
+          "fig1"
+        ]
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 666 258\" role=\"img\" aria-label=\"Quadrícula mil·limetrada buida, allargada, de 13 divisions grans d’amplada per 5 i mitja d’alçària, cada divisió gran amb 10 per 10 divisions petites, per dibuixar-hi el diagrama de raigs.\"><path d=\"M13 8V250M18 8V250M23 8V250M28 8V250M33 8V250M38 8V250M43 8V250M48 8V250M53 8V250M63 8V250M68 8V250M73 8V250M78 8V250M83 8V250M88 8V250M93 8V250M98 8V250M103 8V250M113 8V250M118 8V250M123 8V250M128 8V250M133 8V250M138 8V250M143 8V250M148 8V250M153 8V250M163 8V250M168 8V250M173 8V250M178 8V250M183 8V250M188 8V250M193 8V250M198 8V250M203 8V250M213 8V250M218 8V250M223 8V250M228 8V250M233 8V250M238 8V250M243 8V250M248 8V250M253 8V250M263 8V250M268 8V250M273 8V250M278 8V250M283 8V250M288 8V250M293 8V250M298 8V250M303 8V250M313 8V250M318 8V250M323 8V250M328 8V250M333 8V250M338 8V250M343 8V250M348 8V250M353 8V250M363 8V250M368 8V250M373 8V250M378 8V250M383 8V250M388 8V250M393 8V250M398 8V250M403 8V250M413 8V250M418 8V250M423 8V250M428 8V250M433 8V250M438 8V250M443 8V250M448 8V250M453 8V250M463 8V250M468 8V250M473 8V250M478 8V250M483 8V250M488 8V250M493 8V250M498 8V250M503 8V250M513 8V250M518 8V250M523 8V250M528 8V250M533 8V250M538 8V250M543 8V250M548 8V250M553 8V250M563 8V250M568 8V250M573 8V250M578 8V250M583 8V250M588 8V250M593 8V250M598 8V250M603 8V250M613 8V250M618 8V250M623 8V250M628 8V250M633 8V250M638 8V250M643 8V250M648 8V250M653 8V250M8 12.4H658M8 16.8H658M8 21.2H658M8 25.6H658M8 34.4H658M8 38.8H658M8 43.2H658M8 47.6H658M8 52H658M8 56.4H658M8 60.8H658M8 65.2H658M8 69.6H658M8 78.4H658M8 82.8H658M8 87.2H658M8 91.6H658M8 96H658M8 100.4H658M8 104.8H658M8 109.2H658M8 113.6H658M8 122.4H658M8 126.8H658M8 131.2H658M8 135.6H658M8 140H658M8 144.4H658M8 148.8H658M8 153.2H658M8 157.6H658M8 166.4H658M8 170.8H658M8 175.2H658M8 179.6H658M8 184H658M8 188.4H658M8 192.8H658M8 197.2H658M8 201.6H658M8 210.4H658M8 214.8H658M8 219.2H658M8 223.6H658M8 228H658M8 232.4H658M8 236.8H658M8 241.2H658M8 245.6H658\" fill=\"none\" stroke=\"var(--grid)\" stroke-width=\"0.5\"/><path d=\"M58 8V250M108 8V250M158 8V250M208 8V250M258 8V250M308 8V250M358 8V250M408 8V250M458 8V250M508 8V250M558 8V250M608 8V250M8 30H658M8 74H658M8 118H658M8 162H658M8 206H658\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><rect x=\"8\" y=\"8\" width=\"650\" height=\"242\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/></svg>",
+      "peu": "Quadrícula per dibuixar el diagrama de raigs."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 712 300\" role=\"img\" aria-label=\"Diagrama de raigs sobre la quadrícula, amb x de −4 a 22 cm (2 cm per divisió gran) i y de −0,5 a 2,25 cm (0,5 cm per divisió gran). Lent a x = 0, focus F i F′ a ∓3,19 cm, pel·lícula a x = −3,80 cm de 0,4 cm cap avall i imatge a x = 20 cm de 2,10 cm cap amunt. Es dibuixen el raig paral·lel que passa per F′, el raig pel centre de la lent i el raig que passa per F i surt paral·lel.\"><path d=\"M55 10V252M60 10V252M65 10V252M70 10V252M75 10V252M80 10V252M85 10V252M90 10V252M95 10V252M105 10V252M110 10V252M115 10V252M120 10V252M125 10V252M130 10V252M135 10V252M140 10V252M145 10V252M155 10V252M160 10V252M165 10V252M170 10V252M175 10V252M180 10V252M185 10V252M190 10V252M195 10V252M205 10V252M210 10V252M215 10V252M220 10V252M225 10V252M230 10V252M235 10V252M240 10V252M245 10V252M255 10V252M260 10V252M265 10V252M270 10V252M275 10V252M280 10V252M285 10V252M290 10V252M295 10V252M305 10V252M310 10V252M315 10V252M320 10V252M325 10V252M330 10V252M335 10V252M340 10V252M345 10V252M355 10V252M360 10V252M365 10V252M370 10V252M375 10V252M380 10V252M385 10V252M390 10V252M395 10V252M405 10V252M410 10V252M415 10V252M420 10V252M425 10V252M430 10V252M435 10V252M440 10V252M445 10V252M455 10V252M460 10V252M465 10V252M470 10V252M475 10V252M480 10V252M485 10V252M490 10V252M495 10V252M505 10V252M510 10V252M515 10V252M520 10V252M525 10V252M530 10V252M535 10V252M540 10V252M545 10V252M555 10V252M560 10V252M565 10V252M570 10V252M575 10V252M580 10V252M585 10V252M590 10V252M595 10V252M605 10V252M610 10V252M615 10V252M620 10V252M625 10V252M630 10V252M635 10V252M640 10V252M645 10V252M655 10V252M660 10V252M665 10V252M670 10V252M675 10V252M680 10V252M685 10V252M690 10V252M695 10V252M50 14.4H700M50 18.8H700M50 23.2H700M50 27.6H700M50 36.4H700M50 40.8H700M50 45.2H700M50 49.6H700M50 54H700M50 58.4H700M50 62.8H700M50 67.2H700M50 71.6H700M50 80.4H700M50 84.8H700M50 89.2H700M50 93.6H700M50 98H700M50 102.4H700M50 106.8H700M50 111.2H700M50 115.6H700M50 124.4H700M50 128.8H700M50 133.2H700M50 137.6H700M50 142H700M50 146.4H700M50 150.8H700M50 155.2H700M50 159.6H700M50 168.4H700M50 172.8H700M50 177.2H700M50 181.6H700M50 186H700M50 190.4H700M50 194.8H700M50 199.2H700M50 203.6H700M50 212.4H700M50 216.8H700M50 221.2H700M50 225.6H700M50 230H700M50 234.4H700M50 238.8H700M50 243.2H700M50 247.6H700\" fill=\"none\" stroke=\"var(--grid)\" stroke-width=\"0.5\"/><path d=\"M100 10V252M150 10V252M200 10V252M250 10V252M300 10V252M350 10V252M400 10V252M450 10V252M500 10V252M550 10V252M600 10V252M650 10V252M50 32H700M50 76H700M50 120H700M50 164H700M50 208H700\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"1.1\"/><rect x=\"50\" y=\"10\" width=\"650\" height=\"242\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><text x=\"50\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">−4</text><text x=\"100\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">−2</text><text x=\"150\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">0</text><text x=\"200\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">2</text><text x=\"250\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">4</text><text x=\"300\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">6</text><text x=\"350\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">8</text><text x=\"400\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">10</text><text x=\"450\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">12</text><text x=\"500\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">14</text><text x=\"550\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">16</text><text x=\"600\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">18</text><text x=\"650\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">20</text><text x=\"700\" y=\"268\" text-anchor=\"middle\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">22</text><text x=\"44\" y=\"256\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">−0,5</text><text x=\"44\" y=\"212\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">0,0</text><text x=\"44\" y=\"168\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">0,5</text><text x=\"44\" y=\"124\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">1,0</text><text x=\"44\" y=\"80\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">1,5</text><text x=\"44\" y=\"36\" text-anchor=\"end\" font-family=\"var(--f-mono)\" font-size=\"11\" fill=\"var(--muted)\">2,0</text><text x=\"375\" y=\"286\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">x (cm)</text><text x=\"14\" y=\"131\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\" transform=\"rotate(-90 14 131)\">y (cm)</text><line x1=\"50\" y1=\"208\" x2=\"700\" y2=\"208\" stroke=\"var(--muted)\" stroke-width=\"1.4\"/><line x1=\"150\" y1=\"247.6\" x2=\"150\" y2=\"14.4\" stroke=\"var(--x)\" stroke-width=\"2.2\"/><path d=\"M150 14.4 L154.5 23.4 L145.5 23.4 Z\" fill=\"var(--x)\"/><path d=\"M150 247.6 L145.5 238.6 L154.5 238.6 Z\" fill=\"var(--x)\"/><line x1=\"55\" y1=\"243.2\" x2=\"150\" y2=\"243.2\" stroke=\"var(--f)\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"243.2\" x2=\"650\" y2=\"22.8\" stroke=\"var(--f)\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"243.2\" x2=\"650\" y2=\"22.8\" stroke=\"var(--f)\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"243.2\" x2=\"150\" y2=\"22.8\" stroke=\"var(--f)\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"22.8\" x2=\"650\" y2=\"22.8\" stroke=\"var(--f)\" stroke-width=\"1.5\"/><path d=\"M110 243.2 L102 246.4 L102 240 Z\" fill=\"var(--f)\"/><path d=\"M350 155 L344 161.2 L341.4 155.3 Z\" fill=\"var(--f)\"/><path d=\"M450 96.9 L443.6 102.6 L441.4 96.6 Z\" fill=\"var(--f)\"/><path d=\"M112.5 109.8 L112.3 118.4 L106.4 115.8 Z\" fill=\"var(--f)\"/><path d=\"M400 22.8 L392 26 L392 19.6 Z\" fill=\"var(--f)\"/><line x1=\"55\" y1=\"208\" x2=\"55\" y2=\"243.2\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><path d=\"M55 243.2 L51.5 236.2 L58.5 236.2 Z\" fill=\"var(--ink)\"/><line x1=\"650\" y1=\"208\" x2=\"650\" y2=\"22.8\" stroke=\"var(--y)\" stroke-width=\"2.4\"/><path d=\"M650 22.8 L654 31.8 L646 31.8 Z\" fill=\"var(--y)\"/><circle cx=\"70.2\" cy=\"208\" r=\"3.4\" fill=\"var(--ink)\"/><text x=\"70.2\" y=\"200\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">F</text><circle cx=\"229.8\" cy=\"208\" r=\"3.4\" fill=\"var(--ink)\"/><text x=\"229.8\" y=\"226\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--ink)\" font-style=\"italic\">F′</text><text x=\"658\" y=\"120.6\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--y)\" font-style=\"italic\">y′</text></svg>",
+      "peu": "Diagrama de raigs de l’apartat b, amb escales diferents als dos eixos: la pel·lícula (en negre, de cap per avall) a l’esquerra de la lent i la imatge a la pantalla (y′)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Conveni i dades",
+          "html": "Fem servir el conveni normalitzat (DIN): la llum va d’esquerra a dreta i les distàncies a l’esquerra de la lent són negatives. La pel·lícula (l’objecte) és a l’esquerra de la lent, <i>s</i> &lt; 0, i la imatge es forma a la pantalla: <i>s</i>′ = 16,0 m."
+        },
+        {
+          "titol": "Augment lateral",
+          "html": "L’augment lateral és β = <i>y</i>′/<i>y</i> = <i>s</i>′/<i>s</i>. Com que <i>s</i>′ &gt; 0 i <i>s</i> &lt; 0, β és negatiu: la imatge surt invertida, i per veure-la dreta cal posar els fotogrames de cap per avall. Prenent <i>y</i>′ = 2,00 m (tota l’alçària de la pantalla) i <i>y</i> = −4,00·10<sup>−3</sup> m: β = 2,00/(−4,00·10<sup>−3</sup>) = <span class=\"res\">β = −500</span>."
+        },
+        {
+          "titol": "Posició de la pel·lícula",
+          "html": "β = <i>s</i>′/<i>s</i> → <i>s</i> = <i>s</i>′/β = 16,0/(−500) = <span class=\"res\"><i>s</i> = −0,0320 m</span>: la pel·lícula ha d’estar a 3,20 cm de la lent, abans de la lent en el sentit de la llum."
+        },
+        {
+          "titol": "Potència de la lent",
+          "html": "Equació de les lents primes: <i>P</i> = 1/<i>f</i>′ = 1/<i>s</i>′ − 1/<i>s</i> = 1/16,0 − 1/(−0,0320) = 0,0625 + 31,25 = <span class=\"res\"><i>P</i> = 31,3 D</span>, és a dir, <i>f</i>′ = 1/31,3 = 0,0319 m ≈ 0,032 m."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.75,
+          "que": "Usar l’augment lateral β = y′/y = s′/s amb la imatge invertida (β = −500) i obtenir la posició de la pel·lícula: s = −0,032 m."
+        },
+        {
+          "punts": 0.5,
+          "que": "Aplicar l’equació de les lents per obtenir la potència, 31,3 D (f′ = 0,032 m)."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Posició de la pel·lícula",
+          "html": "Ara la imatge s’ha de formar a <i>s</i>′ = 0,200 m amb la mateixa lent: 1/<i>s</i> = 1/<i>s</i>′ − 1/<i>f</i>′ = 1/0,200 − 31,3 = 5,00 − 31,3 = −26,3 m<sup>−1</sup> → <span class=\"res\"><i>s</i> = −0,0380 m</span>. La pel·lícula ha d’estar a 3,80 cm de la lent, abans de la lent en el sentit de la llum."
+        },
+        {
+          "titol": "Mida de la imatge",
+          "html": "Per dibuixar el diagrama ens cal també la mida de la imatge: β = <i>s</i>′/<i>s</i> = 0,200/(−0,0380) = −5,26. Amb el fotograma de cap per avall, <i>y</i> = −0,400 cm, la imatge fa <i>y</i>′ = −5,26·(−0,400) = 2,10 cm i surt dreta a la pantalla."
+        },
+        {
+          "titol": "Diagrama de raigs",
+          "html": "A la quadrícula prenem 2 cm per divisió gran en horitzontal (de −4 a 22 cm) i 0,5 cm per divisió gran en vertical (de −0,5 a 2,25 cm). La lent és a <i>x</i> = 0, els focus a ∓3,19 cm i la pel·lícula a <i>x</i> = −3,80 cm. Des de l’extrem del fotograma surten tres raigs: el paral·lel a l’eix, que després de la lent passa per F′; el que passa pel centre de la lent sense desviar-se; i el que passa per F i surt de la lent paral·lel a l’eix. Es tallen a <i>x</i> = 20 cm, a 2,10 cm de l’eix. N’hi ha prou amb dos dels tres raigs; també és correcte dibuixar l’objecte dret i la imatge invertida.",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Aplicar l’equació de les lents amb s′ = 0,2 m i trobar s = −0,0380 m (3,80 cm abans de la lent)."
+        },
+        {
+          "punts": 0.75,
+          "que": "Fer el diagrama de raigs amb dos dels tres raigs principals (paral·lel que passa per F′, pel centre sense desviar-se, per F que surt paral·lel)."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "beta",
+      "text": "β = −500",
+      "valor": -500,
+      "pauta": -500
+    },
+    {
+      "apartat": "a",
+      "clau": "s",
+      "text": "s = −0,0320 m",
+      "valor": -0.032,
+      "pauta": -0.032
+    },
+    {
+      "apartat": "a",
+      "clau": "P",
+      "text": "P = 31,3 D",
+      "valor": 31.3,
+      "pauta": 31.3
+    },
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f′ = 0,0319 m",
+      "valor": 0.0319,
+      "pauta": 0.032
+    },
+    {
+      "apartat": "b",
+      "clau": "sb",
+      "text": "s = −0,0380 m",
+      "valor": -0.038,
+      "pauta": -0.038
+    },
+    {
+      "apartat": "b",
+      "clau": "betab",
+      "text": "β = −5,26",
+      "valor": -5.26,
+      "pauta": null
+    },
+    {
+      "apartat": "b",
+      "clau": "yb",
+      "text": "y′ = 2,10 cm",
+      "valor": 0.021,
+      "pauta": null
+    }
+  ],
+  "comprovacio": [
+    "sp, y, yp = 16.0, -4.00e-3, 2.00",
+    "beta = yp / y",
+    "s = sp / beta",
+    "P = 1 / sp - 1 / s",
+    "f = 1 / P",
+    "spb = 0.200",
+    "sb = 1 / (1 / spb - P)",
+    "betab = spb / sb",
+    "R = {'beta': beta, 's': s, 'P': P, 'f': f, 'sb': sb, 'betab': betab, 'yb': betab * y}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

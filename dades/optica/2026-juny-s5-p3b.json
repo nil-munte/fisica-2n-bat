@@ -1,0 +1,227 @@
+{
+  "id": "2026-juny-s5-p3b",
+  "any": 2026,
+  "convocatoria": "juny",
+  "serie": 5,
+  "problema": "P3",
+  "opcio": "B",
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "etiquetes": [
+    "llum",
+    "refraccio",
+    "reflexio-total"
+  ],
+  "dificultat": 5,
+  "dificultat_motiu": "La primera part és directa (f, v i λ en un medi), però a la segona cal veure a la figura que l'angle refractat a l'entrada és el complementari de l'angle límit i encadenar-lo amb la llei de Snell a l'extrem de la fibra.",
+  "titol": "Fibra òptica: angle límit i angle d'entrada",
+  "fonts": {
+    "enunciat": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jl_tei.pdf",
+      "pdf": "pau_fisi26jl_tei",
+      "pagina": 7
+    },
+    "pauta": {
+      "url": "https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/fisica/ord/pau_fisi26jt_tei.pdf",
+      "pdf": "pau_fisi26jt_tei",
+      "pagina": 9
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2026/Juny/5/9030"
+  },
+  "dades": [
+    {
+      "simbol": "λ₀",
+      "valor": "650",
+      "unitat": "nm",
+      "descripcio": "longitud d'ona de la llum en el buit"
+    },
+    {
+      "simbol": "n₁",
+      "valor": "1,48",
+      "unitat": "",
+      "descripcio": "índex de refracció de la fibra (nucli)"
+    },
+    {
+      "simbol": "n₂",
+      "valor": "1,44",
+      "unitat": "",
+      "descripcio": "índex de refracció del recobriment (apartat 3.2)"
+    },
+    {
+      "simbol": "c",
+      "valor": "3,00 × 10⁸",
+      "unitat": "m/s",
+      "descripcio": "velocitat de la llum en el buit"
+    },
+    {
+      "simbol": "n_aire",
+      "valor": "1,00",
+      "unitat": "",
+      "descripcio": "índex de refracció de l'aire"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L'examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat. Problema del tribunal especial (pau_fisi26jl_tei)."
+  },
+  "enunciat": {
+    "intro": "<p>La fibra òptica ens permet disposar de comunicació per Internet d’alta velocitat a casa. La fibra òptica consisteix en un filament flexible de secció circular a través del qual es transmeten polsos de llum, que es transmeten a còpia de reflectir-se a les parets internes del filament. Un raig de llum, de longitud d’ona en el buit λ<sub>0</sub> = 650 nm, incideix des de l’aire sobre l’extrem d’una fibra òptica i forma un angle φ amb l’eix de la fibra (vegeu la figura). L’índex de refracció dins la fibra és <i>n</i><sub>1</sub> = 1,48.</p>",
+    "figures": [
+      "fig1"
+    ],
+    "apartats": [
+      {
+        "id": "3.1",
+        "punts": 1.25,
+        "text": "Quina és la freqüència de la llum incident? Calculeu la velocitat de propagació de la llum dins de la fibra òptica. Calculeu també la longitud d’ona de la llum dins la fibra òptica."
+      },
+      {
+        "id": "3.2",
+        "punts": 1.25,
+        "text": "La fibra està recoberta d’un material que té un índex de refracció <i>n</i><sub>2</sub> = 1,44. Calculeu quin valor ha de tenir l’angle límit θ<sub>L</sub> perquè es produeixi una reflexió total interna al punt <i>P</i>. Quin és el valor de l’angle φ en aquest cas?"
+      }
+    ],
+    "dades_text": "Dades: <i>c</i> = 3,00 × 10<sup>8</sup> m s<sup>–1</sup>.<br><i>n</i><sub>aire</sub> = 1,00."
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 460 192\" role=\"img\" aria-label=\"Tram d'una fibra òptica: un nucli d'índex n1 entre dues capes de recobriment d'índex n2. Un raig arriba des de l'aire a l'extrem de la fibra formant un angle φ amb l'eix, es refracta i incideix sobre la paret inferior al punt P, on forma l'angle θL amb la normal.\"><rect x=\"147\" y=\"30\" width=\"298\" height=\"28\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><rect x=\"147\" y=\"150\" width=\"298\" height=\"28\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"104\" x2=\"445\" y2=\"104\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"147\" y1=\"58\" x2=\"147\" y2=\"150\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"445\" y1=\"58\" x2=\"445\" y2=\"150\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"303\" y1=\"58\" x2=\"303\" y2=\"150\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"20\" x2=\"147\" y2=\"104\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M147 104 L139.7 101.7 L143.7 97.1 Z\" fill=\"var(--y)\"/><line x1=\"147\" y1=\"104\" x2=\"303\" y2=\"150\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M303 150 L295.4 150.9 L297.1 145.1 Z\" fill=\"var(--y)\"/><path d=\"M109 104 A38 38 0 0 1 118.3 79.1\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"96.3\" y=\"91.8\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">φ</text><path d=\"M303 116 A34 34 0 0 0 270.4 140.4\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"267.7\" y=\"110.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">θ</text><text x=\"277\" y=\"114.7\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">L</text><text x=\"311\" y=\"145\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">P</text><text x=\"395\" y=\"140\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">n</text><text x=\"403.7\" y=\"144.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"10\" fill=\"var(--ink)\">1</text><text x=\"395\" y=\"168\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">n</text><text x=\"403.7\" y=\"172.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"10\" fill=\"var(--ink)\">2</text></svg>",
+      "peu": "Raig que entra per l'extrem de la fibra i arriba a la paret al punt P."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 460 192\" role=\"img\" aria-label=\"La mateixa fibra amb els angles de la resolució: a l'entrada, el raig refractat forma un angle φ′ amb l'eix; al punt P forma el mateix angle φ′ amb la paret i θL amb la normal, de manera que φ′ + θL = 90°. Després de P el raig es reflecteix totalment.\"><rect x=\"147\" y=\"30\" width=\"298\" height=\"28\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><rect x=\"147\" y=\"150\" width=\"298\" height=\"28\" fill=\"var(--grid2)\" stroke=\"var(--ink)\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"104\" x2=\"445\" y2=\"104\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"147\" y1=\"58\" x2=\"147\" y2=\"150\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"445\" y1=\"58\" x2=\"445\" y2=\"150\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"303\" y1=\"58\" x2=\"303\" y2=\"178\" stroke=\"var(--muted)\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"20\" x2=\"147\" y2=\"104\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M147 104 L139.7 101.7 L143.7 97.1 Z\" fill=\"var(--y)\"/><line x1=\"147\" y1=\"104\" x2=\"303\" y2=\"150\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M303 150 L295.4 150.9 L297.1 145.1 Z\" fill=\"var(--y)\"/><path d=\"M109 104 A38 38 0 0 1 118.3 79.1\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"96.3\" y=\"91.8\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">φ</text><path d=\"M303 116 A34 34 0 0 0 270.4 140.4\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"267.7\" y=\"110.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"15\" fill=\"var(--ink)\" font-style=\"italic\">θ</text><text x=\"277\" y=\"114.7\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"11\" fill=\"var(--ink)\">L</text><text x=\"311\" y=\"145\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">P</text><text x=\"395\" y=\"140\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">n</text><text x=\"403.7\" y=\"144.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"10\" fill=\"var(--ink)\">1</text><text x=\"395\" y=\"168\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">n</text><text x=\"403.7\" y=\"172.2\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"10\" fill=\"var(--ink)\">2</text><path d=\"M209 104 A62 62 0 0 1 206.5 121.5\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"224.2\" y=\"119.9\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">φ′</text><path d=\"M241.6 131.9 A64 64 0 0 0 239 150\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1\"/><text x=\"223.8\" y=\"143.1\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">φ′</text><line x1=\"303\" y1=\"150\" x2=\"445\" y2=\"108.1\" stroke=\"var(--y)\" stroke-width=\"1.6\"/><path d=\"M445 108.1 L439.1 113 L437.4 107.2 Z\" fill=\"var(--y)\"/></svg>",
+      "peu": "Angles a l'entrada i al punt P: l'angle φ′ apareix dues vegades (angles alterns) i és el complementari de θL."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "3.1",
+      "passos": [
+        {
+          "titol": "Freqüència",
+          "html": "Quan la llum canvia de medi, la freqüència es manté (és la de la font) i el que canvia és la longitud d'ona. La calculem, doncs, amb les dades del buit: <i>f</i> = <i>c</i>/λ<sub>0</sub> = 3,00·10<sup>8</sup>/(650·10<sup>−9</sup>) = <span class=\"res\"><i>f</i> = 4,62·10<sup>14</sup> Hz</span>, la mateixa a l'aire i dins la fibra."
+        },
+        {
+          "titol": "Velocitat dins la fibra",
+          "html": "<i>v</i> = <i>c</i>/<i>n</i><sub>1</sub> = 3,00·10<sup>8</sup>/1,48 = <span class=\"res\"><i>v</i> = 2,03·10<sup>8</sup> m/s</span>."
+        },
+        {
+          "titol": "Longitud d'ona dins la fibra",
+          "html": "λ = <i>v</i>/<i>f</i> = 2,03·10<sup>8</sup>/4,62·10<sup>14</sup> = <span class=\"res\">λ = 4,39·10<sup>−7</sup> m = 439 nm</span>."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Raonar que la freqüència no canvia amb el medi i calcular-la amb λ₀: f = 4,62·10¹⁴ Hz."
+        },
+        {
+          "punts": 0.5,
+          "que": "Calcular la velocitat dins la fibra: v = c/n₁ = 2,03·10⁸ m/s."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la longitud d'ona dins la fibra: λ = 439 nm."
+        }
+      ]
+    },
+    {
+      "apartat": "3.2",
+      "passos": [
+        {
+          "titol": "Angle límit al punt P",
+          "html": "A <i>P</i> la llum va del nucli (<i>n</i><sub>1</sub> = 1,48) al recobriment (<i>n</i><sub>2</sub> = 1,44), de menys índex. Hi ha reflexió total si l'angle d'incidència respecte a la normal és igual o més gran que l'angle límit, que és el que donaria un raig refractat a 90°: <i>n</i><sub>1</sub>·sin θ<sub>L</sub> = <i>n</i><sub>2</sub>·sin 90° → θ<sub>L</sub> = arcsin(<i>n</i><sub>2</sub>/<i>n</i><sub>1</sub>) = arcsin(1,44/1,48) = <span class=\"res\">θ<sub>L</sub> = 76,65°</span>."
+        },
+        {
+          "titol": "Angle refractat a l'entrada",
+          "html": "Anomenem φ′ l'angle que forma el raig refractat amb l'eix dins la fibra. La normal a <i>P</i> és perpendicular a l'eix, i el raig forma amb la paret el mateix angle φ′ que amb l'eix (angles alterns). Per tant φ′ i θ<sub>L</sub> sumen 90°: φ′ = 90° − θ<sub>L</sub> = 90° − 76,65° = <span class=\"res\">φ′ = 13,35°</span>.",
+          "figures": [
+            "fig2"
+          ]
+        },
+        {
+          "titol": "Angle φ",
+          "html": "A l'extrem de la fibra la normal és l'eix, de manera que φ és l'angle d'incidència i φ′ el de refracció. Llei de Snell: <i>n</i><sub>aire</sub>·sin φ = <i>n</i><sub>1</sub>·sin φ′ → φ = arcsin(<i>n</i><sub>1</sub>·sin φ′/<i>n</i><sub>aire</sub>) = arcsin(1,48·sin 13,35°/1,00) = <span class=\"res\">φ = 20,0°</span>. És el valor màxim: amb angles φ més petits el raig arriba a la paret amb un angle més gran que θ<sub>L</sub> i també es reflecteix totalment."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.5,
+          "que": "Explicar la condició de reflexió total i calcular l'angle límit amb la llei de Snell: θ_L = 76,65°."
+        },
+        {
+          "punts": 0.75,
+          "que": "Deduir de la geometria que l'angle refractat a l'entrada és φ′ = 90° − θ_L = 13,35° i aplicar la llei de Snell a l'extrem de la fibra per obtenir φ = 20,0°."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "3.1",
+      "clau": "f",
+      "text": "f = 4,62·10¹⁴ Hz",
+      "valor": 462000000000000.0,
+      "pauta": 462000000000000.0
+    },
+    {
+      "apartat": "3.1",
+      "clau": "v",
+      "text": "v = 2,03·10⁸ m/s",
+      "valor": 203000000.0,
+      "pauta": 203000000.0
+    },
+    {
+      "apartat": "3.1",
+      "clau": "lam",
+      "text": "λ = 439 nm",
+      "valor": 4.39e-07,
+      "pauta": 4.39e-07
+    },
+    {
+      "apartat": "3.2",
+      "clau": "thL",
+      "text": "θ_L = 76,65°",
+      "valor": 76.65,
+      "pauta": 76.65
+    },
+    {
+      "apartat": "3.2",
+      "clau": "php",
+      "text": "φ′ = 13,35°",
+      "valor": 13.35,
+      "pauta": 13.35
+    },
+    {
+      "apartat": "3.2",
+      "clau": "phi",
+      "text": "φ = 20,0°",
+      "valor": 20.0,
+      "pauta": 20.0
+    }
+  ],
+  "comprovacio": [
+    "from math import asin, sin, radians, degrees",
+    "c, n_aire, n1, n2 = 3.00e8, 1.00, 1.48, 1.44",
+    "f = c / 650e-9",
+    "v = c / n1",
+    "thL = degrees(asin(n2 / n1))",
+    "php = 90 - thL",
+    "phi = degrees(asin(n1 * sin(radians(php)) / n_aire))",
+    "R = {'f': f, 'v': v, 'lam': v / f, 'thL': thL, 'php': php, 'phi': phi}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}

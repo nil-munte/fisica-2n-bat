@@ -137,7 +137,7 @@ def html_problema(p: dict, n: int, mapa: dict, pagina: pathlib.Path) -> str:
     meta = []
     info_tema = mapa.get(clau_principal(p, TEMES), {})
     blocs = info_tema.get('blocs', {})
-    teoria = (os.path.relpath(ROOT / info_tema['teoria'], pagina.parent).replace(os.sep, '/')
+    teoria = (os.path.relpath(ROOT / info_tema['teoria'], pagina.parent).replace(os.sep, '/').removesuffix('index.html')
               if info_tema.get('teoria') else '')   # els blocs de teoria poden ser a una altra pàgina
     if p.get('blocs') and blocs:
         meta.append('Teoria: ' + ', '.join(f'<a href="{teoria}#{b}">{blocs[b]}</a>' for b in p['blocs'] if b in blocs))

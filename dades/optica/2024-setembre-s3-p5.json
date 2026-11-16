@@ -1,0 +1,248 @@
+{
+  "id": "2024-setembre-s3-p5",
+  "any": 2024,
+  "convocatoria": "setembre",
+  "serie": 3,
+  "problema": "P5",
+  "opcio": null,
+  "tambe_a": [],
+  "tema_principal": "optica",
+  "temes_secundaris": [],
+  "blocs": [
+    "b4",
+    "b6"
+  ],
+  "etiquetes": [
+    "ull",
+    "lents"
+  ],
+  "dificultat": 3,
+  "dificultat_motiu": "Aplicació directa de l’equació de les lents primes i de l’augment lateral; l’única subtilesa és veure que la imatge que fa la lent correctora és virtual (s′ negativa) i fer el diagrama de raigs a escala.",
+  "titol": "Les ulleres de l’Anna, hipermetrop",
+  "fonts": {
+    "enunciat": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi24sl",
+      "pdf": "pau_fisi24sl",
+      "pagina": 10
+    },
+    "pauta": {
+      "url": "https://selecat.cat/view.php?p=pau_fisi24sp",
+      "pdf": "pau_fisi24sp",
+      "pagina": 8
+    },
+    "classificacio": "https://examenselectivitat.cat/selectivitat/F%C3%ADsica/examens/2024/Setembre/3/6120"
+  },
+  "dades": [
+    {
+      "simbol": "",
+      "valor": "70",
+      "unitat": "cm",
+      "descripcio": "distància mínima a què l’Anna enfoca bé"
+    },
+    {
+      "simbol": "s",
+      "valor": "35",
+      "unitat": "cm",
+      "descripcio": "distància del llibre a la lent (apartat a)"
+    },
+    {
+      "simbol": "s′",
+      "valor": "70",
+      "unitat": "cm",
+      "descripcio": "distància a què ha de quedar la imatge (apartat a)"
+    },
+    {
+      "simbol": "y",
+      "valor": "10",
+      "unitat": "cm",
+      "descripcio": "alçària de l’objecte (apartat b)"
+    },
+    {
+      "simbol": "s",
+      "valor": "25",
+      "unitat": "cm",
+      "descripcio": "distància de l’objecte a la lent (apartat b)"
+    },
+    {
+      "simbol": "f′",
+      "valor": "20",
+      "unitat": "cm",
+      "descripcio": "distància focal de la lent convergent (apartat b)"
+    }
+  ],
+  "puntuacio": {
+    "total": 2.5,
+    "apartats_a_l_enunciat": true,
+    "nota": "L’examen indica 1,25 punts per apartat. La pauta detalla el repartiment de cada apartat."
+  },
+  "enunciat": {
+    "intro": "<p>Un ull hipermetrop no és capaç d’enfocar objectes propers a la retina, sinó que els enfoca darrere d’aquesta, i per això els veu borrosos. L’Anna no és capaç d’enfocar bé els objectes que són més a prop de 70 cm i necessita unes ulleres amb lents convergents per a llegir.</p>",
+    "figures": [],
+    "apartats": [
+      {
+        "id": "a",
+        "punts": 1.25,
+        "text": "L’Anna normalment situa el llibre a 35 cm i la imatge creada per la lent ha de ser a 70 cm perquè la pugui enfocar correctament. Calculeu la distància focal de la lent correctora i la seva potència."
+      },
+      {
+        "id": "b",
+        "punts": 1.25,
+        "text": "Calculeu on es formarà la imatge d’un objecte de 10 cm d’alçària situat a 25 cm davant d’una lent convergent de 20 cm de distància focal. Calculeu, també, la mida de la imatge i esmenteu les seves característiques (més gran o més petita, real o virtual, dreta o invertida). Dibuixeu a la quadrícula de sota el diagrama de raigs amb la lent, l’objecte i la imatge.",
+        "figures": [
+          "fig1"
+        ]
+      }
+    ],
+    "dades_text": ""
+  },
+  "figures": {
+    "fig1": {
+      "svg": "<svg viewBox=\"0 0 560 416\" role=\"img\" aria-label=\"Quadrícula buida de 30 quadres d’amplada per 22 d’alçària per dibuixar-hi el diagrama de raigs.\"><path d=\"M28 10V406M46 10V406M64 10V406M82 10V406M100 10V406M118 10V406M136 10V406M154 10V406M172 10V406M190 10V406M208 10V406M226 10V406M244 10V406M262 10V406M280 10V406M298 10V406M316 10V406M334 10V406M352 10V406M370 10V406M388 10V406M406 10V406M424 10V406M442 10V406M460 10V406M478 10V406M496 10V406M514 10V406M532 10V406M10 28H550M10 46H550M10 64H550M10 82H550M10 100H550M10 118H550M10 136H550M10 154H550M10 172H550M10 190H550M10 208H550M10 226H550M10 244H550M10 262H550M10 280H550M10 298H550M10 316H550M10 334H550M10 352H550M10 370H550M10 388H550\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"0.8\"/><rect x=\"10\" y=\"10\" width=\"540\" height=\"396\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/></svg>",
+      "peu": "Quadrícula per dibuixar el diagrama de raigs."
+    },
+    "fig2": {
+      "svg": "<svg viewBox=\"0 0 560 416\" role=\"img\" aria-label=\"Diagrama de raigs sobre la quadrícula, amb 1 quadre = 5 cm: lent convergent vertical, objecte de 2 quadres a 5 quadres a l’esquerra, focus F i F′ a 4 quadres a cada costat; el raig paral·lel a l’eix es desvia cap a F′ i el raig pel centre no es desvia; es tallen 20 quadres a la dreta de la lent i 8 quadres per sota de l’eix, on hi ha la imatge invertida.\"><path d=\"M28 10V406M46 10V406M64 10V406M82 10V406M100 10V406M118 10V406M136 10V406M154 10V406M172 10V406M190 10V406M208 10V406M226 10V406M244 10V406M262 10V406M280 10V406M298 10V406M316 10V406M334 10V406M352 10V406M370 10V406M388 10V406M406 10V406M424 10V406M442 10V406M460 10V406M478 10V406M496 10V406M514 10V406M532 10V406M10 28H550M10 46H550M10 64H550M10 82H550M10 100H550M10 118H550M10 136H550M10 154H550M10 172H550M10 190H550M10 208H550M10 226H550M10 244H550M10 262H550M10 280H550M10 298H550M10 316H550M10 334H550M10 352H550M10 370H550M10 388H550\" fill=\"none\" stroke=\"var(--grid2)\" stroke-width=\"0.8\"/><rect x=\"10\" y=\"10\" width=\"540\" height=\"396\" fill=\"none\" stroke=\"var(--muted)\" stroke-width=\"1.2\"/><line x1=\"10\" y1=\"208\" x2=\"550\" y2=\"208\" stroke=\"var(--muted)\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\"/><line x1=\"154\" y1=\"316\" x2=\"154\" y2=\"100\" stroke=\"var(--x)\" stroke-width=\"2.4\"/><path d=\"M154 100 L159 110 L149 110 Z\" fill=\"var(--x)\"/><path d=\"M154 316 L149 306 L159 306 Z\" fill=\"var(--x)\"/><line x1=\"64\" y1=\"172\" x2=\"154\" y2=\"172\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><line x1=\"154\" y1=\"172\" x2=\"532\" y2=\"361\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><line x1=\"64\" y1=\"172\" x2=\"532\" y2=\"359.2\" stroke=\"var(--f)\" stroke-width=\"1.6\"/><path d=\"M109 172 L101 175.2 L101 168.8 Z\" fill=\"var(--f)\"/><path d=\"M190 190 L181.4 189.3 L184.3 183.6 Z\" fill=\"var(--f)\"/><path d=\"M370 280 L361.4 279.3 L364.3 273.6 Z\" fill=\"var(--f)\"/><path d=\"M289 262 L280.4 262 L282.8 256.1 Z\" fill=\"var(--f)\"/><line x1=\"64\" y1=\"208\" x2=\"64\" y2=\"172\" stroke=\"var(--ink)\" stroke-width=\"2.4\"/><path d=\"M64 172 L68 181 L60 181 Z\" fill=\"var(--ink)\"/><line x1=\"514\" y1=\"208\" x2=\"514\" y2=\"352\" stroke=\"var(--y)\" stroke-width=\"2.4\"/><path d=\"M514 352 L510 343 L518 343 Z\" fill=\"var(--y)\"/><circle cx=\"82\" cy=\"208\" r=\"3.6\" fill=\"var(--ink)\"/><text x=\"82\" y=\"228\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">F</text><circle cx=\"226\" cy=\"208\" r=\"3.6\" fill=\"var(--ink)\"/><text x=\"226\" y=\"228\" text-anchor=\"middle\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">F′</text><text x=\"54\" y=\"195\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--ink)\" font-style=\"italic\">y</text><text x=\"524\" y=\"285\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"14\" fill=\"var(--y)\" font-style=\"italic\">y′</text><text x=\"164\" y=\"110.8\" text-anchor=\"start\" font-family=\"var(--f-body)\" font-size=\"13\" fill=\"var(--x)\">lent</text><text x=\"544\" y=\"24\" text-anchor=\"end\" font-family=\"var(--f-body)\" font-size=\"12\" fill=\"var(--muted)\">1 quadre = 5 cm</text></svg>",
+      "peu": "Diagrama de raigs de l’apartat b (1 quadre = 5 cm)."
+    }
+  },
+  "resolucio": [
+    {
+      "apartat": "a",
+      "passos": [
+        {
+          "titol": "Conveni de signes",
+          "html": "Fem servir el conveni normalitzat (DIN): la llum avança d’esquerra a dreta, la lent és a l’origen i les distàncies cap a l’esquerra de la lent són negatives. El llibre és l’objecte i és a 35 cm davant de la lent: <i>s</i> = −35 cm."
+        },
+        {
+          "titol": "On ha de quedar la imatge",
+          "html": "L’Anna només enfoca bé a partir de 70 cm, de manera que la lent ha de donar del llibre una imatge virtual, al mateix costat que el llibre i a 70 cm de la lent: <i>s</i>′ = −70 cm."
+        },
+        {
+          "titol": "Distància focal",
+          "html": "Amb l’equació de les lents primes: 1/<i>s</i>′ − 1/<i>s</i> = 1/<i>f</i>′ → 1/(−70) − 1/(−35) = −1/70 + 2/70 = 1/70 cm<sup>−1</sup> → <span class=\"res\"><i>f</i>′ = 70 cm = 0,70 m</span>. Surt positiva: és una lent convergent, tal com diu l’enunciat."
+        },
+        {
+          "titol": "Potència",
+          "html": "La potència és l’invers de la distància focal imatge en metres: <i>P</i> = 1/<i>f</i>′ = 1/0,70 = <span class=\"res\"><i>P</i> = 1,43 D</span> (diòptries)."
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Situar l’objecte (el llibre) davant de la lent: s = −35 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Veure que la imatge ha de quedar també davant de la lent, a 70 cm: s′ = −70 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Aplicar l’equació de les lents primes i obtenir f′ = 70 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Relacionar la potència amb la inversa de la distància focal."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular-ne el valor: P = 1,43 D."
+        }
+      ]
+    },
+    {
+      "apartat": "b",
+      "passos": [
+        {
+          "titol": "Posició de la imatge",
+          "html": "Ara l’objecte és a <i>s</i> = −25 cm d’una lent amb <i>f</i>′ = 20 cm: 1/<i>s</i>′ = 1/<i>f</i>′ + 1/<i>s</i> = 1/20 + 1/(−25) = 5/100 − 4/100 = 1/100 cm<sup>−1</sup> → <span class=\"res\"><i>s</i>′ = 100 cm = 1,00 m</span>, a la dreta de la lent."
+        },
+        {
+          "titol": "Mida de la imatge",
+          "html": "L’augment lateral és β = <i>y</i>′/<i>y</i> = <i>s</i>′/<i>s</i>, per tant <i>y</i>′ = <i>y</i>·<i>s</i>′/<i>s</i> = 10·100/(−25) = <span class=\"res\"><i>y</i>′ = −40 cm = −0,40 m</span> (β = −4)."
+        },
+        {
+          "titol": "Característiques",
+          "html": "La imatge és <span class=\"res\">més gran</span> (quatre vegades l’objecte), <span class=\"res\">real</span> (<i>s</i>′ &gt; 0: els raigs que surten de la lent s’hi tallen de debò i es podria recollir en una pantalla) i <span class=\"res\">invertida</span> (<i>y</i>′ &lt; 0)."
+        },
+        {
+          "titol": "Diagrama de raigs",
+          "html": "Prenem 1 quadre = 5 cm: l’objecte (2 quadres d’alçària) és 5 quadres a l’esquerra de la lent i els focus F i F′ són a 4 quadres a cada costat. Des del cap de l’objecte tracem dos raigs: el que arriba paral·lel a l’eix, que després de la lent passa per F′, i el que travessa el centre de la lent, que no es desvia. Es tallen 20 quadres (100 cm) a la dreta de la lent i 8 quadres (40 cm) per sota de l’eix: aquest és el cap de la imatge.",
+          "figures": [
+            "fig2"
+          ]
+        }
+      ],
+      "pauta": [
+        {
+          "punts": 0.25,
+          "que": "Prendre s = −25 cm i f′ = 20 cm a l’equació de les lents i obtenir s′ = 100 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Calcular la mida amb y′/y = s′/s: y′ = −40 cm."
+        },
+        {
+          "punts": 0.25,
+          "que": "Dir que la imatge és més gran, real i invertida."
+        },
+        {
+          "punts": 0.5,
+          "que": "Fer el diagrama de raigs: el raig paral·lel a l’eix que passa per F′ i el raig pel centre de la lent, que es tallen on es forma la imatge."
+        }
+      ]
+    }
+  ],
+  "resultats": [
+    {
+      "apartat": "a",
+      "clau": "f",
+      "text": "f′ = 0,70 m",
+      "valor": 0.7,
+      "pauta": 0.7
+    },
+    {
+      "apartat": "a",
+      "clau": "P",
+      "text": "P = 1,43 D",
+      "valor": 1.43,
+      "pauta": 1.43
+    },
+    {
+      "apartat": "b",
+      "clau": "sp",
+      "text": "s′ = 1,00 m",
+      "valor": 1.0,
+      "pauta": 1.0
+    },
+    {
+      "apartat": "b",
+      "clau": "yp",
+      "text": "y′ = −0,40 m",
+      "valor": -0.4,
+      "pauta": -0.4
+    },
+    {
+      "apartat": "b",
+      "clau": "beta",
+      "text": "β = −4",
+      "valor": -4,
+      "pauta": null
+    }
+  ],
+  "comprovacio": [
+    "s, sp = -0.35, -0.70",
+    "f = 1 / (1 / sp - 1 / s)",
+    "P = 1 / f",
+    "s2, f2, y2 = -0.25, 0.20, 0.10",
+    "sp2 = 1 / (1 / f2 + 1 / s2)",
+    "beta = sp2 / s2",
+    "R = {'f': f, 'P': P, 'sp': sp2, 'yp': y2 * beta, 'beta': beta}"
+  ],
+  "verificacio": {
+    "estat": "ok",
+    "errors": [],
+    "diferencies_pauta": [],
+    "avisos": [],
+    "notes_manuals": []
+  }
+}
