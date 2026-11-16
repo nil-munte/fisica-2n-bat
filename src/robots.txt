@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nil-munte.github.io/fisica-2n-bat/sitemap.xml
