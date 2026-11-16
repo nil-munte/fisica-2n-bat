@@ -395,3 +395,20 @@ footer .autor a{color:var(--ink);text-underline-offset:3px}
 
 .pendent{margin:0;color:var(--muted);font-style:italic}
 @media print{.pendent{display:none}}
+/* pestanyes de les dues pàgines del tema: teoria i demos · exercicis i PAU */
+nav.toc .pagetabs{flex:none;display:inline-flex;border:1.5px solid var(--ink);border-radius:20px;overflow:hidden;position:sticky;left:0;z-index:1;background:var(--bg);box-shadow:-12px 0 0 var(--bg)}   /* sempre visibles, encara que la barra llisqui */
+nav.toc .pagetabs .pt{border:0;border-radius:0;background:transparent;color:var(--ink);padding:5px 14px;font-size:14px;font-weight:600;font-family:var(--f-display);white-space:nowrap;text-decoration:none;line-height:1.5}
+nav.toc .pagetabs .pt+.pt{border-left:1.5px solid var(--ink)}
+nav.toc .pagetabs .pt.on{background:var(--ink);color:var(--surface)}
+nav.toc .pagetabs a.pt:hover{background:var(--chip)}
+/* final de la teoria: cap als exercicis */
+a.practica{display:flex;flex-direction:column;gap:4px;padding:18px 22px;text-decoration:none;color:var(--ink);border-left:4px solid var(--ink);border-radius:0 12px 12px 0;max-width:720px}
+a.practica b{font-family:var(--f-display);font-size:19px;font-weight:600}
+a.practica span{color:var(--muted)}
+a.practica:hover{background:var(--chip)}
+@media (max-width:620px){
+  nav.toc a.home{font-size:0;padding:5px 12px}
+  nav.toc a.home::before{content:"←";font-size:15px}
+  nav.toc a.top{display:none}
+  nav.toc .pagetabs .pt{padding:5px 11px;font-size:13.5px}
+}
