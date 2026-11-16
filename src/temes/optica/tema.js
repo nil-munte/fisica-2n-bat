@@ -527,7 +527,7 @@ const EX = [
       'A quina distància de la lupa hem de posar el segell?',
       'Quant augmenta la lupa? Com és la imatge?']),
     s: P([
-      'La imatge ha de ser virtual a 25 cm: s′ = −0,25 m. 1/s = 1/s′ − 1/f′ = −4,0 − 20 = −24 m<sup>−1</sup> → ' + R('s = −0,042 m') + ' (4,2 cm, entre el focus i la lent).',
+      'La imatge ha de ser virtual a 25 cm: s′ = −0,25 m. 1/s = 1/s′ − 1/f′ = −4,0 − 20 = −24 m<sup>−1</sup> → ' + R('s = −0,042 m') + ' (4,2 cm, entre el focus objecte F, a −5,0 cm, i la lent).',
       'β = s′/s = (−0,25)/(−0,042) = ' + R('6,0') + ': la imatge és ' + R('virtual, dreta i 6 vegades més gran') + '.']) },
   { g: 2, ti: 'Ulleres per llegir',
     q: '<p>Una persona hipermetrop té el punt pròxim a 1,00 m i vol llegir un llibre a 25 cm. Considera les ulleres enganxades a l\'ull.</p>' + P([
