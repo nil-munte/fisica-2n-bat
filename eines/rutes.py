@@ -1,6 +1,6 @@
 """Rutes del projecte. Totes les eines les prenen d'aquí.
 
-    src/      el web tal com s'escriu (pàgines, imatges, robots.txt): no conté res generat
+    src/      el web tal com s'escriu (pàgines, estils, imatges): no conté res generat
     dades/    problemes de les PAU (JSON) i mapa de temes
     fonts/    PDF oficials de les PAU i fitxers derivats (local i a la CI, no es comita)
     build/    fitxers intermedis de la construcció (no es comita)

@@ -1,5 +1,5 @@
 {
-  "_doc": "Imatges per compartir (Open Graph) que genera eines/imatges_og.py a dist/img/. A les etiquetes, {demos}, {pau} i {examens} es substitueixen pel recompte de la pàgina construïda. «dibuix»: ona, particules, raigs o examens. Cada pàgina ha de declarar la seva imatge a og:image i twitter:image.",
+  "_doc": "Imatges per compartir (Open Graph) que genera eines/imatges_og.py a dist/img/. Als textos, {demos}, {pau} i {examens} es substitueixen pel recompte de la pàgina construïda. «dibuix»: ona, particules, raigs, examens o examen. Cada pàgina ha de declarar la seva imatge a og:image i twitter:image. «patrons»: un sol model per a les pàgines generades en sèrie (les dels exàmens), amb les dades de cada pàgina (atributs data-* del <body>: {any}, {conv}, {serie}, {tei}, {resolts_text}...).",
   "imatges": {
     "og-index.png": {
       "pagina": "index.html",
@@ -100,5 +100,19 @@
       ],
       "dibuix": "examens"
     }
-  }
+  },
+  "patrons": [
+    {
+      "pagines": "pau/*-serie-*/index.html",
+      "antetitol": "Selectivitat · PAU de Catalunya",
+      "titol": "Física · {conv} {any}",
+      "subtitol": "Sèrie {serie}{tei}: l'enunciat sencer i les solucions amb els criteris de correcció oficials",
+      "etiquetes": [
+        "Enunciat",
+        "Solucions oficials",
+        "{resolts_text}"
+      ],
+      "dibuix": "examen"
+    }
+  ]
 }

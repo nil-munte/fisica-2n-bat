@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Pàgina generada per eines/examens_pau.py a partir d'eines/plantilles/examen.html: no s'edita a mà. -->
+<title>$titol</title>
+<meta name="description" content="$descripcio">
+<link rel="canonical" href="$url">
+$rel_veins
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Física · 2n de Batxillerat">
+<meta property="og:locale" content="ca_ES">
+<meta property="og:title" content="$titol_curt">
+<meta property="og:description" content="$descripcio">
+<meta property="og:url" content="$url">
+<meta property="og:image" content="$imatge">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="$titol_curt">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$titol_curt">
+<meta name="twitter:description" content="$descripcio">
+<meta name="twitter:image" content="$imatge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="../estil.css">
+<script type="application/ld+json">$jsonld</script>
+<script type="application/ld+json">$molles</script>
+</head>
+<body $dades>
+<div class="wrap">
+
+  <header id="inici">
+    <div>
+      <nav class="crumbs" aria-label="Ruta"><a href="../../">Física · 2n de Batxillerat</a><span aria-hidden="true">›</span><a href="../">Exàmens de les PAU</a><span aria-hidden="true">›</span><span aria-current="page">$nom_curt</span></nav>
+      <h1>$h1</h1>
+      <p class="sub">$subtitol</p>
+      <div class="botons capbotons">$botons<div data-share hidden></div></div>
+    </div>
+  </header>
+
+  <div class="topbar" id="topbar">
+  <nav class="toc" aria-label="Exàmens">
+    <a href="../" class="home" title="Torna a la llista d'exàmens">← Tots els exàmens</a><span class="sep"></span><a href="#inici" class="top" title="Torna al principi d'aquesta pàgina">↑ Amunt</a><span class="sep"></span>
+    $index
+  </nav>
+  </div>
+
+  <main>
+$resolts
+  <p class="lead avis">Text de l'enunciat oficial tal com és al PDF. Les figures i les fórmules dibuixades només són al PDF: on n'hi ha, s'hi enllaça la pàgina. Les solucions són els criteris de correcció oficials, al <a href="$pdf_solucions" target="_blank" rel="noopener">PDF enunciat + solucions</a>.</p>
+
+  <article class="enunciat">
+$enunciat
+  </article>
+
+  <nav class="veins" aria-label="Altres exàmens">
+    $veins
+  </nav>
+  </main>
+
+  <footer>
+    <p>Els enunciats i els criteris de correcció de les PAU són oficials (Generalitat de Catalunya) i es reprodueixen d'acord amb les condicions de reutilització de la informació del sector públic. El text d'aquesta pàgina s'ha extret del PDF oficial de la sèrie; en cas de dubte, mana el PDF.</p>
+    <p class="autor">Fet per <a href="https://nil-munte.github.io/ca/" target="_blank" rel="noopener">Nil Munté Guerrero</a> · <a href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p class="contacte"><a class="report" href="https://www.linkedin.com/in/nilmunte/" target="_blank" rel="noopener">Escriu-me</a><span hidden> · <span data-mail></span></span></p>
+  </footer>
+</div>
+<script src="../comu.js" defer></script>
+</body>
+</html>

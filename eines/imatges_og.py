@@ -4,9 +4,14 @@
     python eines/imatges_og.py
 
 Les dades són a dades/imatges_og.json: per a cada imatge, la pàgina a què pertany, l'avantítol, el títol,
-el subtítol, les etiquetes i el dibuix de sota («ona», «particules», «raigs» o «examens»). A les etiquetes,
+el subtítol, les etiquetes i el dibuix de sota («ona», «particules», «raigs», «examens» o «examen»). Als textos,
 {demos}, {pau} i {examens} es substitueixen pel recompte que surt de la pàgina construïda (dist/),
 de manera que no queden mai desfasades. La plantilla és eines/plantilles/og.html.
+
+Les pàgines generades en sèrie (les de cada examen, pau/<examen>/) no hi tenen una entrada cadascuna sinó un
+«patró»: les pàgines que fan match amb «pagines» i un sol model de textos. Cada pàgina porta les seves dades
+com a atributs data-* del <body> (data-imatge és el nom de la imatge; la resta es pot fer servir als textos,
+p. ex. {any} o {serie}).
 
 També comprova que cada pàgina declari la seva imatge a og:image i twitter:image.
 """
@@ -38,7 +43,7 @@ def recomptes(pagina: str) -> dict:
     }
 
 
-def ona(amplada=1088, alcada=200) -> str:
+def ona(amplada=1088, alcada=200, **_) -> str:
     """Dues sinusoides (posició i velocitat), com a les imatges del MHS i de la portada."""
     mid, a1, a2, per = 70, 70, 40, 435
     p1 = ' '.join(f'{x},{mid - a1 * math.cos(2 * math.pi * x / per):.1f}' for x in range(0, amplada + 1, 4))
@@ -49,7 +54,7 @@ def ona(amplada=1088, alcada=200) -> str:
             f'<polyline points="{p1}" fill="none" stroke="#1f5fbf" stroke-width="5" stroke-linejoin="round"/></svg></div>')
 
 
-def particules(amplada=1088, alcada=200) -> str:
+def particules(amplada=1088, alcada=200, **_) -> str:
     """Una ona transversal (partícules sobre una sinusoide) i una de longitudinal (compressions)."""
     lam, n = 362, 47
     dx = amplada / (n - 1)
@@ -68,13 +73,23 @@ def particules(amplada=1088, alcada=200) -> str:
             f'<line x1="0" y1="52" x2="{amplada}" y2="52" stroke="#c6d4d8" stroke-width="2"/>{"".join(punts)}</svg></div>')
 
 
-def examens(amplada=1088, alcada=200) -> str:
+def examens(amplada=1088, alcada=200, **_) -> str:
     """Línies de text a l'esquerra i una targeta «Juny · Setembre» a la dreta."""
     linies = ''.join(f'<rect x="0" y="{10 + i * 30}" width="{w}" height="13" rx="6.5" fill="#d2dcdf"/>'
                      for i, w in enumerate((520, 420, 480, 360, 450, 300)))
     return (f'<div class="dibuix"><svg viewBox="0 0 {amplada} {alcada}">{linies}</svg></div>'
             '<div class="targeta"><div class="a">Juny · Setembre</div><div class="b">Per any i convocatòria</div>'
             '<div class="c">Sèrie 1 · 2 · 3 · 4 · 5</div></div>')
+
+
+def examen(amplada=1088, alcada=200, conv='', any='', serie='', problemes='', **_) -> str:
+    """Línies de text a l'esquerra i una targeta amb la convocatòria i la sèrie d'un examen a la dreta."""
+    linies = ''.join(f'<rect x="0" y="{10 + i * 30}" width="{w}" height="13" rx="6.5" fill="#d2dcdf"/>'
+                     for i, w in enumerate((520, 420, 480, 360, 450, 300)))
+    return (f'<div class="dibuix"><svg viewBox="0 0 {amplada} {alcada}">{linies}</svg></div>'
+            f'<div class="targeta"><div class="a">{html.escape(conv)} {html.escape(any)}</div>'
+            f'<div class="b">Sèrie {html.escape(serie)}</div>'
+            f'<div class="c">Enunciat i solucions</div></div>')
 
 
 def raigs(amplada=1088, alcada=200, **_) -> str:
@@ -99,7 +114,13 @@ def raigs(amplada=1088, alcada=200, **_) -> str:
             f'<line x1="{xi:.1f}" y1="{yc}" x2="{xi:.1f}" y2="{yi:.1f}" stroke="#7a3fb0" stroke-width="7"/></svg></div>')
 
 
-DIBUIXOS = {'ona': ona, 'particules': particules, 'examens': examens, 'raigs': raigs}
+DIBUIXOS = {'ona': ona, 'particules': particules, 'examens': examens, 'examen': examen, 'raigs': raigs}
+
+
+def dades_pagina(pagina: str) -> dict:
+    """Atributs data-* del <body> d'una pàgina construïda."""
+    cos = re.search(r'<body([^>]*)>', (WEB / pagina).read_text(encoding='utf-8'))
+    return {k: html.unescape(v) for k, v in re.findall(r'data-([\w-]+)="([^"]*)"', cos.group(1) if cos else '')}
 
 
 def comprova_meta(pagina: str, nom: str) -> list:
@@ -111,30 +132,44 @@ def comprova_meta(pagina: str, nom: str) -> list:
 
 def main() -> int:
     sys.stdout.reconfigure(encoding='utf-8')
-    imatges = json.loads(CONFIG.read_text(encoding='utf-8'))['imatges']
+    config = json.loads(CONFIG.read_text(encoding='utf-8'))
+    feines = [(nom, d, {}) for nom, d in config['imatges'].items()]
+    for patro in config.get('patrons', []):
+        for f in sorted(WEB.glob(patro['pagines'])):
+            pagina = f.relative_to(WEB).as_posix()
+            dades = dades_pagina(pagina)
+            if not dades.get('imatge'):
+                print(f'✗ {pagina}: no diu quina imatge li toca (data-imatge al <body>)')
+                return 1
+            feines.append((dades['imatge'], {**patro, 'pagina': pagina}, dades))
     plantilla = string.Template((PLANTILLES / 'og.html').read_text(encoding='utf-8'))
     SORTIDA.mkdir(parents=True, exist_ok=True)
     errors = []
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={'width': 1200, 'height': 630}, device_scale_factor=1)
-        for nom, d in imatges.items():
+        for nom, d, dades in feines:
             if not (WEB / d['pagina']).exists():
                 errors.append(f'{nom}: no existeix la pàgina {d["pagina"]}')
                 continue
             errors += comprova_meta(d['pagina'], nom)
-            n = recomptes(d['pagina'])
+            n = {**recomptes(d['pagina']), **dades}
             etiquetes = [e.format(**n) for e in d.get('etiquetes', [])]
+            titol = d['titol'].format(**n)
             ple = plantilla.substitute(
-                antetitol=html.escape(d['antetitol']), titol=html.escape(d['titol']),
-                classe_titol='llarg' if len(d['titol']) > 26 else '',
-                subtitol=html.escape(d['subtitol']),
-                etiquetes=''.join(f'<span>{html.escape(e)}</span>' for e in etiquetes if not e.startswith('0 ')),
-                dibuix=DIBUIXOS[d.get('dibuix', 'ona')]())
+                antetitol=html.escape(d['antetitol'].format(**n)), titol=html.escape(titol),
+                classe_titol='llarg' if len(titol) > 26 else '',
+                subtitol=html.escape(d['subtitol'].format(**n)),
+                etiquetes=''.join(f'<span>{html.escape(e)}</span>' for e in etiquetes if e.strip() and not e.startswith('0 ')),
+                dibuix=DIBUIXOS[d.get('dibuix', 'ona')](**n))
             pg.set_content(ple, wait_until='networkidle')
             pg.evaluate('document.fonts.ready')
             pg.screenshot(path=str(SORTIDA / nom), type='png')
-            print(f'✓ img/{nom}: {d["titol"]} · {" · ".join(etiquetes)}')
+            if not dades:
+                print(f'✓ img/{nom}: {titol} · {" · ".join(etiquetes)}')
+        n_patro = sum(1 for _, _, x in feines if x)
+        if n_patro:
+            print(f'✓ {n_patro} imatges de pàgines generades (patrons)')
         b.close()
     for e in errors:
         print('✗', e)

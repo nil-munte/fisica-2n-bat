@@ -15,7 +15,7 @@ Web: <https://nil-munte.github.io/fisica-2n-bat/>
 
 ## Com està organitzat
 
-El repositori només conté el que s'escriu a mà. Tot el que es pot generar (els blocs de problemes de les PAU, els PDF dels temes, els exàmens separats per sèries, les imatges per compartir, el sitemap) es genera a l'hora de construir el web i no es comita.
+El repositori només conté el que s'escriu a mà. Tot el que es pot generar (els blocs de problemes de les PAU, els PDF dels temes, els exàmens separats per sèries i la pàgina de cada examen, les imatges per compartir, el sitemap) es genera a l'hora de construir el web i no es comita.
 
 ```
 .
@@ -25,7 +25,7 @@ El repositori només conté el que s'escriu a mà. Tot el que es pot generar (el
 │   ├── temes/<tema>/exercicis/ Exercicis graduats i problemes de les PAU del tema
 │   ├── temes/<tema>/tema.css, tema.js  Estil i codi comuns a les dues pàgines del tema
 │   ├── pau/index.html          Plantilla de la pàgina d'exàmens
-│   └── robots.txt
+│   └── pau/estil.css, comu.js  Estil i codi comuns a la pàgina d'exàmens i a la de cada examen
 ├── dades/
 │   ├── temes.json              Mapa tema → pàgines, i vocabulari d'etiquetes de cada tema
 │   ├── <tema>/*.json           Un fitxer per problema de les PAU
@@ -88,7 +88,8 @@ python eines/fonts_oficials.py puja        # puja els nous a la release fonts-of
 | `build.py` | Construeix el web complet a `dist/` |
 | `comprova_pau.py` | Comprova els problemes de les PAU: estructura, càlculs en Python contra la pauta i notació |
 | `comprova_enllacos.py` | Comprova que cap enllaç intern de `dist/` sigui trencat |
-| `examens_pau.py` | Separa els exàmens oficials per sèries i fa la pàgina `pau/` |
+| `examens_pau.py` | Separa els exàmens oficials per sèries i fa la pàgina `pau/` i la de cada examen (`pau/<examen>/`, plantilla `plantilles/examen.html`) |
+| `enunciats_pdf.py` | Text de l'enunciat d'un examen a partir del PDF oficial (amb exponents, subíndexs i el lloc de les fórmules i figures), per a la pàgina de cada examen |
 | `genera_pau.py` | Insereix els problemes de les PAU a les pàgines dels temes |
 | `prerender_exercicis.py` | Escriu a l'HTML els exercicis que crea el JavaScript, per als cercadors |
 | `build_pdfs.py` | PDF d'un tema: formulari, enunciats i enunciats + solucions |

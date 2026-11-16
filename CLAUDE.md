@@ -19,6 +19,10 @@ subagents, perquè l'usuari les veu.
   `dist/`, el que s'ha de canviar és la font (`src/`, `dades/`, `eines/plantilles/`) o l'eina que el genera.
 - Les imatges per compartir (`img/og-*.png`) també es generen (`eines/imatges_og.py`, text a `dades/imatges_og.json`):
   no hi posis PNG a mà. Una pàgina nova hi ha de tenir una entrada i declarar-la a `og:image` i `twitter:image`.
+  Les pàgines generades en sèrie (la de cada examen, `pau/<examen>/`) comparteixen un model a `patrons` i hi
+  passen les seves dades amb atributs `data-*` del `<body>`.
+- Les pàgines d'examen (`pau/<examen>/`) les genera `eines/examens_pau.py` amb `eines/plantilles/examen.html`; el
+  text de l'enunciat surt del PDF oficial (`eines/enunciats_pdf.py`). No n'hi ha cap a `src/`.
 - Les marques `<!-- PAU:inici -->`, `<!-- PAU-ENLLACOS:… -->`, `<!-- EXERCICIS:… -->` i `<!-- examens:… -->` de les
   pàgines de `src/` han de quedar buides: les omple la construcció.
 

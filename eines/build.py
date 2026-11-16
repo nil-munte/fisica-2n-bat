@@ -14,7 +14,7 @@ Passos:
   1. comprova els problemes de les PAU (eines/comprova_pau.py); si n'hi ha cap amb errors, s'atura
   2. comprova que els PDF oficials de fonts/pdf/ quadren amb l'inventari (eines/fonts_oficials.py)
   3. copia src/ a dist/
-  4. separa els exàmens per sèries i fa la pàgina pau/ (eines/examens_pau.py)
+  4. separa els exàmens per sèries i fa la pàgina pau/ i la de cada examen (eines/examens_pau.py)
   5. insereix els problemes de les PAU a les pàgines dels temes (eines/genera_pau.py)
   6. escriu a l'HTML els exercicis que crea el JavaScript, per als cercadors (eines/prerender_exercicis.py)
   7. genera els PDF de cada tema (eines/build_pdfs.py)
@@ -33,7 +33,7 @@ import subprocess
 import sys
 import time
 
-from rutes import ARREL, DADES, OBRA, SRC, URL_BASE, WEB
+from rutes import ARREL, DADES, OBRA, PLANTILLES, SRC, URL_BASE, WEB
 
 EINES = ARREL / 'eines'
 MEMORIA = OBRA / 'memoria'
@@ -112,6 +112,11 @@ def pagina_exercicis(carpeta: str):
     return p if (SRC / 'temes' / carpeta / 'exercicis' / 'index.html').exists() else WEB / 'temes' / carpeta / 'index.html'
 
 
+def pagines_examens() -> list:
+    """Pàgines de cada examen (pau/<examen>/index.html) al web generat."""
+    return sorted((WEB / 'pau').glob('*-serie-*/index.html'))
+
+
 def data_git(path) -> str:
     """Data de l'últim commit que va tocar un fitxer font (avui si no n'hi ha cap)."""
     r = subprocess.run(['git', 'log', '-1', '--follow', '--format=%cs', '--', str(path)], cwd=ARREL, capture_output=True, text=True)
@@ -126,11 +131,17 @@ def sitemap(temes: list[tuple[str, str]]) -> None:
             pagines.append((f'temes/{c}/exercicis/', SRC / 'temes' / c / 'exercicis' / 'index.html'))
     if (SRC / 'pau' / 'index.html').exists():
         pagines.append(('pau/', SRC / 'pau' / 'index.html'))
-    files = '\n'.join(f'  <url><loc>{URL_BASE}{u}</loc><lastmod>{data_git(f)}</lastmod></url>' for u, f in pagines)
+    dates = {u: data_git(f) for u, f in pagines}
+    # pàgines de cada examen: es generen a partir de la plantilla, de les eines i dels PDF oficials
+    data_examens = max(data_git(f) for f in (PLANTILLES / 'examen.html', EINES / 'examens_pau.py',
+                                             EINES / 'enunciats_pdf.py', DADES / 'fonts_oficials.json'))
+    for f in pagines_examens():
+        dates[f'pau/{f.parent.name}/'] = data_examens
+    files = '\n'.join(f'  <url><loc>{URL_BASE}{u}</loc><lastmod>{d}</lastmod></url>' for u, d in dates.items())
     (WEB / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
                                      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                      f'{files}\n</urlset>\n', encoding='utf-8')
-    print(f'✓ sitemap.xml: {len(pagines)} pàgines')
+    print(f'✓ sitemap.xml: {len(dates)} pàgines')
 
 
 def main(rapid: bool) -> None:
@@ -147,7 +158,8 @@ def main(rapid: bool) -> None:
     OBRA.mkdir(exist_ok=True)
     pas(4, 'Exàmens per sèries')
     amb_memoria('examens',
-                [DADES, EINES / 'examens_pau.py', SRC / 'pau' / 'index.html', SRC / 'index.html'],
+                [DADES, EINES / 'examens_pau.py', EINES / 'enunciats_pdf.py', PLANTILLES / 'examen.html',
+                 SRC / 'pau', SRC / 'index.html'],
                 [WEB / 'pau', WEB / 'index.html', OBRA / 'destins_pau.json'],
                 lambda: executa('eines/examens_pau.py'))
     pas(5, 'Problemes de les PAU a les pàgines dels temes')
@@ -163,7 +175,8 @@ def main(rapid: bool) -> None:
             amb_memoria(f'pdf-{c}', [WEB / 'temes' / c / 'index.html', pagina_exercicis(c), EINES / 'build_pdfs.py', EINES / 'requirements.txt', nom],
                         [WEB / 'temes' / c / 'pdf'], lambda c=c, nom=nom: executa('eines/build_pdfs.py', c, nom))
         pas(8, 'Imatges per compartir')
-        pagines = [WEB / 'index.html', WEB / 'pau' / 'index.html'] + [WEB / 'temes' / c / 'index.html' for c, _ in temes]             + [pagina_exercicis(c) for c, _ in temes]
+        pagines = ([WEB / 'index.html', WEB / 'pau' / 'index.html'] + [WEB / 'temes' / c / 'index.html' for c, _ in temes]
+                   + [pagina_exercicis(c) for c, _ in temes] + pagines_examens())
         amb_memoria('imatges', [DADES / 'imatges_og.json', EINES / 'plantilles' / 'og.html', EINES / 'imatges_og.py', *pagines],
                     [WEB / 'img'], lambda: executa('eines/imatges_og.py'))
     pas(9, 'Sitemap')
