@@ -25,7 +25,8 @@ El repositori només conté el que s'escriu a mà. Tot el que es pot generar (el
 │   ├── temes/<tema>/exercicis/ Exercicis graduats i problemes de les PAU del tema
 │   ├── temes/<tema>/tema.css, tema.js  Estil i codi comuns a les dues pàgines del tema
 │   ├── pau/index.html          Plantilla de la pàgina d'exàmens
-│   └── pau/estil.css, comu.js  Estil i codi comuns a la pàgina d'exàmens i a la de cada examen
+│   ├── pau/estil.css, comu.js  Estil i codi comuns a la pàgina d'exàmens i a la de cada examen
+│   └── lletres/                Lletres IBM Plex (WOFF2, llicència OFL) i lletres.css, servides des del web
 ├── dades/
 │   ├── temes.json              Mapa tema → pàgines, i vocabulari d'etiquetes de cada tema
 │   ├── <tema>/*.json           Un fitxer per problema de les PAU
